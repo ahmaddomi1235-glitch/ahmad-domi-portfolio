@@ -65,3 +65,5 @@ next-env.d.ts
 
 # local tooling state — not part of the project
 /.claude/
+
+.vercel

@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { useInView, useReducedMotion } from "framer-motion";
+import { useRef, useState } from "react";
+import { motion, useReducedMotion } from "framer-motion";
 
 function easeOutCubic(t: number) {
   return 1 - Math.pow(1 - t, 3);
@@ -18,36 +18,43 @@ export function AnimatedCounter({
   className?: string;
   ariaLabel: string;
 }) {
-  const ref = useRef<HTMLSpanElement>(null);
-  const isInView = useInView(ref, { once: true, margin: "-80px" });
   const shouldReduceMotion = useReducedMotion();
   const [display, setDisplay] = useState(0);
+  const hasAnimated = useRef(false);
 
-  useEffect(() => {
-    if (!isInView || shouldReduceMotion) return;
+  const startAnimation = () => {
+    if (hasAnimated.current) return;
+    hasAnimated.current = true;
 
-    let frame: number;
+    if (shouldReduceMotion) {
+      setDisplay(value);
+      return;
+    }
+
     const start = performance.now();
-
     const tick = (now: number) => {
       const progress = Math.min((now - start) / durationMs, 1);
       setDisplay(Math.round(easeOutCubic(progress) * value));
       if (progress < 1) {
-        frame = requestAnimationFrame(tick);
+        requestAnimationFrame(tick);
       }
     };
-
-    frame = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(frame);
-  }, [isInView, shouldReduceMotion, value, durationMs]);
-
-  const shown = shouldReduceMotion ? value : isInView ? display : 0;
+    requestAnimationFrame(tick);
+  };
 
   return (
-    <span ref={ref} className={className} aria-label={ariaLabel}>
+    <motion.span
+      className={className}
+      aria-label={ariaLabel}
+      style={{ display: "inline-block" }}
+      initial={{ opacity: 0.999 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0 }}
+      onViewportEnter={startAnimation}
+    >
       <span aria-hidden="true" dir="ltr" className="tabular-nums">
-        {shown.toLocaleString("en-US")}
+        {display.toLocaleString("en-US")}
       </span>
-    </span>
+    </motion.span>
   );
 }

@@ -1,4 +1,4 @@
-import { test, expect } from "@playwright/test";
+import { test, expect, devices } from "@playwright/test";
 
 test.describe("homepage", () => {
   test("Arabic homepage loads with RTL and hero visible", async ({ page }) => {
@@ -105,6 +105,23 @@ test.describe("homepage", () => {
     await statistics.scrollIntoViewIfNeeded();
     await expect(statistics).toContainText("10,400");
     await expect(statistics).toContainText("850,000");
+  });
+
+  test("statistics counters animate on a mobile viewport via natural scroll", async ({ browser }) => {
+    test.setTimeout(45000);
+    const context = await browser.newContext({ ...devices["iPhone 13"] });
+    const page = await context.newPage();
+    await page.goto("/en");
+    const height = await page.evaluate(() => document.body.scrollHeight);
+    for (let y = 0; y < height; y += 900) {
+      await page.evaluate((y) => window.scrollTo(0, y), y);
+      await page.waitForTimeout(30);
+    }
+    const statistics = page.locator("#statistics");
+    await expect(statistics).toContainText("10,400");
+    await expect(statistics).toContainText("850,000");
+    await expect(statistics).toContainText("3");
+    await context.close();
   });
 
   test("hero profile photograph is rendered", async ({ page }) => {

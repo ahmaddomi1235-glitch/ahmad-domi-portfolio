@@ -77,6 +77,9 @@ export const en: Dictionary = {
       "Through teaching, academic guidance, and educational content, I have helped hundreds of BTEC IT students achieve full marks in different projects and assessments.",
     levelsLabel: "Academic levels",
     levelsNote: "Grade 10, Grade 11, and Tawjihi-level BTEC IT students.",
+    reachQualifier: "More than",
+    reachLabel: "Views in the last 30 days",
+    reachNote: "Total views across the educational content I publish on Instagram over the past month.",
   },
   studentResults: {
     kicker: "Student Results",

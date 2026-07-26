@@ -97,13 +97,14 @@ test.describe("homepage", () => {
     expect(response.status()).toBe(200);
   });
 
-  test("Instagram follower statistic reaches 11,000 with reduced motion", async ({ page }) => {
+  test("Instagram follower and reach statistics reach final values with reduced motion", async ({ page }) => {
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.goto("/en");
     const statistics = page.locator("#statistics");
     await statistics.waitFor({ state: "visible" });
     await statistics.scrollIntoViewIfNeeded();
-    await expect(statistics).toContainText("11,000");
+    await expect(statistics).toContainText("10,400");
+    await expect(statistics).toContainText("850,000");
   });
 
   test("hero profile photograph is rendered", async ({ page }) => {

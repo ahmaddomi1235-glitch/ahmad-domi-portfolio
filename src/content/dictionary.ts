@@ -57,6 +57,9 @@ export type Dictionary = {
     outcomesNote: string;
     levelsLabel: string;
     levelsNote: string;
+    reachQualifier: string;
+    reachLabel: string;
+    reachNote: string;
   };
   studentResults: {
     kicker: string;

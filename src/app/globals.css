@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy: #0b1220;
+  --color-navy-surface: #111a2b;
+  --color-ivory: #f6f3ed;
+  --color-gold: #b99352;
+  --color-ink: #151a23;
+  --color-muted: #5d6573;
+  --color-line: #d8dce3;
+  --color-success: #247a52;
+}
+
+@theme inline {
+  --color-navy: var(--color-navy);
+  --color-navy-surface: var(--color-navy-surface);
+  --color-ivory: var(--color-ivory);
+  --color-gold: var(--color-gold);
+  --color-ink: var(--color-ink);
+  --color-muted: var(--color-muted);
+  --color-line: var(--color-line);
+  --color-success: var(--color-success);
+  --font-en: var(--font-en);
+  --font-ar: var(--font-ar);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[dir="rtl"] {
+  --font-body: var(--font-ar);
+}
+
+[dir="ltr"] {
+  --font-body: var(--font-en);
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-navy);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 100;
+  background: var(--color-navy);
+  color: var(--color-ivory);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+[dir="rtl"] .skip-link {
+  left: auto;
+  right: 1rem;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

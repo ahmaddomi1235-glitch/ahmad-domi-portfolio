@@ -1,0 +1,12 @@
+{
+  "_readme": "Add one entry per image Ahmad has personally reviewed and approved for publication (e.g. after cropping out student names/IDs/photos in an external editor). The script will refuse to copy anything not listed here with privacyReviewed: true. See ASSET_PRIVACY_REVIEW.md and CONTENT_UPDATE_GUIDE.md.",
+  "approvals": [
+    {
+      "id": "example-id",
+      "sourceFileName": "example-source-filename.jpg",
+      "publishedFileName": "example-published-name.jpg",
+      "privacyReviewed": false,
+      "notes": "Template entry — not active. Copy this block, fill in real values, and set privacyReviewed to true only after manually confirming no personal data is visible."
+    }
+  ]
+}

@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, IBM_Plex_Sans_Arabic } from "next/font/google";
-import { headers } from "next/headers";
 import "./globals.css";
-import { getDictionary, localeConfig, type Locale } from "@/lib/i18n";
+import { SITE_URL, brand, defaultDescription } from "@/config/site";
 
 const inter = Inter({
   variable: "--font-en",
@@ -17,57 +16,33 @@ const plexArabic = IBM_Plex_Sans_Arabic({
   display: "swap",
 });
 
-export async function generateMetadata(): Promise<Metadata> {
-  const locale = await getRequestLocale();
-  const dict = getDictionary(locale);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
+/**
+ * Static root layout. The document language/direction is Arabic; the English subtree (/en) declares
+ * lang="en" dir="ltr" on its own wrapper. Nothing here reads request headers, so every route can be
+ * statically generated.
+ */
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: { default: brand.full, template: `%s | ${brand.siteName}` },
+  description: defaultDescription,
+  applicationName: brand.siteName,
+  authors: [{ name: brand.nameEn, url: `${SITE_URL}/about` }],
+  creator: brand.nameEn,
+  openGraph: { siteName: brand.siteName, locale: "ar_JO", type: "website" },
+  twitter: { card: "summary_large_image" },
+  robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
+};
 
-  return {
-    metadataBase: new URL(siteUrl),
-    title: dict.meta.title,
-    description: dict.meta.description,
-    alternates: {
-      canonical: locale === "ar" ? "/" : "/en",
-      languages: { ar: "/", en: "/en" },
-    },
-    openGraph: {
-      title: dict.meta.title,
-      description: dict.meta.description,
-      locale: locale === "ar" ? "ar_JO" : "en_US",
-      type: "website",
-      url: locale === "ar" ? "/" : "/en",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: dict.meta.title,
-      description: dict.meta.description,
-    },
-  };
-}
+export const viewport: Viewport = {
+  themeColor: "#0b1220",
+  width: "device-width",
+  initialScale: 1,
+};
 
-async function getRequestLocale(): Promise<Locale> {
-  const headerList = await headers();
-  const locale = headerList.get("x-locale");
-  return locale === "en" ? "en" : "ar";
-}
-
-export default async function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const locale = await getRequestLocale();
-  const dict = getDictionary(locale);
-  const dir = localeConfig[locale].dir;
-
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang={locale} dir={dir} className={`${inter.variable} ${plexArabic.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-ivory text-ink">
-        <a href="#main-content" className="skip-link">
-          {dict.skipToContent}
-        </a>
-        {children}
-      </body>
+    <html lang="ar" dir="rtl" className={`${inter.variable} ${plexArabic.variable} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-ivory text-ink">{children}</body>
     </html>
   );
 }

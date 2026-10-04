@@ -1,6 +1,7 @@
 import type { Locale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/i18n";
-import { personJsonLd } from "@/lib/structuredData";
+import { profilePageGraph } from "@/lib/seo/jsonld";
+import { JsonLd } from "@/components/seo/JsonLd";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { BackToTop } from "@/components/ui/BackToTop";
@@ -21,15 +22,13 @@ import { ContactSection } from "@/components/sections/ContactSection";
 
 export function HomePage({ locale }: { locale: Locale }) {
   const dict = getDictionary(locale);
-  const switchHref = locale === "ar" ? "/en" : "/";
+  // /about (ar) and /en (en) are the two equivalent language versions of the portfolio.
+  const switchHref = locale === "ar" ? "/en" : "/about";
   const homeHref = locale === "ar" ? "/" : "/en";
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd(locale)) }}
-      />
+      <JsonLd data={profilePageGraph(locale)} />
       <Header locale={locale} dict={dict} switchHref={switchHref} homeHref={homeHref} />
       <main id="main-content">
         <HeroSection dict={dict} />

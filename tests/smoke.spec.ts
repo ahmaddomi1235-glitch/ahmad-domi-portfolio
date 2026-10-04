@@ -1,8 +1,9 @@
 import { test, expect, devices } from "@playwright/test";
 
-test.describe("homepage", () => {
-  test("Arabic homepage loads with RTL and hero visible", async ({ page }) => {
-    await page.goto("/");
+// ───────────────────────── Existing portfolio (now /about and /en) ─────────────────────────
+test.describe("portfolio (about / en)", () => {
+  test("Arabic portfolio at /about loads with RTL and hero visible", async ({ page }) => {
+    await page.goto("/about");
     await expect(page.locator("html")).toHaveAttribute("lang", "ar");
     await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
     await expect(page.locator("#top h1")).toBeVisible();
@@ -10,19 +11,18 @@ test.describe("homepage", () => {
     await expect(page.locator("#projects")).toBeVisible();
   });
 
-  test("English homepage loads with LTR", async ({ page }) => {
+  test("English portfolio declares lang=en dir=ltr on its subtree", async ({ page }) => {
     await page.goto("/en");
-    await expect(page.locator("html")).toHaveAttribute("lang", "en");
-    await expect(page.locator("html")).toHaveAttribute("dir", "ltr");
+    await expect(page.locator('div[lang="en"][dir="ltr"]').first()).toBeVisible();
     await expect(page.locator("#top h1")).toBeVisible();
   });
 
-  test("language switch navigates between ar and en", async ({ page }) => {
-    await page.goto("/");
+  test("language switch navigates between /about and /en", async ({ page }) => {
+    await page.goto("/about");
     await page.getByRole("link", { name: "English" }).first().click();
     await expect(page).toHaveURL(/\/en$/);
     await page.getByRole("link", { name: "العربية" }).first().click();
-    await expect(page).toHaveURL(/\/$/);
+    await expect(page).toHaveURL(/\/about$/);
   });
 
   test("mobile menu opens, is keyboard-escapable, and closes", async ({ page }) => {
@@ -43,6 +43,12 @@ test.describe("homepage", () => {
     await expect(page).toHaveURL(/\/en#projects$/);
   });
 
+  test("Arabic project page links back to /about#projects", async ({ page }) => {
+    await page.goto("/projects/omnia");
+    const back = page.locator('a[href="/about#projects"]').first();
+    await expect(back).toBeVisible();
+  });
+
   test("project filter buttons are keyboard accessible", async ({ page }) => {
     await page.goto("/en");
     const cybersecurityFilter = page.getByRole("button", { name: "Cybersecurity", exact: true });
@@ -50,17 +56,7 @@ test.describe("homepage", () => {
     await expect(cybersecurityFilter).toHaveAttribute("aria-pressed", "true");
   });
 
-  test("no console errors on homepage", async ({ page }) => {
-    const errors: string[] = [];
-    page.on("console", (msg) => {
-      if (msg.type() === "error") errors.push(msg.text());
-    });
-    await page.goto("/");
-    await page.waitForTimeout(500);
-    expect(errors).toEqual([]);
-  });
-
-  test("320px viewport has no horizontal overflow", async ({ page }) => {
+  test("320px viewport has no horizontal overflow on the English portfolio", async ({ page }) => {
     await page.setViewportSize({ width: 320, height: 700 });
     await page.goto("/en");
     const hasOverflow = await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth + 1);
@@ -136,5 +132,187 @@ test.describe("homepage", () => {
     const results = page.locator("#results img");
     await expect(results.first()).toBeVisible();
     expect(await results.count()).toBeGreaterThan(10);
+  });
+});
+
+// ───────────────────────── Entity home & knowledge base ─────────────────────────
+test.describe("entity home", () => {
+  test("home states who Ahmad Domi is in the initial HTML (no JS needed)", async ({ request }) => {
+    const html = await (await request.get("/")).text();
+    expect(html).toContain('<html lang="ar" dir="rtl"');
+    expect(html).toContain("مدرّس BTEC IT في الأردن");
+    expect(html).toContain("Ahmad Domi");
+    expect(html).toContain('rel="canonical" href="https://ahmaddomiedu.com"'); // Next serialises the bare root without a trailing slash (equivalent URL)
+    expect(html).not.toMatch(/name="robots" content="[^"]*noindex/);
+  });
+
+  test("home renders, has one H1, links to units and official accounts", async ({ page }) => {
+    await page.goto("/");
+    await expect(page.locator("h1")).toHaveCount(1);
+    await expect(page.getByRole("link", { name: "تصفّح قاعدة معرفة BTEC IT" })).toBeVisible();
+    await expect(page.locator('a[rel~="me"][href*="youtube.com/@AhmadDomiedu"]').first()).toBeVisible();
+    await expect(page.locator('a[rel~="me"][href*="instagram.com/ahmaddomiedu"]').first()).toBeVisible();
+  });
+
+  test("no console errors on home or a concept page", async ({ page }) => {
+    const errors: string[] = [];
+    page.on("console", (msg) => {
+      if (msg.type() === "error") errors.push(msg.text());
+    });
+    await page.goto("/");
+    await page.goto("/btec-it/cyber-security/threat-vulnerability-risk");
+    await page.waitForTimeout(500);
+    expect(errors).toEqual([]);
+  });
+
+  test("320px viewport has no horizontal overflow on knowledge pages", async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 700 });
+    for (const path of ["/", "/btec-it", "/btec-it/cyber-security/threat-vulnerability-risk", "/btec-calculator", "/btec-it/glossary", "/videos", "/btec-it-card"]) {
+      await page.goto(path);
+      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+      expect(overflow, `${path} overflows by ${overflow}px`).toBeLessThanOrEqual(1);
+    }
+  });
+
+  test("skip link targets main content", async ({ page }) => {
+    await page.goto("/btec-it");
+    await page.keyboard.press("Tab");
+    const skip = page.getByRole("link", { name: "تخطَّ إلى المحتوى الرئيسي" });
+    await expect(skip).toBeFocused();
+    await expect(page.locator("#main-content")).toHaveCount(1);
+  });
+});
+
+test.describe("concept page", () => {
+  const path = "/btec-it/cyber-security/threat-vulnerability-risk";
+
+  test("has short answer, breadcrumb, terminology, author and valid JSON-LD", async ({ page, request }) => {
+    await page.goto(path);
+    await expect(page.locator("h1")).toContainText("الفرق بين التهديد والثغرة والمخاطرة");
+    await expect(page.getByRole("heading", { name: "الجواب المختصر" })).toBeVisible();
+    await expect(page.getByRole("navigation", { name: "مسار التنقل" })).toContainText("الأمن السيبراني");
+    await expect(page.getByRole("heading", { name: "المصطلحات: عربي ↔ English" })).toBeVisible();
+    await expect(page.locator('a[rel="author"][href="/about"]')).toBeVisible();
+
+    const html = await (await request.get(path)).text();
+    const blocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => JSON.parse(m[1]));
+    expect(blocks).toHaveLength(1);
+    const graph = blocks[0]["@graph"] as { "@type": string; "@id"?: string }[];
+    const types = graph.map((n) => n["@type"]);
+    expect(types).toEqual(expect.arrayContaining(["TechArticle", "BreadcrumbList", "VideoObject", "Person"]));
+    const crumbs = graph.find((n) => n["@type"] === "BreadcrumbList") as unknown as { itemListElement: { name: string }[] };
+    expect(crumbs.itemListElement.map((i) => i.name)).toEqual(["الرئيسية", "BTEC IT", "الأمن السيبراني", "الفرق بين التهديد والثغرة والمخاطرة"]);
+    expect(html).toContain('rel="canonical" href="https://ahmaddomiedu.com/btec-it/cyber-security/threat-vulnerability-risk"');
+  });
+
+  test("the lesson video is embedded via youtube-nocookie and chapters are listed", async ({ page }) => {
+    await page.goto(path);
+    await expect(page.locator('iframe[src^="https://www.youtube-nocookie.com/embed/qVjvVT-YxEk"]')).toHaveCount(1);
+    expect(await page.locator('ol:has(a[href*="&t="]) li').count()).toBeGreaterThan(5);
+  });
+
+  test("unknown unit/concept slugs return 404", async ({ request }) => {
+    expect((await request.get("/btec-it/cyber-security/no-such-concept")).status()).toBe(404);
+    expect((await request.get("/btec-it/no-such-unit")).status()).toBe(404);
+  });
+});
+
+test.describe("search (Arabic ↔ English)", () => {
+  test("Arabic 'مخاطرة' finds the Threat/Vulnerability/Risk page; English 'threat' finds the Arabic term", async ({ page }) => {
+    await page.goto("/search");
+    const box = page.getByRole("searchbox", { name: "ابحث في قاعدة المعرفة" });
+    await box.fill("مخاطرة");
+    await expect(page.getByRole("link", { name: /الفرق بين التهديد والثغرة والمخاطرة/ }).first()).toBeVisible();
+    await box.fill("threat");
+    await expect(page.getByRole("link", { name: /التهديد/ }).first()).toBeVisible();
+    await box.fill("PMD");
+    await expect(page.getByText("لا توجد نتائج", { exact: false })).toBeVisible(); // no P/M/D page published yet — honest empty state
+  });
+
+  test("search page is noindex", async ({ request }) => {
+    const html = await (await request.get("/search")).text();
+    expect(html).toMatch(/name="robots" content="[^"]*noindex/);
+  });
+});
+
+test.describe("calculator", () => {
+  test("computes a specialty average from U/P/M/D grades using the ported rules", async ({ page }) => {
+    await page.goto("/btec-calculator");
+    await page.getByLabel("التخصص").selectOption({ label: "تكنولوجيا المعلومات" });
+    // Tawjihi IT: cyber 120h, programming 90h, project management 90h, AI 60h — grade everything D (=100)
+    const groups = page.locator('fieldset:has(legend:has-text("نتيجة"))');
+    const n = await groups.count();
+    expect(n).toBe(4);
+    for (let i = 0; i < n; i++) await groups.nth(i).getByText("D", { exact: true }).click();
+    await expect(page.getByText("35.00").first()).toBeVisible(); // 100/100 × 35
+  });
+
+  test("calculator page documents the rules and their (unconfirmed) source", async ({ page }) => {
+    await page.goto("/btec-calculator");
+    await expect(page.getByText("مصدر القواعد وحدودها")).toBeVisible();
+    await expect(page.getByText("ليست", { exact: false }).first()).toBeVisible();
+  });
+});
+
+test.describe("technical SEO endpoints", () => {
+  test("sitemap lists only canonical https URLs on the production host and excludes /search", async ({ request }) => {
+    const xml = await (await request.get("/sitemap.xml")).text();
+    const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+    expect(locs.length).toBeGreaterThan(40);
+    for (const l of locs) expect(l.startsWith("https://ahmaddomiedu.com")).toBe(true);
+    expect(locs).toContain("https://ahmaddomiedu.com/");
+    expect(locs).toContain("https://ahmaddomiedu.com/btec-it-card");
+    expect(locs.some((l) => l.includes("/search"))).toBe(false);
+    expect(new Set(locs).size).toBe(locs.length);
+  });
+
+  test("robots.txt allows crawling and points at the sitemap", async ({ request }) => {
+    const txt = await (await request.get("/robots.txt")).text();
+    expect(txt).toContain("Allow: /");
+    expect(txt).not.toMatch(/Disallow:\s*\/\s*$/m);
+    expect(txt).toContain("Sitemap: https://ahmaddomiedu.com/sitemap.xml");
+  });
+
+  test("llms.txt is plain text and lists the published concepts", async ({ request }) => {
+    const res = await request.get("/llms.txt");
+    expect(res.headers()["content-type"]).toContain("text/plain");
+    const txt = await res.text();
+    expect(txt).toContain("Ahmad Domi");
+    expect(txt).toContain("/btec-it/cyber-security/threat-vulnerability-risk");
+  });
+
+  test("404 page is useful and returns HTTP 404", async ({ page }) => {
+    const res = await page.goto("/definitely-not-a-page");
+    expect(res?.status()).toBe(404);
+    await expect(page.getByRole("heading", { name: "لم نجد هذه الصفحة" })).toBeVisible();
+    await expect(page.getByRole("link", { name: "تصفّح وحدات BTEC IT" })).toBeVisible();
+  });
+
+  test("/ar redirects permanently to /", async ({ request }) => {
+    const res = await request.get("/ar", { maxRedirects: 0 });
+    expect(res.status()).toBe(308);
+    expect(res.headers()["location"]).toMatch(/\/$/);
+  });
+
+  test("www host redirects to the apex canonical host", async ({ request }) => {
+    const res = await request.get("/btec-it", { maxRedirects: 0, headers: { host: "www.ahmaddomiedu.com" } });
+    expect(res.status()).toBe(308);
+    expect(res.headers()["location"]).toBe("https://ahmaddomiedu.com/btec-it");
+  });
+
+  test("security headers are set", async ({ request }) => {
+    const h = (await request.get("/")).headers();
+    expect(h["x-content-type-options"]).toBe("nosniff");
+    expect(h["referrer-policy"]).toBe("strict-origin-when-cross-origin");
+    expect(h["x-powered-by"]).toBeUndefined();
+  });
+});
+
+test.describe("paid-content boundary", () => {
+  test("the card page does not publish card content or claim assignment answers, and hides prices by default", async ({ request }) => {
+    const html = await (await request.get("/btec-it-card")).text();
+    expect(html).toContain("لا يُنشر على هذا الموقع");
+    expect(html).not.toMatch(/Offer"|"@type":"Product"/);
+    expect(html).not.toContain("85 د.أ");
   });
 });

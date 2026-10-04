@@ -11,7 +11,8 @@ import { Button } from "@/components/ui/Button";
 import { LanguageSwitch } from "./LanguageSwitch";
 import { cn } from "@/lib/utils";
 
-type NavItem = { href: string; label: string };
+/** `anchor` marks an in-page section (scroll-spy); items without one are plain links to other pages. */
+type NavItem = { href: string; anchor?: string; label: string };
 
 export function Header({
   locale,
@@ -29,14 +30,18 @@ export function Header({
   const [activeSection, setActiveSection] = useState<string>("");
   const menuButtonRef = useRef<HTMLButtonElement>(null);
 
+  // Section links are prefixed with the portfolio page path so they also work from project case-study pages.
+  const base = locale === "ar" ? "/about" : "/en";
+  const section = (anchor: string, label: string): NavItem => ({ href: `${base}${anchor}`, anchor, label });
   const navItems: NavItem[] = [
-    { href: "#experience", label: dict.nav.experience },
-    { href: "#results", label: dict.nav.studentResults },
-    { href: "#work-samples", label: dict.nav.workSamples },
-    { href: "#educational-content", label: dict.nav.educationalContent },
-    { href: "#projects", label: dict.nav.projects },
-    { href: "#certifications", label: dict.nav.certifications },
-    { href: "#contact", label: dict.nav.contact },
+    { href: "/btec-it", label: locale === "ar" ? "قاعدة معرفة BTEC IT" : "BTEC IT knowledge base (Arabic)" },
+    section("#experience", dict.nav.experience),
+    section("#results", dict.nav.studentResults),
+    section("#work-samples", dict.nav.workSamples),
+    section("#educational-content", dict.nav.educationalContent),
+    section("#projects", dict.nav.projects),
+    section("#certifications", dict.nav.certifications),
+    section("#contact", dict.nav.contact),
   ];
 
   useEffect(() => {
@@ -64,7 +69,7 @@ export function Header({
 
   useEffect(() => {
     const sections = navItems
-      .map((item) => document.querySelector(item.href))
+      .map((item) => (item.anchor ? document.querySelector(item.anchor) : null))
       .filter(Boolean) as Element[];
 
     if (sections.length === 0) return;
@@ -102,20 +107,20 @@ export function Header({
 
         <nav className="hidden lg:flex items-center gap-1" aria-label={dict.nav.home}>
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               className={cn(
                 "relative rounded-full px-4 py-2 text-sm font-medium text-ink/80 transition-colors hover:text-ink",
-                activeSection === item.href && "text-ink",
+                item.anchor && activeSection === item.anchor && "text-ink",
               )}
-              aria-current={activeSection === item.href ? "true" : undefined}
+              aria-current={item.anchor && activeSection === item.anchor ? "true" : undefined}
             >
               {item.label}
-              {activeSection === item.href && (
+              {item.anchor && activeSection === item.anchor && (
                 <span className="absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full bg-gold" aria-hidden="true" />
               )}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -148,14 +153,14 @@ export function Header({
         >
           <Container className="flex flex-col gap-1 py-6">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
                 className="rounded-lg px-4 py-3 text-base font-medium text-ink hover:bg-navy/5 min-h-[44px] flex items-center"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <div className="mt-4 flex flex-col gap-3 border-t border-line pt-4">
               <LanguageSwitch locale={locale} switchHref={switchHref} label={dict.nav.langSwitch} />

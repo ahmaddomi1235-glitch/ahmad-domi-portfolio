@@ -28,18 +28,62 @@ html {
   scroll-behavior: smooth;
 }
 
-[dir="rtl"] {
-  --font-body: var(--font-ar);
-}
-
-[dir="ltr"] {
-  --font-body: var(--font-en);
-}
-
+/* Arabic-first stack with Inter for Latin glyphs; inline English terms (bdi[dir=ltr]) and the /en subtree use Inter. */
 body {
   background: var(--color-ivory);
   color: var(--color-ink);
-  font-family: var(--font-body), system-ui, sans-serif;
+  font-family: var(--font-ar), var(--font-en), system-ui, sans-serif;
+}
+
+[dir="ltr"] {
+  font-family: var(--font-en), var(--font-ar), system-ui, sans-serif;
+}
+
+/* ── Knowledge-base prose ─────────────────────────────────────────────────────────────── */
+.kb-prose {
+  font-size: 1.0625rem;
+  line-height: 2;
+}
+.kb-prose > * + * {
+  margin-top: 1.1rem;
+}
+.kb-prose h2 {
+  margin-top: 2.4rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 700;
+  scroll-margin-top: 5rem;
+}
+.kb-prose h3 {
+  margin-top: 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.kb-prose ul,
+.kb-prose ol {
+  padding-inline-start: 1.5rem;
+}
+.kb-prose ul {
+  list-style: disc;
+}
+.kb-prose ol {
+  list-style: decimal;
+}
+.kb-prose li + li {
+  margin-top: 0.35rem;
+}
+.kb-prose a {
+  color: var(--color-navy);
+  text-decoration: underline;
+  text-decoration-color: var(--color-gold);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+.kb-prose a:hover {
+  color: #7a5c24;
+}
+.kb-prose bdi[dir="ltr"] {
+  font-size: 0.95em;
 }
 
 ::selection {

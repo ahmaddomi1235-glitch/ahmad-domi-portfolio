@@ -36,10 +36,12 @@ export default function OpengraphImage() {
         >
           AD
         </div>
-        <div style={{ fontSize: 52, fontWeight: 600, lineHeight: 1.2, maxWidth: 900 }}>Ahmad Domi</div>
-        <div style={{ fontSize: 30, color: "#B99352", marginTop: 16 }}>
-          BTEC IT Instructor and Cybersecurity Engineer
+        <div style={{ fontSize: 64, fontWeight: 600, lineHeight: 1.2, maxWidth: 900 }}>Ahmad Domi</div>
+        <div style={{ fontSize: 34, color: "#B99352", marginTop: 16 }}>BTEC IT Instructor · Jordan</div>
+        <div style={{ fontSize: 24, color: "#F6F3ED", opacity: 0.7, marginTop: 28 }}>
+          Cybersecurity · AI · Data Modelling · IT Project Management
         </div>
+        <div style={{ fontSize: 22, color: "#F6F3ED", opacity: 0.55, marginTop: 40 }}>ahmaddomiedu.com</div>
       </div>
     ),
     { ...size },

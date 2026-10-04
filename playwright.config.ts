@@ -2,6 +2,7 @@ import { defineConfig, devices } from "@playwright/test";
 
 export default defineConfig({
   testDir: "./tests",
+  testMatch: "**/*.spec.ts", // tests/unit/*.test.ts are Node unit tests (npm run test:unit)
   fullyParallel: true,
   reporter: [["list"]],
   use: {

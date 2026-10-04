@@ -20,7 +20,8 @@ export function ProjectCaseStudy({ locale, slug }: { locale: Locale; slug: strin
 
   const switchHref = locale === "ar" ? `/en/projects/${slug}` : `/projects/${slug}`;
   const homeHref = locale === "ar" ? "/" : "/en";
-  const backHref = `${homeHref}#projects`;
+  // Projects live on the portfolio page: /about (ar) or /en (en) — "/" is now the entity home.
+  const backHref = `${locale === "ar" ? "/about" : "/en"}#projects`;
 
   return (
     <>

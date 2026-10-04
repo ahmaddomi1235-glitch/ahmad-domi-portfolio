@@ -1,23 +1,38 @@
 import type { MetadataRoute } from "next";
 import { projects } from "@/content/projects";
+import { SITE_URL } from "@/config/site";
+import { allPublishedNodes, getConcepts, getUnits, urlFor } from "@/lib/kb/queries";
 
+/**
+ * Only canonical, indexable, published, useful pages. Excluded on purpose: /search (noindex), drafts, PAID nodes,
+ * anchors (glossary terms, videos) and anything not routed. lastModified comes from the content's own
+ * `lastReviewed` date — never "now".
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://example.com";
-  const now = new Date();
+  const nodes = allPublishedNodes();
+  const latest = nodes.map((n) => n.lastReviewed).sort().at(-1) ?? "2026-10-04";
+  const at = (iso: string) => new Date(`${iso}T00:00:00Z`);
+  const url = (p: string) => `${SITE_URL}${p}`;
 
-  const staticRoutes = ["/", "/en"].map((path) => ({
-    url: `${siteUrl}${path}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: path === "/" ? 1 : 0.9,
-  }));
+  const entries: MetadataRoute.Sitemap = [
+    { url: url("/"), lastModified: at(latest) },
+    { url: url("/about"), lastModified: at(latest), alternates: { languages: { ar: url("/about"), en: url("/en") } } },
+    { url: url("/en"), lastModified: at(latest), alternates: { languages: { ar: url("/about"), en: url("/en") } } },
+    { url: url("/btec-it"), lastModified: at(latest) },
+    ...getUnits().map((u) => ({ url: url(urlFor(u)), lastModified: at(u.lastReviewed) })),
+    ...getConcepts().map((c) => ({ url: url(urlFor(c)), lastModified: at(c.lastReviewed) })),
+    { url: url("/btec-it/questions"), lastModified: at(latest) },
+    { url: url("/btec-it/glossary"), lastModified: at(latest) },
+    { url: url("/btec-calculator"), lastModified: at(latest) },
+    { url: url("/btec-it-card"), lastModified: at(latest) },
+    { url: url("/videos"), lastModified: at(latest) },
+    { url: url("/resources"), lastModified: at(latest) },
+  ];
 
-  const projectRoutes = projects
-    .filter((p) => !p.detailsPending)
-    .flatMap((p) => [
-      { url: `${siteUrl}/projects/${p.slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 },
-      { url: `${siteUrl}/en/projects/${p.slug}`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.6 },
-    ]);
-
-  return [...staticRoutes, ...projectRoutes];
+  for (const p of projects.filter((p) => !p.detailsPending)) {
+    const ar = url(`/projects/${p.slug}`);
+    const en = url(`/en/projects/${p.slug}`);
+    entries.push({ url: ar, alternates: { languages: { ar, en } } }, { url: en, alternates: { languages: { ar, en } } });
+  }
+  return entries;
 }

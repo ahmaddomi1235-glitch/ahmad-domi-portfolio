@@ -67,3 +67,9 @@ next-env.d.ts
 /.claude/
 
 .vercel
+
+# GEO knowledge pipeline: raw/private/copyrighted sources never enter git
+/sources/*
+!/sources/README.md
+/content/**/_drafts/
+/.content-cache/

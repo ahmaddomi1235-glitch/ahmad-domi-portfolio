@@ -1,0 +1,43 @@
+{
+  "$defaults": {
+    "type": "GlossaryTerm",
+    "unit": "cyber-security",
+    "learningAim": null,
+    "criterion": null,
+    "concepts": [],
+    "questions": [],
+    "sourceType": "ahmad-booklet",
+    "sourceReferences": [
+      { "kind": "pdf", "label": "دوسية تأسيس الأمن السيبراني — جيل 2009 (أحمد دومي)", "url": "/documents/teaching-materials/foundation-cybersecurity-ai-2009.pdf" }
+    ],
+    "youtubeId": null,
+    "author": "ahmad-domi",
+    "lastReviewed": "2026-10-04",
+    "visibility": "PUBLIC",
+    "related": [],
+    "officialSource": null,
+    "status": "published",
+    "reviewState": "definitions paraphrased from the author's booklet; pending author review"
+  },
+  "items": [
+    { "id": "term-threat", "term_ar": "التهديد", "term_en": "Threat", "conceptId": "threat-vulnerability-risk", "definition_ar": "أي عامل يمتلك القدرة على إحداث ضرر للبيانات أو الأجهزة أو الأنظمة، وقد يكون شخصًا أو برنامجًا خبيثًا أو كارثة طبيعية أو خطأً بشريًا أو انقطاعًا في التيار الكهربائي." },
+    { "id": "term-vulnerability", "term_ar": "الثغرة الأمنية", "term_en": "Vulnerability", "conceptId": "threat-vulnerability-risk", "definition_ar": "نقطة ضعف موجودة داخل النظام يمكن استغلالها للوصول إلى البيانات أو تنفيذ هجوم، مثل كلمة مرور ضعيفة أو برنامج غير محدَّث أو إعداد أمني خاطئ." },
+    { "id": "term-risk", "term_ar": "المخاطرة", "term_en": "Risk", "conceptId": "threat-vulnerability-risk", "definition_ar": "احتمال أن يستغل أحد التهديدات ثغرة موجودة وما يترتب على ذلك من خسائر؛ فهي تعتمد على وجود التهديد والثغرة معًا." },
+    { "id": "term-risk-assessment", "term_ar": "تقييم المخاطر", "term_en": "Risk Assessment", "conceptId": "threat-vulnerability-risk", "definition_ar": "عملية تبدأ بها المؤسسة لتحديد أولوياتها الأمنية، تجيب فيها عن أربعة أسئلة: ما الأصول المراد حمايتها؟ وما التهديدات التي قد تستهدفها؟ وما الثغرات الموجودة؟ وأي المخاطر يُعالَج أولًا؟" },
+    { "id": "term-asset", "term_ar": "الأصل", "term_en": "Asset", "conceptId": "why-data-is-the-target", "definition_ar": "كل ما تريد المؤسسة حمايته، وأهم أصولها الرقمية في العصر الحالي البيانات التي تحتفظ بها." },
+    { "id": "term-security-update", "term_ar": "التحديث الأمني", "term_en": "Security Update", "conceptId": "threat-vulnerability-risk", "definition_ar": "تحديث يعالج ثغرة معروفة في برنامج أو نظام. في هجوم WannaCry كان تحديث أمني متاحًا قبل الهجوم لكنه لم يُثبَّت على الأجهزة المصابة." },
+    { "id": "term-threat-actor", "term_ar": "جهة التهديد", "term_en": "Threat Actor", "conceptId": "hacker-types", "definition_ar": "الشخص أو الجهة التي تقف خلف التهديد، ويُصنَّف أصحابها بحسب الهدف والدافع إلى أنواع الهاكرز الستة." },
+    { "id": "term-white-hat", "term_ar": "القبعة البيضاء", "term_en": "White Hat Hacker", "conceptId": "hacker-types", "definition_ar": "الهاكر الأخلاقي الذي يعمل بتصريح رسمي لصالح مؤسسات لاكتشاف الثغرات قبل أن يستغلها المهاجمون، ويقدّم تقريرًا بنقاط الضعف وطرق معالجتها." },
+    { "id": "term-black-hat", "term_ar": "القبعة السوداء", "term_en": "Black Hat Hacker", "conceptId": "hacker-types", "definition_ar": "هاكر يستخدم مهاراته بصورة غير قانونية للوصول إلى الأنظمة أو سرقة البيانات أو ابتزاز الضحايا أو تحقيق مكاسب مالية." },
+    { "id": "term-grey-hat", "term_ar": "القبعة الرمادية", "term_en": "Grey Hat Hacker", "conceptId": "hacker-types", "definition_ar": "هاكر بين القبعة البيضاء والسوداء: قد يكتشف ثغرة دون تصريح ثم يبلّغ الشركة لاحقًا أو يطلب مكافأة مقابل الإفصاح، وقد تخالف طريقته القوانين." },
+    { "id": "term-script-kiddie", "term_ar": "المبتدئ", "term_en": "Script Kiddie", "conceptId": "hacker-types", "definition_ar": "شخص بلا خبرة تقنية كبيرة يعتمد على أدوات وبرامج جاهزة أنشأها آخرون دون فهم كامل لعملها، وقد يسبب أضرارًا حقيقية باستخدامها." },
+    { "id": "term-state-sponsored-hacker", "term_ar": "الهاكر المدعوم من دولة", "term_en": "State-Sponsored Hacker", "conceptId": "hacker-types", "definition_ar": "هاكر تدعمه حكومات أو جهات رسمية لتنفيذ عمليات تجسس أو جمع معلومات أو استهداف البنى التحتية لدول أخرى، وهجماته من أكثر الهجمات تعقيدًا." },
+    { "id": "term-hacktivist", "term_ar": "الهاكر الناشط", "term_en": "Hacktivist", "conceptId": "hacker-types", "definition_ar": "هاكر لا يكون هدفه المال، بل يستخدم الاختراق للتعبير عن موقف سياسي أو اجتماعي أو أيديولوجي." },
+    { "id": "term-ransomware", "term_ar": "برامج الفدية", "term_en": "Ransomware", "conceptId": "what-attackers-can-do", "definition_ar": "هجوم يشفّر فيه المهاجم ملفات الجهاز ويمنع صاحبها من الوصول إليها، ثم يطلب مبلغًا ماليًا مقابل مفتاح فك التشفير؛ ودفع الفدية لا يضمن استعادة البيانات." },
+    { "id": "term-malware", "term_ar": "البرمجيات الخبيثة", "term_en": "Malware", "conceptId": "what-attackers-can-do", "definition_ar": "برمجيات ضارة يعمل كثير منها بصمت لفترات طويلة لجمع البيانات أو مراقبة نشاط المستخدم دون إثارة الشكوك." },
+    { "id": "term-identity-impersonation", "term_ar": "انتحال الهوية", "term_en": "Identity Impersonation", "conceptId": "what-attackers-can-do", "definition_ar": "استخدام المهاجم للبريد أو حسابات التواصل أو بيانات الهوية لإرسال رسائل أو تنفيذ معاملات تبدو صادرة من المستخدم الحقيقي." },
+    { "id": "term-data-at-rest", "term_ar": "البيانات المخزَّنة", "term_en": "Data at Rest", "conceptId": "data-states", "definition_ar": "البيانات المحفوظة في مكان ما، مثل قواعد البيانات، وهي إحدى حالات البيانات الثلاث التي يجب حمايتها." },
+    { "id": "term-data-in-transit", "term_ar": "البيانات المنقولة", "term_en": "Data in Transit", "conceptId": "data-states", "definition_ar": "البيانات التي تنتقل من مكان إلى آخر عبر الشبكات، مثل انتقال صورة من جهازك عبر الإنترنت إلى الخادم." },
+    { "id": "term-data-in-processing", "term_ar": "البيانات قيد المعالجة", "term_en": "Data in Processing", "conceptId": "data-states", "definition_ar": "البيانات أثناء قيام النظام أو الخادم بمعالجتها، وتُسمّى أيضًا Data in Use، وهي من الحالات التي يجب حمايتها." }
+  ]
+}

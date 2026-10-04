@@ -1,0 +1,38 @@
+{
+  "$defaults": {
+    "type": "GlossaryTerm",
+    "unit": "data-modelling",
+    "learningAim": null,
+    "criterion": null,
+    "concepts": [],
+    "questions": [],
+    "sourceType": "ahmad-booklet",
+    "sourceReferences": [
+      { "kind": "pdf", "label": "دوسية تأسيس نمذجة البيانات ومعالجة المعلومات — جيل 2011 (أحمد دومي)", "url": "/documents/teaching-materials/foundation-data-modelling-2011.pdf" }
+    ],
+    "youtubeId": null,
+    "author": "ahmad-domi",
+    "lastReviewed": "2026-10-04",
+    "visibility": "PUBLIC",
+    "related": [],
+    "officialSource": null,
+    "status": "published",
+    "reviewState": "definitions paraphrased from the author's booklet; pending author review"
+  },
+  "items": [
+    { "id": "term-data", "term_ar": "البيانات", "term_en": "Data", "conceptId": "data-vs-information", "definition_ar": "مجموعة من الحقائق أو الأرقام أو الكلمات التي يتم جمعها، لكنها لا تمتلك معنى واضحًا عند النظر إليها بمفردها." },
+    { "id": "term-information", "term_ar": "المعلومات", "term_en": "Information", "conceptId": "data-vs-information", "definition_ar": "بيانات تمت معالجتها وتنظيمها وإعطاؤها معنى وسياقًا، فأصبحت قابلة للفهم والاستفادة منها." },
+    { "id": "term-raw-data", "term_ar": "البيانات الأولية", "term_en": "Raw Data", "conceptId": "data-vs-information", "definition_ar": "البيانات التي تُجمع أول مرة من مصدرها قبل أن تُنظَّم أو تُعدَّل أو تُحلَّل، وغالبًا تحتوي على أخطاء أو تكرار فلا يُعتمد عليها مباشرة في القرار." },
+    { "id": "term-data-processing", "term_ar": "معالجة البيانات", "term_en": "Data Processing", "conceptId": "data-vs-information", "definition_ar": "عملية تنظيم البيانات وتوحيدها وتجهيزها حتى تصبح قابلة للتحليل والاستفادة، وتشمل توحيد التنسيق وتصحيح الأخطاء واستكمال الناقص وإزالة المكرر." },
+    { "id": "term-data-cleaning", "term_ar": "تنقية البيانات", "term_en": "Data Cleaning", "conceptId": "data-quality", "definition_ar": "إزالة الأخطاء والقيم الناقصة أو المكررة من البيانات لتحسين جودتها قبل استخدامها في التحليل." },
+    { "id": "term-data-redundancy", "term_ar": "تكرار البيانات", "term_en": "Data Redundancy", "conceptId": "data-quality", "definition_ar": "تخزين المعلومة نفسها أكثر من مرة داخل قاعدة البيانات دون حاجة، مما يزيد الحجم ويبطئ البحث ويصعّب التحديث ويسبب نتائج غير دقيقة." },
+    { "id": "term-normalization", "term_ar": "تسوية البيانات", "term_en": "Normalization", "conceptId": "data-quality", "definition_ar": "تقسيم البيانات إلى جداول مترابطة بحيث تُخزَّن كل معلومة مرة واحدة فقط، مما يقلل التكرار ويحسّن كفاءة قاعدة البيانات." },
+    { "id": "term-data-quality", "term_ar": "جودة البيانات", "term_en": "Data Quality", "conceptId": "data-quality", "definition_ar": "مدى صلاحية البيانات للاستخدام في التحليل واتخاذ القرار، وتعتمد على الاكتمال والدقة والاتساق والحداثة." },
+    { "id": "term-completeness", "term_ar": "الاكتمال", "term_en": "Completeness", "conceptId": "data-quality", "definition_ar": "أن تكون جميع البيانات المطلوبة موجودة؛ فالبيانات الناقصة قد تؤدي إلى نتائج غير صحيحة." },
+    { "id": "term-accuracy", "term_ar": "الدقة", "term_en": "Accuracy", "conceptId": "data-quality", "definition_ar": "أن تمثل البيانات الواقع الحقيقي دون أخطاء؛ فالقرارات المبنية على بيانات غير دقيقة ستكون خاطئة." },
+    { "id": "term-consistency", "term_ar": "الاتساق", "term_en": "Consistency", "conceptId": "data-quality", "definition_ar": "أن تُسجَّل البيانات بالطريقة نفسها في جميع السجلات، كاستخدام تنسيق واحد للتاريخ وأرقام الهواتف." },
+    { "id": "term-timeliness", "term_ar": "الحداثة", "term_en": "Timeliness", "conceptId": "data-quality", "definition_ar": "أن تكون البيانات حديثة وتعكس الوضع الحالي؛ فالاعتماد على بيانات قديمة قد يؤدي إلى قرارات غير مناسبة." },
+    { "id": "term-data-modelling", "term_ar": "نمذجة البيانات", "term_en": "Data Modelling", "conceptId": "what-is-data-modelling", "definition_ar": "استخدام البيانات وتنظيمها وتحليلها لبناء نموذج يساعد على فهم الأنماط والتنبؤ بما قد يحدث مستقبلًا ودعم اتخاذ القرار." },
+    { "id": "term-predictive-analytics", "term_ar": "التحليلات التنبؤية", "term_en": "Predictive Analytics", "conceptId": "what-is-data-modelling", "definition_ar": "استخدام بيانات السنوات السابقة للتنبؤ بأمور مثل حجم المبيعات وعدد العملاء والإيرادات وكمية الإنتاج المطلوبة." }
+  ]
+}

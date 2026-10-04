@@ -1,0 +1,38 @@
+{
+  "id": "introduction-to-applications",
+  "type": "Unit",
+  "title_ar": "مدخل إلى التطبيقات",
+  "title_en": "Introduction to Applications",
+  "slug": "introduction-to-applications",
+  "summary": "شرح أحمد دومي لوحدة مدخل إلى التطبيقات (الصف العاشر) في BTEC IT: أنواع التطبيقات، تصميم تطبيق يلبي حاجة، المتطلبات والنموذج الأولي.",
+  "unit": null,
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    { "kind": "pdf", "label": "مدخل إلى التطبيقات — ملف الشرح (أحمد دومي)", "ref": "الفهرس", "url": "/documents/teaching-materials/intro-to-applications-target-a.pdf" },
+    { "kind": "pdf", "label": "مقدمة إلى التطبيقات: تصميم ومتطلبات — ورقة عمل (أحمد دومي)", "ref": "نبذة عن المادة", "url": "/documents/teaching-materials/applications-design-target-b.pdf" }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [],
+  "officialSource": null,
+  "status": "published",
+  "needsVerification": true,
+  "reviewState": "hub only; summarises the tables of contents of the author's explanation file and worksheet; pending author review",
+  "order": 6,
+  "description": "مادة الصف العاشر التي تأخذ الطالب في رحلة منظّمة: ما هو التطبيق وما أنواعه، كيف تصمّم تطبيقًا يلبّي حاجة حقيقية، ثم كيف تنتقل من الفكرة إلى النموذج الأولي والاختبار والتحسين.",
+  "intro": [
+    { "t": "p", "text": "تغطي مادة **مدخل إلى التطبيقات** عند أحمد دومي مسارين متكاملين: ملف شرح عن أنواع التطبيقات (معلومات، تنقل وخرائط، ترفيه، تواصل، واقع معزز) وعن تصميم تطبيق من تحديد الهدف والمستخدم والوظائف إلى النموذج الأولي والاختبار، وورقة عمل عن المتطلبات الوظيفية وغير الوظيفية وتجربة المستخدم والمخططات الانسيابية والرمز الزائف والتحقق من البيانات." },
+    { "t": "p", "text": "هذه الصفحة تعرّف بالمادة وتربطك بملفاتها ودروسها المصوّرة. صفحات المفاهيم التفصيلية ستُنشر بعد المراجعة." }
+  ],
+  "axes": [],
+  "axesSource": "",
+  "resourceIds": ["res-intro-to-applications-target-a", "res-applications-design-target-b"],
+  "cardId": null,
+  "comingSoon": ["أنواع التطبيقات", "المتطلبات الوظيفية وغير الوظيفية", "تجربة المستخدم والنموذج الأولي"]
+}

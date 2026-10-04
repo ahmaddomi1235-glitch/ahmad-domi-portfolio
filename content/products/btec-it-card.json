@@ -1,0 +1,50 @@
+{
+  "id": "btec-it-card",
+  "type": "Product",
+  "title_ar": "بطاقة BTEC IT — أحمد دومي",
+  "title_en": "BTEC IT Card — Ahmad Domi",
+  "slug": "btec-it-card",
+  "summary": "بطاقات تعليمية من أحمد دومي لوحدات BTEC IT: شروحات مصوّرة ومواد دعم وإرشاد للواجبات، مع فيديو تجريبي مجاني قبل الحجز.",
+  "unit": null,
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "tool-source",
+  "sourceReferences": [
+    { "kind": "web", "label": "منصة معاينة البطاقات (أول فيديو مجاني من كل بطاقة)", "url": "https://ahmaddomi-edu.vercel.app" }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": ["cyber-security", "artificial-intelligence", "data-modelling"],
+  "officialSource": null,
+  "status": "published",
+  "needsVerification": true,
+  "reviewState": "unit list and booking flow taken from the live preview platform; prices recorded but hidden (showPrice=false) until the author confirms they are current; report-review inclusion unknown",
+  "description": "البطاقة مادة تعليمية مدفوعة تشرح وحدات BTEC IT بأسلوب أحمد دومي. هذه الصفحة تصف ما تغطيه ولمن تناسب وكيف تحجزها، ولا تتضمن محتوى البطاقة نفسه.",
+  "audience": [
+    "طلبة BTEC IT في الأردن الذين يريدون شرحًا منظّمًا بالعربي للوحدة",
+    "من شاهدوا الفيديو التجريبي وأعجبهم أسلوب الشرح"
+  ],
+  "includes": [
+    { "unit": "cyber-security", "title_ar": "بطاقة الأمن السيبراني", "priceJOD": 85 },
+    { "unit": "artificial-intelligence", "title_ar": "بطاقة الذكاء الاصطناعي", "priceJOD": 85 },
+    { "unit": "data-modelling", "title_ar": "بطاقة نمذجة البيانات (تُحجز مع بطاقة استخدام تكنولوجيا المعلومات)", "priceJOD": 45 }
+  ],
+  "support": [
+    "شرح مصوّر للوحدة بالعربي مع المصطلحات الإنجليزية",
+    "مواد دعم وتوضيح لمتطلبات الواجبات",
+    "متابعة الاستفسارات عبر فريق الدعم على واتساب"
+  ],
+  "howToGet": [
+    { "label": "شاهد أول فيديو مجانًا من كل بطاقة ثم احجز عبر واتساب", "url": "https://ahmaddomi-edu.vercel.app" }
+  ],
+  "showPrice": false,
+  "currency": "JOD",
+  "reportReview": "unknown",
+  "excluded": [
+    "محتوى البطاقة نفسه لا يُنشر على هذا الموقع؛ الصفحات العامة هنا شرح تعليمي مستقل عنه"
+  ]
+}

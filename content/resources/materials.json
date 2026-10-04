@@ -1,0 +1,108 @@
+{
+  "$defaults": {
+    "type": "EducationalResource",
+    "learningAim": null,
+    "criterion": null,
+    "concepts": [],
+    "questions": [],
+    "sourceType": "ahmad-booklet",
+    "youtubeId": null,
+    "author": "ahmad-domi",
+    "lastReviewed": "2026-10-04",
+    "visibility": "PUBLIC",
+    "officialSource": null,
+    "status": "published",
+    "reviewState": "already published on the portfolio as a free download"
+  },
+  "items": [
+    {
+      "id": "res-foundation-cybersecurity-ai-2009",
+      "materialId": "foundation-cybersecurity-ai-2009",
+      "kind": "booklet",
+      "unit": "cyber-security",
+      "related": ["artificial-intelligence"],
+      "title_ar": "دوسية تأسيس: الأمن السيبراني ومبادئ الذكاء الاصطناعي (جيل 2009)",
+      "title_en": "Foundation Booklet: Cybersecurity and AI Principles (Class of 2009)",
+      "slug": "foundation-cybersecurity-ai-2009",
+      "summary": "دوسية تأسيسية تغطي مفاهيم مدخلية في الأمن السيبراني ومبادئ الذكاء الاصطناعي، أعدّها أحمد دومي لتهيئة الطلبة للوحدتين.",
+      "sourceReferences": [{ "kind": "pdf", "label": "foundation-cybersecurity-ai-2009.pdf", "url": "/documents/teaching-materials/foundation-cybersecurity-ai-2009.pdf" }]
+    },
+    {
+      "id": "res-foundation-data-modelling-2011",
+      "materialId": "foundation-data-modelling-2011",
+      "kind": "booklet",
+      "unit": "data-modelling",
+      "related": [],
+      "title_ar": "دوسية تأسيس: نمذجة البيانات ومعالجة المعلومات (جيل 2011)",
+      "title_en": "Foundation Booklet: Data Modelling and Information Processing (Class of 2011)",
+      "slug": "foundation-data-modelling-2011",
+      "summary": "دوسية تأسيسية لمراجعة أساسيات نمذجة البيانات ومعالجة المعلومات قبل بدء الوحدة.",
+      "sourceReferences": [{ "kind": "pdf", "label": "foundation-data-modelling-2011.pdf", "url": "/documents/teaching-materials/foundation-data-modelling-2011.pdf" }]
+    },
+    {
+      "id": "res-project-management-unit",
+      "materialId": "project-management-unit",
+      "kind": "unit-book",
+      "unit": "it-project-management",
+      "related": [],
+      "title_ar": "إدارة مشاريع أنظمة تكنولوجيا المعلومات — كتاب الوحدة",
+      "title_en": "IT Systems Project Management — Unit Book",
+      "slug": "project-management-unit",
+      "summary": "مادة تعليمية كاملة لوحدة إدارة المشاريع في BTEC IT: بدء الفكرة، توليد الحلول، تقييمها، وبناء متطلبات المشروع.",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [{ "kind": "pdf", "label": "project-management-unit.pdf", "url": "/documents/teaching-materials/project-management-unit.pdf" }]
+    },
+    {
+      "id": "res-ai-introduction-applications",
+      "materialId": "ai-introduction-applications",
+      "kind": "unit-book",
+      "unit": "artificial-intelligence",
+      "related": [],
+      "title_ar": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة",
+      "title_en": "Introduction to AI and Its Applications — Unit Book",
+      "slug": "ai-introduction-applications",
+      "summary": "مادة شاملة حول بيانات الذكاء الاصطناعي ومصادرها وتنسيقاتها، والتحيز في البيانات، وحماية بيانات أنظمة الذكاء الاصطناعي.",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [{ "kind": "pdf", "label": "ai-introduction-applications.pdf", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }]
+    },
+    {
+      "id": "res-intro-to-applications-target-a",
+      "materialId": "intro-to-applications-target-a",
+      "kind": "explanation",
+      "unit": "introduction-to-applications",
+      "related": [],
+      "title_ar": "مدخل إلى التطبيقات — ملف الشرح (الصف العاشر)",
+      "title_en": "Introduction to Applications — Explanation File (Grade 10)",
+      "slug": "intro-to-applications-target-a",
+      "summary": "ملف شرح لطلبة الصف العاشر عن أنواع التطبيقات، ودورة تطويرها، وخصائص التطبيقات الجيدة.",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [{ "kind": "pdf", "label": "intro-to-applications-target-a.pdf", "url": "/documents/teaching-materials/intro-to-applications-target-a.pdf" }]
+    },
+    {
+      "id": "res-applications-design-target-b",
+      "materialId": "applications-design-target-b",
+      "kind": "worksheet",
+      "unit": "introduction-to-applications",
+      "related": [],
+      "title_ar": "مقدمة إلى التطبيقات: تصميم ومتطلبات — ورقة عمل (الصف العاشر)",
+      "title_en": "Introduction to Applications: Design and Requirements — Worksheet (Grade 10)",
+      "slug": "applications-design-target-b",
+      "summary": "ورقة عمل لطلبة الصف العاشر حول المتطلبات الوظيفية وغير الوظيفية، وقصص المستخدم، والنماذج الأولية.",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [{ "kind": "pdf", "label": "applications-design-target-b.pdf", "url": "/documents/teaching-materials/applications-design-target-b.pdf" }]
+    },
+    {
+      "id": "res-web-development-principles",
+      "materialId": "web-development-principles",
+      "kind": "explanation",
+      "unit": "website-development",
+      "related": [],
+      "title_ar": "فهم مبادئ تطوير المواقع الإلكترونية — ملف الشرح",
+      "title_en": "Understanding Website Development Principles — Explanation File",
+      "slug": "web-development-principles",
+      "summary": "ملف شرح حول أنواع المواقع ومتطلباتها ومبادئ التصميم وأساسيات تحسين محركات البحث والأداء.",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [{ "kind": "pdf", "label": "web-development-principles.pdf", "url": "/documents/teaching-materials/web-development-principles.pdf" }]
+    }
+  ]
+}

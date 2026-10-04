@@ -1,0 +1,34 @@
+{
+  "$defaults": {
+    "type": "GlossaryTerm",
+    "unit": "it-project-management",
+    "learningAim": null,
+    "criterion": null,
+    "concepts": [],
+    "questions": [],
+    "sourceType": "ahmad-unit-book",
+    "sourceReferences": [
+      { "kind": "pdf", "label": "إدارة مشاريع أنظمة تكنولوجيا المعلومات — كتاب الوحدة (أحمد دومي)", "url": "/documents/teaching-materials/project-management-unit.pdf" }
+    ],
+    "youtubeId": null,
+    "author": "ahmad-domi",
+    "lastReviewed": "2026-10-04",
+    "visibility": "PUBLIC",
+    "related": [],
+    "officialSource": null,
+    "status": "published",
+    "reviewState": "definitions paraphrased from the author's unit book; pending author review"
+  },
+  "items": [
+    { "id": "term-project", "term_ar": "المشروع", "term_en": "Project", "conceptId": "project-vs-routine-operations", "definition_ar": "عمل مؤقت له بداية ونهاية، يستخدم موارد بشرية ومالية وتقنية محددة للوصول إلى نتيجة متفق عليها، ويهدف إلى إحداث تغيير أو إنشاء شيء جديد." },
+    { "id": "term-operational-work", "term_ar": "العمل التشغيلي", "term_en": "Operational Work", "conceptId": "project-vs-routine-operations", "definition_ar": "الأنشطة التي تتكرر بشكل شبه يومي للحفاظ على سير عمل المؤسسة، ولا تهدف إلى تغيير جذري، وتستمر طوال حياة المؤسسة." },
+    { "id": "term-stakeholders", "term_ar": "أصحاب المصلحة", "term_en": "Stakeholders", "conceptId": "project-stakeholders", "definition_ar": "الأطراف التي يهمها المشروع وتتأثر بنتائجه بشكل مباشر أو غير مباشر، مثل الإدارة والمستخدمين والطلبة وأولياء الأمور وفريق تقنية المعلومات والموردين." },
+    { "id": "term-project-scope", "term_ar": "نطاق المشروع", "term_en": "Project Scope", "conceptId": "project-scope", "definition_ar": "الوصف الرسمي لما سيُنفَّذ فعلًا داخل المشروع وما لن يُنفَّذ في هذه المرحلة." },
+    { "id": "term-scope-creep", "term_ar": "توسّع النطاق", "term_en": "Scope Creep", "conceptId": "project-scope", "definition_ar": "أن يبدأ المشروع بهدف محدد ثم تُضاف إليه طلبات جديدة تباعًا دون تعديل الجدول الزمني والميزانية، فيتأخر التسليم وتزداد الأعباء على الفريق." },
+    { "id": "term-project-constraints", "term_ar": "قيود المشروع", "term_en": "Project Constraints", "conceptId": "project-constraints", "definition_ar": "إطار لا يمكن تجاهله يعمل داخله كل مشروع، وأهم عناصره ثلاثة مترابطة: الوقت والميزانية والجودة." },
+    { "id": "term-project-risk", "term_ar": "الخطر في المشروع", "term_en": "Project Risk", "conceptId": "risk-vs-issue", "definition_ar": "حدث محتمل لم يقع بعد، له احتمال معين للحدوث، وإذا حدث أثّر سلبًا في الوقت أو التكلفة أو الجودة أو رضا المستخدمين." },
+    { "id": "term-project-issue", "term_ar": "المشكلة في المشروع", "term_en": "Project Issue", "conceptId": "risk-vs-issue", "definition_ar": "حدث وقع بالفعل في المشروع، مثل تعطل خادم قيد الاستخدام، ويتطلب استجابة فورية من الفريق لحلّه أو تقليل أثره." },
+    { "id": "term-project-lifecycle", "term_ar": "دورة حياة المشروع", "term_en": "Project Lifecycle", "conceptId": "project-lifecycle", "definition_ar": "سلسلة المراحل المتتابعة التي يمر بها المشروع من الفكرة إلى الإغلاق: البدء، التخطيط، التنفيذ، المراقبة والتحكم، الإغلاق والتقييم." },
+    { "id": "term-lessons-learned", "term_ar": "الدروس المستفادة", "term_en": "Lessons Learned", "conceptId": "project-lifecycle", "definition_ar": "النقاط الإيجابية والسلبية التي يسجّلها الفريق عند مراجعة المشروع في مرحلة الإغلاق ليستفيد منها في المشاريع القادمة." }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "it-project-management",
+  "type": "Unit",
+  "title_ar": "إدارة مشاريع أنظمة تكنولوجيا المعلومات",
+  "title_en": "IT Project Management",
+  "slug": "it-project-management",
+  "summary": "شرح وحدة إدارة المشاريع في BTEC IT بالعربي: المشروع مقابل العمل الروتيني، أصحاب المصلحة، النطاق، القيود، المخاطر والمشكلات، ودورة الحياة.",
+  "unit": null,
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    { "kind": "pdf", "label": "إدارة مشاريع أنظمة تكنولوجيا المعلومات — كتاب الوحدة (أحمد دومي)", "ref": "الجزء الأول", "url": "/documents/teaching-materials/project-management-unit.pdf" }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [],
+  "officialSource": null,
+  "status": "published",
+  "needsVerification": true,
+  "reviewState": "assistant-drafted from the author's unit book and lesson video; pending author review",
+  "order": 4,
+  "description": "تبدأ الوحدة من سؤال بسيط: ما الذي يجعل نشاطًا ما مشروعًا؟ ومن الجواب تتفرّع مفاهيم الجزء الأول: العمل المؤقت، أصحاب المصلحة، النطاق، القيود الثلاثة، المخاطر والمشكلات، ثم المراحل التي يمرّ بها المشروع من الفكرة إلى الإغلاق.",
+  "intro": [
+    { "t": "p", "text": "إدارة مشاريع أنظمة تكنولوجيا المعلومات تُدرَّس في BTEC IT على أنها طريقة منظّمة لتحويل فكرة إلى نظام يعمل، ضمن **وقت** و**ميزانية** و**جودة** متفق عليها. الصفحات هنا تشرح الأفكار الستّ التي يقوم عليها الجزء الأول من كتاب الوحدة." },
+    { "t": "p", "text": "كل صفحة تأخذ أمثلتها من الكتاب نفسه (نظام تسجيل في مدرسة، حجز مواعيد في مركز صحي)، لتتعلّم الفكرة بالمثال لا بالتعريف المجرّد." }
+  ],
+  "axes": [],
+  "axesSource": "",
+  "resourceIds": ["res-project-management-unit"],
+  "cardId": null,
+  "comingSoon": ["منهجيات إدارة المشاريع: الخطية والتكرارية والمرنة"]
+}

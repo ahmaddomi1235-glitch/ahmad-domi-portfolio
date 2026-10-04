@@ -1,0 +1,703 @@
+{
+  "$defaults": {
+    "type": "Video",
+    "learningAim": null,
+    "criterion": null,
+    "questions": [],
+    "sourceType": "ahmad-video",
+    "author": "ahmad-domi",
+    "lastReviewed": "2026-10-04",
+    "visibility": "PUBLIC",
+    "related": [],
+    "officialSource": null,
+    "status": "published",
+    "youtubeId": null,
+    "reviewState": "metadata imported from the public channel; concept mapping verified against captions where hasTranscript is true; chapters timed to caption paragraphs (±30s)"
+  },
+  "playlists": {
+    "PLVYtqWFUiiG8": "نمذجة البيانات 2011",
+    "PLLG6M-sTw6vQ4DXObvRdHzjXeMlLOyRjT": "إدارة المشاريع -توجيهي",
+    "PLLG6M-sTw6vQcIqPVmKWKhpoHmCQLVgLK": "الصف العاشر ، مدخل إلى التطبيقات"
+  },
+  "items": [
+    {
+      "id": "video-lhwsfbsgrzq",
+      "youtubeId": "LhwsFbsgrZQ",
+      "originalTitle": "تأسيس جيل 2009 || طلاب BTEC IT || الاستاذ احمد دومي || منصة اساس التعليمية",
+      "conceptTitle_ar": "مقدمة تأسيس جيل 2009: خطة دوسية الأمن السيبراني والذكاء الاصطناعي",
+      "summary": "تأسيس جيل 2009 — المقدمة: مقدمة تأسيس جيل 2009: خطة دوسية الأمن السيبراني والذكاء الاصطناعي",
+      "duration": 631,
+      "uploadDate": "2026-07-17",
+      "playlistId": null,
+      "unitId": "cyber-security",
+      "conceptIds": [],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "تأسيس جيل 2009 — المقدمة"
+    },
+    {
+      "id": "video-ejgiuoaczmy",
+      "youtubeId": "EJGiUOACZmY",
+      "originalTitle": "الحصة الأولى || تأسيس جيل 2009 || تكنولوجيا المعلومات الأمن السيبراني ||",
+      "conceptTitle_ar": "رحلة البيانات: لماذا أصبحت البيانات الهدف الأول في الأمن السيبراني؟",
+      "summary": "تأسيس جيل 2009 — الحصة الأولى: رحلة البيانات: لماذا أصبحت البيانات الهدف الأول في الأمن السيبراني؟",
+      "duration": 762,
+      "uploadDate": "2026-07-18",
+      "playlistId": null,
+      "unitId": "cyber-security",
+      "conceptIds": [
+        "why-data-is-the-target",
+        "data-states"
+      ],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [
+        {
+          "t": 0,
+          "title": "لماذا البيانات أهم من الأجهزة؟"
+        },
+        {
+          "t": 158,
+          "title": "البيانات هي النفط الجديد"
+        },
+        {
+          "t": 190,
+          "title": "ما المقصود بالبيانات؟"
+        },
+        {
+          "t": 284,
+          "title": "رحلة البيانات: من الإنشاء إلى الاسترجاع"
+        },
+        {
+          "t": 379,
+          "title": "حالات البيانات: التخزين والنقل والمعالجة"
+        },
+        {
+          "t": 537,
+          "title": "على أرض الواقع: هجوم WannaCry"
+        },
+        {
+          "t": 637,
+          "title": "لماذا يهتم الأمن السيبراني بالبيانات؟"
+        }
+      ],
+      "lessonLabel": "تأسيس جيل 2009 — الحصة الأولى"
+    },
+    {
+      "id": "video-wkgvnc6jkps",
+      "youtubeId": "WKGvNc6JKPs",
+      "originalTitle": "الحصة الثانية || تأسيس جيل 2009 || طلاب BTEC IT || الاستاذ احمد دومي || منصة اساس التعليمية",
+      "conceptTitle_ar": "أنواع الهاكرز ودوافعهم: من يقف خلف الشاشة؟",
+      "summary": "تأسيس جيل 2009 — الحصة الثانية: أنواع الهاكرز ودوافعهم: من يقف خلف الشاشة؟",
+      "duration": 607,
+      "uploadDate": "2026-07-20",
+      "playlistId": null,
+      "unitId": "cyber-security",
+      "conceptIds": [
+        "hacker-types"
+      ],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [
+        {
+          "t": 0,
+          "title": "من هو الهاكر؟ وهل كل الهاكرز مجرمون؟"
+        },
+        {
+          "t": 32,
+          "title": "القبعة البيضاء (White Hat)"
+        },
+        {
+          "t": 190,
+          "title": "القبعة السوداء (Black Hat)"
+        },
+        {
+          "t": 253,
+          "title": "القبعة الرمادية (Grey Hat)"
+        },
+        {
+          "t": 315,
+          "title": "المبتدئ (Script Kiddie)"
+        },
+        {
+          "t": 346,
+          "title": "الهاكر المدعوم من دولة"
+        },
+        {
+          "t": 378,
+          "title": "الهاكر الناشط (Hacktivist)"
+        },
+        {
+          "t": 411,
+          "title": "على أرض الواقع: Stuxnet"
+        },
+        {
+          "t": 475,
+          "title": "هل جميع الهاكرز متشابهون؟"
+        }
+      ],
+      "lessonLabel": "تأسيس جيل 2009 — الحصة الثانية"
+    },
+    {
+      "id": "video-45cujddjcls",
+      "youtubeId": "45CuJDDJcls",
+      "originalTitle": "الحصة الثالثة || تأسيس جيل 2009 || طلاب BTEC IT || الاستاذ احمد دومي || منصة اساس التعليمية",
+      "conceptTitle_ar": "ماذا يستطيع المهاجم أن يفعل عندما يصل إلى جهازك؟",
+      "summary": "تأسيس جيل 2009 — الحصة الثالثة: ماذا يستطيع المهاجم أن يفعل عندما يصل إلى جهازك؟",
+      "duration": 404,
+      "uploadDate": "2026-07-20",
+      "playlistId": null,
+      "unitId": "cyber-security",
+      "conceptIds": [
+        "what-attackers-can-do"
+      ],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [
+        {
+          "t": 0,
+          "title": "برمجيات خبيثة تعمل بصمت"
+        },
+        {
+          "t": 62,
+          "title": "ماذا يستطيع الهاكر أن يفعل؟"
+        },
+        {
+          "t": 93,
+          "title": "الوصول إلى الملفات الشخصية"
+        },
+        {
+          "t": 126,
+          "title": "سرقة كلمات المرور ومراقبة النشاط"
+        },
+        {
+          "t": 188,
+          "title": "انتحال الهوية"
+        },
+        {
+          "t": 220,
+          "title": "تشفير البيانات وطلب فدية"
+        },
+        {
+          "t": 252,
+          "title": "تحويل الجهاز إلى أداة للهجوم"
+        },
+        {
+          "t": 283,
+          "title": "على أرض الواقع: WannaCry"
+        },
+        {
+          "t": 314,
+          "title": "هل كل هذه الأفعال تُعدّ هجومًا؟"
+        }
+      ],
+      "lessonLabel": "تأسيس جيل 2009 — الحصة الثالثة"
+    },
+    {
+      "id": "video-qvjvvt-yxek",
+      "youtubeId": "qVjvVT-YxEk",
+      "originalTitle": "الحصة الرابعة تأسيس أمن سيبراني BTEC IT 2009|| الاستاذ احمد دومي",
+      "conceptTitle_ar": "الفرق بين التهديد والثغرة والمخاطرة (Threat vs Vulnerability vs Risk)",
+      "summary": "تأسيس جيل 2009 — الحصة الرابعة: الفرق بين التهديد والثغرة والمخاطرة (Threat vs Vulnerability vs Risk)",
+      "duration": 753,
+      "uploadDate": "2026-07-26",
+      "playlistId": null,
+      "unitId": "cyber-security",
+      "conceptIds": [
+        "threat-vulnerability-risk"
+      ],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [
+        {
+          "t": 0,
+          "title": "مقدمة: لماذا تختلف المفاهيم الثلاثة؟"
+        },
+        {
+          "t": 35,
+          "title": "ثغرات معروفة لم تُعالَج"
+        },
+        {
+          "t": 99,
+          "title": "ما هو التهديد (Threat)؟"
+        },
+        {
+          "t": 164,
+          "title": "ما هي الثغرة (Vulnerability)؟"
+        },
+        {
+          "t": 225,
+          "title": "ما هي المخاطرة (Risk)؟"
+        },
+        {
+          "t": 289,
+          "title": "العلاقة بين المفاهيم الثلاثة: مثال الجامعة"
+        },
+        {
+          "t": 353,
+          "title": "على أرض الواقع: WannaCry"
+        },
+        {
+          "t": 383,
+          "title": "لماذا تُقيِّم المؤسسات المخاطر؟"
+        },
+        {
+          "t": 446,
+          "title": "الأسئلة الأربعة لتقييم المخاطر"
+        },
+        {
+          "t": 478,
+          "title": "مثال: تكلفة إغلاق الثغرة مقابل حجم الخسارة"
+        },
+        {
+          "t": 606,
+          "title": "الخلط الشائع في الواجبات"
+        },
+        {
+          "t": 637,
+          "title": "كيف يبدأ خبير الأمن تقريره؟"
+        },
+        {
+          "t": 701,
+          "title": "ملخص الدوسية"
+        }
+      ],
+      "lessonLabel": "تأسيس جيل 2009 — الحصة الرابعة"
+    },
+    {
+      "id": "video-1fq9n-o-g1s",
+      "youtubeId": "1fQ9n-o_G1s",
+      "originalTitle": "حصص التأسيس الحصة السادسة || الذكاء الاصطناعي | جيل 2009 || الاستاذ احمد دومي || منصة اساس التعليمية",
+      "conceptTitle_ar": "كيف يتعلم الذكاء الاصطناعي؟ البيانات والخوارزمية والنموذج وتعلّم الآلة",
+      "summary": "تأسيس جيل 2009 — مبادئ الذكاء الاصطناعي: الحصة الأولى: كيف يتعلم الذكاء الاصطناعي؟ البيانات والخوارزمية والنموذج وتعلّم الآلة",
+      "duration": 597,
+      "uploadDate": "2026-07-26",
+      "playlistId": null,
+      "unitId": "artificial-intelligence",
+      "conceptIds": [
+        "ai-vs-machine-learning-vs-deep-learning"
+      ],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [
+        {
+          "t": 0,
+          "title": "ما هو الذكاء الاصطناعي؟"
+        },
+        {
+          "t": 68,
+          "title": "البرمجة التقليدية مقابل الذكاء الاصطناعي"
+        },
+        {
+          "t": 161,
+          "title": "مراحل تعلّم الذكاء الاصطناعي"
+        },
+        {
+          "t": 258,
+          "title": "الخوارزمية والنموذج"
+        },
+        {
+          "t": 290,
+          "title": "تعلّم الآلة (Machine Learning)"
+        },
+        {
+          "t": 322,
+          "title": "التعلم العميق والشبكات العصبية"
+        },
+        {
+          "t": 416,
+          "title": "معالجة اللغة الطبيعية (NLP)"
+        },
+        {
+          "t": 446,
+          "title": "الرؤية الحاسوبية (Computer Vision)"
+        },
+        {
+          "t": 510,
+          "title": "الأنظمة الخبيرة (Expert Systems)"
+        },
+        {
+          "t": 540,
+          "title": "الخلاصة"
+        }
+      ],
+      "lessonLabel": "تأسيس جيل 2009 — مبادئ الذكاء الاصطناعي: الحصة الأولى"
+    },
+    {
+      "id": "video-kwk2jltwguk",
+      "youtubeId": "KWk2JLTwGUk",
+      "originalTitle": "الحصة الخامسة تأسيس جيل 2009 BTEC IT || الاستاذ احمد دومي",
+      "conceptTitle_ar": "الذكاء الاصطناعي من حولنا: التطبيقات والفوائد والتحديات",
+      "summary": "تأسيس جيل 2009 — مبادئ الذكاء الاصطناعي: الحصة الثانية: الذكاء الاصطناعي من حولنا: التطبيقات والفوائد والتحديات",
+      "duration": 462,
+      "uploadDate": "2026-07-26",
+      "playlistId": null,
+      "unitId": "artificial-intelligence",
+      "conceptIds": [
+        "ai-bias",
+        "ai-privacy"
+      ],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "تأسيس جيل 2009 — مبادئ الذكاء الاصطناعي: الحصة الثانية"
+    },
+    {
+      "id": "video-qrrdusijw5g",
+      "youtubeId": "QRrdUSIJW5g",
+      "originalTitle": "تأسيس جيل 2011 BTEC IT || نمذجة البيانات الحصة الأولى || الاستاذ احمد دومي",
+      "conceptTitle_ar": "رحلة البيانات: كيف تتحول البيانات الخام إلى معلومات؟",
+      "summary": "تأسيس جيل 2011 — الحصة الأولى: رحلة البيانات: كيف تتحول البيانات الخام إلى معلومات؟",
+      "duration": 1222,
+      "uploadDate": "2026-07-26",
+      "playlistId": "PLVYtqWFUiiG8",
+      "unitId": "data-modelling",
+      "conceptIds": [
+        "data-vs-information"
+      ],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "تأسيس جيل 2011 — الحصة الأولى"
+    },
+    {
+      "id": "video-i-1yr31bplu",
+      "youtubeId": "I_1Yr31BPlU",
+      "originalTitle": "تأسيس جيل 2011 BTEC IT || نمذجة البيانات || احمد دومي",
+      "conceptTitle_ar": "من أين تأتي البيانات؟ مصادر البيانات وجودتها",
+      "summary": "تأسيس جيل 2011 — الحصة الثانية: من أين تأتي البيانات؟ مصادر البيانات وجودتها",
+      "duration": 1266,
+      "uploadDate": "2026-07-26",
+      "playlistId": "PLVYtqWFUiiG8",
+      "unitId": "data-modelling",
+      "conceptIds": [
+        "data-sources",
+        "data-quality"
+      ],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "تأسيس جيل 2011 — الحصة الثانية"
+    },
+    {
+      "id": "video-jw6amr-oq0c",
+      "youtubeId": "jw6aMr_Oq0c",
+      "originalTitle": "BTEC IT Class of 2011 Foundation || Lesson 3 || Data Modeling || Mr. Ahmad Doumi",
+      "conceptTitle_ar": "ما هي نمذجة البيانات؟ كيف تتنبأ المؤسسات بالمستقبل",
+      "summary": "تأسيس جيل 2011 — الحصة الثالثة: ما هي نمذجة البيانات؟ كيف تتنبأ المؤسسات بالمستقبل",
+      "duration": 687,
+      "uploadDate": "2026-07-26",
+      "playlistId": "PLVYtqWFUiiG8",
+      "unitId": "data-modelling",
+      "conceptIds": [
+        "what-is-data-modelling"
+      ],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "تأسيس جيل 2011 — الحصة الثالثة"
+    },
+    {
+      "id": "video-sntljxgynpq",
+      "youtubeId": "sNTljXGYnpQ",
+      "originalTitle": "مقدمة في الذكاء الاصطناعي - BTEC IT - منصة اساس التعليمية",
+      "conceptTitle_ar": "مقدمة وحدة مقدمة في الذكاء الاصطناعي (BTEC IT)",
+      "summary": "وحدة الذكاء الاصطناعي — المقدمة: مقدمة وحدة مقدمة في الذكاء الاصطناعي (BTEC IT)",
+      "duration": 626,
+      "uploadDate": "2025-12-29",
+      "playlistId": null,
+      "unitId": "artificial-intelligence",
+      "conceptIds": [],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "وحدة الذكاء الاصطناعي — المقدمة"
+    },
+    {
+      "id": "video-klwepp5fctq",
+      "youtubeId": "KlWePP5FCtQ",
+      "originalTitle": "BTEC IT - الحصة الاولى البيانات في الذكاء الاصطناعي - منصة اساس التعليمية",
+      "conceptTitle_ar": "أنواع البيانات في الذكاء الاصطناعي: مهيكلة وشبه مهيكلة وغير مهيكلة",
+      "summary": "وحدة الذكاء الاصطناعي — الحصة الأولى: البيانات: أنواع البيانات في الذكاء الاصطناعي: مهيكلة وشبه مهيكلة وغير مهيكلة",
+      "duration": 1540,
+      "uploadDate": "2025-12-29",
+      "playlistId": null,
+      "unitId": "artificial-intelligence",
+      "conceptIds": [
+        "ai-data-types"
+      ],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "وحدة الذكاء الاصطناعي — الحصة الأولى: البيانات"
+    },
+    {
+      "id": "video-0mi5rqfzvla",
+      "youtubeId": "0mI5rQfzvLA",
+      "originalTitle": "منصة اساس التعليمية - BTEC IT - مقدمة في ادارة مشاريع انظمة تكنولوجيا المعلومات",
+      "conceptTitle_ar": "مقدمة وحدة إدارة مشاريع أنظمة تكنولوجيا المعلومات",
+      "summary": "إدارة المشاريع — المقدمة: مقدمة وحدة إدارة مشاريع أنظمة تكنولوجيا المعلومات",
+      "duration": 312,
+      "uploadDate": "2025-12-29",
+      "playlistId": null,
+      "unitId": "it-project-management",
+      "conceptIds": [],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "إدارة المشاريع — المقدمة"
+    },
+    {
+      "id": "video-zqk-euirbm0",
+      "youtubeId": "zQk-eUIrbM0",
+      "originalTitle": "الحصة الاولى - ادارة المشاريع - مفهوم المشروع - BTEC IT - منصة اساس التعليمية",
+      "conceptTitle_ar": "مفهوم المشروع: الفرق بين المشروع والعمل الروتيني، وأصحاب المصلحة والنطاق والقيود والمخاطر",
+      "summary": "إدارة المشاريع — الحصة الأولى: مفهوم المشروع: الفرق بين المشروع والعمل الروتيني، وأصحاب المصلحة والنطاق والقيود والمخاطر",
+      "duration": 2454,
+      "uploadDate": "2025-12-29",
+      "playlistId": null,
+      "unitId": "it-project-management",
+      "conceptIds": [
+        "project-vs-routine-operations",
+        "project-stakeholders",
+        "project-scope",
+        "project-constraints",
+        "risk-vs-issue"
+      ],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [
+        {
+          "t": 0,
+          "title": "تعريف المشروع: عمل مؤقت له بداية ونهاية"
+        },
+        {
+          "t": 407,
+          "title": "المشروع مقابل العمل التشغيلي اليومي"
+        },
+        {
+          "t": 854,
+          "title": "أصحاب المصلحة (Stakeholders)"
+        },
+        {
+          "t": 1451,
+          "title": "دور مدير المشروع: الموازنة بين الأطراف"
+        },
+        {
+          "t": 1513,
+          "title": "نطاق المشروع وتوسّع النطاق (Scope Creep)"
+        },
+        {
+          "t": 1805,
+          "title": "القيود الثلاثة: الوقت والميزانية والجودة"
+        },
+        {
+          "t": 2121,
+          "title": "المخاطر (Risks)"
+        },
+        {
+          "t": 2279,
+          "title": "المشكلات (Issues) والفرق بينها وبين المخاطر"
+        },
+        {
+          "t": 2436,
+          "title": "خلاصة الحصة"
+        }
+      ],
+      "lessonLabel": "إدارة المشاريع — الحصة الأولى"
+    },
+    {
+      "id": "video-pezrtazfm7e",
+      "youtubeId": "PezRTAzFM7E",
+      "originalTitle": "المقدمة -ادارة مشاريع أنظمة تكنولوجيا المعلومات - الاستاذ احمد دومي",
+      "conceptTitle_ar": "إدارة مشاريع أنظمة تكنولوجيا المعلومات — المقدمة",
+      "summary": "إدارة المشاريع (التوجيهي) — المقدمة: إدارة مشاريع أنظمة تكنولوجيا المعلومات — المقدمة",
+      "duration": 387,
+      "uploadDate": "2026-03-26",
+      "playlistId": "PLLG6M-sTw6vQ4DXObvRdHzjXeMlLOyRjT",
+      "unitId": "it-project-management",
+      "conceptIds": [],
+      "hasTranscript": false,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "إدارة المشاريع (التوجيهي) — المقدمة"
+    },
+    {
+      "id": "video-rttcq82x5m4",
+      "youtubeId": "rttCQ82X5M4",
+      "originalTitle": "الحصة الأولى -ادارة مشاريع أنظمة تكنولوجيا المعلومات - الاستاذ احمد دومي",
+      "conceptTitle_ar": "إدارة مشاريع أنظمة تكنولوجيا المعلومات — الحصة الأولى",
+      "summary": "إدارة المشاريع (التوجيهي) — الحصة الأولى: إدارة مشاريع أنظمة تكنولوجيا المعلومات — الحصة الأولى",
+      "duration": 853,
+      "uploadDate": "2026-03-26",
+      "playlistId": "PLLG6M-sTw6vQ4DXObvRdHzjXeMlLOyRjT",
+      "unitId": "it-project-management",
+      "conceptIds": [],
+      "hasTranscript": false,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "إدارة المشاريع (التوجيهي) — الحصة الأولى"
+    },
+    {
+      "id": "video-se7rddbfcbg",
+      "youtubeId": "se7rDDbFCBg",
+      "originalTitle": "الحصة الثانية - ادارة مشاريع أنظمة تكنولوجيا المعلومات - الاستاذ احمد دومي",
+      "conceptTitle_ar": "إدارة مشاريع أنظمة تكنولوجيا المعلومات — الحصة الثانية",
+      "summary": "إدارة المشاريع (التوجيهي) — الحصة الثانية: إدارة مشاريع أنظمة تكنولوجيا المعلومات — الحصة الثانية",
+      "duration": 970,
+      "uploadDate": "2026-03-26",
+      "playlistId": "PLLG6M-sTw6vQ4DXObvRdHzjXeMlLOyRjT",
+      "unitId": "it-project-management",
+      "conceptIds": [],
+      "hasTranscript": false,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "إدارة المشاريع (التوجيهي) — الحصة الثانية"
+    },
+    {
+      "id": "video-hkz6hqs2r0k",
+      "youtubeId": "HkZ6hQS2r0k",
+      "originalTitle": "الحصة الثالثة - ادارة مشاريع أنظمة تكنولوجيا المعلومات - الاستاذ احمد دومي",
+      "conceptTitle_ar": "إدارة مشاريع أنظمة تكنولوجيا المعلومات — الحصة الثالثة",
+      "summary": "إدارة المشاريع (التوجيهي) — الحصة الثالثة: إدارة مشاريع أنظمة تكنولوجيا المعلومات — الحصة الثالثة",
+      "duration": 794,
+      "uploadDate": "2026-03-26",
+      "playlistId": "PLLG6M-sTw6vQ4DXObvRdHzjXeMlLOyRjT",
+      "unitId": "it-project-management",
+      "conceptIds": [],
+      "hasTranscript": false,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "إدارة المشاريع (التوجيهي) — الحصة الثالثة"
+    },
+    {
+      "id": "video-ewntiquhbw8",
+      "youtubeId": "EWNtIquhbW8",
+      "originalTitle": "الحصة الرابعة - ادارة مشاريع أنظمة تكنولوجيا المعلومات - الاستاذ احمد دومي",
+      "conceptTitle_ar": "إدارة مشاريع أنظمة تكنولوجيا المعلومات — الحصة الرابعة",
+      "summary": "إدارة المشاريع (التوجيهي) — الحصة الرابعة: إدارة مشاريع أنظمة تكنولوجيا المعلومات — الحصة الرابعة",
+      "duration": 872,
+      "uploadDate": "2026-03-26",
+      "playlistId": "PLLG6M-sTw6vQ4DXObvRdHzjXeMlLOyRjT",
+      "unitId": "it-project-management",
+      "conceptIds": [],
+      "hasTranscript": false,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "إدارة المشاريع (التوجيهي) — الحصة الرابعة"
+    },
+    {
+      "id": "video-flmp7btbjhc",
+      "youtubeId": "flmp7bTBjhc",
+      "originalTitle": "مدخل إلى التطبيقات - الصف العاشر - المقدمة. الاستاذ احمد دومي ، منصة اساس التعليمية .",
+      "conceptTitle_ar": "مدخل إلى التطبيقات (الصف العاشر) — المقدمة",
+      "summary": "مدخل إلى التطبيقات — المقدمة: مدخل إلى التطبيقات (الصف العاشر) — المقدمة",
+      "duration": 372,
+      "uploadDate": "2026-03-25",
+      "playlistId": "PLLG6M-sTw6vQcIqPVmKWKhpoHmCQLVgLK",
+      "unitId": "introduction-to-applications",
+      "conceptIds": [],
+      "hasTranscript": false,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "مدخل إلى التطبيقات — المقدمة"
+    },
+    {
+      "id": "video-a2zefc3z2is",
+      "youtubeId": "a2zEfc3Z2is",
+      "originalTitle": "مدخل إلى التطبيقات- الصف العاشر- الحصة الأولى منصة اساس التعليمية - الاستاذ احمد دومي",
+      "conceptTitle_ar": "مدخل إلى التطبيقات (الصف العاشر) — الحصة الأولى",
+      "summary": "مدخل إلى التطبيقات — الحصة الأولى: مدخل إلى التطبيقات (الصف العاشر) — الحصة الأولى",
+      "duration": 1281,
+      "uploadDate": "2026-03-25",
+      "playlistId": "PLLG6M-sTw6vQcIqPVmKWKhpoHmCQLVgLK",
+      "unitId": "introduction-to-applications",
+      "conceptIds": [],
+      "hasTranscript": false,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "مدخل إلى التطبيقات — الحصة الأولى"
+    },
+    {
+      "id": "video-rxf9zptcfxe",
+      "youtubeId": "rxf9ZptcFxE",
+      "originalTitle": "الحصة الثانية -مدخل إلى التطبيقات - الصف العاشر -منصة اساس التعليمية -الاستاذ احمد دومي",
+      "conceptTitle_ar": "مدخل إلى التطبيقات (الصف العاشر) — الحصة الثانية",
+      "summary": "مدخل إلى التطبيقات — الحصة الثانية: مدخل إلى التطبيقات (الصف العاشر) — الحصة الثانية",
+      "duration": 1656,
+      "uploadDate": "2026-03-25",
+      "playlistId": "PLLG6M-sTw6vQcIqPVmKWKhpoHmCQLVgLK",
+      "unitId": "introduction-to-applications",
+      "conceptIds": [],
+      "hasTranscript": false,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "مدخل إلى التطبيقات — الحصة الثانية"
+    },
+    {
+      "id": "video-qwworudexum",
+      "youtubeId": "QwWOrUDeXUM",
+      "originalTitle": "الحصة الثالثة - مدخل إلى التطبيقات - الصف العاشر - منصة اساس التعليمية - الاستاذ احمد دومي",
+      "conceptTitle_ar": "مدخل إلى التطبيقات (الصف العاشر) — الحصة الثالثة",
+      "summary": "مدخل إلى التطبيقات — الحصة الثالثة: مدخل إلى التطبيقات (الصف العاشر) — الحصة الثالثة",
+      "duration": 1366,
+      "uploadDate": "2026-03-25",
+      "playlistId": "PLLG6M-sTw6vQcIqPVmKWKhpoHmCQLVgLK",
+      "unitId": "introduction-to-applications",
+      "conceptIds": [],
+      "hasTranscript": false,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "مدخل إلى التطبيقات — الحصة الثالثة"
+    },
+    {
+      "id": "video-ajvxictrhju",
+      "youtubeId": "AjVXictrHjU",
+      "originalTitle": "المهمة الرسمية - مدخل إلى التطبيقات -الصف العاشر - الاستاذ احمد دومي",
+      "conceptTitle_ar": "المهمة الرسمية في مدخل إلى التطبيقات (الصف العاشر)",
+      "summary": "مدخل إلى التطبيقات — المهمة الرسمية: المهمة الرسمية في مدخل إلى التطبيقات (الصف العاشر)",
+      "duration": 932,
+      "uploadDate": "2026-03-30",
+      "playlistId": "PLLG6M-sTw6vQcIqPVmKWKhpoHmCQLVgLK",
+      "unitId": "introduction-to-applications",
+      "conceptIds": [],
+      "hasTranscript": false,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "مدخل إلى التطبيقات — المهمة الرسمية"
+    },
+    {
+      "id": "video-pepvttnazm",
+      "youtubeId": "-PepVttNazM",
+      "originalTitle": "مهمة العاشر برمجة BTEC IT",
+      "conceptTitle_ar": "مهمة الصف العاشر: البرمجة في BTEC IT",
+      "summary": "الصف العاشر — برمجة: مهمة الصف العاشر: البرمجة في BTEC IT",
+      "duration": 1840,
+      "uploadDate": "2025-12-17",
+      "playlistId": null,
+      "unitId": null,
+      "conceptIds": [],
+      "hasTranscript": false,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "الصف العاشر — برمجة"
+    },
+    {
+      "id": "video-kvprvk6fb-0",
+      "youtubeId": "kVPRVk6Fb-0",
+      "originalTitle": "أ. أحمد دومي جاهز لتدريس طلاب ال BTEC لمواد تكنولوجيا المعلومات 📡",
+      "conceptTitle_ar": "تعريف بأحمد دومي ودروس BTEC IT على منصة أساس التعليمية",
+      "summary": "تعريف بالقناة: تعريف بأحمد دومي ودروس BTEC IT على منصة أساس التعليمية",
+      "duration": 35,
+      "uploadDate": "2025-12-26",
+      "playlistId": null,
+      "unitId": null,
+      "conceptIds": [],
+      "hasTranscript": true,
+      "availability": "public",
+      "chapters": [],
+      "lessonLabel": "تعريف بالقناة"
+    }
+  ]
+}

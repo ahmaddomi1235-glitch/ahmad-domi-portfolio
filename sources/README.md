@@ -1,4 +1,4 @@
-﻿# sources/ — private inputs (git-ignored)
+# sources/ — private inputs (git-ignored)
 
 Nothing in this folder is committed (see `.gitignore`). It holds the raw material the knowledge base is built from.
 

@@ -1,0 +1,42 @@
+{
+  "$defaults": {
+    "type": "GlossaryTerm",
+    "unit": "artificial-intelligence",
+    "learningAim": null,
+    "criterion": null,
+    "concepts": [],
+    "questions": [],
+    "sourceType": "ahmad-booklet",
+    "sourceReferences": [
+      { "kind": "pdf", "label": "دوسية تأسيس مبادئ الذكاء الاصطناعي — جيل 2009 (أحمد دومي)", "url": "/documents/teaching-materials/foundation-cybersecurity-ai-2009.pdf" }
+    ],
+    "youtubeId": null,
+    "author": "ahmad-domi",
+    "lastReviewed": "2026-10-04",
+    "visibility": "PUBLIC",
+    "related": [],
+    "officialSource": null,
+    "status": "published",
+    "reviewState": "definitions paraphrased from the author's booklet / unit book; pending author review"
+  },
+  "items": [
+    { "id": "term-ai", "term_ar": "الذكاء الاصطناعي", "term_en": "Artificial Intelligence (AI)", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "فرع من علوم الحاسوب يهدف إلى تصميم أنظمة تستطيع محاكاة بعض قدرات الإنسان مثل التعلم والتعرف واتخاذ القرار وحل المشكلات." },
+    { "id": "term-machine-learning", "term_ar": "تعلّم الآلة", "term_en": "Machine Learning", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "أسلوب يجعل الحاسوب يتعلم من البيانات ويكتشف الأنماط دون الحاجة إلى كتابة جميع القواعد يدويًا." },
+    { "id": "term-deep-learning", "term_ar": "التعلّم العميق", "term_en": "Deep Learning", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "نوع متطور من تعلّم الآلة يستخدم الشبكات العصبية لمعالجة البيانات المعقدة مثل الصور والصوت والفيديو." },
+    { "id": "term-neural-networks", "term_ar": "الشبكات العصبية", "term_en": "Neural Networks", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "نماذج حاسوبية مستوحاة من طريقة عمل الدماغ البشري، تتكون من طبقات مترابطة تتعلم تدريجيًا من البيانات حتى تصل إلى أفضل نتيجة ممكنة." },
+    { "id": "term-algorithm", "term_ar": "الخوارزمية", "term_en": "Algorithm", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "مجموعة من الخطوات والتعليمات التي يستخدمها الحاسوب لمعالجة البيانات والوصول إلى نتيجة." },
+    { "id": "term-model", "term_ar": "النموذج", "term_en": "Model", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "النظام الذي يتكوّن بعد تدريب الخوارزمية على البيانات، فيصبح قادرًا على التنبؤ أو اتخاذ القرارات." },
+    { "id": "term-nlp", "term_ar": "معالجة اللغة الطبيعية", "term_en": "Natural Language Processing (NLP)", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "تقنية تمكّن الحاسوب من فهم اللغة البشرية وكتابتها، ومن أمثلتها الترجمة الآلية والتصحيح الإملائي." },
+    { "id": "term-computer-vision", "term_ar": "الرؤية الحاسوبية", "term_en": "Computer Vision", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "تقنية تمكّن الحاسوب من فهم الصور والفيديو، مثل التعرف على الوجوه وتشخيص الأمراض من الصور الطبية." },
+    { "id": "term-speech-recognition", "term_ar": "التعرف على الكلام", "term_en": "Speech Recognition", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "تقنية تحوّل الكلام المنطوق إلى نص يمكن للحاسوب فهمه، مثل الإملاء الصوتي والمساعدات الصوتية." },
+    { "id": "term-expert-systems", "term_ar": "الأنظمة الخبيرة", "term_en": "Expert Systems", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "برامج تعتمد على قاعدة معرفية وقواعد محددة لتقديم حلول أو قرارات تشبه قرارات الخبراء في مجال معين." },
+    { "id": "term-structured-data", "term_ar": "البيانات المهيكلة", "term_en": "Structured Data", "conceptId": "ai-data-types", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "بيانات منظمة في جداول وصفوف وأعمدة، لكل عمود معنى محدد ولكل صف سجل واحد، مثل سجلات الطلبة وجداول الرواتب." },
+    { "id": "term-semi-structured-data", "term_ar": "البيانات شبه المهيكلة", "term_en": "Semi-structured Data", "conceptId": "ai-data-types", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "بيانات بين المهيكلة وغير المهيكلة، ليست في جدول ثابت لكن فيها تنظيمًا داخليًا يمكن فهمه، مثل ملفات JSON وXML ورسائل البريد." },
+    { "id": "term-unstructured-data", "term_ar": "البيانات غير المهيكلة", "term_en": "Unstructured Data", "conceptId": "ai-data-types", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "بيانات لا تتبع قالبًا ثابتًا، مثل النص الحر والصور والفيديو والملفات الصوتية ومنشورات التواصل الاجتماعي." },
+    { "id": "term-metadata", "term_ar": "البيانات الوصفية", "term_en": "Metadata", "conceptId": "ai-data-types", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "ref": "بيانات وسائل التواصل، الصفحة 26", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "بيانات تصف البيانات الأصلية وتتولد معها، مثل وقت نشر المنشور وتاريخه والموقع التقريبي للجهاز ونوعه وعدد الإعجابات والتعليقات." },
+    { "id": "term-ai-bias", "term_ar": "التحيّز", "term_en": "Bias", "conceptId": "ai-bias", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "ref": "الصفحات 62–69", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "ظهور فئة معينة من الأشخاص أو الحالات في البيانات أكثر من غيرها، أو معاملتها بشكل مختلف أثناء جمع البيانات أو معالجتها، فيتعلم النموذج صورة منحرفة عن الواقع." },
+    { "id": "term-xai", "term_ar": "الذكاء الاصطناعي القابل للتفسير", "term_en": "Explainable AI (XAI)", "conceptId": "ai-bias", "definition_ar": "ذكاء اصطناعي يوضح سبب اتخاذه القرار وليس نتيجته فقط، فيزيد الثقة ويساعد على فهم القرارات واكتشاف الأخطاء أو التحيّز." },
+    { "id": "term-pci-dss", "term_ar": "معيار أمن بيانات بطاقات الدفع", "term_en": "PCI DSS", "conceptId": "ai-privacy", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "ref": "الصفحة 28", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "معيار أمني عالمي يفرض على التاجر تقليل تخزين بيانات البطاقات البنكية الحساسة وحماية ما يحتفظ به بالتشفير وضوابط وصول صارمة." },
+    { "id": "term-gdpr", "term_ar": "اللائحة العامة لحماية البيانات", "term_en": "GDPR", "conceptId": "ai-privacy", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "ref": "الصفحة 29", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "لائحة في الاتحاد الأوروبي تفرض على الشركات الشفافية مع الزبون بشأن ما تجمعه من بيانات وسبب جمعها ومدة الاحتفاظ بها، وتمنح الأفراد حق الاطلاع على بياناتهم وتصحيحها وحذفها." }
+  ]
+}

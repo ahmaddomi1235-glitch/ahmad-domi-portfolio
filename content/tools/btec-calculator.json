@@ -1,0 +1,28 @@
+{
+  "id": "btec-calculator",
+  "type": "Tool",
+  "title_ar": "حاسبة معدل BTEC (مسار التوجيهي الأردني)",
+  "title_en": "BTEC Grade Calculator — Jordan Tawjihi",
+  "slug": "btec-calculator",
+  "summary": "حاسبة مجانية يطوّرها أحمد دومي تحسب معدل طالب BTEC في الأردن من نتائج U/P/M/D والساعات المعتمدة والمواد المشتركة.",
+  "unit": null,
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "tool-source",
+  "sourceReferences": [
+    { "kind": "code", "label": "الحاسبة الأصلية (مستودع asasbtec)", "ref": "src/utils/calculations.ts · src/data/curriculum.ts", "url": "https://github.com/ahmaddomi1235-glitch/asasbtec" }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [],
+  "officialSource": null,
+  "status": "published",
+  "needsVerification": true,
+  "reviewState": "logic ported verbatim from the existing calculator; the official source of the credit-hour/weight rules is not documented in the repository and must be confirmed by the author",
+  "url": "/btec-calculator",
+  "description": "تحسب الحاسبة معدل التخصص من 35 والمواد المشتركة من 30 والمعدل الكامل من 100 وفق القيم المعتمدة في الحاسبة الأصلية."
+}

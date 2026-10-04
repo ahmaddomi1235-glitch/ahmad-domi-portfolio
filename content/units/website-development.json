@@ -1,0 +1,37 @@
+{
+  "id": "website-development",
+  "type": "Unit",
+  "title_ar": "تطوير المواقع الإلكترونية",
+  "title_en": "Website Development",
+  "slug": "website-development",
+  "summary": "ملف شرح أحمد دومي لمبادئ تطوير المواقع في BTEC IT: أنواع المواقع، متطلباتها، مبادئ التصميم، الظهور في البحث وأداء الموقع.",
+  "unit": null,
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    { "kind": "pdf", "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)", "ref": "الفهرس والمقدمة", "url": "/documents/teaching-materials/web-development-principles.pdf" }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [],
+  "officialSource": null,
+  "status": "published",
+  "needsVerification": true,
+  "reviewState": "hub only; summarises the table of contents of the author's explanation file; pending author review",
+  "order": 5,
+  "description": "الموقع الإلكتروني اليوم واجهة خدمة كاملة، وليس صفحة معلومات فقط. ملف الشرح يبدأ من سؤال: لماذا يُنشأ الموقع؟ ولمن؟ وبأي طريقة تُقدَّم التجربة؟ قبل أي خطوة تصميم أو برمجة.",
+  "intro": [
+    { "t": "p", "text": "ملف **فهم مبادئ تطوير المواقع الإلكترونية** من إعداد أحمد دومي يغطي ثلاثة أمور: أنواع المواقع حسب الغرض وطريقة التفاعل مع متطلباتها الأساسية ومبادئ التصميم الجيد، ثم الإبداع في التصميم، ثم كيف تظهر المواقع في نتائج البحث وما العوامل التي تؤثر في سرعة الموقع وأدائه." },
+    { "t": "p", "text": "هذه الصفحة تعرّف بالمادة وتربطك بالملف الكامل. صفحات المفاهيم التفصيلية لهذه الوحدة ستُنشر بعد المراجعة." }
+  ],
+  "axes": [],
+  "axesSource": "",
+  "resourceIds": ["res-web-development-principles"],
+  "cardId": null,
+  "comingSoon": ["أنواع المواقع حسب الغرض", "المتطلبات الأساسية ومبادئ تصميم الموقع الجيد", "الظهور في نتائج البحث وعوامل أداء الموقع"]
+}

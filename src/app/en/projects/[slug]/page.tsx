@@ -13,7 +13,8 @@ export async function generateMetadata({ params }: Props) {
   const p = getProjectBySlug(slug);
   if (!p) return {};
   return pageMetadata({
-    title: p.title.en,
+    title: `${p.title.en} | Ahmad Domi — Portfolio`,
+    absoluteTitle: true,
     description: p.summary.en,
     path: `/en/projects/${slug}`,
     locale: "en_US",

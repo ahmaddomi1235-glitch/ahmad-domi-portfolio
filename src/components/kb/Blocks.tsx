@@ -61,7 +61,13 @@ export function Blocks({ blocks }: { blocks: Block[] }) {
           }
           case "table":
             return (
-              <div key={i} className="overflow-x-auto rounded-xl border border-line bg-white">
+              <div
+                key={i}
+                tabIndex={0}
+                role="region"
+                aria-label={b.caption ?? "جدول"}
+                className="overflow-x-auto rounded-xl border border-line bg-white"
+              >
                 <table className="w-full min-w-[34rem] border-collapse text-start text-[0.95rem] leading-7">
                   {b.caption && <caption className="p-3 text-start text-sm text-muted">{b.caption}</caption>}
                   <thead className="bg-navy text-ivory">

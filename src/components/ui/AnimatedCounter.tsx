@@ -45,6 +45,7 @@ export function AnimatedCounter({
   return (
     <motion.span
       className={className}
+      role="img"
       aria-label={ariaLabel}
       style={{ display: "inline-block" }}
       initial={{ opacity: 0.999 }}

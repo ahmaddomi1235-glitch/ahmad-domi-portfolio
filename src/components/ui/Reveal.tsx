@@ -8,16 +8,20 @@ export function Reveal({
   delay = 0,
   className,
   y = 20,
+  as = "div",
 }: {
   children: ReactNode;
   delay?: number;
   className?: string;
   y?: number;
+  /** Render as the list item itself (inside <ol>/<ul>) so list semantics stay valid. */
+  as?: "div" | "li";
 }) {
   const shouldReduceMotion = useReducedMotion();
+  const Tag = as === "li" ? motion.li : motion.div;
 
   return (
-    <motion.div
+    <Tag
       initial={shouldReduceMotion ? false : { opacity: 0, y }}
       whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
@@ -25,6 +29,6 @@ export function Reveal({
       className={className}
     >
       {children}
-    </motion.div>
+    </Tag>
   );
 }

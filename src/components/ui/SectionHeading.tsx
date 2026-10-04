@@ -22,7 +22,8 @@ export function SectionHeading({
         <Reveal>
           <p
             className={cn(
-              "mb-3 text-sm font-semibold tracking-wide uppercase text-gold",
+              "mb-3 text-sm font-semibold tracking-wide uppercase",
+              tone === "dark" ? "text-gold" : "text-[#7a5c24]", // darker gold keeps ≥4.5:1 on light backgrounds
             )}
           >
             {kicker}

@@ -162,17 +162,29 @@ sourceReferences, youtubeId, author, lastReviewed, visibility, related, official
 | Instagram / YouTube / Asas | Profile edits | Owner only — documented in `SOCIAL_ENTITY_CHANGES.md`, `YOUTUBE_GEO_MIGRATION.md` |
 | Asas profile URL, LinkedIn confirmation | `sameAs` | Provide URL |
 
-## 10. Implementation checklist
+## 10. Implementation checklist (final status)
 
-- [x] Audit (this document)
-- [ ] Static layout + config + SEO libs
-- [ ] Entity home, about, nav/footer
-- [ ] Content model, loader, validator
-- [ ] Concepts (17), unit hubs (6), glossary, questions
-- [ ] Videos index (+ transcript-derived pages after review)
-- [ ] Calculator, card, resources, search
-- [ ] robots, sitemap, llms.txt, 404, redirects
-- [ ] Ingestion scripts + sample run on real captions
-- [ ] Docs: social, YouTube, search-engine setup, analytics
-- [ ] lint / typecheck / validate / build / e2e
-- [ ] Deploy, DNS, post-deploy audit
+- [x] Audit (this document) — repo located, Vercel + GitHub authenticated, baseline build recorded
+- [x] Static layout + canonical config + SEO libs (all routes now SSG; the `headers()`/proxy mechanism is gone)
+- [x] Entity home, about/author page, header/footer, legacy portfolio preserved at `/about` and `/en`
+- [x] Content model, loader, validator (17 unit tests)
+- [x] Concepts (19 incl. 5 comparisons), unit hubs (6), glossary (61 terms), grouped questions
+- [x] Videos index (26 channel videos, chapters on 6) with VideoObject; concept pages embed the lesson video
+- [x] Calculator (verbatim logic port + methodology + honest source note), card page (price gated), resources, local search
+- [x] robots, sitemap (53 URLs from content), llms.txt, 404, www→apex rule, security headers, brand OG image
+- [x] Ingestion scripts: import-youtube, normalize-transcript, generate-content-draft, validate-content
+- [x] Docs: social, YouTube, search-engine setup, analytics, content pipeline, owner actions, domain/deployment
+- [x] lint / typecheck / validate / unit tests / build / 36 e2e tests
+- [ ] DNS (blocked on Cloudflare access) → TLS → old-URL redirect → verify `https://ahmaddomiedu.com`
+- [ ] Search Console / Bing submission (owner login)
+- [ ] Owner confirmations in `docs/OWNER_ACTIONS.md`
+
+## 11. Deviations from the original plan
+
+| Planned | Done instead | Why |
+| --- | --- | --- |
+| 17 concept pages | 19 (5 comparisons + 14 concepts) | Source-backed pages found in the booklets: why data is the target, data states (lesson 1 video), data sources/quality/modelling, six PM concepts |
+| Concept pages for Privilege Escalation, Programming, Pass/Merit/Distinction, command verbs, Metadata, Data Cleaning | Not published as pages. Metadata and Data Cleaning are glossary terms; the rest have no source in the repository | Source discipline — see `docs/OWNER_ACTIONS.md` §D |
+| `/btec-it/assessment/**`, `/btec-it/assignments`, `/btec-it/programming` | Not created | Same reason; listed honestly under "قيد الإعداد" on `/btec-it` |
+| Per-video pages | Videos are embedded on their concept page and listed on `/videos` | A standalone page per video would duplicate the concept page; chapters + VideoObject live on the concept page |
+| Question pages | One grouped `/btec-it/questions` page | One page per phrasing would be duplicate-intent spam |

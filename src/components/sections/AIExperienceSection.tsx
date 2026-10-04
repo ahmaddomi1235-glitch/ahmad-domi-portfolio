@@ -16,8 +16,8 @@ export function AIExperienceSection({ dict }: { dict: Dictionary }) {
 
         <ul className="grid gap-3">
           {dict.aiExperience.capabilities.map((item, i) => (
-            <Reveal key={item} delay={i * 0.06}>
-              <li className="rounded-xl border border-line bg-white px-5 py-4 text-sm leading-relaxed text-ink">{item}</li>
+            <Reveal key={item} delay={i * 0.06} as="li" className="rounded-xl border border-line bg-white px-5 py-4 text-sm leading-relaxed text-ink">
+              {item}
             </Reveal>
           ))}
         </ul>

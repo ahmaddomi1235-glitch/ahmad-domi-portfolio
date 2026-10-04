@@ -1,6 +1,8 @@
 # Content Update Guide
 
-A plain-language guide for Ahmad (or anyone helping him) to update the site without needing to understand the whole codebase. All real content lives in `src/content/*.ts` — you should almost never need to touch anything under `src/components/` or `src/app/` just to change text, links, or lists.
+A plain-language guide for Ahmad (or anyone helping him) to update the site without needing to understand the whole codebase. All portfolio content lives in `src/content/*.ts` — you should almost never need to touch anything under `src/components/` or `src/app/` just to change text, links, or lists.
+
+> **Two kinds of content now exist.** The **portfolio** (CV, projects, student results, teaching-file list — shown at `/about` and `/en`) is edited here, in `src/content/`. The **BTEC knowledge base** (units, concept pages, glossary, videos, calculator, card) lives in `content/*.json` and is documented in `docs/CONTENT_PIPELINE.md`. Run `npm run validate` after editing either.
 
 ## 1. Edit the professional profile / biography
 
@@ -81,8 +83,8 @@ If it is not connected yet:
 1. Push this project to a GitHub repository.
 2. Go to vercel.com → New Project → import the repository.
 3. Framework preset: Next.js (auto-detected).
-4. Set the environment variable `NEXT_PUBLIC_SITE_URL` to the real production domain.
-5. Deploy.
+4. No environment variables are needed — the canonical domain (`https://ahmaddomiedu.com`) is a constant in `src/config/site.ts`.
+5. Deploy. Domain/DNS notes: `docs/DOMAIN_AND_DEPLOYMENT.md`.
 
 To test a production build locally before pushing:
 

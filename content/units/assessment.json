@@ -1,0 +1,47 @@
+{
+  "id": "assessment",
+  "type": "Unit",
+  "title_ar": "كتابة التقارير والتقييم في BTEC",
+  "title_en": "BTEC Report Writing and Assessment",
+  "slug": "assessment",
+  "summary": "مبادئ عامة في كتابة تقارير BTEC IT بالعربي: فهم السيناريو، التخطيط قبل الكتابة، المقدمة، الربط بين الفقرات، تجنّب التكرار، والخاتمة.",
+  "unit": null,
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "منهجية كتابة تقرير BTEC — إعداد أحمد دومي (مبادئ عامة فقط)",
+      "ref": "الفكرة الأساسية، التخطيط، المقدمة، الربط، الإيجابيات والسلبيات، التكرار، التنسيق، الخاتمة"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [],
+  "officialSource": null,
+  "status": "published",
+  "needsVerification": true,
+  "reviewState": "assistant-drafted from the author's report-writing methodology (author line present); principles only, no examples, scenarios or assessment answers; pending author review",
+  "order": 7,
+  "description": "هذه الصفحات لا تعطيك إجابات جاهزة لأي مهمة. هي مبادئ عامة في طريقة التفكير والكتابة التي يحتاجها أي تقرير في BTEC IT، أيًّا كانت الوحدة.",
+  "intro": [
+    {
+      "t": "p",
+      "text": "التقرير الجيد في BTEC مسار فكري مترابط: تفهم السيناريو، ثم تشرح الأفكار المطلوبة، ثم تحلل أسبابها وآثارها، ثم تبرّر قرارك. هنا ملخص عام لهذه الطريقة."
+    },
+    {
+      "t": "p",
+      "text": "هذا القسم **ملخص عام** يتعمد ألا يحتوي نماذج إجابة أو فقرات جاهزة أو شرحًا لمهمة بعينها؛ فالتقرير الذي تسلّمه يجب أن يكون عملك أنت على سيناريو مؤسستك."
+    }
+  ],
+  "axes": [],
+  "axesSource": "",
+  "resourceIds": [],
+  "cardId": null,
+  "comingSoon": []
+}

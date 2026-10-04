@@ -8,7 +8,11 @@
     "questions": [],
     "sourceType": "ahmad-unit-book",
     "sourceReferences": [
-      { "kind": "pdf", "label": "إدارة مشاريع أنظمة تكنولوجيا المعلومات — كتاب الوحدة (أحمد دومي)", "url": "/documents/teaching-materials/project-management-unit.pdf" }
+      {
+        "kind": "pdf",
+        "label": "إدارة مشاريع أنظمة تكنولوجيا المعلومات — كتاب الوحدة (أحمد دومي)",
+        "url": "/documents/teaching-materials/project-management-unit.pdf"
+      }
     ],
     "youtubeId": null,
     "author": "ahmad-domi",
@@ -20,15 +24,124 @@
     "reviewState": "definitions paraphrased from the author's unit book; pending author review"
   },
   "items": [
-    { "id": "term-project", "term_ar": "المشروع", "term_en": "Project", "conceptId": "project-vs-routine-operations", "definition_ar": "عمل مؤقت له بداية ونهاية، يستخدم موارد بشرية ومالية وتقنية محددة للوصول إلى نتيجة متفق عليها، ويهدف إلى إحداث تغيير أو إنشاء شيء جديد." },
-    { "id": "term-operational-work", "term_ar": "العمل التشغيلي", "term_en": "Operational Work", "conceptId": "project-vs-routine-operations", "definition_ar": "الأنشطة التي تتكرر بشكل شبه يومي للحفاظ على سير عمل المؤسسة، ولا تهدف إلى تغيير جذري، وتستمر طوال حياة المؤسسة." },
-    { "id": "term-stakeholders", "term_ar": "أصحاب المصلحة", "term_en": "Stakeholders", "conceptId": "project-stakeholders", "definition_ar": "الأطراف التي يهمها المشروع وتتأثر بنتائجه بشكل مباشر أو غير مباشر، مثل الإدارة والمستخدمين والطلبة وأولياء الأمور وفريق تقنية المعلومات والموردين." },
-    { "id": "term-project-scope", "term_ar": "نطاق المشروع", "term_en": "Project Scope", "conceptId": "project-scope", "definition_ar": "الوصف الرسمي لما سيُنفَّذ فعلًا داخل المشروع وما لن يُنفَّذ في هذه المرحلة." },
-    { "id": "term-scope-creep", "term_ar": "توسّع النطاق", "term_en": "Scope Creep", "conceptId": "project-scope", "definition_ar": "أن يبدأ المشروع بهدف محدد ثم تُضاف إليه طلبات جديدة تباعًا دون تعديل الجدول الزمني والميزانية، فيتأخر التسليم وتزداد الأعباء على الفريق." },
-    { "id": "term-project-constraints", "term_ar": "قيود المشروع", "term_en": "Project Constraints", "conceptId": "project-constraints", "definition_ar": "إطار لا يمكن تجاهله يعمل داخله كل مشروع، وأهم عناصره ثلاثة مترابطة: الوقت والميزانية والجودة." },
-    { "id": "term-project-risk", "term_ar": "الخطر في المشروع", "term_en": "Project Risk", "conceptId": "risk-vs-issue", "definition_ar": "حدث محتمل لم يقع بعد، له احتمال معين للحدوث، وإذا حدث أثّر سلبًا في الوقت أو التكلفة أو الجودة أو رضا المستخدمين." },
-    { "id": "term-project-issue", "term_ar": "المشكلة في المشروع", "term_en": "Project Issue", "conceptId": "risk-vs-issue", "definition_ar": "حدث وقع بالفعل في المشروع، مثل تعطل خادم قيد الاستخدام، ويتطلب استجابة فورية من الفريق لحلّه أو تقليل أثره." },
-    { "id": "term-project-lifecycle", "term_ar": "دورة حياة المشروع", "term_en": "Project Lifecycle", "conceptId": "project-lifecycle", "definition_ar": "سلسلة المراحل المتتابعة التي يمر بها المشروع من الفكرة إلى الإغلاق: البدء، التخطيط، التنفيذ، المراقبة والتحكم، الإغلاق والتقييم." },
-    { "id": "term-lessons-learned", "term_ar": "الدروس المستفادة", "term_en": "Lessons Learned", "conceptId": "project-lifecycle", "definition_ar": "النقاط الإيجابية والسلبية التي يسجّلها الفريق عند مراجعة المشروع في مرحلة الإغلاق ليستفيد منها في المشاريع القادمة." }
+    {
+      "id": "term-project",
+      "term_ar": "المشروع",
+      "term_en": "Project",
+      "conceptId": "project-vs-routine-operations",
+      "definition_ar": "عمل مؤقت له بداية ونهاية، يستخدم موارد بشرية ومالية وتقنية محددة للوصول إلى نتيجة متفق عليها، ويهدف إلى إحداث تغيير أو إنشاء شيء جديد."
+    },
+    {
+      "id": "term-operational-work",
+      "term_ar": "العمل التشغيلي",
+      "term_en": "Operational Work",
+      "conceptId": "project-vs-routine-operations",
+      "definition_ar": "الأنشطة التي تتكرر بشكل شبه يومي للحفاظ على سير عمل المؤسسة، ولا تهدف إلى تغيير جذري، وتستمر طوال حياة المؤسسة."
+    },
+    {
+      "id": "term-stakeholders",
+      "term_ar": "أصحاب المصلحة",
+      "term_en": "Stakeholders",
+      "conceptId": "project-stakeholders",
+      "definition_ar": "الأطراف التي يهمها المشروع وتتأثر بنتائجه بشكل مباشر أو غير مباشر، مثل الإدارة والمستخدمين والطلبة وأولياء الأمور وفريق تقنية المعلومات والموردين."
+    },
+    {
+      "id": "term-project-scope",
+      "term_ar": "نطاق المشروع",
+      "term_en": "Project Scope",
+      "conceptId": "project-scope",
+      "definition_ar": "الوصف الرسمي لما سيُنفَّذ فعلًا داخل المشروع وما لن يُنفَّذ في هذه المرحلة."
+    },
+    {
+      "id": "term-scope-creep",
+      "term_ar": "توسّع النطاق",
+      "term_en": "Scope Creep",
+      "conceptId": "project-scope",
+      "definition_ar": "أن يبدأ المشروع بهدف محدد ثم تُضاف إليه طلبات جديدة تباعًا دون تعديل الجدول الزمني والميزانية، فيتأخر التسليم وتزداد الأعباء على الفريق."
+    },
+    {
+      "id": "term-project-constraints",
+      "term_ar": "قيود المشروع",
+      "term_en": "Project Constraints",
+      "conceptId": "project-constraints",
+      "definition_ar": "إطار لا يمكن تجاهله يعمل داخله كل مشروع، وأهم عناصره ثلاثة مترابطة: الوقت والميزانية والجودة."
+    },
+    {
+      "id": "term-project-risk",
+      "term_ar": "الخطر في المشروع",
+      "term_en": "Project Risk",
+      "conceptId": "risk-vs-issue",
+      "definition_ar": "حدث محتمل لم يقع بعد، له احتمال معين للحدوث، وإذا حدث أثّر سلبًا في الوقت أو التكلفة أو الجودة أو رضا المستخدمين."
+    },
+    {
+      "id": "term-project-issue",
+      "term_ar": "المشكلة في المشروع",
+      "term_en": "Project Issue",
+      "conceptId": "risk-vs-issue",
+      "definition_ar": "حدث وقع بالفعل في المشروع، مثل تعطل خادم قيد الاستخدام، ويتطلب استجابة فورية من الفريق لحلّه أو تقليل أثره."
+    },
+    {
+      "id": "term-project-lifecycle",
+      "term_ar": "دورة حياة المشروع",
+      "term_en": "Project Lifecycle",
+      "conceptId": "project-lifecycle",
+      "definition_ar": "سلسلة المراحل المتتابعة التي يمر بها المشروع من الفكرة إلى الإغلاق: البدء، التخطيط، التنفيذ، المراقبة والتحكم، الإغلاق والتقييم."
+    },
+    {
+      "id": "term-lessons-learned",
+      "term_ar": "الدروس المستفادة",
+      "term_en": "Lessons Learned",
+      "conceptId": "project-lifecycle",
+      "definition_ar": "النقاط الإيجابية والسلبية التي يسجّلها الفريق عند مراجعة المشروع في مرحلة الإغلاق ليستفيد منها في المشاريع القادمة."
+    },
+    {
+      "id": "term-methodology",
+      "term_ar": "منهجية إدارة المشروع",
+      "term_en": "Project Methodology",
+      "conceptId": "project-methodologies",
+      "definition_ar": "مجموعة مبادئ وخطوات ونماذج يتفق عليها فريق المشروع ليعرف كيف يبدأ ويخطط وينفذ ويراجع ويغلق المشروع."
+    },
+    {
+      "id": "term-linear",
+      "term_ar": "المنهجية الخطية",
+      "term_en": "Linear Methodology",
+      "conceptId": "project-methodologies",
+      "definition_ar": "أسلوب يمرّ بمراحل متتابعة (متطلبات، تحليل، تصميم، تنفيذ، اختبار، تسليم) ولا ينتقل إلى مرحلة قبل إنهاء التي قبلها."
+    },
+    {
+      "id": "term-iterative",
+      "term_ar": "المنهجية التكرارية",
+      "term_en": "Iterative Methodology",
+      "conceptId": "project-methodologies",
+      "definition_ar": "أسلوب يبني المشروع في نسخ متتابعة تُجرَّب مع مستخدمين حقيقيين وتُحسَّن النسخة التالية بملاحظاتهم."
+    },
+    {
+      "id": "term-agile",
+      "term_ar": "المنهجية المرنة",
+      "term_en": "Agile Methodology",
+      "conceptId": "project-methodologies",
+      "definition_ar": "أسلوب يقسّم العمل إلى دورات قصيرة ثابتة المدة بتعاون وثيق مع العميل، ويقبل تغيّر الأولويات."
+    },
+    {
+      "id": "term-sprint",
+      "term_ar": "الدورة القصيرة",
+      "term_en": "Sprint",
+      "conceptId": "project-methodologies",
+      "definition_ar": "فترة عمل قصيرة ثابتة المدة (غالبًا أسبوعان إلى ثلاثة) ينجز فيها الفريق مجموعة صغيرة من المزايا القابلة للاستخدام."
+    },
+    {
+      "id": "term-project-plan",
+      "term_ar": "خطة المشروع",
+      "term_en": "Project Plan",
+      "conceptId": "project-planning",
+      "definition_ar": "وثيقة تبيّن الأعمال المطلوبة وترتيبها ومدة كل مهمة ومسؤولها ومواردها، مع خطط المخاطر والتغيير والتواصل."
+    },
+    {
+      "id": "term-change-request",
+      "term_ar": "طلب تغيير",
+      "term_en": "Change Request",
+      "conceptId": "project-planning",
+      "definition_ar": "نموذج رسمي يوضح سبب تغيير مطلوب في المشروع وفائدته وأثره المحتمل على الزمن والميزانية، ليُقرَّر قبوله أو رفضه أو تأجيله."
+    }
   ]
 }

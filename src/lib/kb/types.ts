@@ -53,6 +53,21 @@ export type OfficialSource = {
   url?: string;
   /** Short quotation only (<= 25 words), attributed. */
   quote?: string;
+  /** Internal only (never rendered): private source-registry IDs the mapping was verified against. */
+  registryRef?: string[];
+};
+
+/** Factual mapping of an official unit: numbers, aim letters/titles and criterion codes only — no descriptors. */
+export type OfficialStructure = {
+  unitNumber: number;
+  unitTitle_ar: string;
+  assessmentMode: string;
+  aims: {
+    letter: string;
+    title_ar: string;
+    criteria: { pass: string[]; merit: string[]; distinction: string[] };
+  }[];
+  verifiedAgainst: string;
 };
 
 export type Term = { ar: string; en: string };
@@ -119,6 +134,8 @@ export type UnitNode = NodeBase & {
   /** Unit overview as Ahmad's booklet presents it. Not Pearson wording; not rendered as official Learning Aims. */
   axes: { label: string; title_ar: string; summary_ar: string }[];
   axesSource: string;
+  /** Verified official structure (requires officialSource). Rendered apart from Ahmad's own overview. */
+  officialStructure?: OfficialStructure;
   intro: Block[];
   resourceIds: string[];
   cardId: string | null;

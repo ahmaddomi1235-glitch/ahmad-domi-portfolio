@@ -103,6 +103,8 @@ export function validateNodes(nodes: KbNode[]): Issue[] {
       if (n.sourceType === "official-pearson" && !n.officialSource) err(n, "official-pearson content requires officialSource");
       if ((n.learningAim || n.criterion) && !n.officialSource)
         err(n, "learningAim/criterion may only be published with an officialSource (never from memory or a booklet alone)");
+      if ("officialStructure" in n && n.officialStructure && !n.officialSource)
+        err(n, "officialStructure requires an officialSource");
       if (n.summary.length < 40 || n.summary.length > 320) err(n, `summary length ${n.summary.length} outside 40–320`);
       for (const s of FILLER_OPENINGS) {
         if (n.summary.startsWith(s)) err(n, `summary starts with generic filler "${s}"`);

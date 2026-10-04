@@ -81,6 +81,46 @@ export default async function UnitPage({ params }: Props) {
         </Section>
       )}
 
+      {unit.officialStructure && unit.officialSource && (
+        <Section title="البنية الرسمية للوحدة (Pearson)" id="official" className="pt-0">
+          <p className="leading-8 text-ink/85">
+            هذا القسم يذكر <strong>الهيكل الرسمي فقط</strong>: رقم الوحدة وعناوين أهداف التعلم ورموز المعايير كما وردت في {unit.officialSource.publisher}. لا يتضمن
+            نصوص المعايير نفسها؛ شرح الأفكار في صفحات المفاهيم هو شرح أحمد دومي.
+          </p>
+          <p className="mt-3 text-sm text-muted">
+            الوحدة {unit.officialStructure.unitNumber}: {unit.officialStructure.unitTitle_ar} — {unit.officialStructure.assessmentMode}
+          </p>
+          <div className="mt-4 overflow-x-auto rounded-2xl border border-line bg-white">
+            <table className="w-full min-w-[34rem] text-start text-sm">
+              <caption className="sr-only">أهداف التعلم الرسمية ورموز المعايير في الوحدة {unit.officialStructure.unitNumber}</caption>
+              <thead className="bg-ivory">
+                <tr>
+                  <th scope="col" className="p-3 text-start">الهدف</th>
+                  <th scope="col" className="p-3 text-start">Pass</th>
+                  <th scope="col" className="p-3 text-start">Merit</th>
+                  <th scope="col" className="p-3 text-start">Distinction</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-line">
+                {unit.officialStructure.aims.map((a) => (
+                  <tr key={a.letter}>
+                    <th scope="row" className="p-3 text-start font-semibold">
+                      {a.letter}: {a.title_ar}
+                    </th>
+                    <td className="p-3" dir="ltr">{a.criteria.pass.join(" · ")}</td>
+                    <td className="p-3" dir="ltr">{a.criteria.merit.join(" · ")}</td>
+                    <td className="p-3" dir="ltr">{a.criteria.distinction.join(" · ")}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 rounded-xl border border-line bg-ivory p-4 text-sm leading-7 text-muted">
+            <strong className="text-ink">{unit.officialStructure.verifiedAgainst}</strong> للنص الكامل للمعايير ارجع إلى مواصفات الوحدة الصادرة عن Pearson ومعلّمك.
+          </p>
+        </Section>
+      )}
+
       {unit.axes.length > 0 && (
         <Section title="محاور الوحدة كما يعرضها أحمد دومي" id="axes" className="pt-0">
           <ul className="space-y-3">

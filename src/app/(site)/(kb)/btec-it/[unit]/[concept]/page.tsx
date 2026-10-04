@@ -157,6 +157,25 @@ export default async function ConceptPage({ params }: Props) {
             </section>
           )}
 
+          {c.learningAim && c.officialSource && unit.officialStructure && (
+            <section aria-labelledby="official-map" className="mt-12 rounded-2xl border border-line bg-white p-6">
+              <h2 id="official-map" className="text-xl font-bold">
+                الربط الرسمي مقابل شرح أحمد دومي
+              </h2>
+              <p className="mt-2 leading-8">
+                <strong>البنية الرسمية ({c.officialSource.publisher}):</strong> الوحدة {unit.officialStructure.unitNumber}، الهدف {c.learningAim} —{" "}
+                {unit.officialStructure.aims.find((a) => a.letter === c.learningAim)?.title_ar}. رموز المعايير الخاصة بهذا الهدف مذكورة في{" "}
+                <Link href={`/btec-it/${unit.slug}#official`} className="font-medium text-navy underline decoration-gold underline-offset-4">
+                  صفحة الوحدة
+                </Link>
+                .
+              </p>
+              <p className="mt-2 leading-8">
+                <strong>شرح أحمد دومي:</strong> كل ما في هذه الصفحة من شرح وأمثلة هو شرح أحمد بكلماته، وليس نصًّا رسميًّا ولا حلًّا لمهمة.
+              </p>
+            </section>
+          )}
+
           {c.questionsAnswered.length > 0 && (
             <section aria-labelledby="questions" className="mt-12">
               <h2 id="questions" className="mb-3 text-2xl font-bold">

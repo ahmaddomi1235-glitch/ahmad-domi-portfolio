@@ -217,6 +217,47 @@ test.describe("concept page", () => {
   });
 });
 
+test.describe("phase 2A pages", () => {
+  const newPages = [
+    "/btec-it/it-project-management/project-methodologies",
+    "/btec-it/it-project-management/project-planning",
+    "/btec-it/it-project-management/project-execution-monitoring-closure",
+    "/btec-it/assessment",
+    "/btec-it/assessment/report-writing-principles",
+  ];
+
+  test("new pages render, are in the sitemap and have one canonical", async ({ request }) => {
+    const xml = await (await request.get("/sitemap.xml")).text();
+    for (const p of newPages) {
+      const res = await request.get(p);
+      expect(res.status()).toBe(200);
+      expect(await res.text()).toContain(`rel="canonical" href="https://ahmaddomiedu.com${p}"`);
+      expect(xml).toContain(`<loc>https://ahmaddomiedu.com${p}</loc>`);
+    }
+  });
+
+  test("cyber-security unit shows the official Unit 11 structure (codes only), clearly labelled", async ({ page }) => {
+    await page.goto("/btec-it/cyber-security");
+    const official = page.locator("#official");
+    await expect(official).toContainText("البنية الرسمية");
+    await expect(official).toContainText("A.P1");
+    await expect(official).toContainText("CD.D2");
+    await expect(official).toContainText("الوحدة 11");
+    await expect(page.locator("#axes")).toContainText("أحمد دومي");
+  });
+
+  test("a concept with an official aim separates official structure from Ahmad's explanation", async ({ page }) => {
+    await page.goto("/btec-it/cyber-security/hacker-types");
+    await expect(page.getByRole("heading", { name: "الربط الرسمي مقابل شرح أحمد دومي" })).toBeVisible();
+  });
+
+  test("the report-writing page is a general summary and links to no private file", async ({ request }) => {
+    const html = await (await request.get("/btec-it/assessment/report-writing-principles")).text();
+    expect(html).toContain("ملخص مبادئ عام");
+    expect(html).not.toMatch(/\.docx|sources\/|\/private/);
+  });
+});
+
 test.describe("search (Arabic ↔ English)", () => {
   test("Arabic 'مخاطرة' finds the Threat/Vulnerability/Risk page; English 'threat' finds the Arabic term", async ({ page }) => {
     await page.goto("/search");

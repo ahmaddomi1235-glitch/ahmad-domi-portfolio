@@ -31,7 +31,7 @@ export default function EntityHome() {
       <JsonLd data={homeGraph()} />
 
       <section className="bg-navy text-ivory">
-        <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-[1.4fr_0.6fr] lg:items-center">
+        <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-14 sm:px-8 sm:py-20 lg:grid-cols-[1.4fr_0.6fr] lg:items-start">
           <div>
             <p className="text-sm font-semibold text-gold">
               {brand.nameAr} · <bdi lang="en" dir="ltr">{brand.nameEn}</bdi> — {brand.context}
@@ -56,7 +56,8 @@ export default function EntityHome() {
               </Link>
             </div>
           </div>
-          <div className="flex justify-center lg:justify-end">
+          {/* Portrait first on small screens and top-aligned on desktop, so a web-font swap in the text can never move it (CLS). */}
+          <div className="flex justify-center max-lg:order-first lg:justify-end">
             <Image
               src="/images/profile/ahmad-domi-profile.jpg"
               alt="أحمد دومي، مدرّس BTEC IT"

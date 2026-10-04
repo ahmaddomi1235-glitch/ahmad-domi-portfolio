@@ -3,17 +3,21 @@ import { Inter, IBM_Plex_Sans_Arabic } from "next/font/google";
 import "./globals.css";
 import { SITE_URL, brand, defaultDescription } from "@/config/site";
 
+// Latin glyphs (English terms, /en): not preloaded — it is secondary text and must not compete with CSS on slow links.
 const inter = Inter({
   variable: "--font-en",
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 
+// Arabic is the primary text. `optional` = the brand font is used if it is ready almost immediately (it is preloaded),
+// otherwise the system Arabic font stays for that view — so the text never reflows mid-load (zero font-swap CLS).
 const plexArabic = IBM_Plex_Sans_Arabic({
   variable: "--font-ar",
   subsets: ["arabic"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
+  weight: ["400", "600", "700"], // 500 dropped: one fewer font file; font-medium resolves to 400
+  display: "optional",
 });
 
 /**

@@ -1,41 +1,47 @@
 # Post-deploy audit — `https://ahmaddomiedu.com`
 
-Audited **2026-10-04** against Vercel production deployment `ahmaddomiporfolio-…` (aliased to `ahmaddomiedu.com`, state READY).
+**Final live-domain audit: 2026-10-04, after DNS, certificate and redirects went live.** (An earlier pre-DNS pass audited the same deployment through Vercel's edge; its findings are superseded by this one.)
 
-**Overall: the application is deployed and verified; the domain is not live to the public yet.** Cloudflare has no DNS records for it, so `https://ahmaddomiedu.com` cannot resolve until the two A records in `docs/DOMAIN_AND_DEPLOYMENT.md` exist. Everything that does not depend on DNS passed.
+**Overall: live, HTTPS-enforced, canonical on the apex, 53 indexable pages, 0 crawl problems.** Items still needing the owner are listed at the end.
 
-## How this audit was done (and its limits)
+## Method
 
-DNS is empty and, on the machine that ran this audit, TLS to every `*.vercel.app` host is reset by the network (the card platform's README mentions the same blocking on some Jordanian networks). So the live site was audited **through Vercel's edge**: HTTP to `76.76.21.21` with `Host: ahmaddomiedu.com` (the same edge, routing and deployment that the domain will use). Anything needing real HTTPS/DNS is marked accordingly instead of being assumed.
-
-Local verification used the identical production build: `npm run verify` (lint, typecheck, content validation, 17 unit tests, build), 36 Playwright e2e tests, axe-core (WCAG 2.1 A/AA) and Lighthouse.
+- DNS: `nslookup` against 1.1.1.1 and the local resolver; `vercel domains inspect`; `vercel certs ls`.
+- Certificate: Vercel issued it on request (`vercel certs issue ahmaddomiedu.com www.ahmaddomiedu.com`, 90 days, auto-renew).
+- **Public HTTPS crawl** (`fetch` over `https://ahmaddomiedu.com`, redirects not followed): started from the home page and the sitemap, followed every internal link, then HEAD-checked every linked asset (PDFs, images, fonts, CSS/JS).
+- Independent vantage check: the home page was fetched by an external fetcher (not this machine) and returned the expected Arabic title and content.
+- Quality tooling on the same build: `npm run verify`, 37 Playwright e2e tests, axe-core (WCAG 2.1 A/AA), Lighthouse against the **live** domain.
 
 ## Results
 
 | # | Criterion | Result | Evidence |
 | --- | --- | --- | --- |
-| 1 | **HTTPS** | ❌ **FAIL (pending DNS)** | TLS handshake to the domain fails: Vercel cannot issue the certificate until the domain resolves to it. HTTP→HTTPS redirect and HSTS will be added by Vercel once the certificate exists. |
-| 2 | **DNS** | ❌ **FAIL (pending Cloudflare access)** | Nameservers are Cloudflare's (`aitana`, `dion`); no A/AAAA records. Required records read from Vercel: `A @ 76.76.21.21`, `A www 76.76.21.21`, DNS-only. Domain is attached to the Vercel project (apex + www). |
-| 3 | **Canonical** | ✅ PASS | 54 crawled pages → 54 canonical tags, all `https://ahmaddomiedu.com…`, each equal to its own URL, none duplicated. Constant in `src/config/site.ts`, so preview URLs canonicalise to production too. |
-| 4 | **Redirects** | ⚠️ PARTIAL | ✅ `/ar → /` 308 (live). ✅ `www.ahmaddomiedu.com → https://ahmaddomiedu.com/…` 308 (e2e, local; cannot be exercised live until `www` resolves). ⏳ `ahmaddomiporfolio.vercel.app → apex` intentionally **not enabled** (it would break the working site before DNS); activation steps are in the deployment doc. Old portfolio URLs (`/en`, `/projects/*`, `/en/projects/*`) are unchanged and 200. |
-| 5 | **Title** | ✅ PASS | 54/54 unique, descriptive titles (e.g. `أحمد دومي \| Ahmad Domi — مدرّس BTEC IT في الأردن`). English project pages fixed during the audit (they duplicated Arabic titles). |
-| 6 | **Visible Arabic text in HTML** | ✅ PASS | Every page is statically generated; `<html lang="ar" dir="rtl">`; the home page text, concept short answers and Q&A are in the initial HTML (e2e fetches raw HTML without JS). The only client JS is the portfolio menu/animations, search and calculator. |
-| 7 | **Schema (JSON-LD)** | ✅ PASS | 35 blocks on 54 pages, all valid JSON with `@context` and typed nodes: `WebSite`+`Person` (home), `ProfilePage`, `TechArticle`+`BreadcrumbList`+`VideoObject`(+`Clip` chapters), `DefinedTermSet`, `WebApplication`, `CollectionPage`, `WebPage` (card). Breadcrumb names asserted by e2e. No reviews/ratings/FAQPage; Product/Offer correctly **absent** (price unconfirmed). Not yet run through Google's Rich Results Test (needs public HTTPS). |
-| 8 | **Sitemap** | ✅ PASS | `/sitemap.xml` lists 53 canonical URLs on the production host (no `/search`, no drafts), unique, `lastModified` from content dates. |
-| 9 | **robots.txt** | ✅ PASS | `User-Agent: * / Allow: /` + sitemap line; no accidental blocks; no noindex on indexable pages (only `/search` is `noindex`). |
-| 10 | **Page source** | ✅ PASS | One `<h1>` per page, semantic landmarks, skip link, breadcrumbs as `<nav><ol>`, `rel="author"`/`rel="me"` links, security headers (`nosniff`, `Referrer-Policy`, `X-Frame-Options`, `Permissions-Policy`), `X-Powered-By` removed, edge cache `HIT`. |
-| 11 | **Mobile** | ✅ PASS (local) | No horizontal overflow at 320 px on 7 knowledge pages + the English portfolio (e2e); axe clean at 375 px on all pages. Live mobile rendering can't be exercised until DNS. |
-| 12 | **Performance** | ⚠️ PASS with notes | Lighthouse mobile, devtools throttling (1.6 Mbps, 4× CPU) on the production build: **CLS 0 on all pages**; performance **84** home, **78** concept page, **86** calculator, **64** `/about` (legacy portfolio with heavy imagery and animation — not optimised in this milestone). Accessibility, best-practices and SEO scores are **100** on every page measured. First paint ≈ 2.7–3.3 s is the lab's harsh throttle (React/Next runtime ≈ 230 KB); real-user figures on Vercel's CDN need measuring after DNS (Search Console Core Web Vitals, or `docs/ANALYTICS.md`). |
-| 13 | **Internal links** | ✅ PASS | Crawled from the sitemap through all links: 54 distinct paths, 1,832 internal link references, **0 broken** (every path 200; deliberate unknown path 404). |
-| 14 | **Card page** | ✅ PASS | `/btec-it-card` 200; states what the card is, who it is for, which units, how to obtain it (free first video → WhatsApp booking); price hidden (`showPrice:false`) and no Product/Offer schema; does not publish card content or claim assignment answers (e2e asserts this). |
-| 15 | **BTEC hub** | ✅ PASS | `/btec-it` 200; lists 6 units with real concept/video counts; honest "قيد الإعداد" list; JSON-LD `CollectionPage` + breadcrumbs. |
-| 16 | Accessibility basics | ✅ PASS | axe-core WCAG 2.1 A/AA: **0 violations** on 14 pages × desktop+mobile (after fixing list/definition-list semantics, counter roles, gold-text contrast and a scrollable table in the legacy/new components). |
-| 17 | 404 | ✅ PASS | Unknown paths return a real HTTP 404 with a useful page (search, hub, unit links). |
-| 18 | Paid-content boundary | ✅ PASS | No `PAID` node exists in the public content; validator forbids publishing one and rejects paid-material markers; private `sources/` is git-ignored and not uploaded. |
+| 1 | **DNS** | ✅ PASS | `ahmaddomiedu.com` and `www` → `76.76.21.21` (1.1.1.1 and the local resolver agree); Cloudflare stays authoritative (`aitana`/`dion`), DNS-only records. Vercel lists both domains on project `ahmaddomiporfolio`. |
+| 2 | **HTTPS / certificate** | ✅ PASS | Valid certificate covering apex + `www` (`cert_YnlSEO…`, 90 days, auto-renew). `Strict-Transport-Security: max-age=63072000` on every response. |
+| 3 | **HTTP → HTTPS** | ✅ PASS | `http://ahmaddomiedu.com/btec-it` → 308 → `https://ahmaddomiedu.com/btec-it`. |
+| 4 | **www → apex (canonical host)** | ✅ PASS | `https://www.ahmaddomiedu.com/btec-it/cyber-security` → 308 → `https://ahmaddomiedu.com/btec-it/cyber-security`. `http://www…` → 308 → `https://www…` → 308 → apex (two hops, both permanent). |
+| 5 | **Old Vercel URL → canonical** | ✅ ENABLED, ⚠️ not observable live from here | Rule deployed (`ahmaddomiporfolio.vercel.app` → `https://ahmaddomiedu.com/:path*`, 308, exact host only so preview URLs are unaffected); e2e test asserts the 308 and exact destination; the latest production deployment holds that alias. Both this machine and the external fetcher get a TLS reset from every `*.vercel.app` host, so the live hop itself could not be watched — check once from a normal browser. |
+| 6 | **Canonical tags** | ✅ PASS | 54/54 crawled pages: canonical equals the page's own apex URL, all unique. |
+| 7 | **Titles / descriptions / H1** | ✅ PASS | 54 unique titles, descriptions present, exactly one `<h1>` per page, `lang="ar" dir="rtl"`. |
+| 8 | **Visible Arabic text in HTML** | ✅ PASS | Statically generated; text present in the raw HTML (e2e fetches without JS). |
+| 9 | **Structured data** | ✅ PASS | 35 JSON-LD blocks, all valid with `@context` and typed nodes: WebSite 1 · Person 24 · ProfilePage 2 · CollectionPage 10 · BreadcrumbList 32 · TechArticle 19 · VideoObject 18 · DefinedTermSet 1 · WebApplication 1 · WebPage 1. No review/rating/FAQ schema; Product/Offer absent by design. Google's Rich Results Test not yet run (owner login not needed, but it is a manual web tool). |
+| 10 | **sitemap.xml** | ✅ PASS | 53 URLs, all https apex, all 200, unique; `/search` (noindex) correctly excluded; `lastModified` from content dates. |
+| 11 | **robots.txt** | ✅ PASS | `User-Agent: * / Allow: /` + `Sitemap: https://ahmaddomiedu.com/sitemap.xml`. No accidental blocks; only `/search` carries `noindex`. |
+| 12 | **llms.txt** | ✅ PASS | 200 `text/plain`, lists all 19 concept URLs; documented as a convenience, not a ranking mechanism. |
+| 13 | **Pages crawled** | ✅ PASS | 54 crawled (53 indexable + `/search`): home, `/btec-it`, 6 unit hubs, 19 concept pages, questions, glossary, calculator, card, videos, resources, about, `/en`, 9 project pages × 2 languages. All 200. |
+| 14 | **Internal links & assets** | ✅ PASS | 2,730 internal link references; **0 broken pages**; 31 assets (PDFs, images, fonts, CSS/JS) HEAD-checked, **0 failures**. |
+| 15 | **404 behaviour** | ✅ PASS | Unknown path, unknown concept and unknown unit all return a real HTTP 404 with a useful page (search, hub, unit links). `/ar` → 308 → `/`. |
+| 16 | **BTEC IT Card page** | ✅ PASS | 200; what it is, who for, units, how to obtain; price hidden; no Product/Offer schema; no card content published (e2e asserts). |
+| 17 | **BTEC hub / unit hubs** | ✅ PASS | `/btec-it` and all 6 unit hubs 200, with concept/video counts, "قيد الإعداد" list and CollectionPage + breadcrumb schema. |
+| 18 | **Mobile** | ✅ PASS | No horizontal overflow at 320 px (7 knowledge pages + English portfolio); axe clean at 375 px. |
+| 19 | **Accessibility** | ✅ PASS | axe-core WCAG 2.1 A/AA: 0 violations on 14 pages × desktop/mobile; Lighthouse accessibility 100 on the live domain. |
+| 20 | **Security headers** | ✅ PASS | `nosniff`, `Referrer-Policy`, `X-Frame-Options`, `Permissions-Policy`, HSTS; `X-Powered-By` removed. |
+| 21 | **Performance (live, Lighthouse mobile, simulated slow-4G + 4× CPU)** | ⚠️ PASS with improvements queued | CLS **0** everywhere. Performance: home **84**, `/btec-it` **83**, calculator **85**, concept page **70** (FCP 4.6 s — the heaviest template), `/about` **67** (legacy portfolio). Accessibility, best-practices and SEO are **100** on all five. TBT 70–300 ms. See the next-phase list for fixes. |
+| 22 | **Paid-content boundary** | ✅ PASS | No `PAID` node is published; validator forbids it; private `sources/` is git-ignored and never uploaded. |
 
-## What changes the ❌/⚠️ rows
+## Still requiring the owner
 
-1. Add the two DNS records (2 minutes) → certificate issues automatically → rows 1, 2 pass.
-2. Re-run: `nslookup`, `curl -I https://ahmaddomiedu.com`, `curl -I https://www.ahmaddomiedu.com` (see `docs/DOMAIN_AND_DEPLOYMENT.md`), then enable the `vercel.app` redirect → row 4 passes.
-3. Submit the sitemap in Search Console / Bing (`docs/SEARCH_ENGINE_SETUP.md`) and run the Rich Results Test on the concept page → row 7 fully confirmed.
-4. After a week of traffic, read Core Web Vitals in Search Console → row 12 on real users.
+1. **Search Console + Bing** — verify the domain (DNS TXT in Cloudflare) and submit `sitemap.xml` (`docs/SEARCH_ENGINE_SETUP.md`). Nothing can be indexed-checked until then.
+2. **Account edits** — YouTube, Instagram, LinkedIn/GitHub link-backs, Asas profile URL (`docs/YOUTUBE_GEO_MIGRATION.md`, `docs/SOCIAL_ENTITY_CHANGES.md`).
+3. **Confirmations** — concept-page review, calculator rule source, card price/report-review decisions (`docs/OWNER_ACTIONS.md`).
+4. One browser check that `https://ahmaddomiporfolio.vercel.app` now lands on `ahmaddomiedu.com` (from a network that is not resetting `vercel.app`).

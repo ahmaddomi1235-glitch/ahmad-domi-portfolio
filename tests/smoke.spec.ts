@@ -300,6 +300,13 @@ test.describe("technical SEO endpoints", () => {
     expect(res.headers()["location"]).toBe("https://ahmaddomiedu.com/btec-it");
   });
 
+  test("legacy ahmaddomiporfolio.vercel.app host redirects permanently to the canonical domain, other hosts do not", async ({ request }) => {
+    const res = await request.get("/btec-it/glossary", { maxRedirects: 0, headers: { host: "ahmaddomiporfolio.vercel.app" } });
+    expect(res.status()).toBe(308);
+    expect(res.headers()["location"]).toBe("https://ahmaddomiedu.com/btec-it/glossary");
+    expect((await request.get("/btec-it/glossary", { maxRedirects: 0 })).status()).toBe(200);
+  });
+
   test("security headers are set", async ({ request }) => {
     const h = (await request.get("/")).headers();
     expect(h["x-content-type-options"]).toBe("nosniff");

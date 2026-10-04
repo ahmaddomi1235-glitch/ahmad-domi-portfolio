@@ -16,6 +16,14 @@ const nextConfig: NextConfig = {
         destination: `https://${CANONICAL_HOST}/:path*`,
         permanent: true,
       },
+      // Legacy production URL → canonical domain (enabled 2026-10-04 after DNS + certificate were verified).
+      // Matches only this exact host; deployment-specific and preview *.vercel.app URLs are untouched.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "ahmaddomiporfolio.vercel.app" }],
+        destination: `https://${CANONICAL_HOST}/:path*`,
+        permanent: true,
+      },
     ];
   },
 

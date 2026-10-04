@@ -2,16 +2,18 @@
 
 Cloudflare = registrar + DNS. Vercel = hosting. The Vercel project is **`ahmaddomiporfolio`** (`prj_c5l38FQzopCgBO3GkfLTQOU8CcBJ`); `vercel link` was run locally (the `.vercel/` folder is git-ignored).
 
-## Status (verified 2026-10-04)
+## Status (verified 2026-10-04, after DNS)
 
 | Item | State |
 | --- | --- |
-| Domain at Cloudflare, nameservers `aitana.ns.cloudflare.com`, `dion.ns.cloudflare.com` | ✅ |
-| `ahmaddomiedu.com` added to the Vercel project | ✅ (via `vercel domains add`) |
-| `www.ahmaddomiedu.com` added to the Vercel project | ✅ |
-| DNS records pointing at Vercel | ⏳ **not yet created — needs Cloudflare access** |
-| TLS certificate | ⏳ issues automatically once DNS resolves |
-| Old `ahmaddomiporfolio.vercel.app` → canonical redirect | ⏳ intentionally *not* enabled yet (it would break the live site until DNS works) |
+| Domain at Cloudflare, nameservers `aitana`/`dion` | ✅ |
+| Apex + `www` attached to the Vercel project | ✅ |
+| DNS-only A records `@` and `www` → `76.76.21.21` | ✅ created by the owner, propagated |
+| TLS certificate (apex + www, auto-renew) | ✅ issued with `vercel certs issue` (90 days) |
+| http → https, www → apex (308) | ✅ |
+| `ahmaddomiporfolio.vercel.app` → apex redirect | ✅ enabled in `next.config.ts` |
+
+Full evidence: `docs/POST_DEPLOY_AUDIT.md`. Note: if a certificate is not issued automatically after DNS changes, run `vercel certs issue ahmaddomiedu.com www.ahmaddomiedu.com`.
 
 ## Records Vercel asked for (read from the CLI, not guessed)
 
@@ -45,20 +47,9 @@ curl -I https://www.ahmaddomiedu.com  # → 308 → https://ahmaddomiedu.com/
 vercel domains inspect ahmaddomiedu.com
 ```
 
-## After DNS verifies — enable the old-URL redirect
+## Old-URL redirect (enabled)
 
-Add this entry to `redirects()` in `next.config.ts` (only then; before DNS exists it would redirect the working site to a dead host):
-
-```ts
-{
-  source: "/:path*",
-  has: [{ type: "host", value: "ahmaddomiporfolio.vercel.app" }],
-  destination: "https://ahmaddomiedu.com/:path*",
-  permanent: true,
-},
-```
-
-Deployment-specific `*.vercel.app` URLs are left alone (previews keep working; their canonical tags still point at the production domain because `SITE_URL` is a constant).
+`next.config.ts` redirects only the exact host `ahmaddomiporfolio.vercel.app` to `https://ahmaddomiedu.com/:path*` (308). Deployment-specific and preview `*.vercel.app` URLs are untouched; their canonical tags still point at production because `SITE_URL` is a constant.
 
 ## Canonical host policy
 

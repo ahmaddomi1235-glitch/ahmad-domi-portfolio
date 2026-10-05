@@ -6,7 +6,7 @@
   "slug": "network-components",
   "summary": "تبدأ الشبكة بالأجهزة النهائية (حواسيب وهواتف وطابعات وخوادم) ولكل منها بطاقة شبكة NIC. ثم أجهزة الشبكة: المبدّل Switch يربط الأجهزة داخل الشبكة المحلية، والموجّه Router يربط شبكتين أو أكثر، ونقطة الوصول WAP توفر Wi-Fi، والمودم يصل المؤسسة بمزود الإنترنت.",
   "unit": "cyber-security",
-  "learningAim": null,
+  "learningAim": "B",
   "criterion": null,
   "concepts": [],
   "questions": [],
@@ -27,7 +27,14 @@
     "transmission-media",
     "firewalls"
   ],
-  "officialSource": null,
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
   "status": "published",
   "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY: concepts only; the source's report brief, template paragraph and full-mark model answer are not used",
   "sourceIds": [
@@ -60,8 +67,7 @@
   ],
   "questionsAnswered": [
     "ما الفرق بين Switch وRouter؟",
-    "ما هي مكونات الشبكة؟",
-    "network components switch router BTEC"
+    "ما هي مكونات الشبكة؟"
   ],
   "body": [
     {
@@ -106,10 +112,17 @@
       ]
     },
     {
+      "t": "callout",
+      "kind": "example",
+      "title": "مثال تطبيقي",
+      "text": "في مختبر حاسوب: لكل جهاز بطاقة شبكة NIC تتصل بمبدّل (Switch) يمرر البيانات إلى الجهاز الصحيح، والمبدّل متصل بموجّه (Router) يربط المختبر بالإنترنت عبر المودم."
+    },
+    {
       "t": "p",
       "text": "وفي المؤسسة الواقعية يُدمج السلكي واللاسلكي: الخوادم وأجهزة الموظفين الثابتة تستفيد من الكابل لاستقراره وسرعته، والهواتف والحواسيب المحمولة تحتاج Wi-Fi للتنقل. وتتضمن المؤسسات أيضًا أجهزة متعددة الوظائف (طباعة ومسح ونسخ) وخوادم تطبيقات وملفات وتخزينًا شبكيًا. انظر [[network-types|أنواع الشبكات]] و[[transmission-media|وسائط الاتصال]] و[[firewalls|جدران الحماية]]."
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "المثال التطبيقي في هذه الصفحة وضعه الموقع لتقريب الفكرة."
 }

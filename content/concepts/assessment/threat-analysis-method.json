@@ -51,7 +51,7 @@
   ],
   "questionsAnswered": [
     "كيف أكتب تحليل تهديد في تقرير الأمن السيبراني؟",
-    "cyber threat analysis writing method BTEC"
+    "ما خطوات تحليل تهديد سيبراني من التهديد إلى الحكم؟"
   ],
   "body": [
     {
@@ -118,5 +118,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "الأمثلة التوضيحية في هذه الصفحة وضعها الموقع لتوضيح الطريقة، وليست أمثلة من مهمة تقييم."
 }

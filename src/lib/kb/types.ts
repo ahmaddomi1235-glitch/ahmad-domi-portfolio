@@ -109,6 +109,8 @@ export type NodeBase = {
   aliases?: string[];
   /** Internal only (never rendered): private source-registry IDs of Ahmad's own material this node was written from. */
   sourceIds?: string[];
+  /** Public one-line note on how the page relates to its source (e.g. short notes plus general background). */
+  provenanceNote?: string;
 };
 
 export type ConceptNode = NodeBase & {

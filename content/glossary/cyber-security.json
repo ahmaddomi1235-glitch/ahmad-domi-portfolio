@@ -63,7 +63,7 @@
       "id": "term-security-update",
       "term_ar": "التحديث الأمني",
       "term_en": "Security Update",
-      "conceptId": "threat-vulnerability-risk",
+      "conceptId": "software-updates-patching",
       "definition_ar": "تحديث يعالج ثغرة معروفة في برنامج أو نظام. في هجوم WannaCry كان تحديث أمني متاحًا قبل الهجوم لكنه لم يُثبَّت على الأجهزة المصابة."
     },
     {
@@ -622,22 +622,6 @@
       ]
     },
     {
-      "id": "term-cctv",
-      "term_ar": "كاميرات المراقبة",
-      "term_en": "CCTV",
-      "conceptId": "physical-security",
-      "definition_ar": "كاميرات تراقب الأماكن وتسجل ما يحدث فيها.",
-      "sourceReferences": [
-        {
-          "kind": "pdf",
-          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
-        }
-      ],
-      "sourceIds": [
-        "src-015"
-      ]
-    },
-    {
       "id": "term-backup",
       "term_ar": "نسخ احتياطي",
       "term_en": "Backup",
@@ -1155,22 +1139,6 @@
       "term_en": "WAN",
       "conceptId": "network-types",
       "definition_ar": "شبكة تربط مواقع متباعدة جغرافيًا أو عدة شبكات محلية.",
-      "sourceReferences": [
-        {
-          "kind": "pdf",
-          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
-        }
-      ],
-      "sourceIds": [
-        "src-069"
-      ]
-    },
-    {
-      "id": "term-wlan-net",
-      "term_ar": "شبكة محلية لاسلكية",
-      "term_en": "Wireless LAN",
-      "conceptId": "network-types",
-      "definition_ar": "شبكة محلية تستخدم Wi-Fi بدل الاعتماد الكامل على الكابلات.",
       "sourceReferences": [
         {
           "kind": "pdf",

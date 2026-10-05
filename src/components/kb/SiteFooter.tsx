@@ -14,7 +14,7 @@ export function SiteFooter() {
           </p>
           <p className="mt-1 text-sm text-ivory/70">{brand.jobTitleAr} — الأردن</p>
           <p className="mt-3 text-sm leading-7 text-ivory/70">
-            شرح وحدات BTEC IT بالعربي مع المصطلحات الإنجليزية. الشرح هنا شرح أحمد دومي، وليس نصًّا رسميًّا من Pearson.
+            شرح وحدات BTEC IT بالعربي مع المصطلحات الإنجليزية. الشرح هنا مبني على مادة أحمد دومي، وليس نصًّا رسميًّا من Pearson.
           </p>
         </div>
 

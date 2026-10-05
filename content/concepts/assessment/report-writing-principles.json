@@ -22,7 +22,13 @@
   "author": "ahmad-domi",
   "lastReviewed": "2026-10-04",
   "visibility": "PUBLIC_SUMMARY",
-  "related": [],
+  "related": [
+    "report-introduction-and-conclusion",
+    "linking-paragraphs",
+    "evaluate-level-d-writing",
+    "report-consistency-and-repetition",
+    "report-formatting-and-emphasis"
+  ],
   "officialSource": null,
   "status": "published",
   "reviewState": "assistant-drafted summary of the author's methodology; principles only (no scenarios, examples, paragraph templates, criteria wording or marking guidance); pending author review",
@@ -67,6 +73,52 @@
     {
       "t": "h2",
       "text": "1) خطّط قبل أن تكتب"
+    },
+    {
+      "t": "table",
+      "caption": "الخطوات السبع ومكان تفصيل كل منها",
+      "head": [
+        "الخطوة",
+        "ما تفعله",
+        "التفصيل"
+      ],
+      "rows": [
+        [
+          "1) التخطيط",
+          "تفهم السيناريو وتحدد نطاق التقرير قبل أي كتابة",
+          "—"
+        ],
+        [
+          "2) المقدمة",
+          "دورك ثم السياق ثم أهمية التقرير ثم ما سيتناوله",
+          "[[report-introduction-and-conclusion|مقدمة التقرير وخاتمته]]"
+        ],
+        [
+          "3) ربط الفقرات",
+          "كل فقرة تنتهي بنتيجة تبدأ منها الفقرة التالية",
+          "[[linking-paragraphs|الربط بين الفقرات]]"
+        ],
+        [
+          "4) الإيجابيات والسلبيات",
+          "توازن بين ما يقدمه الحل وما يكلفه أو يخاطر به",
+          "[[evaluate-level-d-writing|كتابة التقييم]]"
+        ],
+        [
+          "5) تجنب التكرار",
+          "لا تعيد الفكرة نفسها بكلمات مختلفة",
+          "[[report-consistency-and-repetition|الاتساق وتجنب التكرار]]"
+        ],
+        [
+          "6) التنسيق",
+          "عناوين وأقسام وتمييز محدود للمهم",
+          "[[report-formatting-and-emphasis|تنسيق التقرير]]"
+        ],
+        [
+          "7) الخاتمة",
+          "أهم نتيجة وأثر وحكم وتوصية دون فكرة جديدة",
+          "[[report-introduction-and-conclusion|مقدمة التقرير وخاتمته]]"
+        ]
+      ]
     },
     {
       "t": "p",

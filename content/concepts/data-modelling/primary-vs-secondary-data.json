@@ -24,7 +24,6 @@
   "visibility": "PUBLIC",
   "related": [
     "data-sources",
-    "online-data-sources-privacy",
     "sample-size-and-bias",
     "data-accuracy-and-age"
   ],
@@ -54,7 +53,7 @@
   ],
   "questionsAnswered": [
     "ما الفرق بين البيانات الأساسية والخارجية؟",
-    "primary and secondary data BTEC"
+    "ما مزايا البيانات الأساسية وعيوبها مقارنة بالخارجية؟"
   ],
   "body": [
     {
@@ -93,7 +92,7 @@
     },
     {
       "t": "p",
-      "text": "ولأمثلة مصادر البيانات داخل المؤسسة انظر [[data-sources|مصادر البيانات]] و[[online-data-sources-privacy|البيانات الناتجة عن الإنترنت والهواتف]]. وللحكم على جودتها [[data-accuracy-and-age|دقة البيانات وعمرها]]."
+      "text": "ولأمثلة مصادر البيانات داخل المؤسسة انظر [[data-sources|مصادر البيانات]] و[[data-sources|البيانات الناتجة عن الإنترنت والهواتف]]. وللحكم على جودتها [[data-accuracy-and-age|دقة البيانات وعمرها]]."
     },
     {
       "t": "h2",

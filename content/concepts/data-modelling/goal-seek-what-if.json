@@ -52,8 +52,7 @@
   ],
   "questionsAnswered": [
     "ما هو Goal Seek؟",
-    "ما هو تحليل ماذا لو؟",
-    "goal seek what-if analysis BTEC"
+    "ما هو تحليل ماذا لو؟"
   ],
   "body": [
     {
@@ -119,5 +118,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على مادة أحمد دومي، وأُضيف إليها شرح توضيحي عام ليكتمل الجواب."
 }

@@ -6,7 +6,7 @@
   "slug": "cyber-legal-responsibilities",
   "summary": "الأمن السيبراني فيه جانب قانوني: شروط الاستخدام، وقوانين حماية البيانات كـGDPR، وتجريم إساءة استخدام الحاسوب، وضوابط مراقبة الاتصالات، ومكافحة الاحتيال، والصحة والسلامة.",
   "unit": "cyber-security",
-  "learningAim": null,
+  "learningAim": "A",
   "criterion": null,
   "concepts": [],
   "questions": [],
@@ -28,7 +28,14 @@
     "defence-in-depth",
     "cyber-attack-impact"
   ],
-  "officialSource": null,
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
   "status": "published",
   "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
   "sourceIds": [
@@ -36,7 +43,7 @@
   ],
   "order": 23,
   "shortAnswer": "المؤسسة تتعامل مع بيانات أشخاص حقيقيين، فلا تستطيع جمعها أو استخدامها أو مراقبة الموظفين كما تشاء. تشمل المسؤوليات القانونية: شروط الاستخدام، وحماية البيانات (مثل GDPR)، وتجريم إساءة استخدام الحاسوب، وضوابط مراقبة الاتصالات، ومكافحة الاحتيال، والصحة والسلامة.",
-  "whyBtec": "أحيانًا يسأل السيناريو «ماذا يفرض القانون؟». هنا تحتاج إلى ذكر الجانب القانوني بجانب التقني، وكل جانب في الجدول أدناه له صفحة أو فقرة.",
+  "whyBtec": "عند الحديث عن مؤسسة تجمع بيانات عملاء أو تراقب موظفيها يلزم ذكر الجانب القانوني بجانب التقني؛ والجدول أدناه يربط كل جانب بصفحته.",
   "terminology": [
     {
       "ar": "المسؤولية القانونية",
@@ -61,7 +68,7 @@
   ],
   "questionsAnswered": [
     "ما هي المسؤوليات القانونية في الأمن السيبراني؟",
-    "legal responsibilities cyber security BTEC"
+    "ما المسؤوليات القانونية التي تقع على المؤسسة عند جمع بيانات العملاء؟"
   ],
   "body": [
     {

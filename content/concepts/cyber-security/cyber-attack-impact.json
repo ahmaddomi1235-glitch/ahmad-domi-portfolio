@@ -6,7 +6,7 @@
   "slug": "cyber-attack-impact",
   "summary": "قد يسبب الهجوم السيبراني خسارة تشغيلية (توقف العمل) أو مالية (إصلاح وغرامات) أو في السمعة (فقد ثقة العملاء) أو في الملكية الفكرية (سرقة تصاميم وأسرار)، ويختلف حجم الأثر من مؤسسة لأخرى.",
   "unit": "cyber-security",
-  "learningAim": null,
+  "learningAim": "A",
   "criterion": null,
   "concepts": [],
   "questions": [],
@@ -27,7 +27,14 @@
     "dos-ddos-attacks",
     "external-threats"
   ],
-  "officialSource": null,
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
   "status": "published",
   "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
   "sourceIds": [
@@ -35,7 +42,7 @@
   ],
   "order": 14,
   "shortAnswer": "للهجوم السيبراني أربعة أنواع رئيسية من الأثر: **تشغيلي** (توقف العمل أو الإنتاج)، و**مالي** (إصلاح، خبراء، أجهزة، غرامات وتعويضات)، و**سمعة** (فقد ثقة العملاء)، و**ملكية فكرية** (سرقة تصاميم وأسرار وبيانات). وحجم الأثر يعتمد على طبيعة المؤسسة نفسها.",
-  "whyBtec": "تقييم الأثر هو ما يحوّل الواجب من «ذكر تهديدات» إلى «تحليل»: لا تكتب ماذا حدث فقط، بل ما حجم أثره على هذه المؤسسة تحديدًا.",
+  "whyBtec": "تقييم الأثر ينقل الكتابة من سرد التهديدات إلى تحليلها: لا يكفي أن تذكر ما حدث، بل ما حجم أثره على المؤسسة المعنية تحديدًا.",
   "terminology": [
     {
       "ar": "أثر",
@@ -60,8 +67,7 @@
   ],
   "questionsAnswered": [
     "ما هو أثر الهجمات السيبرانية على المؤسسة؟",
-    "ما هي الخسارة التشغيلية والمالية وخسارة السمعة؟",
-    "impact of cyber attack on organisation"
+    "ما هي الخسارة التشغيلية والمالية وخسارة السمعة؟"
   ],
   "body": [
     {

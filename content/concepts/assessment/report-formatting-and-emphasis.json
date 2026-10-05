@@ -51,7 +51,7 @@
   ],
   "questionsAnswered": [
     "كيف أنسق تقرير BTEC؟",
-    "report formatting emphasis BTEC"
+    "كيف أميّز المعلومات المهمة في التقرير دون مبالغة؟"
   ],
   "body": [
     {
@@ -118,5 +118,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "الأمثلة التوضيحية في هذه الصفحة وضعها الموقع لتوضيح الطريقة، وليست أمثلة من مهمة تقييم."
 }

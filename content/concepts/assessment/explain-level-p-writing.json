@@ -52,8 +52,7 @@
   ],
   "questionsAnswered": [
     "كيف أكتب فقرة شرح في تقرير BTEC؟",
-    "ما الخطوات الخمس لمستوى P؟",
-    "how to write explain level BTEC"
+    "ما الخطوات الخمس لمستوى P؟"
   ],
   "body": [
     {
@@ -115,5 +114,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "الأمثلة التوضيحية في هذه الصفحة وضعها الموقع لتوضيح الطريقة، وليست أمثلة من مهمة تقييم."
 }

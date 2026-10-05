@@ -61,8 +61,7 @@
   ],
   "questionsAnswered": [
     "ما الفرق بين المتغير والثابت؟",
-    "كيف أمثل المشكلة في برنامج؟",
-    "variables constants decisions BTEC programming"
+    "كيف أمثل المشكلة في برنامج؟"
   ],
   "body": [
     {
@@ -119,5 +118,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات محاضرة لأحمد دومي، وأُضيفت إليها أمثلة وشرح توضيحي عام."
 }

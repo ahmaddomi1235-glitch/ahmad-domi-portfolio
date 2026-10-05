@@ -27,7 +27,7 @@ export default function GlossaryPage() {
         crumbs={crumbs}
         title="مصطلحات BTEC IT"
         titleEn="BTEC IT Glossary — Arabic ↔ English"
-        lead={<p>كل مصطلح بالعربي والإنجليزي مع تعريف مختصر مأخوذ من شرح أحمد دومي، ورابط إلى المفهوم الذي يشرحه. المصطلحات مجمّعة حسب الوحدة.</p>}
+        lead={<p>كل مصطلح بالعربي والإنجليزي مع تعريف مختصر مبني على مادة أحمد دومي، ورابط إلى المفهوم الذي يشرحه. المصطلحات مجمّعة حسب الوحدة.</p>}
       />
       {units.map((u) => {
         const list = terms.filter((t) => t.unit === u.id);

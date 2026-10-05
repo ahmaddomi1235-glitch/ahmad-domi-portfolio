@@ -24,22 +24,6 @@
   },
   "items": [
     {
-      "id": "term-hypertext",
-      "term_ar": "النص التشعبي",
-      "term_en": "Hypertext",
-      "conceptId": "website-types-by-purpose",
-      "definition_ar": "نص يحتوي روابط تقود إلى محتوى آخر ذي صلة داخل الموقع أو خارجه.",
-      "sourceReferences": [
-        {
-          "kind": "pdf",
-          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
-        }
-      ],
-      "sourceIds": [
-        "src-066"
-      ]
-    },
-    {
       "id": "term-responsive",
       "term_ar": "التصميم المتجاوب",
       "term_en": "Responsive Design",
@@ -125,22 +109,6 @@
       "term_en": "Alt Text",
       "conceptId": "website-design-principles",
       "definition_ar": "وصف نصي للصورة يقرؤه قارئ الشاشة ويظهر عند تعذر تحميلها.",
-      "sourceReferences": [
-        {
-          "kind": "pdf",
-          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
-        }
-      ],
-      "sourceIds": [
-        "src-066"
-      ]
-    },
-    {
-      "id": "term-golden-ratio",
-      "term_ar": "النسبة الذهبية",
-      "term_en": "Golden Ratio",
-      "conceptId": "creativity-in-web-design",
-      "definition_ar": "نسبة تقارب 1.62 تُستخدم لتقسيم المساحة بصورة مريحة للعين.",
       "sourceReferences": [
         {
           "kind": "pdf",

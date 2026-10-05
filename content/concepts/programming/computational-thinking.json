@@ -62,8 +62,7 @@
   ],
   "questionsAnswered": [
     "ما هو التفكير الحاسوبي؟",
-    "ما هي مهارات التفكير الحاسوبي؟",
-    "computational thinking decomposition abstraction BTEC"
+    "ما هي مهارات التفكير الحاسوبي؟"
   ],
   "body": [
     {
@@ -114,5 +113,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات محاضرة لأحمد دومي، وأُضيفت إليها أمثلة وشرح توضيحي عام."
 }

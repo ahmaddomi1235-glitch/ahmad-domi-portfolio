@@ -64,8 +64,7 @@
   ],
   "questionsAnswered": [
     "ما هي أنواع البيانات في البرمجة؟",
-    "ما الفرق بين Integer وFloat وString؟",
-    "programming data types BTEC"
+    "ما الفرق بين Integer وFloat وString؟"
   ],
   "body": [
     {
@@ -147,5 +146,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات محاضرة لأحمد دومي، وأُضيفت إليها أمثلة وشرح توضيحي عام."
 }

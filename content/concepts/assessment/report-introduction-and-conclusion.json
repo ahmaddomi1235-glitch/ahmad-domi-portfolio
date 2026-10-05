@@ -52,8 +52,7 @@
   ],
   "questionsAnswered": [
     "كيف أكتب مقدمة تقرير؟",
-    "ماذا أكتب في خاتمة التقرير؟",
-    "report introduction conclusion BTEC"
+    "ماذا أكتب في خاتمة التقرير؟"
   ],
   "body": [
     {
@@ -102,5 +101,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "الأمثلة التوضيحية في هذه الصفحة وضعها الموقع لتوضيح الطريقة، وليست أمثلة من مهمة تقييم."
 }

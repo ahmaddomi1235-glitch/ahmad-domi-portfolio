@@ -51,8 +51,7 @@
   ],
   "questionsAnswered": [
     "ما هو PCA؟",
-    "ما هو تقليل الأبعاد؟",
-    "PCA dimensionality reduction BTEC"
+    "ما هو تقليل الأبعاد؟"
   ],
   "body": [
     {
@@ -111,5 +110,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات قصيرة لأحمد دومي عن الموضوع، وأُضيف إليها شرح توضيحي عام ليكتمل الجواب."
 }

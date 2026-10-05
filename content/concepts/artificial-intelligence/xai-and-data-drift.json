@@ -52,8 +52,7 @@
   ],
   "questionsAnswered": [
     "ما هو XAI؟",
-    "ما هو Data Drift؟",
-    "XAI data drift model monitoring BTEC"
+    "ما هو Data Drift؟"
   ],
   "body": [
     {
@@ -118,5 +117,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات قصيرة لأحمد دومي عن الموضوع، وأُضيف إليها شرح توضيحي عام ليكتمل الجواب."
 }

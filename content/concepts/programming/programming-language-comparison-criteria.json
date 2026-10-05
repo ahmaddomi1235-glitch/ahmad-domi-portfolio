@@ -57,8 +57,7 @@
   ],
   "questionsAnswered": [
     "كيف أقارن بين لغات البرمجة؟",
-    "ما معايير اختيار لغة البرمجة؟",
-    "comparing programming languages criteria BTEC"
+    "ما معايير اختيار لغة البرمجة؟"
   ],
   "body": [
     {
@@ -123,5 +122,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات محاضرة لأحمد دومي، وأُضيفت إليها أمثلة وشرح توضيحي عام."
 }

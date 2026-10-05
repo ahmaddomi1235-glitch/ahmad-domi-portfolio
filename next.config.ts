@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
     return [
       // Old Arabic alias of the home page.
       { source: "/ar", destination: "/", permanent: true },
+      // Phase 2C merges: retired concept URLs go to their canonical parent page.
+      { source: "/btec-it/programming/git-version-control", destination: "/btec-it/programming/ide-and-maintainability", permanent: true },
+      { source: "/btec-it/artificial-intelligence/cloud-platforms-for-ai", destination: "/btec-it/artificial-intelligence/ai-tools-and-frameworks", permanent: true },
+      { source: "/btec-it/data-modelling/online-data-sources-privacy", destination: "/btec-it/data-modelling/data-sources", permanent: true },
       // www → apex (the canonical host). Inert until www.ahmaddomiedu.com resolves to this project.
       {
         source: "/:path*",

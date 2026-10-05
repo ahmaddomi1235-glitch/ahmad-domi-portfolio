@@ -6,7 +6,7 @@
   "slug": "computer-misuse",
   "summary": "القانون يجرّم الدخول إلى نظام دون تصريح، والدخول بقصد ارتكاب جريمة، وتعديل بيانات الحاسوب دون تصريح، وتعطيل نظام، وتوفير أدوات لجرائم الحاسوب. وعبارة «كنت أجرب فقط» لا تجعل الدخول الممنوع قانونيًا.",
   "unit": "cyber-security",
-  "learningAim": null,
+  "learningAim": "A",
   "criterion": null,
   "concepts": [],
   "questions": [],
@@ -26,7 +26,14 @@
     "cyber-legal-responsibilities",
     "dos-ddos-attacks"
   ],
-  "officialSource": null,
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
   "status": "published",
   "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
   "sourceIds": [
@@ -47,7 +54,7 @@
   ],
   "questionsAnswered": [
     "ما هي إساءة استخدام الحاسوب؟",
-    "computer misuse act BTEC"
+    "ما الأفعال التي تُعدّ إساءة استخدام للحاسوب؟"
   ],
   "body": [
     {

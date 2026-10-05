@@ -55,8 +55,7 @@
   ],
   "questionsAnswered": [
     "ما أفضل لغة برمجة للذكاء الاصطناعي؟",
-    "لماذا تُستخدم Python في الذكاء الاصطناعي؟",
-    "programming languages for AI Python Java R Lisp"
+    "لماذا تُستخدم Python في الذكاء الاصطناعي؟"
   ],
   "body": [
     {
@@ -122,5 +121,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات قصيرة لأحمد دومي عن الموضوع، وأُضيف إليها شرح توضيحي عام ليكتمل الجواب."
 }

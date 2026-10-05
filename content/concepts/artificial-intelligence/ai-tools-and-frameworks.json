@@ -1,10 +1,10 @@
 {
   "id": "ai-tools-and-frameworks",
   "type": "Comparison",
-  "title_ar": "أدوات بناء وتطبيق حلول الذكاء الاصطناعي: من البيانات إلى النشر",
-  "title_en": "AI Tools and Frameworks",
+  "title_ar": "أدوات بناء الذكاء الاصطناعي ومنصات السحابة: من البيانات إلى النشر",
+  "title_en": "AI Tools, Frameworks and Cloud Platforms",
   "slug": "ai-tools-and-frameworks",
-  "summary": "لكل مرحلة في حل الذكاء الاصطناعي أدواتها: عنونة وتنظيف البيانات، Jupyter وPandas وMatplotlib للاستكشاف، scikit-learn وTensorFlow وKeras وPyTorch للتدريب، وDocker وKubernetes وFastAPI للنشر والتشغيل.",
+  "summary": "أدوات كل مرحلة في مشروع الذكاء الاصطناعي (جمع البيانات والتحليل والتدريب والنشر) ومنصات الحوسبة السحابية AWS وAzure وGoogle Cloud: متى تفيد السحابة ومتى لا تلزم.",
   "unit": "artificial-intelligence",
   "learningAim": null,
   "criterion": null,
@@ -25,17 +25,20 @@
   "related": [
     "ide-vs-jupyter-notebook",
     "programming-languages-for-ai",
-    "ai-project-lifecycle"
+    "ai-project-lifecycle",
+    "emerging-technology-risks",
+    "protecting-ai-data",
+    "backup-and-storage"
   ],
   "officialSource": null,
   "status": "published",
   "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
   "sourceIds": [
-    "src-039",
-    "src-031"
+    "src-031",
+    "src-039"
   ],
   "order": 35,
-  "shortAnswer": "يمر حل الذكاء الاصطناعي بسلسلة خطوات، ولكل خطوة أدوات: **جمع البيانات وتحضيرها** (قواعد بيانات وملفات وAPIs، وأدوات عنونة مثل Labelbox)، **الاستكشاف والتحليل والتصوير** (Jupyter Notebook وPandas وMatplotlib وSeaborn وTableau)، **التدريب وبناء النموذج** (scikit-learn للنماذج التقليدية، TensorFlow وKeras للشبكات العصبية، PyTorch للأبحاث والنماذج العميقة)، **النشر والتشغيل** (Docker لتغليف التطبيق، Kubernetes لإدارة الحاويات والتوسعة، FastAPI لبناء API، TensorFlow Serving لخدمة النماذج).",
+  "shortAnswer": "يمر حل الذكاء الاصطناعي بسلسلة خطوات، ولكل خطوة أدوات: **جمع البيانات وتحضيرها** (قواعد بيانات وملفات وAPIs، وأدوات عنونة مثل Labelbox)، **الاستكشاف والتحليل والتصوير** (Jupyter Notebook وPandas وMatplotlib وSeaborn وTableau)، **التدريب وبناء النموذج** (scikit-learn للنماذج التقليدية، TensorFlow وKeras للشبكات العصبية، PyTorch للأبحاث والنماذج العميقة)، **النشر والتشغيل** (Docker لتغليف التطبيق، Kubernetes لإدارة الحاويات والتوسعة، FastAPI لبناء API، TensorFlow Serving لخدمة النماذج). وحين لا يكفي جهازك للتدريب أو التشغيل تُستخدم الحوسبة السحابية (AWS وAzure وGoogle Cloud) لموارد قوية عند الطلب وتوسعة تلقائية.",
   "whyBtec": "اذكر الأداة بوظيفتها لا باسمها وحده: ماذا تفعل ولماذا اخترتها في هذه المرحلة؟",
   "terminology": [
     {
@@ -49,11 +52,24 @@
     {
       "ar": "واجهة برمجية",
       "en": "API"
+    },
+    {
+      "ar": "حوسبة سحابية",
+      "en": "Cloud Computing"
+    },
+    {
+      "ar": "وحدة معالجة رسومية",
+      "en": "GPU"
+    },
+    {
+      "ar": "توسعة تلقائية",
+      "en": "Auto-scaling"
     }
   ],
   "questionsAnswered": [
     "ما هي أدوات الذكاء الاصطناعي؟",
-    "AI tools frameworks pipeline BTEC"
+    "لماذا نستخدم السحابة في الذكاء الاصطناعي؟",
+    "ما أشهر منصات السحابة؟"
   ],
   "body": [
     {
@@ -111,8 +127,67 @@
     {
       "t": "p",
       "text": "وللتعرف على كل مرحلة في سياقها انظر [[ai-project-lifecycle|دورة المشروع]] و[[data-analytics-types|أنواع التحليلات]]."
+    },
+    {
+      "t": "h2",
+      "text": "منصات الحوسبة السحابية للذكاء الاصطناعي"
+    },
+    {
+      "t": "p",
+      "text": "أحيانًا لا يكفي جهازك للتدريب، أو تحتاج تشغيل النموذج لعدد كبير من المستخدمين. هنا تأتي **السحابة (Cloud)**: تشغيل موارد قوية (GPU/CPU) عند الطلب، وتخزين بيانات كبير بأمان ونسخ احتياطي، وتوسعة تلقائية إذا زاد المستخدمون، وخدمات جاهزة للذكاء الاصطناعي (تدريب، نشر، مراقبة، قواعد بيانات). من المنصات المشهورة: **AWS** (خدمات كثيرة مرنة مثل S3 للتخزين وEC2 للحوسبة)، و**Microsoft Azure** (قوية للشركات ومتكاملة مع أدوات Microsoft)، و**Google Cloud** (قوية في البيانات وML وتقدم BigQuery وVertex AI)."
+    },
+    {
+      "t": "table",
+      "head": [
+        "المنصة",
+        "ما تتميز به"
+      ],
+      "rows": [
+        [
+          "AWS",
+          "خدمات كثيرة جدًا ومرنة (S3 للتخزين، EC2 للحوسبة)"
+        ],
+        [
+          "Microsoft Azure",
+          "قوية للشركات ومتكاملة مع أدوات Microsoft"
+        ],
+        [
+          "Google Cloud",
+          "قوية في البيانات وتعلم الآلة، مع BigQuery وVertex AI"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "لماذا السحابة في الذكاء الاصطناعي؟"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "تشغيل موارد قوية (GPU/CPU) بحسب الحاجة.",
+        "تخزين بيانات كبير بأمان مع نسخ احتياطي.",
+        "توسعة تلقائية إذا زاد عدد المستخدمين بدل أن تتعطل الخدمة.",
+        "خدمات جاهزة للتدريب والنشر والمراقبة وقواعد البيانات."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "ولأمن السحابة انظر [[emerging-technology-risks|مخاطر التقنيات الجديدة: السحابة وإنترنت الأشياء]] و[[protecting-ai-data|حماية بيانات الذكاء الاصطناعي]]. وللنسخ الاحتياطي: [[backup-and-storage|النسخ الاحتياطي]]."
+    },
+    {
+      "t": "h2",
+      "text": "متى لا تحتاجها؟"
+    },
+    {
+      "t": "p",
+      "text": "إن كانت بياناتك صغيرة ونموذجك بسيطًا فجهازك قد يكفي. السحابة تفيد حين يتجاوز الحمل قدرة جهازك أو حين تحتاج خدمة عدد كبير من المستخدمين، وتذكّر أنها تحمل كلفة وتتطلب حماية للبيانات وصلاحيات منضبطة."
+    },
+    {
+      "t": "p",
+      "text": "واختر المنصة بحسب ما يتوفر لدى مؤسستك من أدوات وخبرات ومتطلبات حماية بيانات، لا بحسب الشهرة فقط."
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات قصيرة لأحمد دومي عن الموضوع، وأُضيف إليها شرح توضيحي عام ليكتمل الجواب."
 }

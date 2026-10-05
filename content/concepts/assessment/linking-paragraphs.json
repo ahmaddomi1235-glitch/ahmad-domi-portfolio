@@ -48,7 +48,7 @@
   ],
   "questionsAnswered": [
     "كيف أربط بين الفقرات في التقرير؟",
-    "linking paragraphs report writing BTEC"
+    "كيف أنتقل من فقرة إلى أخرى دون تكرار في التقرير؟"
   ],
   "body": [
     {
@@ -110,5 +110,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "الأمثلة التوضيحية في هذه الصفحة وضعها الموقع لتوضيح الطريقة، وليست أمثلة من مهمة تقييم."
 }

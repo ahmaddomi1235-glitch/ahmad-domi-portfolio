@@ -312,24 +312,6 @@
       ]
     },
     {
-      "id": "term-java-me",
-      "term_ar": "جافا ME",
-      "term_en": "Java ME",
-      "conceptId": "mobile-operating-systems",
-      "definition_ar": "منصة قديمة خفيفة للأجهزة محدودة الموارد كانت سائدة قبل الهواتف الذكية.",
-      "sourceReferences": [
-        {
-          "kind": "pdf",
-          "label": "مدخل إلى التطبيقات (أحمد دومي)"
-        }
-      ],
-      "sourceIds": [
-        "src-043",
-        "src-099",
-        "src-027"
-      ]
-    },
-    {
       "id": "term-functional-req",
       "term_ar": "متطلب وظيفي",
       "term_en": "Functional Requirement",
@@ -655,8 +637,8 @@
     },
     {
       "id": "term-validation-app",
-      "term_ar": "التحقق من الصحة",
-      "term_en": "Validation",
+      "term_ar": "التحقق من صحة المدخلات",
+      "term_en": "Input Validation",
       "conceptId": "app-input-validation",
       "definition_ar": "التأكد أن البيانات المدخلة مناسبة قبل استخدامها أو حفظها.",
       "sourceReferences": [

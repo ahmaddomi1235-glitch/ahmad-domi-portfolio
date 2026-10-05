@@ -59,8 +59,7 @@
   ],
   "questionsAnswered": [
     "ما هي البرمجة داخل النظام ISP؟",
-    "كيف نبرمج المتحكمات الدقيقة؟",
-    "ISP SPI JTAG embedded programming"
+    "كيف نبرمج المتحكمات الدقيقة؟"
   ],
   "body": [
     {
@@ -132,5 +131,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات محاضرة لأحمد دومي، وأُضيفت إليها أمثلة وشرح توضيحي عام."
 }

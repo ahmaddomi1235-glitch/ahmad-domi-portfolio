@@ -55,8 +55,7 @@
   ],
   "questionsAnswered": [
     "ما هي رموز مخطط الانسياب؟",
-    "كيف أرسم Flowchart؟",
-    "flowchart symbols BTEC"
+    "كيف أرسم Flowchart؟"
   ],
   "body": [
     {
@@ -118,5 +117,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات محاضرة لأحمد دومي، وأُضيفت إليها أمثلة وشرح توضيحي عام."
 }

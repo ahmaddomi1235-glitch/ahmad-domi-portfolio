@@ -42,7 +42,7 @@ export function GET() {
     `- LinkedIn: ${accounts.linkedin}`,
     "",
     "## Notes",
-    "- Pages marked 'شرح أحمد دومي' are explanations by Ahmad Domi, not Pearson wording. Official unit mappings (learning aims, criteria) are intentionally not published until verified against Pearson documents.",
+    "- Pages are based on Ahmad Domi's own teaching material, not Pearson wording. Only Unit 11 (Cyber Security and Incident Management) has an official structure published (learning-aim titles and criterion codes, no criterion text); no other unit has an official mapping.",
     `- ${getConcepts().length} concept pages are currently published.`,
     "",
   );

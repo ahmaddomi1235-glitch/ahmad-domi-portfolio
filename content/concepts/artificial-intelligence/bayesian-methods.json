@@ -55,7 +55,7 @@
   ],
   "questionsAnswered": [
     "ما هي الطرق البايزية؟",
-    "Bayesian methods explained simple"
+    "كيف يحدّث النموذج احتماله عند وصول دليل جديد؟"
   ],
   "body": [
     {
@@ -118,5 +118,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات قصيرة لأحمد دومي عن الموضوع، وأُضيف إليها شرح توضيحي عام ليكتمل الجواب."
 }

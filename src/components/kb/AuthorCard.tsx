@@ -11,7 +11,7 @@ export function arabicDate(iso: string): string {
 }
 
 /** Author + provenance block. Makes it explicit that this is Ahmad Domi's own explanation, not an official Pearson text. */
-export function AuthorCard({ lastReviewed, sources }: { lastReviewed: string; sources?: SourceRef[] }) {
+export function AuthorCard({ lastReviewed, sources, note }: { lastReviewed: string; sources?: SourceRef[]; note?: string }) {
   return (
     <section aria-labelledby="author-heading" className="rounded-2xl border border-line bg-white p-5 sm:p-6">
       <h2 id="author-heading" className="sr-only">
@@ -40,14 +40,20 @@ export function AuthorCard({ lastReviewed, sources }: { lastReviewed: string; so
       <dl className="mt-4 grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2">
         <div>
           <dt className="text-muted">نوع المحتوى</dt>
-          <dd className="font-medium">شرح أحمد دومي — وليس نصًّا رسميًّا من Pearson</dd>
+          <dd className="font-medium">شرح مبني على مادة أحمد دومي — وليس نصًّا رسميًّا من Pearson</dd>
         </div>
         <div>
-          <dt className="text-muted">آخر تحديث</dt>
+          <dt className="text-muted">آخر مراجعة</dt>
           <dd className="font-medium">
             <time dateTime={lastReviewed}>{arabicDate(lastReviewed)}</time>
           </dd>
         </div>
+        {note && (
+          <div className="sm:col-span-2">
+            <dt className="text-muted">ملاحظة على المصدر</dt>
+            <dd className="font-medium">{note}</dd>
+          </div>
+        )}
         {sources && sources.length > 0 && (
           <div className="sm:col-span-2">
             <dt className="text-muted">المصدر</dt>

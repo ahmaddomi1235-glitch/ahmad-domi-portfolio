@@ -52,7 +52,7 @@
   ],
   "questionsAnswered": [
     "ما هو السلوك المهني في فريق المشروع؟",
-    "professional conduct project team BTEC"
+    "كيف أتعامل مع ضغط العمل في فريق المشروع؟"
   ],
   "body": [
     {
@@ -107,10 +107,17 @@
       ]
     },
     {
+      "t": "callout",
+      "kind": "example",
+      "title": "مثال تطبيقي",
+      "text": "اكتشف عضو في الفريق خطأً في ملف سلّمه قبل ساعة. السلوك المهني أن يبلغ الفريق فورًا ويقترح تصحيحًا، لا أن يسكت أو يلوم زميله."
+    },
+    {
       "t": "p",
       "text": "وتتصل بمسؤوليات الإدارة: [[project-manager-responsibilities|مدير المشروع]] و[[effective-project-meetings|الاجتماعات الفعّالة]] و[[project-closure-and-lessons-learned|الدروس المستفادة]]."
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "المثال التطبيقي في هذه الصفحة وضعه الموقع لتقريب الفكرة."
 }

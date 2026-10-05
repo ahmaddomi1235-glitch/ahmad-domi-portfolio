@@ -51,8 +51,7 @@
   ],
   "questionsAnswered": [
     "ما هو كشف الشذوذ؟",
-    "كيف يعمل KNN في كشف الشذوذ؟",
-    "KNN anomaly detection BTEC"
+    "كيف يعمل KNN في كشف الشذوذ؟"
   ],
   "body": [
     {
@@ -107,5 +106,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات قصيرة لأحمد دومي عن الموضوع، وأُضيف إليها شرح توضيحي عام ليكتمل الجواب."
 }

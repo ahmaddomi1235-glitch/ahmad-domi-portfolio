@@ -6,7 +6,7 @@
   "slug": "data-protection-gdpr",
   "summary": "قوانين حماية البيانات مثل GDPR تقول إن البيانات الشخصية تُعالَج بصورة قانونية ولغرض محدد وبالقدر المطلوب فقط، وتكون دقيقة ومحدثة، ولا تُحفَظ أكثر من اللازم، وتمنح الأفراد حقوقًا في الاطلاع والتصحيح وأحيانًا الحذف.",
   "unit": "cyber-security",
-  "learningAim": null,
+  "learningAim": "A",
   "criterion": null,
   "concepts": [],
   "questions": [],
@@ -26,7 +26,14 @@
     "cyber-legal-responsibilities",
     "ai-privacy"
   ],
-  "officialSource": null,
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
   "status": "published",
   "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
   "sourceIds": [
@@ -51,8 +58,7 @@
   ],
   "questionsAnswered": [
     "ما هي اللائحة العامة لحماية البيانات GDPR؟",
-    "ما مبادئ حماية البيانات؟",
-    "GDPR principles BTEC"
+    "ما مبادئ حماية البيانات؟"
   ],
   "body": [
     {

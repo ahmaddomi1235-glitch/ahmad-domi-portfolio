@@ -56,7 +56,7 @@
       "id": "term-data-cleaning",
       "term_ar": "تنقية البيانات",
       "term_en": "Data Cleaning",
-      "conceptId": "data-quality",
+      "conceptId": "data-cleaning-steps",
       "definition_ar": "إزالة الأخطاء والقيم الناقصة أو المكررة من البيانات لتحسين جودتها قبل استخدامها في التحليل."
     },
     {
@@ -126,22 +126,8 @@
       "id": "term-sample-size",
       "term_ar": "حجم العينة",
       "term_en": "Sample Size",
-      "conceptId": "data-quality",
+      "conceptId": "sample-size-and-bias",
       "definition_ar": "عدد المشاركين أو السجلات التي جُمعت منها البيانات؛ إن كان قليلًا جدًا فلا يصلح لاستنتاج عام.",
-      "sourceReferences": [
-        {
-          "kind": "pdf",
-          "label": "عرض الحصة: جودة البيانات وأثرها على اتخاذ القرار (أحمد دومي)"
-        }
-      ],
-      "reviewState": "definition paraphrased from the author's lesson deck; pending author review"
-    },
-    {
-      "id": "term-duplicate-data",
-      "term_ar": "السجل المكرر",
-      "term_en": "Duplicate Data",
-      "conceptId": "data-quality",
-      "definition_ar": "السجل نفسه مسجَّل أكثر من مرة، فيُحسب الشيء الواحد مرتين وتتضخم الأرقام.",
       "sourceReferences": [
         {
           "kind": "pdf",
@@ -273,7 +259,7 @@
       "id": "term-cookies",
       "term_ar": "ملفات تعريف الارتباط",
       "term_en": "Cookies",
-      "conceptId": "online-data-sources-privacy",
+      "conceptId": "data-sources",
       "definition_ar": "بيانات صغيرة يحفظها الموقع لتذكر بعض المعلومات عن زيارة المستخدم.",
       "sourceReferences": [
         {
@@ -290,7 +276,7 @@
       "id": "term-loyalty-card",
       "term_ar": "بطاقة الولاء",
       "term_en": "Loyalty Card",
-      "conceptId": "online-data-sources-privacy",
+      "conceptId": "data-sources",
       "definition_ar": "بطاقة تتيح للمتجر معرفة مشتريات العميل ووقتها ومقدار إنفاقه.",
       "sourceReferences": [
         {
@@ -411,23 +397,6 @@
       "term_en": "Worksheet",
       "conceptId": "workbook-structure-and-import",
       "definition_ar": "صفحة داخل المصنف تتكون من صفوف وأعمدة وخلايا.",
-      "sourceReferences": [
-        {
-          "kind": "pdf",
-          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
-        }
-      ],
-      "sourceIds": [
-        "src-041",
-        "src-042"
-      ]
-    },
-    {
-      "id": "term-csv",
-      "term_ar": "ملف CSV",
-      "term_en": "CSV File",
-      "conceptId": "workbook-structure-and-import",
-      "definition_ar": "ملف نصي تُفصل قيمه بفاصل مثل الفاصلة، يُستورد إلى جدول بيانات.",
       "sourceReferences": [
         {
           "kind": "pdf",

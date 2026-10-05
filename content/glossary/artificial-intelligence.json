@@ -175,7 +175,7 @@
       "id": "term-xai",
       "term_ar": "الذكاء الاصطناعي القابل للتفسير",
       "term_en": "Explainable AI (XAI)",
-      "conceptId": "ai-bias",
+      "conceptId": "xai-and-data-drift",
       "definition_ar": "ذكاء اصطناعي يوضح سبب اتخاذه القرار وليس نتيجته فقط، فيزيد الثقة ويساعد على فهم القرارات واكتشاف الأخطاء أو التحيّز."
     },
     {
@@ -198,7 +198,7 @@
       "id": "term-gdpr",
       "term_ar": "اللائحة العامة لحماية البيانات",
       "term_en": "GDPR",
-      "conceptId": "ai-privacy",
+      "conceptId": "data-protection-gdpr",
       "sourceType": "ahmad-unit-book",
       "sourceReferences": [
         {
@@ -1440,30 +1440,6 @@
       "term_en": "Jupyter Notebook",
       "conceptId": "ide-vs-jupyter-notebook",
       "definition_ar": "ملف تفاعلي من خلايا كود وشرح يناسب التجريب والتحليل خطوة بخطوة.",
-      "sourceReferences": [
-        {
-          "kind": "pdf",
-          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
-        }
-      ],
-      "sourceIds": [
-        "src-033",
-        "src-031",
-        "src-039",
-        "src-086",
-        "src-002",
-        "src-003",
-        "src-008",
-        "src-026",
-        "src-077"
-      ]
-    },
-    {
-      "id": "term-markdown",
-      "term_ar": "ماركداون",
-      "term_en": "Markdown",
-      "conceptId": "ide-vs-jupyter-notebook",
-      "definition_ar": "أسلوب بسيط لتنسيق النص بعناوين ونقاط وروابط يُستخدم لشرح الدفاتر.",
       "sourceReferences": [
         {
           "kind": "pdf",

@@ -60,8 +60,7 @@
   ],
   "questionsAnswered": [
     "ما هو نموذج ARIMA؟",
-    "ما معنى AR وI وMA؟",
-    "ARIMA explained BTEC"
+    "ما معنى AR وI وMA؟"
   ],
   "body": [
     {
@@ -119,5 +118,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات قصيرة لأحمد دومي عن الموضوع، وأُضيف إليها شرح توضيحي عام ليكتمل الجواب."
 }

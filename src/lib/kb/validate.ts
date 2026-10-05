@@ -156,12 +156,23 @@ export function validateNodes(nodes: KbNode[]): Issue[] {
       if (!c.unit) err(c, "concepts must belong to a unit");
       if (!c.questionsAnswered?.length) warn(c, "no questionsAnswered — page is harder to retrieve");
       const words = wordCount(collectStrings(c.body));
-      // Thin-content gate. A long body passes outright; a compact, table-led explainer passes only if the whole visible page
-      // (short answer + why + body + terminology + questions) is still substantial and the body itself is not a stub.
-      const visibleWords = wordCount([c.shortAnswer ?? "", c.whyBtec ?? "", ...collectStrings(c.body), ...collectStrings(c.terminology ?? []), ...(c.questionsAnswered ?? [])]);
-      if (isPublished && (c.body?.length ?? 0) < 3) err(c, "published concept body is too thin (<3 blocks)");
-      if (isPublished && !(words >= 140 || (words >= 80 && visibleWords >= 230)))
-        err(c, `published concept is too thin (body ${words} words, visible page ${visibleWords}; need body ≥140, or body ≥80 and visible page ≥230)`);
+      // Completeness gate (Phase 2C). Word count is only a sanity floor — a narrow intent can be short — so a published concept
+      // must be a *complete standalone answer*: a direct answer that is not cut off, structure beyond prose, bilingual terms,
+      // at least two retrievable questions and BTEC context.
+      if (isPublished) {
+        const blocks = c.body ?? [];
+        const sa = (c.shortAnswer ?? "").trim();
+        if (blocks.length < 3) err(c, "published concept body is too thin (<3 blocks)");
+        if (words < 100) err(c, `published concept body has only ${words} words (<100 sanity floor)`);
+        if (sa && (/[:،]$/.test(sa) || (sa.match(/\*\*/g)?.length ?? 0) % 2 === 1 || (/\(1\)/.test(sa) && !/\(2\)/.test(sa))))
+          err(c, "shortAnswer looks cut off (ends with a colon/comma, has unbalanced bold, or an unfinished numbered list)");
+        if (!blocks.some((b) => b.t === "table" || b.t === "ul" || b.t === "ol")) err(c, "published concept needs at least one table or list (structured answer)");
+        if ((c.terminology?.length ?? 0) < 2) err(c, "published concept needs at least two Arabic ↔ English terms");
+        if ((c.questionsAnswered?.length ?? 0) < 2) err(c, "published concept needs at least two questionsAnswered");
+        for (const q of c.questionsAnswered ?? [])
+          if (!/[\u0600-\u06FF]/.test(q) && !/^(what|how|why|when|which|is|are|can|does|do)\b/i.test(q.trim()) || /BTEC( IT)?$/i.test(q.trim()))
+            err(c, `questionsAnswered "${q}" is a keyword string, not a question`);
+      }
       for (const q of c.questionsAnswered ?? []) {
         const key = normalizeArabic(q).replace(/[^\p{L}\p{N}]+/gu, " ").trim();
         const prev = questionSeen.get(key);

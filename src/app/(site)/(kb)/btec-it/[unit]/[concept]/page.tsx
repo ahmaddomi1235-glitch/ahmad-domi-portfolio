@@ -85,7 +85,7 @@ export default async function ConceptPage({ params }: Props) {
               <Link href={`/btec-it/${unit.slug}`}>
                 <Chip>{unit.title_ar}</Chip>
               </Link>
-              <Chip tone="gold">شرح أحمد دومي</Chip>
+              <Chip tone="gold">مبني على مادة أحمد دومي</Chip>
             </div>
             <h1 className="mt-4 text-3xl font-bold leading-snug sm:text-4xl">{c.title_ar}</h1>
             <p lang="en" dir="ltr" className="mt-2 text-start text-lg text-muted">
@@ -164,14 +164,14 @@ export default async function ConceptPage({ params }: Props) {
               </h2>
               <p className="mt-2 leading-8">
                 <strong>البنية الرسمية ({c.officialSource.publisher}):</strong> الوحدة {unit.officialStructure.unitNumber}، الهدف {c.learningAim} —{" "}
-                {unit.officialStructure.aims.find((a) => a.letter === c.learningAim)?.title_ar}. رموز المعايير الخاصة بهذا الهدف مذكورة في{" "}
+                {unit.officialStructure.aims.find((a) => a.letter === c.learningAim)?.title_ar}. ربط الموضوع بهذا الهدف اجتهاد من الموقع بحسب عنوان الهدف الرسمي، لا قائمة مواضيع رسمية. رموز المعايير الخاصة بهذا الهدف مذكورة في{" "}
                 <Link href={`/btec-it/${unit.slug}#official`} className="font-medium text-navy underline decoration-gold underline-offset-4">
                   صفحة الوحدة
                 </Link>
                 .
               </p>
               <p className="mt-2 leading-8">
-                <strong>شرح أحمد دومي:</strong> كل ما في هذه الصفحة من شرح وأمثلة هو شرح أحمد بكلماته، وليس نصًّا رسميًّا ولا حلًّا لمهمة.
+                <strong>شرح أحمد دومي:</strong> شرح هذه الصفحة مبني على مادة أحمد دومي وأُعدّ للنشر هنا بصياغة الموقع، وقد يتضمن أمثلة توضيحية ونصائح كتابة. وهو ليس نصًّا رسميًّا ولا حلًّا لمهمة.
               </p>
             </section>
           )}
@@ -263,7 +263,7 @@ export default async function ConceptPage({ params }: Props) {
           )}
 
           <div className="mt-12">
-            <AuthorCard lastReviewed={c.lastReviewed} sources={c.sourceReferences} />
+            <AuthorCard lastReviewed={c.lastReviewed} sources={c.sourceReferences} note={c.provenanceNote} />
           </div>
         </div>
       </article>

@@ -57,8 +57,7 @@
   ],
   "questionsAnswered": [
     "ما هو الانحدار الخطي؟",
-    "ما هو MSE؟",
-    "linear regression MSE BTEC"
+    "ما هو MSE؟"
   ],
   "body": [
     {
@@ -122,5 +121,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات قصيرة لأحمد دومي عن الموضوع، وأُضيف إليها شرح توضيحي عام ليكتمل الجواب."
 }

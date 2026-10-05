@@ -397,3 +397,19 @@ test.describe("phase 2B coverage and leak boundary", () => {
     }
   });
 });
+
+test.describe("phase 2C merged pages", () => {
+  const moves: [string, string][] = [
+    ["/btec-it/programming/git-version-control", "/btec-it/programming/ide-and-maintainability"],
+    ["/btec-it/artificial-intelligence/cloud-platforms-for-ai", "/btec-it/artificial-intelligence/ai-tools-and-frameworks"],
+    ["/btec-it/data-modelling/online-data-sources-privacy", "/btec-it/data-modelling/data-sources"],
+  ];
+  for (const [from, to] of moves) {
+    test(`${from} permanently redirects to its parent`, async ({ request }) => {
+      const res = await request.get(from, { maxRedirects: 0 });
+      expect(res.status()).toBe(308);
+      expect(res.headers()["location"]).toBe(to);
+      expect((await request.get(to)).status()).toBe(200);
+    });
+  }
+});

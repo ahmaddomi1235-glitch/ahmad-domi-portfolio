@@ -60,8 +60,7 @@
   ],
   "questionsAnswered": [
     "ما هو الكيان والعلاقة في قواعد البيانات؟",
-    "ما أنواع العلاقات 1:M وM:M؟",
-    "entities relationships one to many BTEC"
+    "ما أنواع العلاقات 1:M وM:M؟"
   ],
   "body": [
     {
@@ -132,5 +131,6 @@
     }
   ],
   "videos": [],
-  "cardCta": false
+  "cardCta": false,
+  "provenanceNote": "تعتمد هذه الصفحة على ملاحظات محاضرة لأحمد دومي، وأُضيفت إليها أمثلة وشرح توضيحي عام."
 }

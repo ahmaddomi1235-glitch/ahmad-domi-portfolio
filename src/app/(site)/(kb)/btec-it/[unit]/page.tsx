@@ -85,7 +85,7 @@ export default async function UnitPage({ params }: Props) {
         <Section title="البنية الرسمية للوحدة (Pearson)" id="official" className="pt-0">
           <p className="leading-8 text-ink/85">
             هذا القسم يذكر <strong>الهيكل الرسمي فقط</strong>: رقم الوحدة وعناوين أهداف التعلم ورموز المعايير كما وردت في {unit.officialSource.publisher}. لا يتضمن
-            نصوص المعايير نفسها؛ شرح الأفكار في صفحات المفاهيم هو شرح أحمد دومي.
+            نصوص المعايير نفسها؛ شرح الأفكار في صفحات المفاهيم مبني على مادة أحمد دومي.
           </p>
           <p className="mt-3 text-sm text-muted">
             الوحدة {unit.officialStructure.unitNumber}: {unit.officialStructure.unitTitle_ar} — {unit.officialStructure.assessmentMode}

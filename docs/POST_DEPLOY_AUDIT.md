@@ -58,3 +58,7 @@ Re-run on the live HTTPS domain after deploying commit `bcc9612`:
 ## Phase 2B production crawl (2026-10-04, commit f95d4e2)
 
 235 indexable pages, 235 sitemap URLs (all 200), 236 unique titles and canonicals, 199 TechArticle, 214 BreadcrumbList, 18 VideoObject, 1 DefinedTermSet (394 terms), 0 asset failures, HSTS on, 404s correct, /search noindex and outside the sitemap, crawl problems: none.
+
+## Phase 2C production crawl (2026-10-05, commit e6f5e98)
+
+196 concept pages (199 before; 3 merged with 308 redirects verified live), 232 indexable URLs, 232 sitemap URLs (all 200), 233 unique titles and canonicals, 196 TechArticle, 211 BreadcrumbList, 18 VideoObject, 0 asset failures, 404 behaviour correct, robots and llms.txt fine, no source IDs or local paths in sampled live pages, crawl problems: none. Local gate: lint, typecheck, 17 unit tests, build, 46 Playwright tests all pass.

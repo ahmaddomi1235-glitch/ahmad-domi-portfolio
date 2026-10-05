@@ -54,3 +54,7 @@ Re-run on the live HTTPS domain after deploying commit `bcc9612`:
 - New: 3 project-management concept pages, the `assessment` unit and its general report-writing summary; `data-quality` expanded; official Unit 11 structure (aim titles + criterion codes only) on the cyber-security hub.
 - JSON-LD: 23 TechArticle, 40 blocks, no review/rating/FAQ types. 404s, redirects, robots, llms.txt (23 concepts) and HSTS unchanged. No asset failures.
 - Gates: validate 0 errors, lint and typecheck clean, 17 unit tests, 41 e2e tests, build OK.
+
+## Phase 2B production crawl (2026-10-04, commit f95d4e2)
+
+235 indexable pages, 235 sitemap URLs (all 200), 236 unique titles and canonicals, 199 TechArticle, 214 BreadcrumbList, 18 VideoObject, 1 DefinedTermSet (394 terms), 0 asset failures, HSTS on, 404s correct, /search noindex and outside the sitemap, crawl problems: none.

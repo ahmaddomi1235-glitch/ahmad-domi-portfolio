@@ -1,0 +1,170 @@
+{
+  "id": "pass-merit-distinction",
+  "type": "Comparison",
+  "title_ar": "Pass وMerit وDistinction: ما معنى P وM وD ورموز المعايير؟",
+  "title_en": "Pass, Merit and Distinction",
+  "slug": "pass-merit-distinction",
+  "summary": "في BTEC تُقاس المعايير بمستويات Pass (P) وMerit (M) وDistinction (D). في الوحدة 11 مثلًا تحمل المعايير رموزًا بحسب هدف التعلم (A.P1 وA.M1 وAB.D1)، وبعض معايير Distinction تغطي هدفين معًا. وأحمد يقرأ المستويات الثلاثة عمليًا: P شرح، وM تحليل، وD تقييم.",
+  "unit": "assessment",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "بنية رموز المعايير — الوحدة 11 من مواصفات Pearson (رموز فقط)"
+    },
+    {
+      "kind": "pdf",
+      "label": "منهجية كتابة تقرير BTEC — إعداد أحمد دومي (مبادئ عامة فقط)",
+      "ref": "العلاقة بين P وM وD"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "explain-level-p-writing",
+    "analyse-level-m-writing",
+    "evaluate-level-d-writing",
+    "command-verbs-explain-analyse-evaluate",
+    "report-writing-principles"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; official criterion codes (Unit 11) verified against private Pearson scan src-021/063; Ahmad's P/M/D reading from src-004; no Pearson descriptor text",
+  "sourceIds": [
+    "src-004"
+  ],
+  "order": 2,
+  "shortAnswer": "تُرمَّز معايير التقييم برمز يجمع **هدف التعلم** و**المستوى**: P للنجاح (Pass)، وM للتميز المتوسط (Merit)، وD للتميز (Distinction). في الوحدة 11 (الأمن السيبراني وإدارة الحوادث) كما تحققنا منها: الهدف A فيه A.P1 وA.P2 وA.P3 وA.M1، والهدف B فيه B.P4 وB.P5 وB.M2، والهدف C فيه C.P6 وC.P7 وC.M3، والهدف D فيه D.P8 وD.M4؛ وتمتد معايير Distinction عبر هدفين: AB.D1 وCD.D2.",
+  "whyBtec": "فهم الفرق بين المستويات يغيّر طريقة كتابتك: تقرير يشرح فقط لا يصل إلى M، وتقرير يحلل دون قرار مبرر لا يصل إلى D.",
+  "terminology": [
+    {
+      "ar": "نجاح",
+      "en": "Pass (P)"
+    },
+    {
+      "ar": "تميز متوسط",
+      "en": "Merit (M)"
+    },
+    {
+      "ar": "تميز",
+      "en": "Distinction (D)"
+    },
+    {
+      "ar": "هدف تعلم",
+      "en": "Learning Aim"
+    },
+    {
+      "ar": "معيار تقييم",
+      "en": "Assessment Criterion"
+    }
+  ],
+  "questionsAnswered": [
+    "ما معنى P وM وD في BTEC؟",
+    "ما الفرق بين Pass وMerit وDistinction؟",
+    "pass merit distinction BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شرح مفصّل"
+    },
+    {
+      "t": "p",
+      "text": "هذه هي البنية الرسمية فقط؛ أما نصوص المعايير فمصدرها وثيقة Pearson. **قراءة أحمد العملية:** P = اشرح، M = حلّل، D = قيّم واحكم."
+    },
+    {
+      "t": "h2",
+      "text": "البنية الرسمية (الوحدة 11، رموز فقط)"
+    },
+    {
+      "t": "table",
+      "head": [
+        "هدف التعلم",
+        "Pass",
+        "Merit",
+        "Distinction"
+      ],
+      "rows": [
+        [
+          "A",
+          "A.P1 · A.P2 · A.P3",
+          "A.M1",
+          "AB.D1"
+        ],
+        [
+          "B",
+          "B.P4 · B.P5",
+          "B.M2",
+          "AB.D1"
+        ],
+        [
+          "C",
+          "C.P6 · C.P7",
+          "C.M3",
+          "CD.D2"
+        ],
+        [
+          "D",
+          "D.P8",
+          "D.M4",
+          "CD.D2"
+        ]
+      ],
+      "caption": "رموز معايير الوحدة 11 كما وردت في وثيقة Pearson (بلا نصوص المعايير)"
+    },
+    {
+      "t": "callout",
+      "kind": "note",
+      "text": "رموز المعايير تختلف من وحدة إلى أخرى. لا تنقل هذا الجدول إلى وحدة غير الوحدة 11، وارجع دائمًا إلى مواصفات وحدتك ومهمتك. وصياغات المعايير نفسها لا تُنشَر هنا.",
+      "title": "تنبيه مهم"
+    },
+    {
+      "t": "h2",
+      "text": "قراءة أحمد العملية للمستويات"
+    },
+    {
+      "t": "table",
+      "head": [
+        "المستوى",
+        "السؤال الذي تجيب عنه",
+        "تفاصيل الأسلوب"
+      ],
+      "rows": [
+        [
+          "P",
+          "ما هو؟ كيف يعمل؟ أين يظهر في السيناريو؟ لماذا مهم؟ ما أثره المباشر؟",
+          "[[explain-level-p-writing|كتابة مستوى الشرح]]"
+        ],
+        [
+          "M",
+          "لماذا حدث الأثر؟ ماذا نتج؟ من تأثر؟ لماذا الأثر مهم؟ ماذا يعني للمؤسسة؟",
+          "[[analyse-level-m-writing|كتابة مستوى التحليل]]"
+        ],
+        [
+          "D",
+          "ما القرار والبدائل والمعايير؟ ما الحكم؟ ما التوصية؟",
+          "[[evaluate-level-d-writing|كتابة مستوى التقييم]]"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "المستويات ليست ثلاثة تقارير منفصلة بل ثلاث درجات من التفكير في الموضوع نفسه ([[command-verbs-explain-analyse-evaluate|أفعال الأمر: اشرح وحلّل وقيّم]]). وللوحدة 11 انظر [[cyber-security|صفحة وحدة الأمن السيبراني]] ومبادئ [[report-writing-principles|كتابة التقرير]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

@@ -1,0 +1,219 @@
+{
+  "$defaults": {
+    "type": "GlossaryTerm",
+    "unit": "assessment",
+    "learningAim": null,
+    "criterion": null,
+    "concepts": [],
+    "questions": [],
+    "sourceType": "ahmad-booklet",
+    "sourceReferences": [
+      {
+        "kind": "pdf",
+        "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+      }
+    ],
+    "youtubeId": null,
+    "author": "ahmad-domi",
+    "lastReviewed": "2026-10-04",
+    "visibility": "PUBLIC",
+    "related": [],
+    "officialSource": null,
+    "status": "published",
+    "reviewState": "definitions paraphrased from the author's own material; pending author review"
+  },
+  "items": [
+    {
+      "id": "term-pass",
+      "term_ar": "نجاح",
+      "term_en": "Pass (P)",
+      "conceptId": "pass-merit-distinction",
+      "definition_ar": "مستوى الحد الأدنى للنجاح في معايير التقييم، ويقابل غالبًا الشرح في أسلوب أحمد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    },
+    {
+      "id": "term-merit",
+      "term_ar": "تميز متوسط",
+      "term_en": "Merit (M)",
+      "conceptId": "pass-merit-distinction",
+      "definition_ar": "مستوى أعلى من النجاح، ويقابل التحليل (سبب ونتيجة وأثر) في أسلوب أحمد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    },
+    {
+      "id": "term-distinction",
+      "term_ar": "تميز",
+      "term_en": "Distinction (D)",
+      "conceptId": "pass-merit-distinction",
+      "definition_ar": "أعلى مستويات المعايير، ويقابل التقييم (مقارنة وحكم وتوصية) في أسلوب أحمد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    },
+    {
+      "id": "term-learning-aim",
+      "term_ar": "هدف التعلم",
+      "term_en": "Learning Aim",
+      "conceptId": "pass-merit-distinction",
+      "definition_ar": "محور رئيس في الوحدة تُنظَّم حوله معايير التقييم، ويُرمَّز بحرف مثل A وB.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    },
+    {
+      "id": "term-assessment-criterion",
+      "term_ar": "معيار تقييم",
+      "term_en": "Assessment Criterion",
+      "conceptId": "pass-merit-distinction",
+      "definition_ar": "شرط محدد برمز مثل A.P1 يُحكم به على أداء الطالب في جزء من الوحدة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    },
+    {
+      "id": "term-command-verb",
+      "term_ar": "فعل أمر",
+      "term_en": "Command Verb",
+      "conceptId": "command-verbs-explain-analyse-evaluate",
+      "definition_ar": "كلمة في نص المهمة، مثل اشرح أو حلل أو قيّم، تحدد نوع التفكير المطلوب.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    },
+    {
+      "id": "term-explain",
+      "term_ar": "اشرح",
+      "term_en": "Explain",
+      "conceptId": "explain-level-p-writing",
+      "definition_ar": "إثبات فهم الفكرة داخل السيناريو: ما هي وكيف تعمل وأين تظهر ولماذا تهم وما أثرها المباشر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    },
+    {
+      "id": "term-analyse",
+      "term_ar": "حلّل",
+      "term_en": "Analyse",
+      "conceptId": "analyse-level-m-writing",
+      "definition_ar": "إظهار العلاقة بين السبب والنتيجة ومن تأثر وأهمية الأثر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    },
+    {
+      "id": "term-evaluate",
+      "term_ar": "قيّم",
+      "term_en": "Evaluate",
+      "conceptId": "evaluate-level-d-writing",
+      "definition_ar": "اتخاذ قرار مبرر بعد مقارنة بدائل بمعايير وإصدار حكم وتوصية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    },
+    {
+      "id": "term-recommendation",
+      "term_ar": "توصية",
+      "term_en": "Recommendation",
+      "conceptId": "evaluate-level-d-writing",
+      "definition_ar": "خطوة محددة قابلة للتطبيق تقترحها على المؤسسة مرتبطة بحكمك.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    },
+    {
+      "id": "term-scenario",
+      "term_ar": "سيناريو",
+      "term_en": "Scenario",
+      "conceptId": "report-writing-principles",
+      "definition_ar": "حالة مؤسسة ومشكلة تُكتب عنها المهمة وتُبنى عليها الإجابة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    },
+    {
+      "id": "term-transition",
+      "term_ar": "الربط بين الفقرات",
+      "term_en": "Linking Paragraphs",
+      "conceptId": "linking-paragraphs",
+      "definition_ar": "جعل نهاية الفقرة تمهد لبداية التي تليها بنتيجة وحاجة وفكرة جديدة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "منهجية كتابة تقرير BTEC (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-004"
+      ]
+    }
+  ]
+}

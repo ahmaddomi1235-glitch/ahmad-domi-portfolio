@@ -8,7 +8,11 @@
     "questions": [],
     "sourceType": "ahmad-booklet",
     "sourceReferences": [
-      { "kind": "pdf", "label": "دوسية تأسيس مبادئ الذكاء الاصطناعي — جيل 2009 (أحمد دومي)", "url": "/documents/teaching-materials/foundation-cybersecurity-ai-2009.pdf" }
+      {
+        "kind": "pdf",
+        "label": "دوسية تأسيس مبادئ الذكاء الاصطناعي — جيل 2009 (أحمد دومي)",
+        "url": "/documents/teaching-materials/foundation-cybersecurity-ai-2009.pdf"
+      }
     ],
     "youtubeId": null,
     "author": "ahmad-domi",
@@ -20,23 +24,1463 @@
     "reviewState": "definitions paraphrased from the author's booklet / unit book; pending author review"
   },
   "items": [
-    { "id": "term-ai", "term_ar": "الذكاء الاصطناعي", "term_en": "Artificial Intelligence (AI)", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "فرع من علوم الحاسوب يهدف إلى تصميم أنظمة تستطيع محاكاة بعض قدرات الإنسان مثل التعلم والتعرف واتخاذ القرار وحل المشكلات." },
-    { "id": "term-machine-learning", "term_ar": "تعلّم الآلة", "term_en": "Machine Learning", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "أسلوب يجعل الحاسوب يتعلم من البيانات ويكتشف الأنماط دون الحاجة إلى كتابة جميع القواعد يدويًا." },
-    { "id": "term-deep-learning", "term_ar": "التعلّم العميق", "term_en": "Deep Learning", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "نوع متطور من تعلّم الآلة يستخدم الشبكات العصبية لمعالجة البيانات المعقدة مثل الصور والصوت والفيديو." },
-    { "id": "term-neural-networks", "term_ar": "الشبكات العصبية", "term_en": "Neural Networks", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "نماذج حاسوبية مستوحاة من طريقة عمل الدماغ البشري، تتكون من طبقات مترابطة تتعلم تدريجيًا من البيانات حتى تصل إلى أفضل نتيجة ممكنة." },
-    { "id": "term-algorithm", "term_ar": "الخوارزمية", "term_en": "Algorithm", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "مجموعة من الخطوات والتعليمات التي يستخدمها الحاسوب لمعالجة البيانات والوصول إلى نتيجة." },
-    { "id": "term-model", "term_ar": "النموذج", "term_en": "Model", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "النظام الذي يتكوّن بعد تدريب الخوارزمية على البيانات، فيصبح قادرًا على التنبؤ أو اتخاذ القرارات." },
-    { "id": "term-nlp", "term_ar": "معالجة اللغة الطبيعية", "term_en": "Natural Language Processing (NLP)", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "تقنية تمكّن الحاسوب من فهم اللغة البشرية وكتابتها، ومن أمثلتها الترجمة الآلية والتصحيح الإملائي." },
-    { "id": "term-computer-vision", "term_ar": "الرؤية الحاسوبية", "term_en": "Computer Vision", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "تقنية تمكّن الحاسوب من فهم الصور والفيديو، مثل التعرف على الوجوه وتشخيص الأمراض من الصور الطبية." },
-    { "id": "term-speech-recognition", "term_ar": "التعرف على الكلام", "term_en": "Speech Recognition", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "تقنية تحوّل الكلام المنطوق إلى نص يمكن للحاسوب فهمه، مثل الإملاء الصوتي والمساعدات الصوتية." },
-    { "id": "term-expert-systems", "term_ar": "الأنظمة الخبيرة", "term_en": "Expert Systems", "conceptId": "ai-vs-machine-learning-vs-deep-learning", "definition_ar": "برامج تعتمد على قاعدة معرفية وقواعد محددة لتقديم حلول أو قرارات تشبه قرارات الخبراء في مجال معين." },
-    { "id": "term-structured-data", "term_ar": "البيانات المهيكلة", "term_en": "Structured Data", "conceptId": "ai-data-types", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "بيانات منظمة في جداول وصفوف وأعمدة، لكل عمود معنى محدد ولكل صف سجل واحد، مثل سجلات الطلبة وجداول الرواتب." },
-    { "id": "term-semi-structured-data", "term_ar": "البيانات شبه المهيكلة", "term_en": "Semi-structured Data", "conceptId": "ai-data-types", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "بيانات بين المهيكلة وغير المهيكلة، ليست في جدول ثابت لكن فيها تنظيمًا داخليًا يمكن فهمه، مثل ملفات JSON وXML ورسائل البريد." },
-    { "id": "term-unstructured-data", "term_ar": "البيانات غير المهيكلة", "term_en": "Unstructured Data", "conceptId": "ai-data-types", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "بيانات لا تتبع قالبًا ثابتًا، مثل النص الحر والصور والفيديو والملفات الصوتية ومنشورات التواصل الاجتماعي." },
-    { "id": "term-metadata", "term_ar": "البيانات الوصفية", "term_en": "Metadata", "conceptId": "ai-data-types", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "ref": "بيانات وسائل التواصل، الصفحة 26", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "بيانات تصف البيانات الأصلية وتتولد معها، مثل وقت نشر المنشور وتاريخه والموقع التقريبي للجهاز ونوعه وعدد الإعجابات والتعليقات." },
-    { "id": "term-ai-bias", "term_ar": "التحيّز", "term_en": "Bias", "conceptId": "ai-bias", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "ref": "الصفحات 62–69", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "ظهور فئة معينة من الأشخاص أو الحالات في البيانات أكثر من غيرها، أو معاملتها بشكل مختلف أثناء جمع البيانات أو معالجتها، فيتعلم النموذج صورة منحرفة عن الواقع." },
-    { "id": "term-xai", "term_ar": "الذكاء الاصطناعي القابل للتفسير", "term_en": "Explainable AI (XAI)", "conceptId": "ai-bias", "definition_ar": "ذكاء اصطناعي يوضح سبب اتخاذه القرار وليس نتيجته فقط، فيزيد الثقة ويساعد على فهم القرارات واكتشاف الأخطاء أو التحيّز." },
-    { "id": "term-pci-dss", "term_ar": "معيار أمن بيانات بطاقات الدفع", "term_en": "PCI DSS", "conceptId": "ai-privacy", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "ref": "الصفحة 28", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "معيار أمني عالمي يفرض على التاجر تقليل تخزين بيانات البطاقات البنكية الحساسة وحماية ما يحتفظ به بالتشفير وضوابط وصول صارمة." },
-    { "id": "term-gdpr", "term_ar": "اللائحة العامة لحماية البيانات", "term_en": "GDPR", "conceptId": "ai-privacy", "sourceType": "ahmad-unit-book", "sourceReferences": [{ "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)", "ref": "الصفحة 29", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }], "definition_ar": "لائحة في الاتحاد الأوروبي تفرض على الشركات الشفافية مع الزبون بشأن ما تجمعه من بيانات وسبب جمعها ومدة الاحتفاظ بها، وتمنح الأفراد حق الاطلاع على بياناتهم وتصحيحها وحذفها." }
+    {
+      "id": "term-ai",
+      "term_ar": "الذكاء الاصطناعي",
+      "term_en": "Artificial Intelligence (AI)",
+      "conceptId": "ai-vs-machine-learning-vs-deep-learning",
+      "definition_ar": "فرع من علوم الحاسوب يهدف إلى تصميم أنظمة تستطيع محاكاة بعض قدرات الإنسان مثل التعلم والتعرف واتخاذ القرار وحل المشكلات."
+    },
+    {
+      "id": "term-machine-learning",
+      "term_ar": "تعلّم الآلة",
+      "term_en": "Machine Learning",
+      "conceptId": "ai-vs-machine-learning-vs-deep-learning",
+      "definition_ar": "أسلوب يجعل الحاسوب يتعلم من البيانات ويكتشف الأنماط دون الحاجة إلى كتابة جميع القواعد يدويًا."
+    },
+    {
+      "id": "term-deep-learning",
+      "term_ar": "التعلّم العميق",
+      "term_en": "Deep Learning",
+      "conceptId": "ai-vs-machine-learning-vs-deep-learning",
+      "definition_ar": "نوع متطور من تعلّم الآلة يستخدم الشبكات العصبية لمعالجة البيانات المعقدة مثل الصور والصوت والفيديو."
+    },
+    {
+      "id": "term-neural-networks",
+      "term_ar": "الشبكات العصبية",
+      "term_en": "Neural Networks",
+      "conceptId": "ai-vs-machine-learning-vs-deep-learning",
+      "definition_ar": "نماذج حاسوبية مستوحاة من طريقة عمل الدماغ البشري، تتكون من طبقات مترابطة تتعلم تدريجيًا من البيانات حتى تصل إلى أفضل نتيجة ممكنة."
+    },
+    {
+      "id": "term-algorithm",
+      "term_ar": "الخوارزمية",
+      "term_en": "Algorithm",
+      "conceptId": "ai-vs-machine-learning-vs-deep-learning",
+      "definition_ar": "مجموعة من الخطوات والتعليمات التي يستخدمها الحاسوب لمعالجة البيانات والوصول إلى نتيجة."
+    },
+    {
+      "id": "term-model",
+      "term_ar": "النموذج",
+      "term_en": "Model",
+      "conceptId": "ai-vs-machine-learning-vs-deep-learning",
+      "definition_ar": "النظام الذي يتكوّن بعد تدريب الخوارزمية على البيانات، فيصبح قادرًا على التنبؤ أو اتخاذ القرارات."
+    },
+    {
+      "id": "term-nlp",
+      "term_ar": "معالجة اللغة الطبيعية",
+      "term_en": "Natural Language Processing (NLP)",
+      "conceptId": "ai-vs-machine-learning-vs-deep-learning",
+      "definition_ar": "تقنية تمكّن الحاسوب من فهم اللغة البشرية وكتابتها، ومن أمثلتها الترجمة الآلية والتصحيح الإملائي."
+    },
+    {
+      "id": "term-computer-vision",
+      "term_ar": "الرؤية الحاسوبية",
+      "term_en": "Computer Vision",
+      "conceptId": "ai-vs-machine-learning-vs-deep-learning",
+      "definition_ar": "تقنية تمكّن الحاسوب من فهم الصور والفيديو، مثل التعرف على الوجوه وتشخيص الأمراض من الصور الطبية."
+    },
+    {
+      "id": "term-speech-recognition",
+      "term_ar": "التعرف على الكلام",
+      "term_en": "Speech Recognition",
+      "conceptId": "ai-vs-machine-learning-vs-deep-learning",
+      "definition_ar": "تقنية تحوّل الكلام المنطوق إلى نص يمكن للحاسوب فهمه، مثل الإملاء الصوتي والمساعدات الصوتية."
+    },
+    {
+      "id": "term-expert-systems",
+      "term_ar": "الأنظمة الخبيرة",
+      "term_en": "Expert Systems",
+      "conceptId": "ai-vs-machine-learning-vs-deep-learning",
+      "definition_ar": "برامج تعتمد على قاعدة معرفية وقواعد محددة لتقديم حلول أو قرارات تشبه قرارات الخبراء في مجال معين."
+    },
+    {
+      "id": "term-structured-data",
+      "term_ar": "البيانات المهيكلة",
+      "term_en": "Structured Data",
+      "conceptId": "ai-data-types",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)",
+          "url": "/documents/teaching-materials/ai-introduction-applications.pdf"
+        }
+      ],
+      "definition_ar": "بيانات منظمة في جداول وصفوف وأعمدة، لكل عمود معنى محدد ولكل صف سجل واحد، مثل سجلات الطلبة وجداول الرواتب."
+    },
+    {
+      "id": "term-semi-structured-data",
+      "term_ar": "البيانات شبه المهيكلة",
+      "term_en": "Semi-structured Data",
+      "conceptId": "ai-data-types",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)",
+          "url": "/documents/teaching-materials/ai-introduction-applications.pdf"
+        }
+      ],
+      "definition_ar": "بيانات بين المهيكلة وغير المهيكلة، ليست في جدول ثابت لكن فيها تنظيمًا داخليًا يمكن فهمه، مثل ملفات JSON وXML ورسائل البريد."
+    },
+    {
+      "id": "term-unstructured-data",
+      "term_ar": "البيانات غير المهيكلة",
+      "term_en": "Unstructured Data",
+      "conceptId": "ai-data-types",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)",
+          "url": "/documents/teaching-materials/ai-introduction-applications.pdf"
+        }
+      ],
+      "definition_ar": "بيانات لا تتبع قالبًا ثابتًا، مثل النص الحر والصور والفيديو والملفات الصوتية ومنشورات التواصل الاجتماعي."
+    },
+    {
+      "id": "term-metadata",
+      "term_ar": "البيانات الوصفية",
+      "term_en": "Metadata",
+      "conceptId": "ai-data-types",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)",
+          "ref": "بيانات وسائل التواصل، الصفحة 26",
+          "url": "/documents/teaching-materials/ai-introduction-applications.pdf"
+        }
+      ],
+      "definition_ar": "بيانات تصف البيانات الأصلية وتتولد معها، مثل وقت نشر المنشور وتاريخه والموقع التقريبي للجهاز ونوعه وعدد الإعجابات والتعليقات."
+    },
+    {
+      "id": "term-ai-bias",
+      "term_ar": "التحيّز",
+      "term_en": "Bias",
+      "conceptId": "ai-bias",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)",
+          "ref": "الصفحات 62–69",
+          "url": "/documents/teaching-materials/ai-introduction-applications.pdf"
+        }
+      ],
+      "definition_ar": "ظهور فئة معينة من الأشخاص أو الحالات في البيانات أكثر من غيرها، أو معاملتها بشكل مختلف أثناء جمع البيانات أو معالجتها، فيتعلم النموذج صورة منحرفة عن الواقع."
+    },
+    {
+      "id": "term-xai",
+      "term_ar": "الذكاء الاصطناعي القابل للتفسير",
+      "term_en": "Explainable AI (XAI)",
+      "conceptId": "ai-bias",
+      "definition_ar": "ذكاء اصطناعي يوضح سبب اتخاذه القرار وليس نتيجته فقط، فيزيد الثقة ويساعد على فهم القرارات واكتشاف الأخطاء أو التحيّز."
+    },
+    {
+      "id": "term-pci-dss",
+      "term_ar": "معيار أمن بيانات بطاقات الدفع",
+      "term_en": "PCI DSS",
+      "conceptId": "ai-privacy",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)",
+          "ref": "الصفحة 28",
+          "url": "/documents/teaching-materials/ai-introduction-applications.pdf"
+        }
+      ],
+      "definition_ar": "معيار أمني عالمي يفرض على التاجر تقليل تخزين بيانات البطاقات البنكية الحساسة وحماية ما يحتفظ به بالتشفير وضوابط وصول صارمة."
+    },
+    {
+      "id": "term-gdpr",
+      "term_ar": "اللائحة العامة لحماية البيانات",
+      "term_en": "GDPR",
+      "conceptId": "ai-privacy",
+      "sourceType": "ahmad-unit-book",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)",
+          "ref": "الصفحة 29",
+          "url": "/documents/teaching-materials/ai-introduction-applications.pdf"
+        }
+      ],
+      "definition_ar": "لائحة في الاتحاد الأوروبي تفرض على الشركات الشفافية مع الزبون بشأن ما تجمعه من بيانات وسبب جمعها ومدة الاحتفاظ بها، وتمنح الأفراد حق الاطلاع على بياناتهم وتصحيحها وحذفها."
+    },
+    {
+      "id": "term-narrow-ai",
+      "term_ar": "ذكاء اصطناعي ضعيف",
+      "term_en": "Narrow AI",
+      "conceptId": "types-of-ai",
+      "definition_ar": "نظام ذكاء اصطناعي مصمم لمهمة محددة أو مجموعة محدودة من المهام ولا يفهم خارج ما تدرب عليه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-strong-ai",
+      "term_ar": "ذكاء اصطناعي قوي",
+      "term_en": "Strong AI",
+      "conceptId": "types-of-ai",
+      "definition_ar": "ذكاء قادر نظريًا على التعلم والفهم وحل مشكلات متنوعة كالإنسان، ولم يتحقق بعد بصورة كاملة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-reactive-machines",
+      "term_ar": "آلات تفاعلية",
+      "term_en": "Reactive Machines",
+      "conceptId": "types-of-ai",
+      "definition_ar": "أنظمة تعمل بالمعلومات الحالية فقط دون الاحتفاظ بالتجارب السابقة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-limited-memory",
+      "term_ar": "ذاكرة محدودة",
+      "term_en": "Limited Memory",
+      "conceptId": "types-of-ai",
+      "definition_ar": "أنظمة تستفيد من بيانات أو تجارب سابقة لفترة محددة لتحسين قراراتها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-supervised",
+      "term_ar": "التعلم تحت الإشراف",
+      "term_en": "Supervised Learning",
+      "conceptId": "supervised-vs-unsupervised-learning",
+      "definition_ar": "تعلم من بيانات تحتوي المدخلات والإجابة الصحيحة معًا ثم استخدام ما تعلمه للتنبؤ.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-unsupervised",
+      "term_ar": "التعلم بدون إشراف",
+      "term_en": "Unsupervised Learning",
+      "conceptId": "supervised-vs-unsupervised-learning",
+      "definition_ar": "تعلم من مدخلات بلا إجابات جاهزة لاكتشاف أنماط ومجموعات متشابهة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-classification",
+      "term_ar": "التصنيف",
+      "term_en": "Classification",
+      "conceptId": "classification-vs-regression",
+      "definition_ar": "مهمة يكون ناتجها فئة أو اسمًا مثل نعم/لا أو نوع زهرة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-regression",
+      "term_ar": "الانحدار",
+      "term_en": "Regression",
+      "conceptId": "classification-vs-regression",
+      "definition_ar": "مهمة يكون ناتجها رقمًا مستمرًا مثل السعر أو درجة الحرارة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-linear-regression",
+      "term_ar": "الانحدار الخطي",
+      "term_en": "Linear Regression",
+      "conceptId": "linear-regression-mse",
+      "definition_ar": "نموذج يبحث عن أفضل خط مستقيم يقرب العلاقة بين المدخل والمخرج.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-mse",
+      "term_ar": "متوسط مربع الخطأ",
+      "term_en": "Mean Squared Error (MSE)",
+      "conceptId": "linear-regression-mse",
+      "definition_ar": "مقياس خطأ هو متوسط مربع الفرق بين القيم الحقيقية والمتوقعة؛ الأصغر أفضل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-logistic-regression",
+      "term_ar": "الانحدار اللوجستي",
+      "term_en": "Logistic Regression",
+      "conceptId": "logistic-regression",
+      "definition_ar": "نموذج تصنيف يتوقع احتمالًا بين 0 و1 ثم يحوله إلى قرار بعتبة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-sigmoid",
+      "term_ar": "دالة السيجمويد",
+      "term_en": "Sigmoid Function",
+      "conceptId": "logistic-regression",
+      "definition_ar": "دالة تحوّل أي قيمة إلى احتمال بين 0 و1 على شكل منحنى S.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-svm",
+      "term_ar": "آلة المتجهات الداعمة",
+      "term_en": "Support Vector Machine (SVM)",
+      "conceptId": "svm-classifier",
+      "definition_ar": "نموذج تصنيف يفصل الفئات بحد يترك أكبر هامش عن أقرب النقاط.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-margin",
+      "term_ar": "هامش",
+      "term_en": "Margin",
+      "conceptId": "svm-classifier",
+      "definition_ar": "المسافة بين الحد الفاصل وأقرب نقاط من كل فئة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-kernel",
+      "term_ar": "نواة",
+      "term_en": "Kernel",
+      "conceptId": "svm-classifier",
+      "definition_ar": "حيلة رياضية تتيح لـ SVM صنع حدود منحنية عندما تتداخل البيانات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-decision-tree",
+      "term_ar": "شجرة قرار",
+      "term_en": "Decision Tree",
+      "conceptId": "decision-trees",
+      "definition_ar": "نموذج يقسم البيانات بأسئلة متتابعة حتى يصل إلى قرار نهائي في أوراق الشجرة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-overfitting",
+      "term_ar": "فرط التعلم",
+      "term_en": "Overfitting",
+      "conceptId": "decision-trees",
+      "definition_ar": "أن يحفظ النموذج بيانات التدريب فيبدو ممتازًا عليها ويفشل على بيانات جديدة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-kmeans",
+      "term_ar": "تجميع K-means",
+      "term_en": "K-means",
+      "conceptId": "k-means-clustering",
+      "definition_ar": "خوارزمية تجمع النقاط في K مجموعات بتوزيعها على أقرب مركز وتحديث المراكز.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-clustering",
+      "term_ar": "التجميع",
+      "term_en": "Clustering",
+      "conceptId": "k-means-clustering",
+      "definition_ar": "جمع العناصر المتشابهة في مجموعات دون فئات جاهزة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-pca",
+      "term_ar": "تحليل المكونات الرئيسية",
+      "term_en": "Principal Component Analysis (PCA)",
+      "conceptId": "pca-dimensionality-reduction",
+      "definition_ar": "تقنية تقلل عدد الميزات بإسقاط البيانات على أفضل اتجاهات تُظهر اختلافها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-dim-reduction",
+      "term_ar": "تقليل الأبعاد",
+      "term_en": "Dimensionality Reduction",
+      "conceptId": "pca-dimensionality-reduction",
+      "definition_ar": "تبسيط البيانات بتقليل عدد ميزاتها مع الإبقاء على المعلومات المهمة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-anomaly-detection",
+      "term_ar": "كشف الشذوذ",
+      "term_en": "Anomaly Detection",
+      "conceptId": "knn-anomaly-detection",
+      "definition_ar": "اكتشاف النقاط أو السلوك البعيد جدًا عن النمط الطبيعي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-prior",
+      "term_ar": "اعتقاد مبدئي",
+      "term_en": "Prior",
+      "conceptId": "bayesian-methods",
+      "definition_ar": "الاعتقاد أو التوقع قبل رؤية الدليل الجديد في الطرق البايزية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-posterior",
+      "term_ar": "اعتقاد محدّث",
+      "term_en": "Posterior",
+      "conceptId": "bayesian-methods",
+      "definition_ar": "الاعتقاد بعد دمج الدليل الجديد مع الاعتقاد المبدئي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-time-series",
+      "term_ar": "سلسلة زمنية",
+      "term_en": "Time Series",
+      "conceptId": "arima-time-series",
+      "definition_ar": "بيانات مرتبة بحسب الزمن حيث يكون ترتيب القيم مهمًا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-arima",
+      "term_ar": "نموذج ARIMA",
+      "term_en": "ARIMA",
+      "conceptId": "arima-time-series",
+      "definition_ar": "نموذج للتنبؤ بالسلاسل الزمنية يجمع الاعتماد على الماضي وإزالة الاتجاه ومعالجة الضوضاء.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-training-set",
+      "term_ar": "مجموعة التدريب",
+      "term_en": "Training Set",
+      "conceptId": "train-validation-test-sets",
+      "definition_ar": "الجزء الأكبر من البيانات الذي يتعلم منه النموذج.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-validation-set",
+      "term_ar": "مجموعة التحقق",
+      "term_en": "Validation Set",
+      "conceptId": "train-validation-test-sets",
+      "definition_ar": "جزء من البيانات يُستخدم أثناء التجريب لضبط إعدادات النموذج واختيار بنيته.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-test-set",
+      "term_ar": "مجموعة الاختبار",
+      "term_en": "Test Set",
+      "conceptId": "train-validation-test-sets",
+      "definition_ar": "جزء لم يره النموذج قط يُستخدم بعد التدريب لتقدير أدائه الحقيقي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-data-leakage",
+      "term_ar": "تلوث بيانات الاختبار",
+      "term_en": "Test Data Leakage",
+      "conceptId": "train-validation-test-sets",
+      "definition_ar": "تسرب أمثلة من مجموعة الاختبار إلى التدريب فيبدو النموذج أفضل مما هو.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-data-drift",
+      "term_ar": "انحراف البيانات",
+      "term_en": "Data Drift",
+      "conceptId": "xai-and-data-drift",
+      "definition_ar": "تغير طبيعة البيانات مع الزمن مما قد يخفض دقة النموذج بعد نشره.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-web-scraping",
+      "term_ar": "استخراج البيانات من الويب",
+      "term_en": "Web Scraping",
+      "conceptId": "web-scraping-for-ai-data",
+      "definition_ar": "استخدام برامج تزور صفحات الويب وتلتقط أجزاء منها كالأسعار والتقييمات وتحولها إلى بيانات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-api",
+      "term_ar": "واجهة برمجة التطبيقات",
+      "term_en": "API",
+      "conceptId": "apis-and-json-data",
+      "definition_ar": "نقطة دخول رسمية يطلب منها النظام بيانات محددة ويحصل على استجابة منظمة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-http-status",
+      "term_ar": "رمز حالة HTTP",
+      "term_en": "HTTP Status Code",
+      "conceptId": "apis-and-json-data",
+      "definition_ar": "رقم يعيده الخادم ليبين نجاح الطلب أو نوع الخطأ، مثل 200 و404.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-json",
+      "term_ar": "جيسون",
+      "term_en": "JSON",
+      "conceptId": "data-formats-csv-json-xml",
+      "definition_ar": "تنسيق نصي يمثل البيانات بأزواج مفتاح وقيمة ويدعم التداخل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-csv-ai",
+      "term_ar": "قيم مفصولة بفاصلة",
+      "term_en": "CSV",
+      "conceptId": "data-formats-csv-json-xml",
+      "definition_ar": "تنسيق جدولي نصي بسيط تفصل فيه الفاصلة بين الحقول.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-xml",
+      "term_ar": "لغة XML",
+      "term_en": "XML",
+      "conceptId": "data-formats-csv-json-xml",
+      "definition_ar": "لغة ترميز بوسوم تصف البيانات وتنظمها وتدعم المخططات والتحقق.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-etl",
+      "term_ar": "استخراج وتحويل وتحميل",
+      "term_en": "ETL",
+      "conceptId": "data-analytics-types",
+      "definition_ar": "عملية تستخرج البيانات من مصادر متعددة وتحولها إلى تنسيق موحد ثم تحملها في مستودع مركزي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-descriptive-analytics",
+      "term_ar": "التحليل الوصفي",
+      "term_en": "Descriptive Analytics",
+      "conceptId": "data-analytics-types",
+      "definition_ar": "تحليل البيانات التاريخية لفهم ما حدث في الماضي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-diagnostic-analytics",
+      "term_ar": "التحليل التشخيصي",
+      "term_en": "Diagnostic Analytics",
+      "conceptId": "data-analytics-types",
+      "definition_ar": "تحليل يحاول تفسير لماذا حدث شيء ما بالبحث عن العوامل السببية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-prescriptive-analytics",
+      "term_ar": "التحليل الإرشادي",
+      "term_en": "Prescriptive Analytics",
+      "conceptId": "data-analytics-types",
+      "definition_ar": "تحليل يقترح أفضل الإجراءات الممكنة بناءً على التنبؤات والبدائل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-quantitative-data",
+      "term_ar": "بيانات كمية",
+      "term_en": "Quantitative Data",
+      "conceptId": "quantitative-vs-qualitative-data-ai",
+      "definition_ar": "معلومات يمكن التعبير عنها بأعداد وقياسها وحساب متوسطها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-qualitative-data",
+      "term_ar": "بيانات نوعية",
+      "term_en": "Qualitative Data",
+      "conceptId": "quantitative-vs-qualitative-data-ai",
+      "definition_ar": "بيانات وصفية تجيب عن لماذا وكيف مثل الآراء والتعليقات والمقابلات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-data-poisoning",
+      "term_ar": "تسميم البيانات",
+      "term_en": "Data Poisoning",
+      "conceptId": "protecting-ai-data",
+      "definition_ar": "حقن سجلات تبدو طبيعية في بيانات التدريب لجعل النموذج يتخذ قرارات خاطئة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-feature",
+      "term_ar": "ميزة",
+      "term_en": "Feature",
+      "conceptId": "preparing-data-for-ai-models",
+      "definition_ar": "متغير مدخل يستخدمه النموذج، وقد يُشتق من القيم الخام مثل اليوم من تاريخ الشراء.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-normalisation",
+      "term_ar": "تطبيع القيم",
+      "term_en": "Normalisation",
+      "conceptId": "preparing-data-for-ai-models",
+      "definition_ar": "إعادة تحجيم القيم الرقمية لتقترب مداها حتى لا يطغى متغير ذو قيم كبيرة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-data-minimisation",
+      "term_ar": "تقليل البيانات",
+      "term_en": "Data Minimisation",
+      "conceptId": "preparing-data-for-ai-models",
+      "definition_ar": "جمع وتخزين القدر اللازم فقط من البيانات الشخصية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-b2c",
+      "term_ar": "شركة لمستهلك",
+      "term_en": "B2C",
+      "conceptId": "ecommerce-business-models-and-data",
+      "definition_ar": "نمط تجارة إلكترونية تبيع فيه شركة مباشرة للأفراد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-b2b",
+      "term_ar": "شركة لشركة",
+      "term_en": "B2B",
+      "conceptId": "ecommerce-business-models-and-data",
+      "definition_ar": "نمط تجارة إلكترونية تتبادل فيه الشركات السلع والخدمات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-pos",
+      "term_ar": "نقطة بيع",
+      "term_en": "Point of Sale",
+      "conceptId": "ecommerce-business-models-and-data",
+      "definition_ar": "نظام عند صندوق الدفع يسجل تفاصيل كل عملية شراء.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-feedback-loop",
+      "term_ar": "حلقة التغذية الراجعة",
+      "term_en": "Feedback Loop",
+      "conceptId": "smart-assistant-data-pipeline",
+      "definition_ar": "إعادة نتائج الاستخدام الواقعي إلى النظام ليتعلم منها ويتحسن.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-jupyter",
+      "term_ar": "دفتر جوبيتر",
+      "term_en": "Jupyter Notebook",
+      "conceptId": "ide-vs-jupyter-notebook",
+      "definition_ar": "ملف تفاعلي من خلايا كود وشرح يناسب التجريب والتحليل خطوة بخطوة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    },
+    {
+      "id": "term-markdown",
+      "term_ar": "ماركداون",
+      "term_en": "Markdown",
+      "conceptId": "ide-vs-jupyter-notebook",
+      "definition_ar": "أسلوب بسيط لتنسيق النص بعناوين ونقاط وروابط يُستخدم لشرح الدفاتر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة وحدة الذكاء الاصطناعي وملاحظات تعلم الآلة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-033",
+        "src-031",
+        "src-039",
+        "src-086",
+        "src-002",
+        "src-003",
+        "src-008",
+        "src-026",
+        "src-077"
+      ]
+    }
   ]
 }

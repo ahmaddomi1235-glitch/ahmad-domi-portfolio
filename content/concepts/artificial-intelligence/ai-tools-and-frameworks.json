@@ -1,0 +1,118 @@
+{
+  "id": "ai-tools-and-frameworks",
+  "type": "Comparison",
+  "title_ar": "أدوات بناء وتطبيق حلول الذكاء الاصطناعي: من البيانات إلى النشر",
+  "title_en": "AI Tools and Frameworks",
+  "slug": "ai-tools-and-frameworks",
+  "summary": "لكل مرحلة في حل الذكاء الاصطناعي أدواتها: عنونة وتنظيف البيانات، Jupyter وPandas وMatplotlib للاستكشاف، scikit-learn وTensorFlow وKeras وPyTorch للتدريب، وDocker وKubernetes وFastAPI للنشر والتشغيل.",
+  "unit": "artificial-intelligence",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "ملاحظات تعلّم الآلة وأدوات الذكاء الاصطناعي (أحمد دومي)",
+      "ref": "أدوات بناء وتطبيق حلول الذكاء الاصطناعي"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "ide-vs-jupyter-notebook",
+    "programming-languages-for-ai",
+    "ai-project-lifecycle"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-039",
+    "src-031"
+  ],
+  "order": 35,
+  "shortAnswer": "يمر حل الذكاء الاصطناعي بسلسلة خطوات، ولكل خطوة أدوات: **جمع البيانات وتحضيرها** (قواعد بيانات وملفات وAPIs، وأدوات عنونة مثل Labelbox)، **الاستكشاف والتحليل والتصوير** (Jupyter Notebook وPandas وMatplotlib وSeaborn وTableau)، **التدريب وبناء النموذج** (scikit-learn للنماذج التقليدية، TensorFlow وKeras للشبكات العصبية، PyTorch للأبحاث والنماذج العميقة)، **النشر والتشغيل** (Docker لتغليف التطبيق، Kubernetes لإدارة الحاويات والتوسعة، FastAPI لبناء API، TensorFlow Serving لخدمة النماذج).",
+  "whyBtec": "اذكر الأداة بوظيفتها لا باسمها وحده: ماذا تفعل ولماذا اخترتها في هذه المرحلة؟",
+  "terminology": [
+    {
+      "ar": "عنونة البيانات",
+      "en": "Data Labelling"
+    },
+    {
+      "ar": "حاوية",
+      "en": "Container"
+    },
+    {
+      "ar": "واجهة برمجية",
+      "en": "API"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي أدوات الذكاء الاصطناعي؟",
+    "AI tools frameworks pipeline BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "المرحلة",
+        "الأدوات",
+        "وظيفتها"
+      ],
+      "rows": [
+        [
+          "جمع البيانات وتحضيرها",
+          "قواعد بيانات، ملفات، APIs، Labelbox",
+          "مصادر البيانات وتسمية الصور والنصوص (للتعلم المُراقَب) وتنظيفها"
+        ],
+        [
+          "الاستكشاف والتحليل",
+          "Jupyter، Pandas، Matplotlib، Seaborn، Tableau",
+          "كود خطوة بخطوة، جداول، رسوم، لوحات تفاعلية"
+        ],
+        [
+          "التدريب",
+          "scikit-learn، TensorFlow، Keras، PyTorch",
+          "نماذج تقليدية (تصنيف/انحدار/تجميع) وشبكات عصبية"
+        ],
+        [
+          "النشر",
+          "Docker، Kubernetes، FastAPI، TensorFlow Serving",
+          "تغليف التطبيق وتوسعته وخدمة النموذج عبر API"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "ويمكن التطوير على Windows أو macOS أو Linux؛ المهم تثبيت بايثون والمكتبات واختيار بيئة مريحة ([[ide-vs-jupyter-notebook|IDE أم Notebook]]). ولغات الذكاء الاصطناعي في [[programming-languages-for-ai|لغات البرمجة للذكاء الاصطناعي]]، وللدورة الكاملة [[ai-project-lifecycle|دورة المشروع]]."
+    },
+    {
+      "t": "h2",
+      "text": "كيف تختار الأداة؟"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "ابدأ من المرحلة لا من الاسم: ماذا أحتاج الآن؟ تنظيف؟ رسم؟ تدريب؟ نشر؟",
+        "فضّل الأدوات الأبسط التي تكفي: scikit-learn لنماذج تقليدية قبل شبكة عصبية كاملة.",
+        "تحقّق أن الأداة تعمل مع نظامك وأن لها دعمًا وتوثيقًا."
+      ]
+    },
+    {
+      "t": "callout",
+      "kind": "note",
+      "text": "قائمة الأدوات هنا للتعرّف على وظائفها، وليست قائمة إلزامية؛ يتغير السوق وتبقى الوظائف.",
+      "title": "ملاحظة"
+    },
+    {
+      "t": "p",
+      "text": "وللتعرف على كل مرحلة في سياقها انظر [[ai-project-lifecycle|دورة المشروع]] و[[data-analytics-types|أنواع التحليلات]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

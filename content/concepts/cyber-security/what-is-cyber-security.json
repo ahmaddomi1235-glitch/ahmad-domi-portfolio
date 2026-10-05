@@ -1,0 +1,112 @@
+{
+  "id": "what-is-cyber-security",
+  "type": "Concept",
+  "title_ar": "ما هو الأمن السيبراني؟",
+  "title_en": "What Is Cyber Security?",
+  "slug": "what-is-cyber-security",
+  "summary": "الأمن السيبراني هو حماية الأجهزة والبرامج والبيانات من التلف أو الكشف أو التعديل أو السرقة. وهو يشمل الحاسوب والهاتف والشبكة، وتتغير وسائله لأن التهديدات تتطور.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "المقدمة والأهداف التعليمية"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "why-data-is-the-target",
+    "threat-vulnerability-risk",
+    "defence-in-depth"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 6,
+  "shortAnswer": "الأمن السيبراني (Cyber Security) هو حماية أجهزة الحاسوب والهواتف وبرامجها والبيانات الموجودة عليها من التلف أو الكشف أو التعديل أو السرقة. ويُسمّى أيضًا أمن الحاسوب أو أمن تكنولوجيا المعلومات. وهو لا يقتصر على صدّ المخترق، بل يشمل الإجراءات المادية والقانونية والتوعية.",
+  "whyBtec": "هذا التعريف هو أساس كل واجب في الوحدة: أي سيناريو ستكتب عنه يسأل في جوهره: ما الذي يجب حمايته، ومن أين يأتيه الخطر، وكيف تُسدّ الثغرات؟",
+  "terminology": [
+    {
+      "ar": "الأمن السيبراني",
+      "en": "Cyber Security"
+    },
+    {
+      "ar": "التهديد",
+      "en": "Threat"
+    },
+    {
+      "ar": "الثغرة",
+      "en": "Vulnerability"
+    },
+    {
+      "ar": "حماية البيانات",
+      "en": "Data Protection"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو الأمن السيبراني؟",
+    "ما الفرق بين الأمن السيبراني وأمن الحاسوب؟",
+    "Cyber security definition BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "التعريف ببساطة"
+    },
+    {
+      "t": "p",
+      "text": "أي جهاز نستخدمه، حاسوبًا كان أو هاتفًا أو لوحيًا، قد يتعرض لتهديد. لذلك نحتاج إلى حماية شيئين معًا: **الجهاز نفسه** و**البيانات الموجودة عليه**. وهذا ما يجمعه مفهوم الأمن السيبراني."
+    },
+    {
+      "t": "h2",
+      "text": "ما الذي يدخل ضمنه؟"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "معرفة **مصدر التهديد**: من داخل المؤسسة أم من خارجها (انظر [[internal-vs-external-threats|التهديدات الداخلية والخارجية]]).",
+        "معرفة **الثغرات** التي يستغلها المهاجم (انظر [[system-vulnerability-types|أنواع ثغرات النظام]]).",
+        "تقدير **الأثر** على المؤسسة (انظر [[cyber-attack-impact|أثر الهجمات السيبرانية]]).",
+        "اختيار **وسائل الحماية**: مادية وبرمجية وقانونية وتوعوية (انظر [[defence-in-depth|الحماية متعددة الطبقات]])."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "لماذا تتغير وسائل الحماية؟"
+    },
+    {
+      "t": "p",
+      "text": "الأمن السيبراني ليس مجالًا ثابتًا. التهديدات تتطور باستمرار لأن المهاجمين يطوّرون أساليبهم، فطريقة حماية كانت ممتازة قبل سنوات قد لا تكفي اليوم. لذلك تحتاج المؤسسات إلى متابعة التهديدات الجديدة وتحديث وسائل الحماية."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "ما البيانات والأنظمة التي لدى المؤسسة؟ من قد يهددها؟ أين ضعفها؟ ماذا سيخسرون لو نجح الهجوم؟ ثم: كيف يمكن حمايتها؟",
+      "title": "اسأل نفسك في أي سيناريو"
+    },
+    {
+      "t": "p",
+      "text": "ابدأ بفهم [[why-data-is-the-target|لماذا تُعدّ البيانات هدف الأمن السيبراني]]، ثم [[threat-vulnerability-risk|الفرق بين التهديد والثغرة والمخاطرة]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

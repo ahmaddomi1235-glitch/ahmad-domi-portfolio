@@ -142,6 +142,465 @@
       "term_en": "Change Request",
       "conceptId": "project-planning",
       "definition_ar": "نموذج رسمي يوضح سبب تغيير مطلوب في المشروع وفائدته وأثره المحتمل على الزمن والميزانية، ليُقرَّر قبوله أو رفضه أو تأجيله."
+    },
+    {
+      "id": "term-problem-statement",
+      "term_ar": "صياغة المشكلة",
+      "term_en": "Problem Statement",
+      "conceptId": "project-problem-definition",
+      "definition_ar": "فقرة موضوعية قابلة للقياس تصف الوضع الحالي ومن يعاني منه وسببه وأثره.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-project-goal",
+      "term_ar": "هدف المشروع",
+      "term_en": "Project Goal",
+      "conceptId": "project-problem-definition",
+      "definition_ar": "نتيجة مقصودة يركز عليها المشروع، قابلة للقياس ومستقلة عن تفاصيل الحل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-feasibility-study",
+      "term_ar": "دراسة الجدوى",
+      "term_en": "Feasibility Study",
+      "conceptId": "feasibility-study-and-alternatives",
+      "definition_ar": "تحليل منظم يجيب هل من المنطقي تنفيذ المشروع الآن ضمن الموارد المتاحة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-technical-feasibility",
+      "term_ar": "جدوى فنية",
+      "term_en": "Technical Feasibility",
+      "conceptId": "feasibility-study-and-alternatives",
+      "definition_ar": "فحص توفر البنية التحتية والبرمجيات والخبرة اللازمة للمشروع.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-economic-feasibility",
+      "term_ar": "جدوى اقتصادية",
+      "term_en": "Economic Feasibility",
+      "conceptId": "feasibility-study-and-alternatives",
+      "definition_ar": "فحص هل الفوائد المتوقعة تبرر التكلفة التي ستُنفَق.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-operational-feasibility",
+      "term_ar": "جدوى تشغيلية",
+      "term_en": "Operational Feasibility",
+      "conceptId": "feasibility-study-and-alternatives",
+      "definition_ar": "فحص استعداد العاملين لتغيير طريقة عملهم وقدرة الإدارة على فرض الإجراءات الجديدة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-alternatives-analysis",
+      "term_ar": "تحليل البدائل",
+      "term_en": "Alternatives Analysis",
+      "conceptId": "feasibility-study-and-alternatives",
+      "definition_ar": "مقارنة موجزة بين الحلول الممكنة بمزاياها وعيوبها ثم التوصية بالأنسب.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-pid",
+      "term_ar": "وثيقة بدء المشروع",
+      "term_en": "Project Initiation Document",
+      "conceptId": "project-initiation-document",
+      "definition_ar": "وثيقة رسمية تثبت موافقة الإدارة على الفكرة وتخصيص موارد أولية وتحدد النطاق المبدئي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-brainstorming",
+      "term_ar": "العصف الذهني",
+      "term_en": "Brainstorming",
+      "conceptId": "brainstorming-and-mind-maps",
+      "definition_ar": "أسلوب جماعي لتوليد أكبر عدد من الأفكار في وقت قصير دون نقد فوري.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-mind-map",
+      "term_ar": "خريطة ذهنية",
+      "term_en": "Mind Map",
+      "conceptId": "brainstorming-and-mind-maps",
+      "definition_ar": "رسم يبدأ بفكرة مركزية وتتفرع منه فروع رئيسية وفرعية لتنظيم الأفكار بصريًا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-dfd",
+      "term_ar": "مخطط تدفق البيانات",
+      "term_en": "Data Flow Diagram (DFD)",
+      "conceptId": "flowchart-dfd-erd",
+      "definition_ar": "مخطط يركز على انتقال البيانات بين الجهات والعمليات ومخازن البيانات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-erd",
+      "term_ar": "مخطط الكيانات والعلاقات",
+      "term_en": "Entity-Relationship Diagram (ERD)",
+      "conceptId": "flowchart-dfd-erd",
+      "definition_ar": "مخطط يصور جداول قاعدة البيانات وحقولها والعلاقات بينها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-requirements-spec",
+      "term_ar": "وثيقة مواصفات المتطلبات",
+      "term_en": "Requirements Specification",
+      "conceptId": "project-requirements-specification",
+      "definition_ar": "وثيقة رسمية تدون المتطلبات ومعايير قبولها وتصبح مرجع نجاح المنتج.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-acceptance-criterion",
+      "term_ar": "معيار القبول",
+      "term_en": "Acceptance Criterion",
+      "conceptId": "project-requirements-specification",
+      "definition_ar": "شرط قابل للقياس يُحكم به على تحقق المتطلب.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-gantt",
+      "term_ar": "مخطط جانت",
+      "term_en": "Gantt Chart",
+      "conceptId": "gantt-chart-and-critical-path",
+      "definition_ar": "أداة بصرية تعرض المهام على محور زمني بشريط لكل مهمة يعكس مدتها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-critical-path",
+      "term_ar": "المسار الحرج",
+      "term_en": "Critical Path",
+      "conceptId": "gantt-chart-and-critical-path",
+      "definition_ar": "أطول سلسلة مهام مترابطة في المشروع، وأي تأخير فيها يؤخر التسليم.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-contingency",
+      "term_ar": "وقت احتياطي",
+      "term_en": "Contingency Time",
+      "conceptId": "gantt-chart-and-critical-path",
+      "definition_ar": "مدة إضافية تُضاف إلى الجدول لاستيعاب المفاجآت.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-change-control",
+      "term_ar": "ضبط التغيير",
+      "term_en": "Change Control",
+      "conceptId": "change-control-and-obstacles",
+      "definition_ar": "عملية رسمية تتضمن طلب التغيير وتقييم أثره وموافقة العميل وتحديث الخطة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-risk-register",
+      "term_ar": "سجل المخاطر",
+      "term_en": "Risk Register",
+      "conceptId": "risk-management-matrix-and-strategies",
+      "definition_ar": "وثيقة تسجل كل خطر واحتماله وأثره والمسؤول والإجراء والحالة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-risk-mitigation",
+      "term_ar": "تخفيف الخطر",
+      "term_en": "Risk Mitigation",
+      "conceptId": "risk-management-matrix-and-strategies",
+      "definition_ar": "تقليل احتمال الخطر أو أثره، كتدريب مبرمج احتياطي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-risk-transfer",
+      "term_ar": "نقل الخطر",
+      "term_en": "Risk Transfer",
+      "conceptId": "risk-management-matrix-and-strategies",
+      "definition_ar": "تحميل طرف آخر المسؤولية عن الخطر، كعقد ضمان مع مورد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-risk-avoidance",
+      "term_ar": "تجنب الخطر",
+      "term_en": "Risk Avoidance",
+      "conceptId": "risk-management-matrix-and-strategies",
+      "definition_ar": "إزالة الخطر كليًا بتعديل الخطة، كاختيار تقنية أكثر استقرارًا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-risk-acceptance",
+      "term_ar": "قبول الخطر",
+      "term_en": "Risk Acceptance",
+      "conceptId": "risk-management-matrix-and-strategies",
+      "definition_ar": "الاعتراف بالخطر وإعداد خطة طوارئ كميزانية احتياطية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-project-closure",
+      "term_ar": "إغلاق المشروع",
+      "term_en": "Project Closure",
+      "conceptId": "project-closure-and-lessons-learned",
+      "definition_ar": "المرحلة الرسمية التي تُراجَع فيها النتائج وتُوثَّق الدروس ويُسلَّم المشروع.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-root-cause",
+      "term_ar": "السبب الجذري",
+      "term_en": "Root Cause",
+      "conceptId": "project-closure-and-lessons-learned",
+      "definition_ar": "السبب الأعمق الذي أدى إلى مشكلة، لا ظاهرها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-effective-meeting",
+      "term_ar": "اجتماع فعّال",
+      "term_en": "Effective Meeting",
+      "conceptId": "effective-project-meetings",
+      "definition_ar": "اجتماع يُقاس بالقرارات التي تخرج منه والتزام المشاركين بتنفيذها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
+    },
+    {
+      "id": "term-professional-conduct",
+      "term_ar": "السلوك المهني",
+      "term_en": "Professional Conduct",
+      "conceptId": "professional-conduct-in-project-teams",
+      "definition_ar": "أسلوب التعامل مع الفريق والعملاء والضغوط بالالتزام والتواصل والمسؤولية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "إدارة مشاريع تكنولوجيا المعلومات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-073",
+        "src-019"
+      ]
     }
   ]
 }

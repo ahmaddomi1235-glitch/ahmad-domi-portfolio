@@ -1,0 +1,119 @@
+{
+  "id": "explain-level-p-writing",
+  "type": "Concept",
+  "title_ar": "كتابة مستوى الشرح (P): الخطوات الخمس لشرح أي فكرة داخل السيناريو",
+  "title_en": "Writing the Explain Level (P)",
+  "slug": "explain-level-p-writing",
+  "summary": "في مستوى الشرح يُثبت الطالب أنه يفهم الفكرة ويستطيع شرحها داخل السيناريو، فلا يكتفي بتعريف محفوظ. كل فكرة تمر بخمس خطوات: ما هو؟ كيف يعمل؟ أين يظهر في السيناريو؟ لماذا هو مهم؟ ما أثره المباشر؟",
+  "unit": "assessment",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "منهجية كتابة تقرير BTEC — إعداد أحمد دومي (مبادئ عامة فقط)",
+      "ref": "مستوى P — الشرح"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "analyse-level-m-writing",
+    "linking-paragraphs",
+    "pass-merit-distinction"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "sourceIds": [
+    "src-004"
+  ],
+  "order": 3,
+  "shortAnswer": "في مستوى الشرح (P) لا يكفي أن تكتب تعريفًا محفوظًا؛ يجب أن تُثبت أنك تفهم الفكرة وتشرحها **داخل السيناريو**. كل فكرة تمر بخمس خطوات: **(1) ما هو؟** تعريف واضح. **(2) كيف يعمل أو يحدث؟** الآلية الأساسية. **(3) أين يظهر في السيناريو؟** ربط مباشر بالمؤسسة. **(4) لماذا هو مهم؟** سبب أهميته في هذا السيناريو تحديدًا. **(5) ما الأثر المباشر؟** نتيجة مباشرة دون الدخول في سلسلة تحليل طويلة.",
+  "whyBtec": "هذا أسلوب كتابة لا معلومة: طبّقه على أي فكرة طُلب شرحها، بغضّ النظر عن الوحدة.",
+  "terminology": [
+    {
+      "ar": "شرح",
+      "en": "Explain"
+    },
+    {
+      "ar": "سيناريو",
+      "en": "Scenario"
+    },
+    {
+      "ar": "أثر مباشر",
+      "en": "Direct Impact"
+    }
+  ],
+  "questionsAnswered": [
+    "كيف أكتب فقرة شرح في تقرير BTEC؟",
+    "ما الخطوات الخمس لمستوى P؟",
+    "how to write explain level BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "الخطوات الخمس"
+    },
+    {
+      "t": "table",
+      "head": [
+        "الخطوة",
+        "السؤال",
+        "ما تكتبه"
+      ],
+      "rows": [
+        [
+          "1",
+          "ما هو؟",
+          "تعريف واضح للفكرة أو التقنية أو المشكلة"
+        ],
+        [
+          "2",
+          "كيف يعمل أو يحدث؟",
+          "الآلية الأساسية"
+        ],
+        [
+          "3",
+          "أين يظهر في السيناريو؟",
+          "ربط مباشر بالمؤسسة أو الحالة"
+        ],
+        [
+          "4",
+          "لماذا هو مهم؟",
+          "أهميته في هذا السيناريو تحديدًا"
+        ],
+        [
+          "5",
+          "ما أثره المباشر؟",
+          "نتيجة مباشرة بلا تحليل طويل"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "مثال توضيحي مستقل"
+    },
+    {
+      "t": "p",
+      "text": "في سيناريو مكتبة مدرسية تريد نظام حجز كتب: «نظام الحجز الإلكتروني برنامج يسجل الكتب المتاحة وحالة كل كتاب. يعمل بأن يقارن طلب الطالب بقاعدة بيانات الكتب ثم يثبّت الحجز. في مكتبة المدرسة يستخدمه الطلبة قبل الذهاب للمكتبة. وهو مهم لأن عدد النسخ محدود. وأثره المباشر أن يعرف الطالب فورًا إن كان الكتاب متاحًا.» لاحظ أن كل جملة تجيب عن خطوة، وأن المثال مرتبط بالمكتبة لا بتعريف عام."
+    },
+    {
+      "t": "callout",
+      "kind": "warning",
+      "text": "تعريف ثم انتقال فورًا إلى فكرة أخرى. المقصود أن تبقى مع الفكرة حتى تُظهر فهمك لها داخل الحالة.",
+      "title": "خطأ شائع"
+    },
+    {
+      "t": "p",
+      "text": "بعد أن يعرف القارئ الفكرة وأثرها المباشر تنتقل إلى [[analyse-level-m-writing|مستوى التحليل]]. وللربط بين الفقرات: [[linking-paragraphs|ربط الفقرات]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

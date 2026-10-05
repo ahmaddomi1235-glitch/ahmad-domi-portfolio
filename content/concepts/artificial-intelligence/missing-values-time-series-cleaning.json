@@ -1,0 +1,112 @@
+{
+  "id": "missing-values-time-series-cleaning",
+  "type": "Comparison",
+  "title_ar": "تنظيف السلسلة الزمنية ومعالجة القيم المفقودة: الحذف أم التعويض؟",
+  "title_en": "Cleaning Time Series and Handling Missing Values",
+  "slug": "missing-values-time-series-cleaning",
+  "summary": "عند ظهور قيم مفقودة (NA) في سلسلة زمنية يمكن حذف الصفوف أو تعويضها: بمتوسط الساعة نفسها عبر الأيام أو بآخر قيمة معروفة (LOCF). لكل طريقة أثر مختلف في شكل البيانات، لذلك تُجرَّب أكثر من طريقة ويُقارَن أثرها.",
+  "unit": "artificial-intelligence",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)",
+      "ref": "الصفحتان 75–76",
+      "url": "/documents/teaching-materials/ai-introduction-applications.pdf"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "data-reliability-checks",
+    "data-cleaning-steps",
+    "arima-time-series"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-033"
+  ],
+  "order": 10,
+  "shortAnswer": "السلسلة الزمنية قياسات متكررة مع الزمن. مثال: نادٍ رياضي يسجل عدد الداخلين كل ساعة، لكن بعض القراءات تفشل في الوصول فتظهر NA. وجود NA يكسر استمرارية السلسلة ويمنع كثيرًا من خوارزميات التعلم من العمل. الخيارات: **حذف** الصفوف الناقصة (لكنه قد يُضيّع جزءًا كبيرًا من البيانات)، أو **التعويض بمتوسط الساعة** نفسها عبر الأيام الأخرى (يحافظ على نمط الذروة المسائية)، أو **آخر قيمة معروفة** (LOCF) وقد يمدد قمة الزحام لساعة زائدة.",
+  "whyBtec": "لا توجد طريقة صحيحة وحيدة: تجرِّب أكثر من تقنية وتقارن أثرها قبل الاستقرار على واحدة.",
+  "terminology": [
+    {
+      "ar": "سلسلة زمنية",
+      "en": "Time Series"
+    },
+    {
+      "ar": "قيمة مفقودة",
+      "en": "Missing Value"
+    },
+    {
+      "ar": "تعويض",
+      "en": "Imputation"
+    },
+    {
+      "ar": "آخر قيمة معروفة",
+      "en": "LOCF"
+    }
+  ],
+  "questionsAnswered": [
+    "كيف أعالج القيم المفقودة؟",
+    "ما هي طرق تعويض القيم المفقودة؟",
+    "handling missing values time series BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "الخيارات"
+    },
+    {
+      "t": "table",
+      "head": [
+        "الطريقة",
+        "الميزة",
+        "المشكلة"
+      ],
+      "rows": [
+        [
+          "حذف الصفوف الناقصة",
+          "بسيطة",
+          "فقدان جزء كبير من البيانات إن كانت نسبة الفشل مرتفعة"
+        ],
+        [
+          "متوسط الساعة عبر الأيام",
+          "يحافظ على نمط ساعات الذروة",
+          "قد يخفف من ارتفاع بعض القيم الحقيقية إن كانت قمة اليوم أكبر بكثير من المعتاد"
+        ],
+        [
+          "آخر قيمة معروفة (LOCF)",
+          "سهلة وتحافظ على الاستمرارية",
+          "قد تمدد قمة الزحام لساعة لا يوجد فيها العدد نفسه فعلًا"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "درس المثال"
+    },
+    {
+      "t": "p",
+      "text": "النتيجة بعد التعويض سلسلة مكتملة الأرقام مع بقاء فكرة وجود ساعات مزدحمة وأخرى هادئة. لكن اختيار الطريقة يؤثر في شكل البيانات، فتنظيف البيانات ليس عملًا آليًا بالكامل بل يحتاج علمًا وفهمًا لسياق المشكلة. وقد تنشأ القيم المفقودة من خلل في الحساس أو انقطاع الاتصال."
+    },
+    {
+      "t": "p",
+      "text": "الفكرة العامة مشروحة في [[data-reliability-checks|فحوص موثوقية البيانات]] و[[data-cleaning-steps|خطوات تنظيف البيانات]]. وللتنبؤ بالسلاسل الزمنية انظر [[arima-time-series|نموذج ARIMA]]."
+    },
+    {
+      "t": "p",
+      "text": "وسجّل في تقريرك الطريقة التي اخترتها ولماذا، فتغيير الطريقة قد يغيّر النتائج."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

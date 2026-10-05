@@ -1,0 +1,122 @@
+{
+  "id": "report-formatting-and-emphasis",
+  "type": "Comparison",
+  "title_ar": "تنسيق التقرير وتمييز المعلومات المهمة: العناوين والمسافات والتمييز المحدود",
+  "title_en": "Report Formatting and Emphasis",
+  "slug": "report-formatting-and-emphasis",
+  "summary": "التنسيق لا يرفع العلامة لأنه جميل، بل لأنه يجعل التقرير أسهل قراءة وتقييمًا ومعرفة لمكان كل معيار. المطلوب عنوان رئيس وأقسام وعناوين فرعية وفقرات مرتبة ومسافات مناسبة وتمييز محدود للمهم؛ فإذا كان كل شيء مميزًا فلا شيء مميز.",
+  "unit": "assessment",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "منهجية كتابة تقرير BTEC — إعداد أحمد دومي (مبادئ عامة فقط)",
+      "ref": "التنسيق"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "report-consistency-and-repetition",
+    "report-writing-principles"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "sourceIds": [
+    "src-004"
+  ],
+  "order": 10,
+  "shortAnswer": "التنسيق مهم لأنه يجعل التقرير أسهل في القراءة وأوضح في التقييم وأسهل في معرفة مكان كل معيار والتقاط الأفكار المهمة. يجب أن يحتوي التقرير على عنوان رئيس، وأقسام واضحة، وعناوين فرعية، وفقرات مرتبة، ومسافات مناسبة، وتمييز محدود للمعلومات المهمة. **ما يمكن تمييزه:** اسم المصطلح، والنتيجة الرئيسية، والسبب المهم، والحكم، والتوصية؛ بالخط العريض أو لون مختلف أو تظليل بسيط. لكن لا تحوّل كل الصفحة إلى ألوان: **إذا كان كل شيء مميزًا فلا يوجد شيء مميز**.",
+  "whyBtec": "اجعل القارئ يعرف أين هو وما أهم نقطة يجب أن يراها في كل قسم.",
+  "terminology": [
+    {
+      "ar": "تنسيق",
+      "en": "Formatting"
+    },
+    {
+      "ar": "عنوان فرعي",
+      "en": "Subheading"
+    },
+    {
+      "ar": "تمييز",
+      "en": "Emphasis"
+    }
+  ],
+  "questionsAnswered": [
+    "كيف أنسق تقرير BTEC؟",
+    "report formatting emphasis BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "العنصر",
+        "الغرض"
+      ],
+      "rows": [
+        [
+          "عنوان رئيس وأقسام",
+          "ليعرف القارئ بنية التقرير ومكان كل معيار"
+        ],
+        [
+          "عناوين فرعية",
+          "لتقسيم الفكرة ولتسهيل المراجعة"
+        ],
+        [
+          "فقرات مرتبة ومسافات",
+          "لتسهيل القراءة"
+        ],
+        [
+          "تمييز محدود",
+          "إبراز المصطلح أو النتيجة أو الحكم أو التوصية دون إفراط"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "ماذا تميّز؟"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "اسم المصطلح عند أول ذكر.",
+        "النتيجة الرئيسية في الفقرة.",
+        "السبب المهم الذي بُني عليه الحكم.",
+        "الحكم والتوصية."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وللتناسق العام للتقرير انظر [[report-consistency-and-repetition|الاتساق وتجنب التكرار]] و[[report-writing-principles|مبادئ كتابة التقرير]]."
+    },
+    {
+      "t": "h2",
+      "text": "مثال على تمييز محدود"
+    },
+    {
+      "t": "p",
+      "text": "في فقرة عن نظام حجز: عنوان فرعي «الحجز الإلكتروني»، وتمييز المصطلح عند أول ذكر، ثم الأثر المباشر، ثم القيد، ثم التوصية، فيرى القارئ المسار بنظرة. أما تمييز كل جملة فيلغي فائدة التمييز."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "عنوان فرعي لكل فكرة رئيسية، وتمييز واحد أو اثنان في الفقرة بحد أقصى.",
+      "title": "قاعدة"
+    },
+    {
+      "t": "callout",
+      "kind": "warning",
+      "text": "التنسيق الجيد لا يغطي ضعف المضمون، لكن المضمون الجيد قد يضيع بتنسيق فوضوي؛ فراجع الاثنين قبل التسليم.",
+      "title": "تنبيه"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

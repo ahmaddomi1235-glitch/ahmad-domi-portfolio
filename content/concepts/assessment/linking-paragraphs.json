@@ -1,0 +1,114 @@
+{
+  "id": "linking-paragraphs",
+  "type": "Comparison",
+  "title_ar": "الربط بين فقرات التقرير: نتيجة ← حاجة ← فكرة جديدة",
+  "title_en": "Linking Paragraphs in a Report",
+  "slug": "linking-paragraphs",
+  "summary": "لا يجب أن تبدو كل فقرة بداية تقرير جديد. الفقرة الجيدة تترك في نهايتها فكرة أو نتيجة تبدأ منها الفقرة التالية: نتيجة الفقرة السابقة ← الحاجة الناتجة عنها ← الفكرة التالية. فكل فقرة تأخذ خيطًا من التي قبلها وتضيف فكرة جديدة.",
+  "unit": "assessment",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "منهجية كتابة تقرير BTEC — إعداد أحمد دومي (مبادئ عامة فقط)",
+      "ref": "الربط بين الفقرات"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "explain-level-p-writing",
+    "analyse-level-m-writing",
+    "report-consistency-and-repetition"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "sourceIds": [
+    "src-004"
+  ],
+  "order": 8,
+  "shortAnswer": "ما المقصود بالربط؟ ألا تبدو كل فقرة وكأنها بداية تقرير جديد. الفقرة الجيدة تترك في نهايتها فكرة أو نتيجة يمكن أن تبدأ منها الفقرة التالية. **طريقة الربط:** نتيجة الفقرة السابقة ← الحاجة الناتجة عنها ← الفكرة التالية. **القاعدة الذهبية:** كل فقرة تأخذ خيطًا من الفقرة السابقة وتضيف إليه فكرة جديدة، فيصبح الانتقال بين الأفكار نتيجة منطقية لا قفزة مفاجئة.",
+  "whyBtec": "إن أمكن حذف الجملة الرابطة دون أن يتأثر المعنى فهي غالبًا حشو؛ والرابط الجيد يحمل السبب.",
+  "terminology": [
+    {
+      "ar": "ربط",
+      "en": "Linking"
+    },
+    {
+      "ar": "انتقال",
+      "en": "Transition"
+    }
+  ],
+  "questionsAnswered": [
+    "كيف أربط بين الفقرات في التقرير؟",
+    "linking paragraphs report writing BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "الصيغة"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "نهاية الفقرة الأولى: نتيجة أو فكرة.",
+        "الربط: الحاجة التي تنتج عنها (ولكن... / وبما أن...).",
+        "بداية الفقرة التالية: الفكرة الجديدة التي تعالج هذه الحاجة."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "مثال مستقل"
+    },
+    {
+      "t": "table",
+      "head": [
+        "الموضع",
+        "النص"
+      ],
+      "rows": [
+        [
+          "نهاية الفقرة الأولى",
+          "يتيح نظام الحجز للطالب معرفة توفر الكتاب قبل الحضور"
+        ],
+        [
+          "الربط",
+          "وبما أن دقة هذه المعلومة تعتمد على تحديث حالة الكتب أولًا بأول..."
+        ],
+        [
+          "بداية الفقرة التالية",
+          "...فإن تدريب أمين المكتبة على تسجيل الإعارة والإرجاع فورًا يصبح شرطًا لنجاح النظام"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "هنا لم ينتقل الكاتب فجأة من الحجز إلى التدريب؛ بل جعل التدريب نتيجة منطقية لمشكلة الدقة. وانظر [[explain-level-p-writing|الشرح]] و[[analyse-level-m-writing|التحليل]] و[[report-consistency-and-repetition|الاتساق]]."
+    },
+    {
+      "t": "h2",
+      "text": "كلمات ربط مفيدة"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "لذلك / وبناءً عليه: حين تكون الفقرة التالية نتيجة.",
+        "لكن / غير أن: حين تضيف قيدًا على ما سبق.",
+        "وبما أن...: حين تبني على حقيقة ذُكرت."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "الكلمة الرابطة لا تعوّض غياب العلاقة؛ فإن لم تكن الفقرة نتيجة منطقية لما قبلها فأعد ترتيب الأفكار."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

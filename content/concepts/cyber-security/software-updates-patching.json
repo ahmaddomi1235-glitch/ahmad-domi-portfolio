@@ -1,0 +1,117 @@
+{
+  "id": "software-updates-patching",
+  "type": "Concept",
+  "title_ar": "التحديثات الأمنية وأمن الأجهزة المحمولة: لماذا نثبّتها وماذا يحدث عند توقف الدعم؟",
+  "title_en": "Security Updates and Patching",
+  "slug": "software-updates-patching",
+  "summary": "التحديثات الأمنية لا تضيف ميزات فقط، بل تغلق ثغرات في نظام التشغيل والبرامج والأجهزة المحمولة. إهمالها أو استخدام نظام انتهى دعمه (مثل Windows XP) يترك الثغرة مفتوحة.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "ثغرات نظام التشغيل والأجهزة المحمولة"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "software-vulnerabilities",
+    "system-vulnerability-types"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 20,
+  "shortAnswer": "تصدر الشركات تحديثات وتصحيحات أمنية (Security Updates / Patches) لإصلاح أخطاء في نظام التشغيل والبرامج. إن تجاهلها المستخدم بقيت الثغرة وأمكن استغلالها. وحين تتوقف الشركة عن دعم نظام ما، كما حدث مع Windows XP، يتوقف إصدار التحديثات فتصبح الأجهزة التي تستخدمه أكثر عرضة للخطر.",
+  "whyBtec": "عند الحديث عن «تحديثات»، اربطها بالأمان لا بالمزايا الجديدة، واذكر مشكلة الأجهزة القديمة التي تُحرَم من التحديث.",
+  "terminology": [
+    {
+      "ar": "تحديث أمني",
+      "en": "Security Update"
+    },
+    {
+      "ar": "تصحيح",
+      "en": "Patch"
+    },
+    {
+      "ar": "انتهاء الدعم",
+      "en": "End of Support"
+    },
+    {
+      "ar": "الشركة المصنّعة",
+      "en": "OEM"
+    }
+  ],
+  "questionsAnswered": [
+    "لماذا نحتاج التحديثات الأمنية؟",
+    "ماذا يحدث عند توقف دعم نظام التشغيل؟",
+    "security updates and patches BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "نظام التشغيل والبرامج"
+    },
+    {
+      "t": "p",
+      "text": "أنظمة التشغيل مثل Windows قد تظهر فيها أخطاء أمنية، فتصدر الشركة تحديثات لإصلاحها. المستخدم الذي يتجاهلها يبقي الثغرة مفتوحة."
+    },
+    {
+      "t": "callout",
+      "kind": "warning",
+      "text": "عندما توقفت Microsoft عن دعم Windows XP توقفت أيضًا عن إصدار التحديثات الأمنية له، فصارت الأجهزة التي استمرت باستخدامه أكثر عرضة للمخاطر.",
+      "title": "انتهاء الدعم"
+    },
+    {
+      "t": "h2",
+      "text": "الأجهزة المحمولة"
+    },
+    {
+      "t": "p",
+      "text": "تعتمد تحديثات الهواتف أحيانًا على الشركة المصنّعة (OEM)، وقد تتوقف بعض الشركات عن إرسال التحديثات للأجهزة القديمة. فإن استعمل موظف جهازًا كهذا للوصول إلى أنظمة الشركة، بقيت فيه ثغرات معروفة دون إصلاح. (انظر أيضًا أمن الأجهزة المحمولة.)"
+    },
+    {
+      "t": "p",
+      "text": "وللثغرات التي لا يتوفر لها إصلاح بعد: [[software-vulnerabilities|ثغرة يوم الصفر]]."
+    },
+    {
+      "t": "h2",
+      "text": "الأجهزة المحمولة"
+    },
+    {
+      "t": "p",
+      "text": "الهواتف والأجهزة المحمولة جزء أساسي من العمل، فهي هدف للمهاجمين، خاصة حين يستخدم الموظف جهازه للوصول إلى أنظمة الشركة وبياناتها. يجب أن تكون محدّثة ومحمية. ومشكلة التحديث هنا أنه يعتمد أحيانًا على الشركة المصنّعة (OEM)، وقد تتوقف عن إرساله للأجهزة القديمة فتبقى فيها ثغرات معروفة دون إصلاح."
+    },
+    {
+      "t": "ul",
+      "items": [
+        "الأجهزة المحمولة صغيرة وسهلة السرقة وقد تحمل بيانات كثيرة، فتُضاف إليها حماية مادية وتشفير قرص.",
+        "وعند الاتصال بشبكة الشركة من الخارج يُستخدم VPN."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "انظر [[encryption-basics|تشفير الأقراص]] و[[vpn-and-https|VPN وHTTPS]] و[[physical-security|الأمان المادي]]. "
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

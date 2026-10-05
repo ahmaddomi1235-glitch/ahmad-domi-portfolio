@@ -149,6 +149,567 @@
         }
       ],
       "reviewState": "definition paraphrased from the author's lesson deck; pending author review"
+    },
+    {
+      "id": "term-missing-data",
+      "term_ar": "بيانات ناقصة",
+      "term_en": "Missing Data",
+      "conceptId": "data-reliability-checks",
+      "definition_ar": "قيم غير موجودة في السجل، وقد لا يمكن تعويضها دون أدلة كافية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-incorrect-data",
+      "term_ar": "بيانات خاطئة",
+      "term_en": "Incorrect Data",
+      "conceptId": "data-reliability-checks",
+      "definition_ar": "قيم موجودة لكنها غير صحيحة، مثل عمر عميل مسجل 250 عامًا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-data-volume",
+      "term_ar": "حجم البيانات",
+      "term_en": "Data Volume",
+      "conceptId": "data-reliability-checks",
+      "definition_ar": "كمية البيانات، وكلما كبرت صعب اكتشاف الأخطاء فيها يدويًا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-sample",
+      "term_ar": "العينة",
+      "term_en": "Sample",
+      "conceptId": "sample-size-and-bias",
+      "definition_ar": "مجموعة أفراد تُجمع منهم البيانات لتمثيل مجموعة أكبر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-data-age",
+      "term_ar": "عمر البيانات",
+      "term_en": "Data Age",
+      "conceptId": "data-accuracy-and-age",
+      "definition_ar": "مدة بقاء البيانات حديثة؛ فقد تفقد صلاحيتها للقرار مع مرور الزمن.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-primary-data",
+      "term_ar": "بيانات أساسية",
+      "term_en": "Primary Data",
+      "conceptId": "primary-vs-secondary-data",
+      "definition_ar": "بيانات يجمعها الباحث أو المؤسسة نفسها لغرض الدراسة الحالية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-external-data",
+      "term_ar": "بيانات خارجية",
+      "term_en": "External Data",
+      "conceptId": "primary-vs-secondary-data",
+      "definition_ar": "بيانات جمعها طرف آخر لغرض سابق قد يكون مختلفًا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-cookies",
+      "term_ar": "ملفات تعريف الارتباط",
+      "term_en": "Cookies",
+      "conceptId": "online-data-sources-privacy",
+      "definition_ar": "بيانات صغيرة يحفظها الموقع لتذكر بعض المعلومات عن زيارة المستخدم.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-loyalty-card",
+      "term_ar": "بطاقة الولاء",
+      "term_en": "Loyalty Card",
+      "conceptId": "online-data-sources-privacy",
+      "definition_ar": "بطاقة تتيح للمتجر معرفة مشتريات العميل ووقتها ومقدار إنفاقه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-demographics",
+      "term_ar": "الخصائص الديموغرافية",
+      "term_en": "Demographics",
+      "conceptId": "data-modelling-applications",
+      "definition_ar": "خصائص السكان التي تقسمهم إلى مجموعات مثل العمر والجنس والموقع والدخل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-dashboard",
+      "term_ar": "لوحة المعلومات",
+      "term_en": "Dashboard",
+      "conceptId": "dashboard-from-data",
+      "definition_ar": "واجهة تجمع أهم الملخصات والمؤشرات في مكان واحد لمساعدة المستخدم على اتخاذ قرار.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-kpi",
+      "term_ar": "مؤشر أداء",
+      "term_en": "KPI",
+      "conceptId": "dashboard-kpis",
+      "definition_ar": "رقم مختار يقيس جانبًا مهمًا من الأداء ويساعد على اتخاذ قرار.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-retention-rate",
+      "term_ar": "معدل الاحتفاظ",
+      "term_en": "Retention Rate",
+      "conceptId": "dashboard-kpis",
+      "definition_ar": "نسبة العملاء الذين استمروا من بداية الفترة، تُحسب بعد استبعاد العملاء الجدد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-pivot-table",
+      "term_ar": "جدول محوري",
+      "term_en": "Pivot Table",
+      "conceptId": "pivot-tables",
+      "definition_ar": "أداة تعيد تجميع البيانات وتلخيصها دون تغيير المصدر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-workbook",
+      "term_ar": "مصنف",
+      "term_en": "Workbook",
+      "conceptId": "workbook-structure-and-import",
+      "definition_ar": "ملف جدول البيانات الكامل الذي يضم عدة أوراق عمل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-worksheet",
+      "term_ar": "ورقة عمل",
+      "term_en": "Worksheet",
+      "conceptId": "workbook-structure-and-import",
+      "definition_ar": "صفحة داخل المصنف تتكون من صفوف وأعمدة وخلايا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-csv",
+      "term_ar": "ملف CSV",
+      "term_en": "CSV File",
+      "conceptId": "workbook-structure-and-import",
+      "definition_ar": "ملف نصي تُفصل قيمه بفاصل مثل الفاصلة، يُستورد إلى جدول بيانات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-formula",
+      "term_ar": "صيغة",
+      "term_en": "Formula",
+      "conceptId": "spreadsheet-functions-basic",
+      "definition_ar": "تعبير يبدأ بعلامة = ويحسب نتيجة من قيم أو مراجع خلايا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-function",
+      "term_ar": "دالة",
+      "term_en": "Function",
+      "conceptId": "spreadsheet-functions-basic",
+      "definition_ar": "صيغة جاهزة تنفذ حسابًا محددًا مثل SUM وAVERAGE.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-cell-reference",
+      "term_ar": "مرجع خلية",
+      "term_en": "Cell Reference",
+      "conceptId": "spreadsheet-functions-basic",
+      "definition_ar": "اسم الخلية المكوّن من حرف العمود ورقم الصف، يُستخدم في الصيغ.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-if-function",
+      "term_ar": "دالة IF",
+      "term_en": "IF Function",
+      "conceptId": "if-and-or-not-functions",
+      "definition_ar": "دالة تختبر شرطًا وتعيد نتيجة إن تحقق وأخرى إن لم يتحقق.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-lookup",
+      "term_ar": "دالة بحث",
+      "term_en": "Lookup Function",
+      "conceptId": "lookup-functions",
+      "definition_ar": "دالة تسترجع قيمة مرتبطة بمفتاح من جدول آخر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-absolute-ref",
+      "term_ar": "مرجع مطلق",
+      "term_en": "Absolute Reference",
+      "conceptId": "absolute-relative-references",
+      "definition_ar": "مرجع خلية مثبّت بعلامة $ لا يتغير عند نسخ الصيغة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-relative-ref",
+      "term_ar": "مرجع نسبي",
+      "term_en": "Relative Reference",
+      "conceptId": "absolute-relative-references",
+      "definition_ar": "مرجع خلية يتغير تلقائيًا عند نسخ الصيغة إلى مكان آخر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-goal-seek",
+      "term_ar": "البحث عن هدف",
+      "term_en": "Goal Seek",
+      "conceptId": "goal-seek-what-if",
+      "definition_ar": "أداة تحسب قيمة المدخل اللازمة للوصول إلى نتيجة محددة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-data-validation",
+      "term_ar": "التحقق من صحة البيانات",
+      "term_en": "Data Validation",
+      "conceptId": "data-validation-spreadsheets",
+      "definition_ar": "قواعد تمنع إدخال قيم لا تتوافق مع نوع أو نطاق أو قائمة محددة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-sorting",
+      "term_ar": "فرز",
+      "term_en": "Sorting",
+      "conceptId": "sorting-and-filtering",
+      "definition_ar": "إعادة ترتيب السجلات بحسب معيار مثل الاسم أو التاريخ أو القيمة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-filtering",
+      "term_ar": "تصفية",
+      "term_en": "Filtering",
+      "conceptId": "sorting-and-filtering",
+      "definition_ar": "عرض جزء من البيانات يحقق شرطًا وإخفاء الباقي مؤقتًا دون حذفه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-macro",
+      "term_ar": "ماكرو",
+      "term_en": "Macro",
+      "conceptId": "spreadsheet-macros",
+      "definition_ar": "سلسلة خطوات مسجلة تُعاد عند الطلب بزر أو اختصار.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-conditional-formatting",
+      "term_ar": "تنسيق شرطي",
+      "term_en": "Conditional Formatting",
+      "conceptId": "dashboard-design-rules",
+      "definition_ar": "تغيير مظهر الخلية تلقائيًا عند تحقق قاعدة لإبراز الاستثناءات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-sparkline",
+      "term_ar": "خط مؤشر",
+      "term_en": "Sparkline",
+      "conceptId": "dashboard-design-rules",
+      "definition_ar": "رسم صغير داخل خلية يعرض الاتجاه بجوار الأرقام.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-chart",
+      "term_ar": "مخطط",
+      "term_en": "Chart",
+      "conceptId": "chart-types",
+      "definition_ar": "تمثيل بصري للبيانات يختار نوعه بحسب السؤال المطلوب الإجابة عنه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
+    },
+    {
+      "id": "term-axis",
+      "term_ar": "محور",
+      "term_en": "Axis",
+      "conceptId": "misleading-charts",
+      "definition_ar": "خط المقياس في المخطط الذي يحدد قراءة القيم، واختياره يؤثر في فهم البيانات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "وحدة البيانات والمعلومات — الصف العاشر / نمذجة البيانات وجداول البيانات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-041",
+        "src-042"
+      ]
     }
   ]
 }

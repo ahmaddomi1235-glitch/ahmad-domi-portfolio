@@ -1,0 +1,128 @@
+{
+  "id": "firewalls",
+  "type": "Concept",
+  "title_ar": "جدار الحماية (Firewall): كيف يعمل؟ تصفية الحزم وNAT وقواعد الدخول والخروج",
+  "title_en": "Firewalls",
+  "slug": "firewalls",
+  "summary": "جدار الحماية حارس بوابة الشبكة: يفحص البيانات الداخلة والخارجة ويقرر بحسب قواعد إما السماح أو المنع، ويستطيع تصفية الحزم والوعي بالتطبيقات وتطبيق قواعد الدخول والخروج وإخفاء العناوين الداخلية بـNAT.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "جدران حماية البرامج والأجهزة"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "network-vulnerabilities",
+    "antivirus-software",
+    "defence-in-depth"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 27,
+  "shortAnswer": "جدار الحماية (Firewall) برنامج أو جهاز يراقب البيانات التي تدخل الشبكة أو تخرج منها ويقرر بحسب القواعد: مسموح أو ممنوع. يعمل بعدة آليات: تصفية الحزم (Packet Filtering) بالنظر إلى عنوان IP والوجهة والمنفذ والبروتوكول، والوعي بطبقة التطبيقات، وقواعد للبيانات الواردة (Inbound) والخارجة (Outbound)، وإخفاء العناوين الداخلية بـNAT.",
+  "whyBtec": "ما يميّز الإجابة القوية أنها لا تقول «جدار الحماية يمنع الهاكرز» فقط، بل تشرح كيف يقرر وماذا يفحص.",
+  "terminology": [
+    {
+      "ar": "جدار الحماية",
+      "en": "Firewall"
+    },
+    {
+      "ar": "حزمة",
+      "en": "Packet"
+    },
+    {
+      "ar": "تصفية الحزم",
+      "en": "Packet Filtering"
+    },
+    {
+      "ar": "ترجمة عنوان الشبكة",
+      "en": "NAT"
+    },
+    {
+      "ar": "وارد",
+      "en": "Inbound"
+    },
+    {
+      "ar": "صادر",
+      "en": "Outbound"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو جدار الحماية وكيف يعمل؟",
+    "ما هو NAT؟",
+    "firewall packet filtering BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "تشبيه"
+    },
+    {
+      "t": "p",
+      "text": "شبكة المؤسسة مبنى له باب، والجدار هو الحارس: يراقب ما يحاول الدخول أو الخروج ويقرر بحسب قواعد. قد يكون **برنامجًا** على جهاز واحد أو **جهازًا** يحمي شبكة كاملة."
+    },
+    {
+      "t": "h2",
+      "text": "كيف يقرر؟"
+    },
+    {
+      "t": "table",
+      "head": [
+        "الآلية",
+        "الفكرة"
+      ],
+      "rows": [
+        [
+          "تصفية الحزم وفحصها",
+          "البيانات تتقسم إلى حزم صغيرة؛ يفحص الجدار معلومات مثل عنوان IP والوجهة والمنفذ والبروتوكول ويقارنها بقواعده"
+        ],
+        [
+          "الوعي بطبقة التطبيقات",
+          "يعرف نوع التطبيق أو الخدمة التي تستخدم الاتصال، فيضع قواعد أدق كمنع تطبيق معين"
+        ],
+        [
+          "قواعد الدخول والخروج",
+          "قواعد للواردة (Inbound) وللخارجة (Outbound)"
+        ],
+        [
+          "إخفاء عنوان الشبكة (NAT)",
+          "تُخفى عناوين IP الداخلية وراء عنوان عام، فلا يرى المهاجم كل الأجهزة"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "لكن الجدار لا يمنع كل شيء، فقد يدخل التهديد عبر وسيط مادي ([[network-vulnerabilities|ثغرات الشبكة]]). وهو يعمل مع [[antivirus-software|مكافحة الفيروسات]] و[[authentication-methods|المصادقة]] ضمن [[defence-in-depth|الطبقات]]."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "اشرح أن جدار الحماية يحكم بحسب **قواعد** يضعها مسؤول الشبكة؛ فقوته تعتمد على جودة القواعد وتحديثها، لا على وجوده وحده.",
+      "title": "نقطة تُضاف إلى إجابتك"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

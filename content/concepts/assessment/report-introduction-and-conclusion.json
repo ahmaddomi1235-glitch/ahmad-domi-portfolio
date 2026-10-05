@@ -1,0 +1,106 @@
+{
+  "id": "report-introduction-and-conclusion",
+  "type": "Comparison",
+  "title_ar": "مقدمة التقرير وخاتمته: ماذا تتضمن كل منهما وما الذي لا يُكتب فيهما؟",
+  "title_en": "Report Introduction and Conclusion",
+  "slug": "report-introduction-and-conclusion",
+  "summary": "المقدمة تضع القارئ داخل السيناريو بأربعة أشياء: دورك، ثم السياق، ثم أهمية التقرير، ثم ما سيتناوله. والخاتمة تجمع أهم نتيجة ثم الحكم ثم التوصية دون فكرة جديدة. ولا تحتوي المقدمة تحليلًا مفصلًا أو حكمًا نهائيًا.",
+  "unit": "assessment",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "منهجية كتابة تقرير BTEC — إعداد أحمد دومي (مبادئ عامة فقط)",
+      "ref": "المقدمة؛ الخاتمة"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "report-writing-principles",
+    "evaluate-level-d-writing",
+    "linking-paragraphs"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "sourceIds": [
+    "src-004"
+  ],
+  "order": 7,
+  "shortAnswer": "**المقدمة** لا تحلل ولا تحكم؛ تقدم للقارئ أربع معلومات بالترتيب: **الدور** (من أنت؟) ← **السياق** (ما المؤسسة أو المشكلة؟) ← **أهمية التقرير** (لماذا هو مهم؟) ← **محتوى التقرير** (ماذا سيتناول؟). ولا تضع فيها مقارنة تفصيلية ولا حكمًا نهائيًا ولا توصيات ولا تحليلًا طويلًا ولا معلومات تقنية لا يحتاجها القارئ لفهم السياق. و**الخاتمة** لا تعيد كل ما كُتب؛ تجمع **أهم نتيجة** ← **الحكم النهائي** ← **التوصية الرئيسية**، دون إضافة فكرة جديدة لم تُناقَش.",
+  "whyBtec": "المقدمة تفتح الباب والخاتمة تغلقه: لا تحلل في الأولى ولا تبتكر في الثانية.",
+  "terminology": [
+    {
+      "ar": "مقدمة",
+      "en": "Introduction"
+    },
+    {
+      "ar": "خاتمة",
+      "en": "Conclusion"
+    },
+    {
+      "ar": "دور الكاتب",
+      "en": "Role"
+    }
+  ],
+  "questionsAnswered": [
+    "كيف أكتب مقدمة تقرير؟",
+    "ماذا أكتب في خاتمة التقرير؟",
+    "report introduction conclusion BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "",
+        "المقدمة",
+        "الخاتمة"
+      ],
+      "rows": [
+        [
+          "الترتيب",
+          "الدور ← السياق ← أهمية التقرير ← محتوى التقرير",
+          "أهم نتيجة ← الحكم النهائي ← التوصية الرئيسية"
+        ],
+        [
+          "لا تضع فيها",
+          "مقارنة تفصيلية، حكمًا نهائيًا، توصيات، تحليلًا طويلًا، معلومات تقنية غير لازمة للسياق",
+          "فكرة جديدة لم تناقشها في التقرير، أو إعادة كل التفاصيل"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "مثال مقدمة مستقل"
+    },
+    {
+      "t": "p",
+      "text": "«أعمل بصفتي مستشارًا لمكتبة مدرسية تعاني من ازدحام وقت الاستراحة. تحتاج المكتبة إلى طريقة تنظم حجز الكتب. تكمن أهمية التقرير في اختيار حل مناسب لحجم المدرسة وميزانيتها. وسيتناول التقرير نظام الحجز الإلكتروني وأثره على الطلبة والموظفين والبدائل الممكنة.» أربع جمل بأربع وظائف."
+    },
+    {
+      "t": "p",
+      "text": "وللمسار الكامل انظر [[report-writing-principles|مبادئ كتابة التقرير]] و[[evaluate-level-d-writing|التقييم والتوصية]] و[[linking-paragraphs|ربط الفقرات]]."
+    },
+    {
+      "t": "h2",
+      "text": "أخطاء شائعة"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "مقدمة تبدأ بتعريف عام طويل بدل أن تضع القارئ داخل السيناريو.",
+        "خاتمة تعيد نسخ الفقرات الأولى بدل ربطها في حكم.",
+        "توصية جديدة في الخاتمة لم يسبقها تحليل."
+      ]
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

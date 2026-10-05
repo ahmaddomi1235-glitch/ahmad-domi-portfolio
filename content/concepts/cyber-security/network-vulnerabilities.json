@@ -1,0 +1,107 @@
+{
+  "id": "network-vulnerabilities",
+  "type": "Concept",
+  "title_ar": "ثغرات الشبكة: جدار الحماية والأجهزة المتصلة وUSB",
+  "title_en": "Network Vulnerabilities",
+  "slug": "network-vulnerabilities",
+  "summary": "تظهر ثغرة الشبكة حين يتصل جهاز بالإنترنت دون حماية مناسبة، أو حين يدخل برنامج ضار مباشرة عبر وسيط مثل USB. وتُعالَج بجدار حماية وضبط للأجهزة وقواعد استخدام.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "ثغرات الشبكة"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "firewalls",
+    "system-vulnerability-types",
+    "wlan-security"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 17,
+  "shortAnswer": "من ثغرات الشبكة أن يتصل جهاز داخلها بالإنترنت دون حماية مناسبة، فيصبح بابًا للدخول. لذلك تُحمى الاتصالات الخارجية بجدار حماية (Firewall). وحتى مع وجوده قد يدخل التهديد بطريقة أخرى، كموظف يوصّل USB مصابًا بجهاز داخل المؤسسة.",
+  "whyBtec": "ركّز في الإجابة على أن الشبكة الآمنة ليست مغلقة بالكامل، وأن للثغرة منافذ متعددة: اتصال خارجي ووسائط مادية.",
+  "terminology": [
+    {
+      "ar": "ثغرة شبكة",
+      "en": "Network Vulnerability"
+    },
+    {
+      "ar": "جدار حماية",
+      "en": "Firewall"
+    },
+    {
+      "ar": "وسيط تخزين",
+      "en": "USB Drive"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي ثغرات الشبكة؟",
+    "كيف يدخل المهاجم إلى الشبكة؟",
+    "network vulnerabilities BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "بابان للدخول"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "**اتصال خارجي غير محمي:** جهاز داخل شبكة آمنة يتصل بالإنترنت دون حماية مناسبة.",
+        "**وسيط مادي:** USB مصاب يُوصَّل بجهاز في المؤسسة؛ البرنامج الضار لم يدخل من الإنترنت أصلًا بل مباشرة من الجهاز إلى الشبكة."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "ماذا نفعل؟"
+    },
+    {
+      "t": "p",
+      "text": "تُحمى الاتصالات الخارجية بجدار حماية ([[firewalls|جدران الحماية]])، وتُضبط سياسة استخدام الوسائط الخارجية، وتُثبَّت [[antivirus-software|برامج مكافحة الفيروسات]]، وتُدرَّب المستخدمون."
+    },
+    {
+      "t": "p",
+      "text": "تتصل هذه الثغرة بالحماية اللاسلكية أيضًا: [[wlan-security|حماية شبكة الواي فاي]]. والصورة الأشمل في [[system-vulnerability-types|أنواع ثغرات النظام]]."
+    },
+    {
+      "t": "h2",
+      "text": "مثال تحليلي"
+    },
+    {
+      "t": "p",
+      "text": "تخيّل مؤسسة لديها جدار حماية جيد، لكن موظفًا وصّل USB من البيت بجهاز في الشبكة. **التهديد:** برنامج ضار. **الثغرة:** غياب سياسة تضبط استخدام الوسائط الخارجية. **الأثر المحتمل:** انتشار البرنامج داخل الشبكة. الدرس: وجود حماية على الحدود لا يغني عن ضبط ما يدخل من الداخل."
+    },
+    {
+      "t": "ul",
+      "items": [
+        "تأكد من أن كل جهاز متصل بالإنترنت يمر عبر الحماية نفسها.",
+        "اجعل فحص الوسائط الخارجية جزءًا من الإجراءات."
+      ]
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

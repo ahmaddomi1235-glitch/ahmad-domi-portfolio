@@ -1,0 +1,133 @@
+{
+  "id": "spreadsheet-functions-basic",
+  "type": "Comparison",
+  "title_ar": "الدوال الأساسية في جداول البيانات: SUM وAVERAGE وMIN وMAX وCOUNTBLANK وCOUNTIF وSUMIF",
+  "title_en": "Basic Spreadsheet Functions",
+  "slug": "spreadsheet-functions-basic",
+  "summary": "الصيغة تبدأ بعلامة = وتستخدم مراجع الخلايا لتتحدث النتيجة تلقائيًا. والدوال تختصر الحساب: SUM تجمع، وAVERAGE تحسب المتوسط، وMIN وMAX تعيدان الأصغر والأكبر، وCOUNTBLANK تحسب الفارغ، وCOUNTIF وSUMIF تعدّ أو تجمع بشرط.",
+  "unit": "data-modelling",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "نمذجة البيانات وجداول البيانات: إنشاء لوحة معلومات (أحمد دومي)",
+      "ref": "الصيغ والدوال الأساسية؛ دوال العد؛ SUMIF"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "if-and-or-not-functions",
+    "lookup-functions",
+    "absolute-relative-references",
+    "dashboard-from-data"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-042"
+  ],
+  "order": 18,
+  "shortAnswer": "الصيغة في جداول البيانات تبدأ بعلامة = وتستخدم مراجع الخلايا مع عوامل رياضية (+ - * /). استخدام المراجع أفضل من كتابة القيم داخل الصيغة لأن النتيجة تتحدث تلقائيًا إذا تغيرت البيانات. والدوال تُستعمل حين يصبح الحساب طويلًا أو متكررًا: SUM تجمع نطاقًا، وAVERAGE تحسب المتوسط، وMIN وMAX تعيدان أصغر وأكبر قيمة، وCOUNTBLANK تحسب الخلايا الفارغة، وCOUNTIF تعدّ الخلايا التي تحقق شرطًا، وSUMIF تجمع القيم التي تحقق معيارًا.",
+  "whyBtec": "المطلوب أن تفسّر لماذا اخترت دالة محددة وما فائدة ناتجها، لا أن تكتبها فقط.",
+  "terminology": [
+    {
+      "ar": "صيغة",
+      "en": "Formula"
+    },
+    {
+      "ar": "دالة",
+      "en": "Function"
+    },
+    {
+      "ar": "مرجع خلية",
+      "en": "Cell Reference"
+    },
+    {
+      "ar": "نطاق",
+      "en": "Range"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي الدوال الأساسية في Excel؟",
+    "ما الفرق بين COUNTIF وSUMIF؟",
+    "SUM AVERAGE COUNTIF SUMIF BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "الدوال"
+    },
+    {
+      "t": "table",
+      "head": [
+        "الدالة",
+        "وظيفتها",
+        "مثال"
+      ],
+      "rows": [
+        [
+          "SUM",
+          "جمع القيم في نطاق",
+          "=SUM(C2:C20)"
+        ],
+        [
+          "AVERAGE",
+          "حساب المتوسط",
+          "=AVERAGE(D2:D20)"
+        ],
+        [
+          "MIN",
+          "أصغر قيمة",
+          "=MIN(E2:E20)"
+        ],
+        [
+          "MAX",
+          "أكبر قيمة",
+          "=MAX(E2:E20)"
+        ],
+        [
+          "COUNTBLANK",
+          "عدد الخلايا الفارغة (مفيد لاكتشاف النقص)",
+          "=COUNTBLANK(B2:B100)"
+        ],
+        [
+          "COUNTIF",
+          "عدد الخلايا التي تحقق شرطًا، كعدد العملاء فوق عمر معين أو عدد الطلبات التي حالتها «متأخر»",
+          "COUNTIF مع شرط"
+        ],
+        [
+          "SUMIF",
+          "جمع القيم التي تحقق معيارًا، كمبيعات فريق معين فقط",
+          "SUMIF مع معيار"
+        ]
+      ],
+      "caption": "الدوال الأساسية"
+    },
+    {
+      "t": "h2",
+      "text": "لماذا الدوال؟"
+    },
+    {
+      "t": "p",
+      "text": "SUM أكثر أمانًا من كتابة عشرات مراجع الخلايا يدويًا، وAVERAGE تعطي متوسط نطاق كامل، وMIN وMAX تعرفك بسرعة أقل قيمة وأعلاها. وتفيد COUNTBLANK قبل بناء اللوحة: وجود سجلات فارغة قد يجعل الملخص غير دقيق، فعالجها قبل الاعتماد على النتائج."
+    },
+    {
+      "t": "p",
+      "text": "للشروط المركبة انظر [[if-and-or-not-functions|IF وAND وOR وNOT]]، وللبحث في جدول آخر [[lookup-functions|دوال البحث]]، ولتثبيت الخلايا [[absolute-relative-references|المراجع المطلقة والنسبية]]."
+    },
+    {
+      "t": "p",
+      "text": "وكل دالة تعطي ناتجًا يجب أن تعرف لماذا تحتاجه وماذا ستفعل به بعد ذلك."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

@@ -1,0 +1,156 @@
+{
+  "id": "object-oriented-programming",
+  "type": "Comparison",
+  "title_ar": "البرمجة كائنية التوجه (OOP): الفئة والكائن والتغليف والوراثة وتعدد الأشكال",
+  "title_en": "Object-Oriented Programming",
+  "slug": "object-oriented-programming",
+  "summary": "OOP تبني البرنامج من كائنات تمثل أشياء من الواقع وتجمع بياناتها ودوالّها. مفاهيمها: الفئة والكائن والخصائص والدوال والمُنشئ والتغليف والوراثة وتعدد الأشكال والتركيب. تناسب الأنظمة الكبيرة لكنها تتطلب تصميمًا أكبر.",
+  "unit": "programming",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة البرمجة (أحمد دومي)",
+      "ref": "البرمجة كائنية التوجه"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "programming-paradigms",
+    "procedural-programming",
+    "entities-and-relationships"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-028",
+    "src-030"
+  ],
+  "order": 9,
+  "shortAnswer": "البرمجة كائنية التوجه (OOP) تعتمد على فكرة **الكائن**: شيء من الواقع كطالب أو سيارة أو حساب بنكي، يجمع البيانات المرتبطة به والدوال التي تعمل عليها في وحدة واحدة. من مفاهيمها: الفئة (Class) كقالب، والكائن (Object) نسخة منها، والخصائص، والدوال (Methods)، والمُنشئ (Constructor)، والتغليف (Encapsulation)، والوراثة (Inheritance)، وتعدد الأشكال (Polymorphism)، والتركيب (Composition).",
+  "whyBtec": "اشرح كل مفهوم بمثال من المشروع (كتاب وعضو ومكتبة مثلًا)، فهذا هو ما يُظهر فهمك لا حفظك للتعريف.",
+  "terminology": [
+    {
+      "ar": "فئة",
+      "en": "Class"
+    },
+    {
+      "ar": "كائن",
+      "en": "Object"
+    },
+    {
+      "ar": "تغليف",
+      "en": "Encapsulation"
+    },
+    {
+      "ar": "وراثة",
+      "en": "Inheritance"
+    },
+    {
+      "ar": "تعدد الأشكال",
+      "en": "Polymorphism"
+    },
+    {
+      "ar": "مُنشئ",
+      "en": "Constructor"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي البرمجة كائنية التوجه؟",
+    "ما هو التغليف والوراثة وتعدد الأشكال؟",
+    "object oriented programming concepts BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "المفاهيم"
+    },
+    {
+      "t": "table",
+      "head": [
+        "المفهوم",
+        "المعنى",
+        "مثال"
+      ],
+      "rows": [
+        [
+          "الفئة (Class)",
+          "قالب يمثل شيئًا في المشروع",
+          "Book، Member، Calculator"
+        ],
+        [
+          "الكائن (Object)",
+          "نسخة من الفئة لها بياناتها",
+          "book1 كتاب محدد بعنوان ورقم"
+        ],
+        [
+          "الخصائص",
+          "بيانات داخل الكائن",
+          "Book: title, isbn, isAvailable"
+        ],
+        [
+          "الدوال",
+          "وظائف تعمل على بيانات الكائن",
+          "Book.borrow()، Circle.area()"
+        ],
+        [
+          "المُنشئ",
+          "تهيئة الكائن عند إنشائه",
+          "تحديد title وisbn عند إنشاء Book"
+        ],
+        [
+          "التغليف",
+          "حماية البيانات وعدم تغييرها عشوائيًا",
+          "isAvailable لا تتغير إلا عبر borrow وreturn"
+        ],
+        [
+          "الوراثة",
+          "فئة ترث من فئة عامة لتقاسم خصائص",
+          "Shape عامة وCircle وRectangle ترثان منها"
+        ],
+        [
+          "تعدد الأشكال",
+          "نفس اسم الدالة بتنفيذ مختلف بحسب نوع الكائن",
+          "area() تحسب بطريقة مختلفة لكل شكل"
+        ],
+        [
+          "التركيب",
+          "كائن يحتوي كائنات أخرى",
+          "Library تحتوي قائمة Books وMembers"
+        ],
+        [
+          "فصل المسؤوليات",
+          "كل فئة مسؤولة عن جزء محدد",
+          "Library تدير العمليات العامة وBook يدير حالة الكتاب"
+        ]
+      ]
+    },
+    {
+      "t": "table",
+      "head": [
+        "المزايا",
+        "العيوب"
+      ],
+      "rows": [
+        [
+          "تنظيم أفضل للأنظمة الكبيرة، صيانة أسهل بفصل الفئات، توسعة دون كسر الكود القديم، تقليل التكرار، حماية البيانات، سهولة العمل الجماعي",
+          "يحتاج وقت تصميم أكبر، قد يزيد عن الحاجة في المشاريع الصغيرة جدًا، يتطلب فهم الفئات والوراثة، والإفراط في الوراثة أو تصميم سيئ للفئات يعقّد الصيانة"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وللمقارنة مع غيرها انظر [[programming-paradigms|نماذج البرمجة]]، وللنموذج الأبسط [[procedural-programming|الإجرائية]]. وتحديد الكيانات يسبقها: [[entities-and-relationships|الكيانات والعلاقات]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

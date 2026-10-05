@@ -1,0 +1,119 @@
+{
+  "id": "file-permissions-least-privilege",
+  "type": "Concept",
+  "title_ar": "أذونات الملفات والامتيازات: مبدأ أقل صلاحية (Least Privilege)",
+  "title_en": "File Permissions and Least Privilege",
+  "slug": "file-permissions-least-privilege",
+  "summary": "الأذونات تحدد من يصل إلى الملفات والمجلدات، والامتيازات تحدد ما يفعله المستخدم داخل النظام. والقاعدة: أعطِ كل مستخدم أقل قدر من الصلاحيات يحتاجه لعمله، فإن اختُرق حسابه لم يحصل المهاجم على أكثر من ذلك.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "أذونات الملفات والمجلدات، والامتيازات"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "authentication-vs-access-control",
+    "insider-threats",
+    "system-vulnerability-types"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 18,
+  "shortAnswer": "أذونات الملفات (File Permissions) تحدد من يصل إلى أي ملف أو مجلد، والامتيازات (Privileges) تحدد ما يستطيع المستخدم فعله داخل النظام كتثبيت برامج أو تغيير الإعدادات. المبدأ العملي هو **أقل صلاحية ممكنة** (Least Privilege): كل شخص يأخذ ما يحتاجه لعمله فقط.",
+  "whyBtec": "الصلاحيات الزائدة ثغرة شائعة في السيناريوهات. حين تقترح حلًا، اذكر مجموعات المستخدمين والصلاحية الأدنى اللازمة.",
+  "terminology": [
+    {
+      "ar": "أذونات",
+      "en": "Permissions"
+    },
+    {
+      "ar": "امتيازات",
+      "en": "Privileges"
+    },
+    {
+      "ar": "أقل صلاحية",
+      "en": "Least Privilege"
+    },
+    {
+      "ar": "مجموعة مستخدمين",
+      "en": "User Group"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو مبدأ أقل صلاحية؟",
+    "ما الفرق بين الأذونات والامتيازات؟",
+    "least privilege principle BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "الأذونات"
+    },
+    {
+      "t": "p",
+      "text": "ليس من المنطقي أن يفتح كل موظف كل ملفات الشركة. تسمح أنظمة مثل Windows Server وLinux بتحديد من يصل إلى الملفات والمجلدات، وتجميع المستخدمين في مجموعات لكل منها الصلاحيات التي تحتاجها فقط. مثلًا: موظفو المحاسبة يصلون إلى ملفات الرواتب وبقية الموظفين لا."
+    },
+    {
+      "t": "h2",
+      "text": "الامتيازات"
+    },
+    {
+      "t": "p",
+      "text": "يمكن تحديد ما يفعله المستخدم: تشغيل برامج معينة دون تثبيت جديد أو تغيير الإعدادات. السبب: إن اختُرق حساب بامتيازات كبيرة حصل المهاجم عليها كلها."
+    },
+    {
+      "t": "table",
+      "head": [
+        "المفهوم",
+        "السؤال",
+        "مثال"
+      ],
+      "rows": [
+        [
+          "الأذونات",
+          "ماذا يستطيع أن يفتح أو يعدّل؟",
+          "قراءة فقط مقابل تعديل"
+        ],
+        [
+          "الامتيازات",
+          "ماذا يستطيع أن ينفّذ في النظام؟",
+          "تثبيت برنامج، تغيير إعداد"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وللفرق بين إثبات الهوية وتحديد ما يُسمح به انظر [[authentication-vs-access-control|المصادقة مقابل التحكم في الوصول]]. وعلاقة الصلاحيات الزائدة بـ[[insider-threats|التهديدات الداخلية]] واضحة."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "حدّد الأقسام (محاسبة، مبيعات، دعم فني) وحدد لكل قسم الملفات التي يحتاجها ومستوى الصلاحية (قراءة فقط أم تعديل)، وفسّر لماذا لا تُعطى الصلاحية الكاملة للجميع.",
+      "title": "كيف تطبّقه في سيناريو؟"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

@@ -1,0 +1,123 @@
+{
+  "id": "arima-time-series",
+  "type": "Comparison",
+  "title_ar": "نموذج ARIMA للتنبؤ بالسلاسل الزمنية: AR وI وMA",
+  "title_en": "ARIMA Time-Series Forecasting",
+  "slug": "arima-time-series",
+  "summary": "ARIMA نموذج يتنبأ بقيم مستقبلية من الماضي في بيانات مرتبة بالزمن، ويتكون من ثلاثة أجزاء: AR (الاعتماد على القيم السابقة)، وI (إزالة الاتجاه العام بأخذ الفروق)، وMA (التعامل مع الضوضاء والتذبذب).",
+  "unit": "artificial-intelligence",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "ملاحظات تعلّم الآلة وأدوات الذكاء الاصطناعي (أحمد دومي)",
+      "ref": "ARIMA"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "predictive-analytics",
+    "missing-values-time-series-cleaning",
+    "train-validation-test-sets"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-002"
+  ],
+  "order": 31,
+  "shortAnswer": "السلسلة الزمنية بيانات مرتبة بحسب الزمن (مبيعات شهرية، حرارة يومية، سعر سهم)، وترتيب القيم فيها مهم لأن قيمة اليوم غالبًا مرتبطة بأمس. **ARIMA** نموذج للتنبؤ بقيم مستقبلية اعتمادًا على الماضي، وله ثلاثة أجزاء: **AR** (الاعتماد على الماضي): القيمة الحالية تتأثر بالسابقة، و**I** (إزالة الاتجاه العام): ننظر لتغير القيم بدل القيم المطلقة حين يوجد اتجاه صاعد أو نازل، و**MA** (التعامل مع الضوضاء): يخفف أثر الاهتزازات القصيرة كمطر مفاجئ أو حملة إعلانية.",
+  "whyBtec": "فكرة ARIMA: ثلاث طبقات تعمل معًا: تخفيف الاتجاه، ثم الاستفادة من القيم السابقة، ثم معالجة الضوضاء.",
+  "terminology": [
+    {
+      "ar": "سلسلة زمنية",
+      "en": "Time Series"
+    },
+    {
+      "ar": "اتجاه عام",
+      "en": "Trend"
+    },
+    {
+      "ar": "ضوضاء",
+      "en": "Noise"
+    },
+    {
+      "ar": "تنبؤ",
+      "en": "Forecasting"
+    },
+    {
+      "ar": "موسمية",
+      "en": "Seasonality"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو نموذج ARIMA؟",
+    "ما معنى AR وI وMA؟",
+    "ARIMA explained BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "الجزء",
+        "الاسم",
+        "ماذا يعالج؟",
+        "مثال"
+      ],
+      "rows": [
+        [
+          "AR",
+          "AutoRegressive",
+          "اعتماد القيمة الحالية على القيم السابقة",
+          "حرارة اليوم قريبة من أمس؛ مبيعات هذا الأسبوع مرتبطة بالأسبوع الماضي"
+        ],
+        [
+          "I",
+          "Integrated / Differencing",
+          "الاتجاه العام الصاعد أو النازل",
+          "متجر يشتهر فتزداد مبيعاته كل شهر"
+        ],
+        [
+          "MA",
+          "Moving Average",
+          "الضوضاء والتذبذب القصير",
+          "مبيعات آيس كريم ترتفع فجأة بسبب حملة إعلان"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "كيف تُستخدم؟"
+    },
+    {
+      "t": "p",
+      "text": "تُقسَّم السلسلة إلى 80% للتدريب و20% للاختبار، ويُدرَّب النموذج ثم يُرسم الفعلي مقابل المتوقع ويُطلب التنبؤ بالنقطة التالية. وإن كانت البيانات عشوائية تمامًا فمن الطبيعي أن تبدو التوقعات ضعيفة؛ فالنموذج يعطي نتائج أوضح مع بيانات فيها نمط كاتجاه عام أو موسمية."
+    },
+    {
+      "t": "p",
+      "text": "وللتنبؤ وبيانات الزمن انظر [[predictive-analytics|التحليلات التنبؤية]] و[[missing-values-time-series-cleaning|تنظيف السلاسل الزمنية]] و[[train-validation-test-sets|تقسيم البيانات]]."
+    },
+    {
+      "t": "h2",
+      "text": "متى لا يناسب؟"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "بيانات عشوائية بلا نمط: لن يتعلم شيئًا مفيدًا.",
+        "بيانات ليست مرتبة بالزمن: ترتيب القيم أساس النموذج.",
+        "فترات تغيّر مفاجئ غير معتاد: قد تحتاج معالجة خاصة أو بيانات أكثر."
+      ]
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

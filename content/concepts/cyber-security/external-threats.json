@@ -1,0 +1,128 @@
+{
+  "id": "external-threats",
+  "type": "Concept",
+  "title_ar": "التهديدات الخارجية: البرمجيات الخبيثة والقرصنة والتخريب وقطع الخدمة والتصيّد",
+  "title_en": "External Cyber Threats",
+  "slug": "external-threats",
+  "summary": "التهديد الخارجي خطر يأتي من خارج المؤسسة، وأشهر أشكاله خمسة: البرمجيات الخبيثة، والقرصنة، والتخريب، وهجوم قطع الخدمة، والتصيّد الاحتيالي.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "التهديدات الخارجية"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "malware-types",
+    "dos-ddos-attacks",
+    "phishing",
+    "social-engineering",
+    "internal-vs-external-threats"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 9,
+  "shortAnswer": "التهديد الخارجي (External Threat) هو خطر يأتي من خارج المؤسسة. وتعرض مادة أحمد خمسة أشكال: البرمجيات الخبيثة (Malware)، والقرصنة (Hacking)، والتخريب (Sabotage)، وهجوم قطع الخدمة (DoS)، والتصيّد الاحتيالي (Phishing). وتُضاف إليها الهندسة الاجتماعية التي تخدع الإنسان نفسه.",
+  "whyBtec": "لا تذكر اسم الهجوم فقط؛ اربطه بما يفعله وبمن يتضرر ومتى يكون الأخطر على مؤسسة بعينها.",
+  "terminology": [
+    {
+      "ar": "تهديد خارجي",
+      "en": "External Threat"
+    },
+    {
+      "ar": "القرصنة",
+      "en": "Hacking"
+    },
+    {
+      "ar": "التخريب",
+      "en": "Sabotage"
+    },
+    {
+      "ar": "قطع الخدمة",
+      "en": "Denial of Service (DoS)"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي التهديدات الخارجية في الأمن السيبراني؟",
+    "أنواع الهجمات السيبرانية الخارجية",
+    "external cyber threats examples"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "خمسة أشكال رئيسية"
+    },
+    {
+      "t": "table",
+      "head": [
+        "الشكل",
+        "فكرته",
+        "تفاصيل"
+      ],
+      "rows": [
+        [
+          "برمجيات خبيثة",
+          "برامج مصممة لإيذاء الجهاز أو البيانات أو جمع معلومات عن المستخدم",
+          "[[malware-types|أنواع البرمجيات الخبيثة]]"
+        ],
+        [
+          "قرصنة",
+          "محاولة شخص (متسلل) الوصول إلى نظام أو بيانات دون إذن لسرقتها أو تدميرها، وقد تستخدمها مجموعات إجرامية للتجسس أو الابتزاز",
+          "[[hacker-types|أنواع الهاكرز]]"
+        ],
+        [
+          "تخريب",
+          "مهاجم لا يريد السرقة بل الضرر: تدمير بيانات أو أنظمة أو تعطيل خدمات، بدافع الانتقام أو الابتزاز",
+          "—"
+        ],
+        [
+          "قطع الخدمة",
+          "إغراق الخادم بطلبات حتى يبطؤ أو يتوقف",
+          "[[dos-ddos-attacks|هجوم DoS وDDoS]]"
+        ],
+        [
+          "تصيّد احتيالي",
+          "رسالة مزيفة تنتحل جهة موثوقة لسرقة بيانات الدخول",
+          "[[phishing|التصيّد الاحتيالي]]"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "ويقف خلف كثير من هذه الهجمات خداع الإنسان نفسه، وهو موضوع [[social-engineering|الهندسة الاجتماعية]]."
+    },
+    {
+      "t": "p",
+      "text": "ثم يأتي السؤال التالي: ماذا يحدث للمؤسسة إذا نجح الهجوم؟ الجواب في [[cyber-attack-impact|أثر الهجمات السيبرانية]]."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "في الواجب لا تلزمك كل الأشكال. اختر ما يناسب نشاط المؤسسة: متجر إلكتروني يتأثر كثيرًا بقطع الخدمة، وشركة مالية بالتصيّد وسرقة بيانات الدخول، ومصنع بالتخريب وتعطيل خطوط الإنتاج.",
+      "title": "كيف تختار من الخمسة؟"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

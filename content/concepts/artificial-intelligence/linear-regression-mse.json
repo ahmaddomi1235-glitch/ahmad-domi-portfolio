@@ -1,0 +1,126 @@
+{
+  "id": "linear-regression-mse",
+  "type": "Concept",
+  "title_ar": "الانحدار الخطي (Linear Regression) ومقياس الخطأ MSE",
+  "title_en": "Linear Regression and MSE",
+  "slug": "linear-regression-mse",
+  "summary": "الانحدار الخطي يبحث عن أفضل خط مستقيم y = mx + c يقرّب العلاقة بين المدخل والمخرج، حيث m الميل وc المقطع. ويقيس MSE متوسط مربع الخطأ بين القيم الحقيقية والمتوقعة: كلما صغر كان النموذج أدق.",
+  "unit": "artificial-intelligence",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "ملاحظات تعلّم الآلة وأدوات الذكاء الاصطناعي (أحمد دومي)",
+      "ref": "الانحدار الخطي"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "classification-vs-regression",
+    "supervised-vs-unsupervised-learning",
+    "logistic-regression",
+    "train-validation-test-sets"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-086"
+  ],
+  "order": 23,
+  "shortAnswer": "الانحدار الخطي يحاول إيجاد أفضل خط مستقيم يقرّب العلاقة بين المدخل x والمخرج y بالمعادلة **y = mx + c**، حيث m **الميل** (كم تزيد y عندما تزيد x) وc **الثابت أو المقطع** (قيمة y عندما x = 0). مثال: توقع سعر بيت من مساحته: بعد التدريب على أمثلة (مساحة، سعر) يعطي سعرًا متوقعًا لمساحة جديدة. ويقيس **MSE** جودة النموذج: لكل نقطة نحسب (الحقيقة − التوقع) ونربع الخطأ ثم نأخذ المتوسط.",
+  "whyBtec": "عند شرح أي نموذج تنبؤي اذكر كيف يُقاس أداؤه. وMSE أحد أبسط المقاييس للانحدار.",
+  "terminology": [
+    {
+      "ar": "انحدار خطي",
+      "en": "Linear Regression"
+    },
+    {
+      "ar": "متوسط مربع الخطأ",
+      "en": "Mean Squared Error (MSE)"
+    },
+    {
+      "ar": "الميل",
+      "en": "Slope"
+    },
+    {
+      "ar": "خط أفضل مطابقة",
+      "en": "Best-Fit Line"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو الانحدار الخطي؟",
+    "ما هو MSE؟",
+    "linear regression MSE BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "الفكرة"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "ننشئ أو نجمع أزواج (x, y) فيها بعض الضوضاء كما في الواقع.",
+        "ندرّب النموذج ليحسب أفضل ميل m وثابت c.",
+        "نرسم النقاط والخط الناتج (خط أفضل مطابقة).",
+        "نحسب MSE بمقارنة y الحقيقي بـ y المتوقع.",
+        "نجرّب قيمة x جديدة (مثل 1.5) ونطلب التوقع."
+      ]
+    },
+    {
+      "t": "table",
+      "head": [
+        "المصطلح",
+        "المعنى"
+      ],
+      "rows": [
+        [
+          "m (الميل)",
+          "مقدار زيادة y عند زيادة x بمقدار واحد"
+        ],
+        [
+          "c (المقطع)",
+          "قيمة y عندما x = 0"
+        ],
+        [
+          "MSE",
+          "متوسط (الحقيقة − التوقع)²؛ الأصغر أفضل"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "ملاحظات"
+    },
+    {
+      "t": "p",
+      "text": "تربيع الخطأ يجعل الأخطاء الكبيرة أثقل أثرًا، ويمنع تعويض الأخطاء الموجبة بالسالبة. ويُقسَّم عادةً إلى تدريب واختبار للتأكد أن النموذج تعمّم ([[train-validation-test-sets|التدريب والاختبار]])."
+    },
+    {
+      "t": "p",
+      "text": "وهو نموذج [[classification-vs-regression|انحدار]] ضمن [[supervised-vs-unsupervised-learning|التعلم تحت الإشراف]]، ويمكن مقارنته بـ[[logistic-regression|اللوجستي]] للتصنيف."
+    },
+    {
+      "t": "h2",
+      "text": "تذكير"
+    },
+    {
+      "t": "p",
+      "text": "الانحدار الخطي يفترض علاقة قريبة من الخط المستقيم؛ إن كانت العلاقة منحنية بشدة فسيعطي أخطاء كبيرة مهما درّبته، وعندها تُجرَّب نماذج أخرى."
+    },
+    {
+      "t": "p",
+      "text": "وإن أردت مقارنة نموذجين على البيانات نفسها فالنموذج الأصغر في MSE أدق."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

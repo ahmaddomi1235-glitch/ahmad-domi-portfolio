@@ -1,0 +1,115 @@
+{
+  "id": "pca-dimensionality-reduction",
+  "type": "Concept",
+  "title_ar": "تحليل المكونات الرئيسية PCA: كيف نقلّل أبعاد البيانات؟",
+  "title_en": "PCA – Dimensionality Reduction",
+  "slug": "pca-dimensionality-reduction",
+  "summary": "PCA يقلل عدد الميزات إلى ميزتين أو ثلاث بإيجاد أفضل اتجاهات تُظهر أكبر قدر من اختلاف البيانات وإسقاطها عليها، فتبقى المعلومات المهمة وتختفي التفاصيل الأقل أهمية، لتسهيل الفهم والرسم وتسريع بعض النماذج.",
+  "unit": "artificial-intelligence",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "ملاحظات تعلّم الآلة وأدوات الذكاء الاصطناعي (أحمد دومي)",
+      "ref": "PCA"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "supervised-vs-unsupervised-learning",
+    "k-means-clustering"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-003"
+  ],
+  "order": 28,
+  "shortAnswer": "عندما يكون لدينا عدد كبير من الميزات نستخدم PCA (Principal Component Analysis) لتبسيط البيانات إلى ميزتين أو ثلاث. الفكرة بلا رياضيات: تخيّل البيانات سحابة نقاط في فضاء كبير؛ PCA يجد «أفضل اتجاهات» تُظهر أكبر قدر من اختلاف البيانات ثم يُسقط البيانات عليها لتصبح أقل أبعادًا. النتيجة: تبقى معلومات مهمة وقد تختفي تفاصيل أو ضوضاء أقل أهمية.",
+  "whyBtec": "مثال بسيط: عشر خصائص لزهور ورسمها صعب؛ PCA يقللها إلى اثنتين فتشاهد المجموعات بصريًا في رسم واحد.",
+  "terminology": [
+    {
+      "ar": "تقليل الأبعاد",
+      "en": "Dimensionality Reduction"
+    },
+    {
+      "ar": "تحليل المكونات الرئيسية",
+      "en": "Principal Component Analysis (PCA)"
+    },
+    {
+      "ar": "ميزة",
+      "en": "Feature"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو PCA؟",
+    "ما هو تقليل الأبعاد؟",
+    "PCA dimensionality reduction BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "الفكرة"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "البيانات سحابة نقاط في فضاء كبير.",
+        "يجد PCA أفضل اتجاهات تُظهر أكبر قدر من الاختلاف.",
+        "يسقط البيانات على هذه الاتجاهات فتصبح أقل أبعادًا."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "كيف نفهم الرسم؟"
+    },
+    {
+      "t": "p",
+      "text": "كل نقطة عينة بعد تقليل الأبعاد، والألوان (إن استُخدمت الفئات المعروفة) تُظهر كيف توزعت الأنواع بعد الإسقاط. إن ظهرت مجموعات منفصلة فهذا يعني أن البيانات قابلة للتمييز بصريًا بعد PCA."
+    },
+    {
+      "t": "table",
+      "head": [
+        "الفائدة",
+        "الحد"
+      ],
+      "rows": [
+        [
+          "تبسيط وفهم ورسم وتسريع بعض النماذج",
+          "قد تضيع تفاصيل مهمة إن اقتصرنا على أبعاد قليلة جدًا"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وهو من [[supervised-vs-unsupervised-learning|التعلم بدون إشراف]] ويُستخدم قبل [[k-means-clustering|K-means]] أحيانًا."
+    },
+    {
+      "t": "h2",
+      "text": "متى نستخدمه؟"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "للرسم: تحويل عشر ميزات إلى اثنتين لرسم البيانات.",
+        "للتبسيط: تقليل ميزات كثيرة متداخلة قبل نموذج آخر.",
+        "لتسريع بعض النماذج.",
+        "وفي المقابل: لا تعتمد عليه إن كانت كل ميزة مهمة بذاتها وتحتاج تفسيرها."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وتذكّر أن المكونات الجديدة مزيج من الميزات الأصلية فلا تحمل بالضرورة معنى مباشرًا يسهل شرحه."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

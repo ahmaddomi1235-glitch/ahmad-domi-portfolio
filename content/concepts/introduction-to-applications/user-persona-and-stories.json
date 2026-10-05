@@ -1,0 +1,122 @@
+{
+  "id": "user-persona-and-stories",
+  "type": "Comparison",
+  "title_ar": "شخصية المستخدم وقصص المستخدم: كيف نترجم احتياجات الناس إلى وظائف؟",
+  "title_en": "User Personas and User Stories",
+  "slug": "user-persona-and-stories",
+  "summary": "شخصية المستخدم وصف تخيلي لمستخدم يمثل فئة حقيقية ليفكر الفريق من وجهة نظره، وقصة المستخدم جملة قصيرة بصيغة «بصفتي ... أريد ... لكي ...» تحول الحاجة إلى وظيفة داخل التطبيق.",
+  "unit": "introduction-to-applications",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مقدمة إلى التطبيقات — تصميم التطبيقات (أحمد دومي)",
+      "ref": "الصفحتان 8–9",
+      "url": "/documents/teaching-materials/applications-design-target-b.pdf"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "functional-vs-non-functional-requirements",
+    "app-design-document",
+    "app-accessibility"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-099"
+  ],
+  "order": 14,
+  "shortAnswer": "لا يكفي أن نقول إن التطبيق «للطلبة» أو «للعملاء»، بل نحدد خصائص الجمهور: العمر التقريبي، ومستوى الخبرة التقنية، ونوع الجهاز، واللغة المفضلة، والبيئة التي سيُستخدم فيها، والاحتياجات الخاصة. **شخصية المستخدم (Persona)** وصف تخيّلي لمستخدم يمثل فئة حقيقية: الاسم والعمر والصفة والأجهزة والاحتياج والصعوبة وما يناسبه في التصميم. **قصة المستخدم (User Story)** تحول الحاجة إلى وظيفة بالصيغة: «بصفتي ... أريد أن أفعل كذا، لكي أحقق كذا».",
+  "whyBtec": "الشخصية تدفعك لقرارات تصميم ملموسة، كأن تعرض الصفحة الرئيسية المهام القريبة أولًا.",
+  "terminology": [
+    {
+      "ar": "شخصية المستخدم",
+      "en": "User Persona"
+    },
+    {
+      "ar": "قصة المستخدم",
+      "en": "User Story"
+    },
+    {
+      "ar": "الجمهور المستهدف",
+      "en": "Target Audience"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي شخصية المستخدم (Persona)؟",
+    "ما هي قصص المستخدم؟",
+    "user persona user story BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شخصية المستخدم: مثال"
+    },
+    {
+      "t": "table",
+      "head": [
+        "البند",
+        "مثال"
+      ],
+      "rows": [
+        [
+          "الاسم والعمر",
+          "سارة، 17 سنة"
+        ],
+        [
+          "الصفة",
+          "طالبة في تخصص التصميم الرقمي"
+        ],
+        [
+          "الأجهزة",
+          "هاتف أندرويد وحاسوب محمول"
+        ],
+        [
+          "الاحتياج",
+          "تنظيم مشاريعها وتسليمها في الوقت المحدد"
+        ],
+        [
+          "الصعوبة",
+          "تنسى مواعيد التسليم ولا تفضل التطبيقات المعقدة"
+        ],
+        [
+          "قرار التصميم المناسب",
+          "واجهة بسيطة وتنبيهات واضحة وأزرار كبيرة نسبيًا، وعرض المهام القريبة أولًا"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "قصص المستخدم"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "بصفتي طالبًا، أريد إضافة مهمة مع تاريخ تسليم، لكي لا أنسى واجباتي.",
+        "بصفتي معلّمًا، أريد إرسال ملاحظات قصيرة للطلبة، لكي يعرفوا ما المطلوب منهم.",
+        "بصفتي مستخدمًا ضعيف البصر، أريد تكبير حجم النص، لكي أقرأ التعليمات بسهولة."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "ثم تتحول هذه القصص إلى [[functional-vs-non-functional-requirements|متطلبات وظيفية وغير وظيفية]]، وتُسجَّل في [[app-design-document|وثيقة التصميم]]. وللجمهور وإتاحة الوصول: [[app-accessibility|إتاحة الوصول]]."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "اكتب شخصية لكل فئة رئيسية من جمهورك (لا أكثر من ثلاث غالبًا) وقصصًا قليلة واضحة لكل منها، ثم اربط كل قصة بوظيفة في التطبيق.",
+      "title": "كيف تستفيد؟"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

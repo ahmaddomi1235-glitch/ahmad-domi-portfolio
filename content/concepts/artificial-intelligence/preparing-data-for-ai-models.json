@@ -1,0 +1,97 @@
+{
+  "id": "preparing-data-for-ai-models",
+  "type": "Concept",
+  "title_ar": "تجهيز البيانات لنماذج الذكاء الاصطناعي: اختيار السجلات وتقليل البيانات والميزات والتطبيع",
+  "title_en": "Preparing Data for AI Models",
+  "slug": "preparing-data-for-ai-models",
+  "summary": "بعد اختيار السجلات نبحث عن القيم المفقودة وأسبابها والتكرارات، ثم نحوّل القيم الخام إلى ميزات أوضح، ونطبّع الأرقام، ونراجع منطقية الحقول وتوزيعها، ونقلل البيانات الشخصية إلى ما يلزم فقط.",
+  "unit": "artificial-intelligence",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته — كتاب الوحدة (أحمد دومي)",
+      "ref": "الصفحات 87–88",
+      "url": "/documents/teaching-materials/ai-introduction-applications.pdf"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "data-cleaning-steps",
+    "missing-values-time-series-cleaning",
+    "train-validation-test-sets",
+    "ai-data-collection-principles"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-033"
+  ],
+  "order": 16,
+  "shortAnswer": "عند اختيار بيانات التدريب نسأل: هل تمثل الواقع الذي سيعمل فيه النموذج؟ وهل جمعها واستخدامها يحترم حقوق أصحابها؟ بعدها تأتي مرحلة التجهيز: فحص **القيم المفقودة** وأسبابها (خلل جمع أم معلومة غير مطلوبة؟) وقرار التعويض بالمتوسط أو الوسيط أو الحذف، واكتشاف **التكرارات** التي تعطي وزنًا مضاعفًا لحالات، وتحويل القيم الخام إلى **ميزات** أوضح (اليوم والساعة والفصل بدل تاريخ الشراء، والمدينة ونوع المنطقة بدل العنوان النصي)، و**تطبيع** القيم الرقمية حتى لا يطغى متغير ذو قيم كبيرة على آخر.",
+  "whyBtec": "هذه المرحلة تحدد جودة النموذج أكثر مما يتصور كثيرون؛ والخطأ فيها غالبًا لا يظهر إلا بعد النشر.",
+  "terminology": [
+    {
+      "ar": "ميزة",
+      "en": "Feature"
+    },
+    {
+      "ar": "تطبيع",
+      "en": "Normalisation"
+    },
+    {
+      "ar": "تقليل البيانات",
+      "en": "Data Minimisation"
+    },
+    {
+      "ar": "هندسة الميزات",
+      "en": "Feature Engineering"
+    }
+  ],
+  "questionsAnswered": [
+    "كيف أجهّز البيانات لنموذج ذكاء اصطناعي؟",
+    "ما هو تطبيع البيانات؟",
+    "preparing data for AI models features normalisation"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "خطوات التجهيز"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "اختيار سجلات تمثل الواقع، وتجنب جمع معلومات شخصية لا حاجة لها (مثل اسم الطالب الكامل أو هاتفه إن كان النموذج يحتاج فقط نوع المدرسة والمنطقة والدرجات).",
+        "فحص القيم المفقودة وأسبابها وتقرير التعويض أو الحذف.",
+        "اكتشاف التكرارات.",
+        "تحويل القيم الخام إلى ميزات أقرب إلى المشكلة.",
+        "تطبيع الأرقام: دخل سنوي بالدنانير مع درجة من 1 إلى 5 قد يحتاج إعادة تحجيم.",
+        "مراجعة منطقية الحقول: النوع، ترتيب التواريخ، أعمار خارج الحدود البشرية، قيم سالبة غير منطقية، ثم مراجعة التوزيع."
+      ]
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "إن جاءت معظم إجابات استطلاع رضا الطلبة من تخصص واحد فالنتيجة لا تعكس البقية؛ يلزم جمع بيانات إضافية لتحقيق توازن أفضل.",
+      "title": "التوازن في العينة"
+    },
+    {
+      "t": "p",
+      "text": "وتقليل البيانات مبدأ أخلاقي وتقني معًا. انظر [[data-cleaning-steps|خطوات تنظيف البيانات]] و[[missing-values-time-series-cleaning|القيم المفقودة]] و[[train-validation-test-sets|تقسيم البيانات]] و[[ai-data-collection-principles|مبادئ الجمع]]."
+    },
+    {
+      "t": "p",
+      "text": "وختامًا وثّق كل خطوة تجهيز؛ فالقرارات التي تتخذها هنا (حذف أو تعويض أو تحويل) تؤثر في قرارات النموذج لاحقًا."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

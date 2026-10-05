@@ -364,3 +364,36 @@ test.describe("paid-content boundary", () => {
     expect(html).not.toContain("85 د.أ");
   });
 });
+
+test.describe("phase 2B coverage and leak boundary", () => {
+  const pages = [
+    "/btec-it/cyber-security/firewalls",
+    "/btec-it/cyber-security/tcp-ip-model-and-ports",
+    "/btec-it/data-modelling/pivot-tables",
+    "/btec-it/programming/compiler-vs-interpreter",
+    "/btec-it/artificial-intelligence/train-validation-test-sets",
+    "/btec-it/introduction-to-applications/ux-vs-ui",
+    "/btec-it/website-development/seo-basics",
+    "/btec-it/it-project-management/gantt-chart-and-critical-path",
+    "/btec-it/assessment/command-verbs-explain-analyse-evaluate",
+  ];
+
+  test("sample pages from every unit render, are in the sitemap, and expose no source IDs", async ({ request }) => {
+    const xml = await (await request.get("/sitemap.xml")).text();
+    for (const p of pages) {
+      const res = await request.get(p);
+      expect(res.status(), p).toBe(200);
+      const html = await res.text();
+      expect(html).toContain(`rel="canonical" href="https://ahmaddomiedu.com${p}"`);
+      expect(xml).toContain(`<loc>https://ahmaddomiedu.com${p}</loc>`);
+      expect(html).not.toMatch(/src-\d{3}|sourceIds|registryRef/);
+    }
+  });
+
+  test("search index and llms.txt do not leak source IDs or local paths", async ({ request }) => {
+    for (const u of ["/search-index.json", "/llms.txt"]) {
+      const t = await (await request.get(u)).text();
+      expect(t, u).not.toMatch(/src-\d{3}|sourceIds|registryRef|C:\Users|Downloads|شغل/);
+    }
+  });
+});

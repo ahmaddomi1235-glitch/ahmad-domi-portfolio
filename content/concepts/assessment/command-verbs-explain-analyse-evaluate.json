@@ -1,0 +1,138 @@
+{
+  "id": "command-verbs-explain-analyse-evaluate",
+  "type": "Comparison",
+  "title_ar": "أفعال الأمر في المهام: اشرح وحلّل وقيّم وقارن وأوصِ — كيف تتغير الكتابة؟",
+  "title_en": "Command Verbs: Explain, Analyse, Evaluate",
+  "slug": "command-verbs-explain-analyse-evaluate",
+  "summary": "فعل الأمر في المهمة يحدد نوع التفكير المطلوب: اشرح (ما هو وكيف يعمل ولماذا يهم)، حلّل (السبب والنتيجة والمتأثر)، قيّم (بدائل ومعايير وحكم وتوصية). وهي ثلاث درجات من التفكير في الموضوع نفسه لا ثلاثة تقارير.",
+  "unit": "assessment",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "منهجية كتابة تقرير BTEC — إعداد أحمد دومي (مبادئ عامة فقط)",
+      "ref": "العلاقة بين P وM وD"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "explain-level-p-writing",
+    "analyse-level-m-writing",
+    "evaluate-level-d-writing",
+    "pass-merit-distinction",
+    "report-writing-principles"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "sourceIds": [
+    "src-004"
+  ],
+  "order": 6,
+  "shortAnswer": "المستويات الثلاثة ثلاث درجات من التفكير في **الموضوع نفسه**: P: أفهم وأشرح، ثم M: أفسّر السبب والنتيجة، ثم D: أقارن وأحكم وأقرر. وبعبارة مختصرة: **P: ماذا وكيف؟ M: لماذا وماذا نتج؟",
+  "whyBtec": "قبل الكتابة اسأل: ما فعل الأمر في هذا المعيار؟ فهو يحدد كم تكتب وكيف.",
+  "terminology": [
+    {
+      "ar": "فعل أمر",
+      "en": "Command Verb"
+    },
+    {
+      "ar": "شرح",
+      "en": "Explain"
+    },
+    {
+      "ar": "تحليل",
+      "en": "Analyse"
+    },
+    {
+      "ar": "تقييم",
+      "en": "Evaluate"
+    },
+    {
+      "ar": "مقارنة",
+      "en": "Compare"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين اشرح وحلل وقيّم؟",
+    "ما هي أفعال الأمر في BTEC؟",
+    "command verbs explain analyse evaluate BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شرح مفصّل"
+    },
+    {
+      "t": "p",
+      "text": "D: أيهما أفضل ولماذا وماذا أوصي؟** وهذا يفسر ما يُطلب بأفعال الأمر الشائعة في المهام: «اشرح» أي تعرّف وتوضح الآلية والأثر، و«حلّل» أي تربط الأسباب بالنتائج وبمن تأثر، و«قيّم» أي تقارن وتحكم وتنقد حكمك وتوصي. (تعريفات أفعال الأمر الرسمية مصدرها وثيقة Pearson ومعلّمك؛ هنا شرح أحمد لطريقة الكتابة.)"
+    },
+    {
+      "t": "table",
+      "head": [
+        "الفعل",
+        "المطلوب",
+        "الأسئلة",
+        "صفحة الأسلوب"
+      ],
+      "rows": [
+        [
+          "اشرح (P)",
+          "إثبات الفهم داخل السيناريو",
+          "ما هو؟ كيف يعمل؟ أين؟ لماذا مهم؟ ما أثره المباشر؟",
+          "[[explain-level-p-writing|الشرح]]"
+        ],
+        [
+          "حلّل (M)",
+          "إظهار السبب والنتيجة والأثر",
+          "لماذا؟ ماذا نتج؟ من تأثر؟ لماذا الأثر مهم؟ ماذا يعني للمؤسسة؟",
+          "[[analyse-level-m-writing|التحليل]]"
+        ],
+        [
+          "قيّم (D)",
+          "قرار مبرر بعد مقارنة",
+          "ما البدائل والمعايير؟ ما الحكم؟ ما نقده؟ ما التوصية؟",
+          "[[evaluate-level-d-writing|التقييم]]"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "مثال: الفكرة نفسها بثلاث درجات"
+    },
+    {
+      "t": "table",
+      "head": [
+        "المستوى",
+        "ما يُكتب (مكتبة مدرسية)"
+      ],
+      "rows": [
+        [
+          "P",
+          "نظام الحجز الإلكتروني يسجل حالة الكتب ويسمح للطالب بالحجز قبل الحضور"
+        ],
+        [
+          "M",
+          "لذلك تقل الزيارات الفارغة ويقل الازدحام، فيتأثر الطلبة والأمين بوقت أقل ضائعًا"
+        ],
+        [
+          "D",
+          "تُقارَن طريقة الحجز الإلكترونية بقائمة ورقية وبالسؤال المباشر وفق معيار السرعة ثم الدقة ثم الكلفة، ثم يُحكَم ويُنتقد الحكم وتُقدَّم توصية"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "الموضوع بقي واحدًا والذي تغير هو مستوى التفكير. للبنية الرسمية للمعايير انظر [[pass-merit-distinction|Pass وMerit وDistinction]]، وللخطوات الكاملة [[report-writing-principles|مبادئ كتابة التقرير]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

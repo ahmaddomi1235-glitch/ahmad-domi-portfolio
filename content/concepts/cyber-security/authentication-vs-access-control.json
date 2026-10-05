@@ -1,0 +1,127 @@
+{
+  "id": "authentication-vs-access-control",
+  "type": "Comparison",
+  "title_ar": "الفرق بين المصادقة والتحكم في الوصول",
+  "title_en": "Authentication vs Access Control",
+  "slug": "authentication-vs-access-control",
+  "summary": "المصادقة تجيب عن سؤال: من أنت؟ والتحكم في الوصول يجيب: ماذا يُسمح لك أن تفعل؟ فبعد إثبات هويتك تُمنح الصلاحية التي تحتاجها فقط (قراءة أو تعديل أو تحكم كامل).",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "عناصر التحكم في الوصول"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "authentication-methods",
+    "file-permissions-least-privilege",
+    "defence-in-depth"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 30,
+  "shortAnswer": "المصادقة (Authentication) تتحقق من هوية المستخدم: من أنت؟ أما التحكم في الوصول (Access Control) فيحدد ما يُسمح لك أن تفعله بعد إثبات هويتك. مثلًا في مجلد مشترك قد يحصل موظف على صلاحية قراءة فقط، أو تعديل، أو تحكم كامل (Full Control). وليس من المنطقي أن يحصل الجميع على التحكم الكامل.",
+  "whyBtec": "كثيرون يخلطون بين المفهومين. الإجابة الصحيحة تفصل بين إثبات الهوية وتحديد الصلاحية.",
+  "terminology": [
+    {
+      "ar": "المصادقة",
+      "en": "Authentication"
+    },
+    {
+      "ar": "التحكم في الوصول",
+      "en": "Access Control"
+    },
+    {
+      "ar": "تحكم كامل",
+      "en": "Full Control"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين المصادقة والتحكم في الوصول؟",
+    "authentication vs authorisation BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "",
+        "المصادقة",
+        "التحكم في الوصول"
+      ],
+      "rows": [
+        [
+          "السؤال",
+          "من أنت؟",
+          "ماذا يسمح لك أن تفعل؟"
+        ],
+        [
+          "متى؟",
+          "عند تسجيل الدخول",
+          "بعد إثبات الهوية"
+        ],
+        [
+          "مثال",
+          "كلمة مرور + رمز",
+          "قراءة فقط، تعديل، تحكم كامل"
+        ]
+      ],
+      "caption": "المصادقة والتحكم في الوصول"
+    },
+    {
+      "t": "h2",
+      "text": "كيف يتكاملان؟"
+    },
+    {
+      "t": "p",
+      "text": "تتحقق من الشخص أولًا ([[authentication-methods|طرق المصادقة]])، ثم تعطيه الحد الأدنى من الصلاحيات ([[file-permissions-least-privilege|أذونات الملفات والامتيازات]]). المصادقة القوية مع صلاحيات واسعة جدًا ما تزال ثغرة."
+    },
+    {
+      "t": "p",
+      "text": "وهما طبقتان ضمن [[defence-in-depth|الحماية متعددة الطبقات]]."
+    },
+    {
+      "t": "h2",
+      "text": "مثال تطبيقي"
+    },
+    {
+      "t": "p",
+      "text": "موظف محاسبة يسجّل الدخول باسمه وكلمة مرور ورمز (مصادقة). بعد الدخول يستطيع قراءة ملفات الرواتب وتعديل ملفات قسمه لكنه لا يستطيع فتح ملفات الموارد البشرية (تحكم في الوصول). لاحظ أن الخطأ في إحدى الخطوتين يفسد الأخرى: هوية مسروقة مع صلاحيات واسعة تساوي كارثة."
+    },
+    {
+      "t": "ul",
+      "items": [
+        "المصادقة تمنع **انتحال** الشخص.",
+        "التحكم في الوصول يحدّ **الضرر** إن اختُرق حساب."
+      ]
+    },
+    {
+      "t": "callout",
+      "kind": "note",
+      "text": "المصادقة تسبق التحكم في الوصول دائمًا: لا تحدد ما يُسمح لشخص قبل أن تتأكد من هويته.",
+      "title": "تذكّر"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

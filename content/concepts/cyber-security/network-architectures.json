@@ -1,0 +1,109 @@
+{
+  "id": "network-architectures",
+  "type": "Comparison",
+  "title_ar": "بنية الشبكة: الند للند والعميل/الخادم والعميل منخفض الأداء",
+  "title_en": "Network Architectures",
+  "slug": "network-architectures",
+  "summary": "في الند للند تتشارك الأجهزة مباشرة دون خادم مركزي (بسيط ورخيص لكنه صعب الإدارة كلما توسعت المؤسسة)، وفي العميل/الخادم يحتفظ خادم مركزي بالحسابات والملفات والسياسات (إدارة وأمان أكثر انتظامًا لكن العطل المركزي مشكلة واسعة)، والعميل منخفض الأداء يعتمد على خادم أو سحابة لتنفيذ التطبيقات.",
+  "unit": "cyber-security",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «الأنظمة المتصلة بالشبكة والبنية التحتية» ضمن وحدة الأمن السيبراني (أحمد دومي)",
+      "ref": "4. بنية الشبكة"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "network-operating-systems-and-directory",
+    "network-types",
+    "network-trends",
+    "authentication-vs-access-control"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY: concepts only; the source's report brief, template paragraph and full-mark model answer are not used",
+  "sourceIds": [
+    "src-069"
+  ],
+  "order": 40,
+  "shortAnswer": "**شبكة الند للند (Peer-to-Peer):** تتشارك الأجهزة الملفات أو الطابعات مباشرة دون خادم مركزي؛ بسيطة وقليلة التكلفة لعدد صغير من الأجهزة، لكنها تصعب إدارةً ونسخًا احتياطيًا وضبطًا للصلاحيات كلما توسعت المؤسسة. **العميل والخادم (Client/Server):** يحتفظ خادم مركزي بالحسابات والملفات والسياسات والخدمات، ويسجل المستخدمون الدخول إليه؛ المركزية تجعل تحديث الحسابات وتطبيق السياسات والنسخ الاحتياطي أكثر انتظامًا، لكنها تتطلب خادمًا موثوقًا وإدارة فنية جيدة حتى لا يصبح العطل في نقطة مركزية مشكلة واسعة.",
+  "whyBtec": "اختيارك يعتمد على حجم المؤسسة وحاجتها إلى التحكم والنسخ الاحتياطي والتوسع.",
+  "terminology": [
+    {
+      "ar": "ند للند",
+      "en": "Peer-to-Peer"
+    },
+    {
+      "ar": "عميل وخادم",
+      "en": "Client/Server"
+    },
+    {
+      "ar": "عميل منخفض الأداء",
+      "en": "Thin Client"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين الند للند والعميل/الخادم؟",
+    "network architecture peer to peer client server BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شرح مفصّل"
+    },
+    {
+      "t": "p",
+      "text": "**العميل منخفض الأداء (Thin Client):** يعتمد بدرجة كبيرة على خادم أو خدمة سحابية لتنفيذ التطبيقات وحفظ البيانات، كأجهزة Chromebook؛ الأجهزة أبسط وأقل تكلفة لكن جودة التجربة تعتمد على الشبكة والخادم باستمرار."
+    },
+    {
+      "t": "table",
+      "head": [
+        "",
+        "الند للند",
+        "العميل/الخادم",
+        "العميل منخفض الأداء"
+      ],
+      "rows": [
+        [
+          "الفكرة",
+          "الأجهزة تشارك مباشرة بلا خادم مركزي",
+          "خادم مركزي للحسابات والملفات والسياسات",
+          "الجهاز يعتمد على خادم أو سحابة للتطبيقات والبيانات"
+        ],
+        [
+          "المزايا",
+          "بسيطة وقليلة التكلفة لعدد صغير",
+          "تحديث وسياسات ونسخ احتياطي أكثر انتظامًا",
+          "أجهزة أبسط وأقل تكلفة"
+        ],
+        [
+          "العيوب",
+          "صعبة الإدارة والنسخ والصلاحيات عند التوسع",
+          "تحتاج خادمًا موثوقًا وإدارة جيدة؛ العطل المركزي واسع الأثر",
+          "الاعتماد على الاتصال: إن انقطع تأثر العمل"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وللأنظمة المركزية دور الدليل والمصادقة: [[network-operating-systems-and-directory|أنظمة تشغيل الخوادم وخدمات الدليل]]. وانظر [[network-types|أنواع الشبكات]] و[[network-trends|الاتجاهات الحديثة (السحابة وSaaS)]] و[[authentication-vs-access-control|المصادقة والتحكم في الوصول]]."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "اربط الاختيار بحجم المؤسسة: عشرة أجهزة قد تكفيها شبكة ند للند، وعشرات المستخدمين مع صلاحيات ونسخ احتياطي تحتاج عميلًا وخادمًا.",
+      "title": "كيف تبرر الاختيار؟"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

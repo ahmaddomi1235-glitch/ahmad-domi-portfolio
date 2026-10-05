@@ -1,0 +1,123 @@
+{
+  "id": "lookup-functions",
+  "type": "Comparison",
+  "title_ar": "دوال البحث: VLOOKUP وHLOOKUP وXLOOKUP وINDEX وMATCH",
+  "title_en": "Lookup Functions",
+  "slug": "lookup-functions",
+  "summary": "دوال البحث تسترجع قيمة مرتبطة بمفتاح من جدول آخر: VLOOKUP تبحث رأسيًا وHLOOKUP أفقيًا وXLOOKUP أكثر مرونة، وINDEX مع MATCH تبني بحثًا مرنًا بإيجاد موقع القيمة ثم جلبها.",
+  "unit": "data-modelling",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "نمذجة البيانات وجداول البيانات: إنشاء لوحة معلومات (أحمد دومي)",
+      "ref": "دوال البحث؛ INDEX وMATCH"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "absolute-relative-references",
+    "if-and-or-not-functions",
+    "spreadsheet-functions-basic"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-042"
+  ],
+  "order": 20,
+  "shortAnswer": "تُستخدم دوال البحث حين نعرف مفتاحًا ونريد استرجاع قيمة مرتبطة به من جدول آخر. VLOOKUP تبحث رأسيًا، وHLOOKUP أفقيًا، وXLOOKUP أكثر مرونة فيمكنها البحث في أي اتجاه دون الاعتماد على رقم عمود ثابت. أما MATCH فتعيد موقع القيمة داخل نطاق، وINDEX تعيد القيمة الموجودة عند صف وعمود معينين؛ وعند دمجهما نبني عمليات بحث أكثر مرونة.",
+  "whyBtec": "من أشهر التطبيقات: تحويل درجة رقمية إلى وصف مثل «جيد» أو «ممتاز» بالبحث في ورقة حدود التقييم. ثبّت نطاق الجدول حتى لا يتحرك عند نسخ الدالة.",
+  "terminology": [
+    {
+      "ar": "دالة بحث",
+      "en": "Lookup Function"
+    },
+    {
+      "ar": "مفتاح",
+      "en": "Lookup Key"
+    },
+    {
+      "ar": "فهرس",
+      "en": "INDEX"
+    },
+    {
+      "ar": "مطابقة",
+      "en": "MATCH"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين VLOOKUP وXLOOKUP؟",
+    "كيف أستخدم INDEX وMATCH؟",
+    "VLOOKUP XLOOKUP INDEX MATCH BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "الدالة",
+        "الفكرة",
+        "ملاحظة"
+      ],
+      "rows": [
+        [
+          "VLOOKUP",
+          "بحث رأسي عن قيمة مرتبطة بمفتاح",
+          "تعتمد على رقم عمود"
+        ],
+        [
+          "HLOOKUP",
+          "بحث أفقي",
+          "للجداول الأفقية"
+        ],
+        [
+          "XLOOKUP",
+          "بحث في أي اتجاه",
+          "أكثر مرونة دون رقم عمود ثابت"
+        ],
+        [
+          "MATCH",
+          "تعيد موقع القيمة داخل نطاق (وليس القيمة)",
+          "تطابق تام أو أقرب قيمة بحسب نوع المطابقة"
+        ],
+        [
+          "INDEX",
+          "تعيد القيمة عند صف/عمود معين",
+          "تفيد عندما نعرف الموقع"
+        ],
+        [
+          "INDEX + MATCH",
+          "بحث مرن: MATCH تجد الموقع وINDEX تجلب القيمة",
+          "تفصل عمود البحث عن عمود النتيجة"
+        ]
+      ],
+      "caption": "دوال البحث"
+    },
+    {
+      "t": "h2",
+      "text": "مثال"
+    },
+    {
+      "t": "p",
+      "text": "ورقة «الدرجات» تحتوي حدود تقييم: استخدم دالة بحث لتحويل الدرجة الرقمية إلى وصف مثل «جيد» أو «ممتاز»، وثبّت نطاق جدول الدرجات (بالمراجع المطلقة) حتى لا يتحرك عند نسخ الدالة إلى بقية الصفوف."
+    },
+    {
+      "t": "p",
+      "text": "انظر [[absolute-relative-references|المراجع المطلقة والنسبية]] لتثبيت النطاق، و[[if-and-or-not-functions|IF]] كبديل لتصنيفات بسيطة، و[[spreadsheet-functions-basic|الدوال الأساسية]]."
+    },
+    {
+      "t": "p",
+      "text": "اختر الدالة الأبسط التي تحل المشكلة؛ فإن كان جدول البحث صغيرًا وثابتًا فقد تكفي VLOOKUP، وإن احتجت اتجاهات مختلفة أو مرونة أكبر فاختر XLOOKUP أو INDEX مع MATCH."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

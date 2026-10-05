@@ -1,0 +1,124 @@
+{
+  "id": "git-version-control",
+  "type": "Comparison",
+  "title_ar": "أنظمة التحكم بالإصدارات وGit: Repository وCommit وBranch وPull Request",
+  "title_en": "Git and Version Control",
+  "slug": "git-version-control",
+  "summary": "نظام التحكم بالإصدارات يحفظ تاريخ التغييرات ويتيح الرجوع لنسخة قديمة والعمل الجماعي دون تضارب. في Git: المستودع (Repository)، واللقطة المحفوظة (Commit)، ومسار العمل المنفصل (Branch)، ثم الدمج (Merge / Pull Request) وإرسال/سحب التغييرات (Push / Pull).",
+  "unit": "programming",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "ملاحظات الأدوات البرمجية (أحمد دومي)",
+      "ref": "أنظمة التحكم بالإصدارات وGit"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "ide-and-maintainability",
+    "project-execution-monitoring-closure"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-031"
+  ],
+  "order": 21,
+  "shortAnswer": "في المشاريع الحقيقية لا نعمل على نسخة واحدة من الملفات، لذلك نستخدم **نظام التحكم بالإصدارات (VCS)** مثل **Git**: يتتبع التغييرات (من غيّر ماذا ومتى)، ويسمح بالرجوع للخلف إن خرّب كود جديد المشروع، ويسهّل التعاون إذ يعمل كل شخص على فرع (Branch) ثم يُدمج العمل. وتساعد منصات مثل GitHub وGitLab على مشاركة المشاريع ومراجعة الكود.",
+  "whyBtec": "مصطلحات Git الأساسية تظهر كثيرًا في أسئلة العمل الجماعي والتطوير، فتعلّمها بوظيفتها.",
+  "terminology": [
+    {
+      "ar": "نظام التحكم بالإصدارات",
+      "en": "Version Control System (VCS)"
+    },
+    {
+      "ar": "مستودع",
+      "en": "Repository"
+    },
+    {
+      "ar": "لقطة محفوظة",
+      "en": "Commit"
+    },
+    {
+      "ar": "فرع",
+      "en": "Branch"
+    },
+    {
+      "ar": "طلب دمج",
+      "en": "Pull Request"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو Git؟",
+    "ما الفرق بين Commit وBranch؟",
+    "Git version control basics BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "المصطلح",
+        "المعنى"
+      ],
+      "rows": [
+        [
+          "Repository",
+          "مكان المشروع مع تاريخ التغييرات"
+        ],
+        [
+          "Commit",
+          "لقطة محفوظة لتغييراتك مع رسالة تشرح ما فعلت"
+        ],
+        [
+          "Branch",
+          "مسار عمل منفصل لتطوير ميزة دون تخريب الفرع الأساسي"
+        ],
+        [
+          "Merge / Pull Request",
+          "دمج التغييرات بعد المراجعة"
+        ],
+        [
+          "Push / Pull",
+          "إرسال أو سحب التغييرات بين جهازك والمنصة"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "سير عمل بسيط"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "تبدأ من الفرع الأساسي main.",
+        "تنشئ فرعًا جديدًا لميزة معينة.",
+        "تعمل Commits أثناء التطوير.",
+        "تدفع الفرع إلى GitHub/GitLab وتفتح Pull Request.",
+        "بعد الموافقة يُدمج الفرع في main."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "الأوامر الأساسية: git init لإنشاء مستودع، git status لمعرفة الحالة، git add وgit commit لحفظ لقطة، git branch وgit switch لإنشاء فرع والانتقال إليه، git push لإرسال الفرع، git pull لسحب التغييرات، git merge للدمج بعد المراجعة."
+    },
+    {
+      "t": "p",
+      "text": "وهو جزء من الأدوات التي تسهّل صيانة البرامج ([[ide-and-maintainability|بيئات التطوير والصيانة]]) والعمل ضمن [[project-execution-monitoring-closure|مشروع بفريق]]."
+    },
+    {
+      "t": "p",
+      "text": "ورسائل الـ Commit الواضحة جزء من الجودة: اكتب ما تغيّر ولماذا، لا «تعديل» فقط، فيسهل على فريقك فهم تاريخ المشروع."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

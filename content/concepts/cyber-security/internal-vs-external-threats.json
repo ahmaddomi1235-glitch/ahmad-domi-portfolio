@@ -1,0 +1,126 @@
+{
+  "id": "internal-vs-external-threats",
+  "type": "Comparison",
+  "title_ar": "التهديدات الداخلية والخارجية في الأمن السيبراني",
+  "title_en": "Internal vs External Cyber Threats",
+  "slug": "internal-vs-external-threats",
+  "summary": "يأتي التهديد السيبراني إما من داخل المؤسسة (موظف غاضب أو مهمل أو زائر) أو من خارجها (برمجيات خبيثة، اختراق، تخريب، قطع خدمة، تصيّد). والتهديد الداخلي لا يعني دائمًا نية سيئة.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "تهديدات الأمن السيبراني"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "insider-threats",
+    "external-threats",
+    "hacker-types"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 7,
+  "shortAnswer": "التهديد الداخلي (Internal Threat) يأتي من داخل المؤسسة، وقد يكون متعمدًا أو نتيجة خطأ أو إهمال أو نقص تدريب. التهديد الخارجي (External Threat) يأتي من خارجها، مثل البرمجيات الخبيثة والاختراق والتخريب وقطع الخدمة والتصيّد. الفرق في **المصدر** لا في خطورة الأثر.",
+  "whyBtec": "في الواجب لا يكفي أن تقول «هاكر». تصنيف التهديد إلى داخلي أو خارجي يوجّه الإجراء الوقائي: التدريب والصلاحيات للداخلي، والحماية التقنية للخارجي.",
+  "terminology": [
+    {
+      "ar": "تهديد داخلي",
+      "en": "Internal Threat"
+    },
+    {
+      "ar": "تهديد خارجي",
+      "en": "External Threat"
+    },
+    {
+      "ar": "وصول غير مصرح به",
+      "en": "Unauthorised Access"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين التهديد الداخلي والخارجي؟",
+    "أمثلة على التهديدات الداخلية والخارجية",
+    "internal and external threats cyber security"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "مقارنة سريعة"
+    },
+    {
+      "t": "table",
+      "head": [
+        "",
+        "التهديد الداخلي",
+        "التهديد الخارجي"
+      ],
+      "rows": [
+        [
+          "المصدر",
+          "موظف أو زائر أو جهاز أو إجراء داخل المؤسسة",
+          "جهة أو شخص أو برنامج من خارجها"
+        ],
+        [
+          "النية",
+          "قد تكون متعمدة أو بلا قصد",
+          "غالبًا متعمدة"
+        ],
+        [
+          "أمثلة",
+          "موظف غير راضٍ، وصول غير مصرح به، جهاز غير محمي، نقص تدريب",
+          "برمجيات خبيثة، قرصنة، تخريب، قطع خدمة، تصيّد"
+        ],
+        [
+          "الوقاية الأبرز",
+          "صلاحيات محدودة، تدريب، إجراءات أمن مادي",
+          "جدار حماية، مكافحة فيروسات، تحديثات، تشفير"
+        ]
+      ],
+      "caption": "مقارنة بين مصدري التهديد"
+    },
+    {
+      "t": "p",
+      "text": "تفاصيل كل نوع في [[insider-threats|التهديدات الداخلية]] و[[external-threats|التهديدات الخارجية]]."
+    },
+    {
+      "t": "callout",
+      "kind": "note",
+      "text": "أحيانًا يكون بداية المشكلة موظفًا غاضبًا، أو جهازًا غير محمي، أو موقعًا خاطئًا فُتح بالخطأ، أو زائرًا رأى شاشة حساسة.",
+      "title": "ليس كل تهديد = هاكر"
+    },
+    {
+      "t": "p",
+      "text": "وللتعرف إلى دوافع من يهاجم من الخارج انظر [[hacker-types|أنواع الهاكرز ودوافعهم]]."
+    },
+    {
+      "t": "h2",
+      "text": "خطأ شائع"
+    },
+    {
+      "t": "p",
+      "text": "يعدّ كثير من الطلبة كل تهديد «هاكر من الخارج». لكن قد يكون الموظف المهمل أو الزائر أو الجهاز غير المحمي بداية المشكلة. وعند الإجابة اذكر مثالًا واحدًا على الأقل من كل جهة إن سمح السيناريو، وبيّن كيف تختلف الوقاية بين النوعين."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

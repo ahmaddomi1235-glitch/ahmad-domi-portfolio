@@ -1,0 +1,118 @@
+{
+  "id": "computational-thinking",
+  "type": "Comparison",
+  "title_ar": "التفكير الحاسوبي: التفكيك والتعرف على الأنماط والتجريد والتمثيل",
+  "title_en": "Computational Thinking",
+  "slug": "computational-thinking",
+  "summary": "التفكير الحاسوبي أسلوب منظم لحل المشكلات قبل كتابة الكود: تفكيك المشكلة إلى أجزاء، والتعرف على الأنماط المتشابهة، وتجريد التفاصيل غير المهمة، وتمثيل المشكلة بنموذج مكتوب أو مرسوم.",
+  "unit": "programming",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة البرمجة (أحمد دومي)",
+      "ref": "ما هو التفكير الحاسوبي؛ مهارات التفكير الحاسوبي"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "flowchart-symbols",
+    "representing-problem-elements",
+    "entities-and-relationships",
+    "programmer-vs-code-writer"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-027",
+    "src-101"
+  ],
+  "order": 2,
+  "shortAnswer": "التفكير الحاسوبي (Computational Thinking) أسلوب منظم لحل المشكلات يشبه طريقة تفكير الحاسوب ويُستخدم قبل كتابة أي كود. يقوم على فهم المشكلة، وتقسيمها إلى أجزاء أصغر (Decomposition)، والبحث عن أنماط متشابهة (Pattern Recognition)، والتركيز على المعلومات المهمة فقط (Abstraction)، ثم تمثيل عناصر المشكلة في صورة تعليمات يمكن تنفيذها (Representation). والبرمجة هي التنفيذ العملي لنتائج هذا التفكير.",
+  "whyBtec": "كل مبرمج يمر بهذه الخطوات بوعي أو بلا وعي. وإظهارها في إجابتك بأمثلة من المشروع يبرهن أنك تفهم المشكلة لا الأوامر فقط.",
+  "terminology": [
+    {
+      "ar": "التفكير الحاسوبي",
+      "en": "Computational Thinking"
+    },
+    {
+      "ar": "التفكيك",
+      "en": "Decomposition"
+    },
+    {
+      "ar": "التعرف على الأنماط",
+      "en": "Pattern Recognition"
+    },
+    {
+      "ar": "التجريد",
+      "en": "Abstraction"
+    },
+    {
+      "ar": "التمثيل",
+      "en": "Representation"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو التفكير الحاسوبي؟",
+    "ما هي مهارات التفكير الحاسوبي؟",
+    "computational thinking decomposition abstraction BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "المهارات الأربع"
+    },
+    {
+      "t": "table",
+      "head": [
+        "المهارة",
+        "المعنى",
+        "مثال"
+      ],
+      "rows": [
+        [
+          "التفكيك",
+          "تقسيم المشكلة الكبيرة إلى مهام صغيرة يسهل فهمها وحلها",
+          "وجبة غداء لعشرة أشخاص: وصفة، مكونات، شراء، تجهيز، طهي، تقديم. وبرنامج مجموع ثلاثة أعداد: ثلاث مدخلات، جمع، طباعة"
+        ],
+        [
+          "التعرف على الأنماط",
+          "ملاحظة المتشابه بين مشكلات مختلفة لإعادة استخدام الحل",
+          "مسائل النسبة المئوية (زيادة سعر، خصم، ضريبة) حلها واحد؛ و«تسجيل مستخدم» يظهر في نظام حضور ومتجر وبنك"
+        ],
+        [
+          "التجريد",
+          "التركيز على الضروري وتجاهل أو تأجيل التفاصيل",
+          "في لعبة سيارات المهم السرعة والاتجاه والوقود لا لون المقاعد؛ وفي نظام حضور لا يهم لون الزر الآن"
+        ],
+        [
+          "التمثيل",
+          "تحويل الفهم إلى نموذج مكتوب أو مرسوم",
+          "مخطط انسياب، جدول مدخلات ومعالجات ومخرجات، مخطط كيانات، شبه كود"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "فائدة الأنماط والتجريد"
+    },
+    {
+      "t": "p",
+      "text": "التعرف على الأنماط يعيد استخدام الحلول ويوفر الوقت ويبني قوالب عامة بدل اختراع الحل كل مرة، وهو أساس إعادة استخدام الكود. والتجريد يمكّن من بناء نموذج عام، كفئة (Class) تمثل طالبًا أو سيارة أو منتجًا بسماتها الأساسية وعملياتها."
+    },
+    {
+      "t": "p",
+      "text": "لتمثيل المشكلة انظر [[flowchart-symbols|رموز مخطط الانسياب]] و[[representing-problem-elements|عناصر المشكلة: متغيرات وثوابت وعمليات]] و[[entities-and-relationships|الكيانات والعلاقات]]. وفرق العقلية في [[programmer-vs-code-writer|المبرمج وكاتب الكود]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

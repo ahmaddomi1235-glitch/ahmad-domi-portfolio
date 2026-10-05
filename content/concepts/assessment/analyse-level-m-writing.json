@@ -1,0 +1,109 @@
+{
+  "id": "analyse-level-m-writing",
+  "type": "Concept",
+  "title_ar": "كتابة مستوى التحليل (M): السبب والنتيجة والمتأثر وأهمية الأثر",
+  "title_en": "Writing the Analyse Level (M)",
+  "slug": "analyse-level-m-writing",
+  "summary": "التحليل لا يعني كتابة معلومات أكثر، بل إظهار العلاقة بين السبب والنتيجة. يبدأ من الأثر الذي ذُكر في الشرح ثم يسأل: لماذا حدث؟ ماذا نتج؟ من تأثر؟ لماذا الأثر مهم؟ ماذا يعني للمؤسسة؟",
+  "unit": "assessment",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "منهجية كتابة تقرير BTEC — إعداد أحمد دومي (مبادئ عامة فقط)",
+      "ref": "مستوى M — التحليل؛ الإيجابيات والسلبيات"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "explain-level-p-writing",
+    "evaluate-level-d-writing",
+    "linking-paragraphs"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "sourceIds": [
+    "src-004"
+  ],
+  "order": 4,
+  "shortAnswer": "ما يحدث في M: يشرح الطالب في P ما حدث، ثم يبدأ M بالسؤال: **لماذا حدث هذا الأثر؟** وماذا نتج عنه؟ والتحليل لا يعني كتابة معلومات أكثر، بل إظهار **العلاقة بين السبب والنتيجة**. عناصره: **(1)** السبب، **(2)** النتيجة، **(3)** من تأثر، **(4)** لماذا هذا الأثر مهم، **(5)** ماذا يعني ذلك للمؤسسة. القاعدة: سبب ← نتيجة ← متأثر ← أهمية الأثر ← ماذا يعني للمؤسسة.",
+  "whyBtec": "إن كانت فقرتك تضيف معلومة جديدة دون ربطها بما قبلها بسبب ونتيجة فهي ما زالت شرحًا لا تحليلًا.",
+  "terminology": [
+    {
+      "ar": "تحليل",
+      "en": "Analyse"
+    },
+    {
+      "ar": "سبب ونتيجة",
+      "en": "Cause and Effect"
+    },
+    {
+      "ar": "أصحاب المصلحة",
+      "en": "Stakeholders"
+    }
+  ],
+  "questionsAnswered": [
+    "كيف أكتب فقرة تحليل في تقرير BTEC؟",
+    "ما الفرق بين الشرح والتحليل؟",
+    "how to write analyse level BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "العنصر",
+        "السؤال",
+        "مثال (مكتبة مدرسية)"
+      ],
+      "rows": [
+        [
+          "السبب",
+          "لماذا حدث الأثر؟",
+          "الطلبة يعرفون توفر الكتاب قبل الحضور"
+        ],
+        [
+          "النتيجة",
+          "ماذا نتج؟",
+          "تقل الزيارات الفارغة ويقل الازدحام"
+        ],
+        [
+          "المتأثر",
+          "من تأثر؟",
+          "الطلبة وأمين المكتبة والمعلمون"
+        ],
+        [
+          "أهمية الأثر",
+          "لماذا هو مهم؟",
+          "الوقت محدود في الاستراحة ويضيع بالانتظار"
+        ],
+        [
+          "المعنى للمؤسسة",
+          "ماذا يعني ذلك؟",
+          "خدمة أسرع وانتفاع أكبر بموارد المكتبة"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "الإيجابيات والسلبيات داخل التحليل"
+    },
+    {
+      "t": "p",
+      "text": "الخطأ الشائع أن تكتب «سريع، سهل، يوفر الوقت» و«مكلف، يحتاج تدريبًا». هذا ليس تحليلًا كافيًا. الطريقة الصحيحة: كل ميزة أو قيد يتبعه **أثر**: ميزة ← ماذا تغيّر؟ وقيد أو عيب ← ماذا يسبب؟ مثلًا: ميزة الحجز المسبق أنها تقلل الزيارات الفارغة، لكن قيدها أنها تحتاج إدخال بيانات الكتب بدقة وإلا ظهرت حالات خاطئة."
+    },
+    {
+      "t": "p",
+      "text": "ويأتي بعد [[explain-level-p-writing|الشرح]] وقبل [[evaluate-level-d-writing|التقييم]]. وللانتقال بين الفقرات: [[linking-paragraphs|الربط]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

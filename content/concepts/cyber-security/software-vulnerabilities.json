@@ -1,0 +1,138 @@
+{
+  "id": "software-vulnerabilities",
+  "type": "Comparison",
+  "title_ar": "ثغرات البرامج: حقن SQL (SQL Injection) وثغرة يوم الصفر وتنزيل البرامج غير الموثوقة",
+  "title_en": "Software Vulnerabilities: SQL Injection and Zero-Day",
+  "slug": "software-vulnerabilities",
+  "summary": "ثغرات البرامج أخطاء أو نقاط ضعف في البرنامج نفسه يستغلها المهاجم: كحقن SQL في مربعات الإدخال، أو ثغرة يوم الصفر التي لا يوجد لها إصلاح بعد، أو برنامج ضار يُنزَّل من مصدر غير موثوق.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "ثغرات البرامج"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "software-updates-patching",
+    "system-vulnerability-types",
+    "malware-types",
+    "defence-in-depth"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 34,
+  "shortAnswer": "أحيانًا تكون المشكلة في البرنامج نفسه: خطأ أو ثغرة يستغلها المهاجم. من أشهر ثغرات تطبيقات الويب **حقن SQL**، حيث يكتب المهاجم أوامر قاعدة بيانات بدل نص عادي في مربع إدخال فينفذها الموقع غير المحمي. وهناك **ثغرة يوم الصفر** التي اكتُشفت ولم يتوفر لها إصلاح بعد. ومن الأخطار أيضًا تنزيل برنامج يبدو طبيعيًا من مصدر غير موثوق وبداخله برنامج ضار.",
+  "whyBtec": "قارن في إجابتك بين ثغرة يمكن إغلاقها بتحديث وثغرة لا إصلاح لها بعد؛ فهذا يفسر لماذا لا يكفي التحديث وحده.",
+  "terminology": [
+    {
+      "ar": "حقن SQL",
+      "en": "SQL Injection"
+    },
+    {
+      "ar": "ثغرة يوم الصفر",
+      "en": "Zero-Day Vulnerability"
+    },
+    {
+      "ar": "قاعدة بيانات",
+      "en": "Database"
+    },
+    {
+      "ar": "تطبيق ويب",
+      "en": "Web Application"
+    },
+    {
+      "ar": "تحديث أمني",
+      "en": "Security Update"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو SQL Injection؟",
+    "كيف يعمل هجوم حقن SQL؟",
+    "ما هي ثغرة يوم الصفر (Zero-Day)؟",
+    "software vulnerabilities BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "حقن SQL"
+    },
+    {
+      "t": "p",
+      "text": "تخيّل موقعًا فيه مربع بحث يُفترض أن يكتب فيه المستخدم اسم منتج فيبحث الموقع في قاعدة البيانات. المهاجم يكتب بدل ذلك **أوامر SQL** مصممة للتلاعب بقاعدة البيانات. إن لم يكن الموقع محميًا جيدًا نفّذها، وقد يستطيع المهاجم قراءة البيانات أو تعديلها أو حذفها. و SQL لغة تُستخدم للاستعلام عن البيانات داخل قواعد البيانات."
+    },
+    {
+      "t": "callout",
+      "kind": "note",
+      "text": "مربع صغير في موقع قد يتحول إلى مدخل لقاعدة البيانات إذا لم تتم برمجته وحمايته بصورة صحيحة.",
+      "title": "الفكرة المهمة"
+    },
+    {
+      "t": "h2",
+      "text": "ثغرة يوم الصفر (Zero-Day)"
+    },
+    {
+      "t": "p",
+      "text": "الشركات لا تعرف دائمًا جميع الثغرات في برامجها. قد يكتشف شخص ثغرة لم يعلم بها المطوّر، وحينها تكون خطرة جدًا لأنه قد لا يوجد تحديث أمني يغلقها بعد. هذا هو ثغرة يوم الصفر: ثغرة اكتُشفت ولم يتوفر لها إصلاح."
+    },
+    {
+      "t": "h2",
+      "text": "البرامج من مصادر غير موثوقة"
+    },
+    {
+      "t": "p",
+      "text": "قد يُنزّل موظف برنامجًا يبدو طبيعيًا لكنه يحتوي برنامجًا ضارًا. لذلك تُحدَّد مصادر البرامج المسموحة ويُدرَّب المستخدمون ([[malware-types|أنواع البرمجيات الخبيثة]])."
+    },
+    {
+      "t": "table",
+      "head": [
+        "الثغرة",
+        "مصدر الخطر",
+        "الحل الأقرب"
+      ],
+      "rows": [
+        [
+          "حقن SQL",
+          "مدخلات غير محمية في تطبيق ويب",
+          "برمجة وحماية صحيحة للمدخلات"
+        ],
+        [
+          "يوم الصفر",
+          "ثغرة بلا إصلاح بعد",
+          "[[defence-in-depth|طبقات حماية]] وتحديث فور صدور الإصلاح"
+        ],
+        [
+          "برنامج غير موثوق",
+          "سلوك المستخدم ومصدر البرنامج",
+          "تدريب وسياسة تثبيت"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وللتحديثات انظر [[software-updates-patching|التحديثات الأمنية]]، وللخريطة الشاملة [[system-vulnerability-types|أنواع ثغرات النظام]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

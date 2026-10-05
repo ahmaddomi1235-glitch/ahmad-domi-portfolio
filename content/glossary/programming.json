@@ -1,0 +1,887 @@
+{
+  "$defaults": {
+    "type": "GlossaryTerm",
+    "unit": "programming",
+    "learningAim": null,
+    "criterion": null,
+    "concepts": [],
+    "questions": [],
+    "sourceType": "ahmad-booklet",
+    "sourceReferences": [
+      {
+        "kind": "pdf",
+        "label": "مادة البرمجة (أحمد دومي)"
+      }
+    ],
+    "youtubeId": null,
+    "author": "ahmad-domi",
+    "lastReviewed": "2026-10-04",
+    "visibility": "PUBLIC",
+    "related": [],
+    "officialSource": null,
+    "status": "published",
+    "reviewState": "definitions paraphrased from the author's programming lecture notes; pending author review"
+  },
+  "items": [
+    {
+      "id": "term-computational-thinking",
+      "term_ar": "التفكير الحاسوبي",
+      "term_en": "Computational Thinking",
+      "conceptId": "computational-thinking",
+      "definition_ar": "أسلوب منظم لحل المشكلات قبل كتابة الكود: تفكيك وتعرف على أنماط وتجريد وتمثيل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-decomposition",
+      "term_ar": "التفكيك",
+      "term_en": "Decomposition",
+      "conceptId": "computational-thinking",
+      "definition_ar": "تقسيم المشكلة الكبيرة إلى مهام صغيرة يسهل فهمها وحلها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-pattern-recognition",
+      "term_ar": "التعرف على الأنماط",
+      "term_en": "Pattern Recognition",
+      "conceptId": "computational-thinking",
+      "definition_ar": "ملاحظة المتشابه بين مشكلات مختلفة لإعادة استخدام الحل نفسه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-abstraction",
+      "term_ar": "التجريد",
+      "term_en": "Abstraction",
+      "conceptId": "computational-thinking",
+      "definition_ar": "التركيز على المعلومات الضرورية لحل المشكلة وتجاهل التفاصيل غير المهمة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-representation",
+      "term_ar": "التمثيل",
+      "term_en": "Representation",
+      "conceptId": "computational-thinking",
+      "definition_ar": "تحويل فهم المشكلة إلى نموذج مكتوب أو مرسوم كمخطط انسياب أو جدول.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-flowchart",
+      "term_ar": "مخطط انسياب",
+      "term_en": "Flowchart",
+      "conceptId": "flowchart-symbols",
+      "definition_ar": "رسم يمثل خطوات الحل برموز متصلة بأسهم لتوضيح تسلسل التنفيذ.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-variable",
+      "term_ar": "متغير",
+      "term_en": "Variable",
+      "conceptId": "representing-problem-elements",
+      "definition_ar": "موقع في الذاكرة تُخزَّن فيه قيمة قابلة للتغير أثناء تنفيذ البرنامج.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-constant",
+      "term_ar": "ثابت",
+      "term_en": "Constant",
+      "conceptId": "representing-problem-elements",
+      "definition_ar": "قيمة لا تتغير أثناء تنفيذ البرنامج، كنسبة ضريبة قانونية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-entity",
+      "term_ar": "كيان",
+      "term_en": "Entity",
+      "conceptId": "entities-and-relationships",
+      "definition_ar": "شيء مهم في النظام نحتاج أن نخزن عنه بيانات، كالطالب أو المادة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-attribute",
+      "term_ar": "خاصية",
+      "term_en": "Attribute",
+      "conceptId": "entities-and-relationships",
+      "definition_ar": "صفة تصف الكيان وتُخزَّن عنه، مثل اسم الطالب أو رقمه أو صفه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-relationship",
+      "term_ar": "علاقة",
+      "term_en": "Relationship",
+      "conceptId": "entities-and-relationships",
+      "definition_ar": "ارتباط بين كيانين أو أكثر، واحد لواحد أو واحد لمتعدد أو متعدد لمتعدد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-test-case",
+      "term_ar": "حالة اختبار",
+      "term_en": "Test Case",
+      "conceptId": "test-cases-types",
+      "definition_ar": "مجموعة مدخلات ونتيجة متوقعة تُستعمل لاختبار جزء من البرنامج.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-programming-paradigm",
+      "term_ar": "نموذج البرمجة",
+      "term_en": "Programming Paradigm",
+      "conceptId": "programming-paradigms",
+      "definition_ar": "الأسلوب العام لتنظيم أوامر البرنامج وطريقة التفكير في الحل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-oop",
+      "term_ar": "البرمجة كائنية التوجه",
+      "term_en": "Object-Oriented Programming (OOP)",
+      "conceptId": "object-oriented-programming",
+      "definition_ar": "نموذج يبني البرنامج من كائنات تجمع بياناتها ودوالّها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-class",
+      "term_ar": "فئة",
+      "term_en": "Class",
+      "conceptId": "object-oriented-programming",
+      "definition_ar": "قالب يمثل شيئًا في المشروع ويُنشأ منه الكائنات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-object",
+      "term_ar": "كائن",
+      "term_en": "Object",
+      "conceptId": "object-oriented-programming",
+      "definition_ar": "نسخة محددة من الفئة لها بياناتها الخاصة، مثل كتاب بعينه له عنوانه ورقمه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-encapsulation",
+      "term_ar": "التغليف",
+      "term_en": "Encapsulation",
+      "conceptId": "object-oriented-programming",
+      "definition_ar": "حماية بيانات الكائن وعدم تغييرها عشوائيًا إلا عبر دوال محددة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-inheritance",
+      "term_ar": "الوراثة",
+      "term_en": "Inheritance",
+      "conceptId": "object-oriented-programming",
+      "definition_ar": "فئة ترث خصائص فئة عامة لتقاسم خصائص مشتركة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-polymorphism",
+      "term_ar": "تعدد الأشكال",
+      "term_en": "Polymorphism",
+      "conceptId": "object-oriented-programming",
+      "definition_ar": "استخدام اسم الدالة نفسه بتنفيذ مختلف بحسب نوع الكائن.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-event",
+      "term_ar": "حدث",
+      "term_en": "Event",
+      "conceptId": "event-driven-programming",
+      "definition_ar": "شيء يحدث ويبدأ التنفيذ، كضغط زر أو كتابة نص.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-event-handler",
+      "term_ar": "معالج الحدث",
+      "term_en": "Event Handler",
+      "conceptId": "event-driven-programming",
+      "definition_ar": "دالة خاصة تُنفَّذ تلقائيًا عند وقوع حدث معين مثل ضغط زر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-gui",
+      "term_ar": "واجهة رسومية",
+      "term_en": "GUI",
+      "conceptId": "event-driven-programming",
+      "definition_ar": "كل ما يراه المستخدم ويتعامل معه من نوافذ وأزرار ومربعات نص وقوائم.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-binary",
+      "term_ar": "النظام الثنائي",
+      "term_en": "Binary System",
+      "conceptId": "binary-system",
+      "definition_ar": "نظام عددي أساسه 2 يستخدم الرقمين 0 و1 لتمثيل البيانات داخل الحاسوب.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-bit",
+      "term_ar": "بت",
+      "term_en": "Bit",
+      "conceptId": "binary-system",
+      "definition_ar": "خانة ثنائية واحدة تأخذ القيمة 0 أو 1، وهي أصغر وحدة بيانات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-byte",
+      "term_ar": "بايت",
+      "term_en": "Byte",
+      "conceptId": "binary-system",
+      "definition_ar": "مجموعة من ثماني بتات (8 bits)، تُستخدم لقياس حجم البيانات وتخزينها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-machine-language",
+      "term_ar": "لغة الآلة",
+      "term_en": "Machine Language",
+      "conceptId": "programming-language-types",
+      "definition_ar": "أقرب لغة إلى المعالج، تعليماتها مكتوبة بالأرقام الثنائية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-assembly",
+      "term_ar": "لغة التجميع",
+      "term_en": "Assembly Language",
+      "conceptId": "programming-language-types",
+      "definition_ar": "لغة منخفضة المستوى بأوامر مختصرة تُترجم إلى تعليمات الآلة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-high-level",
+      "term_ar": "لغة عالية المستوى",
+      "term_en": "High-Level Language",
+      "conceptId": "programming-language-types",
+      "definition_ar": "لغة أقرب إلى لغة البشر وبعيدة عن تفاصيل العتاد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-compiler",
+      "term_ar": "مترجم",
+      "term_en": "Compiler",
+      "conceptId": "programming-language-types",
+      "definition_ar": "أداة تحوّل الكود المصدري إلى لغة الآلة قبل التشغيل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-interpreter",
+      "term_ar": "مفسر",
+      "term_en": "Interpreter",
+      "conceptId": "programming-language-types",
+      "definition_ar": "أداة تنفذ أوامر الكود مباشرة دون ترجمة منفصلة مسبقة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-markup",
+      "term_ar": "لغة وصف المحتوى",
+      "term_en": "Markup Language",
+      "conceptId": "programming-language-types",
+      "definition_ar": "لغة ترميز بوسوم لوصف المحتوى أو تنظيم البيانات، مثل HTML وXML.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-scripting",
+      "term_ar": "لغة نصية",
+      "term_en": "Scripting Language",
+      "conceptId": "programming-language-types",
+      "definition_ar": "لغة تُستخدم لبرامج قصيرة تؤدي مهام محددة بسرعة، مثل Python وPHP.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-camelcase",
+      "term_ar": "camelCase",
+      "term_en": "camelCase",
+      "conceptId": "variable-naming-conventions",
+      "definition_ar": "أسلوب تسمية تبدأ فيه الكلمة الأولى بحرف صغير وكل كلمة تالية بحرف كبير.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-snakecase",
+      "term_ar": "snake_case",
+      "term_en": "snake_case",
+      "conceptId": "variable-naming-conventions",
+      "definition_ar": "أسلوب تسمية بحروف صغيرة تفصل بينها شرطة سفلية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-data-type",
+      "term_ar": "نوع البيانات",
+      "term_en": "Data Type",
+      "conceptId": "programming-data-types",
+      "definition_ar": "تصنيف القيمة التي يخزنها المتغير: عدد صحيح، حقيقي، حرف، نص، منطقي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-integer",
+      "term_ar": "عدد صحيح",
+      "term_en": "Integer",
+      "conceptId": "programming-data-types",
+      "definition_ar": "نوع بيانات يخزن أعدادًا بلا كسور مثل عمر الطالب أو عدد المحاولات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-string",
+      "term_ar": "سلسلة نصية",
+      "term_en": "String",
+      "conceptId": "programming-data-types",
+      "definition_ar": "نوع بيانات يخزن مجموعة حروف وأرقام ورموز.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-boolean",
+      "term_ar": "قيمة منطقية",
+      "term_en": "Boolean",
+      "conceptId": "programming-data-types",
+      "definition_ar": "نوع بيانات يأخذ إحدى قيمتين فقط: صحيح أو خطأ، ويُستخدم في الشروط.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-ide",
+      "term_ar": "بيئة تطوير متكاملة",
+      "term_en": "IDE",
+      "conceptId": "ide-and-maintainability",
+      "definition_ar": "برنامج يساعد على كتابة الكود وبنائه وتصحيحه، مثل Visual Studio.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-debugging",
+      "term_ar": "تصحيح الأخطاء",
+      "term_en": "Debugging",
+      "conceptId": "ide-and-maintainability",
+      "definition_ar": "اكتشاف أخطاء البرنامج وإصلاحها، غالبًا بتتبع التنفيذ خطوة خطوة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-microcontroller",
+      "term_ar": "متحكم دقيق",
+      "term_en": "Microcontroller",
+      "conceptId": "embedded-device-programming",
+      "definition_ar": "شريحة صغيرة تتحكم في جهاز إلكتروني وتُبرمج بواسطة أجهزة خاصة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-isp",
+      "term_ar": "برمجة داخل النظام",
+      "term_en": "In-System Programming (ISP)",
+      "conceptId": "embedded-device-programming",
+      "definition_ar": "إعادة برمجة المتحكم وهو مثبت داخل اللوحة دون فكه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    },
+    {
+      "id": "term-embedded",
+      "term_ar": "نظام مدمج",
+      "term_en": "Embedded System",
+      "conceptId": "embedded-device-programming",
+      "definition_ar": "نظام حاسوبي صغير مدمج داخل جهاز مثل الغسالة أو الميكروويف.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة البرمجة (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-027",
+        "src-030",
+        "src-044",
+        "src-101",
+        "src-028"
+      ]
+    }
+  ]
+}

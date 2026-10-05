@@ -1,0 +1,153 @@
+{
+  "id": "authentication-methods",
+  "type": "Comparison",
+  "title_ar": "طرق مصادقة المستخدم: كلمة المرور والبيومترية والرموز وKerberos والشهادات",
+  "title_en": "User Authentication Methods",
+  "slug": "authentication-methods",
+  "summary": "المصادقة تجيب عن سؤال: هل أنت فعلًا من تدّعي؟ طرقها: اسم مستخدم وكلمة مرور، والبيومترية، والتحقق بخطوتين، ورموز الأمان، وNFC، وKerberos بالتذاكر، والشهادات الرقمية.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "مصادقة المستخدم"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "strong-passwords",
+    "two-factor-authentication",
+    "authentication-vs-access-control",
+    "vpn-and-https"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 28,
+  "shortAnswer": "مصادقة المستخدم (Authentication) تتحقق من أن الشخص هو من يدّعي. أبسط طرقها اسم المستخدم وكلمة المرور، ومن طرقها الأقوى: المصادقة البيومترية (بصمة أو وجه)، والتحقق بخطوتين، ورموز الأمان المؤقتة، وNFC، وبروتوكول Kerberos الذي يستخدم تذاكر، والشهادات الرقمية التي تثبت هوية المواقع.",
+  "whyBtec": "يمكن تصنيف الطرق بحسب ما تعرفه، أو ما تملكه، أو ما أنت عليه. اربط كل طريقة بنقطة قوة وضعف حين تقترح حلًا.",
+  "terminology": [
+    {
+      "ar": "المصادقة",
+      "en": "Authentication"
+    },
+    {
+      "ar": "المصادقة البيومترية",
+      "en": "Biometric Authentication"
+    },
+    {
+      "ar": "رمز أمان",
+      "en": "Security Token"
+    },
+    {
+      "ar": "اتصال قريب المدى",
+      "en": "NFC"
+    },
+    {
+      "ar": "كيربيروس",
+      "en": "Kerberos"
+    },
+    {
+      "ar": "شهادة رقمية",
+      "en": "Digital Certificate"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي طرق المصادقة؟",
+    "ما الفرق بين المصادقة البيومترية وكلمة المرور؟",
+    "authentication methods BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "الطرق"
+    },
+    {
+      "t": "table",
+      "head": [
+        "الطريقة",
+        "الفكرة",
+        "ملاحظة"
+      ],
+      "rows": [
+        [
+          "اسم مستخدم + كلمة مرور",
+          "الاسم يحدد من أنت، والكلمة تثبت أنك صاحب الحساب",
+          "يجب أن تكون قوية — [[strong-passwords|كلمات المرور]]"
+        ],
+        [
+          "بيومترية",
+          "شيء يميّزك: بصمة أو وجه",
+          "لا تُخمَّن، لكنها تحتاج أجهزة وتتطلب حماية البيانات البيومترية"
+        ],
+        [
+          "التحقق بخطوتين",
+          "عاملان مختلفان: كلمة مرور + رمز",
+          "[[two-factor-authentication|التفاصيل]]"
+        ],
+        [
+          "رموز الأمان",
+          "جهاز أو تطبيق يولّد رمزًا مؤقتًا يتغير",
+          "سرقة كلمة المرور وحدها لا تكفي"
+        ],
+        [
+          "NFC",
+          "تبادل بيانات بين أجهزة قريبة جدًا (هاتف أو بطاقة مع قارئ)",
+          "يُستخدم للدخول والتحقق"
+        ],
+        [
+          "Kerberos",
+          "في الشبكات الكبيرة: إثبات الهوية مرة ثم الحصول على تذاكر تسمح باستخدام الخدمات دون إعادة الإثبات",
+          "كتذكرة مدينة ألعاب بعد الدخول"
+        ],
+        [
+          "الشهادات الرقمية",
+          "تثبت هوية الموقع، وتصدرها جهة موثوقة (CA)",
+          "أساس HTTPS — [[vpn-and-https|HTTPS]]"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وبعد المصادقة يأتي سؤال آخر: ماذا يُسمح لك أن تفعل؟ هذا هو [[authentication-vs-access-control|التحكم في الوصول]]."
+    },
+    {
+      "t": "h2",
+      "text": "كيف تختار بين الطرق؟"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "للمؤسسات الصغيرة: كلمة مرور قوية مع التحقق بخطوتين.",
+        "للشبكات الكبيرة: بروتوكولات مثل Kerberos تقلل إعادة إرسال كلمة المرور.",
+        "للمواقع: الشهادات الرقمية تثبت هوية الموقع قبل أن يثق المتصفح به."
+      ]
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "ذكر طريقة المصادقة لا يكفي؛ اذكر ما الذي تثبته (هوية المستخدم أم هوية الموقع) وما حدودها: البيومترية قد تحتاج أجهزة خاصة، والكلمة قد تُسرق، والرمز قد يُنتحل بالتصيّد.",
+      "title": "نقطة تفرّق بها إجابتك"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

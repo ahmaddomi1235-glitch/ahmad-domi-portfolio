@@ -1,0 +1,119 @@
+{
+  "id": "supervised-vs-unsupervised-learning",
+  "type": "Comparison",
+  "title_ar": "التعلم تحت الإشراف وبدون إشراف: الفرق وأمثلة",
+  "title_en": "Supervised vs Unsupervised Learning",
+  "slug": "supervised-vs-unsupervised-learning",
+  "summary": "في التعلم تحت الإشراف تكون لدينا مدخلات X معها الإجابة الصحيحة Y فيتعلم النموذج العلاقة بينهما ثم يتنبأ، وفي التعلم بدون إشراف مدخلات فقط ويكتشف النموذج الأنماط، كتقسيم العملاء إلى مجموعات.",
+  "unit": "artificial-intelligence",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "ملاحظات تعلّم الآلة وأدوات الذكاء الاصطناعي (أحمد دومي)",
+      "ref": "مقدمة في الذكاء الاصطناعي والانحدار الخطي"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "classification-vs-regression",
+    "train-validation-test-sets",
+    "ai-vs-machine-learning-vs-deep-learning"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-086"
+  ],
+  "order": 21,
+  "shortAnswer": "**التعلم تحت الإشراف (Supervised Learning)**: بيانات تحتوي مدخلات X ومعها الإجابة الصحيحة Y، يتعلم النموذج العلاقة بينهما ثم يستخدمها للتنبؤ، كتوقع سعر بيت (رقم) أو تحديد هل الرسالة مزعجة (فئة). **التعلم بدون إشراف (Unsupervised Learning)**: مدخلات فقط بلا إجابات جاهزة، يحاول النموذج اكتشاف أنماط، مثل تقسيم العملاء إلى مجموعات بحسب سلوكهم الشرائي دون أن نحدد أسماء المجموعات مسبقًا.",
+  "whyBtec": "السؤال الأول في أي مشروع: هل لدينا الإجابات الصحيحة أم لا؟ فجوابه يحدد نوع التعلم.",
+  "terminology": [
+    {
+      "ar": "تعلم تحت الإشراف",
+      "en": "Supervised Learning"
+    },
+    {
+      "ar": "تعلم بدون إشراف",
+      "en": "Unsupervised Learning"
+    },
+    {
+      "ar": "نموذج",
+      "en": "Model"
+    },
+    {
+      "ar": "مدخلات ومخرجات",
+      "en": "Inputs and Outputs"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين التعلم تحت الإشراف وبدون إشراف؟",
+    "supervised vs unsupervised learning BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "",
+        "تحت الإشراف",
+        "بدون إشراف"
+      ],
+      "rows": [
+        [
+          "البيانات",
+          "مدخلات X + إجابة صحيحة Y",
+          "مدخلات فقط"
+        ],
+        [
+          "الهدف",
+          "تعلّم العلاقة بين X وY ثم التنبؤ",
+          "اكتشاف أنماط ومجموعات متشابهة"
+        ],
+        [
+          "أمثلة",
+          "سعر بيت من مساحته، تصنيف بريد مزعج",
+          "تقسيم العملاء بحسب سلوكهم، تقليل الأبعاد"
+        ],
+        [
+          "خوارزميات في الموقع",
+          "[[linear-regression-mse|الانحدار الخطي]]، [[logistic-regression|اللوجستي]]، [[svm-classifier|SVM]]، [[decision-trees|أشجار القرار]]",
+          "[[k-means-clustering|K-means]]، [[pca-dimensionality-reduction|PCA]]"
+        ]
+      ],
+      "caption": "نوعا التعلم"
+    },
+    {
+      "t": "h2",
+      "text": "النموذج وتطوير الحل"
+    },
+    {
+      "t": "p",
+      "text": "النموذج برنامج أو خوارزمية تتعلم من البيانات: بدل أن نكتب قاعدة يدوية يستنتج العلاقة بين المدخلات والمخرجات من الأمثلة. وقبل أي حل نحدد المشكلة بدقة (ماذا نريد من النظام؟) والبيانات المتوفرة وهل تكفي، وكيف نقيس النجاح."
+    },
+    {
+      "t": "p",
+      "text": "ثم يُحدَّد نوع المهمة: [[classification-vs-regression|تصنيف أم انحدار؟]] وتُقسَّم البيانات ([[train-validation-test-sets|تدريب واختبار]]). والفرق بين تعلم الآلة والتعلم العميق في [[ai-vs-machine-learning-vs-deep-learning|هذه الصفحة]]."
+    },
+    {
+      "t": "h2",
+      "text": "اختبار سريع"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "لديّ أسعار بيوت ومساحاتها وأريد التنبؤ بسعر بيت جديد: تحت الإشراف.",
+        "لديّ بيانات شراء ولا أعرف أنواع العملاء وأريد اكتشاف مجموعات: بدون إشراف."
+      ]
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

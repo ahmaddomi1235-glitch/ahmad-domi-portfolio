@@ -1,0 +1,123 @@
+{
+  "id": "runtime-vs-development-requirements",
+  "type": "Comparison",
+  "title_ar": "متطلبات تشغيل البرنامج عند المستخدم ومتطلبات تطويره عند المبرمج",
+  "title_en": "Runtime vs Development Requirements",
+  "slug": "runtime-vs-development-requirements",
+  "summary": "متطلبات التشغيل هي ما يحتاجه المستخدم ليعمل البرنامج عنده (جهاز ونظام تشغيل ومكتبات)، ومتطلبات التطوير هي أدوات المبرمج لكتابته (حاسوب وبيئة تطوير ومترجم أو مفسر وأدوات تصحيح ومحاكيات).",
+  "unit": "programming",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة البرمجة (أحمد دومي)",
+      "ref": "الفرق بين متطلبات تشغيل البرنامج ومتطلبات تطويره؛ بيئات التطوير"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "embedded-device-programming",
+    "ide-and-maintainability",
+    "choosing-a-programming-language"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-044",
+    "src-030"
+  ],
+  "order": 16,
+  "shortAnswer": "**متطلبات التشغيل** عند المستخدم هي ما يحتاجه ليعمل البرنامج لديه: نوع الجهاز (حاسوب، هاتف، لوحي)، ونظام التشغيل (Windows، Android، iOS، Linux...)، وأحيانًا أُطر أو مكتبات مساعدة. **متطلبات التطوير** عند المبرمج هي أدواته: حاسوب مناسب، وبيئة تطوير متكاملة (IDE) مثل Visual Studio أو Android Studio، ومترجم أو مفسر، وأدوات تصحيح الأخطاء والمحاكيات. مثال: تطبيق أندرويد يحتاج عند المستخدم جهازًا أو محاكيًا بنظام Android، وعند المبرمج Android Studio وأدوات Java أو Kotlin.",
+  "whyBtec": "الخلط بين المتطلبين خطأ شائع؛ اجعل لكل منهما قائمته الخاصة.",
+  "terminology": [
+    {
+      "ar": "متطلبات التشغيل",
+      "en": "Runtime Requirements"
+    },
+    {
+      "ar": "متطلبات التطوير",
+      "en": "Development Requirements"
+    },
+    {
+      "ar": "بيئة تطوير متكاملة",
+      "en": "IDE"
+    },
+    {
+      "ar": "محاكي",
+      "en": "Simulator"
+    },
+    {
+      "ar": "مصحح الأخطاء",
+      "en": "Debugger"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين متطلبات التشغيل ومتطلبات التطوير؟",
+    "runtime vs development requirements"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "",
+        "متطلبات التشغيل (المستخدم)",
+        "متطلبات التطوير (المبرمج)"
+      ],
+      "rows": [
+        [
+          "من؟",
+          "المستخدم العادي",
+          "المبرمج"
+        ],
+        [
+          "الجهاز",
+          "حاسوب أو هاتف أو لوحي أو لوحة إلكترونية",
+          "حاسوب شخصي مناسب"
+        ],
+        [
+          "البرمجيات",
+          "نظام التشغيل، أطر ومكتبات مساعدة",
+          "IDE، مترجم أو مفسر، مصحح أخطاء، محاكيات"
+        ],
+        [
+          "مثال: تطبيق أندرويد",
+          "جهاز أو محاكي Android",
+          "Android Studio وأدوات Java أو Kotlin"
+        ]
+      ],
+      "caption": "الفرق بين المتطلبين"
+    },
+    {
+      "t": "h2",
+      "text": "ماذا عن الأجهزة المادية؟"
+    },
+    {
+      "t": "p",
+      "text": "في الأجهزة المدمجة يحتاج المبرمج إلى لوحات تطوير وأجهزة برمجة خاصة لنقل البرنامج إلى المتحكمات الدقيقة. وانظر [[embedded-device-programming|برمجة الأجهزة المادية]]. وعند اختيار لغة ننظر إلى البيئة كاملة وليس اللغة وحدها: لغة البرمجة وبيئة التطوير ونظام التشغيل والجهاز."
+    },
+    {
+      "t": "p",
+      "text": "وللأدوات التي تخفف صعوبة التطوير: [[ide-and-maintainability|بيئات التطوير المتكاملة والصيانة]]. ولاختيار اللغة: [[choosing-a-programming-language|اختيار لغة البرمجة]]."
+    },
+    {
+      "t": "p",
+      "text": "وعند كتابة متطلبات المشروع اذكر في قائمة منفصلة ما يحتاجه المستخدم لتشغيل المنتج وما يحتاجه الفريق لتطويره واختباره."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "متطلبات التشغيل: هاتف بنظام Android حديث بما يكفي. متطلبات التطوير: حاسوب مع Android Studio ومحاكي واختبار على جهاز حقيقي.",
+      "title": "مثال للكتابة"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

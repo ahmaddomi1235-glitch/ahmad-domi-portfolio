@@ -1,0 +1,109 @@
+{
+  "id": "evaluate-level-d-writing",
+  "type": "Concept",
+  "title_ar": "كتابة مستوى التقييم (D): قارن واحكم وانتقد الحكم ثم أوصِ",
+  "title_en": "Writing the Evaluate Level (D)",
+  "slug": "evaluate-level-d-writing",
+  "summary": "في التقييم لا يكتفي الطالب بفهم الأثر بل يتخذ قرارًا: يحدد القرار والبدائل ومعايير المقارنة، ثم يقارن ويصدر حكمًا مبدئيًا وينتقده ويعود إلى الأدلة ويحسم القرار ويقدم توصية.",
+  "unit": "assessment",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "منهجية كتابة تقرير BTEC — إعداد أحمد دومي (مبادئ عامة فقط)",
+      "ref": "مستوى D — التقييم؛ المقارنة؛ التوصية"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "analyse-level-m-writing",
+    "report-consistency-and-repetition",
+    "report-introduction-and-conclusion"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "sourceIds": [
+    "src-004"
+  ],
+  "order": 5,
+  "shortAnswer": "في التقييم (D) لا تكتفي بفهم الأثر؛ يجب أن تتخذ **قرارًا**. تسع خطوات: **(1)** تحديد القرار المطلوب، **(2)** تحديد البدائل، **(3)** تحديد معايير المقارنة، **(4)** مقارنة البدائل، **(5)** إصدار حكم مبدئي، **(6)** نقد الحكم، **(7)** العودة إلى الأدلة، **(8)** حسم القرار، **(9)** تقديم توصية. القاعدة الذهبية: قارن ← احكم ← انتقد الحكم ← ارجع إلى الأدلة ← احسم ← أوصِ.",
+  "whyBtec": "التقييم الحقيقي لا يعني الدفاع عن الخيار الذي اخترته مهما كان؛ بل أن تعرف عيبه ومتى يكون البديل أفضل.",
+  "terminology": [
+    {
+      "ar": "تقييم",
+      "en": "Evaluate"
+    },
+    {
+      "ar": "بدائل",
+      "en": "Alternatives"
+    },
+    {
+      "ar": "معايير المقارنة",
+      "en": "Comparison Criteria"
+    },
+    {
+      "ar": "توصية",
+      "en": "Recommendation"
+    }
+  ],
+  "questionsAnswered": [
+    "كيف أكتب فقرة تقييم في تقرير BTEC؟",
+    "ما خطوات التقييم والتوصية؟",
+    "how to write evaluate level BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "المسار"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "حدّد القرار: ما الذي يجب اختياره؟",
+        "حدّد البدائل.",
+        "حدّد معايير المقارنة.",
+        "قارن: اختر معيارًا واحدًا ثم قارن جميع البدائل وفقه.",
+        "أصدر حكمًا مبدئيًا: «بالنسبة إلى هذا السيناريو يبدو أن (...) أكثر ملاءمة لأن (...)».",
+        "انتقد حكمك: ما عيب اختياري؟ متى يكون البديل أفضل؟ ما القيد؟ هل يغيّر قراري؟",
+        "ارجع إلى الأدلة: هل ما زال الخيار مناسبًا رغم القيود؟",
+        "احسم: الحكم النهائي + الاعتراف بقيوده + شروط تقلل أثرها = أفضل بديل في السياق.",
+        "أوصِ بخطوة واضحة محددة قابلة للتطبيق ومرتبطة بالحكم ومبررة."
+      ]
+    },
+    {
+      "t": "table",
+      "head": [
+        "",
+        "الحكم",
+        "التوصية"
+      ],
+      "rows": [
+        [
+          "تقول",
+          "ما الخيار الأنسب؟",
+          "ماذا يجب أن تفعل المؤسسة فعليًا؟"
+        ]
+      ]
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "لا تكتب معلومات مختلفة عن كل خيار. اختر معيارًا واحدًا (السرعة مثلًا) ثم قارن كل البدائل وفقه، ثم انتقل إلى معيار آخر.",
+      "title": "المقارنة الصحيحة"
+    },
+    {
+      "t": "p",
+      "text": "ويسبقه [[analyse-level-m-writing|التحليل]]. وللتناقض والتكرار الذي يفسد التقييم: [[report-consistency-and-repetition|الاتساق وتجنب التكرار]]. وللخاتمة: [[report-introduction-and-conclusion|المقدمة والخاتمة]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

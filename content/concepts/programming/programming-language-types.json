@@ -1,0 +1,133 @@
+{
+  "id": "programming-language-types",
+  "type": "Comparison",
+  "title_ar": "أنواع لغات البرمجة: الآلة والتجميع وعالية المستوى ووصف المحتوى والنصية",
+  "title_en": "Types of Programming Languages",
+  "slug": "programming-language-types",
+  "summary": "لغات المستوى المنخفض (الآلة والتجميع) قريبة من المعالج وتعطي تحكمًا دقيقًا لكنها صعبة، ولغات المستوى العالي (C++ وPython وJava) أقرب للبشر وتُترجم بمترجم أو مفسر. وهناك لغات وصف المحتوى (HTML وXML) واللغات النصية (PHP وPython وRuby).",
+  "unit": "programming",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة البرمجة (أحمد دومي)",
+      "ref": "لغات البرمجة منخفضة وعالية المستوى؛ لغات وصف المحتوى؛ اللغات النصية"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "choosing-a-programming-language",
+    "binary-system",
+    "programming-language-comparison-criteria"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-027",
+    "src-030"
+  ],
+  "order": 12,
+  "shortAnswer": "تُصنَّف اللغات بحسب قربها من الآلة ووظيفتها: **لغة الآلة** تعليمات ثنائية 0 و1، و**لغة التجميع** (Assembly) أوامر مختصرة مثل mov وadd تُترجم إلى تعليمات الآلة؛ وكلتاهما منخفضة المستوى تعطي تحكمًا عاليًا في العتاد لكنها غير مناسبة عادة للأنظمة الكبيرة. **اللغات عالية المستوى** مثل C++ وPython وJava أقرب إلى لغة البشر ويحوّلها مترجم (Compiler) أو مفسر (Interpreter) إلى لغة الآلة. وهناك **لغات وصف المحتوى** (HTML وXML) و**اللغات النصية** (PHP وRuby وPython وPerl).",
+  "whyBtec": "عند سؤال «ما الفرق بين اللغات؟» رتّب الإجابة بحسب القرب من العتاد والغرض والمترجم.",
+  "terminology": [
+    {
+      "ar": "لغة الآلة",
+      "en": "Machine Language"
+    },
+    {
+      "ar": "لغة التجميع",
+      "en": "Assembly Language"
+    },
+    {
+      "ar": "لغة عالية المستوى",
+      "en": "High-Level Language"
+    },
+    {
+      "ar": "مترجم",
+      "en": "Compiler"
+    },
+    {
+      "ar": "مفسر",
+      "en": "Interpreter"
+    },
+    {
+      "ar": "لغة وصف المحتوى",
+      "en": "Markup Language"
+    },
+    {
+      "ar": "لغة نصية",
+      "en": "Scripting Language"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين لغات المستوى المنخفض والعالي؟",
+    "ما هي لغات البرمجة النصية؟",
+    "ما الفرق بين HTML وXML؟",
+    "types of programming languages BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "النوع",
+        "الفكرة",
+        "أمثلة / ملاحظات"
+      ],
+      "rows": [
+        [
+          "لغة الآلة",
+          "أقرب لغة للمعالج: 0 و1",
+          "صعبة جدًا على الإنسان"
+        ],
+        [
+          "لغة التجميع",
+          "أوامر مختصرة مفهومة تُترجم إلى لغة الآلة",
+          "mov، add؛ تحكم عالٍ في العتاد؛ تُستخدم غالبًا في أنظمة التشغيل والتعريفات والأداء الأعلى"
+        ],
+        [
+          "لغات عالية المستوى",
+          "كلمات وتعابير مفهومة، بعيدة عن تفاصيل العتاد",
+          "C++، Python، Java، Visual Basic .NET؛ يترجمها مترجم أو مفسر"
+        ],
+        [
+          "لغات وصف المحتوى",
+          "ترميز بوسوم لا برمجة منطق",
+          "HTML لعرض مكونات الصفحة؛ XML لتنظيم البيانات وتبادلها بين الأنظمة"
+        ],
+        [
+          "اللغات النصية",
+          "برامج قصيرة تؤدي مهامًا محددة بسرعة، غالبًا بتفسير مباشر",
+          "PHP، Python، Ruby، Perl: معالجة ملفات، أوامر النظام، صفحات ويب ديناميكية"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "مزايا اللغات عالية المستوى"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "رفع إنتاجية المبرمجين وتقليل الأخطاء.",
+        "كود أوضح وأسهل في القراءة والفهم.",
+        "تسهيل اكتشاف الأخطاء وتصحيحها (Debugging).",
+        "استخدام أدوات متقدمة كبيئات التطوير والاختبار.",
+        "نقل البرنامج بين أجهزة وأنظمة مع تعديلات محدودة."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "ولاختيار اللغة المناسبة لمشروع انظر [[choosing-a-programming-language|اختيار لغة البرمجة]]، ولأصل الفكرة [[binary-system|النظام الثنائي]]، ولمعايير المقارنة [[programming-language-comparison-criteria|معايير مقارنة اللغات]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

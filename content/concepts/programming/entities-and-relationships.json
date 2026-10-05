@@ -1,0 +1,136 @@
+{
+  "id": "entities-and-relationships",
+  "type": "Comparison",
+  "title_ar": "الكيانات والعلاقات (Entities & Relationships): 1:1 وواحد لمتعدد ومتعدد لمتعدد",
+  "title_en": "Entities and Relationships",
+  "slug": "entities-and-relationships",
+  "summary": "الكيان (Entity) شيء مهم في النظام نحتاج تخزين بيانات عنه، وله خصائص (Attributes)، وترتبط الكيانات بعلاقات (Relationships) من ثلاثة أنواع: واحد لواحد، واحد لمتعدد، ومتعدد لمتعدد. وفهمها يسبق تصميم قاعدة البيانات والكود.",
+  "unit": "programming",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة البرمجة (أحمد دومي)",
+      "ref": "الكيانات والعلاقات"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "computational-thinking",
+    "what-is-data-modelling",
+    "data-quality"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-101"
+  ],
+  "order": 5,
+  "shortAnswer": "الكيان (Entity) شخص أو مكان أو شيء أو حدث مهم في النظام نحتاج أن نخزن عنه بيانات، كالطالب والمادة والامتحان وجلسة الدراسة. ولكل كيان خصائص (Attributes) مثل رقم الطالب والاسم. والعلاقة (Relationship) توضح كيف يرتبط كيان بآخر. وأنواعها: واحد لواحد (1:1)، وواحد لمتعدد (1:M)، ومتعدد لمتعدد (M:M).",
+  "whyBtec": "فهم الكيانات والعلاقات قبل الكود يحدد ما نخزنه وكيف ترتبط العناصر، وينعكس مباشرة على تصميم قاعدة البيانات والبرنامج.",
+  "terminology": [
+    {
+      "ar": "كيان",
+      "en": "Entity"
+    },
+    {
+      "ar": "خاصية",
+      "en": "Attribute"
+    },
+    {
+      "ar": "علاقة",
+      "en": "Relationship"
+    },
+    {
+      "ar": "واحد لمتعدد",
+      "en": "One-to-Many"
+    },
+    {
+      "ar": "متعدد لمتعدد",
+      "en": "Many-to-Many"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو الكيان والعلاقة في قواعد البيانات؟",
+    "ما أنواع العلاقات 1:M وM:M؟",
+    "entities relationships one to many BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "المفاهيم"
+    },
+    {
+      "t": "table",
+      "head": [
+        "المفهوم",
+        "المعنى",
+        "مثال (تطبيق تنظيم الدراسة)"
+      ],
+      "rows": [
+        [
+          "الكيان",
+          "شيء مهم نخزن عنه بيانات",
+          "Student، Subject، Exam، StudySession"
+        ],
+        [
+          "الخصائص",
+          "صفات الكيان",
+          "Student: StudentID, Name, Year؛ Subject: SubjectID, SubjectName, DifficultyLevel"
+        ],
+        [
+          "العلاقة",
+          "ارتباط بين كيانين أو أكثر",
+          "الطالب بالمواد، المادة بالامتحانات، الطالب بجلسات الدراسة"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "أنواع العلاقات"
+    },
+    {
+      "t": "table",
+      "head": [
+        "النوع",
+        "الفكرة",
+        "مثال"
+      ],
+      "rows": [
+        [
+          "واحد لواحد (1:1)",
+          "كيان من النوع الأول يرتبط بواحد فقط من الثاني",
+          "مدير مدرسة واحد لكل مدرسة (بعض الأنظمة تمثلها هكذا)"
+        ],
+        [
+          "واحد لمتعدد (1:M)",
+          "واحد يرتبط بعدة",
+          "طالب واحد له عدة جلسات دراسة؛ مادة واحدة لها عدة امتحانات"
+        ],
+        [
+          "متعدد لمتعدد (M:M)",
+          "عدة ترتبط بعدة",
+          "طلاب ومواد: الطالب يدرس أكثر من مادة والمادة يدرسها أكثر من طالب"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "بهذا تحدد ما تخزنه وكيف ترتبط العناصر قبل كتابة الكود. وهي خطوة من [[computational-thinking|التمثيل في التفكير الحاسوبي]]، وهي أساس [[what-is-data-modelling|نمذجة البيانات]] وتصميم الجداول ([[data-quality|جودة البيانات]])."
+    },
+    {
+      "t": "p",
+      "text": "وعند الإجابة اكتب الكيانات أولًا ثم خصائصها ثم العلاقات ونوعها، فهذا ترتيب منطقي يسهّل الانتقال إلى الجداول."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

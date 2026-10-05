@@ -1,0 +1,112 @@
+{
+  "id": "phishing",
+  "type": "Concept",
+  "title_ar": "التصيّد الاحتيالي (Phishing): كيف يعمل وكيف تتجنبه؟",
+  "title_en": "Phishing",
+  "slug": "phishing",
+  "summary": "التصيّد الاحتيالي رسالة تبدو من جهة موثوقة كالبنك وتدفعك إلى صفحة مزيفة لتدخل بياناتك، فيسرقها المهاجم ويستخدمها للدخول إلى حسابك الحقيقي.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "التهديدات الخارجية — التصيّد الاحتيالي"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "social-engineering",
+    "two-factor-authentication",
+    "external-threats"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 12,
+  "shortAnswer": "التصيّد الاحتيالي (Phishing) أن ينتحل المهاجم صفة جهة موثوقة، فيرسل مثلًا رسالة «هناك مشكلة في حسابك، سجّل دخولك» برابط إلى صفحة تشبه صفحة البنك لكنها مزيفة. إن أدخلت اسم المستخدم وكلمة المرور سرقهما واستخدمهما في حسابك الحقيقي.",
+  "whyBtec": "التصيّد من أكثر الأمثلة التي تُستخدم في تقارير الأمن السيبراني لأنه يجمع تهديدًا خارجيًا وثغرة في سلوك المستخدم وأثرًا ماليًا محتملًا.",
+  "terminology": [
+    {
+      "ar": "التصيّد الاحتيالي",
+      "en": "Phishing"
+    },
+    {
+      "ar": "صفحة مزيفة",
+      "en": "Fake Page"
+    },
+    {
+      "ar": "انتحال الهوية",
+      "en": "Impersonation"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو التصيد الاحتيالي؟",
+    "كيف يعمل التصيد الاحتيالي؟",
+    "phishing attack example BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "خطوات الهجوم"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "تصل الضحية رسالة تبدو من جهة موثوقة وتطلب إجراءً عاجلًا.",
+        "تضغط الضحية على الرابط فتجد صفحة تشبه الصفحة الحقيقية.",
+        "تدخل بياناتها فتصل إلى المهاجم.",
+        "يستخدم المهاجم البيانات للدخول إلى الحساب الحقيقي."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "لماذا ينجح؟"
+    },
+    {
+      "t": "p",
+      "text": "ينجح لأنه يستغل المستخدم لا الجهاز: ثقة بجهة معروفة، وخوف من إغلاق الحساب، وقلة تدريب على اكتشاف الرسائل المزيفة. لذلك يُعدّ نقص التدريب [[insider-threats|تهديدًا داخليًا]] يفتح الباب لتهديد خارجي."
+    },
+    {
+      "t": "h2",
+      "text": "وسائل الحد منه"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "تدريب الموظفين على فحص الرسائل والروابط.",
+        "[[two-factor-authentication|التحقق بخطوتين]] حتى لا تكفي كلمة المرور المسروقة وحدها.",
+        "فلترة البريد وجدران الحماية."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وهو حالة من [[social-engineering|الهندسة الاجتماعية]]. وللأثر المحتمل على شركة مالية انظر [[cyber-attack-impact|أثر الهجمات السيبرانية]]."
+    },
+    {
+      "t": "callout",
+      "kind": "warning",
+      "text": "طلب عاجل بلا سبب واضح، رابط يقود إلى صفحة تشبه موقعًا معروفًا لكن عنوانها مختلف، طلب بيانات دخول عبر رسالة، ونبرة تخويف من إغلاق حساب. عند الشك افتح الموقع الرسمي بنفسك بدل الضغط على الرابط.",
+      "title": "علامات تستدعي الشك"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

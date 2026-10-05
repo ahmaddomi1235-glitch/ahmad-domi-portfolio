@@ -1,0 +1,116 @@
+{
+  "id": "dns-and-dhcp",
+  "type": "Comparison",
+  "title_ar": "خدمتا DNS وDHCP: تحويل الأسماء إلى عناوين وتوزيع إعدادات الشبكة تلقائيًا",
+  "title_en": "DNS and DHCP",
+  "slug": "dns-and-dhcp",
+  "summary": "DNS يحوّل اسم الموقع الذي يتذكره الإنسان إلى عنوان IP عبر محلل تكراري وخوادم الجذر وTLD والخادم الموثوق مع ذاكرة مؤقتة، وأي خلل فيه يجعل الموقع غير متاح حتى لو عمل خادم الويب. وDHCP يوزع IP والقناع والبوابة وDNS تلقائيًا ويقلل الخطأ اليدوي، لكن خادم DHCP غير موثوق قد يرسل إعدادات خاطئة.",
+  "unit": "cyber-security",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «الأنظمة المتصلة بالشبكة والبنية التحتية» ضمن وحدة الأمن السيبراني (أحمد دومي)",
+      "ref": "15. خدمات البنية التحتية للشبكة — DNS وDHCP"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "ip-addressing-ipv4-ipv6-nat",
+    "remote-access-and-network-services",
+    "network-management-tools"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY: concepts only; the source's report brief, template paragraph and full-mark model answer are not used",
+  "sourceIds": [
+    "src-069"
+  ],
+  "order": 47,
+  "shortAnswer": "**DNS** يسهّل استخدام الإنترنت لأنه يحول الاسم الذي يتذكره الإنسان إلى عنوان IP يستخدمه الجهاز. عندما تكتب اسم موقع يرسل الجهاز الاستعلام إلى **محلل تكراري**، وقد يسأل المحلل **خادم الجذر** ثم **خادم النطاق الأعلى TLD** (مثل org وjp) ثم **الخادم الموثوق** باسم النطاق حتى يحصل على العنوان ويعيده للمستخدم؛ وإن كانت النتيجة محفوظة في **الذاكرة المؤقتة** أعادها بسرعة.",
+  "whyBtec": "عند شرح DHCP ابدأ بوظيفته ثم الخطر ثم إجراء الحماية (تقييد الخوادم الموثوقة ومراقبة الشبكة).",
+  "terminology": [
+    {
+      "ar": "نظام أسماء النطاقات",
+      "en": "DNS"
+    },
+    {
+      "ar": "بروتوكول التكوين الديناميكي للمضيف",
+      "en": "DHCP"
+    },
+    {
+      "ar": "محلل تكراري",
+      "en": "Recursive Resolver"
+    },
+    {
+      "ar": "ذاكرة مؤقتة",
+      "en": "Cache"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو DNS وكيف يعمل؟",
+    "ما هو DHCP؟",
+    "DNS DHCP explained BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شرح مفصّل"
+    },
+    {
+      "t": "p",
+      "text": "وأي خلل في DNS قد يجعل الموقع يبدو غير متاح رغم أن خادم الويب يعمل. و**DHCP** يوزع عنوان IP وقناع الشبكة والبوابة وDNS تلقائيًا بدل أن يكتب المدير كل قيمة يدويًا، فيقلل الأخطاء ويسهل إضافة الأجهزة، لكنه يتطلب حماية لأن خادم DHCP غير موثوق قد يرسل بوابة أو DNS خاطئًا للأجهزة."
+    },
+    {
+      "t": "h2",
+      "text": "كيف يعمل DNS؟"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "تكتب اسم الموقع فيرسل جهازك الاستعلام إلى المحلل التكراري.",
+        "قد يسأل المحلل خادم الجذر، فيدله على خادم النطاق الأعلى (TLD).",
+        "خادم TLD يدل على الخادم الموثوق للنطاق المطلوب.",
+        "يعود العنوان المطلوب إلى المستخدم، وتُحفظ النتيجة في الذاكرة المؤقتة للسرعة."
+      ]
+    },
+    {
+      "t": "table",
+      "head": [
+        "",
+        "DNS",
+        "DHCP"
+      ],
+      "rows": [
+        [
+          "الوظيفة",
+          "تحويل الاسم إلى عنوان IP",
+          "توزيع IP والقناع والبوابة وDNS تلقائيًا"
+        ],
+        [
+          "الفائدة",
+          "سهولة الاستخدام بالأسماء",
+          "تقليل الأخطاء اليدوية وسهولة إضافة الأجهزة"
+        ],
+        [
+          "الخطر",
+          "خلل يجعل الموقع يبدو غير متاح",
+          "خادم غير موثوق قد يرسل بوابة أو DNS خاطئًا"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وانظر [[ip-addressing-ipv4-ipv6-nat|عنونة IP]] و[[remote-access-and-network-services|الوصول عن بعد وخدمات الشبكة]] و[[network-management-tools|أدوات الإدارة]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

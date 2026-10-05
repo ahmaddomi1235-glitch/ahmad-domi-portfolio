@@ -1,0 +1,102 @@
+{
+  "id": "ide-vs-jupyter-notebook",
+  "type": "Comparison",
+  "title_ar": "بيئة التطوير IDE أم Jupyter Notebook؟ ومتى نستخدم Markdown؟",
+  "title_en": "IDE vs Jupyter Notebook",
+  "slug": "ide-vs-jupyter-notebook",
+  "summary": "IDE مثل PyCharm وVS Code يناسب المشاريع الكبيرة وتصحيح الأخطاء وبناء التطبيقات الحقيقية، وJupyter Notebook يناسب التجريب والتحليل خطوة بخطوة ودمج الشرح والكود والرسوم. ويفيد Markdown في شرح ما تفعله بين خلايا الكود.",
+  "unit": "artificial-intelligence",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "ملاحظات تعلّم الآلة وأدوات الذكاء الاصطناعي (أحمد دومي)",
+      "ref": "اختيار بيئة العمل؛ Jupyter وMarkdown"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "ai-tools-and-frameworks",
+    "ide-and-maintainability"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-031",
+    "src-039"
+  ],
+  "order": 37,
+  "shortAnswer": "عند برمجة الذكاء الاصطناعي نحتاج مكانًا نكتب فيه الكود ونشغّله ونتابع النتائج. **استخدم IDE** (PyCharm أو VS Code) حين يكون المشروع كبيرًا وفيه ملفات كثيرة، وحين تريد تصحيح أخطاء قويًا (Debugger) وإدارة بيئات بايثون، وحين تبني تطبيقًا حقيقيًا (API أو واجهة أو مشروعًا كاملًا). **استخدم Jupyter Notebook** حين تريد تجربة وتحليلًا خطوة بخطوة (خاصة في تحليل البيانات)، ودمج شرح وكود ورسوم في ملف واحد، وللدراسة وعرض التجارب.",
+  "whyBtec": "المعيار السريع: هل تحتاج تنظيم مشروع كبير؟ IDE. هل تستكشف البيانات سريعًا وترسم؟ Notebook.",
+  "terminology": [
+    {
+      "ar": "دفتر جوبيتر",
+      "en": "Jupyter Notebook"
+    },
+    {
+      "ar": "ماركداون",
+      "en": "Markdown"
+    },
+    {
+      "ar": "خلية",
+      "en": "Cell"
+    },
+    {
+      "ar": "بيئة تطوير متكاملة",
+      "en": "IDE"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين IDE وJupyter Notebook؟",
+    "ما هو Markdown في Jupyter؟",
+    "IDE vs Jupyter Notebook BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "",
+        "IDE (PyCharm / VS Code)",
+        "Jupyter Notebook"
+      ],
+      "rows": [
+        [
+          "مناسب لـ",
+          "مشاريع كبيرة، تطبيقات حقيقية، تصحيح أخطاء قوي",
+          "تجربة وتحليل خطوة بخطوة، عرض النتائج"
+        ],
+        [
+          "المزايا",
+          "تنظيم أفضل لملفات كثيرة، Debugger، إدارة بيئات بايثون",
+          "شرح + كود + رسوم في ملف واحد، سهل للدراسة"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "Markdown داخل الدفتر"
+    },
+    {
+      "t": "p",
+      "text": "الدفتر ملف تفاعلي من خلايا (Cells)، كل خلية كود أو شرح. وMarkdown أسلوب بسيط لتنسيق النص (عناوين، نقاط، روابط، صور) تشرح به ما تفعله بين خلايا الكود ليفهم أي شخص الملف. نصائح التنظيم: ابدأ بخلايا Markdown (هدف المشروع، وصف البيانات، خطة العمل)، وقسّم الكود لمراحل (تحميل ← تنظيف ← تحليل ← تدريب ← تقييم)، واكتب نتائجك تحت الرسوم مباشرة، وصدّر الدفتر HTML أو PDF للمشاركة."
+    },
+    {
+      "t": "p",
+      "text": "وإن كان جهازك ضعيفًا فجرّب أخف بيئة تعمل بها تدريجيًا. وللأدوات الأخرى: [[ai-tools-and-frameworks|أدوات الذكاء الاصطناعي]]، ولبيئات التطوير عمومًا [[ide-and-maintainability|بيئات التطوير والصيانة]]."
+    },
+    {
+      "t": "p",
+      "text": "وليس عليك اختيار واحدة دائمًا: يبدأ كثيرون بدفتر لاستكشاف البيانات ثم ينقلون الكود الناضج إلى مشروع في IDE."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

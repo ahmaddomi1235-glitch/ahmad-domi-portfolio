@@ -1,0 +1,123 @@
+{
+  "id": "classification-vs-regression",
+  "type": "Comparison",
+  "title_ar": "التصنيف والانحدار: كيف أعرف نوع المهمة؟",
+  "title_en": "Classification vs Regression",
+  "slug": "classification-vs-regression",
+  "summary": "إذا كانت المخرجات اسمًا أو فئة (نعم/لا، قطة/كلب، سبام/ليس سبام) فهي مهمة تصنيف، وإذا كانت رقمًا مستمرًا (سعر، طول، حرارة، علامة) فهي انحدار. وقد سمّي انحدارًا لأن هدفه توقع قيمة رقمية لا فئة.",
+  "unit": "artificial-intelligence",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "ملاحظات تعلّم الآلة وأدوات الذكاء الاصطناعي (أحمد دومي)",
+      "ref": "التصنيف والانحدار"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "supervised-vs-unsupervised-learning",
+    "logistic-regression",
+    "linear-regression-mse"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-086",
+    "src-008",
+    "src-026"
+  ],
+  "order": 22,
+  "shortAnswer": "في التعلم تحت الإشراف نوعان من المشكلات: **التصنيف (Classification)** حيث الناتج فئة أو اسم مثل «سبام/ليس سبام» أو «مريض/سليم» أو نوع زهرة، و**الانحدار (Regression)** حيث الناتج رقم مستمر مثل سعر 250000 أو درجة حرارة 32.5 أو علامة 88. لاختيار نوع المهمة انظر إلى شكل المخرجات: فئة أم رقم؟",
+  "whyBtec": "اختيار نوع المهمة يحدد الخوارزميات والمقاييس: الدقة للتصنيف، وخطأ مثل MSE للانحدار.",
+  "terminology": [
+    {
+      "ar": "تصنيف",
+      "en": "Classification"
+    },
+    {
+      "ar": "انحدار",
+      "en": "Regression"
+    },
+    {
+      "ar": "فئة",
+      "en": "Class/Category"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين التصنيف والانحدار؟",
+    "classification vs regression BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "",
+        "التصنيف",
+        "الانحدار"
+      ],
+      "rows": [
+        [
+          "المخرجات",
+          "فئة أو اسم",
+          "رقم مستمر"
+        ],
+        [
+          "أمثلة",
+          "بريد مزعج/سليم، ناجح/راسب، نوع زهرة",
+          "سعر بيت، حرارة، علامة"
+        ],
+        [
+          "نماذج في الموقع",
+          "[[logistic-regression|اللوجستي]]، [[svm-classifier|SVM]]، [[decision-trees|أشجار القرار]]",
+          "[[linear-regression-mse|الانحدار الخطي]]"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "تنبيه شائع"
+    },
+    {
+      "t": "p",
+      "text": "الانحدار اللوجستي اسمه «انحدار» لكنه يُستخدم للتصنيف: يتوقع احتمالًا بين 0 و1 ثم يحوّله إلى قرار بعتبة، كما في صفحته. فالاسم لا يحدد نوع المهمة، بل المخرجات."
+    },
+    {
+      "t": "p",
+      "text": "وضع هذه المهمة ضمن [[supervised-vs-unsupervised-learning|التعلم تحت الإشراف]]، وتقسيم البيانات في [[train-validation-test-sets|التدريب والاختبار]]."
+    },
+    {
+      "t": "h2",
+      "text": "اختبار سريع"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "توقع إن كان العميل سيشتري (نعم/لا): تصنيف.",
+        "توقع قيمة فاتورة العميل القادمة: انحدار.",
+        "توقع نوع زهرة من قياساتها: تصنيف.",
+        "توقع درجة حرارة الغد: انحدار."
+      ]
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "انظر إلى المخرجات لا إلى اسم الخوارزمية: فئة أم رقم؟",
+      "title": "قاعدة"
+    },
+    {
+      "t": "p",
+      "text": "وهذا الفرق يحدد أيضًا طريقة التقييم: دقة التصنيف أو خطأ الانحدار. وإن كانت المخرجات أرقامًا لكنها تمثل فئات (1 للنجاح و0 للفشل) فهي تصنيف رغم أنها أرقام؛ المعيار هو معنى المخرجات لا شكل الرمز."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

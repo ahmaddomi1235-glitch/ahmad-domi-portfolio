@@ -1,0 +1,108 @@
+{
+  "id": "report-consistency-and-repetition",
+  "type": "Comparison",
+  "title_ar": "تجنّب التناقض والتكرار وحافظ على ثبات الموضوع في التقرير",
+  "title_en": "Consistency and Repetition in Reports",
+  "slug": "report-consistency-and-repetition",
+  "summary": "التناقض يحدث حين تقدم فكرتين لا تجتمعان دون تفسير، فإذا تغيّر حكمك فاشرح السبب وتجنب الكلمات المطلقة. والتكرار يطيل التقرير دون أن يعمقه، فإن تكررت النتيجة فغيّر سببها وزاوية تحليلها. وثبات الموضوع أن تغيّر السؤال لا الموضوع.",
+  "unit": "assessment",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "منهجية كتابة تقرير BTEC — إعداد أحمد دومي (مبادئ عامة فقط)",
+      "ref": "التناقض؛ التكرار؛ ثبات الموضوع"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "linking-paragraphs",
+    "report-formatting-and-emphasis",
+    "evaluate-level-d-writing"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "sourceIds": [
+    "src-004"
+  ],
+  "order": 9,
+  "shortAnswer": "**التناقض:** أن تقدم فكرتين لا يمكن الجمع بينهما دون تفسير؛ فإذا تغير حكمك فوضّح السبب الذي غيّره، وتجنب الكلمات المطلقة («دائمًا»، «مستحيل»، «حماية كاملة»، «الأفضل في جميع الحالات»). **التكرار:** يجعل التقرير أطول دون أن يجعله أعمق، وليس فقط إعادة الجملة نفسها بل قد تغيّر الكلمات وتعيد الفكرة نفسها؛ فإن تكررت النتيجة غيّر سببها وزاوية تحليلها.",
+  "whyBtec": "قبل التسليم اقرأ تقريرك بحثًا عن ثلاثة أشياء: جملتين متعارضتين، ونتيجة مكررة، وانتقال مفاجئ إلى موضوع جديد.",
+  "terminology": [
+    {
+      "ar": "تناقض",
+      "en": "Contradiction"
+    },
+    {
+      "ar": "تكرار",
+      "en": "Repetition"
+    },
+    {
+      "ar": "ثبات الموضوع",
+      "en": "Topic Consistency"
+    }
+  ],
+  "questionsAnswered": [
+    "كيف أتجنب التكرار والتناقض في التقرير؟",
+    "report consistency repetition BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شرح مفصّل"
+    },
+    {
+      "t": "p",
+      "text": "**ثبات الموضوع:** لا يعني استخدام الكلمات نفسها طوال التقرير، بل أن تبقى مراحل التفكير مرتبطة بالفكرة الأساسية، فتغيّر **السؤال** الذي تسأله عن الموضوع (P: ما هو؟ M: ماذا ينتج؟ D: أيهما أنسب؟)."
+    },
+    {
+      "t": "table",
+      "head": [
+        "المشكلة",
+        "الخطأ",
+        "الأصح"
+      ],
+      "rows": [
+        [
+          "تناقض",
+          "«هذا الحل يوفر حماية كاملة» ثم «هذا الحل لا يوفر حماية كافية»",
+          "«هذا الحل لا يمنع الخطأ نفسه، لكنه يقلل احتمال استخدام نتائجه» مع ذكر القيد"
+        ],
+        [
+          "تكرار",
+          "«الحل أ يوفر الوقت. الحل ب يوفر الوقت. الحل ج يوفر الوقت»",
+          "«أ يقلل التنقل، وب يسرّع نقل المعلومات، وج يختصر الطلبات»: لكل واحد سبب مختلف"
+        ],
+        [
+          "تغيير الموضوع",
+          "الانتقال في D إلى فكرة لم تُطرح في P وM",
+          "البقاء على الفكرة الأساسية مع تغيير مستوى السؤال"
+        ]
+      ]
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "إذا تكررت النتيجة، غيّر سببها وزاوية تحليلها.",
+      "title": "قاعدة"
+    },
+    {
+      "t": "p",
+      "text": "وهذه القواعد تعمل طوال التقرير: [[linking-paragraphs|ربط الفقرات]] و[[report-formatting-and-emphasis|التنسيق والتمييز]] و[[evaluate-level-d-writing|التقييم]]."
+    },
+    {
+      "t": "p",
+      "text": "ولاختبار سريع: ضع خطًا تحت كل حكم في تقريرك وتأكد أنه يتفق مع حكمك الأخير، ثم ضع دائرة حول كل نتيجة مكررة وغيّر زاوية أحدها."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

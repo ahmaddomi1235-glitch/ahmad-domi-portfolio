@@ -1,0 +1,122 @@
+{
+  "id": "threat-analysis-method",
+  "type": "Comparison",
+  "title_ar": "كيف تحلل تهديدًا سيبرانيًا في تقرير: من التهديد إلى الثغرة إلى الأثر ثم الحكم",
+  "title_en": "Cyber Threat Analysis Method",
+  "slug": "threat-analysis-method",
+  "summary": "طريقة الكتابة الجيدة في الأمن السيبراني ليست تعريفًا ثم انتهاء، بل: حدّد التهديد، اشرح كيف يحدث، اربطه بثغرة في المؤسسة، وضّح ماذا يحدث لو نجح، قيّم حجم التأثير، ثم برّر حكمك.",
+  "unit": "assessment",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "منهجية كتابة تقرير BTEC — إعداد أحمد دومي (مبادئ عامة فقط)",
+      "ref": "فقرة الواجب — أسلوب التحليل (الطريقة فقط)"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "internal-vs-external-threats",
+    "system-vulnerability-types",
+    "cyber-attack-impact",
+    "defence-in-depth",
+    "evaluate-level-d-writing",
+    "report-writing-principles"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY: the method only; the source's worked example for a named assignment scenario is withheld",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 11,
+  "shortAnswer": "تقترح مادة أحمد في الأمن السيبراني أسلوبًا من ست خطوات لأي تهديد: **(1) حدّد التهديد** → **(2) اشرح كيف يحدث** → **(3) اربطه بثغرة في المؤسسة** → **(4) وضّح ماذا سيحدث لو نجح** → **(5) قيّم حجم التأثير** → **(6) برّر حكمك**. والفكرة: لا تخبر القارئ فقط ما هو التهديد، بل ماذا يعني لهذه المؤسسة تحديدًا، ثم أعطِ حكمك وفسّر لماذا.",
+  "whyBtec": "هذه الصفحة عن **الطريقة** لا عن إجابة جاهزة؛ السيناريو والمؤسسة والثغرة تأتي من مهمتك أنت.",
+  "terminology": [
+    {
+      "ar": "تحليل التهديدات",
+      "en": "Threat Analysis"
+    },
+    {
+      "ar": "تقييم الأثر",
+      "en": "Impact Assessment"
+    }
+  ],
+  "questionsAnswered": [
+    "كيف أكتب تحليل تهديد في تقرير الأمن السيبراني؟",
+    "cyber threat analysis writing method BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شرح مفصّل"
+    },
+    {
+      "t": "p",
+      "text": "وكلما تعلمت جزءًا جديدًا من المادة (ثغرة جديدة، وسيلة حماية) أضفه إلى الطريقة نفسها، فتصبح إجابتك: شرح + تطبيق + أثر + تقييم مبرر بدل مجموعة تعريفات."
+    },
+    {
+      "t": "table",
+      "head": [
+        "الخطوة",
+        "السؤال",
+        "أين تجد المحتوى في الموقع؟"
+      ],
+      "rows": [
+        [
+          "1. حدد التهديد",
+          "ما هو التهديد وما نوعه؟",
+          "[[internal-vs-external-threats|داخلي أم خارجي]]، [[malware-types|البرمجيات الخبيثة]]، [[phishing|التصيّد]]"
+        ],
+        [
+          "2. كيف يحدث؟",
+          "ما آلية الهجوم؟",
+          "صفحة التهديد نفسه"
+        ],
+        [
+          "3. اربطه بثغرة",
+          "أين ضعف المؤسسة؟",
+          "[[system-vulnerability-types|أنواع ثغرات النظام]]"
+        ],
+        [
+          "4. ماذا لو نجح؟",
+          "ما الذي سيحدث؟",
+          "[[what-attackers-can-do|ماذا يفعل المهاجم]]"
+        ],
+        [
+          "5. قيّم التأثير",
+          "ما حجمه على هذه المؤسسة؟",
+          "[[cyber-attack-impact|أثر الهجمات]]"
+        ],
+        [
+          "6. برّر الحكم",
+          "لماذا هذا التقييم؟",
+          "[[evaluate-level-d-writing|كتابة التقييم]]"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "ثم الحماية"
+    },
+    {
+      "t": "p",
+      "text": "بعد التحليل تختار الوسائل ([[defence-in-depth|الحماية متعددة الطبقات]]) وتقارن بينها وتوصي ([[evaluate-level-d-writing|مستوى التقييم]]). وأسلوب الكتابة العام في [[report-writing-principles|مبادئ كتابة التقرير]]."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "كلما تعلمت ثغرة أو وسيلة حماية جديدة أضفها إلى الطريقة نفسها، فتصبح إجابتك شرحًا وتطبيقًا وأثرًا وتقييمًا مبررًا لا مجموعة تعريفات.",
+      "title": "كيف تستعملها؟"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

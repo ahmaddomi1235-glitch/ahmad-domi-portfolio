@@ -1,0 +1,106 @@
+{
+  "id": "social-engineering",
+  "type": "Concept",
+  "title_ar": "الهندسة الاجتماعية: خداع الإنسان بدل اختراق الجهاز",
+  "title_en": "Social Engineering",
+  "slug": "social-engineering",
+  "summary": "الهندسة الاجتماعية هي خداع الأشخاص للحصول على معلومات أو صلاحيات لا يحق للمهاجم الحصول عليها، مستغلًا الثقة أو الخوف أو قلة الخبرة، دون الحاجة إلى اختراق تقني.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "تهديدات الهندسة الاجتماعية"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "phishing",
+    "insider-threats",
+    "authentication-methods",
+    "hacker-types"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 13,
+  "shortAnswer": "الهندسة الاجتماعية (Social Engineering) هجوم يتجه إلى الإنسان لا إلى الجهاز: يتواصل المهاجم مع الضحية ويقنعها بإعطائه معلومات حساسة مستغلًا الثقة أو الخوف أو قلة الخبرة. مثال: شخص يتصل بموظف ويدّعي أنه من الدعم الفني ويطلب معلومات «لحل مشكلة».",
+  "whyBtec": "هذا الهجوم يُظهر أن أفضل حماية تقنية قد تفشل إن كان الموظف هو الثغرة، وهي نقطة مهمة في تحليل أي سيناريو.",
+  "terminology": [
+    {
+      "ar": "الهندسة الاجتماعية",
+      "en": "Social Engineering"
+    },
+    {
+      "ar": "انتحال صفة",
+      "en": "Impersonation"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي الهندسة الاجتماعية؟",
+    "أمثلة على الهندسة الاجتماعية",
+    "social engineering attack BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "كيف تعمل؟"
+    },
+    {
+      "t": "p",
+      "text": "يستغل المهاجم أن البشر يميلون إلى مساعدة من يبدو موثوقًا أو مستعجلًا. إن صدّقه الموظف وأعطاه المعلومات حصل على ما يريد دون أي اختراق تقني."
+    },
+    {
+      "t": "ul",
+      "items": [
+        "اتصال من «الدعم الفني» يطلب كلمة مرور.",
+        "رسالة من «البنك» تطلب تأكيد الحساب (انظر [[phishing|التصيّد الاحتيالي]]).",
+        "استغلال الخوف أو الاستعجال لدفع الضحية إلى التصرف بلا تفكير."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "كيف تُقلَّل مخاطرها؟"
+    },
+    {
+      "t": "p",
+      "text": "بتدريب الموظفين، ووضع إجراء ثابت للتحقق من هوية من يطلب معلومات حساسة، وعدم الاكتفاء بكلمة المرور ([[authentication-methods|طرق المصادقة]]). وهي مثال على أن التهديد قد يبدأ من [[insider-threats|نقص التدريب]]."
+    },
+    {
+      "t": "p",
+      "text": "لأنواع من يقف وراء هذه الهجمات انظر [[hacker-types|أنواع الهاكرز]]."
+    },
+    {
+      "t": "h2",
+      "text": "الدرس للمؤسسة"
+    },
+    {
+      "t": "p",
+      "text": "لأن الهدف هو الإنسان، فالحل الأقوى بشري وإجرائي: تدريب مستمر، وقاعدة بسيطة تقول إن أي طلب بيانات حساسة يُتحقق منه من جهة ثانية قبل تنفيذه، وثقافة تسمح للموظف بأن يقول «سأتأكد أولًا» دون حرج."
+    },
+    {
+      "t": "p",
+      "text": "ولاحظ أن هذه الهجمات لا تظهر في أي سجل تقني للاختراق، فهي تُكتشف غالبًا بعد وقوعها."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

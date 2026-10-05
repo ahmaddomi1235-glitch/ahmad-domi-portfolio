@@ -1,0 +1,118 @@
+{
+  "id": "data-validation-spreadsheets",
+  "type": "Concept",
+  "title_ar": "التحقق من صحة البيانات في جداول البيانات: قوائم الاختيار ورسائل الخطأ",
+  "title_en": "Data Validation in Spreadsheets",
+  "slug": "data-validation-spreadsheets",
+  "summary": "قواعد التحقق من صحة البيانات تمنع إدخال قيم لا تتوافق مع قواعد محددة (نوع أو نطاق أو قائمة اختيارات) مع رسالة خطأ توضح ما يجب إدخاله. لا تثبت أن القيمة صحيحة في الواقع، لكنها تضمن أنها ضمن المسموح.",
+  "unit": "data-modelling",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "نمذجة البيانات وجداول البيانات: إنشاء لوحة معلومات (أحمد دومي)",
+      "ref": "التحقق من صحة البيانات"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "data-reliability-checks",
+    "data-cleaning-steps",
+    "if-and-or-not-functions"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-042"
+  ],
+  "order": 23,
+  "shortAnswer": "التحقق من صحة البيانات (Data Validation) يمنع إدخال قيم لا تتوافق مع قواعد محددة. وهو لا يثبت أن القيمة صحيحة في الواقع، لكنه يضمن أنها ضمن النوع أو النطاق المسموح. ويمكن تطبيقه على تاريخ أو رقم أو قائمة اختيارات أو عمود كامل، مع رسالة خطأ تشرح للمستخدم ما الذي يجب إدخاله.",
+  "whyBtec": "قائمة اختيار بدل النص الحر تحمي التحليل من الاختلافات التي تفسد العدّ والمقارنة.",
+  "terminology": [
+    {
+      "ar": "التحقق من الصحة",
+      "en": "Data Validation"
+    },
+    {
+      "ar": "قائمة منسدلة",
+      "en": "Drop-down List"
+    },
+    {
+      "ar": "رسالة خطأ",
+      "en": "Error Message"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو Data Validation؟",
+    "كيف أمنع إدخال قيم خاطئة في Excel؟",
+    "data validation spreadsheet BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "كيف يعمل؟"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "تحدد القاعدة: رقم ضمن نطاق، تاريخ، أو قائمة اختيارات.",
+        "تُطبّق على خلية أو عمود كامل.",
+        "عند إدخال قيمة مخالفة يظهر خطأ برسالة توضح المطلوب."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "مثال"
+    },
+    {
+      "t": "p",
+      "text": "عمود «طريقة التسليم» يجب أن يحتوي فقط «توصيل» أو «استلام»، فنستخدم قائمة تحقق. هذا يمنع اختلافات مثل «تم التوصيل» و«توصيل للمنزل» التي قد تفسد العدّ والتحليل لو ترك المستخدم يكتب نصًا حرًا."
+    },
+    {
+      "t": "table",
+      "head": [
+        "",
+        "ما يضمنه",
+        "ما لا يضمنه"
+      ],
+      "rows": [
+        [
+          "التحقق من الصحة",
+          "أن القيمة ضمن المسموح",
+          "أنها صحيحة فعلًا في الواقع"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وهو يخدم [[data-reliability-checks|اتساق البيانات]] ويُختبر بإدخال قيمة غير مسموحة والتأكد من ظهور رسالة الخطأ. وانظر [[data-cleaning-steps|تنظيف البيانات]] و[[if-and-or-not-functions|IF]]."
+    },
+    {
+      "t": "h2",
+      "text": "أنواع القواعد الشائعة"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "رقم ضمن نطاق (مثل أعمار بين 0 و120).",
+        "تاريخ ضمن فترة معينة.",
+        "قائمة محددة من الاختيارات.",
+        "نص بطول محدد."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "اختبر القاعدة بإدخال قيمة غير مسموحة والتأكد من ظهور رسالة الخطأ الواضحة، وتأكد أيضًا أنها لا تمنع قيمة صحيحة بالخطأ."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

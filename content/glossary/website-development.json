@@ -1,0 +1,315 @@
+{
+  "$defaults": {
+    "type": "GlossaryTerm",
+    "unit": "website-development",
+    "learningAim": null,
+    "criterion": null,
+    "concepts": [],
+    "questions": [],
+    "sourceType": "ahmad-booklet",
+    "sourceReferences": [
+      {
+        "kind": "pdf",
+        "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+      }
+    ],
+    "youtubeId": null,
+    "author": "ahmad-domi",
+    "lastReviewed": "2026-10-04",
+    "visibility": "PUBLIC",
+    "related": [],
+    "officialSource": null,
+    "status": "published",
+    "reviewState": "definitions paraphrased from the author's own material; pending author review"
+  },
+  "items": [
+    {
+      "id": "term-hypertext",
+      "term_ar": "النص التشعبي",
+      "term_en": "Hypertext",
+      "conceptId": "website-types-by-purpose",
+      "definition_ar": "نص يحتوي روابط تقود إلى محتوى آخر ذي صلة داخل الموقع أو خارجه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-responsive",
+      "term_ar": "التصميم المتجاوب",
+      "term_en": "Responsive Design",
+      "conceptId": "website-basic-requirements",
+      "definition_ar": "تصميم يغيّر ترتيب العناصر بحسب حجم الشاشة ليعمل جيدًا على كل الأجهزة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-navigation",
+      "term_ar": "التنقل",
+      "term_en": "Navigation",
+      "conceptId": "website-basic-requirements",
+      "definition_ar": "قدرة المستخدم على معرفة موقعه في الموقع والوصول للمعلومة بسرعة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-personalization",
+      "term_ar": "التخصيص",
+      "term_en": "Personalization",
+      "conceptId": "website-basic-requirements",
+      "definition_ar": "تعديل تجربة الموقع بحسب المستخدم كاللغة والمدينة والتفضيلات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-white-space",
+      "term_ar": "المساحة البيضاء",
+      "term_en": "White Space",
+      "conceptId": "website-design-principles",
+      "definition_ar": "فراغات مقصودة في الصفحة تجعل القراءة أسهل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-typography",
+      "term_ar": "الطباعة والخطوط",
+      "term_en": "Typography",
+      "conceptId": "website-design-principles",
+      "definition_ar": "اختيار الخطوط وأحجامها بما يخدم القراءة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-alt-text",
+      "term_ar": "النص البديل",
+      "term_en": "Alt Text",
+      "conceptId": "website-design-principles",
+      "definition_ar": "وصف نصي للصورة يقرؤه قارئ الشاشة ويظهر عند تعذر تحميلها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-golden-ratio",
+      "term_ar": "النسبة الذهبية",
+      "term_en": "Golden Ratio",
+      "conceptId": "creativity-in-web-design",
+      "definition_ar": "نسبة تقارب 1.62 تُستخدم لتقسيم المساحة بصورة مريحة للعين.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-seo",
+      "term_ar": "تحسين محركات البحث",
+      "term_en": "SEO",
+      "conceptId": "seo-basics",
+      "definition_ar": "أساليب تساعد الموقع على الظهور في نتائج البحث عند طلب موضوع مرتبط.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-crawling",
+      "term_ar": "الزحف",
+      "term_en": "Crawling",
+      "conceptId": "seo-basics",
+      "definition_ar": "زيارة برامج محركات البحث للصفحات وقراءة محتواها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-indexing",
+      "term_ar": "الفهرسة",
+      "term_en": "Indexing",
+      "conceptId": "seo-basics",
+      "definition_ar": "حفظ محركات البحث معلومات الصفحة لتظهر في النتائج لاحقًا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-keyword",
+      "term_ar": "كلمة مفتاحية",
+      "term_en": "Keyword",
+      "conceptId": "seo-basics",
+      "definition_ar": "كلمة أو عبارة يكتبها الناس فعلًا في البحث ويُستحسن ظهورها طبيعيًا في الصفحة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-meta-tags",
+      "term_ar": "وسوم وصفية",
+      "term_en": "Meta Tags",
+      "conceptId": "seo-basics",
+      "definition_ar": "معلومات داخل Head لا تظهر للزائر تساعد محركات البحث على فهم الصفحة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-server-side",
+      "term_ar": "برمجة جانب الخادم",
+      "term_en": "Server-Side Scripting",
+      "conceptId": "website-performance-factors",
+      "definition_ar": "أكواد تُنفَّذ على الخادم قبل إرسال الصفحة للمستخدم.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-client-side",
+      "term_ar": "برمجة جانب العميل",
+      "term_en": "Client-Side Scripting",
+      "conceptId": "website-performance-factors",
+      "definition_ar": "أكواد تُنفَّذ على جهاز المستخدم داخل المتصفح.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-bandwidth",
+      "term_ar": "النطاق الترددي",
+      "term_en": "Bandwidth",
+      "conceptId": "website-performance-factors",
+      "definition_ar": "كمية البيانات التي يمكن إرسالها في وقت واحد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-cache",
+      "term_ar": "الذاكرة المؤقتة",
+      "term_en": "Cache",
+      "conceptId": "website-performance-factors",
+      "definition_ar": "تخزين مؤقت يسرّع التحميل عند إعادة زيارة الموقع.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    },
+    {
+      "id": "term-browser-compat",
+      "term_ar": "توافق المتصفحات",
+      "term_en": "Browser Compatibility",
+      "conceptId": "website-performance-factors",
+      "definition_ar": "عمل الموقع بصورة متقاربة على متصفحات مختلفة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "فهم مبادئ تطوير المواقع الإلكترونية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-066"
+      ]
+    }
+  ]
+}

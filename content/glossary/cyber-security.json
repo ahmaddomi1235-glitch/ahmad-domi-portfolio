@@ -8,7 +8,11 @@
     "questions": [],
     "sourceType": "ahmad-booklet",
     "sourceReferences": [
-      { "kind": "pdf", "label": "دوسية تأسيس الأمن السيبراني — جيل 2009 (أحمد دومي)", "url": "/documents/teaching-materials/foundation-cybersecurity-ai-2009.pdf" }
+      {
+        "kind": "pdf",
+        "label": "دوسية تأسيس الأمن السيبراني — جيل 2009 (أحمد دومي)",
+        "url": "/documents/teaching-materials/foundation-cybersecurity-ai-2009.pdf"
+      }
     ],
     "youtubeId": null,
     "author": "ahmad-domi",
@@ -20,24 +24,1770 @@
     "reviewState": "definitions paraphrased from the author's booklet; pending author review"
   },
   "items": [
-    { "id": "term-threat", "term_ar": "التهديد", "term_en": "Threat", "conceptId": "threat-vulnerability-risk", "definition_ar": "أي عامل يمتلك القدرة على إحداث ضرر للبيانات أو الأجهزة أو الأنظمة، وقد يكون شخصًا أو برنامجًا خبيثًا أو كارثة طبيعية أو خطأً بشريًا أو انقطاعًا في التيار الكهربائي." },
-    { "id": "term-vulnerability", "term_ar": "الثغرة الأمنية", "term_en": "Vulnerability", "conceptId": "threat-vulnerability-risk", "definition_ar": "نقطة ضعف موجودة داخل النظام يمكن استغلالها للوصول إلى البيانات أو تنفيذ هجوم، مثل كلمة مرور ضعيفة أو برنامج غير محدَّث أو إعداد أمني خاطئ." },
-    { "id": "term-risk", "term_ar": "المخاطرة", "term_en": "Risk", "conceptId": "threat-vulnerability-risk", "definition_ar": "احتمال أن يستغل أحد التهديدات ثغرة موجودة وما يترتب على ذلك من خسائر؛ فهي تعتمد على وجود التهديد والثغرة معًا." },
-    { "id": "term-risk-assessment", "term_ar": "تقييم المخاطر", "term_en": "Risk Assessment", "conceptId": "threat-vulnerability-risk", "definition_ar": "عملية تبدأ بها المؤسسة لتحديد أولوياتها الأمنية، تجيب فيها عن أربعة أسئلة: ما الأصول المراد حمايتها؟ وما التهديدات التي قد تستهدفها؟ وما الثغرات الموجودة؟ وأي المخاطر يُعالَج أولًا؟" },
-    { "id": "term-asset", "term_ar": "الأصل", "term_en": "Asset", "conceptId": "why-data-is-the-target", "definition_ar": "كل ما تريد المؤسسة حمايته، وأهم أصولها الرقمية في العصر الحالي البيانات التي تحتفظ بها." },
-    { "id": "term-security-update", "term_ar": "التحديث الأمني", "term_en": "Security Update", "conceptId": "threat-vulnerability-risk", "definition_ar": "تحديث يعالج ثغرة معروفة في برنامج أو نظام. في هجوم WannaCry كان تحديث أمني متاحًا قبل الهجوم لكنه لم يُثبَّت على الأجهزة المصابة." },
-    { "id": "term-threat-actor", "term_ar": "جهة التهديد", "term_en": "Threat Actor", "conceptId": "hacker-types", "definition_ar": "الشخص أو الجهة التي تقف خلف التهديد، ويُصنَّف أصحابها بحسب الهدف والدافع إلى أنواع الهاكرز الستة." },
-    { "id": "term-white-hat", "term_ar": "القبعة البيضاء", "term_en": "White Hat Hacker", "conceptId": "hacker-types", "definition_ar": "الهاكر الأخلاقي الذي يعمل بتصريح رسمي لصالح مؤسسات لاكتشاف الثغرات قبل أن يستغلها المهاجمون، ويقدّم تقريرًا بنقاط الضعف وطرق معالجتها." },
-    { "id": "term-black-hat", "term_ar": "القبعة السوداء", "term_en": "Black Hat Hacker", "conceptId": "hacker-types", "definition_ar": "هاكر يستخدم مهاراته بصورة غير قانونية للوصول إلى الأنظمة أو سرقة البيانات أو ابتزاز الضحايا أو تحقيق مكاسب مالية." },
-    { "id": "term-grey-hat", "term_ar": "القبعة الرمادية", "term_en": "Grey Hat Hacker", "conceptId": "hacker-types", "definition_ar": "هاكر بين القبعة البيضاء والسوداء: قد يكتشف ثغرة دون تصريح ثم يبلّغ الشركة لاحقًا أو يطلب مكافأة مقابل الإفصاح، وقد تخالف طريقته القوانين." },
-    { "id": "term-script-kiddie", "term_ar": "المبتدئ", "term_en": "Script Kiddie", "conceptId": "hacker-types", "definition_ar": "شخص بلا خبرة تقنية كبيرة يعتمد على أدوات وبرامج جاهزة أنشأها آخرون دون فهم كامل لعملها، وقد يسبب أضرارًا حقيقية باستخدامها." },
-    { "id": "term-state-sponsored-hacker", "term_ar": "الهاكر المدعوم من دولة", "term_en": "State-Sponsored Hacker", "conceptId": "hacker-types", "definition_ar": "هاكر تدعمه حكومات أو جهات رسمية لتنفيذ عمليات تجسس أو جمع معلومات أو استهداف البنى التحتية لدول أخرى، وهجماته من أكثر الهجمات تعقيدًا." },
-    { "id": "term-hacktivist", "term_ar": "الهاكر الناشط", "term_en": "Hacktivist", "conceptId": "hacker-types", "definition_ar": "هاكر لا يكون هدفه المال، بل يستخدم الاختراق للتعبير عن موقف سياسي أو اجتماعي أو أيديولوجي." },
-    { "id": "term-ransomware", "term_ar": "برامج الفدية", "term_en": "Ransomware", "conceptId": "what-attackers-can-do", "definition_ar": "هجوم يشفّر فيه المهاجم ملفات الجهاز ويمنع صاحبها من الوصول إليها، ثم يطلب مبلغًا ماليًا مقابل مفتاح فك التشفير؛ ودفع الفدية لا يضمن استعادة البيانات." },
-    { "id": "term-malware", "term_ar": "البرمجيات الخبيثة", "term_en": "Malware", "conceptId": "what-attackers-can-do", "definition_ar": "برمجيات ضارة يعمل كثير منها بصمت لفترات طويلة لجمع البيانات أو مراقبة نشاط المستخدم دون إثارة الشكوك." },
-    { "id": "term-identity-impersonation", "term_ar": "انتحال الهوية", "term_en": "Identity Impersonation", "conceptId": "what-attackers-can-do", "definition_ar": "استخدام المهاجم للبريد أو حسابات التواصل أو بيانات الهوية لإرسال رسائل أو تنفيذ معاملات تبدو صادرة من المستخدم الحقيقي." },
-    { "id": "term-data-at-rest", "term_ar": "البيانات المخزَّنة", "term_en": "Data at Rest", "conceptId": "data-states", "definition_ar": "البيانات المحفوظة في مكان ما، مثل قواعد البيانات، وهي إحدى حالات البيانات الثلاث التي يجب حمايتها." },
-    { "id": "term-data-in-transit", "term_ar": "البيانات المنقولة", "term_en": "Data in Transit", "conceptId": "data-states", "definition_ar": "البيانات التي تنتقل من مكان إلى آخر عبر الشبكات، مثل انتقال صورة من جهازك عبر الإنترنت إلى الخادم." },
-    { "id": "term-data-in-processing", "term_ar": "البيانات قيد المعالجة", "term_en": "Data in Processing", "conceptId": "data-states", "definition_ar": "البيانات أثناء قيام النظام أو الخادم بمعالجتها، وتُسمّى أيضًا Data in Use، وهي من الحالات التي يجب حمايتها." }
+    {
+      "id": "term-threat",
+      "term_ar": "التهديد",
+      "term_en": "Threat",
+      "conceptId": "threat-vulnerability-risk",
+      "definition_ar": "أي عامل يمتلك القدرة على إحداث ضرر للبيانات أو الأجهزة أو الأنظمة، وقد يكون شخصًا أو برنامجًا خبيثًا أو كارثة طبيعية أو خطأً بشريًا أو انقطاعًا في التيار الكهربائي."
+    },
+    {
+      "id": "term-vulnerability",
+      "term_ar": "الثغرة الأمنية",
+      "term_en": "Vulnerability",
+      "conceptId": "threat-vulnerability-risk",
+      "definition_ar": "نقطة ضعف موجودة داخل النظام يمكن استغلالها للوصول إلى البيانات أو تنفيذ هجوم، مثل كلمة مرور ضعيفة أو برنامج غير محدَّث أو إعداد أمني خاطئ."
+    },
+    {
+      "id": "term-risk",
+      "term_ar": "المخاطرة",
+      "term_en": "Risk",
+      "conceptId": "threat-vulnerability-risk",
+      "definition_ar": "احتمال أن يستغل أحد التهديدات ثغرة موجودة وما يترتب على ذلك من خسائر؛ فهي تعتمد على وجود التهديد والثغرة معًا."
+    },
+    {
+      "id": "term-risk-assessment",
+      "term_ar": "تقييم المخاطر",
+      "term_en": "Risk Assessment",
+      "conceptId": "threat-vulnerability-risk",
+      "definition_ar": "عملية تبدأ بها المؤسسة لتحديد أولوياتها الأمنية، تجيب فيها عن أربعة أسئلة: ما الأصول المراد حمايتها؟ وما التهديدات التي قد تستهدفها؟ وما الثغرات الموجودة؟ وأي المخاطر يُعالَج أولًا؟"
+    },
+    {
+      "id": "term-asset",
+      "term_ar": "الأصل",
+      "term_en": "Asset",
+      "conceptId": "why-data-is-the-target",
+      "definition_ar": "كل ما تريد المؤسسة حمايته، وأهم أصولها الرقمية في العصر الحالي البيانات التي تحتفظ بها."
+    },
+    {
+      "id": "term-security-update",
+      "term_ar": "التحديث الأمني",
+      "term_en": "Security Update",
+      "conceptId": "threat-vulnerability-risk",
+      "definition_ar": "تحديث يعالج ثغرة معروفة في برنامج أو نظام. في هجوم WannaCry كان تحديث أمني متاحًا قبل الهجوم لكنه لم يُثبَّت على الأجهزة المصابة."
+    },
+    {
+      "id": "term-threat-actor",
+      "term_ar": "جهة التهديد",
+      "term_en": "Threat Actor",
+      "conceptId": "hacker-types",
+      "definition_ar": "الشخص أو الجهة التي تقف خلف التهديد، ويُصنَّف أصحابها بحسب الهدف والدافع إلى أنواع الهاكرز الستة."
+    },
+    {
+      "id": "term-white-hat",
+      "term_ar": "القبعة البيضاء",
+      "term_en": "White Hat Hacker",
+      "conceptId": "hacker-types",
+      "definition_ar": "الهاكر الأخلاقي الذي يعمل بتصريح رسمي لصالح مؤسسات لاكتشاف الثغرات قبل أن يستغلها المهاجمون، ويقدّم تقريرًا بنقاط الضعف وطرق معالجتها."
+    },
+    {
+      "id": "term-black-hat",
+      "term_ar": "القبعة السوداء",
+      "term_en": "Black Hat Hacker",
+      "conceptId": "hacker-types",
+      "definition_ar": "هاكر يستخدم مهاراته بصورة غير قانونية للوصول إلى الأنظمة أو سرقة البيانات أو ابتزاز الضحايا أو تحقيق مكاسب مالية."
+    },
+    {
+      "id": "term-grey-hat",
+      "term_ar": "القبعة الرمادية",
+      "term_en": "Grey Hat Hacker",
+      "conceptId": "hacker-types",
+      "definition_ar": "هاكر بين القبعة البيضاء والسوداء: قد يكتشف ثغرة دون تصريح ثم يبلّغ الشركة لاحقًا أو يطلب مكافأة مقابل الإفصاح، وقد تخالف طريقته القوانين."
+    },
+    {
+      "id": "term-script-kiddie",
+      "term_ar": "المبتدئ",
+      "term_en": "Script Kiddie",
+      "conceptId": "hacker-types",
+      "definition_ar": "شخص بلا خبرة تقنية كبيرة يعتمد على أدوات وبرامج جاهزة أنشأها آخرون دون فهم كامل لعملها، وقد يسبب أضرارًا حقيقية باستخدامها."
+    },
+    {
+      "id": "term-state-sponsored-hacker",
+      "term_ar": "الهاكر المدعوم من دولة",
+      "term_en": "State-Sponsored Hacker",
+      "conceptId": "hacker-types",
+      "definition_ar": "هاكر تدعمه حكومات أو جهات رسمية لتنفيذ عمليات تجسس أو جمع معلومات أو استهداف البنى التحتية لدول أخرى، وهجماته من أكثر الهجمات تعقيدًا."
+    },
+    {
+      "id": "term-hacktivist",
+      "term_ar": "الهاكر الناشط",
+      "term_en": "Hacktivist",
+      "conceptId": "hacker-types",
+      "definition_ar": "هاكر لا يكون هدفه المال، بل يستخدم الاختراق للتعبير عن موقف سياسي أو اجتماعي أو أيديولوجي."
+    },
+    {
+      "id": "term-ransomware",
+      "term_ar": "برامج الفدية",
+      "term_en": "Ransomware",
+      "conceptId": "what-attackers-can-do",
+      "definition_ar": "هجوم يشفّر فيه المهاجم ملفات الجهاز ويمنع صاحبها من الوصول إليها، ثم يطلب مبلغًا ماليًا مقابل مفتاح فك التشفير؛ ودفع الفدية لا يضمن استعادة البيانات."
+    },
+    {
+      "id": "term-malware",
+      "term_ar": "البرمجيات الخبيثة",
+      "term_en": "Malware",
+      "conceptId": "what-attackers-can-do",
+      "definition_ar": "برمجيات ضارة يعمل كثير منها بصمت لفترات طويلة لجمع البيانات أو مراقبة نشاط المستخدم دون إثارة الشكوك."
+    },
+    {
+      "id": "term-identity-impersonation",
+      "term_ar": "انتحال الهوية",
+      "term_en": "Identity Impersonation",
+      "conceptId": "what-attackers-can-do",
+      "definition_ar": "استخدام المهاجم للبريد أو حسابات التواصل أو بيانات الهوية لإرسال رسائل أو تنفيذ معاملات تبدو صادرة من المستخدم الحقيقي."
+    },
+    {
+      "id": "term-data-at-rest",
+      "term_ar": "البيانات المخزَّنة",
+      "term_en": "Data at Rest",
+      "conceptId": "data-states",
+      "definition_ar": "البيانات المحفوظة في مكان ما، مثل قواعد البيانات، وهي إحدى حالات البيانات الثلاث التي يجب حمايتها."
+    },
+    {
+      "id": "term-data-in-transit",
+      "term_ar": "البيانات المنقولة",
+      "term_en": "Data in Transit",
+      "conceptId": "data-states",
+      "definition_ar": "البيانات التي تنتقل من مكان إلى آخر عبر الشبكات، مثل انتقال صورة من جهازك عبر الإنترنت إلى الخادم."
+    },
+    {
+      "id": "term-data-in-processing",
+      "term_ar": "البيانات قيد المعالجة",
+      "term_en": "Data in Processing",
+      "conceptId": "data-states",
+      "definition_ar": "البيانات أثناء قيام النظام أو الخادم بمعالجتها، وتُسمّى أيضًا Data in Use، وهي من الحالات التي يجب حمايتها."
+    },
+    {
+      "id": "term-cyber-security",
+      "term_ar": "الأمن السيبراني",
+      "term_en": "Cyber Security",
+      "conceptId": "what-is-cyber-security",
+      "definition_ar": "حماية أجهزة وبرامج الحاسوب والهواتف والبيانات الموجودة عليها من التلف أو الكشف أو التعديل أو السرقة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-internal-threat",
+      "term_ar": "تهديد داخلي",
+      "term_en": "Internal Threat",
+      "conceptId": "insider-threats",
+      "definition_ar": "خطر يأتي من داخل المؤسسة، متعمدًا كان أو نتيجة خطأ أو إهمال أو نقص تدريب.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-external-threat",
+      "term_ar": "تهديد خارجي",
+      "term_en": "External Threat",
+      "conceptId": "external-threats",
+      "definition_ar": "خطر يأتي من خارج المؤسسة كالبرمجيات الخبيثة والاختراق والتصيّد وقطع الخدمة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-unauthorised-access",
+      "term_ar": "وصول غير مصرح به",
+      "term_en": "Unauthorised Access",
+      "conceptId": "insider-threats",
+      "definition_ar": "الوصول إلى نظام أو بيانات لا يُسمح لك بالوصول إليها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-spyware",
+      "term_ar": "برامج التجسس",
+      "term_en": "Spyware",
+      "conceptId": "malware-types",
+      "definition_ar": "برنامج يراقب ما يفعله المستخدم دون علمه وقد يسجل ما يكتبه ويرسله للمهاجم.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-adware",
+      "term_ar": "البرامج الدعائية",
+      "term_en": "Adware",
+      "conceptId": "malware-types",
+      "definition_ar": "برنامج يعرض إعلانات غير مرغوبة وقد يُثبَّت مع برنامج آخر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-virus",
+      "term_ar": "الفيروس",
+      "term_en": "Virus",
+      "conceptId": "malware-types",
+      "definition_ar": "برنامج ضار ينسخ نفسه وينتشر من جهاز إلى آخر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-rootkit",
+      "term_ar": "فيروس الجذر",
+      "term_en": "Rootkit",
+      "conceptId": "malware-types",
+      "definition_ar": "نوع من البرامج الضارة يختبئ داخل الجهاز وقد يتيح للمهاجم الوصول إليه عن بُعد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-trojan",
+      "term_ar": "حصان طروادة",
+      "term_en": "Trojan Horse",
+      "conceptId": "malware-types",
+      "definition_ar": "برنامج يبدو عاديًا أو مفيدًا لكنه في الحقيقة ضار.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-sabotage",
+      "term_ar": "التخريب",
+      "term_en": "Sabotage",
+      "conceptId": "external-threats",
+      "definition_ar": "اختراق يهدف إلى إحداث الضرر بتدمير البيانات أو الأنظمة أو تعطيل الخدمات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-dos",
+      "term_ar": "قطع الخدمة",
+      "term_en": "Denial of Service (DoS)",
+      "conceptId": "dos-ddos-attacks",
+      "definition_ar": "هجوم يغرق الخادم بطلبات كثيرة حتى يبطؤ أو يتوقف ولا يصل إليه المستخدمون الحقيقيون.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-ddos",
+      "term_ar": "قطع الخدمة الموزع",
+      "term_en": "Distributed DoS (DDoS)",
+      "conceptId": "dos-ddos-attacks",
+      "definition_ar": "هجوم قطع خدمة تأتي طلباته من عدد كبير من الأجهزة في الوقت نفسه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-phishing",
+      "term_ar": "التصيّد الاحتيالي",
+      "term_en": "Phishing",
+      "conceptId": "phishing",
+      "definition_ar": "رسالة أو صفحة مزيفة تنتحل جهة موثوقة لإقناع الضحية بتسليم بيانات الدخول.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-social-engineering",
+      "term_ar": "الهندسة الاجتماعية",
+      "term_en": "Social Engineering",
+      "conceptId": "social-engineering",
+      "definition_ar": "خداع الأشخاص للحصول على معلومات أو صلاحيات لا يحق للمهاجم الحصول عليها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-operational-loss",
+      "term_ar": "خسارة تشغيلية",
+      "term_en": "Operational Loss",
+      "conceptId": "cyber-attack-impact",
+      "definition_ar": "تأثر قدرة المؤسسة على العمل بصورة طبيعية بسبب هجوم.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-reputational-loss",
+      "term_ar": "خسارة السمعة",
+      "term_en": "Reputational Loss",
+      "conceptId": "cyber-attack-impact",
+      "definition_ar": "فقد ثقة العملاء بالمؤسسة بعد حادث أمني، وقد يستمر ذلك حتى بعد إصلاح الأنظمة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-ip",
+      "term_ar": "الملكية الفكرية",
+      "term_en": "Intellectual Property",
+      "conceptId": "cyber-attack-impact",
+      "definition_ar": "تصميمات وأسرار تجارية ومعلومات لها قيمة تملكها المؤسسة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-defence-in-depth",
+      "term_ar": "الحماية متعددة الطبقات",
+      "term_en": "Defence in Depth",
+      "conceptId": "defence-in-depth",
+      "definition_ar": "استخدام عدة وسائل حماية معًا بحيث إن تجاوز المهاجم طبقة وجد أخرى.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-least-privilege",
+      "term_ar": "أقل صلاحية",
+      "term_en": "Least Privilege",
+      "conceptId": "file-permissions-least-privilege",
+      "definition_ar": "إعطاء المستخدم أقل قدر من الصلاحيات التي يحتاجها لأداء عمله.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-permissions",
+      "term_ar": "أذونات",
+      "term_en": "Permissions",
+      "conceptId": "file-permissions-least-privilege",
+      "definition_ar": "قواعد تحدد من يستطيع الوصول إلى ملف أو مجلد وبأي مستوى.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-privileges",
+      "term_ar": "امتيازات",
+      "term_en": "Privileges",
+      "conceptId": "file-permissions-least-privilege",
+      "definition_ar": "ما يُسمح للمستخدم بفعله داخل النظام، كتثبيت برامج أو تغيير الإعدادات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-password-policy",
+      "term_ar": "سياسة كلمات المرور",
+      "term_en": "Password Policy",
+      "conceptId": "strong-passwords",
+      "definition_ar": "قواعد تفرضها المؤسسة على كلمات المرور كالطول والتنوع والتغيير.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-sql-injection",
+      "term_ar": "حقن SQL",
+      "term_en": "SQL Injection",
+      "conceptId": "software-vulnerabilities",
+      "definition_ar": "ثغرة يكتب فيها المهاجم أوامر قاعدة بيانات في حقل إدخال لينفذها موقع غير محمي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-zero-day",
+      "term_ar": "ثغرة يوم الصفر",
+      "term_en": "Zero-Day Vulnerability",
+      "conceptId": "software-vulnerabilities",
+      "definition_ar": "ثغرة اكتُشفت ولم يتوفر لها إصلاح أو تحديث بعد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-patch",
+      "term_ar": "تصحيح أمني",
+      "term_en": "Patch",
+      "conceptId": "software-updates-patching",
+      "definition_ar": "تحديث يصلح ثغرة أمنية في نظام أو برنامج.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-iot",
+      "term_ar": "إنترنت الأشياء",
+      "term_en": "Internet of Things (IoT)",
+      "conceptId": "emerging-technology-risks",
+      "definition_ar": "أجهزة يومية قادرة على الاتصال بالإنترنت وإرسال البيانات واستقبالها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-cloud",
+      "term_ar": "الحوسبة السحابية",
+      "term_en": "Cloud Computing",
+      "conceptId": "emerging-technology-risks",
+      "definition_ar": "تخزين البيانات وتشغيل الخدمات على أنظمة خارج المؤسسة يُوصَل إليها عبر الإنترنت.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-physical-security",
+      "term_ar": "الأمان المادي",
+      "term_en": "Physical Security",
+      "conceptId": "physical-security",
+      "definition_ar": "منع الأشخاص غير المصرح لهم من الوصول جسديًا إلى الأجهزة والمواقع.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-biometrics",
+      "term_ar": "القياسات الحيوية",
+      "term_en": "Biometrics",
+      "conceptId": "physical-security",
+      "definition_ar": "استخدام صفة شخصية كالبصمة أو الوجه لإثبات الهوية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-cctv",
+      "term_ar": "كاميرات المراقبة",
+      "term_en": "CCTV",
+      "conceptId": "physical-security",
+      "definition_ar": "كاميرات تراقب الأماكن وتسجل ما يحدث فيها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-backup",
+      "term_ar": "نسخ احتياطي",
+      "term_en": "Backup",
+      "conceptId": "backup-and-storage",
+      "definition_ar": "نسخة من البيانات تُستعمل لاستعادتها عند تعطل الجهاز أو فقدانها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-personal-data",
+      "term_ar": "بيانات شخصية",
+      "term_en": "Personal Data",
+      "conceptId": "data-protection-gdpr",
+      "definition_ar": "معلومات تخص شخصًا حقيقيًا يمكن التعرف إليه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-computer-misuse",
+      "term_ar": "إساءة استخدام الحاسوب",
+      "term_en": "Computer Misuse",
+      "conceptId": "computer-misuse",
+      "definition_ar": "أفعال يجرّمها القانون كالدخول غير المصرح إلى نظام أو تعديل بياناته أو تعطيله.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-fraud",
+      "term_ar": "الاحتيال",
+      "term_en": "Fraud",
+      "conceptId": "cyber-legal-responsibilities",
+      "definition_ar": "محاولة الحصول على مال أو خدمة أو منفعة عن طريق الخداع.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-antivirus",
+      "term_ar": "مكافحة الفيروسات",
+      "term_en": "Antivirus",
+      "conceptId": "antivirus-software",
+      "definition_ar": "برنامج يبحث عن الملفات الضارة ويتعامل معها قبل أن تسبب الضرر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-virus-signature",
+      "term_ar": "توقيع الفيروس",
+      "term_en": "Virus Signature",
+      "conceptId": "antivirus-software",
+      "definition_ar": "نمط مميز لفيروس معروف تقارن به برامج الحماية الملفات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-heuristics",
+      "term_ar": "الفحص السلوكي",
+      "term_en": "Heuristics",
+      "conceptId": "antivirus-software",
+      "definition_ar": "بحث عن أوامر أو سلوك مشبوه حتى لو لم يُعرف اسم الفيروس.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-quarantine",
+      "term_ar": "الحجر الصحي",
+      "term_en": "Quarantine",
+      "conceptId": "antivirus-software",
+      "definition_ar": "عزل ملف مشتبه به عن بقية النظام حتى لا يسبب ضررًا، دون حذفه فورًا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-firewall",
+      "term_ar": "جدار الحماية",
+      "term_en": "Firewall",
+      "conceptId": "firewalls",
+      "definition_ar": "برنامج أو جهاز يراقب البيانات الداخلة والخارجة من الشبكة ويقرر السماح أو المنع بحسب قواعد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-packet",
+      "term_ar": "حزمة",
+      "term_en": "Packet",
+      "conceptId": "firewalls",
+      "definition_ar": "جزء صغير من البيانات أثناء انتقالها عبر الشبكة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-nat",
+      "term_ar": "ترجمة عنوان الشبكة",
+      "term_en": "NAT",
+      "conceptId": "firewalls",
+      "definition_ar": "تقنية تخفي عناوين IP الداخلية وراء عنوان عام.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-authentication",
+      "term_ar": "المصادقة",
+      "term_en": "Authentication",
+      "conceptId": "authentication-methods",
+      "definition_ar": "التحقق من أن الشخص الذي يحاول الدخول هو فعلًا من يدّعي أنه هو.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-biometric-auth",
+      "term_ar": "المصادقة البيومترية",
+      "term_en": "Biometric Authentication",
+      "conceptId": "authentication-methods",
+      "definition_ar": "إثبات الهوية بصفة شخصية كالبصمة أو الوجه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-2fa",
+      "term_ar": "التحقق بخطوتين",
+      "term_en": "Two-Factor Authentication (2FA)",
+      "conceptId": "two-factor-authentication",
+      "definition_ar": "إثبات الهوية بعاملين مختلفين، كلمة مرور ورمز مثلًا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-kerberos",
+      "term_ar": "كيربيروس",
+      "term_en": "Kerberos",
+      "conceptId": "authentication-methods",
+      "definition_ar": "بروتوكول مصادقة يستخدم تذاكر لإثبات الهوية والوصول إلى الخدمات دون إعادة إرسال كلمة المرور.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-digital-cert",
+      "term_ar": "شهادة رقمية",
+      "term_en": "Digital Certificate",
+      "conceptId": "authentication-methods",
+      "definition_ar": "وثيقة رقمية تثبت هوية موقع، تصدرها جهة موثوقة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-ca",
+      "term_ar": "هيئة الشهادات",
+      "term_en": "Certificate Authority (CA)",
+      "conceptId": "authentication-methods",
+      "definition_ar": "جهة موثوقة تصدر الشهادات الرقمية التي تثبت هوية المواقع.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-access-control",
+      "term_ar": "التحكم في الوصول",
+      "term_en": "Access Control",
+      "conceptId": "authentication-vs-access-control",
+      "definition_ar": "تحديد ما يُسمح للمستخدم بفعله بعد إثبات هويته.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-encryption",
+      "term_ar": "التشفير",
+      "term_en": "Encryption",
+      "conceptId": "encryption-basics",
+      "definition_ar": "تحويل البيانات إلى شكل غير مفهوم لمن لا يملك مفتاح فك التشفير.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-public-key",
+      "term_ar": "المفتاح العام",
+      "term_en": "Public Key",
+      "conceptId": "encryption-basics",
+      "definition_ar": "مفتاح يمكن مشاركته يُستخدم مع مفتاح خاص سري في التشفير.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-drm",
+      "term_ar": "إدارة الحقوق الرقمية",
+      "term_en": "DRM",
+      "conceptId": "encryption-basics",
+      "definition_ar": "تقنيات تتحكم في كيفية استخدام المحتوى الرقمي لمنع النسخ أو التوزيع غير المصرح.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-tpm",
+      "term_ar": "وحدة المنصة الموثوقة",
+      "term_en": "TPM",
+      "conceptId": "encryption-basics",
+      "definition_ar": "شريحة داخل الجهاز تحفظ المفاتيح والمعلومات الأمنية بحماية أعلى.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-bitlocker",
+      "term_ar": "بت لوكر",
+      "term_en": "BitLocker",
+      "conceptId": "encryption-basics",
+      "definition_ar": "أداة لتشفير الأقراص في نظام Windows تُبقي البيانات غير مقروءة دون المفتاح.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-vpn",
+      "term_ar": "شبكة افتراضية خاصة",
+      "term_en": "VPN",
+      "conceptId": "vpn-and-https",
+      "definition_ar": "اتصال مشفر بين جهاز وشبكة المؤسسة كأنه نفق محمي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-https",
+      "term_ar": "بروتوكول HTTPS",
+      "term_en": "HTTPS",
+      "conceptId": "vpn-and-https",
+      "definition_ar": "نسخة آمنة من HTTP تشفّر الاتصال بين المتصفح والموقع.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-wlan",
+      "term_ar": "شبكة محلية لاسلكية",
+      "term_en": "WLAN",
+      "conceptId": "wlan-security",
+      "definition_ar": "شبكة تنقل البيانات بموجات الراديو بدل الكابلات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-ssid",
+      "term_ar": "اسم الشبكة",
+      "term_en": "SSID",
+      "conceptId": "wlan-security",
+      "definition_ar": "اسم شبكة Wi-Fi الذي يظهر عند البحث عن الشبكات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-mac-filtering",
+      "term_ar": "تصفية عنوان MAC",
+      "term_en": "MAC Filtering",
+      "conceptId": "wlan-security",
+      "definition_ar": "السماح لأجهزة محددة فقط بالاتصال بحسب عناوين MAC.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-wep",
+      "term_ar": "WEP",
+      "term_en": "WEP",
+      "conceptId": "wlan-security",
+      "definition_ar": "معيار تشفير قديم لشبكات Wi-Fi يُعدّ ضعيفًا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-wpa2",
+      "term_ar": "WPA2",
+      "term_en": "WPA2",
+      "conceptId": "wlan-security",
+      "definition_ar": "معيار شائع لحماية Wi-Fi بتشفير قوي مثل AES.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-wps",
+      "term_ar": "WPS",
+      "term_en": "WPS",
+      "conceptId": "wlan-security",
+      "definition_ar": "ميزة لتسهيل اتصال الأجهزة بالراوتر قد تسبب مخاطر إن استُخدمت بطريقة غير آمنة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-015"
+      ]
+    },
+    {
+      "id": "term-lan",
+      "term_ar": "شبكة محلية",
+      "term_en": "LAN",
+      "conceptId": "network-types",
+      "definition_ar": "شبكة تغطي مساحة محدودة كمبنى أو طابق لمشاركة الموارد في نطاق قريب.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-wan",
+      "term_ar": "شبكة واسعة",
+      "term_en": "WAN",
+      "conceptId": "network-types",
+      "definition_ar": "شبكة تربط مواقع متباعدة جغرافيًا أو عدة شبكات محلية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-wlan-net",
+      "term_ar": "شبكة محلية لاسلكية",
+      "term_en": "Wireless LAN",
+      "conceptId": "network-types",
+      "definition_ar": "شبكة محلية تستخدم Wi-Fi بدل الاعتماد الكامل على الكابلات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-san",
+      "term_ar": "شبكة منطقة التخزين",
+      "term_en": "SAN",
+      "conceptId": "network-types",
+      "definition_ar": "شبكة سريعة تربط أنظمة التخزين بالخوادم في المؤسسات الكبيرة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-pan",
+      "term_ar": "شبكة شخصية",
+      "term_en": "PAN",
+      "conceptId": "network-types",
+      "definition_ar": "شبكة قصيرة المدى تربط أجهزة شخصية قريبة كالهاتف والسماعة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-intranet",
+      "term_ar": "إنترانت",
+      "term_en": "Intranet",
+      "conceptId": "network-types",
+      "definition_ar": "شبكة داخلية خاصة بالمؤسسة لا يصل إليها الجمهور.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-extranet",
+      "term_ar": "إكسترانت",
+      "term_en": "Extranet",
+      "conceptId": "network-types",
+      "definition_ar": "شبكة تتيح لجهات خارجية محددة الدخول إلى موارد مختارة دون فتح الشبكة الداخلية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-nic",
+      "term_ar": "بطاقة الشبكة",
+      "term_en": "NIC",
+      "conceptId": "network-components",
+      "definition_ar": "مكوّن يمنح الجهاز واجهة اتصال بالشبكة المحلية أو اللاسلكية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-switch",
+      "term_ar": "مبدّل",
+      "term_en": "Switch",
+      "conceptId": "network-components",
+      "definition_ar": "جهاز يربط الأجهزة داخل الشبكة المحلية ويرسل الإطار إلى المنفذ المناسب.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-router",
+      "term_ar": "موجّه",
+      "term_en": "Router",
+      "conceptId": "network-components",
+      "definition_ar": "جهاز يربط شبكتين أو أكثر ويقرر مسار الإرسال بحسب عناوين IP وجداول التوجيه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-wap",
+      "term_ar": "نقطة الوصول اللاسلكية",
+      "term_en": "Wireless Access Point (WAP)",
+      "conceptId": "network-components",
+      "definition_ar": "جهاز يوفر اتصال Wi-Fi للأجهزة المحمولة داخل المبنى.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-star-topology",
+      "term_ar": "مخطط نجمي",
+      "term_en": "Star Topology",
+      "conceptId": "network-topologies",
+      "definition_ar": "شكل مادي تتصل فيه كل الأجهزة بمبدّل مركزي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-mesh-topology",
+      "term_ar": "مخطط متشابك",
+      "term_en": "Mesh Topology",
+      "conceptId": "network-topologies",
+      "definition_ar": "شكل يوفر أكثر من مسار بين العقد، فإن تعطل مسار استُخدم آخر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-ethernet",
+      "term_ar": "إيثرنت",
+      "term_en": "Ethernet",
+      "conceptId": "network-topologies",
+      "definition_ar": "معيار شائع للشبكات السلكية المحلية (IEEE 802.3).",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-utp",
+      "term_ar": "كابل UTP",
+      "term_en": "UTP Cable",
+      "conceptId": "transmission-media",
+      "definition_ar": "كابل نحاسي من أزواج مجدولة شائع في الشبكات المحلية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-fibre",
+      "term_ar": "ألياف ضوئية",
+      "term_en": "Fibre Optic",
+      "conceptId": "transmission-media",
+      "definition_ar": "وسيط ينقل البيانات بالضوء بسرعات ومسافات عالية ويصعب اعتراضه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-p2p",
+      "term_ar": "ند للند",
+      "term_en": "Peer-to-Peer",
+      "conceptId": "network-architectures",
+      "definition_ar": "شبكة تتشارك فيها الأجهزة مباشرة دون خادم مركزي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-client-server",
+      "term_ar": "عميل وخادم",
+      "term_en": "Client/Server",
+      "conceptId": "network-architectures",
+      "definition_ar": "نموذج يحتفظ فيه خادم مركزي بالحسابات والملفات والسياسات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-thin-client",
+      "term_ar": "عميل منخفض الأداء",
+      "term_en": "Thin Client",
+      "conceptId": "network-architectures",
+      "definition_ar": "جهاز يعتمد على خادم أو سحابة لتنفيذ التطبيقات وحفظ البيانات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-virtualisation",
+      "term_ar": "الافتراضية",
+      "term_en": "Virtualisation",
+      "conceptId": "network-trends",
+      "definition_ar": "تشغيل أكثر من نظام أو خادم افتراضي على جهاز مادي واحد.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-saas",
+      "term_ar": "برمجيات كخدمة",
+      "term_en": "SaaS",
+      "conceptId": "network-trends",
+      "definition_ar": "تطبيق جاهز يُقدَّم عبر الإنترنت من مزود خارجي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-paas",
+      "term_ar": "منصة كخدمة",
+      "term_en": "PaaS",
+      "conceptId": "network-trends",
+      "definition_ar": "منصة يوفرها مزود لتطوير التطبيقات وتشغيلها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-byod",
+      "term_ar": "إحضار جهازك الخاص",
+      "term_en": "BYOD",
+      "conceptId": "network-trends",
+      "definition_ar": "سماح المؤسسة للموظفين باستخدام أجهزتهم الشخصية للوصول إلى شبكة العمل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-sdn",
+      "term_ar": "شبكات معرّفة بالبرمجيات",
+      "term_en": "SDN",
+      "conceptId": "network-trends",
+      "definition_ar": "نهج يفصل التحكم المنطقي في الشبكة عن أجهزة التحويل والتوجيه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-active-directory",
+      "term_ar": "الدليل النشط",
+      "term_en": "Active Directory",
+      "conceptId": "network-operating-systems-and-directory",
+      "definition_ar": "خدمة دليل من Microsoft تجمع المستخدمين والأجهزة في نطاقات وتنظم المصادقة والصلاحيات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-ldap",
+      "term_ar": "بروتوكول الدليل الخفيف",
+      "term_en": "LDAP",
+      "conceptId": "network-operating-systems-and-directory",
+      "definition_ar": "بروتوكول شائع للوصول إلى خدمات الدليل والبحث فيها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-domain",
+      "term_ar": "نطاق",
+      "term_en": "Domain",
+      "conceptId": "network-operating-systems-and-directory",
+      "definition_ar": "مجموعة مستخدمين وأجهزة تُدار مركزيًا في خدمة الدليل.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-tcp-ip",
+      "term_ar": "نموذج TCP/IP",
+      "term_en": "TCP/IP Model",
+      "conceptId": "tcp-ip-model-and-ports",
+      "definition_ar": "نموذج من أربع طبقات ينظم الاتصال: تطبيق ونقل وإنترنت ووصول إلى الشبكة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-port",
+      "term_ar": "منفذ",
+      "term_en": "Port",
+      "conceptId": "tcp-ip-model-and-ports",
+      "definition_ar": "رقم يحدد أي برنامج على الجهاز يجب أن يستقبل البيانات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-attack-surface",
+      "term_ar": "سطح الهجوم",
+      "term_en": "Attack Surface",
+      "conceptId": "tcp-ip-model-and-ports",
+      "definition_ar": "مجموع النقاط المكشوفة التي قد يستغلها المهاجم، كالمنافذ المفتوحة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-ipv4",
+      "term_ar": "عنوان IPv4",
+      "term_en": "IPv4",
+      "conceptId": "ip-addressing-ipv4-ipv6-nat",
+      "definition_ar": "عنوان من 32 بتًا يُكتب بأربع مجموعات عشرية من 0 إلى 255.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-ipv6",
+      "term_ar": "عنوان IPv6",
+      "term_en": "IPv6",
+      "conceptId": "ip-addressing-ipv4-ipv6-nat",
+      "definition_ar": "عنوان من 128 بتًا يُكتب بالنظام الست عشري، طُوّر لأن مساحة IPv4 محدودة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-subnet",
+      "term_ar": "شبكة فرعية",
+      "term_en": "Subnet",
+      "conceptId": "subnetting-and-routing",
+      "definition_ar": "جزء أصغر من شبكة كبيرة مقسّم بحسب الأقسام أو المواقع.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-default-gateway",
+      "term_ar": "البوابة الافتراضية",
+      "term_en": "Default Gateway",
+      "conceptId": "subnetting-and-routing",
+      "definition_ar": "الجهاز الذي يمرر اتصال الجهاز إلى الشبكات الأخرى.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-routing-table",
+      "term_ar": "جدول التوجيه",
+      "term_en": "Routing Table",
+      "conceptId": "subnetting-and-routing",
+      "definition_ar": "جدول يستخدمه الموجّه ليقرر الواجهة أو القفزة التالية لكل وجهة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-dns",
+      "term_ar": "نظام أسماء النطاقات",
+      "term_en": "DNS",
+      "conceptId": "dns-and-dhcp",
+      "definition_ar": "خدمة تحول اسم الموقع الذي يتذكره الإنسان إلى عنوان IP.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-dhcp",
+      "term_ar": "التكوين الديناميكي للمضيف",
+      "term_en": "DHCP",
+      "conceptId": "dns-and-dhcp",
+      "definition_ar": "خدمة توزع عناوين IP وإعدادات الاتصال تلقائيًا.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-remote-desktop",
+      "term_ar": "سطح المكتب البعيد",
+      "term_en": "Remote Desktop",
+      "conceptId": "remote-access-and-network-services",
+      "definition_ar": "خدمة تتيح التحكم بجهاز حاسوب من موقع آخر عبر الشبكة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-ping",
+      "term_ar": "أمر ping",
+      "term_en": "ping",
+      "conceptId": "network-management-tools",
+      "definition_ar": "أمر يتحقق من إمكانية الوصول إلى جهاز ويقيس زمن الاستجابة وفقدان الحزم.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-port-scanning",
+      "term_ar": "فحص المنافذ",
+      "term_en": "Port Scanning",
+      "conceptId": "network-management-tools",
+      "definition_ar": "معرفة الخدمات التي تستمع للاتصال على جهاز.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    },
+    {
+      "id": "term-packet-capture",
+      "term_ar": "التقاط الحزم",
+      "term_en": "Packet Capture",
+      "conceptId": "network-management-tools",
+      "definition_ar": "تحليل البيانات أثناء مرورها في الشبكة لاكتشاف الأخطاء أو السلوك غير الطبيعي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مادة الأنظمة المتصلة بالشبكة والبنية التحتية (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-069"
+      ]
+    }
   ]
 }

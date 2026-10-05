@@ -1,0 +1,109 @@
+{
+  "id": "network-operating-systems-and-directory",
+  "type": "Comparison",
+  "title_ar": "أنظمة تشغيل الخوادم وخدمات الدليل والمصادقة: Active Directory وLDAP وKerberos",
+  "title_en": "Server Operating Systems and Directory Services",
+  "slug": "network-operating-systems-and-directory",
+  "summary": "تختلف أنظمة التشغيل بحسب الجهاز (هواتف: Android وiOS؛ مكتبية: Windows وmacOS؛ خوادم: Windows Server). وتجمع خدمات الدليل (Active Directory وLDAP) المستخدمين والأجهزة والموارد في إدارة مركزية، ويستخدم Kerberos تذاكر للمصادقة بدل إرسال كلمة المرور لكل خدمة.",
+  "unit": "cyber-security",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «الأنظمة المتصلة بالشبكة والبنية التحتية» ضمن وحدة الأمن السيبراني (أحمد دومي)",
+      "ref": "8. أنظمة التشغيل في بيئة الشبكة؛ 14. أنظمة تشغيل الشبكة؛ خدمات الدليل"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "network-architectures",
+    "authentication-methods",
+    "backup-and-storage"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY: concepts only; the source's report brief, template paragraph and full-mark model answer are not used",
+  "sourceIds": [
+    "src-069"
+  ],
+  "order": 42,
+  "shortAnswer": "تختلف أنظمة التشغيل بحسب الجهاز والوظيفة: الهواتف تستخدم Android وiOS، والحواسيب المكتبية Windows وmacOS (بإصدارات مثل Home وProfessional وEnterprise)، و**أنظمة تشغيل الخوادم** مصممة لتقديم خدمات لعدة مستخدمين في الوقت نفسه؛ فيستطيع Windows Server إدارة الحسابات والملفات والطباعة والسياسات، ويتيح **Active Directory** تجميع المستخدمين والأجهزة ضمن نطاقات (Domains) وتنظيم المصادقة والصلاحيات.",
+  "whyBtec": "الإدارة المركزية تجعل التحديث والنسخ الاحتياطي وتطبيق السياسات أكثر اتساقًا، لكن تعطل الخادم يؤثر في عدد كبير من المستخدمين.",
+  "terminology": [
+    {
+      "ar": "نطاق",
+      "en": "Domain"
+    },
+    {
+      "ar": "خدمة الدليل",
+      "en": "Directory Service"
+    },
+    {
+      "ar": "ليدياب",
+      "en": "LDAP"
+    },
+    {
+      "ar": "كيربيروس",
+      "en": "Kerberos"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو Active Directory؟",
+    "ما هو LDAP وKerberos؟",
+    "server operating system active directory kerberos BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شرح مفصّل"
+    },
+    {
+      "t": "p",
+      "text": "**خدمات الدليل** تخزن معلومات المستخدمين والأجهزة والموارد منظمةً، و**LDAP** بروتوكول شائع للوصول إلى الدليل (مثل Microsoft Active Directory وOpen Directory في macOS وOpenLDAP مفتوح المصدر). و**Kerberos** يستخدم التذاكر: يثبت المستخدم هويته ثم يحصل على تذكرة للوصول إلى الخدمات المسموح بها بدل إرسال كلمة المرور في كل مرة، فيقلل تعرضها."
+    },
+    {
+      "t": "table",
+      "head": [
+        "العنصر",
+        "وظيفته"
+      ],
+      "rows": [
+        [
+          "نظام تشغيل الخادم",
+          "تقديم خدمات (حسابات، ملفات، طباعة، سياسات) لعدة مستخدمين معًا"
+        ],
+        [
+          "Active Directory",
+          "تجميع المستخدمين والأجهزة في نطاقات وتنظيم المصادقة والصلاحيات"
+        ],
+        [
+          "LDAP",
+          "بروتوكول شائع للوصول إلى خدمة الدليل"
+        ],
+        [
+          "Kerberos",
+          "مصادقة بالتذاكر: تثبت هويتك مرة ثم تستخدم تذكرة للخدمات المسموح بها"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وبما أن الخادم المركزي نقطة حساسة فيحتاج نسخًا احتياطيًا وتحديثات؛ فتعطله يؤثر في عدد كبير من المستخدمين. وانظر [[network-architectures|بنية الشبكة]] و[[authentication-methods|طرق المصادقة]] و[[backup-and-storage|النسخ الاحتياطي]]."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "في مؤسسة كبيرة تُجمَع حسابات الموظفين في نطاق واحد، فتُدار الصلاحيات من نقطة واحدة بدل ضبط كل جهاز يدويًا، وتُنسخ بيانات الخادم احتياطيًا لأن تعطله يوقف عددًا كبيرًا من المستخدمين.",
+      "title": "فكرة للتطبيق"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

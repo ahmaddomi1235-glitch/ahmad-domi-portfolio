@@ -1,0 +1,139 @@
+{
+  "id": "variable-naming-conventions",
+  "type": "Comparison",
+  "title_ar": "تسمية المتغيرات: camelCase وsnake_case وقواعد الأسماء الواضحة",
+  "title_en": "Variable Naming Conventions",
+  "slug": "variable-naming-conventions",
+  "summary": "المتغير موقع في الذاكرة يخزن قيمة أثناء التنفيذ. الاسم الجيد معبّر عن نوع البيانات ومعناها وخالٍ من المسافات والرموز غير المسموحة، ويُلتزم بأسلوب واحد ثابت: camelCase أو snake_case.",
+  "unit": "programming",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة البرمجة (أحمد دومي)",
+      "ref": "تسمية المتغيرات؛ أساليب التسمية"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "programmer-vs-code-writer",
+    "ide-and-maintainability",
+    "programming-data-types"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-030",
+    "src-044"
+  ],
+  "order": 13,
+  "shortAnswer": "المتغير (Variable) موقع في الذاكرة تُخزَّن فيه قيمة أثناء تنفيذ البرنامج. الاسم الجيد يعبّر عن معنى البيانات ويخلو من المسافات والرموز غير المسموحة. ومن الأساليب المتفق عليها: **camelCase** حيث تبدأ الكلمة الأولى بحرف صغير وكل كلمة لاحقة بحرف كبير مثل studentName وtotalMarks، و**snake_case** حيث تُفصل الكلمات بشرطة سفلية بحروف صغيرة مثل student_name وtotal_marks. والالتزام بأسلوب ثابت يجعل الكود أسهل قراءة.",
+  "whyBtec": "في المشاريع يُنتظر منك اختيار أسلوب واحد والالتزام به، مع أسماء تعبّر عن المعنى لا أحرف عشوائية.",
+  "terminology": [
+    {
+      "ar": "متغير",
+      "en": "Variable"
+    },
+    {
+      "ar": "camelCase",
+      "en": "camelCase"
+    },
+    {
+      "ar": "snake_case",
+      "en": "snake_case"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو camelCase وsnake_case؟",
+    "كيف أسمّي المتغيرات؟",
+    "variable naming conventions BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "الأسلوب",
+        "القاعدة",
+        "أمثلة"
+      ],
+      "rows": [
+        [
+          "camelCase",
+          "الكلمة الأولى بحرف صغير وكل كلمة تالية تبدأ بحرف كبير",
+          "userAge، totalPrice، studentName، maxValue"
+        ],
+        [
+          "snake_case",
+          "كل الكلمات بحروف صغيرة مفصولة بشرطة سفلية",
+          "user_age، total_price، student_name، max_value"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "قواعد عامة"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "اجعل الاسم معبرًا عن المعنى: age أفضل من x.",
+        "لا تستخدم مسافات أو رموزًا غير مسموحة.",
+        "اختر أسلوبًا واحدًا في المشروع ولا تخلط بين الأساليب.",
+        "اجعل الاسم متسقًا مع نوع البيانات التي يخزنها."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "جودة الأسماء جزء من وضوح الكود وسهولة صيانته، كما في [[programmer-vs-code-writer|المبرمج وكاتب الكود]] و[[ide-and-maintainability|بيئات التطوير والصيانة]]. وللأنواع: [[programming-data-types|أنواع البيانات]]."
+    },
+    {
+      "t": "h2",
+      "text": "أمثلة جيدة وسيئة"
+    },
+    {
+      "t": "table",
+      "head": [
+        "جيد",
+        "سيئ",
+        "السبب"
+      ],
+      "rows": [
+        [
+          "studentName",
+          "x",
+          "الاسم الأول يعبّر عن المعنى"
+        ],
+        [
+          "total_price",
+          "tp1",
+          "الثاني يخفي المعنى"
+        ],
+        [
+          "isAdult",
+          "flag",
+          "الأول واضح أنه قيمة منطقية"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وتجنب خلط الأسلوبين في المشروع نفسه حتى لا يضيع القارئ بين studentName وstudent_age."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "اكتب أسلوب التسمية الذي اخترته في أول المشروع، وراجع الأسماء قبل التسليم لتتأكد من اتساقها.",
+      "title": "نصيحة"
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

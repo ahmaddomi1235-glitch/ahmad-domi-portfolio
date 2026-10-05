@@ -1,0 +1,132 @@
+{
+  "id": "pseudocode-and-control-structures",
+  "type": "Comparison",
+  "title_ar": "الرمز الزائف وبنى التحكم: التسلسل والشرط والتكرار في منطق التطبيق",
+  "title_en": "Pseudocode and Control Structures",
+  "slug": "pseudocode-and-control-structures",
+  "summary": "قبل كتابة الكود نمثّل منطق التطبيق بمخطط انسيابي أو رمز زائف (Pseudocode): لغة قريبة من العادية بلا قواعد لغة برمجة محددة. وتحدد بنى التحكم طريقة انتقال البرنامج بين الخطوات: التسلسل، والشرط، والتكرار.",
+  "unit": "introduction-to-applications",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مقدمة إلى التطبيقات — تصميم التطبيقات (أحمد دومي)",
+      "ref": "الصفحات 41–44",
+      "url": "/documents/teaching-materials/applications-design-target-b.pdf"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "flowchart-symbols",
+    "computational-thinking",
+    "app-input-validation"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-099"
+  ],
+  "order": 21,
+  "shortAnswer": "نمثّل منطق التطبيق قبل البرمجة لنفهم مسار العملية، ونكتشف الأخطاء مبكرًا، ونوضح الفكرة للفريق، ونسهّل التحويل إلى كود، ونحدد أين يحتاج التطبيق إلى قرار أو تكرار أو إدخال من المستخدم. **المخطط الانسيابي** رسم يوضح خطوات عملية داخل التطبيق برموز وأسهم (مثل تسجيل الدخول وفيه خطوة قرار لأن التطبيق لا يقبل طلبًا دون بيانات أساسية).",
+  "whyBtec": "في تطبيق حجز موعد لا يكفي تصميم زر «احجز الآن»؛ يجب أن تعرف ماذا يحدث بعد الضغط: هل يتحقق من الوقت؟ هل يطلب الهاتف؟ هل يعرض نجاحًا أو خطأ؟",
+  "terminology": [
+    {
+      "ar": "رمز زائف",
+      "en": "Pseudocode"
+    },
+    {
+      "ar": "بنى التحكم",
+      "en": "Control Structures"
+    },
+    {
+      "ar": "تسلسل",
+      "en": "Sequence"
+    },
+    {
+      "ar": "شرط",
+      "en": "Selection"
+    },
+    {
+      "ar": "تكرار",
+      "en": "Iteration"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو الرمز الزائف Pseudocode؟",
+    "ما هي بنى التحكم؟",
+    "pseudocode control structures sequence selection iteration BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شرح مفصّل"
+    },
+    {
+      "t": "p",
+      "text": "**الرمز الزائف** كتابة منطق البرنامج بلغة قريبة من العادية دون الالتزام بقواعد لغة محددة. **بنى التحكم**: **التسلسل** (خطوات واحدة تلو الأخرى)، **الشرط** (قرار بحسب حالة، مثل: إذا سجّل المستخدم الدخول)، **التكرار** (تنفيذ الخطوات أكثر من مرة، مثل عرض كل المهام في القائمة)."
+    },
+    {
+      "t": "table",
+      "head": [
+        "البنية",
+        "المعنى",
+        "مثال"
+      ],
+      "rows": [
+        [
+          "التسلسل",
+          "تنفيذ الخطوات واحدة تلو الأخرى",
+          "طلب الاسم ثم الهاتف ثم حفظ الطلب"
+        ],
+        [
+          "الشرط",
+          "اتخاذ قرار بناءً على حالة",
+          "إذا كان المستخدم سجّل الدخول عرض الصفحة وإلا اطلب الدخول"
+        ],
+        [
+          "التكرار",
+          "تنفيذ الخطوات أكثر من مرة",
+          "عرض جميع المهام في القائمة"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "الفرق بين المخطط والرمز الزائف"
+    },
+    {
+      "t": "table",
+      "head": [
+        "",
+        "المخطط الانسيابي",
+        "الرمز الزائف"
+      ],
+      "rows": [
+        [
+          "الشكل",
+          "رموز وأسهم",
+          "نص قريب من الكلام العادي"
+        ],
+        [
+          "متى؟",
+          "لتوضيح المسار بصريًا",
+          "لشرح الخطوات قبل تحويلها إلى كود"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وللرموز تفصيلها في [[flowchart-symbols|رموز مخطط الانسياب]]، وللإطار العام [[computational-thinking|التفكير الحاسوبي]]، وللتحقق من المدخلات [[app-input-validation|التحقق من صحة البيانات في التطبيق]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

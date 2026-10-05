@@ -1,0 +1,675 @@
+{
+  "$defaults": {
+    "type": "GlossaryTerm",
+    "unit": "introduction-to-applications",
+    "learningAim": null,
+    "criterion": null,
+    "concepts": [],
+    "questions": [],
+    "sourceType": "ahmad-booklet",
+    "sourceReferences": [
+      {
+        "kind": "pdf",
+        "label": "مدخل إلى التطبيقات (أحمد دومي)"
+      }
+    ],
+    "youtubeId": null,
+    "author": "ahmad-domi",
+    "lastReviewed": "2026-10-04",
+    "visibility": "PUBLIC",
+    "related": [],
+    "officialSource": null,
+    "status": "published",
+    "reviewState": "definitions paraphrased from the author's own material; pending author review"
+  },
+  "items": [
+    {
+      "id": "term-app",
+      "term_ar": "تطبيق",
+      "term_en": "App",
+      "conceptId": "mobile-app-types",
+      "definition_ar": "برنامج صغير مصمم لأداء مهمة محددة على الهاتف أو الجهاز اللوحي.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-ar",
+      "term_ar": "الواقع المعزز",
+      "term_en": "Augmented Reality (AR)",
+      "conceptId": "mobile-app-types",
+      "definition_ar": "تقنية تدمج المحتوى الرقمي مع العالم الحقيقي عبر كاميرا الهاتف.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-prototype",
+      "term_ar": "نموذج أولي",
+      "term_en": "Prototype",
+      "conceptId": "app-development-stages",
+      "definition_ar": "نسخة تجريبية توضح شكل التطبيق وطريقة التنقل فيه قبل البرمجة الحقيقية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-sdk",
+      "term_ar": "حزمة تطوير البرامج",
+      "term_en": "SDK",
+      "conceptId": "api-library-sdk",
+      "definition_ar": "حزمة شاملة تضم أدوات ومكتبات ووثائق ومحاكيات لبناء التطبيقات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-library",
+      "term_ar": "مكتبة",
+      "term_en": "Library",
+      "conceptId": "api-library-sdk",
+      "definition_ar": "مجموعة أكواد جاهزة مكتوبة مسبقًا يستخدمها المطور دون كتابتها من الصفر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-unit-test",
+      "term_ar": "اختبار الوحدة",
+      "term_en": "Unit Test",
+      "conceptId": "app-testing-types",
+      "definition_ar": "اختبار يتحقق من صحة وظيفة واحدة محددة في التطبيق.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-usability-test",
+      "term_ar": "اختبار سهولة الاستخدام",
+      "term_en": "Usability Test",
+      "conceptId": "app-testing-types",
+      "definition_ar": "اختبار يرصد مدى سهولة استخدام المستخدمين للتطبيق.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-compatibility-test",
+      "term_ar": "اختبار التوافق",
+      "term_en": "Compatibility Test",
+      "conceptId": "app-testing-types",
+      "definition_ar": "اختبار يتحقق من عمل التطبيق على أجهزة وأنظمة مختلفة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-fab",
+      "term_ar": "زر الإجراء العائم",
+      "term_en": "Floating Action Button (FAB)",
+      "conceptId": "mobile-navigation-elements",
+      "definition_ar": "زر دائري يطفو فوق المحتوى لتنفيذ الإجراء الأهم.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-hamburger",
+      "term_ar": "القائمة الجانبية الهامبورغر",
+      "term_en": "Hamburger Menu",
+      "conceptId": "mobile-navigation-elements",
+      "definition_ar": "أيقونة بثلاثة خطوط تفتح قائمة جانبية للأقسام الثانوية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-multi-touch",
+      "term_ar": "اللمس المتعدد",
+      "term_en": "Multi-Touch",
+      "conceptId": "mobile-device-features",
+      "definition_ar": "قدرة الشاشة على التفاعل مع عدة أصابع في الوقت نفسه.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-accelerometer",
+      "term_ar": "مقياس التسارع",
+      "term_en": "Accelerometer",
+      "conceptId": "mobile-device-features",
+      "definition_ar": "مستشعر يكشف حركة الجهاز واتجاهه في الفضاء.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-gps",
+      "term_ar": "نظام تحديد المواقع",
+      "term_en": "GPS",
+      "conceptId": "mobile-device-features",
+      "definition_ar": "نظام يحسب موقعك بدقة من إشارات أقمار صناعية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-permission",
+      "term_ar": "إذن التطبيق",
+      "term_en": "App Permission",
+      "conceptId": "app-permissions-privacy",
+      "definition_ar": "موافقة صريحة من المستخدم للسماح للتطبيق بالوصول إلى خاصية حساسة في الجهاز.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-ios",
+      "term_ar": "نظام iOS",
+      "term_en": "iOS",
+      "conceptId": "mobile-operating-systems",
+      "definition_ar": "نظام تشغيل الأجهزة المحمولة من Apple، يتميز بالأمان والتكامل وهو حصري لأجهزتها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-android",
+      "term_ar": "نظام Android",
+      "term_en": "Android",
+      "conceptId": "mobile-operating-systems",
+      "definition_ar": "نظام تشغيل مفتوح المصدر من Google يعمل على مئات الأجهزة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-java-me",
+      "term_ar": "جافا ME",
+      "term_en": "Java ME",
+      "conceptId": "mobile-operating-systems",
+      "definition_ar": "منصة قديمة خفيفة للأجهزة محدودة الموارد كانت سائدة قبل الهواتف الذكية.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-functional-req",
+      "term_ar": "متطلب وظيفي",
+      "term_en": "Functional Requirement",
+      "conceptId": "functional-vs-non-functional-requirements",
+      "definition_ar": "وظيفة يجب أن يستطيع المستخدم تنفيذها داخل التطبيق.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-nonfunctional-req",
+      "term_ar": "متطلب غير وظيفي",
+      "term_en": "Non-Functional Requirement",
+      "conceptId": "functional-vs-non-functional-requirements",
+      "definition_ar": "شرط يتعلق بجودة التطبيق وأدائه، مثل السرعة والأمان وسهولة القراءة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-persona",
+      "term_ar": "شخصية المستخدم",
+      "term_en": "User Persona",
+      "conceptId": "user-persona-and-stories",
+      "definition_ar": "وصف تخيّلي لمستخدم يمثل فئة حقيقية من الجمهور المستهدف.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-user-story",
+      "term_ar": "قصة المستخدم",
+      "term_en": "User Story",
+      "conceptId": "user-persona-and-stories",
+      "definition_ar": "جملة بصيغة «بصفتي ... أريد ... لكي ...» تحول حاجة المستخدم إلى وظيفة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-accessibility",
+      "term_ar": "إتاحة الوصول",
+      "term_en": "Accessibility",
+      "conceptId": "app-accessibility",
+      "definition_ar": "تصميم يتيح استخدام التطبيق أو الموقع لأكبر عدد من الأشخاص، بمن فيهم ذوو الإعاقة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-screen-reader",
+      "term_ar": "قارئ الشاشة",
+      "term_en": "Screen Reader",
+      "conceptId": "app-accessibility",
+      "definition_ar": "برنامج يقرأ محتوى الشاشة صوتيًا للمستخدمين ضعاف البصر.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-design-document",
+      "term_ar": "وثيقة التصميم",
+      "term_en": "Design Document",
+      "conceptId": "app-design-document",
+      "definition_ar": "ملف منظم يشرح فكرة التطبيق ومستخدميه ووظائفه وواجهاته قبل البرمجة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-user-flow",
+      "term_ar": "تدفق المستخدم",
+      "term_en": "User Flow",
+      "conceptId": "app-design-document",
+      "definition_ar": "المسار الذي يسلكه المستخدم للوصول إلى هدف معين داخل التطبيق.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-ux",
+      "term_ar": "تجربة المستخدم",
+      "term_en": "User Experience (UX)",
+      "conceptId": "ux-vs-ui",
+      "definition_ar": "شعور المستخدم أثناء استخدام التطبيق وهل وصل إلى هدفه بسهولة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-ui",
+      "term_ar": "واجهة المستخدم",
+      "term_en": "User Interface (UI)",
+      "conceptId": "ux-vs-ui",
+      "definition_ar": "العناصر التي يراها المستخدم ويتعامل معها، مثل الأزرار والقوائم والألوان.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-wireframe",
+      "term_ar": "مخطط شبكي",
+      "term_en": "Wireframe",
+      "conceptId": "app-map-wireframe-prototype",
+      "definition_ar": "رسم أولي لأماكن العناصر في الشاشة دون اهتمام بالجماليات.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-app-map",
+      "term_ar": "خريطة التطبيق",
+      "term_en": "App Map",
+      "conceptId": "app-map-wireframe-prototype",
+      "definition_ar": "مخطط يوضح الشاشات الرئيسية للتطبيق والعلاقة بينها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-style-guide",
+      "term_ar": "دليل النمط",
+      "term_en": "Style Guide",
+      "conceptId": "app-map-wireframe-prototype",
+      "definition_ar": "مجموعة قواعد توحد الألوان والخطوط والأزرار والأيقونات في التطبيق.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-pseudocode",
+      "term_ar": "الرمز الزائف",
+      "term_en": "Pseudocode",
+      "conceptId": "pseudocode-and-control-structures",
+      "definition_ar": "طريقة لكتابة منطق البرنامج بلغة قريبة من العادية دون قواعد لغة برمجة محددة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-control-structures",
+      "term_ar": "بنى التحكم",
+      "term_en": "Control Structures",
+      "conceptId": "pseudocode-and-control-structures",
+      "definition_ar": "الأساليب التي تحدد انتقال البرنامج بين الخطوات: التسلسل والشرط والتكرار.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-sequence",
+      "term_ar": "التسلسل",
+      "term_en": "Sequence",
+      "conceptId": "pseudocode-and-control-structures",
+      "definition_ar": "تنفيذ خطوات البرنامج واحدة تلو الأخرى بالترتيب.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-selection",
+      "term_ar": "الشرط",
+      "term_en": "Selection",
+      "conceptId": "pseudocode-and-control-structures",
+      "definition_ar": "اتخاذ قرار في البرنامج بناءً على حالة معينة.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-iteration",
+      "term_ar": "التكرار",
+      "term_en": "Iteration",
+      "conceptId": "pseudocode-and-control-structures",
+      "definition_ar": "تنفيذ مجموعة من الخطوات أكثر من مرة في البرنامج.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    },
+    {
+      "id": "term-validation-app",
+      "term_ar": "التحقق من الصحة",
+      "term_en": "Validation",
+      "conceptId": "app-input-validation",
+      "definition_ar": "التأكد أن البيانات المدخلة مناسبة قبل استخدامها أو حفظها.",
+      "sourceReferences": [
+        {
+          "kind": "pdf",
+          "label": "مدخل إلى التطبيقات (أحمد دومي)"
+        }
+      ],
+      "sourceIds": [
+        "src-043",
+        "src-099",
+        "src-027"
+      ]
+    }
+  ]
+}

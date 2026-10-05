@@ -107,6 +107,8 @@ export type NodeBase = {
   /** Free text: who has/has not reviewed this node (shown nowhere publicly, used by the validator & reports). */
   reviewState?: string;
   aliases?: string[];
+  /** Internal only (never rendered): private source-registry IDs of Ahmad's own material this node was written from. */
+  sourceIds?: string[];
 };
 
 export type ConceptNode = NodeBase & {

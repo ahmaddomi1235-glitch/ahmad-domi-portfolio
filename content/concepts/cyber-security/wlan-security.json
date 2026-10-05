@@ -1,0 +1,138 @@
+{
+  "id": "wlan-security",
+  "type": "Comparison",
+  "title_ar": "حماية الشبكة اللاسلكية (Wi-Fi): SSID وتصفية MAC وWEP وWPA2 وWPS",
+  "title_en": "WLAN Security",
+  "slug": "wlan-security",
+  "summary": "الشبكة اللاسلكية تنقل البيانات في الهواء فقد تصل إلى خارج المبنى. وحمايتها بعدة طبقات: تشفير قوي (WPA2 أفضل من WPA وأفضل بكثير من WEP)، وكلمة مرور قوية، مع الحذر من الاعتماد على إخفاء SSID أو تصفية MAC أو تفعيل WPS وحدها.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "حماية الشبكة المحلية اللاسلكية WLAN"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "defence-in-depth",
+    "strong-passwords",
+    "network-vulnerabilities"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 33,
+  "shortAnswer": "الشبكة المحلية اللاسلكية (WLAN) تنقل البيانات بموجات الراديو، وإشارتها قد تصل إلى خارج المبنى، فقد يحاول شخص قريب الدخول أو اعتراض الاتصال. لذلك تُحمى بعدة طبقات: التشفير (WPA2 أقوى من WPA وهو أفضل بكثير من WEP القديم)، وكلمة مرور قوية وإدارة مستمرة للشبكة. أما إخفاء اسم الشبكة (SSID) أو تصفية عناوين MAC فلا يكفيان وحدهما.",
+  "whyBtec": "كثيرًا ما تُسأل: «ما الفرق بين WEP وWPA وWPA2؟» أو «لماذا لا يكفي إخفاء SSID؟». الجواب في الجدول أدناه.",
+  "terminology": [
+    {
+      "ar": "شبكة محلية لاسلكية",
+      "en": "WLAN"
+    },
+    {
+      "ar": "اسم الشبكة",
+      "en": "SSID"
+    },
+    {
+      "ar": "تصفية عنوان MAC",
+      "en": "MAC Filtering"
+    },
+    {
+      "ar": "WEP",
+      "en": "WEP"
+    },
+    {
+      "ar": "WPA2",
+      "en": "WPA2"
+    },
+    {
+      "ar": "WPS",
+      "en": "WPS"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين WEP وWPA وWPA2؟",
+    "كيف أحمي شبكة الواي فاي؟",
+    "wireless network security WEP WPA2 BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "طبقات حماية Wi-Fi"
+    },
+    {
+      "t": "table",
+      "head": [
+        "العنصر",
+        "ما هو؟",
+        "الحكم"
+      ],
+      "rows": [
+        [
+          "SSID",
+          "اسم الشبكة الظاهر عند البحث",
+          "يمكن إخفاؤه لكنه لا يجعل الشبكة غير موجودة؛ من يملك الأدوات يكتشفها — لا يكفي وحده"
+        ],
+        [
+          "تصفية MAC",
+          "قائمة بأجهزة مسموح لها بالدخول بحسب عنوان MAC",
+          "عنوان MAC يمكن تغييره أو تقليده — تضيف حماية ولا تكفي وحدها"
+        ],
+        [
+          "WEP",
+          "معيار قديم لتشفير Wi-Fi بمفاتيح قصيرة نسبيًا",
+          "اكتُشفت نقاط ضعف تسمح بكسره؛ ضعيف وغير مناسب اليوم"
+        ],
+        [
+          "WPA",
+          "جاء لمعالجة ضعف WEP بمفاتيح أقوى",
+          "أفضل من WEP لكن ظهرت الحاجة لأقوى"
+        ],
+        [
+          "WPA2",
+          "يقدم حماية أقوى ويستخدم تشفيرًا قويًا مثل AES",
+          "معيار شائع وأكثر أمانًا"
+        ],
+        [
+          "WPS",
+          "تسهيل التوصيل بزر أو PIN دون كتابة كلمة طويلة",
+          "بعض طرقه، خاصة PIN، فيها ضعف؛ يُعطَّل إن لم تكن بحاجة إليه"
+        ]
+      ],
+      "caption": "عناصر حماية الشبكة اللاسلكية"
+    },
+    {
+      "t": "h2",
+      "text": "كلمة المرور والإدارة"
+    },
+    {
+      "t": "p",
+      "text": "تشفير قوي مع كلمة مثل 12345678 لا يفيد. وفي المؤسسات الكبيرة اسأل: هل شبكة الزوار منفصلة عن الموظفين؟ هل الكلمة واحدة للجميع أم حسابات مختلفة؟ من يغيّرها ومن يراقب الأجهزة؟ فموظف غادر قبل سنة قد يظل يعرف كلمة الواي فاي إن لم تتغير."
+    },
+    {
+      "t": "p",
+      "text": "الحماية الأفضل تجمع أكثر من إجراء وإدارة صحيحة ([[defence-in-depth|الحماية متعددة الطبقات]]). وانظر أيضًا [[strong-passwords|كلمات المرور القوية]] و[[network-vulnerabilities|ثغرات الشبكة]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

@@ -1,0 +1,107 @@
+{
+  "id": "decision-trees",
+  "type": "Concept",
+  "title_ar": "أشجار القرار (Decision Trees): كيف تتعلم وكيف نقرأها وما الـ Overfitting؟",
+  "title_en": "Decision Trees",
+  "slug": "decision-trees",
+  "summary": "شجرة القرار تشبه لعبة الأسئلة المتتابعة (نعم/لا): تقسم البيانات خطوة بخطوة بسؤال بسيط على ميزة حتى تصل إلى قرار نهائي في الأوراق. سهلة التفسير، لكنها قد تحفظ بيانات التدريب إن كانت عميقة جدًا.",
+  "unit": "artificial-intelligence",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "ملاحظات تعلّم الآلة وأدوات الذكاء الاصطناعي (أحمد دومي)",
+      "ref": "أشجار القرار"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "train-validation-test-sets",
+    "classification-vs-regression",
+    "svm-classifier"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-008"
+  ],
+  "order": 26,
+  "shortAnswer": "شجرة القرار (Decision Tree) تقسم البيانات خطوة خطوة بسؤال بسيط على إحدى الميزات، ثم تكرر التقسيم داخل كل جزء حتى تصل إلى قرار نهائي. مثال: هل طول البتلة كبير؟ إن نعم فقد تكون من نوع معين، وإن لا ننتقل لسؤال آخر. **مميزاتها:** سهلة الفهم والتفسير وتعمل غالبًا دون توحيد مقاييس الميزات. **عيبها:** قد **تحفظ** بيانات التدريب إن كانت عميقة جدًا (Overfitting).",
+  "whyBtec": "الشجرة من أكثر النماذج قابلية للتفسير، وهذه ميزة مهمة حين يجب شرح القرار.",
+  "terminology": [
+    {
+      "ar": "شجرة قرار",
+      "en": "Decision Tree"
+    },
+    {
+      "ar": "ورقة الشجرة",
+      "en": "Leaf Node"
+    },
+    {
+      "ar": "فرط التعلم",
+      "en": "Overfitting"
+    },
+    {
+      "ar": "عمق الشجرة",
+      "en": "Tree Depth"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي أشجار القرار؟",
+    "كيف أقرأ شجرة القرار؟",
+    "decision tree overfitting BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "كيف تتعلم؟"
+    },
+    {
+      "t": "p",
+      "text": "تختار الشجرة في كل مستوى سؤالًا يقسم البيانات بأفضل طريقة، وتستمر الأسئلة حتى الوصول إلى أوراق الشجرة (Leaf Nodes) حيث القرار النهائي."
+    },
+    {
+      "t": "h2",
+      "text": "كيف نقرأ رسمها؟"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "كل صندوق سؤال على ميزة (هل القيمة أقل من حد معين؟).",
+        "كل سهم إجابة وانتقال إلى فرع جديد.",
+        "المربعات الأخيرة هي الفئة المتوقعة.",
+        "الألوان تشير إلى الفئة الغالبة في الفرع."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "تجنب Overfitting"
+    },
+    {
+      "t": "p",
+      "text": "الشجرة العميقة جدًا قد تبدو ممتازة على التدريب لكنها تفشل على بيانات جديدة. لتقليل الحفظ يمكن تحديد أقصى عمق أو أدنى عدد عينات في الورقة. ولذلك نقيس الأداء على بيانات اختبار لم يرها النموذج ([[train-validation-test-sets|التدريب والاختبار]])."
+    },
+    {
+      "t": "p",
+      "text": "وهي نموذج [[classification-vs-regression|تصنيف]]، وتُقارن مع [[svm-classifier|SVM]] في القدرة على التفسير."
+    },
+    {
+      "t": "p",
+      "text": "ومن المفيد أن ترسم شجرة صغيرة بيدك لمشكلة بسيطة، فهذا يوضح لماذا يعدّ هذا النموذج من أسهل النماذج في التفسير."
+    },
+    {
+      "t": "p",
+      "text": "وإن أردت شرح قرار لمستخدم أو إدارة فالشجرة تتيح تتبع المسار من الجذر إلى الورقة سؤالًا بسؤال."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

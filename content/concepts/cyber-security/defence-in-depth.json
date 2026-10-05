@@ -1,0 +1,140 @@
+{
+  "id": "defence-in-depth",
+  "type": "Concept",
+  "title_ar": "الحماية متعددة الطبقات: لماذا لا تكفي وسيلة واحدة؟",
+  "title_en": "Defence in Depth (Layered Security)",
+  "slug": "defence-in-depth",
+  "summary": "لا توجد وسيلة حماية واحدة تحلّ كل شيء. الحماية القوية طبقات: أمان مادي، وبرمجيات حماية، ومصادقة، وتحكم في الوصول، وتشفير، وقوانين، ووعي المستخدم؛ فإن تجاوز المهاجم طبقة وجد أخرى.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "تدابير حماية البرامج والأجهزة — «ثبتها في ذهنك» والخاتمة"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "antivirus-software",
+    "firewalls",
+    "authentication-methods",
+    "encryption-basics",
+    "physical-security"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 15,
+  "shortAnswer": "الحماية متعددة الطبقات (Defence in Depth) أن تجمع المؤسسة أكثر من إجراء معًا: حماية مادية، ومكافحة فيروسات، وجدار حماية، ومصادقة قوية، وتحكمًا في الوصول، وتشفيرًا، وقوانين، ووعيًا مستمرًا. أي طبقة تُترك ضعيفة تصبح الباب الذي يدخل منه المهاجم.",
+  "whyBtec": "كثير من الأسئلة تطلب «أوصِ بإجراءات». الإجابة الأقوى تجمع بين أكثر من طبقة وتشرح لماذا لا يكفي إجراء واحد.",
+  "terminology": [
+    {
+      "ar": "الحماية متعددة الطبقات",
+      "en": "Defence in Depth"
+    },
+    {
+      "ar": "جدار حماية",
+      "en": "Firewall"
+    },
+    {
+      "ar": "مصادقة",
+      "en": "Authentication"
+    },
+    {
+      "ar": "تشفير",
+      "en": "Encryption"
+    }
+  ],
+  "questionsAnswered": [
+    "لماذا نحتاج أكثر من وسيلة حماية؟",
+    "ما هي طبقات الحماية في الأمن السيبراني؟",
+    "layered security BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "كل وسيلة تحلّ مشكلة مختلفة"
+    },
+    {
+      "t": "table",
+      "head": [
+        "الوسيلة",
+        "ماذا تفعل؟"
+      ],
+      "rows": [
+        [
+          "[[antivirus-software|مكافحة الفيروسات]]",
+          "تبحث عن البرمجيات الضارة"
+        ],
+        [
+          "[[firewalls|جدار الحماية]]",
+          "يراقب حركة البيانات بين الشبكات"
+        ],
+        [
+          "[[authentication-methods|المصادقة]]",
+          "تتأكد من هوية المستخدم"
+        ],
+        [
+          "[[authentication-vs-access-control|التحكم في الوصول]]",
+          "يحدد ما يستطيع المستخدم فعله"
+        ],
+        [
+          "[[encryption-basics|التشفير]]",
+          "يجعل البيانات غير مفهومة لمن لا يملك المفتاح"
+        ],
+        [
+          "[[vpn-and-https|VPN وHTTPS]]",
+          "تحمي البيانات أثناء انتقالها"
+        ],
+        [
+          "[[physical-security|الأمان المادي]]",
+          "يمنع غير المصرح لهم من الوصول إلى الأجهزة والمواقع"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "الفكرة أن الباب الواحد قد يُفتح، أما عدة أبواب متتالية فتبطئ المهاجم وتمنحك وقتًا للاكتشاف."
+    },
+    {
+      "t": "p",
+      "text": "ولا ننسى الطبقة القانونية والبشرية: [[cyber-legal-responsibilities|المسؤوليات القانونية]] وتدريب الموظفين ([[insider-threats|التهديدات الداخلية]])."
+    },
+    {
+      "t": "h2",
+      "text": "كيف تكتب التوصية؟"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "اختر طبقتين أو ثلاثًا تناسب كل واحدة منها ثغرة محددة في السيناريو.",
+        "فسّر لماذا اخترتها، ولماذا لا يكفي إجراء واحد.",
+        "اذكر حدود كل طبقة، فمثلًا الجدار لا يمنع USB مصابًا، والتشفير لا ينفع إن كانت كلمة المرور ضعيفة."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "الهدف ليس جمع أكبر عدد من الأدوات، بل تغطية الثغرات المهمة في السيناريو بتنوع وسائل لا تفشل كلها للسبب نفسه."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

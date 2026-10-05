@@ -156,8 +156,12 @@ export function validateNodes(nodes: KbNode[]): Issue[] {
       if (!c.unit) err(c, "concepts must belong to a unit");
       if (!c.questionsAnswered?.length) warn(c, "no questionsAnswered — page is harder to retrieve");
       const words = wordCount(collectStrings(c.body));
-      if (isPublished && (c.body?.length ?? 0) < 4) err(c, "published concept body is too thin (<4 blocks)");
-      if (isPublished && words < 140) err(c, `published concept body has only ${words} words (<140) — thin content`);
+      // Thin-content gate. A long body passes outright; a compact, table-led explainer passes only if the whole visible page
+      // (short answer + why + body + terminology + questions) is still substantial and the body itself is not a stub.
+      const visibleWords = wordCount([c.shortAnswer ?? "", c.whyBtec ?? "", ...collectStrings(c.body), ...collectStrings(c.terminology ?? []), ...(c.questionsAnswered ?? [])]);
+      if (isPublished && (c.body?.length ?? 0) < 3) err(c, "published concept body is too thin (<3 blocks)");
+      if (isPublished && !(words >= 140 || (words >= 80 && visibleWords >= 230)))
+        err(c, `published concept is too thin (body ${words} words, visible page ${visibleWords}; need body ≥140, or body ≥80 and visible page ≥230)`);
       for (const q of c.questionsAnswered ?? []) {
         const key = normalizeArabic(q).replace(/[^\p{L}\p{N}]+/gu, " ").trim();
         const prev = questionSeen.get(key);

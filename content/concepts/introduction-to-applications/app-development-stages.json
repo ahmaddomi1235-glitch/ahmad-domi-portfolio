@@ -1,0 +1,113 @@
+{
+  "id": "app-development-stages",
+  "type": "Comparison",
+  "title_ar": "مراحل تطوير التطبيق: النموذج الأولي والبرمجة والاختبار والإصلاح",
+  "title_en": "App Development Stages",
+  "slug": "app-development-stages",
+  "summary": "تمر فكرة التطبيق بأربع مراحل تتكرر: نموذج أولي (Prototype) بلا وظائف حقيقية، ثم برمجة وتطوير بأدوات مثل IDE وSDK ومكتبات وAPIs، ثم اختبار مستمر، ثم إصلاح وتحسين بحسب ملاحظات المستخدمين حتى يصبح التطبيق جاهزًا.",
+  "unit": "introduction-to-applications",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مدخل إلى التطبيقات — الهدف أ (أحمد دومي)",
+      "ref": "الصفحات 10–12",
+      "url": "/documents/teaching-materials/intro-to-applications-target-a.pdf"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "app-testing-types",
+    "api-library-sdk",
+    "app-map-wireframe-prototype"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-043"
+  ],
+  "order": 4,
+  "shortAnswer": "بعد اكتمال التصميم تبدأ مرحلة التطوير والاختبار: **(1) النموذج الأولي (Prototype)**: محاكاة للتطبيق بلا وظائف حقيقية، قد يكون ورقيًا أو رقميًا، يُعرض على مستخدمين حقيقيين لجمع ملاحظاتهم قبل البرمجة ويكشف المشاكل مبكرًا قبل أن تصبح مكلفة. **(2) البرمجة والتطوير** بأدوات: بيئة تطوير متكاملة IDE (Android Studio أو Xcode)، وحزمة تطوير SDK، ومكتبات جاهزة، وواجهات APIs.",
+  "whyBtec": "قل بوضوح إن الدورة تتكرر، وإن الاختبار يبدأ مبكرًا لا في النهاية.",
+  "terminology": [
+    {
+      "ar": "نموذج أولي",
+      "en": "Prototype"
+    },
+    {
+      "ar": "حزمة تطوير البرامج",
+      "en": "SDK"
+    },
+    {
+      "ar": "نسخة تجريبية",
+      "en": "Beta"
+    },
+    {
+      "ar": "دورة تطوير",
+      "en": "Development Cycle"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي مراحل تطوير التطبيق؟",
+    "ما هو النموذج الأولي Prototype؟",
+    "app development stages prototype BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شرح مفصّل"
+    },
+    {
+      "t": "p",
+      "text": "**(3) الاختبار**: عملية مستمرة لاكتشاف الأخطاء. **(4) الإصلاح والتحسين**: دورة تطوير ← اختبار ← إصلاح حتى يصبح التطبيق جاهزًا، مع الاستماع لملاحظات المستخدمين وإطلاق نسخة تجريبية (Beta) لمجموعة صغيرة قبل الإطلاق الرسمي."
+    },
+    {
+      "t": "ol",
+      "items": [
+        "النموذج الأولي: رسم الشاشات وطريقة التنقل قبل كتابة أي كود، ورقيًا أو بأدوات تصميم.",
+        "البرمجة والتطوير: كتابة الكود بأدوات التطوير.",
+        "الاختبار: التأكد أن التطبيق يعمل كما هو متوقع.",
+        "الإصلاح والتحسين: إصلاح ما اكتُشف وتحسين الواجهة بحسب سلوك المستخدمين الفعلي."
+      ]
+    },
+    {
+      "t": "table",
+      "head": [
+        "الأداة",
+        "ما هي؟"
+      ],
+      "rows": [
+        [
+          "IDE",
+          "بيئة التطوير المتكاملة، مثل Android Studio لأجهزة Android وXcode لأجهزة Apple"
+        ],
+        [
+          "SDK",
+          "مجموعة أدوات توفرها الشركات المصنعة للمساعدة في بناء التطبيقات"
+        ],
+        [
+          "Libraries",
+          "أكواد جاهزة مكتوبة مسبقًا توفر وقتًا كبيرًا"
+        ],
+        [
+          "APIs",
+          "واجهات تسمح للتطبيق بالتواصل مع الجهاز أو خدمات خارجية"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "ويقول المطورون المحترفون: أصلح الرسم قبل أن تصلح الكود؛ فتعديل رسم أسهل من تعديل كود بمرات. وتبني الشركات الكبرى عشرات النماذج الأولية قبل الإطلاق. وللاختبار بأنواعه: [[app-testing-types|أنواع اختبار التطبيقات]]، وللأدوات: [[api-library-sdk|API وLibrary وSDK]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

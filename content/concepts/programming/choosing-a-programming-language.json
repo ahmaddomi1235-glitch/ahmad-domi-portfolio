@@ -1,0 +1,117 @@
+{
+  "id": "choosing-a-programming-language",
+  "type": "Comparison",
+  "title_ar": "لماذا توجد لغات برمجة كثيرة؟ وكيف نختار اللغة المناسبة؟",
+  "title_en": "Choosing a Programming Language",
+  "slug": "choosing-a-programming-language",
+  "summary": "لا توجد لغة هي الأفضل مطلقًا، بل لغة أنسب لمجال أو جهاز معين. نختار بحسب نوع الجهاز ونظام التشغيل والأدوات المتاحة ونوع التطبيق: مدمج، جوال، ويب، أو سطح مكتب.",
+  "unit": "programming",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة البرمجة (أحمد دومي)",
+      "ref": "لماذا توجد لغات برمجة مختلفة؛ مجالات تطبيق لغات البرمجة"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "runtime-vs-development-requirements",
+    "programming-language-comparison-criteria",
+    "programming-language-types"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-044",
+    "src-030"
+  ],
+  "order": 15,
+  "shortAnswer": "مثلما توجد مركبات مختلفة لأغراض مختلفة (شاحنة، سيارة صغيرة، دراجة) توجد لغات برمجة مختلفة لأنواع مختلفة من التطبيقات. لا توجد لغة هي الأفضل على الإطلاق، بل لغة أنسب لمجال أو نوع جهاز. وعند الاختيار ننظر إلى: نوع الجهاز الذي سيعمل عليه البرنامج، ونظام التشغيل، والأدوات المتوافرة لكتابة الكود، ونوع التطبيق المطلوب.",
+  "whyBtec": "في الإجابة اربط اللغة بالمجال والأدوات، لا بالشعبية فقط.",
+  "terminology": [
+    {
+      "ar": "اختيار اللغة",
+      "en": "Language Selection"
+    },
+    {
+      "ar": "نظام مدمج",
+      "en": "Embedded System"
+    },
+    {
+      "ar": "تطبيق ويب",
+      "en": "Web Application"
+    },
+    {
+      "ar": "تطبيق جوال",
+      "en": "Mobile App"
+    }
+  ],
+  "questionsAnswered": [
+    "كيف أختار لغة البرمجة المناسبة؟",
+    "لماذا توجد لغات برمجة كثيرة؟",
+    "choosing programming language BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "المجال واللغات الشائعة"
+    },
+    {
+      "t": "table",
+      "head": [
+        "المجال",
+        "لغات شائعة",
+        "ملاحظة"
+      ],
+      "rows": [
+        [
+          "الأنظمة المدمجة (غسالات، ميكروويف، تحكم عن بعد، أجهزة طبية)",
+          "C وC++",
+          "لغات قريبة من العتاد"
+        ],
+        [
+          "تطبيقات الجوال",
+          "Android: Java وKotlin؛ iOS: Objective-C سابقًا ثم Swift",
+          "ترتبط بنظام التشغيل وأداة التطوير"
+        ],
+        [
+          "تطبيقات الويب",
+          "الواجهة الأمامية: HTML وCSS وJavaScript؛ الخلفية: PHP وPython وRuby وJava",
+          "لغات مختلفة لجانبين مختلفين"
+        ],
+        [
+          "سطح المكتب",
+          "C# وVisual Basic .NET وJava وC++",
+          "بحسب نظام التشغيل والأدوات"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "أمثلة على ارتباط اللغة بنظام وأداة"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "**C:** تعمل على أنظمة متعددة (Windows وMac وLinux)، مناسبة للأنظمة المدمجة ومنخفضة المستوى ولأنظمة التشغيل والتعريفات.",
+        "**Visual Basic .NET:** غالبًا على Windows مع Visual Studio، لبرامج سطح المكتب وبعض تطبيقات الويب.",
+        "**Objective-C:** كانت اللغة الأساسية لأجهزة Apple مع Xcode قبل Swift."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "لكل مجال لغات أنسب من حيث الأدوات والدعم والمكتبات الجاهزة. وللتفرقة بين ما يحتاجه المستخدم وما يحتاجه المبرمج: [[runtime-vs-development-requirements|متطلبات التشغيل والتطوير]]. ولمعايير المفاضلة: [[programming-language-comparison-criteria|معايير مقارنة اللغات]] و[[programming-language-types|أنواع اللغات]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

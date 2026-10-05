@@ -1,0 +1,52 @@
+{
+  "id": "programming",
+  "type": "Unit",
+  "title_ar": "البرمجة",
+  "title_en": "Programming",
+  "slug": "programming",
+  "summary": "شرح وحدة البرمجة في BTEC IT بالعربي: التفكير الحاسوبي، المخططات والتمثيل، نماذج البرمجة، لغات البرمجة وأنواعها، أنواع البيانات والمتغيرات، والاختبار.",
+  "unit": null,
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة البرمجة (أحمد دومي)"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [],
+  "officialSource": null,
+  "status": "published",
+  "needsVerification": true,
+  "reviewState": "assistant-drafted from the author's programming lecture notes (authorship confirmed by the owner 2026-10-04); no official Learning Aim mapping (no verified Pearson source for this unit); pending author review",
+  "sourceIds": [
+    "src-027",
+    "src-030",
+    "src-044",
+    "src-101"
+  ],
+  "order": 8,
+  "description": "تبدأ وحدة البرمجة من سؤال: هل أنت مبرمج أم كاتب كود؟ ثم تنتقل من التفكير في المشكلة (تفكيك، أنماط، تجريد، تمثيل) إلى أدوات التمثيل (مخطط الانسياب والكيانات)، ثم نماذج البرمجة، ولغات البرمجة وأنواعها وكيف نختار بينها، والمتغيرات وأنواع البيانات، وأخيرًا الاختبار.",
+  "intro": [
+    {
+      "t": "p",
+      "text": "البرمجة في BTEC IT ليست حفظ أوامر لغة. هي القدرة على **فهم مشكلة عميل**، وتصميم حل، وكتابة الكود، واختباره وتحسينه. لذلك تبدأ صفحات هذه الوحدة بطريقة التفكير قبل الكود."
+    },
+    {
+      "t": "p",
+      "text": "الشرح هنا تعليمي عام: مفاهيم وأمثلة قصيرة وجداول مقارنة، دون حلّ لأي مهمة تقييم."
+    }
+  ],
+  "axes": [],
+  "axesSource": "",
+  "resourceIds": [],
+  "cardId": null,
+  "comingSoon": []
+}

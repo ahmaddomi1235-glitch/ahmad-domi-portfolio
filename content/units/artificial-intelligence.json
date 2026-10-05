@@ -12,14 +12,27 @@
   "questions": [],
   "sourceType": "ahmad-unit-book",
   "sourceReferences": [
-    { "kind": "pdf", "label": "دوسية تأسيس: الأمن السيبراني ومبادئ الذكاء الاصطناعي — جيل 2009 (أحمد دومي)", "ref": "الصفحات 19–30", "url": "/documents/teaching-materials/foundation-cybersecurity-ai-2009.pdf" },
-    { "kind": "pdf", "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته (أحمد دومي)", "ref": "بيانات الذكاء الاصطناعي", "url": "/documents/teaching-materials/ai-introduction-applications.pdf" }
+    {
+      "kind": "pdf",
+      "label": "دوسية تأسيس: الأمن السيبراني ومبادئ الذكاء الاصطناعي — جيل 2009 (أحمد دومي)",
+      "ref": "الصفحات 19–30",
+      "url": "/documents/teaching-materials/foundation-cybersecurity-ai-2009.pdf"
+    },
+    {
+      "kind": "pdf",
+      "label": "مدخل إلى الذكاء الاصطناعي وتطبيقاته (أحمد دومي)",
+      "ref": "بيانات الذكاء الاصطناعي",
+      "url": "/documents/teaching-materials/ai-introduction-applications.pdf"
+    }
   ],
   "youtubeId": null,
   "author": "ahmad-domi",
   "lastReviewed": "2026-10-04",
   "visibility": "PUBLIC",
-  "related": ["cyber-security", "data-modelling"],
+  "related": [
+    "cyber-security",
+    "data-modelling"
+  ],
   "officialSource": null,
   "status": "published",
   "needsVerification": true,
@@ -27,17 +40,21 @@
   "order": 2,
   "description": "الفكرة التي يبني عليها أحمد دومي هذه الوحدة: الذكاء الاصطناعي لا يفكر مثل الإنسان، بل يتعلم من البيانات. لذلك تتبع الصفحات الترتيب نفسه: ما هو الذكاء الاصطناعي وكيف يتعلم، ثم أنواع البيانات التي يتعلم منها، ثم المشكلتان اللتان تحددان جودة القرار: التحيّز والخصوصية.",
   "intro": [
-    { "t": "p", "text": "في وحدة الذكاء الاصطناعي، **البيانات هي وقود النظام**، والخوارزمية طريقة المعالجة، والنموذج هو الناتج الذي يتخذ القرار. إذا فهمت هذه العلاقة سهل عليك ربط بقية موضوعات الوحدة: أنواع البيانات، مصادرها، جودتها، التحيّز، وحمايتها." },
-    { "t": "p", "text": "الصفحات المنشورة هنا تغطي أساس الوحدة. بقية الموضوعات موجودة في مادة أحمد دومي (انظر الملفات أدناه) وستُنشر كصفحات مستقلة عندما تُراجَع." }
+    {
+      "t": "p",
+      "text": "في وحدة الذكاء الاصطناعي، **البيانات هي وقود النظام**، والخوارزمية طريقة المعالجة، والنموذج هو الناتج الذي يتخذ القرار. إذا فهمت هذه العلاقة سهل عليك ربط بقية موضوعات الوحدة: أنواع البيانات، مصادرها، جودتها، التحيّز، وحمايتها."
+    },
+    {
+      "t": "p",
+      "text": "الصفحات المنشورة هنا تغطي أساس الوحدة. بقية الموضوعات موجودة في مادة أحمد دومي (انظر الملفات أدناه) وستُنشر كصفحات مستقلة عندما تُراجَع."
+    }
   ],
   "axes": [],
   "axesSource": "",
-  "resourceIds": ["res-ai-introduction-applications", "res-foundation-cybersecurity-ai-2009"],
+  "resourceIds": [
+    "res-ai-introduction-applications",
+    "res-foundation-cybersecurity-ai-2009"
+  ],
   "cardId": "btec-it-card",
-  "comingSoon": [
-    "مصادر البيانات في مشاريع الذكاء الاصطناعي",
-    "تنسيقات البيانات CSV وJSON وXML",
-    "تجهيز مجموعات التدريب والتحقق والاختبار",
-    "حماية بيانات أنظمة الذكاء الاصطناعي"
-  ]
+  "comingSoon": []
 }

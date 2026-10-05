@@ -1,0 +1,112 @@
+{
+  "id": "api-library-sdk",
+  "type": "Comparison",
+  "title_ar": "الفرق بين API وLibrary وSDK: كيف يتواصل التطبيق مع الجهاز؟",
+  "title_en": "API vs Library vs SDK",
+  "slug": "api-library-sdk",
+  "summary": "API واجهة تواصل بين التطبيق ونظام التشغيل أو بين تطبيقين، والمكتبة (Library) مجموعة أكواد جاهزة، وSDK حزمة شاملة تضم الأدوات والمكتبات والوثائق والمحاكيات. التطبيق لا يعمل بمعزل عن الجهاز بل عبر طبقات منظمة تضمن الأمان.",
+  "unit": "introduction-to-applications",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مدخل إلى التطبيقات — الهدف أ (أحمد دومي)",
+      "ref": "الصفحتان 19–20",
+      "url": "/documents/teaching-materials/intro-to-applications-target-a.pdf"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "app-permissions-privacy",
+    "app-development-stages",
+    "runtime-vs-development-requirements",
+    "apis-and-json-data"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-043"
+  ],
+  "order": 9,
+  "shortAnswer": "التطبيق لا يعمل بمعزل عن الجهاز، بل يتواصل معه عبر طبقات تقنية منظمة تضمن الأمان وتمنع وصول التطبيقات إلى معلوماتك دون إذنك. **API** نقطة تواصل بين التطبيق ونظام التشغيل أو بين تطبيقين: تشبه طاقم الخدمة في مطعم، لا تدخل المطبخ بنفسك بل تطلب من الطاقم.",
+  "whyBtec": "للتذكّر: API = نقطة تواصل واحدة، Library = مجموعة أكواد، SDK = الحزمة الكاملة التي تشمل كل شيء.",
+  "terminology": [
+    {
+      "ar": "واجهة برمجة التطبيقات",
+      "en": "API"
+    },
+    {
+      "ar": "مكتبة",
+      "en": "Library"
+    },
+    {
+      "ar": "حزمة تطوير البرامج",
+      "en": "SDK"
+    }
+  ],
+  "questionsAnswered": [
+    "ما الفرق بين API وSDK والمكتبة؟",
+    "API vs SDK vs library BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شرح مفصّل"
+    },
+    {
+      "t": "p",
+      "text": "**المكتبة (Library)** مجموعة أكواد جاهزة يستخدمها المطور مباشرة دون كتابتها من الصفر. **SDK** حزمة شاملة تضم الأدوات والمكتبات والوثائق والمحاكيات تقدمها شركة نظام التشغيل (Android SDK من Google، iOS SDK من Apple)."
+    },
+    {
+      "t": "table",
+      "head": [
+        "",
+        "API",
+        "Library",
+        "SDK"
+      ],
+      "rows": [
+        [
+          "ما هو؟",
+          "واجهة تواصل بين التطبيق والنظام أو بين تطبيقين",
+          "مجموعة أكواد جاهزة مسبقًا",
+          "حزمة شاملة: أدوات + مكتبات + وثائق + محاكيات"
+        ],
+        [
+          "مثال",
+          "API الكاميرا لفتح الكاميرا والتقاط الصور؛ API الموقع لإحداثيات GPS؛ API الإشعارات؛ API الطقس لدرجة الحرارة",
+          "مكتبة خرائط تضيف خريطة تفاعلية بأسطر قليلة",
+          "Android SDK من Google، iOS SDK من Apple"
+        ],
+        [
+          "تشبيه",
+          "طاقم الخدمة في المطعم",
+          "صورة مفصلة لجسر تقلّده بدل التصميم من الصفر",
+          "كل ما تحتاجه للبناء في حزمة واحدة"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وهكذا يمر الوصول إلى الكاميرا أو الميكروفون أو الموقع عبر API تحت رقابة نظام التشغيل، وتخضع لإذن المستخدم ([[app-permissions-privacy|الأذونات]]). وهذه الأدوات من متطلبات التطوير ([[app-development-stages|مراحل التطوير]] و[[runtime-vs-development-requirements|متطلبات التشغيل والتطوير]]). وللتعامل مع الواجهات في سياق البيانات: [[apis-and-json-data|APIs وJSON]]."
+    },
+    {
+      "t": "h2",
+      "text": "أين تظهر في المشروع؟"
+    },
+    {
+      "t": "p",
+      "text": "عند بناء تطبيق خرائط مثلًا: يستعمل المطور SDK الخاص بالنظام لبيئة العمل، ومكتبة خرائط جاهزة لعرض الخريطة بأسطر قليلة، وAPI الموقع للحصول على إحداثيات GPS، وAPI خارجي للطقس لعرض درجة الحرارة."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

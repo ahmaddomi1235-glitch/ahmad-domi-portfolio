@@ -1,0 +1,123 @@
+{
+  "id": "goal-seek-what-if",
+  "type": "Concept",
+  "title_ar": "تحليل «ماذا لو» وGoal Seek: كيف تصل إلى هدف محدد؟",
+  "title_en": "What-If Analysis and Goal Seek",
+  "slug": "goal-seek-what-if",
+  "summary": "تحليل «ماذا لو» يجرّب سيناريوهات مختلفة داخل النموذج. وGoal Seek يُستخدم حين نعرف النتيجة المطلوبة ولا نعرف قيمة أحد المدخلات، فيحسب المدخل اللازم لتحقيقها تلقائيًا.",
+  "unit": "data-modelling",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "نمذجة البيانات وجداول البيانات: إنشاء لوحة معلومات (أحمد دومي)",
+      "ref": "تحليل «ماذا لو» باستخدام Goal Seek"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "what-is-data-modelling",
+    "predictive-analytics",
+    "absolute-relative-references"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-042"
+  ],
+  "order": 22,
+  "shortAnswer": "تحليل «ماذا لو» (What-If) أداة تتيح تجربة سيناريوهات مختلفة داخل نموذج الجدول. وتُستخدم **Goal Seek** عندما نعرف النتيجة التي نريد الوصول إليها لكن لا نعرف قيمة أحد المدخلات؛ فتحسب المدخل المطلوب تلقائيًا لتحقيق هدف محدد، وهي مفيدة في التسعير والمبيعات والأرباح وعدد الوحدات اللازمة.",
+  "whyBtec": "هذه الأداة تعبّر عن فكرة نمذجة البيانات: نغيّر قيمة ونلاحظ أثرها على التوقعات.",
+  "terminology": [
+    {
+      "ar": "ماذا لو",
+      "en": "What-If Analysis"
+    },
+    {
+      "ar": "البحث عن هدف",
+      "en": "Goal Seek"
+    },
+    {
+      "ar": "سيناريو",
+      "en": "Scenario"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو Goal Seek؟",
+    "ما هو تحليل ماذا لو؟",
+    "goal seek what-if analysis BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "مثال"
+    },
+    {
+      "t": "p",
+      "text": "إيراد دورة تدريبية = عدد المقاعد المباعة × سعر المقعد. إن بيع المقعد بـ 25 دينارًا ونريد إيرادًا قدره 5000 دينار، يستطيع Goal Seek تحديد عدد المقاعد المطلوبة (200 مقعد) بدل تجربة أرقام عشوائية يدويًا."
+    },
+    {
+      "t": "table",
+      "head": [
+        "العنصر",
+        "في المثال"
+      ],
+      "rows": [
+        [
+          "الصيغة",
+          "الإيراد = المقاعد × السعر"
+        ],
+        [
+          "الهدف",
+          "إيراد 5000 دينار"
+        ],
+        [
+          "الخلية المتغيرة",
+          "عدد المقاعد"
+        ],
+        [
+          "الناتج",
+          "200 مقعد"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "ما علاقته بنمذجة البيانات؟"
+    },
+    {
+      "t": "p",
+      "text": "النموذج يربط المدخلات بالنتائج. حين تغيّر المدخل وتلاحظ التوقع تتعلم كيف تؤثر القرارات في النتيجة قبل اتخاذها، وهو جوهر [[what-is-data-modelling|نمذجة البيانات]] و[[predictive-analytics|التحليلات التنبؤية]]."
+    },
+    {
+      "t": "p",
+      "text": "وللمراجع المستخدمة في الصيغ انظر [[absolute-relative-references|المراجع المطلقة والنسبية]]."
+    },
+    {
+      "t": "h2",
+      "text": "متى أستخدمه؟"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "التسعير: ما السعر اللازم لتحقيق إيراد معين؟",
+        "المبيعات: كم وحدة يجب بيعها؟",
+        "الأرباح: ما المدخل الذي يوصلني للربح المطلوب؟"
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وعكسه: إن كنت تعرف المدخلات وتريد رؤية النتيجة فاضبط القيم يدويًا وانظر الأثر، وهذا هو تحليل «ماذا لو» العادي."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

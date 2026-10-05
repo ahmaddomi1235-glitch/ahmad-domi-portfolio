@@ -1,0 +1,129 @@
+{
+  "id": "two-factor-authentication",
+  "type": "Concept",
+  "title_ar": "التحقق بخطوتين (2FA): لماذا لا تكفي كلمة المرور؟",
+  "title_en": "Two-Factor Authentication (2FA)",
+  "slug": "two-factor-authentication",
+  "summary": "التحقق بخطوتين يطلب عاملين مختلفين لإثبات الهوية، مثل كلمة المرور ورمز يصل إلى الهاتف. فإن عرف المهاجم كلمة المرور ما زال يحتاج العامل الثاني.",
+  "unit": "cyber-security",
+  "learningAim": "A",
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «مبادئ الأمن السيبراني» (أحمد دومي)",
+      "ref": "التحقق بخطوتين ورموز الأمان"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "authentication-methods",
+    "phishing",
+    "strong-passwords"
+  ],
+  "officialSource": {
+    "publisher": "Pearson",
+    "document": "BTEC Level 3 IT — Unit 11: Cyber Security and Incident Management (النسخة العربية، جدول معايير التقييم)",
+    "registryRef": [
+      "src-021",
+      "src-063"
+    ]
+  },
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-015"
+  ],
+  "order": 29,
+  "shortAnswer": "التحقق بخطوتين أو المصادقة الثنائية (2FA) يطلب عاملين مختلفين بدل عامل واحد، كأن تدخل كلمة المرور ثم رمزًا يصل إلى هاتفك أو يولّده تطبيق. فإن سرق شخص كلمة المرور لم يستطع الدخول دون العامل الثاني.",
+  "whyBtec": "هذا الحل من أسرع ما يُقترح لتقليل أثر التصيّد وسرقة كلمات المرور، ويظهر في كثير من التوصيات.",
+  "terminology": [
+    {
+      "ar": "التحقق بخطوتين",
+      "en": "Two-Factor Authentication (2FA)"
+    },
+    {
+      "ar": "رمز أمان",
+      "en": "Security Token"
+    },
+    {
+      "ar": "عامل",
+      "en": "Factor"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هو التحقق بخطوتين؟",
+    "كيف تحمي 2FA الحساب؟",
+    "two factor authentication BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "الفكرة"
+    },
+    {
+      "t": "p",
+      "text": "إذا كانت كلمة المرور وحدها هي المطلوب، فسرقتها تكفي للدخول. مع 2FA يُطلب عاملان مختلفان، مثل شيء تعرفه (كلمة المرور) وشيء تملكه (هاتفك)."
+    },
+    {
+      "t": "ul",
+      "items": [
+        "كلمة المرور + رمز يصل إلى الهاتف.",
+        "كلمة المرور + رمز مؤقت من تطبيق أو جهاز يتغير باستمرار؛ بعد فترة قصيرة يصبح الرمز القديم غير صالح."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "يقلل هذا أثر [[phishing|التصيّد]] وأثر ضعف كلمات المرور ([[strong-passwords|كلمات المرور القوية]])، وهو واحد من [[authentication-methods|طرق المصادقة]]."
+    },
+    {
+      "t": "h2",
+      "text": "ما العوامل؟"
+    },
+    {
+      "t": "table",
+      "head": [
+        "نوع العامل",
+        "مثال"
+      ],
+      "rows": [
+        [
+          "شيء تعرفه",
+          "كلمة المرور"
+        ],
+        [
+          "شيء تملكه",
+          "هاتف يصله رمز، أو جهاز/تطبيق يولّد رمزًا"
+        ],
+        [
+          "شيء يميّزك",
+          "بصمة أو وجه (المصادقة البيومترية)"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "ويجب أن يكون العاملان **مختلفين في النوع**؛ فكلمتا مرور لا تُعدّان تحققًا بخطوتين حقيقيًا."
+    },
+    {
+      "t": "h2",
+      "text": "حدوده"
+    },
+    {
+      "t": "p",
+      "text": "التحقق بخطوتين يرفع مستوى الأمان لكنه ليس مطلقًا؛ فإن خدع المهاجم المستخدم ليعطيه الرمز نفسه (كما في بعض هجمات التصيّد) فقد يتجاوزه. لذلك يُستخدم مع التدريب لا بديلًا عنه."
+    },
+    {
+      "t": "p",
+      "text": "ويناسب حماية الحسابات المهمة كالبريد والحسابات المالية وحسابات الإدارة."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

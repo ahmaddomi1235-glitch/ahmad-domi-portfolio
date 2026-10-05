@@ -1,0 +1,109 @@
+{
+  "id": "remote-access-and-network-services",
+  "type": "Comparison",
+  "title_ar": "الوصول عن بعد وخدمات الشبكة: سطح المكتب البعيد ومشاركة الملفات وقواعد البيانات والخطر الأمني",
+  "title_en": "Remote Access and Network Services",
+  "slug": "remote-access-and-network-services",
+  "summary": "تسمح خدمات الوصول عن بعد بالتحكم بجهاز من موقع آخر وتفيد مسؤول التقنية لكنها تحتاج مصادقة قوية وتحديد المسموح لهم وتسجيل الجلسات. وتشمل خدمات التطبيقات مشاركة الملفات والطابعات وخوادم الويب والبريد والإنترانت وقواعد البيانات؛ وكل خدمة تفتح منفذًا أو مسارًا جديدًا يحتاج تحديثات وصلاحيات وجدار حماية ومراقبة.",
+  "unit": "cyber-security",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «الأنظمة المتصلة بالشبكة والبنية التحتية» ضمن وحدة الأمن السيبراني (أحمد دومي)",
+      "ref": "15. خدمات البنية التحتية؛ الوصول عن بعد؛ 10. قواعد البيانات"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "software-vulnerabilities",
+    "authentication-methods",
+    "firewalls",
+    "dns-and-dhcp"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY: concepts only; the source's report brief, template paragraph and full-mark model answer are not used",
+  "sourceIds": [
+    "src-069"
+  ],
+  "order": 48,
+  "shortAnswer": "خدمات **الوصول عن بعد** (مثل Microsoft Remote Desktop أو أدوات كـ GoToMyPC) تتيح التحكم بجهاز من موقع آخر وتعمل بين أنظمة مختلفة (Windows وMac وiOS وAndroid). مفيدة لمسؤول التقنية، لكنها تحتاج **مصادقة قوية** وتحديد الأجهزة والمستخدمين المسموح لهم وتسجيل الجلسات أو مراقبتها، لأن الخدمة المفتوحة بلا ضوابط قد تعطي المهاجم طريقًا مباشرًا.",
+  "whyBtec": "سهولة المشاركة دون إدارة قد تحوّل الخدمة إلى مصدر لتسريب المعلومات الحساسة.",
+  "terminology": [
+    {
+      "ar": "وصول عن بعد",
+      "en": "Remote Access"
+    },
+    {
+      "ar": "سطح المكتب البعيد",
+      "en": "Remote Desktop"
+    },
+    {
+      "ar": "قاعدة بيانات",
+      "en": "Database"
+    }
+  ],
+  "questionsAnswered": [
+    "ما مخاطر الوصول عن بعد؟",
+    "remote access network services security BTEC"
+  ],
+  "body": [
+    {
+      "t": "h2",
+      "text": "شرح مفصّل"
+    },
+    {
+      "t": "p",
+      "text": "و**خدمات التطبيقات** تشمل مشاركة الملفات والطابعات وخوادم الويب والبريد الإلكتروني والإنترانت الداخلية. كل خدمة تسهّل العمل لكنها تفتح منفذًا أو مسارًا جديدًا يحتاج تحديثات وصلاحيات وجدار حماية ومراقبة؛ لذلك يرتبط تشغيل الخدمة بحاجة واضحة لا لمجرد أنها متاحة. وتعتمد التطبيقات المؤسسية على **قواعد بيانات** (MySQL وOracle وSQL Server) تحتاج إدارة للحسابات والصلاحيات والنسخ الاحتياطي والتحديث، وتتعرض لأخطار مثل حقن SQL."
+    },
+    {
+      "t": "table",
+      "head": [
+        "الخدمة",
+        "الفائدة",
+        "الضابط الأمني"
+      ],
+      "rows": [
+        [
+          "الوصول عن بعد",
+          "تحكم المسؤول بجهاز من موقع آخر عبر أنظمة مختلفة",
+          "مصادقة قوية، تحديد المستخدمين والأجهزة المسموح لهم، تسجيل الجلسات"
+        ],
+        [
+          "مشاركة الملفات والطابعات",
+          "سهولة المشاركة",
+          "صلاحيات بحسب الحاجة"
+        ],
+        [
+          "خوادم الويب والبريد والإنترانت",
+          "خدمات العمل اليومي",
+          "تحديثات وجدار حماية ومراقبة"
+        ],
+        [
+          "قواعد البيانات",
+          "تخزين السجلات وتشغيل الخدمات",
+          "إدارة الحسابات والصلاحيات والنسخ والتحديث؛ التحقق من المدخلات والاستعلامات الآمنة وصلاحيات محدودة ضد SQL Injection"
+        ],
+        [
+          "إدارة المستندات",
+          "حفظ الملفات والبحث ومشاركتها",
+          "وصول ضروري فقط"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وانظر [[software-vulnerabilities|حقن SQL وثغرات البرامج]] و[[authentication-methods|طرق المصادقة]] و[[firewalls|جدران الحماية]] و[[dns-and-dhcp|DNS وDHCP]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

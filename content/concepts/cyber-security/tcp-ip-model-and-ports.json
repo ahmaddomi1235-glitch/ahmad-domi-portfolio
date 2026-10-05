@@ -1,0 +1,133 @@
+{
+  "id": "tcp-ip-model-and-ports",
+  "type": "Comparison",
+  "title_ar": "نموذج TCP/IP والمنافذ: الطبقات الأربع وأرقام المنافذ المعروفة",
+  "title_en": "TCP/IP Model and Ports",
+  "slug": "tcp-ip-model-and-ports",
+  "summary": "ينظم نموذج TCP/IP الاتصال في أربع طبقات: التطبيق، والنقل (TCP أو UDP وأرقام المنافذ)، والإنترنت (عناوين IP والتوجيه)، والوصول إلى الشبكة (الإطارات والوسط المادي). والمنفذ المفتوح يعني أن خدمة تستمع إليه، لذلك تُفتح المنافذ الضرورية فقط لتقليل سطح الهجوم.",
+  "unit": "cyber-security",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة «الأنظمة المتصلة بالشبكة والبنية التحتية» ضمن وحدة الأمن السيبراني (أحمد دومي)",
+      "ref": "11. نموذج TCP/IP والمنافذ؛ 12. الحزم والإطارات"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC_SUMMARY",
+  "related": [
+    "ip-addressing-ipv4-ipv6-nat",
+    "firewalls",
+    "network-management-tools"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY: concepts only; the source's report brief, template paragraph and full-mark model answer are not used",
+  "sourceIds": [
+    "src-069"
+  ],
+  "order": 44,
+  "shortAnswer": "ينظم **TCP/IP** الاتصال في أربع طبقات: **طبقة التطبيق** (خدمات مثل الويب وDNS والبريد)، و**طبقة النقل** (تنظم الاتصال بين التطبيقات باستخدام TCP أو UDP وأرقام المنافذ)، و**طبقة الإنترنت** (عناوين IP والتوجيه)، و**طبقة الوصول إلى الشبكة** (الإطارات والوسط المادي مثل Ethernet أو Wi-Fi). الفائدة أنها تفصل الوظائف فتساعد على التشخيص: مشكلة في اسم الموقع ← افحص DNS، وخدمة لا تستقبل اتصالًا ← افحص المنفذ، وحزمة لا تصل لشبكة أخرى ← راجع التوجيه. ومن الناحية الأمنية تحدد الطبقات أين تُطبَّق وسائل الحماية.",
+  "whyBtec": "المنفذ المفتوح غالبًا يعني خدمة تستمع؛ ولذلك تُغلق المنافذ غير المستخدمة.",
+  "terminology": [
+    {
+      "ar": "نموذج TCP/IP",
+      "en": "TCP/IP Model"
+    },
+    {
+      "ar": "منفذ",
+      "en": "Port"
+    },
+    {
+      "ar": "طبقة النقل",
+      "en": "Transport Layer"
+    },
+    {
+      "ar": "سطح الهجوم",
+      "en": "Attack Surface"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي طبقات TCP/IP؟",
+    "ما هي المنافذ المعروفة؟",
+    "TCP/IP model ports BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "الطبقة",
+        "وظيفتها",
+        "أمثلة"
+      ],
+      "rows": [
+        [
+          "التطبيق",
+          "التعامل مع الخدمات",
+          "الويب، DNS، البريد"
+        ],
+        [
+          "النقل",
+          "تنظيم الاتصال بين التطبيقات، وتقسيم البيانات إلى وحدات وإعادة تجميعها بالترتيب",
+          "TCP، UDP، أرقام المنافذ"
+        ],
+        [
+          "الإنترنت",
+          "عناوين IP والتوجيه",
+          "IPv4، IPv6"
+        ],
+        [
+          "الوصول إلى الشبكة",
+          "الإطارات والوسط المادي",
+          "Ethernet، Wi-Fi"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "منافذ معروفة (من المادة)"
+    },
+    {
+      "t": "table",
+      "head": [
+        "الخدمة",
+        "رقم المنفذ المعروف"
+      ],
+      "rows": [
+        [
+          "FTP — نقل الملفات",
+          "20"
+        ],
+        [
+          "SMTP — البريد البسيط",
+          "25"
+        ],
+        [
+          "HTTP — الويب",
+          "80"
+        ],
+        [
+          "POP — مكتب البريد",
+          "110"
+        ],
+        [
+          "HTTPS — الويب الآمن",
+          "443"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وأثناء الإرسال تضيف طبقة النقل معلوماتها إلى بيانات التطبيق، ثم تضيف طبقة الإنترنت عنوان IP للمصدر والوجهة، ثم تغلف طبقة الوصول البيانات في إطار يحمل عنوان MAC؛ وعند الوصول تُزال الطبقات بالعكس. أمنيًا: افتح المنافذ الضرورية فقط. وانظر [[ip-addressing-ipv4-ipv6-nat|عنونة IP]] و[[firewalls|جدران الحماية]] و[[network-management-tools|أدوات الإدارة]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

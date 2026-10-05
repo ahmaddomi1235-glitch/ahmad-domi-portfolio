@@ -1,0 +1,151 @@
+{
+  "id": "programming-data-types",
+  "type": "Comparison",
+  "title_ar": "أنواع البيانات الأساسية في البرمجة وإعلان المتغيرات والإسناد والإدخال والإخراج",
+  "title_en": "Basic Programming Data Types",
+  "slug": "programming-data-types",
+  "summary": "الأنواع الأساسية: عدد صحيح، وعدد كسري (حقيقي)، وحرف مفرد، وسلسلة نصية، وقيمة منطقية (صح/خطأ). واختيار النوع المناسب يمنع أخطاء كثيرة، وتختلف طريقة إعلان المتغير وأوامر الإسناد والإدخال والإخراج من لغة لأخرى مع بقاء الفكرة واحدة.",
+  "unit": "programming",
+  "learningAim": null,
+  "criterion": null,
+  "concepts": [],
+  "questions": [],
+  "sourceType": "ahmad-unit-book",
+  "sourceReferences": [
+    {
+      "kind": "pdf",
+      "label": "مادة البرمجة (أحمد دومي)",
+      "ref": "أنواع البيانات الأساسية؛ إعلان المتغيرات؛ أوامر الإسناد والإدخال والإخراج"
+    }
+  ],
+  "youtubeId": null,
+  "author": "ahmad-domi",
+  "lastReviewed": "2026-10-04",
+  "visibility": "PUBLIC",
+  "related": [
+    "variable-naming-conventions",
+    "representing-problem-elements"
+  ],
+  "officialSource": null,
+  "status": "published",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review",
+  "sourceIds": [
+    "src-030",
+    "src-044"
+  ],
+  "order": 14,
+  "shortAnswer": "عند إعلان متغير يجب تحديد نوع القيمة التي سيخزنها. أهم الأنواع: **عدد صحيح** (Integer) بلا كسور كعمر الطالب، و**عدد كسري** (Real/Float/Double) بجزء عشري كالراتب ودرجة الحرارة، و**حرف مفرد** (Char)، و**سلسلة نصية** (String) كاسم الطالب، و**قيمة منطقية** (Boolean) صحيح أو خطأ تُستخدم في الشروط. واختيار النوع المناسب يقلل الأخطاء ويجعل الحسابات والتحقق أدق. وتختلف صيغة الإعلان بين اللغات: في C++ يُكتب النوع ثم الاسم (int age)، وفي Visual Basic .NET: Dim age As Integer.",
+  "whyBtec": "الأفكار البرمجية ثابتة تقريبًا (متغيرات، إسناد، إدخال، إخراج)، والاختلاف في شكل الكتابة. ركّز على الفكرة قبل الصيغة.",
+  "terminology": [
+    {
+      "ar": "نوع البيانات",
+      "en": "Data Type"
+    },
+    {
+      "ar": "عدد صحيح",
+      "en": "Integer"
+    },
+    {
+      "ar": "عدد حقيقي",
+      "en": "Float"
+    },
+    {
+      "ar": "سلسلة نصية",
+      "en": "String"
+    },
+    {
+      "ar": "قيمة منطقية",
+      "en": "Boolean"
+    },
+    {
+      "ar": "جملة إسناد",
+      "en": "Assignment Statement"
+    }
+  ],
+  "questionsAnswered": [
+    "ما هي أنواع البيانات في البرمجة؟",
+    "ما الفرق بين Integer وFloat وString؟",
+    "programming data types BTEC"
+  ],
+  "body": [
+    {
+      "t": "table",
+      "head": [
+        "النوع",
+        "يخزن",
+        "مثال"
+      ],
+      "rows": [
+        [
+          "Integer",
+          "أعدادًا بلا كسور",
+          "5، 100، -10؛ عمر الطالب، عدد الكتب"
+        ],
+        [
+          "Real / Float / Double",
+          "أعدادًا بكسور عشرية",
+          "3.14، -0.5؛ الراتب، الحرارة"
+        ],
+        [
+          "Char",
+          "حرفًا واحدًا",
+          "'A'، '7'"
+        ],
+        [
+          "String",
+          "مجموعة حروف قد تحوي فراغات وأرقامًا ورموزًا",
+          "اسم الطالب، البريد"
+        ],
+        [
+          "Boolean",
+          "حالتين فقط: true أو false",
+          "isAdult تكون true إن كان العمر ≥ 18"
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "الإعلان والإسناد والإدخال والإخراج"
+    },
+    {
+      "t": "table",
+      "head": [
+        "المفهوم",
+        "المعنى",
+        "ملاحظة"
+      ],
+      "rows": [
+        [
+          "إعلان المتغير",
+          "تحديد الاسم والنوع",
+          "C++: int age؛ Visual Basic .NET: Dim age As Integer"
+        ],
+        [
+          "جملة الإسناد",
+          "إعطاء المتغير قيمة",
+          "جعل userAge يساوي 17"
+        ],
+        [
+          "جملة الإدخال",
+          "قراءة قيمة من المستخدم وتخزينها",
+          "قراءة userName"
+        ],
+        [
+          "جملة الإخراج",
+          "عرض نص أو قيمة على الشاشة",
+          "طباعة «Hello»"
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "المعنى واحد والصيغة تختلف بين C++ وC# وRuby وغيرها. وانظر [[variable-naming-conventions|تسمية المتغيرات]] و[[representing-problem-elements|عناصر المشكلة]]."
+    },
+    {
+      "t": "p",
+      "text": "وتجنّب تخزين رقم الهاتف كعدد صحيح لأنه معرّف لا قيمة حسابية، كما في [[spreadsheet-data-types|أنواع البيانات في جداول البيانات]]."
+    }
+  ],
+  "videos": [],
+  "cardCta": false
+}

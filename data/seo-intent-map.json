@@ -9120,6 +9120,7 @@
    "primaryQuery": "شرح الأمن السيبراني BTEC",
    "secondaryQueries": [
     "BTEC Cyber Security",
+    "BTEC Unit 11 Cyber Security",
     "الأمن السيبراني للتوجيهي BTEC"
    ],
    "arabicVariants": [
@@ -9140,8 +9141,8 @@
     "resolution": "hub owns the unit name; concept pages own specific topics",
     "notes": []
    },
-   "title": "الأمن السيبراني BTEC IT: شرح الوحدة بالعربي | أحمد دومي",
-   "metaDescription": "شرح وحدة الأمن السيبراني في BTEC IT بالعربي: التهديدات والثغرات والشبكات والتشفير والحماية والقوانين، مع المصطلحات الإنجليزية.",
+   "title": "الأمن السيبراني BTEC IT (الوحدة 11): شرح بالعربي | أحمد دومي",
+   "metaDescription": "شرح وحدة الأمن السيبراني وإدارة الحوادث (الوحدة 11) في BTEC IT بالعربي: التهديدات والثغرات والشبكات والتشفير والحماية والقوانين.",
    "h1": "الأمن السيبراني",
    "recommendedAnchors": [
     "الأمن السيبراني",

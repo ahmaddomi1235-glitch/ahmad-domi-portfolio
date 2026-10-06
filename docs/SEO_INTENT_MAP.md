@@ -37,7 +37,7 @@ Titles: intent first, then topic, then BTEC context, then the author. Budget ≤
 | `/btec-it` | شرح BTEC IT بالعربي | INFORMATIONAL | TOFU | HIGH | LOW | شرح BTEC IT بالعربي: وحدات ومفاهيم ومصطلحات \| أحمد دومي |
 | `/btec-it/artificial-intelligence` | شرح الذكاء الاصطناعي BTEC | INFORMATIONAL | MOFU | HIGH | LOW | الذكاء الاصطناعي BTEC IT: شرح الوحدة بالعربي \| أحمد دومي |
 | `/btec-it/assessment` | كتابة تقرير BTEC | ASSESSMENT | MOFU | HIGH | LOW | كتابة تقارير BTEC: Pass وMerit وDistinction وأفعال الأمر \| أحمد دومي |
-| `/btec-it/cyber-security` | شرح الأمن السيبراني BTEC | INFORMATIONAL | MOFU | HIGH | LOW | الأمن السيبراني BTEC IT: شرح الوحدة بالعربي \| أحمد دومي |
+| `/btec-it/cyber-security` | شرح الأمن السيبراني BTEC | INFORMATIONAL | MOFU | HIGH | LOW | الأمن السيبراني BTEC IT (الوحدة 11): شرح بالعربي \| أحمد دومي |
 | `/btec-it/data-modelling` | شرح نمذجة البيانات BTEC | INFORMATIONAL | MOFU | HIGH | LOW | نمذجة البيانات BTEC IT: شرح الوحدة بالعربي \| أحمد دومي |
 | `/btec-it/introduction-to-applications` | شرح مدخل إلى التطبيقات BTEC | INFORMATIONAL | MOFU | HIGH | LOW | مدخل إلى التطبيقات BTEC IT: شرح الوحدة بالعربي \| أحمد دومي |
 | `/btec-it/it-project-management` | شرح إدارة المشاريع BTEC | INFORMATIONAL | MOFU | HIGH | LOW | إدارة المشاريع BTEC IT: شرح الوحدة بالعربي \| أحمد دومي |

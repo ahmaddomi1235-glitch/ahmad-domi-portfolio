@@ -10,6 +10,7 @@
  *   node scripts/indexnow.mjs               # dry run: prints what WOULD be sent
  *   node scripts/indexnow.mjs --send        # send the diff, then update the state file
  *   node scripts/indexnow.mjs --send --all  # initial/full submission of every sitemap URL (once)
+ *   node scripts/indexnow.mjs --send --all --also=https://ahmaddomiedu.com/x,...  # also notify URLs that just left the sitemap (e.g. new noindex)
  *
  * Run it AFTER a production deploy (the key file and the new pages must be live). Commit the updated state file.
  */
@@ -69,7 +70,8 @@ async function main() {
   const next = parseSitemap(await res.text());
   const prev = existsSync(STATE) ? JSON.parse(readFileSync(STATE, "utf8")) : {};
   const { changed, removed } = diffState(prev, next, all);
-  const urlList = [...changed, ...removed];
+  const also = (process.argv.find((a) => a.startsWith("--also=")) ?? "").slice(7).split(",").filter(Boolean);
+  const urlList = [...new Set([...changed, ...removed, ...canonicalOnly(also)])];
 
   console.log(`sitemap URLs: ${Object.keys(next).length}; new/changed: ${changed.length}; removed: ${removed.length}`);
   if (!urlList.length) return console.log("nothing to submit");

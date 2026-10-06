@@ -413,3 +413,50 @@ test.describe("phase 2C merged pages", () => {
     });
   }
 });
+
+test.describe("phase 4 SEO", () => {
+  test("each indexable page has a unique title, one H1 and a canonical (sampled across types)", async ({ page }) => {
+    const paths = [
+      "/",
+      "/btec-it",
+      "/btec-it/cyber-security",
+      "/btec-it/cyber-security/threat-vulnerability-risk",
+      "/btec-it/assessment/pass-merit-distinction",
+      "/btec-calculator",
+      "/btec-it-card",
+    ];
+    const titles = new Set<string>();
+    for (const p of paths) {
+      await page.goto(p);
+      const title = await page.title();
+      expect(title.length).toBeGreaterThan(20);
+      expect(titles.has(title)).toBe(false);
+      titles.add(title);
+      await expect(page.locator("h1")).toHaveCount(1);
+      await expect(page.locator('link[rel="canonical"]')).toHaveCount(1);
+    }
+  });
+
+  test("the Threat/Vulnerability/Risk title is intent-first and carries BTEC context", async ({ page }) => {
+    await page.goto("/btec-it/cyber-security/threat-vulnerability-risk");
+    const title = await page.title();
+    expect(title.startsWith("الفرق بين التهديد والثغرة والمخاطرة")).toBe(true);
+    expect(title).toContain("BTEC IT");
+    expect(title.endsWith("أحمد دومي")).toBe(true);
+  });
+
+  test("project stubs without a case study are noindex and out of the sitemap", async ({ page, request }) => {
+    await page.goto("/projects/securemonitor");
+    await expect(page.locator('meta[name="robots"]')).toHaveAttribute("content", /noindex/);
+    const xml = await (await request.get("/sitemap.xml")).text();
+    expect(xml).not.toContain("/projects/securemonitor");
+    expect(xml).toContain("/projects/omnia");
+  });
+
+  test("unit hubs surface questions, glossary terms and assessment help", async ({ page }) => {
+    await page.goto("/btec-it/cyber-security");
+    await expect(page.locator("#questions")).toBeVisible();
+    await expect(page.locator("#terms")).toBeVisible();
+    await expect(page.locator("#writing a[href='/btec-it/assessment']")).toBeVisible();
+  });
+});

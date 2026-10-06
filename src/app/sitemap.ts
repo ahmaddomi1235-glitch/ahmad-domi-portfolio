@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
-import { projects } from "@/content/projects";
+import { isIndexableProject, projects } from "@/content/projects";
 import { SITE_URL } from "@/config/site";
 import { allPublishedNodes, getConcepts, getUnits, urlFor } from "@/lib/kb/queries";
 
 /**
  * Only canonical, indexable, published, useful pages. Excluded on purpose: /search (noindex), drafts, PAID nodes,
- * anchors (glossary terms, videos) and anything not routed. lastModified comes from the content's own
+ * anchors (glossary terms, videos), project stubs without a case study (noindex) and anything not routed. lastModified comes from the content's own
  * `lastReviewed` date — never "now".
  */
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -29,7 +29,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: url("/resources"), lastModified: at(latest) },
   ];
 
-  for (const p of projects.filter((p) => !p.detailsPending)) {
+  for (const p of projects.filter(isIndexableProject)) {
     const ar = url(`/projects/${p.slug}`);
     const en = url(`/en/projects/${p.slug}`);
     entries.push({ url: ar, alternates: { languages: { ar, en } } }, { url: en, alternates: { languages: { ar, en } } });

@@ -7,8 +7,8 @@ import { Blocks } from "@/components/kb/Blocks";
 import { CardLink, Chip, PageHeader, Section } from "@/components/kb/Layout";
 import { formatDuration } from "@/components/kb/VideoEmbed";
 import { collectionGraph } from "@/lib/seo/jsonld";
-import { pageMetadata } from "@/lib/seo/metadata";
-import { getConceptsOfUnit, getResourcesOfUnit, getUnit, getUnits, getVideosOfUnit } from "@/lib/kb/queries";
+import { seoMeta } from "@/lib/seo/intent";
+import { getConceptsOfUnit, getGlossary, getResourcesOfUnit, getUnit, getUnits, getVideosOfUnit, urlFor } from "@/lib/kb/queries";
 
 export const dynamicParams = false;
 
@@ -22,12 +22,7 @@ export async function generateMetadata({ params }: Props) {
   const { unit: slug } = await params;
   const unit = getUnit(slug);
   if (!unit) return {};
-  return pageMetadata({
-    title: `${unit.title_ar} (${unit.title_en}) — BTEC IT`,
-    description: unit.summary,
-    path: `/btec-it/${unit.slug}`,
-    modified: unit.lastReviewed,
-  });
+  return seoMeta(`/btec-it/${unit.slug}`, { modified: unit.lastReviewed });
 }
 
 export default async function UnitPage({ params }: Props) {
@@ -38,6 +33,23 @@ export default async function UnitPage({ params }: Props) {
   const concepts = getConceptsOfUnit(unit.id);
   const resources = getResourcesOfUnit(unit.id);
   const videos = getVideosOfUnit(unit.id);
+  // Hub signals derived from the unit's own published concepts (nothing authored twice): reading order, real student
+  // questions, the unit's glossary terms, and the assessment pages that help write about it.
+  const startHere = concepts.slice(0, 3);
+  const step = Math.max(1, Math.ceil(concepts.length / 8));
+  const questions = concepts
+    .filter((_, i) => i % step === 0)
+    .filter((c) => c.questionsAnswered.length)
+    .slice(0, 8)
+    .map((c) => ({ q: c.questionsAnswered[0], c }));
+  const terms = getGlossary()
+    .filter((t) => t.unit === unit.id && t.conceptId)
+    .slice(0, 16);
+  const assessmentHelp = unit.slug === "assessment" ? [] : [
+    ["assessment/pass-merit-distinction", "Pass وMerit وDistinction"],
+    ["assessment/command-verbs-explain-analyse-evaluate", "أفعال الأمر: اشرح وحلّل وقيّم"],
+    ["assessment/report-writing-principles", "مبادئ كتابة تقرير BTEC"],
+  ] as const;
   const crumbs = [
     { name: "الرئيسية", path: "/" },
     { name: "BTEC IT", path: "/btec-it" },
@@ -50,6 +62,7 @@ export default async function UnitPage({ params }: Props) {
         data={collectionGraph({
           path: `/btec-it/${unit.slug}`,
           name: `${unit.title_ar} — BTEC IT`,
+          aboutName: `${unit.title_ar} (${unit.title_en})`,
           description: unit.summary,
           crumbs,
           items: concepts.map((c) => ({ name: c.title_ar, path: `/btec-it/${unit.slug}/${c.slug}` })),
@@ -69,6 +82,14 @@ export default async function UnitPage({ params }: Props) {
 
       {concepts.length > 0 && (
         <Section title="المفاهيم" id="concepts" className="pt-0">
+          {startHere.length >= 3 && (
+            <p className="mb-5 leading-8 text-ink/85">
+              رتّبنا المفاهيم بحسب تسلسل شرح أحمد دومي. ابدأ بـ{" "}
+              <Link href={urlFor(startHere[0])} className="font-medium text-navy underline decoration-gold underline-offset-4">{startHere[0].title_ar}</Link>، ثم{" "}
+              <Link href={urlFor(startHere[1])} className="font-medium text-navy underline decoration-gold underline-offset-4">{startHere[1].title_ar}</Link>، ثم{" "}
+              <Link href={urlFor(startHere[2])} className="font-medium text-navy underline decoration-gold underline-offset-4">{startHere[2].title_ar}</Link>.
+            </p>
+          )}
           <ol className="grid gap-4 sm:grid-cols-2">
             {concepts.map((c) => (
               <li key={c.id}>
@@ -78,6 +99,70 @@ export default async function UnitPage({ params }: Props) {
               </li>
             ))}
           </ol>
+        </Section>
+      )}
+
+      {questions.length > 0 && (
+        <Section title={`أسئلة يجيب عنها هذا الدليل في ${unit.title_ar}`} id="questions" className="pt-0">
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {questions.map(({ q, c }) => (
+              <li key={c.id} className="rounded-xl border border-line bg-white p-4 leading-7">
+                <Link href={urlFor(c)} className="font-medium text-navy underline decoration-gold underline-offset-4">
+                  {q}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-sm">
+            <Link href="/btec-it/questions" className="font-medium text-navy underline decoration-gold underline-offset-4">
+              كل الأسئلة والأجوبة في BTEC IT ←
+            </Link>
+          </p>
+        </Section>
+      )}
+
+      {terms.length > 0 && (
+        <Section title="مصطلحات الوحدة: عربي ↔ English" id="terms" className="pt-0">
+          <ul className="flex flex-wrap gap-2">
+            {terms.map((t) => (
+              <li key={t.id}>
+                <Link
+                  href={`/btec-it/glossary#${t.slug}`}
+                  className="inline-flex min-h-11 items-center gap-2 rounded-full border border-line bg-white px-4 py-2 text-sm hover:border-navy"
+                >
+                  <span className="font-medium">{t.term_ar}</span>
+                  <bdi lang="en" dir="ltr" className="text-muted">{t.term_en}</bdi>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-4 text-sm">
+            <Link href={`/btec-it/glossary#${unit.slug}`} className="font-medium text-navy underline decoration-gold underline-offset-4">
+              كل مصطلحات {unit.title_ar} مع تعريفاتها ←
+            </Link>
+          </p>
+        </Section>
+      )}
+
+      {assessmentHelp.length > 0 && (
+        <Section title="كيف تكتب عن هذه الوحدة في تقريرك؟" id="writing" className="pt-0">
+          <p className="leading-8 text-ink/85">
+            فهم المفهوم شيء وكتابته في تقرير BTEC شيء آخر: مستوى الشرح (P) والتحليل (M) والتقييم (D) يتطلب كل منها طريقة كتابة مختلفة. هذه الصفحات تشرح الطريقة بالعربي دون أن تكتب لك التقرير:
+          </p>
+          <ul className="mt-4 list-disc space-y-2 ps-6 leading-8">
+            {assessmentHelp.map(([p, label]) => (
+              <li key={p}>
+                <Link href={`/btec-it/${p}`} className="font-medium text-navy underline decoration-gold underline-offset-4">
+                  {label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href="/btec-it/assessment" className="font-medium text-navy underline decoration-gold underline-offset-4">
+                دليل كتابة التقارير والتقييم في BTEC
+              </Link>
+            </li>
+          </ul>
         </Section>
       )}
 

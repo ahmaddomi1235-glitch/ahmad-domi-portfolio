@@ -15,6 +15,8 @@ export type CaseStudy = {
 export type Project = {
   slug: string;
   title: LocalizedText;
+  /** Optional search-result title when the display title would compete with another page (e.g. a tool page). */
+  seoTitle?: LocalizedText;
   category: ProjectCategory;
   categoryLabel: LocalizedText;
   /** Functional description shown on the project card — what it does, not what it's "for". */
@@ -40,6 +42,7 @@ export const projects: Project[] = [
   {
     slug: "btec-grade-calculator",
     title: { ar: "حاسبة معدل أساس BTEC", en: "Asas BTEC Grade Calculator" },
+    seoTitle: { ar: "دراسة حالة مشروع: حاسبة معدل أساس BTEC", en: "Project case study: Asas BTEC Grade Calculator" },
     category: "education",
     categoryLabel: categoryLabels.education,
     summary: {
@@ -418,6 +421,11 @@ export const projects: Project[] = [
     technologies: ["Python", "MQTT"],
   },
 ];
+
+/** A project page is indexable only when it has a real case study; otherwise it is a "in preparation" stub (thin, noindex, not in the sitemap). */
+export function isIndexableProject(p: Project): boolean {
+  return !p.detailsPending && !!p.caseStudy;
+}
 
 export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((p) => p.slug === slug);

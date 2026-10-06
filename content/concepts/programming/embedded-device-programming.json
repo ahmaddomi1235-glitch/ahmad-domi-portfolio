@@ -24,7 +24,8 @@
   "visibility": "PUBLIC",
   "related": [
     "choosing-a-programming-language",
-    "runtime-vs-development-requirements"
+    "runtime-vs-development-requirements",
+    "programming-language-types"
   ],
   "officialSource": null,
   "status": "published",

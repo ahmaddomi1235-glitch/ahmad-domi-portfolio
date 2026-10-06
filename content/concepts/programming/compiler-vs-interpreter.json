@@ -25,7 +25,8 @@
   "related": [
     "programming-language-types",
     "programming-language-comparison-criteria",
-    "binary-system"
+    "binary-system",
+    "runtime-vs-development-requirements"
   ],
   "officialSource": null,
   "status": "published",

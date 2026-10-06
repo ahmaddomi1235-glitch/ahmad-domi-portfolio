@@ -24,7 +24,8 @@
   "visibility": "PUBLIC",
   "related": [
     "dashboard-design-rules",
-    "workbook-structure-and-import"
+    "workbook-structure-and-import",
+    "goal-seek-what-if"
   ],
   "officialSource": null,
   "status": "published",

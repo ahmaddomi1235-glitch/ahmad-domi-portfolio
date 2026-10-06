@@ -178,7 +178,8 @@ export function articleGraph(a: ArticleInput) {
   );
 }
 
-export function collectionGraph(opts: { path: string; name: string; description: string; crumbs: Crumb[]; items?: { name: string; path: string }[] }) {
+/** `aboutName` = the topic a hub covers (e.g. the unit). Without it the collection is about its author, which is only right for portfolio-style lists. */
+export function collectionGraph(opts: { path: string; name: string; description: string; crumbs: Crumb[]; items?: { name: string; path: string }[]; aboutName?: string }) {
   const url = absoluteUrl(opts.path);
   return graph(
     {
@@ -189,7 +190,7 @@ export function collectionGraph(opts: { path: string; name: string; description:
       description: opts.description,
       inLanguage: "ar",
       isPartOf: { "@id": WEBSITE_ID },
-      about: { "@id": PERSON_ID },
+      about: opts.aboutName ? { "@type": "Thing", name: opts.aboutName } : { "@id": PERSON_ID },
       author: { "@id": PERSON_ID },
       ...(opts.items?.length
         ? {

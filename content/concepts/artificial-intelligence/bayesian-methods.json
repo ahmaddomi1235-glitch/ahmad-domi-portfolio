@@ -24,7 +24,9 @@
   "visibility": "PUBLIC",
   "related": [
     "supervised-vs-unsupervised-learning",
-    "xai-and-data-drift"
+    "xai-and-data-drift",
+    "logistic-regression",
+    "predictive-analytics"
   ],
   "officialSource": null,
   "status": "published",

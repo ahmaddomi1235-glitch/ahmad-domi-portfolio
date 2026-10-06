@@ -4,14 +4,10 @@ import { PageHeader, Section } from "@/components/kb/Layout";
 import { formatDuration } from "@/components/kb/VideoEmbed";
 import { accounts } from "@/config/site";
 import { videosGraph } from "@/lib/seo/jsonld";
-import { pageMetadata } from "@/lib/seo/metadata";
+import { seoMeta } from "@/lib/seo/intent";
 import { getNode, getUnits, getVideos, urlFor } from "@/lib/kb/queries";
 
-export const metadata = pageMetadata({
-  title: "فيديوهات أحمد دومي لـ BTEC IT",
-  description: "كل دروس أحمد دومي المصوّرة على YouTube مرتبة حسب وحدة BTEC IT، بعنوان يبدأ بالمفهوم، وروابط إلى صفحة الشرح المكتوب لكل درس.",
-  path: "/videos",
-});
+export const metadata = seoMeta("/videos");
 
 const crumbs = [
   { name: "الرئيسية", path: "/" },
@@ -43,7 +39,7 @@ export default function VideosPage() {
             <a href={accounts.youtube} target="_blank" rel="me noopener noreferrer" className="text-navy underline decoration-gold underline-offset-4">
               قناة أحمد دومي على YouTube
             </a>
-            ، مرتبة حسب الوحدة. العنوان هنا يبدأ بالمفهوم الذي يشرحه الدرس، والعنوان الأصلي على YouTube يظهر تحته. الدروس التي تحمل رابط «الشرح المكتوب» لها صفحة تلخّص الشرح بالنص.
+            ، مرتبة حسب الوحدة. العنوان هنا يبدأ بالمفهوم الذي يشرحه الدرس، وعنوان الفيديو على YouTube يظهر تحته. الدروس التي تحمل رابط «الشرح المكتوب» لها صفحة تلخّص الشرح بالنص.
           </p>
         }
       />
@@ -55,7 +51,7 @@ export default function VideosPage() {
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={`https://i.ytimg.com/vi/${v.youtubeId}/mqdefault.jpg`}
-                  alt=""
+                  alt={`صورة درس «${v.conceptTitle_ar}» من أحمد دومي`}
                   width={320}
                   height={180}
                   loading="lazy"
@@ -66,7 +62,7 @@ export default function VideosPage() {
                   <p className="text-sm text-muted">{v.lessonLabel}</p>
                   <h3 className="mt-1 text-lg font-bold leading-snug">{v.conceptTitle_ar}</h3>
                   <p className="mt-1 text-sm text-muted" lang="ar">
-                    العنوان الأصلي: {v.originalTitle}
+                    على YouTube: {v.originalTitle}
                   </p>
                   <p className="mt-2 text-sm text-muted">
                     {formatDuration(v.duration)}

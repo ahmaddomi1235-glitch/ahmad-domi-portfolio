@@ -24,7 +24,8 @@
   "visibility": "PUBLIC",
   "related": [
     "supervised-vs-unsupervised-learning",
-    "k-means-clustering"
+    "k-means-clustering",
+    "preparing-data-for-ai-models"
   ],
   "officialSource": null,
   "status": "published",

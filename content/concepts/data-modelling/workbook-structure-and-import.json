@@ -24,7 +24,8 @@
   "visibility": "PUBLIC",
   "related": [
     "dashboard-from-data",
-    "spreadsheet-macros"
+    "spreadsheet-macros",
+    "data-formats-csv-json-xml"
   ],
   "officialSource": null,
   "status": "published",

@@ -24,7 +24,8 @@
   "visibility": "PUBLIC",
   "related": [
     "supervised-vs-unsupervised-learning",
-    "pca-dimensionality-reduction"
+    "pca-dimensionality-reduction",
+    "knn-anomaly-detection"
   ],
   "officialSource": null,
   "status": "published",

@@ -1,5 +1,5 @@
 import { ProjectCaseStudy, generateProjectStaticParams } from "@/components/projects/ProjectCaseStudy";
-import { getProjectBySlug } from "@/content/projects";
+import { getProjectBySlug, isIndexableProject } from "@/content/projects";
 import { pageMetadata } from "@/lib/seo/metadata";
 
 export function generateStaticParams() {
@@ -13,10 +13,11 @@ export async function generateMetadata({ params }: Props) {
   const p = getProjectBySlug(slug);
   if (!p) return {};
   return pageMetadata({
-    title: p.title.ar,
+    title: p.seoTitle?.ar ?? p.title.ar,
     description: p.summary.ar,
     path: `/projects/${slug}`,
     languages: { ar: `/projects/${slug}`, en: `/en/projects/${slug}` },
+    noindex: !isIndexableProject(p),
   });
 }
 

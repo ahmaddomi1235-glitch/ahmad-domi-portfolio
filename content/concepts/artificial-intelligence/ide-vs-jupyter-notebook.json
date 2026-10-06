@@ -24,7 +24,8 @@
   "visibility": "PUBLIC",
   "related": [
     "ai-tools-and-frameworks",
-    "ide-and-maintainability"
+    "ide-and-maintainability",
+    "programming-languages-for-ai"
   ],
   "officialSource": null,
   "status": "published",

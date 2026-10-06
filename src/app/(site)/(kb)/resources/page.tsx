@@ -3,14 +3,10 @@ import { Download } from "lucide-react";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHeader, Section } from "@/components/kb/Layout";
 import { collectionGraph } from "@/lib/seo/jsonld";
-import { pageMetadata } from "@/lib/seo/metadata";
+import { seoMeta } from "@/lib/seo/intent";
 import { getResources, getUnitById, getUnits } from "@/lib/kb/queries";
 
-export const metadata = pageMetadata({
-  title: "الملفات التعليمية — أحمد دومي",
-  description: "دوسيات التأسيس وكتب الوحدات وملفات الشرح التي أعدّها أحمد دومي لطلبة BTEC IT، قابلة للتحميل مجانًا بصيغة PDF.",
-  path: "/resources",
-});
+export const metadata = seoMeta("/resources");
 
 const crumbs = [
   { name: "الرئيسية", path: "/" },

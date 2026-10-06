@@ -1,13 +1,8 @@
 import { HomePage } from "@/components/HomePage";
-import { pageMetadata } from "@/lib/seo/metadata";
+import { seoMeta } from "@/lib/seo/intent";
 
 /** Arabic portfolio / author page. Equivalent translation of /en, so hreflang is declared between the two. */
-export const metadata = pageMetadata({
-  title: "عن أحمد دومي | Ahmad Domi — مدرّس BTEC IT",
-  absoluteTitle: true,
-  description:
-    "السيرة المهنية لأحمد دومي: مدرّس BTEC IT في الأردن، خبرته في تدريس الصف العاشر والأول الثانوي والتوجيهي، المواد التي أعدّها، نتائج وطلبته، ومشاريعه في الأمن السيبراني والذكاء الاصطناعي.",
-  path: "/about",
+export const metadata = seoMeta("/about", {
   type: "profile",
   languages: { ar: "/about", en: "/en" },
 });

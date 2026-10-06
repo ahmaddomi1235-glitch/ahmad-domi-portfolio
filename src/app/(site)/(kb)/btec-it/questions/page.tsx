@@ -3,14 +3,10 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { Inline } from "@/components/kb/Inline";
 import { PageHeader, Section } from "@/components/kb/Layout";
 import { collectionGraph } from "@/lib/seo/jsonld";
-import { pageMetadata } from "@/lib/seo/metadata";
+import { seoMeta } from "@/lib/seo/intent";
 import { getConcepts, getUnits, getUnitById } from "@/lib/kb/queries";
 
-export const metadata = pageMetadata({
-  title: "أسئلة وأجوبة BTEC IT",
-  description: "أسئلة الطلبة الشائعة في BTEC IT مجمّعة حسب المفهوم، لكل مجموعة جواب مختصر ورابط إلى الشرح الكامل.",
-  path: "/btec-it/questions",
-});
+export const metadata = seoMeta("/btec-it/questions");
 
 const crumbs = [
   { name: "الرئيسية", path: "/" },

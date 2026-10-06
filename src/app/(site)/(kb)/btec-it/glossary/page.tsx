@@ -2,14 +2,10 @@ import Link from "next/link";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { PageHeader, Section } from "@/components/kb/Layout";
 import { glossaryGraph } from "@/lib/seo/jsonld";
-import { pageMetadata } from "@/lib/seo/metadata";
+import { seoMeta } from "@/lib/seo/intent";
 import { getGlossary, getNode, getUnits, urlFor } from "@/lib/kb/queries";
 
-export const metadata = pageMetadata({
-  title: "مصطلحات BTEC IT: عربي — English",
-  description: "قاموس ثنائي اللغة لمصطلحات BTEC IT: التهديد Threat، الثغرة Vulnerability، تعلّم الآلة Machine Learning، أصحاب المصلحة Stakeholders وغيرها، مع تعريف كل مصطلح.",
-  path: "/btec-it/glossary",
-});
+export const metadata = seoMeta("/btec-it/glossary");
 
 const crumbs = [
   { name: "الرئيسية", path: "/" },

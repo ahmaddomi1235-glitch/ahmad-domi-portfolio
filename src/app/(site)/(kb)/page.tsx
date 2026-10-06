@@ -5,16 +5,10 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { CardLink, Chip, Section } from "@/components/kb/Layout";
 import { accounts, brand } from "@/config/site";
 import { homeGraph } from "@/lib/seo/jsonld";
-import { pageMetadata } from "@/lib/seo/metadata";
+import { seoMeta } from "@/lib/seo/intent";
 import { getConceptsOfUnit, getQuestionIndex, getResources, getUnits, getVideos } from "@/lib/kb/queries";
 
-export const metadata = pageMetadata({
-  title: "أحمد دومي | Ahmad Domi — مدرّس BTEC IT في الأردن",
-  absoluteTitle: true,
-  description:
-    "أحمد دومي مدرّس BTEC IT في الأردن. شرح بالعربي لوحدات الأمن السيبراني والذكاء الاصطناعي ونمذجة البيانات وإدارة مشاريع تكنولوجيا المعلومات، مع المصطلحات الإنجليزية ومصادر كل شرح.",
-  path: "/",
-});
+export const metadata = seoMeta("/");
 
 export default function EntityHome() {
   const units = getUnits();

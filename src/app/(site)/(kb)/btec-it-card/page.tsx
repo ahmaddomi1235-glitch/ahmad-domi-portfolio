@@ -4,15 +4,10 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { AuthorCard } from "@/components/kb/AuthorCard";
 import { PageHeader, Section } from "@/components/kb/Layout";
 import { cardGraph } from "@/lib/seo/jsonld";
-import { pageMetadata } from "@/lib/seo/metadata";
+import { seoMeta } from "@/lib/seo/intent";
 import { getProduct, getUnit, getUnitById } from "@/lib/kb/queries";
 
-export const metadata = pageMetadata({
-  title: "بطاقة BTEC IT — أحمد دومي",
-  description:
-    "بطاقات تعليمية من أحمد دومي لوحدات BTEC IT: شروحات مصوّرة ومواد دعم وإرشاد للواجبات. شاهد أول فيديو مجانًا قبل الحجز. ما تغطيه البطاقة ولمن تناسب وكيف تحجزها.",
-  path: "/btec-it-card",
-});
+export const metadata = seoMeta("/btec-it-card");
 
 const crumbs = [
   { name: "الرئيسية", path: "/" },

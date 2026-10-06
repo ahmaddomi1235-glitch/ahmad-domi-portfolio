@@ -9,7 +9,7 @@ import { Chip } from "@/components/kb/Layout";
 import { VideoEmbed, formatDuration } from "@/components/kb/VideoEmbed";
 import { absoluteUrl } from "@/config/site";
 import { articleGraph } from "@/lib/seo/jsonld";
-import { pageMetadata } from "@/lib/seo/metadata";
+import { seoMeta } from "@/lib/seo/intent";
 import { getConcept, getConcepts, getUnit, getVideosOfConcept, linkedFrom, relatedConcepts, unitSlugOf } from "@/lib/kb/queries";
 
 export const dynamicParams = false;
@@ -24,13 +24,7 @@ export async function generateMetadata({ params }: Props) {
   const { unit, concept } = await params;
   const c = getConcept(unit, concept);
   if (!c) return {};
-  return pageMetadata({
-    title: `${c.title_ar} (${c.title_en})`,
-    description: c.summary,
-    path: `/btec-it/${unit}/${c.slug}`,
-    type: "article",
-    modified: c.lastReviewed,
-  });
+  return seoMeta(`/btec-it/${unit}/${c.slug}`, { type: "article", modified: c.lastReviewed });
 }
 
 export default async function ConceptPage({ params }: Props) {

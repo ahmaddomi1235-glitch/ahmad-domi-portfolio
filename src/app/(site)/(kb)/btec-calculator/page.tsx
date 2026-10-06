@@ -4,15 +4,10 @@ import { AuthorCard } from "@/components/kb/AuthorCard";
 import { PageHeader, Section } from "@/components/kb/Layout";
 import { Calculator } from "@/components/calculator/Calculator";
 import { calculatorGraph } from "@/lib/seo/jsonld";
-import { pageMetadata } from "@/lib/seo/metadata";
+import { seoMeta } from "@/lib/seo/intent";
 import { getTool } from "@/lib/kb/queries";
 
-export const metadata = pageMetadata({
-  title: "حاسبة معدل BTEC — مسار التوجيهي الأردني",
-  description:
-    "حاسبة مجانية لمعدل طالب BTEC في الأردن: تحوّل نتائج U/P/M/D والساعات المعتمدة والمواد المشتركة إلى معدل التخصص من 35 والمعدل الكامل من 100. من تطوير أحمد دومي.",
-  path: "/btec-calculator",
-});
+export const metadata = seoMeta("/btec-calculator");
 
 const crumbs = [
   { name: "الرئيسية", path: "/" },

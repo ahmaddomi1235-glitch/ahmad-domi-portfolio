@@ -15,7 +15,8 @@
     "content:youtube": "node scripts/content/import-youtube.ts",
     "content:transcripts": "node scripts/content/normalize-transcript.ts",
     "content:draft": "node scripts/content/generate-content-draft.ts",
-    "verify": "npm run lint && npm run typecheck && npm run validate && npm run test:unit && npm run build"
+    "verify": "npm run lint && npm run typecheck && npm run validate && npm run test:unit && npm run build",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.42.2",

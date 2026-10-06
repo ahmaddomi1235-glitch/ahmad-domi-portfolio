@@ -16,7 +16,7 @@ Both need the domain to resolve first (see `docs/DOMAIN_AND_DEPLOYMENT.md`). The
 
 1. https://www.bing.com/webmasters → sign in → **Import from Google Search Console** (fastest; reuses the verification). Or **Add a site** and verify with a DNS CNAME/TXT in Cloudflare.
 2. Submit `https://ahmaddomiedu.com/sitemap.xml`.
-3. Optional: IndexNow (Bing, Yandex and others) lets a site notify engines of changed URLs. It needs a public key file; not added — decide later if update frequency justifies it.
+3. IndexNow (Bing, Yandex and others) is implemented: the public key file lives in `public/<key>.txt` (the key is public by design). After each production deploy run `npm run indexnow` (dry run) then `npm run indexnow -- --send`. It reads the live sitemap, compares each URL's `lastmod` with `scripts/indexnow-state.json`, submits only new/changed URLs plus URLs that left the sitemap, and updates the state file (commit it). `--all` is for the one-time initial submission. Only canonical `https://ahmaddomiedu.com` URLs from the sitemap are ever sent, so drafts, noindex and PAID pages are excluded.
 
 ## What to check after a few days
 

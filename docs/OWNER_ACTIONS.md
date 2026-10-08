@@ -50,3 +50,15 @@ The knowledge pages were **drafted by Claude from your own booklets, unit books 
 - Put the card preview platform on `cards.ahmaddomiedu.com` (a CNAME in Cloudflare + a domain on the `ahmaddomi-edu` Vercel project) so the whole funnel sits on one brand domain.
 - Point the old calculator (`asasbtec.vercel.app`) at the new page: add a visible link and a canonical to `https://ahmaddomiedu.com/btec-calculator`.
 - Choose one page-view analytics tool (`docs/ANALYTICS.md`).
+
+## F. Phase 6 — what AI recommendation tests still need from you
+
+Evidence: `docs/AI_VISIBILITY_BENCHMARK.md`, `docs/AI_RECOMMENDATION_EVIDENCE_MATRIX.md`, `docs/AI_RECOMMENDATION_DISTRIBUTION_MAP.md`.
+
+1. **Service facts** (lessons now? online/in person? price policy? booking? report review? card scope) — fill `docs/SERVICE_FACTS_DRAFT.md`. Until then the site states only the CV-backed past instruction and publishes no price or availability.
+2. **Asas teacher-profile URL** — one line in `thirdPartyProfiles` (`src/config/site.ts`). Asas is the one third-party platform engines already tie to your name (Perplexity P085).
+3. **One display name** — Instagram shows "Ahmad Ra'ed Domi || معلم BTEC IT", YouTube/site show "Ahmad Domi | أحمد دومي". The homepage now documents both, but one form everywhere is cleaner; if you change Instagram, tell Claude so the homepage sentence is updated.
+4. **YouTube diff** — see section 6 of the distribution map; needs your explicit go-ahead.
+5. **Calculator rule source** (item C2 above) — the page still says the source is pending; an authoritative source is the single most useful trust fix for the calculator prompts.
+6. **Card platform on the brand domain** (item E above).
+7. A Facebook page "المعلم أحمد دومي" exists but is operated by the Asas/Kernel platform (different phone, site `jokernel.net`); it is not treated as yours and is not in `sameAs`.

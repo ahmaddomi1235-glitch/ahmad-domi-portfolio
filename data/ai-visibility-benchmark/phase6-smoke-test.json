@@ -1,0 +1,32 @@
+{
+  "run": "2026-10-08, minutes after the Phase 6 deployment (commit 91dc387 live on ahmaddomiedu.com)",
+  "method": "Logged-out sessions, fresh conversation per prompt, built-in browser; Perplexity search mode; ChatGPT Temporary Chat with web search on. Prompts are from the frozen 30-prompt cohort and contain no owner name, site or handle. One run per prompt: this cannot show causality or stability.",
+  "not_tested": {
+    "Google AI Mode": "quota/rate-limit from the earlier benchmark; controller state lost; not retried",
+    "Gemini": "not re-run (logged-out sample from Phase 5 stands)",
+    "Claude": "needs the owner's logged-in account; excluded"
+  },
+  "perplexity": [
+    {"prompt_id": "P001", "completed": true, "named": false, "site_cited": false, "note": "no single best teacher; sources tawjihihub, ostathi, linkedin, btec.moe, t.me, jis, btechub, btec.jo"},
+    {"prompt_id": "P002", "completed": false, "note": "sign-in wall"},
+    {"prompt_id": "P009", "completed": true, "named": true, "site_cited": true,
+     "exact_sentence": "شرح وتقارير أونلاين: موقع أحمد دومي يقدّم شرح وحدات BTEC IT بالعربي مع المصطلحات الإنجليزية، بما في ذلك متطلبات Pass وMerit وDistinction.[3]",
+     "cited_url": "https://ahmaddomiedu.com/btec-it/assessment",
+     "position": "second bullet of three (OpenSooq tutor ad, ahmaddomiedu.com, Telegram channel)",
+     "caveat": "The cited page (/btec-it/assessment) was not changed in Phase 6, and the Phase 5 run of the same prompt did not name him. Treat as run-to-run variance until repeated; do not attribute to the deployment."},
+    {"prompt_id": "P016", "completed": true, "named": false, "site_cited": false, "note": "youtube lesson, tawjihihub, qf-btecit, t.me, instagram, studocu"},
+    {"prompt_id": "P017", "completed": false, "note": "sign-in wall"},
+    {"prompt_id": "P031", "completed": true, "named": false, "site_cited": false, "note": "assignmentexperts, woolwich, openeducat, pearson, postgrad"},
+    {"prompt_id": "P045", "completed": true, "named": false, "site_cited": false, "note": "pearson, dbtec.top, tawjihihub, btec-engineer.com, t3h3a.github.io, toolzplus, gradecalculators"},
+    {"prompt_id": "P097", "completed": false, "note": "sign-in wall"}
+  ],
+  "chatgpt": [
+    {"prompt_id": "P001", "completed": true, "named": false, "note": "no verified single best teacher; offers to search; OpenSooq listing mentioned"},
+    {"prompt_id": "P002", "completed": true, "named": false, "note": "map card (iso school (boys) BTEC) and other listings"},
+    {"prompt_id": "P009", "completed": true, "named": false, "note": "BTEC JO, CTS - Computec Solutions"},
+    {"prompt_id": "P016", "completed": true, "named": false, "note": "BTECHub as a top free option"},
+    {"prompt_id": "P031", "completed": true, "named": false, "note": "generic UK grading explanation"},
+    {"prompt_id": "P097", "completed": true, "named": false, "note": "clarifying question only"}
+  ],
+  "summary": {"completed": 11, "named": 1, "site_cited": 1, "ChatGPT": "0/6", "Perplexity": "1/5 completed (3 more hit a sign-in wall)"}
+}

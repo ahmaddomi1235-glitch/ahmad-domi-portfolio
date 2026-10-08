@@ -460,3 +460,35 @@ test.describe("phase 4 SEO", () => {
     await expect(page.locator("#writing a[href='/btec-it/assessment']")).toBeVisible();
   });
 });
+
+test.describe("phase 6 recommendation evidence", () => {
+  test("home answers the teacher / learn-in-Arabic / identity questions with verifiable facts and no superlatives or prices", async ({ page }) => {
+    await page.goto("/");
+    const faq = page.locator("#faq");
+    await expect(faq).toContainText("هل يوجد مدرّس BTEC IT بالعربي في الأردن؟");
+    await expect(faq).toContainText("أين أتعلّم BTEC IT بالعربي؟");
+    await expect(faq).toContainText("كيف يُكتب اسمه على المنصات؟");
+    const text = (await faq.innerText()).replace(/\s+/g, " ");
+    expect(text).not.toMatch(/(الأفضل|الأول في|رقم 1|الوحيد|best|#1)/i);
+    expect(text).not.toMatch(/\d+\s*(دينار|JOD)/);
+    await expect(faq.locator("a[href='/about#contact']")).toBeVisible();
+  });
+
+  test("Person schema carries the canonical YouTube handle and channel id, and footer links the canonical handle", async ({ page }) => {
+    await page.goto("/");
+    const blocks = await page.locator('script[type="application/ld+json"]').allInnerTexts();
+    const json = blocks.join(" ");
+    expect(json).toContain("youtube.com/@AhmadDomiedu");
+    expect(json).toContain("youtube.com/channel/UCdZ35Tf0PAG62WQLa17vJDg");
+    expect(json).not.toContain("AhmadDomi-r7r");
+    await page.goto("/about");
+    await expect(page.locator("footer a[href='https://www.youtube.com/@AhmadDomiedu']").first()).toBeVisible();
+  });
+
+  test("llms.txt states identity facts and refuses to imply lesson prices", async ({ request }) => {
+    const t = await (await request.get("/llms.txt")).text();
+    expect(t).toContain("Ahmad Ra'ed Ahmad Domi");
+    expect(t).toContain("@AhmadDomiedu");
+    expect(t).toContain("not published on this site");
+  });
+});

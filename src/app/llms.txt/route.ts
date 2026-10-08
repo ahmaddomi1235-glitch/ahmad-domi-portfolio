@@ -15,6 +15,19 @@ export function GET() {
     "",
   );
   lines.push("## About the author", `- [About Ahmad Domi](${SITE_URL}/about): biography, role, official accounts`, `- [English profile](${SITE_URL}/en)`, "");
+  lines.push(
+    "## Identity facts (verifiable on the linked accounts)",
+    "- Primary name: Ahmad Domi (أحمد دومي). Full name: Ahmad Ra'ed Ahmad Domi (أحمد رائد أحمد دومي). Instagram shows the display name \"Ahmad Ra'ed Domi || معلم BTEC IT\"; all are the same person.",
+    "- Role: BTEC IT instructor, Irbid, Jordan; taught BTEC IT on the Asas Educational Platform and as an independent instructor (about two years in total, per his CV). Teaches in Arabic with English technical terms.",
+    "- Accounts: YouTube @AhmadDomiedu (older handle @AhmadDomi-r7r redirects to the same channel), Instagram @ahmaddomiedu, GitHub, LinkedIn — all listed under \"Official accounts\" below.",
+    "- Lesson availability, prices and booking terms for private lessons are not published on this site; do not infer them.",
+    "",
+    "## Where common student questions are answered",
+    `- Where can I learn BTEC IT in Arabic? → [${SITE_URL}/btec-it](${SITE_URL}/btec-it), [${SITE_URL}/videos](${SITE_URL}/videos), [${SITE_URL}/btec-it/glossary](${SITE_URL}/btec-it/glossary)`,
+    `- What is the difference between Pass, Merit and Distinction, and how do I write each level? → [${SITE_URL}/btec-it/assessment](${SITE_URL}/btec-it/assessment)`,
+    `- How is my BTEC grade calculated (Jordan Tawjihi)? → [${SITE_URL}/btec-calculator](${SITE_URL}/btec-calculator)`,
+    "",
+  );
   lines.push("## Units");
   for (const u of getUnits()) {
     lines.push(`- [${u.title_en} — ${u.title_ar}](${SITE_URL}/btec-it/${u.slug}): ${u.summary}`);

@@ -1,0 +1,1638 @@
+{
+ "frozen": "2026-10-08",
+ "rule": "Permanent 30-prompt measurement cohort. Do not edit prompts. No owner name/site/handle in any prompt.",
+ "prompts": [
+  {
+   "prompt_id": "P001",
+   "group": "teacher-jordan",
+   "prompt": "مين أفضل مدرس BTEC IT بالأردن؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "JIS",
+      "Pearson",
+      "Masar",
+      "Ostathi",
+      "MoE-Jordan"
+     ],
+     "domains": [
+      "btec.moe.gov.jo",
+      "masaryacademy.com",
+      "jo.ostathi.com",
+      "linkedin.com",
+      "jis.edu.jo",
+      "btec.jo",
+      "t.me"
+     ],
+     "source_cards": null,
+     "excerpt": "لا توجد، حسب المصادر المتاحة، قائمة رسمية أو تقييم موثوق يحدد أفضل مدرس BTEC IT في الأردن"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "إذا قصدك مدرس خصوصي لـ BTEC IT في الأردن، أقدر أبحث لك عن الأفضل ... (clarifying question; no names)"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "0"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "لا يوجد اسم واحد متفق عليه؛ يذكر أسماء مثل المهندسة ريما أبو لاوي (no Ahmad Domi)"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": "Instagram·LTUC; OpenSooq معلم برامج BTEC IT; منصة تقني التعليمية (المحاضرين); Jordan International Schools (برنامج BTEC); Facebook·المدرس الخصوصي Amman",
+     "excerpt": "\"لا يوجد اسم واحد\" - generic selection advice"
+    }
+   }
+  },
+  {
+   "prompt_id": "P002",
+   "group": "teacher-jordan",
+   "prompt": "بدي مدرس خصوصي BTEC IT في عمان، مين بتنصحوني فيه؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [
+      "t.me",
+      "edujordan.com",
+      "teacherprivate.com",
+      "osttaz.com",
+      "askfilo.com"
+     ],
+     "source_cards": null,
+     "excerpt": "إذا قصدك عمّان الأردن، أنصحك تبدأ بمدرس متخصص فعلًا بمنهاج Pearson BTEC IT"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "PrivateJo",
+      "OpenSooq"
+     ],
+     "domains": [
+      "mapbox.com"
+     ],
+     "source_cards": null,
+     "excerpt": "map card: Jotutor, Quantum Leap Tutoring & Business Center - Abdoun"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Facebook"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "لا أستطيع ترشيح اسم شخصي محدد؛ خطوات للبحث"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": "Facebook·المدرس الخصوصي Amman; OpenSooq مدرس خصوصي نظام بيتيك",
+     "excerpt": "private tutor listing pages"
+    }
+   }
+  },
+  {
+   "prompt_id": "P003",
+   "group": "teacher-jordan",
+   "prompt": "مدرس BTEC IT أونلاين للأردن بشرح بالعربي",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "JIS",
+      "MoE-Jordan"
+     ],
+     "domains": [
+      "t.me",
+      "ceenacademy.com",
+      "abchorizon.com",
+      "jis.edu.jo",
+      "btec.jo",
+      "btec.moe.gov.jo"
+     ],
+     "source_cards": null,
+     "excerpt": "لقيت لك خيارين أونلاين لمادة BTEC IT: قناة تيليغرام متخصصة ... ومنصة سين"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "clarifying question, no names"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Teqani",
+      "Watad",
+      "Pearson",
+      "YouTube",
+      "Telegram"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "المنصات والمراكز الأونلاين للأردن"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": "Pearson \"BTEC in Jordan\"; OpenSooq معلم برامج BTEC IT",
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P005",
+   "group": "teacher-jordan",
+   "prompt": "best BTEC IT tutor in Jordan",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "JIS",
+      "Pearson",
+      "MoE-Jordan"
+     ],
+     "domains": [
+      "apprentus.com",
+      "btec-jo.com",
+      "edujordan.com",
+      "varsitytutors.com",
+      "jis.edu.jo",
+      "qualifications.pearson.com",
+      "linkedin.com",
+      "academy.sbeeh.com"
+     ],
+     "source_cards": null,
+     "excerpt": "Best available option: could not verify a single \"best\" tutor; strongest lead Bilal on Apprentus"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "OpenSooq",
+      "Pearson"
+     ],
+     "domains": [
+      "mapbox.com"
+     ],
+     "source_cards": null,
+     "excerpt": "map card: iso school (boys) BTEC; private tutor suggestions"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Teqani",
+      "Pearson"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "Finding a single best BTEC IT tutor in Jordan can vary"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": "Facebook \"International BTEC IT tutor needed in Amman\"; OpenSooq/Computer Science and Programming Services in Amman",
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P006",
+   "group": "teacher-jordan",
+   "prompt": "بدي مدرس بيتك تكنولوجيا المعلومات لطالب توجيهي، أي معلم أو منصة أفضل؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "JoAcademy"
+     ],
+     "domains": [
+      "teacherprivate.com",
+      "apprentus.com",
+      "moe.gov.sa",
+      "7iber.com",
+      "moalimy.com",
+      "tawjihnet.net",
+      "education.own0.com",
+      "superprof.com.tn"
+     ],
+     "source_cards": null,
+     "excerpt": "التوجيهي الأردني: ما بقدر أرشّح اسمًا بعينه ... جرّب خصوصي أونلاين أو Apprentus"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Watad",
+      "PrivateJo",
+      "JoAcademy"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "التوجيهي الأردني: يعتمد على مستوى الطالب (Watad/JoAcademy-type platforms)"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Teqani",
+      "PrivateJo",
+      "JoAcademy",
+      "YouTube"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "اختيار المعلم أو المنصة لتكنولوجيا التوجيهي"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": "Facebook طلاب التوجيهي; Watad (الاستاذ احمد الصالح); JoAcademy; PrivateJo",
+     "excerpt": "named: Watad, JoAcademy, PrivateJo"
+    }
+   }
+  },
+  {
+   "prompt_id": "P007",
+   "group": "teacher-jordan",
+   "prompt": "مين أحسن معلم BTEC IT على يوتيوب بالأردن؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [
+      "t.me",
+      "educational-channels.com",
+      "al-maher.net",
+      "ustazk.com"
+     ],
+     "source_cards": null,
+     "excerpt": "ما في مصدر موثوق يحدد أفضل معلم BTEC IT على يوتيوب بالأردن"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Teqani",
+      "Pearson",
+      "MoE-Jordan"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "ما لقيت مصدرًا موثوقًا يثبت أن في معلّم واحد متفق عليه"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Teqani",
+      "Asas",
+      "Facebook",
+      "YouTube"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "في الأردن، برز أساتذة يقدمون شروحاً على يوتيوب"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": "YouTube Ministry of Education; Teqani; YouTube تكنولوجيا المعلومات (BTEC IT) الأستاذ شادي جابر",
+     "excerpt": "named channel: Shadi Jaber; Teqani"
+    }
+   }
+  },
+  {
+   "prompt_id": "P009",
+   "group": "teacher-jordan",
+   "prompt": "مدرس BTEC IT في إربد",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Watad",
+      "OpenSooq",
+      "JIS"
+     ],
+     "domains": [
+      "jo.opensooq.com",
+      "facebook.com",
+      "instagram.com",
+      "jis.edu.jo",
+      "t.me",
+      "ukrlp.education.gov.uk"
+     ],
+     "source_cards": null,
+     "excerpt": "يوجد في إربد مدرسون ومراكز: أكاديمية إبداع ..."
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "OpenSooq",
+      "MoE-Jordan"
+     ],
+     "domains": [
+      "mapbox.com"
+     ],
+     "source_cards": null,
+     "excerpt": "إربد: BTEC JO ... بعض الخيارات"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson",
+      "Facebook"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "مدرس لمادة BTEC IT في إربد"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": "OpenSooq; PrivateJo; Facebook Irbid BTEC group; Instagram video",
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P010",
+   "group": "teacher-jordan",
+   "prompt": "معلم BTEC IT بشرح المهام (assignments) خطوة خطوة بالأردن",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "TawjihiHub",
+      "JIS",
+      "Pearson"
+     ],
+     "domains": [
+      "jokernel.net",
+      "instagram.com",
+      "youtube.com",
+      "tawjihihub.com",
+      "brighttouch-jo.com",
+      "studocu.com",
+      "jis.edu.jo"
+     ],
+     "source_cards": null,
+     "excerpt": "منصات ومعلمون: منصة Kernel (كيرنال) ... شرح خطوة بخطوة"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [
+      "mapbox.com"
+     ],
+     "source_cards": null,
+     "excerpt": "map card: Jotutor, iso school (boys) BTEC"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Asas"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "شرح تفصيلي لمهام BTEC IT خطوة بخطوة"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": "Jordan International Schools; Google Play \"حل واجبات Pearson BTEC JO\"",
+     "excerpt": "the AI offered itself as the tutor"
+    }
+   }
+  },
+  {
+   "prompt_id": "P012",
+   "group": "teacher-jordan",
+   "prompt": "هل في معلم متخصص BTEC IT بينصح فيه الطلاب بالأردن؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "TawjihiHub",
+      "JIS",
+      "Pearson",
+      "MoE-Jordan"
+     ],
+     "domains": [
+      "t.me",
+      "tawjihihub.com",
+      "qualifications.pearson.com",
+      "btec.moe.gov.jo",
+      "jis.edu.jo",
+      "btec.jo",
+      "joflows.com"
+     ],
+     "source_cards": null,
+     "excerpt": "ما ظهر اسم معلّم محدد أوصي به؛ قناة تيليغرام BTEC IT + منصة توجيهي هب"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "OpenSooq",
+      "Pearson"
+     ],
+     "domains": [
+      "mapbox.com"
+     ],
+     "source_cards": null,
+     "excerpt": "map card: iso school (boys) BTEC"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Teqani",
+      "Pearson",
+      "Facebook",
+      "YouTube"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "برزت عدة أسماء لمعلمين ومنصات"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P015",
+   "group": "teacher-jordan",
+   "prompt": "أفضل منصات ومدرسين BTEC IT للتوجيهي الأردني",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "JIS",
+      "MoE-Jordan"
+     ],
+     "domains": [
+      "btec-jo.com",
+      "t.me",
+      "btec.jo",
+      "btec.moe.gov.jo",
+      "jis.edu.jo",
+      "directoryjordan.com",
+      "hisas.online"
+     ],
+     "source_cards": null,
+     "excerpt": "أبرز الخيارات: منصة BTEC JO وقناة BTEC تكنولوجيا المعلومات على تيليغرام"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "BTECHub",
+      "TawjihiHub",
+      "OpenSooq",
+      "Pearson",
+      "MoE-Jordan"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "BTEC IT ضمن التوجيهي: BTECHub, TawjihiHub named"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P016",
+   "group": "arabic-resources",
+   "prompt": "وين ألاقي شرح BTEC IT بالعربي؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [
+      "youtube.com",
+      "ma-btec-all.github.io",
+      "t.me",
+      "instagram.com",
+      "studocu.com"
+     ],
+     "source_cards": null,
+     "excerpt": "مصادر: قناة BTEC بالعربي على يوتيوب، تيليجرام، إنستجرام"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "BTECHub",
+      "TawjihiHub",
+      "Pearson"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "BTECHub – تكنولوجيا المعلومات (first recommendation) + YouTube mention"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Teqani",
+      "Watad",
+      "Asas",
+      "YouTube",
+      "Telegram"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "شروحات BTEC IT بالعربي عبر عدة مصادر"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P017",
+   "group": "arabic-resources",
+   "prompt": "أفضل قناة يوتيوب عربية لشرح BTEC IT",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [
+      "thewriteress.com",
+      "7elhaa.com",
+      "tech-wd.com",
+      "computer-wd.com",
+      "arageek.com",
+      "educational-channels.com"
+     ],
+     "source_cards": null,
+     "excerpt": "لا تظهر قناة عربية متخصصة بوضوح؛ جرّب Free4arab | Information Technology"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "BTECHub"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "أفضل قناة: BTEC IT channel (BTECHub-related), YouTube"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Teqani",
+      "Asas",
+      "YouTube"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "قنوات يوتيوب عربية لشرح BTEC IT"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P018",
+   "group": "arabic-resources",
+   "prompt": "مواقع عربية تشرح مواد BTEC تكنولوجيا المعلومات",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "TawjihiHub",
+      "AF BTEC",
+      "Pearson"
+     ],
+     "domains": [
+      "al-maher.net",
+      "afbtec.vercel.app",
+      "ceenacademy.com",
+      "qf-btecit.web.app",
+      "tawjihihub.com",
+      "t.me",
+      "btec-jo.com"
+     ],
+     "source_cards": null,
+     "excerpt": "مواقع: منصة الماهر، AF BTEC، QF BTEC IT، توجيهي هب"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "BTECHub",
+      "TawjihiHub",
+      "Eduva",
+      "Pearson",
+      "Kafaa"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "عدة مواقع عربية: BTECHub, TawjihiHub, Eduva"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P019",
+   "group": "arabic-resources",
+   "prompt": "BTEC IT explained in Arabic website",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "TawjihiHub",
+      "JIS"
+     ],
+     "domains": [
+      "al-maher.net",
+      "jis.edu.jo",
+      "brighttouch-jo.com",
+      "tawjihihub.com",
+      "mcbs.edu.om",
+      "instagram.com",
+      "t.me",
+      "iec.edu.jo"
+     ],
+     "source_cards": null,
+     "excerpt": "مواقع عربية موثوقة: الماهر (al-maher.net) ..."
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson",
+      "MoE-Jordan"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "أفضل مصدر رسمي هو Pearson"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson",
+      "JoAcademy"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "دليل شامل بالعربية حول BTEC IT"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P020",
+   "group": "arabic-resources",
+   "prompt": "وين أذاكر BTEC IT بالعربي بسهولة؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "AF BTEC",
+      "Pearson"
+     ],
+     "domains": [
+      "t.me",
+      "ma-btec-all.github.io",
+      "qf-btecit.web.app",
+      "afbtec.net",
+      "al-maher.net",
+      "studocu.com",
+      "iec.edu.jo"
+     ],
+     "source_cards": null,
+     "excerpt": "قنوات تليجرام التعليمية والمنصات المخصصة للطلاب"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "clarifying + YouTube"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P021",
+   "group": "arabic-resources",
+   "prompt": "مصادر لتعلم BTEC IT للمبتدئين بالعربي",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [
+      "qualifications.pearson.com",
+      "al-maher.net",
+      "qf-btecit.web.app",
+      "btec-jo-support.com",
+      "t.me",
+      "studocu.com"
+     ],
+     "source_cards": null,
+     "excerpt": "نعم، مصادر عربية جيدة للمبتدئين؛ ابدأ من الموارد الرسمية"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "ابدأ من Pearson/YouTube لا تبدأ من مصادر البرمجة العامة"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P025",
+   "group": "arabic-resources",
+   "prompt": "في حساب انستغرام أو تيك توك بشرح BTEC IT بالعربي؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [
+      "t.me",
+      "scribd.com",
+      "petra.gov.jo",
+      "alrab7on.com",
+      "ecommercefastlane.com",
+      "how-ar.com"
+     ],
+     "source_cards": null,
+     "excerpt": "هناك قنوات تليجرام (وليس إنستغرام/تيك توك) أبرزها قناة تكنولوجيا المعلومات – BTEC"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "BTECHub",
+      "Eduva",
+      "Watad"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "لقيت مصادر: Eng. Alaa Bataineh (@alaa19121982) ... BTECHub, Eduva"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Facebook",
+      "YouTube",
+      "Telegram",
+      "Instagram"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "معلمون ومنصات وصناع محتوى (generic, no handle named)"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": true,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": "Instagram·ahmaddomiedu \"Ahmad Ra'ed Domi || معلم BTEC IT (@ahmaddomiedu)\"; Instagram @pearson_btec_jo; Instagram @its.btec.it",
+     "excerpt": "NAMED + CITED (Instagram) among 3 accounts, in answer to \"is there an Instagram/TikTok account explaining BTEC IT in Arabic?\" -- mentioned, "
+    }
+   }
+  },
+  {
+   "prompt_id": "P031",
+   "group": "assessment-pmd",
+   "prompt": "شو الفرق بين Pass وMerit وDistinction؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [
+      "woolwich.ac.ae",
+      "postgrad.com",
+      "openeducat.org",
+      "ish.org.uk",
+      "thebusiness.school",
+      "assignmentexperts.co.uk",
+      "cavendish.ac"
+     ],
+     "source_cards": null,
+     "excerpt": "الفرق بين Pass وMerit وDistinction (عام/ماجستير UK)"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "Pass/Merit/Distinction (general)"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Asas"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "Pass/Merit/Distinction (UK grading)"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P032",
+   "group": "assessment-pmd",
+   "prompt": "كيف أحقق معيار D في تقرير BTEC؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [
+      "btecassignment.help",
+      "woolwich.ac.ae",
+      "aimuniversitygroup.org",
+      "qualifications.pearson.com",
+      "youtube.com"
+     ],
+     "source_cards": null,
+     "excerpt": "لتحقيق Distinction: تحليل نقدي متعمق وربط نظرية بتطبيق"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "معيار D: تقييم/حكم مدعوم بالأدلة"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Asas"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "لتحقيق معيار Distinction"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P033",
+   "group": "assessment-pmd",
+   "prompt": "شو الفرق بين Explain وAnalyse وEvaluate في BTEC؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [
+      "qualifications.pearson.com",
+      "bbc.co.uk",
+      "openpolytechnic.ac.nz",
+      "mytestbuddy.app",
+      "thebusiness.school",
+      "studocu.com"
+     ],
+     "source_cards": null,
+     "excerpt": "في BTEC الفرق الأساسي عمق الإجابة: جدول Explain/Analyse/Evaluate"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "Explain/Analyse/Evaluate"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P037",
+   "group": "assessment-pmd",
+   "prompt": "كيف أنتقل من Merit إلى Distinction؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [
+      "assignmentexperts.co.uk",
+      "openeducat.org",
+      "boosteducationservice.co.uk",
+      "kannazpiano.com",
+      "ukdreamservices.co.uk",
+      "qualifications.pearson.com"
+     ],
+     "source_cards": null,
+     "excerpt": "الانتقال من Merit إلى Distinction"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson",
+      "Kafaa"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "Merit -> Distinction"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P045",
+   "group": "assessment-pmd",
+   "prompt": "وين ألاقي حاسبة معدل BTEC؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "D.BTEC",
+      "Pearson",
+      "MoE-Jordan"
+     ],
+     "domains": [
+      "qualifications.pearson.com",
+      "toolzplus.com",
+      "gradecalculators.org",
+      "dbtec.top",
+      "t3h3a.github.io",
+      "btec-engineer.com",
+      "qf-btecit.web.app"
+     ],
+     "source_cards": null,
+     "excerpt": "حاسبة معدل BTEC: مصادر مجانية (dbtec.top, btec-engineer.com ...)"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Eduva",
+      "Pearson"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "حاسبة BTEC من 35 – Eduva (recommended calculator)"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P049",
+   "group": "cyber-ai-educator",
+   "prompt": "بدي مدرس يفهمني مهمة الأمن السيبراني BTEC.",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [
+      "tvtc.gov.sa",
+      "ub.edu.sa",
+      "edraak.org",
+      "tawjihiai.com",
+      "bakkah.com",
+      "cyberpath.vercel.app",
+      "maharatech.gov.eg"
+     ],
+     "source_cards": null,
+     "excerpt": "أكيد، ابعتلي نص مهمة BTEC ... (no teacher recommended)"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "clarifying; no names"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P057",
+   "group": "cyber-ai-educator",
+   "prompt": "مصدر عربي يشرح الـ Cyber Security للـ BTEC خطوة بخطوة",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [
+      "maharatech.gov.eg",
+      "scribd.com",
+      "cyberscourse.com",
+      "kali-academy.github.io",
+      "calameo.com",
+      "fallnatalm.com",
+      "cyberani.org"
+     ],
+     "source_cards": null,
+     "excerpt": "لم يظهر مصدر عربي يشرح BTEC خطوة بخطوة"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Eduva",
+      "Pearson"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "أفضل مصدر عربي لـ Unit 11: Eduva (+ YouTube)"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P061",
+   "group": "cyber-ai-educator",
+   "prompt": "أفضل مصدر عربي لمهمة الذكاء الاصطناعي BTEC؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [
+      "qf-btecit.web.app",
+      "studocu.com",
+      "scribd.com",
+      "academy.hsoub.com",
+      "elearning.univ-jijel.dz",
+      "aiarab.tech",
+      "taha-ai.com",
+      "academy.btech.sa"
+     ],
+     "source_cards": null,
+     "excerpt": "أفضل مصدر عربي لمهام BTEC AI: منصة QF BTEC IT + StuDocu"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "BTECHub",
+      "Eduva",
+      "Pearson",
+      "MoE-Jordan"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "أفضل المصادر للذكاء الاصطناعي U21: BTECHub, Eduva"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P069",
+   "group": "cyber-ai-educator",
+   "prompt": "مين بشرح وحدة الذكاء الاصطناعي BTEC بالأردن؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "D.BTEC",
+      "JIS",
+      "MoE-Jordan"
+     ],
+     "domains": [
+      "jis.edu.jo",
+      "btec.moe.gov.jo",
+      "btec.jo",
+      "studocu.com",
+      "ae.linkedin.com",
+      "t.me",
+      "dbtec.top"
+     ],
+     "source_cards": null,
+     "excerpt": "لا يوجد مدرس واحد معلن يشرح وحدة AI على مستوى الأردن"
+    },
+    "ChatGPT": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Teqani",
+      "Pearson",
+      "Kafaa"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "لقيت أكثر من مدرس/منصة تشرح Unit 21 بالأردن (Teqani etc.)"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P091",
+   "group": "commercial",
+   "prompt": "بدي مدرس BTEC IT خصوصي بالأردن وكم السعر؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "JIS",
+      "MoE-Jordan"
+     ],
+     "domains": [
+      "moe.gov.jo",
+      "btec.moe.gov.jo",
+      "btec.jo",
+      "jis.edu.jo",
+      "btec-jo.com",
+      "t.me"
+     ],
+     "source_cards": null,
+     "excerpt": "ابعتلي مدينتك والصف (clarifying question; no provider named)"
+    },
+    "ChatGPT": {
+     "completed": false,
+     "named": null,
+     "site_cited": null,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "NOT COMPLETED - anonymous message limit"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "PrivateJo",
+      "OpenSooq",
+      "Pearson",
+      "Facebook"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "مدرس خصوصي BTEC IT للمستويين L2/L3"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P092",
+   "group": "commercial",
+   "prompt": "دروس BTEC IT أونلاين مع مدرس أردني",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "BTECHub",
+      "JIS",
+      "JoAcademy",
+      "Ostathi"
+     ],
+     "domains": [
+      "derastak.com",
+      "joacademy.com",
+      "voltacademyonline.com",
+      "buildersedu.com",
+      "jo.ostathi.com",
+      "t.me",
+      "alufoq.com",
+      "btechub.com"
+     ],
+     "source_cards": null,
+     "excerpt": "عدة خيارات لدروس BTEC IT أونلاين مع مدرسين أردنيين (منصات منظمة)"
+    },
+    "ChatGPT": {
+     "completed": false,
+     "named": null,
+     "site_cited": null,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "NOT COMPLETED - anonymous message limit"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P095",
+   "group": "commercial",
+   "prompt": "مين براجع تقارير BTEC قبل التسليم؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [
+      "qualifications.pearson.com",
+      "serc.ac.uk",
+      "brighttouch-jo.com",
+      "utcderby.org.uk",
+      "chsg.org.uk",
+      "clc-london.ac.uk",
+      "htu.edu.jo"
+     ],
+     "source_cards": null,
+     "excerpt": "تقارير BTEC لا تُسلَّم مباشرة قبل مراجعة عدة أطراف"
+    },
+    "ChatGPT": {
+     "completed": false,
+     "named": null,
+     "site_cited": null,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "NOT COMPLETED - anonymous message limit"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "عملية المراجعة الداخلية في BTEC"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  },
+  {
+   "prompt_id": "P097",
+   "group": "commercial",
+   "prompt": "في كرت أو بطاقة تعليمية لـ BTEC IT بالأردن؟",
+   "baseline": {
+    "Perplexity": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "JIS",
+      "Pearson",
+      "Ostathi",
+      "MoE-Jordan"
+     ],
+     "domains": [
+      "t.me",
+      "unrwa.org",
+      "qualifications.pearson.com",
+      "btec.jo",
+      "btec.moe.gov.jo",
+      "jis.edu.jo",
+      "jo.ostathi.com"
+     ],
+     "source_cards": null,
+     "excerpt": "بطاقة تعليمية/ملخص لمادة BTEC IT: موارد متاحة منها قناة"
+    },
+    "ChatGPT": {
+     "completed": false,
+     "named": null,
+     "site_cited": null,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "NOT COMPLETED - anonymous message limit"
+    },
+    "Gemini": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [
+      "Pearson",
+      "Asas"
+     ],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": "لا توجد بطاقة تعليمية رسمية معتمدة"
+    },
+    "Google AI Mode": {
+     "completed": true,
+     "named": false,
+     "site_cited": false,
+     "entities": [],
+     "domains": [],
+     "source_cards": null,
+     "excerpt": ""
+    }
+   }
+  }
+ ]
+}

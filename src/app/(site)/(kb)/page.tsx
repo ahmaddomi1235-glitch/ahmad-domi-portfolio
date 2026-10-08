@@ -6,7 +6,7 @@ import { CardLink, Chip, Section } from "@/components/kb/Layout";
 import { accounts, brand } from "@/config/site";
 import { homeGraph } from "@/lib/seo/jsonld";
 import { seoMeta } from "@/lib/seo/intent";
-import { getConceptsOfUnit, getQuestionIndex, getResources, getUnits, getVideos } from "@/lib/kb/queries";
+import { getConcepts, getConceptsOfUnit, getQuestionIndex, getResources, getUnits, getVideos } from "@/lib/kb/queries";
 
 export const metadata = seoMeta("/");
 
@@ -68,6 +68,25 @@ export default function EntityHome() {
       <Section title="أسئلة يجيب عنها هذا الموقع" id="faq">
         <dl className="grid gap-5 md:grid-cols-2">
           <div className="rounded-2xl border border-line bg-white p-5">
+            <dt className="font-semibold">هل يوجد مدرّس BTEC IT بالعربي في الأردن؟</dt>
+            <dd className="mt-2 leading-8 text-ink/85">
+              نعم، أحمد دومي من إربد مدرّس BTEC IT منذ أكثر من سنتين: عمل مدرّسًا لـ BTEC IT على منصة أساس التعليمية وكمدرّب مستقل، حسب سيرته الذاتية.
+              يشرح الوحدات بالعربي مع المصطلح الإنجليزي، ويضع شروحاته المجانية في{" "}
+              <Link href="/btec-it" className="font-medium text-navy underline decoration-gold underline-offset-4">قاعدة معرفة BTEC IT</Link> وعلى قناته في{" "}
+              <a rel="me noopener noreferrer" target="_blank" href={accounts.youtube} className="font-medium text-navy underline decoration-gold underline-offset-4">YouTube</a>.
+            </dd>
+          </div>
+          <div className="rounded-2xl border border-line bg-white p-5">
+            <dt className="font-semibold">أين أتعلّم BTEC IT بالعربي؟</dt>
+            <dd className="mt-2 leading-8 text-ink/85">
+              هنا {getConcepts().length} صفحة شرح لمفاهيم الأمن السيبراني والذكاء الاصطناعي ونمذجة البيانات وإدارة المشاريع والبرمجة وغيرها (
+              <Link href="/btec-it" className="font-medium text-navy underline decoration-gold underline-offset-4">الوحدات</Link>)، مع{" "}
+              <Link href="/videos" className="font-medium text-navy underline decoration-gold underline-offset-4">فيديوهات</Link>،{" "}
+              <Link href="/btec-it/glossary" className="font-medium text-navy underline decoration-gold underline-offset-4">مصطلحات عربي — English</Link>، و
+              <Link href="/btec-it/assessment" className="font-medium text-navy underline decoration-gold underline-offset-4"> دليل التقييم وكتابة التقارير (Pass / Merit / Distinction)</Link>.
+            </dd>
+          </div>
+          <div className="rounded-2xl border border-line bg-white p-5">
             <dt className="font-semibold">من هو أحمد دومي؟</dt>
             <dd className="mt-2 leading-8 text-ink/85">
               مدرّس BTEC IT في الأردن، درّس طلبة الصف العاشر والأول الثانوي والتوجيهي، وعمل مدرّسًا لـ BTEC IT على منصة أساس التعليمية.{" "}
@@ -111,6 +130,20 @@ export default function EntityHome() {
                 LinkedIn
               </a>
               .
+            </dd>
+          </div>
+          <div className="rounded-2xl border border-line bg-white p-5">
+            <dt className="font-semibold">كيف يُكتب اسمه على المنصات؟</dt>
+            <dd className="mt-2 leading-8 text-ink/85">
+              الاسم الكامل <bdi lang="en" dir="ltr">Ahmad Ra&apos;ed Ahmad Domi</bdi> (أحمد رائد أحمد دومي). يُكتب على هذا الموقع وقناة YouTube «أحمد دومي · <bdi lang="en" dir="ltr">Ahmad Domi</bdi>»،
+              ويظهر حسابه على Instagram باسم «<bdi lang="en" dir="ltr">Ahmad Ra&apos;ed Domi</bdi> || معلم BTEC IT» بالمعرّف <bdi dir="ltr">@ahmaddomiedu</bdi>. هذه كلها لشخص واحد.
+            </dd>
+          </div>
+          <div className="rounded-2xl border border-line bg-white p-5">
+            <dt className="font-semibold">هل يقدّم أحمد دروسًا خاصة؟</dt>
+            <dd className="mt-2 leading-8 text-ink/85">
+              تذكر سيرته الذاتية تدريبًا خاصًّا وإرشادًا أكاديميًّا لطلبة BTEC IT. لا تُنشر هنا أسعار أو مواعيد للدروس؛ للاستفسار عن توفّر الحصص تواصل معه عبر{" "}
+              <Link href="/about#contact" className="font-medium text-navy underline decoration-gold underline-offset-4">روابط التواصل في «عن أحمد»</Link>.
             </dd>
           </div>
           <div className="rounded-2xl border border-line bg-white p-5">

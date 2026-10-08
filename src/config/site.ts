@@ -36,8 +36,15 @@ export const accounts = {
  */
 export const thirdPartyProfiles: string[] = [];
 
+/**
+ * The canonical channel URL (stable channel id). The old handle @AhmadDomi-r7r still resolves to the same channel, so engines
+ * that learned the old handle can reconcile it with @AhmadDomiedu through this single URL.
+ */
+export const youtubeChannelUrl = "https://www.youtube.com/channel/UCdZ35Tf0PAG62WQLa17vJDg";
+
 export const sameAs: string[] = [
   accounts.youtube,
+  youtubeChannelUrl,
   accounts.instagram,
   accounts.github,
   accounts.linkedin,
@@ -50,8 +57,10 @@ export const knowsAbout = [
   "Artificial Intelligence",
   "Data Modelling",
   "IT Project Management",
+  "Programming",
   "Website Development",
   "Introduction to Applications",
+  "BTEC assessment writing (Pass, Merit, Distinction)",
 ];
 
 export const profileImage = `${SITE_URL}/images/profile/ahmad-domi-profile.jpg`;

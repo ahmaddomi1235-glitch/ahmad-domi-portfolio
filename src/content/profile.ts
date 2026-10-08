@@ -20,7 +20,7 @@ export const profile = {
   social: {
     linkedin: "https://linkedin.com/in/ahmad-domi",
     github: "https://github.com/ahmaddomi1235-glitch",
-    youtube: "https://www.youtube.com/@AhmadDomi-r7r",
+    youtube: "https://www.youtube.com/@AhmadDomiedu",
     instagram: "https://www.instagram.com/ahmaddomiedu",
   },
   cvUrl: "/documents/Ahmad-Domi-CV.pdf" as string | null,

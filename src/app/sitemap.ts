@@ -10,21 +10,24 @@ import { allPublishedNodes, getConcepts, getUnits, urlFor } from "@/lib/kb/queri
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const nodes = allPublishedNodes();
-  const latest = nodes.map((n) => n.lastReviewed).sort().at(-1) ?? "2026-10-04";
+  const latest = nodes.filter((n) => n.type !== "Product").map((n) => n.lastReviewed).sort().at(-1) ?? "2026-10-04";
+  /** Pages whose visible content changed with the confirmed commercial facts (Phase 6B). */
+  const commercialUpdate = "2026-10-09";
   const at = (iso: string) => new Date(`${iso}T00:00:00Z`);
   const url = (p: string) => `${SITE_URL}${p}`;
 
   const entries: MetadataRoute.Sitemap = [
-    { url: url("/"), lastModified: at(latest) },
+    { url: url("/"), lastModified: at(commercialUpdate) },
     { url: url("/about"), lastModified: at(latest), alternates: { languages: { ar: url("/about"), en: url("/en") } } },
     { url: url("/en"), lastModified: at(latest), alternates: { languages: { ar: url("/about"), en: url("/en") } } },
-    { url: url("/btec-it"), lastModified: at(latest) },
+    { url: url("/btec-it"), lastModified: at(commercialUpdate) },
     ...getUnits().map((u) => ({ url: url(urlFor(u)), lastModified: at(u.lastReviewed) })),
     ...getConcepts().map((c) => ({ url: url(urlFor(c)), lastModified: at(c.lastReviewed) })),
     { url: url("/btec-it/questions"), lastModified: at(latest) },
     { url: url("/btec-it/glossary"), lastModified: at(latest) },
     { url: url("/btec-calculator"), lastModified: at(latest) },
-    { url: url("/btec-it-card"), lastModified: at(latest) },
+    { url: url("/btec-it-card"), lastModified: at(commercialUpdate) },
+    { url: url("/btec-it/private-lessons"), lastModified: at(commercialUpdate) },
     { url: url("/videos"), lastModified: at(latest) },
     { url: url("/resources"), lastModified: at(latest) },
   ];

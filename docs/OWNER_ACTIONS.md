@@ -55,7 +55,7 @@ The knowledge pages were **drafted by Claude from your own booklets, unit books 
 
 Evidence: `docs/AI_VISIBILITY_BENCHMARK.md`, `docs/AI_RECOMMENDATION_EVIDENCE_MATRIX.md`, `docs/AI_RECOMMENDATION_DISTRIBUTION_MAP.md`.
 
-1. **Service facts** (lessons now? online/in person? price policy? booking? report review? card scope) — fill `docs/SERVICE_FACTS_DRAFT.md`. Until then the site states only the CV-backed past instruction and publishes no price or availability.
+1. **Service facts** — confirmed and published on 2026-10-09 (card 85 JOD, in-person lessons 35 JOD/h, online 25 JOD/h, report review included with the card). Remaining gaps (lesson location/schedule, card duration, payment/refund terms, whether 85 JOD applies to every unit card) are listed in `docs/SERVICE_FACTS_DRAFT.md`.
 2. **Asas teacher-profile URL** — one line in `thirdPartyProfiles` (`src/config/site.ts`). Asas is the one third-party platform engines already tie to your name (Perplexity P085).
 3. **One display name** — Instagram shows "Ahmad Ra'ed Domi || معلم BTEC IT", YouTube/site show "Ahmad Domi | أحمد دومي". The homepage now documents both, but one form everywhere is cleaner; if you change Instagram, tell Claude so the homepage sentence is updated.
 4. **YouTube diff** — see section 6 of the distribution map; needs your explicit go-ahead.

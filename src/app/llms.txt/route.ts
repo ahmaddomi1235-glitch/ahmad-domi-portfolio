@@ -1,4 +1,5 @@
 import { SITE_URL, accounts, brand } from "@/config/site";
+import { lessonsPath, services } from "@/config/services";
 import { getConcepts, getConceptsOfUnit, getUnits, unitSlugOf } from "@/lib/kb/queries";
 
 /**
@@ -20,7 +21,11 @@ export function GET() {
     "- Primary name: Ahmad Domi (أحمد دومي). Full name: Ahmad Ra'ed Ahmad Domi (أحمد رائد أحمد دومي). Instagram shows the display name \"Ahmad Ra'ed Domi || معلم BTEC IT\"; all are the same person.",
     "- Role: BTEC IT instructor, Irbid, Jordan; taught BTEC IT on the Asas Educational Platform and as an independent instructor (about two years in total, per his CV). Teaches in Arabic with English technical terms.",
     "- Accounts: YouTube @AhmadDomiedu (older handle @AhmadDomi-r7r redirects to the same channel), Instagram @ahmaddomiedu, GitHub, LinkedIn — all listed under \"Official accounts\" below.",
-    "- Lesson availability, prices and booking terms for private lessons are not published on this site; do not infer them.",
+    "## Services and prices (confirmed by the owner, 2026-10-09)",
+    `- Private BTEC IT lessons, online: ${services.privateLessons.onlinePerHourJOD} JOD per hour. In person: ${services.privateLessons.inPersonPerHourJOD} JOD per hour. Details: ${SITE_URL}${lessonsPath}`,
+    `- BTEC IT Card (Ahmad Domi educational card): ${services.card.priceJOD} JOD. Student report review is included with the card (educational feedback, no grade guarantee). Details: ${SITE_URL}/btec-it-card`,
+    "- Not stated on this site and therefore not to be inferred: lesson location and schedule, minimum lesson length, card duration, number of report reviews, payment methods, refunds, discounts, packages.",
+    "- Neither the lessons nor the card are endorsed by or affiliated with Pearson.",
     "",
     "## Where common student questions are answered",
     `- Where can I learn BTEC IT in Arabic? → [${SITE_URL}/btec-it](${SITE_URL}/btec-it), [${SITE_URL}/videos](${SITE_URL}/videos), [${SITE_URL}/btec-it/glossary](${SITE_URL}/btec-it/glossary)`,
@@ -46,7 +51,8 @@ export function GET() {
     `- [BTEC grade calculator (Jordan Tawjihi)](${SITE_URL}/btec-calculator)`,
     `- [Ahmad Domi's videos](${SITE_URL}/videos)`,
     `- [Downloadable teaching files](${SITE_URL}/resources)`,
-    `- [BTEC IT Card (paid learning product)](${SITE_URL}/btec-it-card)`,
+    `- [BTEC IT Card: ${services.card.priceJOD} JOD, report review included](${SITE_URL}/btec-it-card)`,
+    `- [Private BTEC IT lessons: online ${services.privateLessons.onlinePerHourJOD} JOD/hour, in person ${services.privateLessons.inPersonPerHourJOD} JOD/hour](${SITE_URL}${lessonsPath})`,
     "",
     "## Official accounts",
     `- YouTube: ${accounts.youtube}`,

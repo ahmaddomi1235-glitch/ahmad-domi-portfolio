@@ -189,6 +189,8 @@ export type ProductNode = NodeBase & {
   description: string;
   audience: string[];
   includes: { unit: string; title_ar: string; priceJOD: number | null }[];
+  /** Card price in JOD as confirmed by the owner; used for the visible price and the Offer schema. */
+  priceJOD?: number | null;
   support: string[];
   howToGet: { label: string; url: string }[];
   /** Prices are recorded but hidden until a human confirms they are current and sets this to true. */

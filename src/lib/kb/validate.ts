@@ -215,7 +215,7 @@ export function validateNodes(nodes: KbNode[]): Issue[] {
 
     if (n.type === "Product") {
       const p = n as ProductNode;
-      if (p.showPrice && p.includes.some((i) => i.priceJOD == null)) err(p, "showPrice is true but a price is missing");
+      if (p.showPrice && (p.priceJOD == null || p.priceJOD <= 0) && p.includes.some((i) => i.priceJOD == null)) err(p, "showPrice is true but a price is missing");
       for (const h of p.howToGet ?? []) if (!h.url.startsWith("https://")) err(p, `howToGet URL must be https: ${h.url}`);
     }
   }

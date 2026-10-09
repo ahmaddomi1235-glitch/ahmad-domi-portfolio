@@ -74,6 +74,7 @@ export const mainNav = [
   { href: "/btec-it/glossary", label: "المصطلحات" },
   { href: "/videos", label: "الفيديوهات" },
   { href: "/btec-calculator", label: "حاسبة المعدل" },
+  { href: "/btec-it/private-lessons", label: "دروس خصوصية" },
   { href: "/btec-it-card", label: "بطاقة BTEC IT" },
   { href: "/about", label: "عن أحمد" },
 ] as const;

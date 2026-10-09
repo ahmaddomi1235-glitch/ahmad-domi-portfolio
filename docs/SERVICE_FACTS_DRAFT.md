@@ -1,32 +1,30 @@
-# Service facts — DRAFT, not published
+# Service facts — owner-confirmed 2026-10-09 (Phase 6B), remaining gaps
 
-Nothing in this file is on the website. It lists the facts an AI assistant (and a student) needs before Ahmad Domi can be described as offering lessons, report review or the card, and the exact wording to publish **once each fact is confirmed by the owner**. Do not fill the blanks from old marketing copy.
+Published facts come from `src/config/services.ts` (single source of truth for pages, schema, llms.txt and tests). Change a number there and every page, the schema and the tests follow.
 
-## 1. What the public record already supports (safe to state)
+## 1. Confirmed by the owner and published
 
-| Fact | Source |
+| Service | Confirmed fact | Where it is published |
+| --- | --- | --- |
+| BTEC IT Card (بطاقة أحمد دومي التعليمية — BTEC IT) | **85 JOD** | `/btec-it-card` (+ Product/Offer JSON-LD), home, `/btec-it/private-lessons`, `llms.txt` |
+| In-person private BTEC IT lessons | **35 JOD per hour** | `/btec-it/private-lessons` (+ Service/Offer JSON-LD), home, `llms.txt` |
+| Online private BTEC IT lessons | **25 JOD per hour** | same |
+| Student report review | **Included with the BTEC IT Card** — not a separate paid service | `/btec-it-card#report-review`, home, `llms.txt` |
+
+Wording rules applied: educational feedback and guidance only; no grade guarantee; not writing assessed work; not endorsed by or affiliated with Pearson; prices are stated as current (not estimates, discounts or historical).
+
+## 2. Still NOT stated anywhere (owner has not confirmed; pages say so instead of guessing)
+
+| Fact | Why it matters |
 | --- | --- |
-| BTEC IT instructor, Irbid, Jordan; teaches in Arabic with English terms | CV (`src/content/profile.ts`), YouTube/Instagram bios |
-| About two years of BTEC IT teaching: Asas Educational Platform (8 months) + independent instruction (1.5 years) | CV |
-| Past private instruction and academic mentoring for BTEC IT students | CV, freelance entry |
-| Free explanations: concept pages, glossary, questions, calculator, files, YouTube lessons | the site itself |
-| Paid BTEC IT Card with a free first video and WhatsApp support | card platform; card page |
+| Where in-person lessons take place, schedules, minimum lesson length | AI answers and students ask; the lessons page says these are not specified here |
+| Card duration, number of report reviews, delivery method, payment methods, refund terms, discounts | Card page says it does not cover them |
+| **Does 85 JOD apply to every unit card?** The card platform listed Cyber 85, AI 85 and Data Modelling 45 (booked together with the Introduction to Applications card). Only "BTEC IT Card = 85 JOD" is confirmed, so per-unit prices are no longer shown and the 45 JOD figure is not published | If unit cards differ in price, tell Claude and the card page can say so |
+| A dedicated WhatsApp number | The phone number on the site is published as a phone number only; booking for the card is described as "via the support team on WhatsApp from the card platform", which is what the platform already states |
+| Asas teacher-profile URL, calculator rule source, consented testimonials | See `docs/OWNER_ACTIONS.md` |
 
-## 2. Facts that are missing — owner must supply
+## 3. Rules that stay in force
 
-| # | Fact | Why AI answers need it | Draft sentence (fill after confirming) |
-| --- | --- | --- | --- |
-| 1 | Are private lessons offered **now**? | Teacher/lesson prompts (P002, P003, P091, P092) return only providers that say so | "يقدّم أحمد دومي دروسًا خاصة في BTEC IT ___ (حضوري في ___ / أونلاين)." |
-| 2 | Levels and units covered in lessons | "who explains the AI / cyber unit" prompts | "الوحدات: ___" |
-| 3 | Price or price policy | Engines currently invent 10-25 JOD guesses | "السعر: ___ / يُتفق عليه بعد التواصل" (either is fine; silence is also fine) |
-| 4 | Booking / contact method | A student must know how | "للحجز: ___" |
-| 5 | Report review: offered? scope? included in the card? | P095/P096 | `reportReview` in `content/products/btec-it-card.json`: `included` / `not-included` / separate service |
-| 6 | Card: current price, what is excluded, discount policy | P097 | `showPrice` stays `false` until confirmed |
-| 7 | Asas teacher-profile URL | Entity corroboration | add to `thirdPartyProfiles` in `src/config/site.ts` |
-| 8 | Student results/testimonials that can be quoted with consent | Social proof (never invented) | only with written consent and the real source |
-
-## 3. Rules for when facts arrive
-
-- Publish on existing pages (`/about`, `/btec-it-card`, homepage FAQ) — no new "doorway" pages.
-- No superlatives ("best", "number one") without independent evidence.
-- Product/Offer schema only after price and availability are confirmed; never review/rating schema without real reviews.
+- No new services, packages, discounts, guarantees, payment plans or refund promises without owner confirmation.
+- No review/rating/award/credential schema; no availability or stock status in schema.
+- Paid card content, assignment answers and private source files are never published.

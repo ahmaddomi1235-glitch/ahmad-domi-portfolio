@@ -82,7 +82,9 @@ export default function BtecHub() {
         <p className="mt-5 leading-8 text-ink/85">
           تكتب تقريرًا؟ اقرأ <Link href="/btec-it/assessment" className="font-medium text-navy underline decoration-gold underline-offset-4">دليل كتابة التقارير في BTEC</Link>. تريد معرفة معدلك؟ استخدم{" "}
           <Link href="/btec-calculator" className="font-medium text-navy underline decoration-gold underline-offset-4">حاسبة معدل BTEC</Link>. تفضّل الفيديو؟ شاهد{" "}
-          <Link href="/videos" className="font-medium text-navy underline decoration-gold underline-offset-4">دروس أحمد دومي على YouTube</Link>.
+          <Link href="/videos" className="font-medium text-navy underline decoration-gold underline-offset-4">دروس أحمد دومي على YouTube</Link>. وإن أردت شرحًا مباشرًا مع المدرّس فهناك{" "}
+          <Link href="/btec-it/private-lessons" className="font-medium text-navy underline decoration-gold underline-offset-4">دروس خصوصية BTEC IT</Link> أونلاين ووجاهيًا، و
+          <Link href="/btec-it-card" className="font-medium text-navy underline decoration-gold underline-offset-4"> بطاقة أحمد دومي التعليمية</Link> التي تشمل مراجعة التقارير.
         </p>
       </Section>
 

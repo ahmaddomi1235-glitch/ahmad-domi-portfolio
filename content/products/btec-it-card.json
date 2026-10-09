@@ -1,10 +1,10 @@
 {
   "id": "btec-it-card",
   "type": "Product",
-  "title_ar": "بطاقة BTEC IT — أحمد دومي",
-  "title_en": "BTEC IT Card — Ahmad Domi",
+  "title_ar": "بطاقة أحمد دومي التعليمية — BTEC IT",
+  "title_en": "Ahmad Domi BTEC IT Card",
   "slug": "btec-it-card",
-  "summary": "بطاقات تعليمية من أحمد دومي لوحدات BTEC IT: شروحات مصوّرة ومواد دعم وإرشاد للواجبات، مع فيديو تجريبي مجاني قبل الحجز.",
+  "summary": "بطاقة أحمد دومي التعليمية لـ BTEC IT بسعر 85 دينارًا أردنيًا: شروحات مصوّرة بالعربي ومواد دعم وإرشاد للواجبات، ومراجعة تقارير الطلاب مشمولة مع البطاقة.",
   "unit": null,
   "learningAim": null,
   "criterion": null,
@@ -12,39 +12,64 @@
   "questions": [],
   "sourceType": "tool-source",
   "sourceReferences": [
-    { "kind": "web", "label": "منصة معاينة البطاقات (أول فيديو مجاني من كل بطاقة)", "url": "https://ahmaddomi-edu.vercel.app" }
+    {
+      "kind": "web",
+      "label": "منصة معاينة البطاقات (أول فيديو مجاني من كل بطاقة)",
+      "url": "https://ahmaddomi-edu.vercel.app"
+    }
   ],
   "youtubeId": null,
   "author": "ahmad-domi",
-  "lastReviewed": "2026-10-04",
+  "lastReviewed": "2026-10-09",
   "visibility": "PUBLIC_SUMMARY",
-  "related": ["cyber-security", "artificial-intelligence", "data-modelling"],
+  "related": [
+    "cyber-security",
+    "artificial-intelligence",
+    "data-modelling"
+  ],
   "officialSource": null,
   "status": "published",
-  "needsVerification": true,
-  "reviewState": "unit list and booking flow taken from the live preview platform; prices recorded but hidden (showPrice=false) until the author confirms they are current; report-review inclusion unknown",
-  "description": "البطاقة مادة تعليمية مدفوعة تشرح وحدات BTEC IT بأسلوب أحمد دومي. هذه الصفحة تصف ما تغطيه ولمن تناسب وكيف تحجزها، ولا تتضمن محتوى البطاقة نفسه.",
+  "needsVerification": false,
+  "reviewState": "price (85 JOD) and report-review inclusion confirmed by the owner on 2026-10-09; delivery, duration, number of reviews, payment methods and refund terms are NOT confirmed and are not stated",
+  "description": "بطاقة أحمد دومي التعليمية مادة تعليمية مدفوعة تشرح وحدات BTEC IT بالعربي بأسلوب أحمد دومي، وسعرها 85 دينارًا أردنيًا، ومراجعة تقارير الطلاب مشمولة معها. هذه الصفحة تصف ما تغطيه ولمن تناسب وكيف تحجزها، ولا تتضمن محتوى البطاقة نفسه.",
   "audience": [
     "طلبة BTEC IT في الأردن الذين يريدون شرحًا منظّمًا بالعربي للوحدة",
     "من شاهدوا الفيديو التجريبي وأعجبهم أسلوب الشرح"
   ],
   "includes": [
-    { "unit": "cyber-security", "title_ar": "بطاقة الأمن السيبراني", "priceJOD": 85 },
-    { "unit": "artificial-intelligence", "title_ar": "بطاقة الذكاء الاصطناعي", "priceJOD": 85 },
-    { "unit": "data-modelling", "title_ar": "بطاقة نمذجة البيانات (تُحجز مع بطاقة استخدام تكنولوجيا المعلومات)", "priceJOD": 45 }
+    {
+      "unit": "cyber-security",
+      "title_ar": "بطاقة الأمن السيبراني",
+      "priceJOD": null
+    },
+    {
+      "unit": "artificial-intelligence",
+      "title_ar": "بطاقة الذكاء الاصطناعي",
+      "priceJOD": null
+    },
+    {
+      "unit": "data-modelling",
+      "title_ar": "بطاقة نمذجة البيانات (تُحجز مع بطاقة استخدام تكنولوجيا المعلومات)",
+      "priceJOD": null
+    }
   ],
   "support": [
     "شرح مصوّر للوحدة بالعربي مع المصطلحات الإنجليزية",
     "مواد دعم وتوضيح لمتطلبات الواجبات",
-    "متابعة الاستفسارات عبر فريق الدعم على واتساب"
+    "متابعة الاستفسارات عبر فريق الدعم على واتساب",
+    "مراجعة تقارير الطلاب مشمولة مع البطاقة (ملاحظات وإرشاد تعليمي)"
   ],
   "howToGet": [
-    { "label": "شاهد أول فيديو مجانًا من كل بطاقة ثم احجز عبر واتساب", "url": "https://ahmaddomi-edu.vercel.app" }
+    {
+      "label": "شاهد أول فيديو مجانًا من كل بطاقة ثم احجز عبر واتساب",
+      "url": "https://ahmaddomi-edu.vercel.app"
+    }
   ],
-  "showPrice": false,
+  "showPrice": true,
   "currency": "JOD",
-  "reportReview": "unknown",
+  "reportReview": "included",
   "excluded": [
     "محتوى البطاقة نفسه لا يُنشر على هذا الموقع؛ الصفحات العامة هنا شرح تعليمي مستقل عنه"
-  ]
+  ],
+  "priceJOD": 85
 }

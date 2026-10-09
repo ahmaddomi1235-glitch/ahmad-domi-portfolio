@@ -167,7 +167,7 @@ test.describe("entity home", () => {
 
   test("320px viewport has no horizontal overflow on knowledge pages", async ({ page }) => {
     await page.setViewportSize({ width: 320, height: 700 });
-    for (const path of ["/", "/btec-it", "/btec-it/cyber-security/threat-vulnerability-risk", "/btec-calculator", "/btec-it/glossary", "/videos", "/btec-it-card"]) {
+    for (const path of ["/", "/btec-it", "/btec-it/cyber-security/threat-vulnerability-risk", "/btec-calculator", "/btec-it/glossary", "/videos", "/btec-it-card", "/btec-it/private-lessons"]) {
       await page.goto(path);
       const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
       expect(overflow, `${path} overflows by ${overflow}px`).toBeLessThanOrEqual(1);
@@ -254,7 +254,7 @@ test.describe("phase 2A pages", () => {
   test("the report-writing page is a general summary and links to no private file", async ({ request }) => {
     const html = await (await request.get("/btec-it/assessment/report-writing-principles")).text();
     expect(html).toContain("ملخص مبادئ عام");
-    expect(html).not.toMatch(/\.docx|sources\/|\/private/);
+    expect(html).not.toMatch(/\.docx|sources\/|\/private(?!-lessons)/);
   });
 });
 
@@ -357,11 +357,14 @@ test.describe("technical SEO endpoints", () => {
 });
 
 test.describe("paid-content boundary", () => {
-  test("the card page does not publish card content or claim assignment answers, and hides prices by default", async ({ request }) => {
+  test("the card page states the confirmed price and report review, and does not publish card content or promise grades", async ({ request }) => {
     const html = await (await request.get("/btec-it-card")).text();
     expect(html).toContain("لا يُنشر على هذا الموقع");
-    expect(html).not.toMatch(/Offer"|"@type":"Product"/);
-    expect(html).not.toContain("85 د.أ");
+    expect(html).toContain("85 دينارًا أردنيًا");
+    expect(html).toContain("مراجعة تقارير الطلاب مشمولة مع البطاقة");
+    expect(html).toContain("لا تضمن علامة معيّنة");
+    expect(html).not.toMatch(/(مضمون|نضمن|مراجعات غير محدودة|استرداد|استرجاع المبلغ|خصم)/);
+    expect(html).not.toMatch(/\.pdf|assignment-answers|answer-pack/i);
   });
 });
 
@@ -424,6 +427,7 @@ test.describe("phase 4 SEO", () => {
       "/btec-it/assessment/pass-merit-distinction",
       "/btec-calculator",
       "/btec-it-card",
+      "/btec-it/private-lessons",
     ];
     const titles = new Set<string>();
     for (const p of paths) {
@@ -462,7 +466,7 @@ test.describe("phase 4 SEO", () => {
 });
 
 test.describe("phase 6 recommendation evidence", () => {
-  test("home answers the teacher / learn-in-Arabic / identity questions with verifiable facts and no superlatives or prices", async ({ page }) => {
+  test("home answers the teacher / learn-in-Arabic / identity questions with verifiable facts and no superlatives", async ({ page }) => {
     await page.goto("/");
     const faq = page.locator("#faq");
     await expect(faq).toContainText("هل يوجد مدرّس BTEC IT بالعربي في الأردن؟");
@@ -470,8 +474,7 @@ test.describe("phase 6 recommendation evidence", () => {
     await expect(faq).toContainText("كيف يُكتب اسمه على المنصات؟");
     const text = (await faq.innerText()).replace(/\s+/g, " ");
     expect(text).not.toMatch(/(الأفضل|الأول في|رقم 1|الوحيد|best|#1)/i);
-    expect(text).not.toMatch(/\d+\s*(دينار|JOD)/);
-    await expect(faq.locator("a[href='/about#contact']")).toBeVisible();
+    await expect(faq.locator("a[href='/btec-it/private-lessons']").first()).toBeVisible();
   });
 
   test("Person schema carries the canonical YouTube handle and channel id, and footer links the canonical handle", async ({ page }) => {
@@ -485,10 +488,83 @@ test.describe("phase 6 recommendation evidence", () => {
     await expect(page.locator("footer a[href='https://www.youtube.com/@AhmadDomiedu']").first()).toBeVisible();
   });
 
-  test("llms.txt states identity facts and refuses to imply lesson prices", async ({ request }) => {
+  test("llms.txt states identity facts and the confirmed prices", async ({ request }) => {
     const t = await (await request.get("/llms.txt")).text();
     expect(t).toContain("Ahmad Ra'ed Ahmad Domi");
     expect(t).toContain("@AhmadDomiedu");
-    expect(t).toContain("not published on this site");
+    expect(t).toContain("online: 25 JOD per hour");
+    expect(t).toContain("BTEC IT Card (Ahmad Domi educational card): 85 JOD");
+    expect(t).toContain("not to be inferred");
+  });
+});
+
+test.describe("phase 6B commercial pages", () => {
+  const ld = async (page: import("@playwright/test").Page) => {
+    const blocks = await page.locator('script[type="application/ld+json"]').allInnerTexts();
+    return blocks.map((b) => JSON.parse(b));
+  };
+  const nodes = (graphs: { "@graph"?: Record<string, unknown>[] }[]) => graphs.flatMap((g) => g["@graph"] ?? []);
+
+  test("private lessons page: 200, H1, confirmed prices, limits, links, contact", async ({ page, request }) => {
+    const r = await request.get("/btec-it/private-lessons");
+    expect(r.status()).toBe(200);
+    await page.goto("/btec-it/private-lessons");
+    await expect(page.locator("h1")).toHaveCount(1);
+    await expect(page.locator("h1")).toContainText("دروس خصوصية BTEC IT مع أحمد دومي");
+    const body = (await page.locator("main").innerText()).replace(/\s+/g, " ");
+    expect(body).toContain("وجاهيًا بسعر 35 دينارًا أردنيًا للساعة");
+    expect(body).toContain("أونلاين بسعر 25 دينارًا أردنيًا للساعة");
+    expect(body).toContain("ليست معتمدة من Pearson");
+    expect(body).not.toMatch(/(الأفضل|رقم 1|الوحيد|مضمون|نضمن|خصم|باقة|عرض خاص)/);
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", "https://ahmaddomiedu.com/btec-it/private-lessons");
+    await expect(page.locator("#contact a[href^='mailto:']")).toBeVisible();
+    await expect(page.locator("a[href='/btec-it-card']").first()).toBeVisible();
+    await expect(page.locator("nav[aria-label='مسار التنقل'] , nav[aria-label*='التنقل']").first()).toBeVisible();
+  });
+
+  test("private lessons Service schema matches the visible prices and invents nothing", async ({ page }) => {
+    await page.goto("/btec-it/private-lessons");
+    const all = nodes(await ld(page));
+    const service = all.find((n) => n["@type"] === "Service") as { offers: { priceSpecification: { price: string; priceCurrency: string; unitCode: string } }[]; provider: unknown } | undefined;
+    expect(service).toBeTruthy();
+    const prices = service!.offers.map((o) => `${o.priceSpecification.price}${o.priceSpecification.priceCurrency}${o.priceSpecification.unitCode}`).sort();
+    expect(prices).toEqual(["25.00JODHUR", "35.00JODHUR"]);
+    const json = JSON.stringify(all);
+    expect(json).not.toMatch(/aggregateRating|"review"|availability|areaServed|award|hasCredential|Pearson/);
+  });
+
+  test("card Product schema carries 85 JOD, links the provider, and has no rating/review/availability", async ({ page }) => {
+    await page.goto("/btec-it-card");
+    const all = nodes(await ld(page));
+    const product = all.find((n) => n["@type"] === "Product") as { offers: { price: string; priceCurrency: string } } | undefined;
+    expect(product).toBeTruthy();
+    expect(product!.offers.price).toBe("85.00");
+    expect(product!.offers.priceCurrency).toBe("JOD");
+    expect(JSON.stringify(all)).not.toMatch(/aggregateRating|"review"|availability|award|hasCredential/);
+  });
+
+  test("sitemap lists the lessons page, the card page and nothing paid", async ({ request }) => {
+    const xml = await (await request.get("/sitemap.xml")).text();
+    expect(xml).toContain("https://ahmaddomiedu.com/btec-it/private-lessons");
+    expect(xml).toContain("https://ahmaddomiedu.com/btec-it-card");
+  });
+
+  test("home, hub, header and footer link to the lessons and card pages", async ({ page }) => {
+    for (const path of ["/", "/btec-it"]) {
+      await page.goto(path);
+      await expect(page.locator("main a[href='/btec-it/private-lessons']").first()).toBeVisible();
+      await expect(page.locator("main a[href='/btec-it-card']").first()).toBeVisible();
+    }
+    await expect(page.locator("footer a[href='/btec-it/private-lessons']")).toBeVisible();
+    await page.setViewportSize({ width: 1280, height: 800 });
+    await expect(page.locator("header nav a[href='/btec-it/private-lessons']").first()).toBeVisible();
+  });
+
+  test("prices appear nowhere with a different value", async ({ request }) => {
+    for (const path of ["/", "/btec-it", "/btec-it-card", "/btec-it/private-lessons", "/llms.txt"]) {
+      const t = await (await request.get(path)).text();
+      const nums = [...t.matchAll(/(\d{2,3})\s*(?:دينار|JOD|د\.أ)/g)].map((m) => m[1]);
+      for (const n of nums) expect(["25", "35", "85"], `${path} mentions ${n} JOD`).toContain(n);
+    }
   });
 });

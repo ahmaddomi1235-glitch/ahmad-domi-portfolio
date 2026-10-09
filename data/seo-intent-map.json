@@ -9431,9 +9431,9 @@
    "kind": "static",
    "primaryQuery": "بطاقة BTEC IT",
    "secondaryQueries": [
-    "بطاقة BTEC IT أحمد دومي",
-    "شروحات BTEC IT مصورة",
-    "مدرس BTEC IT"
+    "بطاقة أحمد دومي التعليمية",
+    "بطاقة BTEC IT سعر",
+    "مراجعة تقارير BTEC"
    ],
    "arabicVariants": [
     "بطاقة BTEC IT"
@@ -9449,11 +9449,43 @@
     "resolution": "none needed",
     "notes": []
    },
-   "title": "بطاقة BTEC IT: شروحات مصوّرة بالعربي من أحمد دومي",
-   "metaDescription": "بطاقات تعليمية من أحمد دومي لوحدات BTEC IT: شروحات مصوّرة ومواد دعم وإرشاد للواجبات. شاهد أول فيديو مجانًا قبل الحجز.",
-   "h1": "بطاقة BTEC IT",
+   "title": "بطاقة BTEC IT التعليمية: 85 دينارًا مع مراجعة التقارير | أحمد دومي",
+   "metaDescription": "بطاقة أحمد دومي التعليمية لـ BTEC IT بسعر 85 دينارًا أردنيًا: شروحات مصوّرة بالعربي ومواد دعم، ومراجعة تقارير الطلاب مشمولة مع البطاقة. أول فيديو مجاني.",
+   "h1": "بطاقة أحمد دومي التعليمية — BTEC IT",
    "recommendedAnchors": [
     "بطاقة BTEC IT"
+   ],
+   "priority": "HIGH"
+  },
+  "/btec-it/private-lessons": {
+   "kind": "static",
+   "primaryQuery": "دروس خصوصية BTEC IT",
+   "secondaryQueries": [
+    "مدرس BTEC IT الأردن",
+    "خصوصي BTEC IT",
+    "دروس BTEC IT أونلاين",
+    "BTEC IT private tutor Jordan",
+    "BTEC IT online lessons"
+   ],
+   "arabicVariants": [
+    "دروس خصوصية BTEC IT"
+   ],
+   "englishVariants": [],
+   "mixedVariants": [],
+   "intent": "COMMERCIAL",
+   "funnel": "BOFU",
+   "parentTopic": "BTEC IT",
+   "cannibalization": {
+    "risk": "LOW",
+    "sharesIntentWith": [],
+    "resolution": "none needed",
+    "notes": []
+   },
+   "title": "دروس خصوصية BTEC IT: أونلاين 25 د.أ ووجاهي 35 د.أ | أحمد دومي",
+   "metaDescription": "دروس خصوصية في BTEC IT مع أحمد دومي، مدرّس BTEC IT في الأردن: أونلاين بـ 25 دينارًا للساعة ووجاهي بـ 35 دينارًا للساعة، بالعربي مع المصطلحات الإنجليزية.",
+   "h1": "دروس خصوصية BTEC IT مع أحمد دومي — أونلاين ووجاهي",
+   "recommendedAnchors": [
+    "دروس خصوصية BTEC IT"
    ],
    "priority": "HIGH"
   },

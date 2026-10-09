@@ -39,6 +39,7 @@ export function SiteFooter() {
             <li><Link href="/videos" className="text-ivory/80 hover:text-gold">الفيديوهات</Link></li>
             <li><Link href="/resources" className="text-ivory/80 hover:text-gold">الملفات التعليمية</Link></li>
             <li><Link href="/btec-calculator" className="text-ivory/80 hover:text-gold">حاسبة المعدل</Link></li>
+            <li><Link href="/btec-it/private-lessons" className="text-ivory/80 hover:text-gold">دروس خصوصية BTEC IT</Link></li>
             <li><Link href="/btec-it-card" className="text-ivory/80 hover:text-gold">بطاقة BTEC IT</Link></li>
             <li><Link href="/about" className="text-ivory/80 hover:text-gold">عن أحمد دومي</Link></li>
           </ul>

@@ -2,7 +2,8 @@
  * JSON-LD builders. Rules we hold ourselves to:
  *  - only schema.org types that the page genuinely is (no decorative types);
  *  - every Ahmad-authored page references the same Person @id;
- *  - never emit reviews, ratings, awards, credentials, FAQPage, or Product/Offer without confirmed commercial data.
+ *  - never emit reviews, ratings, awards, credentials, FAQPage, or Product/Offer/Service without owner-confirmed commercial data
+ *    (prices come from src/config/services.ts); never emit availability, stock status or Pearson affiliation.
  */
 import {
   SITE_URL,
@@ -295,6 +296,7 @@ export function cardGraph(c: CardSchemaInput) {
         name: c.name,
         description: c.description,
         brand: { "@type": "Brand", name: brand.siteName },
+        category: "Educational course material (BTEC IT)",
         offers: {
           "@type": "Offer",
           price: c.commercial.priceJOD.toFixed(2),
@@ -305,6 +307,59 @@ export function cardGraph(c: CardSchemaInput) {
       }
     : null;
   return graph(base, product, breadcrumbNode(c.crumbs), personNode());
+}
+
+export type ServiceSchemaInput = {
+  path: string;
+  name: string;
+  description: string;
+  serviceType: string;
+  crumbs: Crumb[];
+  /** Each offer is a confirmed per-hour price. No availability, area or schedule is emitted. */
+  offers: { name: string; pricePerHourJOD: number }[];
+};
+
+export function serviceGraph(s: ServiceSchemaInput) {
+  const url = absoluteUrl(s.path);
+  return graph(
+    {
+      "@type": "WebPage",
+      "@id": `${url}#page`,
+      url,
+      name: s.name,
+      description: s.description,
+      inLanguage: "ar",
+      isPartOf: { "@id": WEBSITE_ID },
+      author: { "@id": PERSON_ID },
+      about: { "@id": `${url}#service` },
+    },
+    {
+      "@type": "Service",
+      "@id": `${url}#service`,
+      name: s.name,
+      description: s.description,
+      serviceType: s.serviceType,
+      url,
+      inLanguage: "ar",
+      provider: { "@id": PERSON_ID },
+      offers: s.offers.map((o) => ({
+        "@type": "Offer",
+        name: o.name,
+        url,
+        priceCurrency: "JOD",
+        priceSpecification: {
+          "@type": "UnitPriceSpecification",
+          price: o.pricePerHourJOD.toFixed(2),
+          priceCurrency: "JOD",
+          unitCode: "HUR",
+          unitText: "hour",
+        },
+        seller: { "@id": PERSON_ID },
+      })),
+    },
+    breadcrumbNode(s.crumbs),
+    personNode(),
+  );
 }
 
 export { accounts };

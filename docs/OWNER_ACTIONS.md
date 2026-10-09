@@ -24,7 +24,7 @@ The knowledge pages were **drafted by Claude from your own booklets, unit books 
 | --- | --- | --- | --- |
 | 1 | The 19 concept pages and 6 unit hubs | Published under your name from your material; you should confirm wording and examples | `content/concepts/**`, `content/units/**` |
 | 2 | **Calculator rule source** | The repo's calculator uses P=60 / M=80 / D=100, credit hours, and shared-subject weights (/10, /10, /6, /4) but does not say which official document sets them. The site says so openly ("مصدر القواعد قيد التأكيد"). Give the source (Ministry circular, Pearson table…) and it becomes a documented methodology. | `content/tools/btec-calculator.json`, `/btec-calculator` |
-| 3 | **Card prices** | Prices exist in the card platform's code (85 / 85 / 45 JOD) but are **hidden** (`showPrice:false`) because your sales so far were discounted and the list price may not be what you want published. Setting `showPrice:true` also turns on Product/Offer schema. | `content/products/btec-it-card.json` |
+| 3 | **Card prices** | Decision (2026-10-09): prices are NOT published on the site. They are not stored in the repository either. Check the separate card platform, which may still show prices. | `docs/SERVICE_FACTS_DRAFT.md` |
 | 4 | **Report review** | Unknown whether the card includes report review; the page says "ask support" and does not promise it. Set `reportReview` to `included` / `not-included`. | same file |
 | 5 | What the card contains | The page states only what is verifiable (videos, support material, assignment guidance, WhatsApp support, free first video). It deliberately does **not** say what the card excludes, because your brief lists answer packs as part of the paid tier. | same file |
 | 6 | Learning-aim hint | Your AI unit book says its data topics belong to "هدف التعلم ب". Kept internally (`learningAimHint`, `needsVerification:true`); **not** published. Publishing needs the Pearson spec. | `content/concepts/artificial-intelligence/*` |
@@ -55,7 +55,7 @@ The knowledge pages were **drafted by Claude from your own booklets, unit books 
 
 Evidence: `docs/AI_VISIBILITY_BENCHMARK.md`, `docs/AI_RECOMMENDATION_EVIDENCE_MATRIX.md`, `docs/AI_RECOMMENDATION_DISTRIBUTION_MAP.md`.
 
-1. **Service facts** — confirmed and published on 2026-10-09 (card 85 JOD, in-person lessons 35 JOD/h, online 25 JOD/h, report review included with the card). Remaining gaps (lesson location/schedule, card duration, payment/refund terms, whether 85 JOD applies to every unit card) are listed in `docs/SERVICE_FACTS_DRAFT.md`.
+1. **Service facts** — the services and the report-review benefit are published; prices are deliberately not (owner decision). Remaining unconfirmed items (lesson location/schedule, card duration, payment/refund terms) are listed in `docs/SERVICE_FACTS_DRAFT.md`.
 2. **Asas teacher-profile URL** — one line in `thirdPartyProfiles` (`src/config/site.ts`). Asas is the one third-party platform engines already tie to your name (Perplexity P085).
 3. **One display name** — Instagram shows "Ahmad Ra'ed Domi || معلم BTEC IT", YouTube/site show "Ahmad Domi | أحمد دومي". The homepage now documents both, but one form everywhere is cleaner; if you change Instagram, tell Claude so the homepage sentence is updated.
 4. **YouTube diff** — see section 6 of the distribution map; needs your explicit go-ahead.

@@ -4,7 +4,7 @@ import { ArrowLeft } from "lucide-react";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { CardLink, Chip, Section } from "@/components/kb/Layout";
 import { accounts, brand } from "@/config/site";
-import { lessonsPath, services } from "@/config/services";
+import { lessonsPath } from "@/config/services";
 import { homeGraph } from "@/lib/seo/jsonld";
 import { seoMeta } from "@/lib/seo/intent";
 import { getConcepts, getConceptsOfUnit, getQuestionIndex, getResources, getUnits, getVideos } from "@/lib/kb/queries";
@@ -143,7 +143,7 @@ export default function EntityHome() {
           <div className="rounded-2xl border border-line bg-white p-5">
             <dt className="font-semibold">هل يقدّم أحمد دروسًا خصوصية، وكم سعرها؟</dt>
             <dd className="mt-2 leading-8 text-ink/85">
-              نعم. يقدّم أحمد دومي دروسًا خصوصية في BTEC IT: <strong>أونلاين بسعر {services.privateLessons.onlinePerHourJOD} دينارًا أردنيًا للساعة، ووجاهيًا بسعر {services.privateLessons.inPersonPerHourJOD} دينارًا أردنيًا للساعة</strong>.{" "}
+              نعم. يقدّم أحمد دومي دروسًا خصوصية في BTEC IT <strong>أونلاين ووجاهيًا</strong>، بالعربي مع المصطلحات الإنجليزية. للاستفسار عن الأسعار وتفاصيل الحجز تواصل معه مباشرة.{" "}
               <Link href={lessonsPath} className="font-medium text-navy underline decoration-gold underline-offset-4">تفاصيل الدروس والتواصل</Link>.
             </dd>
           </div>
@@ -159,9 +159,9 @@ export default function EntityHome() {
           <div className="rounded-2xl border border-line bg-white p-5 md:col-span-2">
             <dt className="font-semibold">ما هي بطاقة BTEC IT؟</dt>
             <dd className="mt-2 leading-8 text-ink/85">
-              بطاقة أحمد دومي التعليمية لـ BTEC IT مادة مدفوعة سعرها <strong>{services.card.priceJOD} دينارًا أردنيًا</strong>، فيها شروحات مصوّرة بالعربي ومواد دعم، و<strong>مراجعة تقارير الطلاب مشمولة معها</strong>. ويمكنك مشاهدة أول فيديو منها مجانًا قبل الحجز.{" "}
+              بطاقة أحمد دومي التعليمية لـ BTEC IT مادة مدفوعة فيها شروحات مصوّرة بالعربي ومواد دعم، و<strong>مراجعة تقارير الطلاب مشمولة معها</strong>. ويمكنك مشاهدة أول فيديو منها مجانًا قبل الطلب.{" "}
               <Link href="/btec-it-card" className="font-medium text-navy underline decoration-gold underline-offset-4" data-track="card_click" data-track-id="home-faq">
-                ما تغطيه البطاقة وكيف تحجزها
+                ما تغطيه البطاقة وكيف تطلبها
               </Link>
               .
             </dd>
@@ -211,14 +211,14 @@ export default function EntityHome() {
           <CardLink href="/btec-calculator" title="حاسبة معدل BTEC" titleEn="BTEC Grade Calculator — Jordan Tawjihi" meta="أداة مجانية">
             تحسب معدل التخصص والمعدل الكامل من نتائج U/P/M/D والساعات المعتمدة.
           </CardLink>
-          <CardLink href="/btec-it-card" title="بطاقة أحمد دومي التعليمية" titleEn="BTEC IT Card" meta={`${services.card.priceJOD} د.أ — مراجعة التقارير مشمولة`}>
+          <CardLink href="/btec-it-card" title="بطاقة أحمد دومي التعليمية" titleEn="BTEC IT Card" meta="مراجعة التقارير مشمولة — أول فيديو مجاني">
             شروحات مصوّرة ومواد دعم لوحدات الأمن السيبراني والذكاء الاصطناعي ونمذجة البيانات، مع أول فيديو مجاني.
           </CardLink>
           <CardLink
             href={lessonsPath}
             title="دروس خصوصية BTEC IT"
             titleEn="BTEC IT private lessons"
-            meta={`أونلاين ${services.privateLessons.onlinePerHourJOD} د.أ — وجاهي ${services.privateLessons.inPersonPerHourJOD} د.أ للساعة`}
+            meta="أونلاين ووجاهي"
           >
             دروس مع أحمد دومي بالعربي مع المصطلحات الإنجليزية، أونلاين أو وجاهيًا.
           </CardLink>

@@ -29,9 +29,9 @@ Titles: intent first, then topic, then BTEC context, then the author. Budget ≤
 | `/` | أحمد دومي مدرس BTEC IT | NAVIGATIONAL | BOFU | HIGH | LOW | أحمد دومي \| Ahmad Domi — مدرّس BTEC IT في الأردن |
 | `/about` | من هو أحمد دومي | NAVIGATIONAL | BOFU | MEDIUM | LOW | عن أحمد دومي: مدرّس BTEC IT ومهندس أمن سيبراني من إربد \| أحمد دومي |
 | `/btec-calculator` | حاسبة معدل BTEC | TOOL | BOFU | HIGH | MEDIUM | حاسبة معدل BTEC للتوجيهي الأردني \| أحمد دومي |
-| `/btec-it-card` | بطاقة BTEC IT | COMMERCIAL | BOFU | HIGH | LOW | بطاقة BTEC IT التعليمية: 85 دينارًا مع مراجعة التقارير \| أحمد دومي |
+| `/btec-it-card` | بطاقة BTEC IT | COMMERCIAL | BOFU | HIGH | LOW | بطاقة أحمد دومي التعليمية BTEC IT مع مراجعة التقارير \| أحمد دومي |
 | `/btec-it/glossary` | مصطلحات BTEC IT | INFORMATIONAL | TOFU | MEDIUM | LOW | مصطلحات BTEC IT: قاموس عربي ↔ English \| أحمد دومي |
-| `/btec-it/private-lessons` | دروس خصوصية BTEC IT | COMMERCIAL | BOFU | HIGH | LOW | دروس خصوصية BTEC IT: أونلاين 25 د.أ ووجاهي 35 د.أ \| أحمد دومي |
+| `/btec-it/private-lessons` | دروس خصوصية BTEC IT | COMMERCIAL | BOFU | HIGH | LOW | دروس خصوصية BTEC IT أونلاين ووجاهي مع أحمد دومي \| أحمد دومي |
 | `/btec-it/questions` | أسئلة BTEC IT | INFORMATIONAL | TOFU | MEDIUM | LOW | أسئلة وأجوبة BTEC IT بالعربي: أسئلة الطلبة الشائعة \| أحمد دومي |
 | `/resources` | ملفات BTEC IT | INFORMATIONAL | MOFU | MEDIUM | LOW | ملفات وكتب شرح BTEC IT للتحميل PDF \| أحمد دومي |
 | `/videos` | فيديوهات شرح BTEC IT | NAVIGATIONAL | MOFU | MEDIUM | LOW | فيديوهات شرح BTEC IT بالعربي على YouTube \| أحمد دومي |

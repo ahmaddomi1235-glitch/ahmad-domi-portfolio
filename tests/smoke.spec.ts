@@ -357,13 +357,14 @@ test.describe("technical SEO endpoints", () => {
 });
 
 test.describe("paid-content boundary", () => {
-  test("the card page states the confirmed price and report review, and does not publish card content or promise grades", async ({ request }) => {
+  test("the card page keeps the report-review benefit and CTAs, publishes no price, no card content and no promises", async ({ request }) => {
     const html = await (await request.get("/btec-it-card")).text();
     expect(html).toContain("لا يُنشر على هذا الموقع");
-    expect(html).toContain("85 دينارًا أردنيًا");
     expect(html).toContain("مراجعة تقارير الطلاب مشمولة مع البطاقة");
+    expect(html).toContain("اطلب بطاقة أحمد دومي التعليمية");
+    expect(html).toContain("استفسر عن البطاقة ومحتوياتها");
     expect(html).toContain("لا تضمن علامة معيّنة");
-    expect(html).not.toMatch(/(مضمون|نضمن|مراجعات غير محدودة|استرداد|استرجاع المبلغ|خصم)/);
+    expect(html).not.toMatch(/(مضمون|نضمن|مراجعات غير محدودة|استرجاع المبلغ|خصم)/);
     expect(html).not.toMatch(/\.pdf|assignment-answers|answer-pack/i);
   });
 });
@@ -488,68 +489,93 @@ test.describe("phase 6 recommendation evidence", () => {
     await expect(page.locator("footer a[href='https://www.youtube.com/@AhmadDomiedu']").first()).toBeVisible();
   });
 
-  test("llms.txt states identity facts and the confirmed prices", async ({ request }) => {
+  test("llms.txt states identity facts and the services without prices", async ({ request }) => {
     const t = await (await request.get("/llms.txt")).text();
     expect(t).toContain("Ahmad Ra'ed Ahmad Domi");
     expect(t).toContain("@AhmadDomiedu");
-    expect(t).toContain("online: 25 JOD per hour");
-    expect(t).toContain("BTEC IT Card (Ahmad Domi educational card): 85 JOD");
+    expect(t).toContain("Prices are not published on this site");
     expect(t).toContain("not to be inferred");
   });
 });
 
-test.describe("phase 6B commercial pages", () => {
+test.describe("phase 6B commercial pages (no public prices)", () => {
   const ld = async (page: import("@playwright/test").Page) => {
     const blocks = await page.locator('script[type="application/ld+json"]').allInnerTexts();
     return blocks.map((b) => JSON.parse(b));
   };
   const nodes = (graphs: { "@graph"?: Record<string, unknown>[] }[]) => graphs.flatMap((g) => g["@graph"] ?? []);
+  /** A currency amount: digits followed by JOD / دينار / د.أ (or the reverse for JOD). Educational examples elsewhere are not covered. */
+  const AMOUNT = /(\d[\d.,]*\s*(JOD|دينار|د\.أ))|(JOD\s*\d)/i;
+  const PRICE_SCHEMA = /"(price|priceCurrency|lowPrice|highPrice|priceSpecification|offers|Offer|UnitPriceSpecification|AggregateOffer)"/;
 
-  test("private lessons page: 200, H1, confirmed prices, limits, links, contact", async ({ page, request }) => {
-    const r = await request.get("/btec-it/private-lessons");
-    expect(r.status()).toBe(200);
+  test("private lessons page: 200, H1, services and CTAs, no price, limits, links", async ({ page, request }) => {
+    expect((await request.get("/btec-it/private-lessons")).status()).toBe(200);
     await page.goto("/btec-it/private-lessons");
     await expect(page.locator("h1")).toHaveCount(1);
     await expect(page.locator("h1")).toContainText("دروس خصوصية BTEC IT مع أحمد دومي");
     const body = (await page.locator("main").innerText()).replace(/\s+/g, " ");
-    expect(body).toContain("وجاهيًا بسعر 35 دينارًا أردنيًا للساعة");
-    expect(body).toContain("أونلاين بسعر 25 دينارًا أردنيًا للساعة");
+    expect(body).toContain("أونلاين");
+    expect(body).toContain("وجاهي");
+    expect(body).toContain("احجز درس BTEC IT خصوصي");
+    expect(body).toContain("للاستفسار عن الأسعار وتفاصيل الاشتراك أو حجز الدروس، تواصل مع أحمد دومي.");
     expect(body).toContain("ليست معتمدة من Pearson");
+    expect(body).not.toMatch(AMOUNT);
     expect(body).not.toMatch(/(الأفضل|رقم 1|الوحيد|مضمون|نضمن|خصم|باقة|عرض خاص)/);
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href", "https://ahmaddomiedu.com/btec-it/private-lessons");
     await expect(page.locator("#contact a[href^='mailto:']")).toBeVisible();
     await expect(page.locator("a[href='/btec-it-card']").first()).toBeVisible();
-    await expect(page.locator("nav[aria-label='مسار التنقل'] , nav[aria-label*='التنقل']").first()).toBeVisible();
   });
 
-  test("private lessons Service schema matches the visible prices and invents nothing", async ({ page }) => {
-    await page.goto("/btec-it/private-lessons");
-    const all = nodes(await ld(page));
-    const service = all.find((n) => n["@type"] === "Service") as { offers: { priceSpecification: { price: string; priceCurrency: string; unitCode: string } }[]; provider: unknown } | undefined;
-    expect(service).toBeTruthy();
-    const prices = service!.offers.map((o) => `${o.priceSpecification.price}${o.priceSpecification.priceCurrency}${o.priceSpecification.unitCode}`).sort();
-    expect(prices).toEqual(["25.00JODHUR", "35.00JODHUR"]);
-    const json = JSON.stringify(all);
-    expect(json).not.toMatch(/aggregateRating|"review"|availability|areaServed|award|hasCredential|Pearson/);
-  });
-
-  test("card Product schema carries 85 JOD, links the provider, and has no rating/review/availability", async ({ page }) => {
+  test("card page keeps its CTAs and report-review benefit with no price anywhere in the visible text", async ({ page }) => {
     await page.goto("/btec-it-card");
-    const all = nodes(await ld(page));
-    const product = all.find((n) => n["@type"] === "Product") as { offers: { price: string; priceCurrency: string } } | undefined;
-    expect(product).toBeTruthy();
-    expect(product!.offers.price).toBe("85.00");
-    expect(product!.offers.priceCurrency).toBe("JOD");
-    expect(JSON.stringify(all)).not.toMatch(/aggregateRating|"review"|availability|award|hasCredential/);
+    const body = (await page.locator("main").innerText()).replace(/\s+/g, " ");
+    expect(body).not.toMatch(AMOUNT);
+    expect(body).toContain("مراجعة تقارير الطلاب مشمولة مع البطاقة");
+    expect(body).toContain("تواصل لمعرفة الأسعار والتفاصيل");
+    await expect(page.locator("#contact a[href='https://ahmaddomi-edu.vercel.app']")).toContainText("اطلب بطاقة أحمد دومي التعليمية");
   });
 
-  test("sitemap lists the lessons page, the card page and nothing paid", async ({ request }) => {
+  test("structured data on the commercial pages has no price, Offer or availability, and stays honest", async ({ page }) => {
+    for (const path of ["/btec-it-card", "/btec-it/private-lessons"]) {
+      await page.goto(path);
+      const all = nodes(await ld(page));
+      const json = JSON.stringify(all);
+      expect(json, `${path} JSON-LD`).not.toMatch(PRICE_SCHEMA);
+      expect(json, `${path} JSON-LD`).not.toMatch(/aggregateRating|"review"|availability|areaServed|award|hasCredential|Pearson|JOD/);
+    }
+    await page.goto("/btec-it-card");
+    expect(nodes(await ld(page)).some((n) => n["@type"] === "Product")).toBe(true);
+    await page.goto("/btec-it/private-lessons");
+    expect(nodes(await ld(page)).some((n) => n["@type"] === "Service")).toBe(true);
+  });
+
+  test("no page in the sitemap, the search index or llms.txt exposes a service price or price schema", async ({ request }) => {
     const xml = await (await request.get("/sitemap.xml")).text();
-    expect(xml).toContain("https://ahmaddomiedu.com/btec-it/private-lessons");
-    expect(xml).toContain("https://ahmaddomiedu.com/btec-it-card");
+    const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
+    expect(locs).toContain("/btec-it/private-lessons");
+    expect(locs).toContain("/btec-it-card");
+    const PRICES = /\b(25|35|85)\s*(JOD|دينار|د\.أ)/i;
+    const text = (t: string) => t.replace(/<[^>]+>/g, " ");
+    for (const path of locs) {
+      const html = await (await request.get(path)).text();
+      expect(html, `${path} schema`).not.toMatch(PRICE_SCHEMA);
+      // Concept pages (/btec-it/<unit>/<concept>) hold worked examples with made-up amounts; they are not service prices.
+      const isConcept = /^\/btec-it\/[^/]+\/[^/]+$/.test(path) && path !== "/btec-it/private-lessons";
+      if (!isConcept) expect(text(html), `${path} text`).not.toMatch(PRICES);
+    }
+    const llms = await (await request.get("/llms.txt")).text();
+    expect(llms).not.toMatch(AMOUNT);
+    expect(llms).toContain("Student report review is included with the card");
+    const idx = (await (await request.get("/search-index.json")).json()) as unknown[];
+    const commercial = idx.filter((e) => /btec-it-card|private-lessons/.test(JSON.stringify(e)));
+    expect(commercial.length).toBeGreaterThan(0);
+    expect(JSON.stringify(commercial)).not.toMatch(AMOUNT);
+    for (const path of ["/", "/btec-it", "/btec-it-card", "/btec-it/private-lessons"]) {
+      expect(text(await (await request.get(path)).text()), path).not.toMatch(AMOUNT);
+    }
   });
 
-  test("home, hub, header and footer link to the lessons and card pages", async ({ page }) => {
+  test("home, hub, header and footer still link to the lessons and card pages", async ({ page }) => {
     for (const path of ["/", "/btec-it"]) {
       await page.goto(path);
       await expect(page.locator("main a[href='/btec-it/private-lessons']").first()).toBeVisible();
@@ -558,13 +584,5 @@ test.describe("phase 6B commercial pages", () => {
     await expect(page.locator("footer a[href='/btec-it/private-lessons']")).toBeVisible();
     await page.setViewportSize({ width: 1280, height: 800 });
     await expect(page.locator("header nav a[href='/btec-it/private-lessons']").first()).toBeVisible();
-  });
-
-  test("prices appear nowhere with a different value", async ({ request }) => {
-    for (const path of ["/", "/btec-it", "/btec-it-card", "/btec-it/private-lessons", "/llms.txt"]) {
-      const t = await (await request.get(path)).text();
-      const nums = [...t.matchAll(/(\d{2,3})\s*(?:دينار|JOD|د\.أ)/g)].map((m) => m[1]);
-      for (const n of nums) expect(["25", "35", "85"], `${path} mentions ${n} JOD`).toContain(n);
-    }
   });
 });

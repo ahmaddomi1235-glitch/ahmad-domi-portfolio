@@ -215,7 +215,7 @@ export function validateNodes(nodes: KbNode[]): Issue[] {
 
     if (n.type === "Product") {
       const p = n as ProductNode;
-      if (p.showPrice && (p.priceJOD == null || p.priceJOD <= 0) && p.includes.some((i) => i.priceJOD == null)) err(p, "showPrice is true but a price is missing");
+      if (/\d\s*(JOD|دينار|د\.أ)|priceJOD|showPrice/.test(JSON.stringify(p))) err(p, "products must not carry prices (owner decision: prices are not published)");
       for (const h of p.howToGet ?? []) if (!h.url.startsWith("https://")) err(p, `howToGet URL must be https: ${h.url}`);
     }
   }

@@ -4,7 +4,7 @@
   "title_ar": "بطاقة أحمد دومي التعليمية — BTEC IT",
   "title_en": "Ahmad Domi BTEC IT Card",
   "slug": "btec-it-card",
-  "summary": "بطاقة أحمد دومي التعليمية لـ BTEC IT بسعر 85 دينارًا أردنيًا: شروحات مصوّرة بالعربي ومواد دعم وإرشاد للواجبات، ومراجعة تقارير الطلاب مشمولة مع البطاقة.",
+  "summary": "بطاقة أحمد دومي التعليمية لـ BTEC IT: شروحات مصوّرة بالعربي ومواد دعم وإرشاد للواجبات، ومراجعة تقارير الطلاب مشمولة مع البطاقة.",
   "unit": null,
   "learningAim": null,
   "criterion": null,
@@ -30,8 +30,8 @@
   "officialSource": null,
   "status": "published",
   "needsVerification": false,
-  "reviewState": "price (85 JOD) and report-review inclusion confirmed by the owner on 2026-10-09; delivery, duration, number of reviews, payment methods and refund terms are NOT confirmed and are not stated",
-  "description": "بطاقة أحمد دومي التعليمية مادة تعليمية مدفوعة تشرح وحدات BTEC IT بالعربي بأسلوب أحمد دومي، وسعرها 85 دينارًا أردنيًا، ومراجعة تقارير الطلاب مشمولة معها. هذه الصفحة تصف ما تغطيه ولمن تناسب وكيف تحجزها، ولا تتضمن محتوى البطاقة نفسه.",
+  "reviewState": "report-review inclusion confirmed by the owner on 2026-10-09; the owner decided NOT to publish prices; delivery, duration, number of reviews, payment methods and refund terms are not confirmed and are not stated",
+  "description": "بطاقة أحمد دومي التعليمية مادة تعليمية مدفوعة تشرح وحدات BTEC IT بالعربي بأسلوب أحمد دومي، ومراجعة تقارير الطلاب مشمولة معها. هذه الصفحة تصف ما تغطيه ولمن تناسب وكيف تطلبها، ولا تتضمن محتوى البطاقة نفسه.",
   "audience": [
     "طلبة BTEC IT في الأردن الذين يريدون شرحًا منظّمًا بالعربي للوحدة",
     "من شاهدوا الفيديو التجريبي وأعجبهم أسلوب الشرح"
@@ -39,18 +39,15 @@
   "includes": [
     {
       "unit": "cyber-security",
-      "title_ar": "بطاقة الأمن السيبراني",
-      "priceJOD": null
+      "title_ar": "بطاقة الأمن السيبراني"
     },
     {
       "unit": "artificial-intelligence",
-      "title_ar": "بطاقة الذكاء الاصطناعي",
-      "priceJOD": null
+      "title_ar": "بطاقة الذكاء الاصطناعي"
     },
     {
       "unit": "data-modelling",
-      "title_ar": "بطاقة نمذجة البيانات (تُحجز مع بطاقة استخدام تكنولوجيا المعلومات)",
-      "priceJOD": null
+      "title_ar": "بطاقة نمذجة البيانات (تُحجز مع بطاقة استخدام تكنولوجيا المعلومات)"
     }
   ],
   "support": [
@@ -65,11 +62,8 @@
       "url": "https://ahmaddomi-edu.vercel.app"
     }
   ],
-  "showPrice": true,
-  "currency": "JOD",
   "reportReview": "included",
   "excluded": [
     "محتوى البطاقة نفسه لا يُنشر على هذا الموقع؛ الصفحات العامة هنا شرح تعليمي مستقل عنه"
-  ],
-  "priceJOD": 85
+  ]
 }

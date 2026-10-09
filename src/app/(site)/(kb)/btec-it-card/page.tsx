@@ -6,7 +6,7 @@ import { PageHeader, Section } from "@/components/kb/Layout";
 import { cardGraph } from "@/lib/seo/jsonld";
 import { seoMeta } from "@/lib/seo/intent";
 import { getProduct, getUnit, getUnitById } from "@/lib/kb/queries";
-import { cardName, lessonsPath, services } from "@/config/services";
+import { cardName, lessonsPath } from "@/config/services";
 
 export const metadata = seoMeta("/btec-it-card");
 
@@ -17,20 +17,18 @@ const crumbs = [
 
 export default function CardPage() {
   const p = getProduct("btec-it-card")!;
-  const purchaseUrl = p.howToGet[0]?.url;
-  const commercial = p.showPrice && p.priceJOD != null && purchaseUrl ? { priceJOD: p.priceJOD, purchaseUrl } : undefined;
 
   return (
     <>
-      <JsonLd data={cardGraph({ name: cardName, description: p.summary, crumbs, commercial })} />
+      <JsonLd data={cardGraph({ name: cardName, description: p.summary, crumbs })} />
       <PageHeader
         crumbs={crumbs}
         title="بطاقة أحمد دومي التعليمية — BTEC IT"
         titleEn="Ahmad Domi BTEC IT Card"
         lead={
           <p>
-            بطاقة تعليمية مدفوعة لطلبة BTEC IT: شروحات مصوّرة بالعربي مع المصطلحات الإنجليزية ومواد دعم، وسعرها <strong>{services.card.priceJOD} دينارًا أردنيًا</strong>،
-            و<strong>مراجعة تقارير الطلاب مشمولة مع البطاقة</strong>.
+            بطاقة تعليمية مدفوعة لطلبة BTEC IT من أحمد دومي: شروحات مصوّرة بالعربي مع المصطلحات الإنجليزية ومواد دعم وإرشاد للواجبات، و
+            <strong>مراجعة تقارير الطلاب مشمولة مع البطاقة</strong>. يمكنك مشاهدة أول فيديو مجانًا قبل أن تقرر.
           </p>
         }
       />
@@ -42,9 +40,11 @@ export default function CardPage() {
             <dd className="mt-1 font-semibold">بطاقة أحمد دومي التعليمية — BTEC IT</dd>
           </div>
           <div className="bg-white p-5">
-            <dt className="text-sm text-muted">السعر</dt>
+            <dt className="text-sm text-muted">الأسعار وتفاصيل الاشتراك</dt>
             <dd className="mt-1 font-semibold">
-              {services.card.priceJOD} دينارًا أردنيًا (<bdi dir="ltr">{services.card.priceJOD} JOD</bdi>)
+              <a href="#contact" className="text-navy underline decoration-gold underline-offset-4">
+                تواصل لمعرفة الأسعار والتفاصيل
+              </a>
             </dd>
           </div>
           <div className="bg-white p-5">
@@ -140,13 +140,13 @@ export default function CardPage() {
       <Section title="كيف تحصل عليها؟" id="how" className="pt-0">
         <ol className="list-decimal space-y-2 ps-6 leading-8">
           <li>شاهد أول فيديو مجانًا من البطاقة التي تهمّك لتتأكد أن أسلوب الشرح مناسب لك.</li>
-          <li>إن ناسبك الأسلوب فاحجز البطاقة عبر فريق الدعم على واتساب من منصة البطاقات.</li>
+          <li>إن ناسبك الأسلوب فاطلب البطاقة عبر فريق الدعم على واتساب من منصة البطاقات، أو استفسر أولًا عن محتوياتها.</li>
         </ol>
         <p className="mt-4 text-sm text-muted">
-          لا تتناول هذه الصفحة مدة البطاقة ولا عدد مرات المراجعة ولا طرق الدفع ولا سياسة الاسترجاع؛ للاستفسار عنها تواصل قبل الحجز.
+          لا تتناول هذه الصفحة الأسعار ولا مدة البطاقة ولا عدد مرات المراجعة ولا طرق الدفع ولا سياسة الاسترجاع؛ للاستفسار عنها تواصل قبل الطلب.
         </p>
         <div className="mt-6">
-          <ContactCta id="contact" track="card-page" />
+          <ContactCta id="contact" track="card-page" kind="card" />
         </div>
         <p className="mt-6 leading-8 text-ink/85">
           تفضّل شرحًا مباشرًا؟ يقدّم أحمد أيضًا{" "}

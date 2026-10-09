@@ -6,7 +6,7 @@ import { PageHeader, Section } from "@/components/kb/Layout";
 import { serviceGraph } from "@/lib/seo/jsonld";
 import { intentFor, seoMeta } from "@/lib/seo/intent";
 import { getUnits } from "@/lib/kb/queries";
-import { lessonsPath, services } from "@/config/services";
+import { lessonsPath } from "@/config/services";
 
 export const metadata = seoMeta(lessonsPath);
 
@@ -16,12 +16,11 @@ const crumbs = [
   { name: "دروس خصوصية BTEC IT", path: lessonsPath },
 ];
 
-const { inPersonPerHourJOD: inPerson, onlinePerHourJOD: online } = services.privateLessons;
-
 export default function PrivateLessonsPage() {
   const intent = intentFor(lessonsPath)!;
   const units = getUnits();
-  const description = `دروس خصوصية في BTEC IT مع أحمد دومي، مدرّس BTEC IT في الأردن: وجاهي ${inPerson} دينارًا أردنيًا للساعة وأونلاين ${online} دينارًا أردنيًا للساعة، بالعربي مع المصطلحات الإنجليزية.`;
+  const description =
+    "دروس خصوصية في BTEC IT مع أحمد دومي، مدرّس BTEC IT في الأردن: أونلاين ووجاهيًا، بالعربي مع المصطلحات الإنجليزية، مع شرح وحدات BTEC IT وفهم متطلبات التقييم وكتابة التقارير.";
 
   return (
     <>
@@ -30,12 +29,8 @@ export default function PrivateLessonsPage() {
           path: lessonsPath,
           name: "دروس خصوصية BTEC IT مع أحمد دومي",
           description,
-          serviceType: "Private tutoring: BTEC IT (in person and online)",
+          serviceType: "Private tutoring: BTEC IT (online and in person)",
           crumbs,
-          offers: [
-            { name: "درس خصوصي BTEC IT وجاهي (للساعة)", pricePerHourJOD: inPerson },
-            { name: "درس خصوصي BTEC IT أونلاين (للساعة)", pricePerHourJOD: online },
-          ],
         })}
       />
       <PageHeader
@@ -44,40 +39,25 @@ export default function PrivateLessonsPage() {
         titleEn="BTEC IT private lessons with Ahmad Domi — online and in person"
         lead={
           <p>
-            أحمد دومي مدرّس BTEC IT من إربد في الأردن، يقدّم دروسًا خصوصية في BTEC IT بالعربي مع المصطلحات الإنجليزية: <strong>وجاهيًا بسعر {inPerson} دينارًا أردنيًا للساعة</strong>، و
-            <strong>أونلاين بسعر {online} دينارًا أردنيًا للساعة</strong>.
+            أحمد دومي مدرّس BTEC IT من إربد في الأردن، يقدّم <strong>دروسًا خصوصية في BTEC IT أونلاين ووجاهيًا</strong>، بالعربي مع المصطلحات الإنجليزية. للاستفسار عن الأسعار وتفاصيل
+            الحجز تواصل معه مباشرة.
           </p>
         }
       />
 
-      <Section title="الأسعار" id="prices">
-        <div className="overflow-x-auto rounded-2xl border border-line bg-white">
-          <table className="w-full min-w-[420px] text-start">
-            <caption className="sr-only">أسعار الدروس الخصوصية في BTEC IT</caption>
-            <thead className="bg-ivory text-sm text-muted">
-              <tr>
-                <th scope="col" className="p-4 text-start">نوع الدرس</th>
-                <th scope="col" className="p-4 text-start">السعر</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr className="border-t border-line">
-                <th scope="row" className="p-4 text-start font-semibold">وجاهي</th>
-                <td className="p-4">
-                  {inPerson} دينارًا أردنيًا للساعة (<bdi dir="ltr">{inPerson} JOD / hour</bdi>)
-                </td>
-              </tr>
-              <tr className="border-t border-line">
-                <th scope="row" className="p-4 text-start font-semibold">أونلاين</th>
-                <td className="p-4">
-                  {online} دينارًا أردنيًا للساعة (<bdi dir="ltr">{online} JOD / hour</bdi>)
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <Section title="خيارات الدروس" id="options">
+        <ul className="grid gap-4 sm:grid-cols-2">
+          <li className="rounded-2xl border border-line bg-white p-5">
+            <p className="font-semibold">دروس أونلاين</p>
+            <p className="mt-2 leading-8 text-ink/85">درس خصوصي في BTEC IT عن بُعد مع أحمد دومي، بالعربي مع المصطلحات الإنجليزية.</p>
+          </li>
+          <li className="rounded-2xl border border-line bg-white p-5">
+            <p className="font-semibold">دروس وجاهية</p>
+            <p className="mt-2 leading-8 text-ink/85">درس خصوصي في BTEC IT وجهًا لوجه مع أحمد دومي.</p>
+          </li>
+        </ul>
         <p className="mt-4 text-sm text-muted">
-          لا تحدد هذه الصفحة مكان الدرس الوجاهي ولا المواعيد ولا مدة الحصة الدنيا؛ للاستفسار عنها تواصل قبل الحجز.
+          لا تحدد هذه الصفحة الأسعار ولا مكان الدرس الوجاهي ولا المواعيد ولا مدة الحصة الدنيا؛ للاستفسار عنها تواصل قبل الحجز.
         </p>
       </Section>
 
@@ -123,7 +103,7 @@ export default function PrivateLessonsPage() {
           <Link href="/btec-it-card" className="font-medium text-navy underline decoration-gold underline-offset-4">
             بطاقة أحمد دومي التعليمية لـ BTEC IT
           </Link>
-          : سعرها {services.card.priceJOD} دينارًا أردنيًا، ومراجعة تقارير الطلاب مشمولة معها. وللتعرّف على أسلوب الشرح قبل الحجز شاهد{" "}
+          ، ومراجعة تقارير الطلاب مشمولة معها. وللتعرّف على أسلوب الشرح قبل الحجز شاهد{" "}
           <Link href="/videos" className="font-medium text-navy underline decoration-gold underline-offset-4">
             فيديوهاته المجانية
           </Link>{" "}
@@ -132,7 +112,7 @@ export default function PrivateLessonsPage() {
       </Section>
 
       <Section title="التواصل والحجز" id="contact" className="pt-0">
-        <ContactCta track="lessons-page" showPlatform={false} />
+        <ContactCta track="lessons-page" kind="lessons" />
       </Section>
 
       <Section id="author" className="pt-0">

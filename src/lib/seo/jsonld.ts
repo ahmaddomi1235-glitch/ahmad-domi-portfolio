@@ -2,8 +2,8 @@
  * JSON-LD builders. Rules we hold ourselves to:
  *  - only schema.org types that the page genuinely is (no decorative types);
  *  - every Ahmad-authored page references the same Person @id;
- *  - never emit reviews, ratings, awards, credentials, FAQPage, or Product/Offer/Service without owner-confirmed commercial data
- *    (prices come from src/config/services.ts); never emit availability, stock status or Pearson affiliation.
+ *  - never emit reviews, ratings, awards, credentials, FAQPage, availability, stock status or Pearson affiliation;
+ *  - never emit prices: the owner chose not to publish them, so no Offer / priceSpecification / price / priceCurrency exists anywhere.
  */
 import {
   SITE_URL,
@@ -242,7 +242,6 @@ export function calculatorGraph(crumbs: Crumb[]) {
       operatingSystem: "Any (web browser)",
       inLanguage: "ar",
       isAccessibleForFree: true,
-      offers: { "@type": "Offer", price: "0", priceCurrency: "JOD" },
       creator: { "@id": PERSON_ID },
     },
     breadcrumbNode(crumbs),
@@ -273,10 +272,9 @@ export type CardSchemaInput = {
   name: string;
   description: string;
   crumbs: Crumb[];
-  /** Product + Offer are emitted only when all three are present and confirmed. */
-  commercial?: { priceJOD: number; purchaseUrl: string };
 };
 
+/** Product description only: no Offer, no price (owner decision), no availability, no reviews or ratings. */
 export function cardGraph(c: CardSchemaInput) {
   const url = absoluteUrl("/btec-it-card");
   const base = {
@@ -288,24 +286,19 @@ export function cardGraph(c: CardSchemaInput) {
     inLanguage: "ar",
     isPartOf: { "@id": WEBSITE_ID },
     author: { "@id": PERSON_ID },
+    about: { "@id": `${url}#product` },
   };
-  const product = c.commercial
-    ? {
-        "@type": "Product",
-        "@id": `${url}#product`,
-        name: c.name,
-        description: c.description,
-        brand: { "@type": "Brand", name: brand.siteName },
-        category: "Educational course material (BTEC IT)",
-        offers: {
-          "@type": "Offer",
-          price: c.commercial.priceJOD.toFixed(2),
-          priceCurrency: "JOD",
-          url: c.commercial.purchaseUrl,
-          seller: { "@id": PERSON_ID },
-        },
-      }
-    : null;
+  const product = {
+    "@type": "Product",
+    "@id": `${url}#product`,
+    name: c.name,
+    description: c.description,
+    url,
+    brand: { "@type": "Brand", name: brand.siteName },
+    manufacturer: { "@id": PERSON_ID },
+    category: "Educational course material (BTEC IT)",
+    inLanguage: "ar",
+  };
   return graph(base, product, breadcrumbNode(c.crumbs), personNode());
 }
 
@@ -315,8 +308,6 @@ export type ServiceSchemaInput = {
   description: string;
   serviceType: string;
   crumbs: Crumb[];
-  /** Each offer is a confirmed per-hour price. No availability, area or schedule is emitted. */
-  offers: { name: string; pricePerHourJOD: number }[];
 };
 
 export function serviceGraph(s: ServiceSchemaInput) {
@@ -342,20 +333,6 @@ export function serviceGraph(s: ServiceSchemaInput) {
       url,
       inLanguage: "ar",
       provider: { "@id": PERSON_ID },
-      offers: s.offers.map((o) => ({
-        "@type": "Offer",
-        name: o.name,
-        url,
-        priceCurrency: "JOD",
-        priceSpecification: {
-          "@type": "UnitPriceSpecification",
-          price: o.pricePerHourJOD.toFixed(2),
-          priceCurrency: "JOD",
-          unitCode: "HUR",
-          unitText: "hour",
-        },
-        seller: { "@id": PERSON_ID },
-      })),
     },
     breadcrumbNode(s.crumbs),
     personNode(),

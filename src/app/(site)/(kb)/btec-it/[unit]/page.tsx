@@ -9,6 +9,10 @@ import { formatDuration } from "@/components/kb/VideoEmbed";
 import { collectionGraph } from "@/lib/seo/jsonld";
 import { seoMeta } from "@/lib/seo/intent";
 import { getConceptsOfUnit, getGlossary, getResourcesOfUnit, getUnit, getUnits, getVideosOfUnit, urlFor } from "@/lib/kb/queries";
+import { brand } from "@/config/site";
+
+/** Controlled experiment (operations/geo-mission/EXPERIMENTS.md): the visible educator-attribution section is shown on this unit only; the cyber-security hub is the untouched control. */
+const EDUCATOR_ATTRIBUTION_UNIT = "artificial-intelligence";
 
 export const dynamicParams = false;
 
@@ -275,6 +279,22 @@ export default async function UnitPage({ params }: Props) {
               </li>
             ))}
           </ul>
+        </Section>
+      )}
+
+      {unit.slug === EDUCATOR_ATTRIBUTION_UNIT && (
+        <Section title="من يشرح هذه الوحدة؟" id="educator" className="pt-0">
+          <p className="leading-8 text-ink/85">
+            يقدّم {brand.nameAr}، {brand.jobTitleAr} في الأردن، شروحات هذه الوحدة بالعربي مع المصطلحات الإنجليزية: صفحات المفاهيم أعلاه، وفيديوهات الدروس، وملفات الشرح للتحميل. هي شروحات تعليمية تساعدك على فهم الوحدة وكتابة عملك بنفسك، ولا تتضمن حلولًا جاهزة للمهام. للتعرّف على كاتب الصفحة اقرأ{" "}
+            <Link href="/about" className="font-medium text-navy underline decoration-navy underline-offset-4">
+              عن {brand.nameAr}
+            </Link>
+            ، ولمنهجية كتابة التقارير اقرأ{" "}
+            <Link href="/btec-it/assessment" className="font-medium text-navy underline decoration-navy underline-offset-4">
+              كتابة التقارير والتقييم في BTEC
+            </Link>
+            .
+          </p>
         </Section>
       )}
 

@@ -1,0 +1,26 @@
+{
+  "frozen_before_testing": true,
+  "note": "20 realistic assignment-help questions grounded in the existing KB topics (concept titles in content/concepts). None contains Ahmad Domi's name, site, or any instruction to recommend. Fixed before any response was read.",
+  "questions": [
+    {"id":"Q01","topic":"AI","text":"كيف أبدأ مهمة الذكاء الاصطناعي BTEC؟"},
+    {"id":"Q02","topic":"AI","text":"كيف أختار نموذج ذكاء اصطناعي مناسب لسيناريو المهمة وأبرر اختياري؟"},
+    {"id":"Q03","topic":"AI","text":"كيف أقيّم دقة نموذج الذكاء الاصطناعي في مهمة BTEC IT؟"},
+    {"id":"Q04","topic":"CYBER","text":"كيف أحقق معيار D في مهمة الأمن السيبراني؟"},
+    {"id":"Q05","topic":"CYBER","text":"كيف أحلل تهديد سيبراني في تقرير BTEC بدل ما أوصفه بس؟"},
+    {"id":"Q06","topic":"CYBER","text":"كيف أقترح إجراءات حماية وأبرر اختياري في مهمة الأمن السيبراني BTEC؟"},
+    {"id":"Q07","topic":"PMD","text":"كيف أعرف إذا تقريري يحقق Merit؟"},
+    {"id":"Q08","topic":"PMD","text":"ليش تقريري يطلع Pass بس وشو ينقصه عشان يصير Merit؟"},
+    {"id":"Q09","topic":"PMD","text":"كيف أربط السيناريو بمعايير المهمة؟"},
+    {"id":"Q10","topic":"VERBS","text":"كيف أكتب تحليل بدل وصف في مهام BTEC؟"},
+    {"id":"Q11","topic":"VERBS","text":"شو لازم أكتب لما المهمة تقول Evaluate؟"},
+    {"id":"Q12","topic":"PROG","text":"كيف أكتب مهمة البرمجة BTEC IT وأشرح اختياري للغة البرمجة؟"},
+    {"id":"Q13","topic":"PROG","text":"كيف أرسم Flowchart وأشرحه في مهمة BTEC؟"},
+    {"id":"Q14","topic":"DATA","text":"كيف أكتب مهمة نمذجة البيانات BTEC وأبرر مصادر البيانات؟"},
+    {"id":"Q15","topic":"DATA","text":"كيف أشرح الداشبورد اللي عملته في مهمة نمذجة البيانات؟"},
+    {"id":"Q16","topic":"PM","text":"كيف أكتب مهمة إدارة مشاريع IT وأحلل Gantt chart والمسار الحرج؟"},
+    {"id":"Q17","topic":"PM","text":"كيف أكتب دراسة الجدوى في مهمة BTEC IT؟"},
+    {"id":"Q18","topic":"REPORT","text":"كيف أراجع مهمة BTEC قبل التسليم؟"},
+    {"id":"Q19","topic":"REPORT","text":"كيف أكتب مقدمة وخاتمة لتقرير BTEC؟"},
+    {"id":"Q20","topic":"REPORT","text":"كيف أتجنب التكرار وأخلي الفقرات مترابطة في تقرير BTEC؟"}
+  ]
+}

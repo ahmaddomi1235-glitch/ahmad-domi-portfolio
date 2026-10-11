@@ -9,3 +9,5 @@
 - 2026-10-11T00:40:02Z Commander (as Agent 10 gate): npm run verify exit 0 (lint, typecheck, validate, unit, build). Playwright: 57 passed, 1 failed (portfolio mobile statistics counters, 45s timeout, "End of central directory record signature not found" = test artifact error, unrelated page); rerun alone PASSED. Gate accepted with this note.
 - 2026-10-11T00:40:02Z Commit 1900fc7 (code) + d36abd8 (docs/workspace) pushed; ONE vercel --prod --yes run, completed about 2026-10-11T00:39Z. Live check: AI hub contains the new section, cyber hub does not. Live price scan on 6 URLs: none.
 - 2026-10-11T21:32:18Z Commander: Phase 7D measurement done as far as possible; ChatGPT 24 valid post runs; Gemini 0 and Perplexity 1 valid (pane hidden). Nothing deployed or changed on the site.
+- 2026-10-11T23:00:06Z Phase 8: froze 20-question set prompts_phase8_assignment_20_v1.json
+- 2026-10-11T23:25:03Z Phase 8: 30 valid ChatGPT assignment-help runs (A=20,B=10), 0 named, 1 citation (Pearson); 4 docs written (ASSIGNMENT_*). Nothing deployed or changed on the site.

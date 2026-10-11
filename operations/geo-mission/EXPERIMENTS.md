@@ -15,3 +15,6 @@ Agent 8 note: AI hub (37 concepts, 2269 words) and cyber hub (48, 3034) are not 
 
 ## E1 result check — 2026-10-11T21:32:18Z (Phase 7D)
 See reports/phase7d_measurement_2026-10-11.md. Verdict: PREMATURE / NOT INFORMATIVE on ChatGPT (floor 0/12 on assignment-help with 0 sources; ceiling 12/12 on resource/teacher prompts, both units). Bing has not crawled the AI hub (discovered 06 Oct only). Gemini and Perplexity could not be measured (pane hidden). No improvement shown, no regression shown.
+
+## Phase 8 observation (2026-10-11T23:25:03Z)
+ChatGPT assignment-help: 0/30 named, 1/30 any link (Pearson), 0 educators recommended, both search modes identical; teacher control P001 named + linked in both modes. Proposed E2 (docs/ASSIGNMENT_EXPERIMENT_PROPOSAL.md): self-review section on report-writing-principles, control report-introduction-and-conclusion. Not implemented.

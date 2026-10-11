@@ -4,13 +4,13 @@
   "repo": "C:/Users/ahmad/Documents/ahmaddomiedu-site",
   "head_at_start": "bda115d",
   "branch": "master",
-  "phase": "0-intelligence",
+  "phase": "3-experiment-E1-deployed-awaiting-measurement",
   "capabilities": {
     "subagents": "Agent tool available (real, separate sessions; browser pane is shared, so they do no live AI testing)",
     "persistence": "No background process is running. Work only continues while this Claude session is active. ScheduleWakeup/Cron tools exist but are not used unless noted in DECISIONS.md",
     "deploy": "git push origin master + one vercel --prod --yes (single run)"
   },
-  "agents_running": ["agent5 assessment audit","agent7 entity audit","agent8 technical audit"],
-  "deployments": [],
+  "agents_running": [],
+  "deployments": [{"commit":"1900fc7","utc":"2026-10-11T00:39Z","what":"E1 educator attribution on AI hub"}],
   "resume_command": "claude --resume (this session) then read operations/geo-mission/TASK_BOARD.md"
 }

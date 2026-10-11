@@ -4,7 +4,7 @@
   "repo": "C:/Users/ahmad/Documents/ahmaddomiedu-site",
   "head_at_start": "bda115d",
   "branch": "master",
-  "phase": "3-experiment-E1-deployed-awaiting-measurement",
+  "phase": "7D-measured-premature",
   "capabilities": {
     "subagents": "Agent tool available (real, separate sessions; browser pane is shared, so they do no live AI testing)",
     "persistence": "No background process is running. Work only continues while this Claude session is active. ScheduleWakeup/Cron tools exist but are not used unless noted in DECISIONS.md",

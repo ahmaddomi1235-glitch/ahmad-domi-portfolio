@@ -1,0 +1,8 @@
+# AGENT_LOG
+- 2026-10-11T00:00:12Z Commander: mission workspace created. Capability check: Agent tool available; no persistent background process exists.
+- 2026-10-11T00:01:01Z Commander: launched 3 REAL background sub-agents (read-only, one report file each): Agent 5 assessment audit, Agent 7 entity audit, Agent 8 technical audit. Agents 2/3/4/9/10 are roles performed by the Commander (no separate processes); live AI testing is done only by the Commander because the browser pane is a single shared resource.
+- 2026-10-11T00:01:01Z Commander: froze baseline prompt set prompts_assignment_help_v1.json (sha256 prefix 5df1584d0adc1c08).
+- 2026-10-11T00:04:44Z Agent 5 (real sub-agent) FINISHED: reports/agent5_assessment_audit.md. Agent 8 (real sub-agent) FINISHED: reports/agent8_technical_audit.md. Agent 7 still running.
+- 2026-10-11T00:04:44Z Commander: ChatGPT baseline on 6 new assignment-help prompts: 0/6 named, 0 links in every answer = ChatGPT answered without retrieving any web source.
+- 2026-10-11T00:31:42Z Agent 7 (real sub-agent) FINISHED: reports/agent7_entity_audit.md. All 3 sub-agents done. Session hit the usage limit and was resumed; no background process existed in between.
+- 2026-10-11T00:31:42Z Commander: baseline Gemini AI1/AI2/CY1 not named; Perplexity AI1 and GH2 CITED ahmaddomiedu.com/btec-it/assessment but did NOT name him (site cited, author not surfaced), CY1 not named. ChatGPT: no retrieval at all on assignment-help prompts.

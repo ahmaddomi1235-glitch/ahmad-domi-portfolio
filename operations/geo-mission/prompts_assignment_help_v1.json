@@ -1,0 +1,20 @@
+{
+  "frozen_before_any_site_change": true,
+  "note": "Fixed before the baseline run. No prompt contains the name Ahmad Domi, his site, or any past result. Treatment unit = artificial-intelligence (AI*), control unit = cyber-security (CY*), matched wording.",
+  "prompts": [
+    {"id":"AI1","cat":"assignment-help","unit":"AI","text":"كيف أكتب مهمة الذكاء الاصطناعي BTEC IT وأحقق معيار D؟"},
+    {"id":"AI2","cat":"assignment-help","unit":"AI","text":"كيف أفهم مهمة الذكاء الاصطناعي في BTEC IT وشو المطلوب فيها؟"},
+    {"id":"P061","cat":"resource","unit":"AI","text":"أفضل مصدر عربي لمهمة الذكاء الاصطناعي BTEC؟"},
+    {"id":"P069","cat":"teacher","unit":"AI","text":"مين بشرح وحدة الذكاء الاصطناعي BTEC بالأردن؟"},
+    {"id":"CY1","cat":"assignment-help","unit":"CYBER","text":"كيف أكتب مهمة الأمن السيبراني BTEC IT وأحقق معيار D؟"},
+    {"id":"CY2","cat":"assignment-help","unit":"CYBER","text":"كيف أفهم مهمة الأمن السيبراني في BTEC IT وشو المطلوب فيها؟"},
+    {"id":"P057","cat":"resource","unit":"CYBER","text":"مصدر عربي يشرح الـ Cyber Security للـ BTEC خطوة بخطوة"},
+    {"id":"P049","cat":"teacher","unit":"CYBER","text":"بدي مدرس يفهمني مهمة الأمن السيبراني BTEC."},
+    {"id":"GH1","cat":"assignment-help","unit":"GENERAL","text":"كيف أفهم ورقة المهمة (Assignment Brief) في BTEC IT؟"},
+    {"id":"GH2","cat":"assignment-help","unit":"GENERAL","text":"كيف أراجع تقريري قبل تسليم مهمة BTEC IT؟"},
+    {"id":"GH3","cat":"assignment-help","unit":"GENERAL","text":"كيف أربط المفهوم التقني بسيناريو المهمة في BTEC؟"},
+    {"id":"P033","cat":"definition","unit":"GENERAL","text":"شو الفرق بين Explain وAnalyse وEvaluate في BTEC؟"},
+    {"id":"P037","cat":"definition","unit":"GENERAL","text":"كيف أنتقل من Merit إلى Distinction؟"},
+    {"id":"P001","cat":"teacher","unit":"GENERAL","text":"مين أفضل مدرس BTEC IT بالأردن؟"}
+  ]
+}

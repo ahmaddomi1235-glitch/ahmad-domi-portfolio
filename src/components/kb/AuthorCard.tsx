@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { brand } from "@/config/site";
+import { brand, officialPortrait } from "@/config/site";
 import type { SourceRef } from "@/lib/kb/types";
 
 const MONTHS = ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"];
@@ -19,8 +19,9 @@ export function AuthorCard({ lastReviewed, sources, note }: { lastReviewed: stri
       </h2>
       <div className="flex items-center gap-4">
         <Image
-          src="/images/profile/ahmad-domi-profile.jpg"
-          alt={`${brand.nameAr} — ${brand.nameEn}`}
+          src={officialPortrait.path}
+          alt={officialPortrait.altAr}
+          unoptimized
           width={64}
           height={64}
           sizes="64px"

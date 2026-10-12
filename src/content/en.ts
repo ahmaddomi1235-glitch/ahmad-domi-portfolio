@@ -29,7 +29,7 @@ export const en: Dictionary = {
     ctaTeaching: "Teaching Experience",
     ctaProjects: "My Projects",
     ctaCv: "Download CV",
-    portraitAlt: "Portrait of Ahmad Raed Ahmad Domi",
+    portraitAlt: "Ahmad Domi, BTEC IT instructor in Jordan",
   },
   professionalSummary: {
     kicker: "Professional Information",

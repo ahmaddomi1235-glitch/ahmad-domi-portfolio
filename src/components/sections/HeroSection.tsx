@@ -1,11 +1,13 @@
 import Image from "next/image";
 import type { Dictionary } from "@/content/dictionary";
 import { profile } from "@/content/profile";
+import { brand, officialPortrait } from "@/config/site";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Reveal } from "@/components/ui/Reveal";
 
 export function HeroSection({ dict }: { dict: Dictionary }) {
+  const ar = dict.hero.portraitAlt === officialPortrait.altAr;
   return (
     <section id="top" className="relative overflow-hidden bg-navy text-ivory">
       <div
@@ -46,16 +48,30 @@ export function HeroSection({ dict }: { dict: Dictionary }) {
         </div>
 
         <Reveal delay={0.1} className="flex justify-center lg:justify-end">
-          <div className="relative h-44 w-44 overflow-hidden rounded-full border border-gold/30 bg-navy-surface sm:h-52 sm:w-52">
-            <Image
-              src="/images/profile/ahmad-domi-profile.jpg"
-              alt={dict.hero.portraitAlt}
-              fill
-              sizes="(min-width: 640px) 208px, 176px"
-              className="object-cover object-top"
-              priority
-            />
-          </div>
+          <figure className="flex flex-col items-center gap-3">
+            <div className="relative h-44 w-44 overflow-hidden rounded-full border border-gold/30 bg-navy-surface sm:h-52 sm:w-52">
+              <Image
+                src={officialPortrait.path}
+                alt={dict.hero.portraitAlt}
+                fill
+                unoptimized
+                sizes="(min-width: 640px) 208px, 176px"
+                className="object-cover object-top"
+                priority
+              />
+            </div>
+            <figcaption className="text-center text-sm text-ivory/80">
+              {ar ? (
+                <>
+                  {brand.nameAr} — <bdi lang="en" dir="ltr">{brand.nameEn}</bdi>
+                </>
+              ) : (
+                brand.nameEn
+              )}
+              <br />
+              {ar ? brand.jobTitleAr + " في الأردن" : brand.jobTitleEn + " in Jordan"}
+            </figcaption>
+          </figure>
         </Reveal>
       </Container>
     </section>

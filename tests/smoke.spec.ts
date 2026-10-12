@@ -550,6 +550,7 @@ test.describe("phase 6B commercial pages (no public prices)", () => {
   });
 
   test("no page in the sitemap, the search index or llms.txt exposes a service price or price schema", async ({ request }) => {
+    test.setTimeout(120_000); // crawls every sitemap URL sequentially (about 30 s on this machine)
     const xml = await (await request.get("/sitemap.xml")).text();
     const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]).pathname);
     expect(locs).toContain("/btec-it/private-lessons");
@@ -584,5 +585,44 @@ test.describe("phase 6B commercial pages (no public prices)", () => {
     await expect(page.locator("footer a[href='/btec-it/private-lessons']")).toBeVisible();
     await page.setViewportSize({ width: 1280, height: 800 });
     await expect(page.locator("header nav a[href='/btec-it/private-lessons']").first()).toBeVisible();
+  });
+});
+
+// ───────────────────────── Official portrait (visual identity) ─────────────────────────
+test.describe("official portrait and identity image signals", () => {
+  const PORTRAIT = "https://ahmaddomiedu.com/images/ahmad-domi-official.jpg";
+
+  test("the portrait file is served as a JPEG at its stable URL", async ({ request }) => {
+    const res = await request.get("/images/ahmad-domi-official.jpg");
+    expect(res.status()).toBe(200);
+    expect(res.headers()["content-type"]).toContain("image/jpeg");
+    expect((await res.body()).length).toBeGreaterThan(20000);
+  });
+
+  test("identity pages expose og:image, twitter:image and Person.image with the same portrait", async ({ page }) => {
+    for (const path of ["/", "/about", "/en", "/btec-it/private-lessons", "/btec-it-card"]) {
+      await page.goto(path);
+      await expect(page.locator('meta[property="og:image"]')).toHaveAttribute("content", PORTRAIT);
+      await expect(page.locator('meta[name="twitter:image"]')).toHaveAttribute("content", PORTRAIT);
+    }
+    await page.goto("/about");
+    const ld = await page.locator('script[type="application/ld+json"]').allTextContents();
+    const text = ld.join(" ");
+    expect(text).toContain(PORTRAIT);
+    expect(text).toContain("primaryImageOfPage");
+    expect(text).not.toContain("ahmad-domi-profile.jpg");
+  });
+
+  test("the About page shows the portrait in the HTML with a caption naming him", async ({ page }) => {
+    await page.goto("/about");
+    const img = page.locator('img[src="/images/ahmad-domi-official.jpg"]').first();
+    await expect(img).toBeVisible();
+    await expect(img).toHaveAttribute("alt", /أحمد دومي/);
+    await expect(page.locator("figcaption").first()).toContainText("Ahmad Domi");
+  });
+
+  test("educational pages do not get a preview image", async ({ page }) => {
+    await page.goto("/btec-it/assessment");
+    await expect(page.locator('meta[property="og:image"]')).toHaveCount(0);
   });
 });

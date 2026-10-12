@@ -13,13 +13,14 @@ import {
   brand,
   defaultDescription,
   knowsAbout,
-  profileImage,
+  officialPortrait,
   sameAs,
 } from "@/config/site";
 import { profile } from "@/content/profile";
 
 export const PERSON_ID = `${SITE_URL}/#person`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
+export const PORTRAIT_ID = `${SITE_URL}/#portrait`;
 
 export type Crumb = { name: string; path: string };
 
@@ -30,7 +31,16 @@ export function personNode() {
     name: brand.nameEn,
     alternateName: [brand.nameAr, ...alternateNames],
     url: `${SITE_URL}/`,
-    image: profileImage,
+    image: {
+      "@type": "ImageObject",
+      "@id": PORTRAIT_ID,
+      url: officialPortrait.url,
+      contentUrl: officialPortrait.url,
+      width: officialPortrait.width,
+      height: officialPortrait.height,
+      caption: officialPortrait.altEn,
+      description: `${brand.nameEn} (${brand.nameAr}), ${brand.jobTitleEn} in Jordan`,
+    },
     jobTitle: brand.jobTitleEn,
     description:
       "BTEC IT instructor in Jordan. Explains BTEC IT units — cybersecurity, artificial intelligence, data modelling and IT project management — in Arabic, with English technical terms.",
@@ -92,6 +102,7 @@ export function profilePageGraph(locale: "ar" | "en") {
       inLanguage: locale,
       isPartOf: { "@id": WEBSITE_ID },
       mainEntity: { "@id": PERSON_ID },
+      primaryImageOfPage: { "@id": PORTRAIT_ID },
     },
     personNode(),
   );
@@ -167,7 +178,7 @@ export function articleGraph(a: ArticleInput) {
       publisher: { "@id": PERSON_ID },
       isPartOf: { "@id": WEBSITE_ID },
       mainEntityOfPage: url,
-      image: profileImage,
+      image: officialPortrait.url,
       ...(a.about
         ? { about: { "@type": "DefinedTerm", name: a.about.name, ...(a.about.alternateName ? { alternateName: a.about.alternateName } : {}) } }
         : {}),

@@ -29,7 +29,7 @@ export const ar: Dictionary = {
     ctaTeaching: "الخبرة التدريسية",
     ctaProjects: "مشاريعي",
     ctaCv: "تحميل السيرة الذاتية",
-    portraitAlt: "صورة أحمد رائد أحمد دومي",
+    portraitAlt: "أحمد دومي (Ahmad Domi)، مدرّس BTEC IT في الأردن",
   },
   professionalSummary: {
     kicker: "معلومات مهنية",

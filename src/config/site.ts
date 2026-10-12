@@ -63,7 +63,21 @@ export const knowsAbout = [
   "BTEC assessment writing (Pass, Merit, Distinction)",
 ];
 
+/** Original full-length studio portrait (kept at its existing URL). */
 export const profileImage = `${SITE_URL}/images/profile/ahmad-domi-profile.jpg`;
+
+/**
+ * The one canonical portrait for identity signals (Person.image, ProfilePage.primaryImageOfPage, og:image, twitter:image).
+ * A square crop of the same studio photograph, unaltered: only cropped and resized. 860x860 JPEG.
+ */
+export const officialPortrait = {
+  path: "/images/ahmad-domi-official.jpg",
+  url: `${SITE_URL}/images/ahmad-domi-official.jpg`,
+  width: 860,
+  height: 860,
+  altAr: "أحمد دومي (Ahmad Domi)، مدرّس BTEC IT في الأردن",
+  altEn: "Ahmad Domi, BTEC IT instructor in Jordan",
+} as const;
 
 export const defaultDescription =
   "أحمد دومي مدرّس BTEC IT في الأردن. شرح بالعربي لوحدات الأمن السيبراني والذكاء الاصطناعي ونمذجة البيانات وإدارة المشاريع، مع المصطلحات الإنجليزية والمصادر.";

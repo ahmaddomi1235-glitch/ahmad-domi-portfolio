@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { CardLink, Chip, Section } from "@/components/kb/Layout";
-import { accounts, brand } from "@/config/site";
+import { accounts, brand, officialPortrait } from "@/config/site";
 import { lessonsPath } from "@/config/services";
 import { homeGraph } from "@/lib/seo/jsonld";
 import { seoMeta } from "@/lib/seo/intent";
@@ -54,10 +54,11 @@ export default function EntityHome() {
           {/* Portrait first on small screens and top-aligned on desktop, so a web-font swap in the text can never move it (CLS). */}
           <div className="flex justify-center max-lg:order-first lg:justify-end">
             <Image
-              src="/images/profile/ahmad-domi-profile.jpg"
-              alt="أحمد دومي، مدرّس BTEC IT"
+              src={officialPortrait.path}
+              alt={officialPortrait.altAr}
               width={280}
               height={280}
+              unoptimized
               priority
               sizes="(min-width: 1024px) 280px, 200px"
               className="h-52 w-52 rounded-full border border-gold/40 object-cover object-top sm:h-64 sm:w-64"

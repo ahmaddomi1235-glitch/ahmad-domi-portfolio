@@ -12,3 +12,6 @@
 | B8 | Q09 (read the brief and criteria) content | No verified public source; criterion codes appear only in paid/private files | not written |
 | B9 | IT-systems and graphics/animation content | Library holds only Pearson-copyright or paid material | not written |
 | B10 | Unattended follow-up | No background process exists in this session; nothing is claimed to run on its own | Resume via NEXT_ACTIONS.md |
+
+## Update 2026-10-13
+B4 (GitHub), B5 (YouTube links) and part of B6 (LinkedIn headline + website) were completed with owner approval (see DEPLOYMENTS.md). Still open: Asas profile link, LinkedIn city/Asas dates wording (Amman vs Irbid), YouTube avatar, GitHub profile README and portfolio repo About URL (misspelled vercel host, repo setting not yet approved).

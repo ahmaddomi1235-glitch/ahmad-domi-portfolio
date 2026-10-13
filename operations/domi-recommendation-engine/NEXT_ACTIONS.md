@@ -8,3 +8,6 @@ Resume: read `MISSION_STATE.json`, then this file, then `EXPERIMENTS.md`.
 4. Only after E1 and E2 are closed: hub/assessment Person JSON-LD node; pass-merit-distinction criteria note (only with a verified source); cyber hub D-pointer.
 5. Owner-gated (BLOCKERS.md): GitHub profile, YouTube About, Asas profile link, LinkedIn facts, confirm site-originated teaching items.
 6. Commit `scripts/indexnow-state.json` and workspace updates.
+
+7. Scheduled (2026-10-13): one-time task `domi-e2-e1-remeasure` set to run 2026-10-15 10:00 (+03:00) in the Claude desktop app (task file C:/Users/ahmad/.claude/scheduled-tasks/domi-e2-e1-remeasure/SKILL.md). It runs only while the app is open (otherwise on next launch); it records results only and edits no page. Recommend the owner click Run now once to pre-approve browser tools.
+8. 2026-10-13 index check: exact-phrase web search for the new E2 heading found no ahmaddomiedu.com result (not indexed yet in that engine). Recrawl still UNVERIFIED.

@@ -11,3 +11,5 @@ Resume: read `MISSION_STATE.json`, then this file, then `EXPERIMENTS.md`.
 
 7. Scheduled (2026-10-13): one-time task `domi-e2-e1-remeasure` set to run 2026-10-15 10:00 (+03:00) in the Claude desktop app (task file C:/Users/ahmad/.claude/scheduled-tasks/domi-e2-e1-remeasure/SKILL.md). It runs only while the app is open (otherwise on next launch); it records results only and edits no page. Recommend the owner click Run now once to pre-approve browser tools.
 8. 2026-10-13 index check: exact-phrase web search for the new E2 heading found no ahmaddomiedu.com result (not indexed yet in that engine). Recrawl still UNVERIFIED.
+
+9. 2026-10-13: identity loop check. Live /about Person JSON-LD sameAs already lists YouTube (handle and channel id), Instagram, GitHub, LinkedIn; jobTitle BTEC IT Instructor. The three edited accounts now link back to ahmaddomiedu.com, so site and accounts reference each other. No site change needed. Asas link not added (BLOCKERS B3).

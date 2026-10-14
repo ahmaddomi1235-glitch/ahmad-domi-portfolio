@@ -15,3 +15,5 @@
 
 ## Update 2026-10-13
 B4 (GitHub), B5 (YouTube links) and part of B6 (LinkedIn headline + website) were completed with owner approval (see DEPLOYMENTS.md). Still open: Asas profile link, LinkedIn city/Asas dates wording (Amman vs Irbid), YouTube avatar, GitHub profile README and portfolio repo About URL (misspelled vercel host, repo setting not yet approved).
+
+| B11 | Stale-price leak (ChatGPT mode A, 2026-10-14) | Prices come from ChatGPT's cached/old copy of /btec-it/private-lessons; the live page has none. Possible fixes need owner approval: (a) ask ChatGPT/OpenAI removal channel for the stale snapshot, (b) check for old Vercel deployment URLs still serving the Oct 9 page and put them behind Vercel Deployment Protection or delete them (Vercel account change) | Site-side already correct; re-test P012/P091/P092 on each cycle |

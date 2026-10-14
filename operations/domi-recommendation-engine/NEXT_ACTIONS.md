@@ -13,3 +13,5 @@ Resume: read `MISSION_STATE.json`, then this file, then `EXPERIMENTS.md`.
 8. 2026-10-13 index check: exact-phrase web search for the new E2 heading found no ahmaddomiedu.com result (not indexed yet in that engine). Recrawl still UNVERIFIED.
 
 9. 2026-10-13: identity loop check. Live /about Person JSON-LD sameAs already lists YouTube (handle and channel id), Instagram, GitHub, LinkedIn; jobTitle BTEC IT Instructor. The three edited accounts now link back to ahmaddomiedu.com, so site and accounts reference each other. No site change needed. Asas link not added (BLOCKERS B3).
+
+10. 2026-10-14: scheduled task domi-e2-e1-remeasure moved to 2026-10-17 07:00Z (10:00 Jordan) so the 9 Phase 9 pages and the E2 page can be recrawled first; its prompt now also covers the Phase 9 frozen 30 prompts (operations/domi-phase9/). Phase 9 baseline: 0/89 named.

@@ -42,7 +42,7 @@
     ]
   },
   "status": "published",
-  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; official criterion codes (Unit 11) verified against private Pearson scan src-021/063; Ahmad's P/M/D reading from src-004; no Pearson descriptor text",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; official criterion codes (Unit 11) verified against private Pearson scan src-021/063; Ahmad's P/M/D reading from src-004; no Pearson descriptor text ; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; sentences that would need the author's confirmation were left out",
   "sourceIds": [
     "src-004"
   ],
@@ -158,6 +158,79 @@
           "[[evaluate-level-d-writing|كتابة مستوى التقييم]]"
         ]
       ]
+    },
+    {
+      "t": "h2",
+      "text": "كيف تقرأ المستوى المطلوب قبل أن تكتب؟"
+    },
+    {
+      "t": "p",
+      "text": "قبل أن تكتب أي فقرة، حدّد هل المطلوب شرحًا أم تحليلًا أم تقييمًا، فلكل مستوى سؤال مختلف يجيب عنه. وإذا طُلب منك أكثر من مستوى فابقَ على الموضوع نفسه وغيّر السؤال الذي تسأله عنه، لأن المستويات درجات من التفكير لا تقارير منفصلة."
+    },
+    {
+      "t": "ol",
+      "items": [
+        "ما الفعل في هذا الجزء من المهمة، وأي مستوى يقابله؟",
+        "هل أتحدث عن الفكرة نفسها التي تناولتها في المستويات الأخرى؟",
+        "ما الذي يجب أن يعرفه القارئ بعد هذه الفقرة ولم يكن يعرفه قبلها؟"
+      ]
+    },
+    {
+      "t": "h3",
+      "text": "أخطاء شائعة"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "معاملة الشرح والتحليل والتقييم كأنها تقارير عن مواضيع مختلفة.",
+        "الاكتفاء بالشرح حيث يُطلب التحليل، أو الاكتفاء بالتحليل حيث يُطلب الحكم.",
+        "البدء بالكتابة قبل أن تعرف المؤسسة والمشكلة والمطلوب."
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "قراءة مهمة متخيّلة في ثلاث خطوات"
+    },
+    {
+      "t": "callout",
+      "kind": "example",
+      "text": "مخبز حيّ صغير يرمي كمية من الخبز غير المباع آخر كل يوم. المطلوب: اشرح فكرة الطلب المسبق، ثم حلّل أثرها، ثم قيّم بديلًا آخر.",
+      "title": "مهمة متخيَّلة وضعها الموقع"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "حدّد المؤسسة والمشكلة: مخبز حيّ، والمشكلة هدر الخبز في آخر اليوم.",
+        "حدّد المطلوب: شرح ثم تحليل ثم تقييم، والموضوع في الثلاثة هو الطلب المسبق.",
+        "اختر ما يخدم المشكلة فقط: كيف يعرف المخبز الكمية قبل الخَبز، لا تاريخ صناعة الخبز."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "لاحظ أنك لم تكتب شيئًا بعد؛ فالقراءة الصحيحة تسبق الكتابة وتحدد ما تكتبه وما تتركه."
+    },
+    {
+      "t": "h2",
+      "text": "فحص تغطية المطلوب (نصيحة دراسية عامة)"
+    },
+    {
+      "t": "p",
+      "text": "بعد أن تنتهي من الكتابة، ضع نص مهمتك بجانب تقريرك وافحصه جزءًا جزءًا."
+    },
+    {
+      "t": "ol",
+      "items": [
+        "ضع علامة على كل جزء طُلب منك وعلى الفعل الذي يرافقه.",
+        "ابحث في تقريرك عن العنوان أو الفقرة التي تجيب عن هذا الجزء.",
+        "تأكد أن الفقرة من المستوى الذي يطلبه الفعل، لا أقل منه.",
+        "إن لم تجد جزءًا فاكتبه، وإن وجدت فقرة لا تخدم أي جزء فاسأل نفسك لماذا كتبتها."
+      ]
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "أن تتأكد أن ما كتبته يجيب عمّا طُلب منك، لا أن تزيد عدد الصفحات.",
+      "title": "الغاية"
     },
     {
       "t": "p",

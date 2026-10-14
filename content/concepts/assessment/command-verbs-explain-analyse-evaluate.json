@@ -31,7 +31,7 @@
   ],
   "officialSource": null,
   "status": "published",
-  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts) ; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; sentences that would need the author's confirmation were left out",
   "sourceIds": [
     "src-004"
   ],
@@ -125,6 +125,87 @@
           "D",
           "تُقارَن طريقة الحجز الإلكترونية بقائمة ورقية وبالسؤال المباشر وفق معيار السرعة ثم الدقة ثم الكلفة، ثم يُحكَم ويُنتقد الحكم وتُقدَّم توصية"
         ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "اقرأ السيناريو قبل أن تقرأ الفعل"
+    },
+    {
+      "t": "p",
+      "text": "ابدأ بثلاثة أسئلة عن الحالة: ما المؤسسة؟ وما مشكلتها أو حاجتها؟ وما المطلوب مني في المهمة؟ ثم اختر المعلومات التي تخدم هذه المشكلة وحدها؛ فجمع كل ما تعرفه عن الموضوع يعطي تقريرًا طويلًا فيه معلومات صحيحة لا تخدم المطلوب."
+    },
+    {
+      "t": "p",
+      "text": "بعد ذلك انظر إلى الفعل لتعرف نوع التفكير الذي تطلبه منك المهمة في هذه الحالة. فالمهمة الواحدة قد تحمل أكثر من فعل، ولكل فعل جزء من التقرير."
+    },
+    {
+      "t": "callout",
+      "kind": "tip",
+      "text": "الفعل لا يغيّر موضوعك، بل يغيّر السؤال الذي تجيب عنه عن الموضوع نفسه.",
+      "title": "للتذكّر"
+    },
+    {
+      "t": "h2",
+      "text": "جملة ضعيفة وجملة محسّنة لكل فعل"
+    },
+    {
+      "t": "p",
+      "text": "مثال متخيَّل: مخبز حيّ يريد تقليل الخبز المرمي آخر اليوم باعتماد الطلب المسبق."
+    },
+    {
+      "t": "table",
+      "head": [
+        "الفعل",
+        "جملة ضعيفة",
+        "جملة محسّنة"
+      ],
+      "rows": [
+        [
+          "اشرح",
+          "الطلب المسبق نظام حديث ومفيد.",
+          "الطلب المسبق يتيح للزبون أن يحجز خبزه قبل الحضور، فيعرف المخبز عدد الأرغفة التي سيخبزها مساءً."
+        ],
+        [
+          "حلّل",
+          "الطلب المسبق يوفّر الخبز.",
+          "لأن المخبز يعرف الطلبات قبل الخَبز، تقل الكمية الزائدة فيقل المرمي، ويتأثر صاحب المخبز بخسارة أقل، وهذا مهم لأن الهدر اليومي الصغير يتراكم."
+        ],
+        [
+          "قيّم",
+          "الطلب المسبق أفضل من غيره.",
+          "من حيث تقليل الهدر، يبدو الطلب المسبق أنسب من تقدير الكمية بالخبرة وحدها، لكنه يعتمد على التزام الزبائن بالحضور؛ لذلك يُوصى بتجربته على صنفين أولًا."
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "الموضوع في الصفوف الثلاثة واحد، والذي تغيّر هو السؤال الذي تجيب عنه الجملة."
+    },
+    {
+      "t": "h2",
+      "text": "أخطاء شائعة مع أفعال الأمر"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "الإجابة عن «اشرح» بسلسلة تحليل طويلة قبل أن يعرف القارئ الفكرة.",
+        "الإجابة عن «حلّل» بمعلومات إضافية دون ربط السبب بالنتيجة.",
+        "الإجابة عن «قيّم» بوصف كل خيار على حدة دون مقارنة بينها بمعيار واحد.",
+        "إغفال جزء من المهمة لأن فعلًا آخر بدا أهم منه."
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وقبل أن تنتقل إلى الفقرة التالية اسأل نفسك الأسئلة الآتية."
+    },
+    {
+      "t": "ol",
+      "items": [
+        "هل ذكرت المؤسسة والمشكلة قبل أن أدخل في التفاصيل؟",
+        "هل أعرف الفعل المطلوب في هذا الجزء؟",
+        "هل تخدم كل معلومة كتبتها مشكلة المؤسسة؟",
+        "هل بقي الموضوع نفسه وتغيّر السؤال فقط عند تغيّر الفعل؟"
       ]
     },
     {

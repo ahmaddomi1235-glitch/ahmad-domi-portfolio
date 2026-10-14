@@ -29,7 +29,7 @@
   ],
   "officialSource": null,
   "status": "published",
-  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts) ; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; sentences that would need the author's confirmation were left out",
   "sourceIds": [
     "src-004"
   ],
@@ -97,6 +97,73 @@
     {
       "t": "p",
       "text": "الخطأ الشائع أن تكتب «سريع، سهل، يوفر الوقت» و«مكلف، يحتاج تدريبًا». هذا ليس تحليلًا كافيًا. الطريقة الصحيحة: كل ميزة أو قيد يتبعه **أثر**: ميزة ← ماذا تغيّر؟ وقيد أو عيب ← ماذا يسبب؟ مثلًا: ميزة الحجز المسبق أنها تقلل الزيارات الفارغة، لكن قيدها أنها تحتاج إدخال بيانات الكتب بدقة وإلا ظهرت حالات خاطئة."
+    },
+    {
+      "t": "h2",
+      "text": "كيف تنتقل من الشرح إلى التحليل؟"
+    },
+    {
+      "t": "p",
+      "text": "ابدأ التحليل من الأثر الذي ختمتَ به الشرح، ولا تُعِد تعريف الفكرة من جديد. ثم اسأل: لماذا حدث هذا الأثر؟ وما الذي سيحدث بعده؟"
+    },
+    {
+      "t": "h3",
+      "text": "وصف يبقى شرحًا وتحليل يربط السبب بالنتيجة"
+    },
+    {
+      "t": "p",
+      "text": "مثال متخيَّل: عيادة أسنان صغيرة تستخدم رسائل تذكير بالمواعيد."
+    },
+    {
+      "t": "table",
+      "head": [
+        "وصف (ما زال شرحًا)",
+        "تحليل (سبب ← نتيجة ← متأثر ← أهمية الأثر)"
+      ],
+      "rows": [
+        [
+          "تُرسل رسالة التذكير قبل الموعد بيوم وتصل إلى هاتف المريض.",
+          "لأن المريض يتذكر موعده أو يلغيه مبكرًا، يقل الغياب المفاجئ، فيُعاد استخدام الوقت الفارغ لمريض ينتظر؛ فيستفيد الطبيب والمرضى معًا، وهذا مهم لأن وقت الطبيب أغلى مورد في عيادة صغيرة."
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "في الخلية الثانية ظهر السبب والنتيجة ومن تأثر وأهمية الأثر، أما الأولى فتصف ما يحدث فقط."
+    },
+    {
+      "t": "h2",
+      "text": "أخطاء شائعة وأسئلة مراجعة في التحليل"
+    },
+    {
+      "t": "p",
+      "text": "اقرأ فقرة التحليل وابحث فيها عن الأخطاء الآتية قبل أن تنتقل إلى غيرها."
+    },
+    {
+      "t": "ul",
+      "items": [
+        "إعادة تعريف الفكرة في أول فقرة التحليل.",
+        "إضافة معلومات جديدة دون ربطها بما قبلها بسبب ونتيجة.",
+        "ذكر الأثر دون بيان لماذا هو مهم للمؤسسة.",
+        "تكرار النتيجة نفسها بصياغات مختلفة لكل فكرة."
+      ]
+    },
+    {
+      "t": "h3",
+      "text": "أسئلة مراجعة"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "هل بدأت من أثر ذكرته في الشرح؟",
+        "هل ذكرت السبب والنتيجة معًا؟",
+        "هل حدّدت من تأثر ولماذا يهمه الأمر؟",
+        "هل قلت ماذا يعني ذلك للمؤسسة؟"
+      ]
+    },
+    {
+      "t": "p",
+      "text": "فإذا أجبت بنعم عن الأسئلة الأربعة فقد انتقلت من الوصف إلى التحليل."
     },
     {
       "t": "p",

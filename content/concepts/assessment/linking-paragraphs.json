@@ -29,7 +29,7 @@
   ],
   "officialSource": null,
   "status": "published",
-  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts) ; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; sentences that would need the author's confirmation were left out",
   "sourceIds": [
     "src-004"
   ],
@@ -91,6 +91,61 @@
     {
       "t": "p",
       "text": "هنا لم ينتقل الكاتب فجأة من الحجز إلى التدريب؛ بل جعل التدريب نتيجة منطقية لمشكلة الدقة. وانظر [[explain-level-p-writing|الشرح]] و[[analyse-level-m-writing|التحليل]] و[[report-consistency-and-repetition|الاتساق]]."
+    },
+    {
+      "t": "h2",
+      "text": "ربط الشرح بالتحليل"
+    },
+    {
+      "t": "p",
+      "text": "من أهم مواضع الربط الانتقال من آخر فقرة شرح إلى أول فقرة تحليل. لا تبدأ التحليل من الصفر ولا تُعِد التعريف، بل ابدأ من الأثر الذي انتهى عنده الشرح."
+    },
+    {
+      "t": "table",
+      "head": [
+        "نهاية فقرة الشرح",
+        "بداية فقرة التحليل"
+      ],
+      "rows": [
+        [
+          "تقلل رسالة التذكير الغياب المفاجئ في العيادة.",
+          "وعندما يُلغى الموعد مبكرًا يمكن إعطاؤه لمريض ينتظر، فيقل الوقت الفارغ في جدول الطبيب."
+        ]
+      ],
+      "caption": "مثال متخيَّل: عيادة أسنان صغيرة"
+    },
+    {
+      "t": "p",
+      "text": "الفقرة الثانية أخذت خيط الأثر من الأولى وأضافت فكرة جديدة هي إعادة استخدام الوقت. بهذا يصبح التحليل استمرارًا للشرح لا بداية تقرير جديد."
+    },
+    {
+      "t": "h2",
+      "text": "أخطاء شائعة وأسئلة مراجعة في الربط"
+    },
+    {
+      "t": "p",
+      "text": "اقرأ الفقرتين المتجاورتين معًا لا كل فقرة وحدها، وانتبه إلى الخطأين الآتيين."
+    },
+    {
+      "t": "ul",
+      "items": [
+        "بدء كل فقرة بتعريف جديد كأنها بداية التقرير.",
+        "فقرة تنتهي دون نتيجة أو فكرة تُبنى عليها الفقرة التي بعدها."
+      ]
+    },
+    {
+      "t": "h3",
+      "text": "أسئلة مراجعة"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "هل تنتهي كل فقرة بنتيجة أو فكرة يمكن البدء منها؟",
+        "هل تبدأ الفقرة التالية من تلك النتيجة لا من الصفر؟",
+        "هل أضافت كل فقرة شيئًا جديدًا؟",
+        "هل أعدت تعريف الفكرة عند انتقالي إلى التحليل؟ إن فعلت فاحذف التعريف.",
+        "إذا قرأت آخر جملة في فقرة وأول جملة في التي بعدها معًا، هل تبدو الثانية نتيجة للأولى؟"
+      ]
     },
     {
       "t": "h2",

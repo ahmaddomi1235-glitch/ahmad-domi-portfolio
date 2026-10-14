@@ -28,7 +28,7 @@
   ],
   "officialSource": null,
   "status": "published",
-  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts) ; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; sentences that would need the author's confirmation were left out",
   "sourceIds": [
     "src-004"
   ],
@@ -109,6 +109,48 @@
       "kind": "tip",
       "text": "عنوان فرعي لكل فكرة رئيسية، وتمييز واحد أو اثنان في الفقرة بحد أقصى.",
       "title": "قاعدة"
+    },
+    {
+      "t": "h2",
+      "text": "اجعل مكان كل جزء واضحًا للقارئ"
+    },
+    {
+      "t": "p",
+      "text": "يفيد التنسيق حين يعرف القارئ أين يجد كل جزء مما طُلب منك. ولهذا يُستحسن أن يسمّي العنوان الفرعي الفكرة التي تعالجها الفقرات تحته، لا كلمة عامة مثل «معلومات»."
+    },
+    {
+      "t": "table",
+      "head": [
+        "عنوان غامض",
+        "عنوان واضح"
+      ],
+      "rows": [
+        [
+          "معلومات",
+          "الطلب المسبق: كيف يعمل داخل المخبز"
+        ],
+        [
+          "مناقشة",
+          "مقارنة الطلب المسبق بتقدير الكمية بالخبرة"
+        ],
+        [
+          "رأيي",
+          "التوصية: تجربة الطلب المسبق على صنفين"
+        ]
+      ]
+    },
+    {
+      "t": "h3",
+      "text": "أسئلة مراجعة للتنسيق"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "هل يعرف القارئ من العناوين أين يبدأ كل جزء مما طُلب؟",
+        "هل الفقرات مرتبة ومفصولة بمسافات مناسبة؟",
+        "هل ميّزت المصطلح أو النتيجة أو السبب أو الحكم أو التوصية فقط؟",
+        "هل بقي في الصفحة شيء مميز حقًا، أم ميّزت كل شيء؟"
+      ]
     },
     {
       "t": "callout",

@@ -29,7 +29,7 @@
   ],
   "officialSource": null,
   "status": "published",
-  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts) ; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; sentences that would need the author's confirmation were left out",
   "sourceIds": [
     "src-004"
   ],
@@ -107,6 +107,77 @@
       "kind": "warning",
       "text": "تعريف ثم انتقال فورًا إلى فكرة أخرى. المقصود أن تبقى مع الفكرة حتى تُظهر فهمك لها داخل الحالة.",
       "title": "خطأ شائع"
+    },
+    {
+      "t": "h2",
+      "text": "كيف تعرف أن فقرتك ما زالت شرحًا؟"
+    },
+    {
+      "t": "p",
+      "text": "ينتهي الشرح حين يصبح القارئ يعرف الفكرة، وكيف تعمل، وأين تُستخدم، ولماذا هي مهمة، وما أثرها المباشر؛ وعندها فقط يبدأ التحليل. فإذا وجدت نفسك تكتب سلسلة من الأسباب والنتائج المتتابعة فقد دخلت التحليل قبل أن تكمل الشرح."
+    },
+    {
+      "t": "h3",
+      "text": "ثلاث جمل ضعيفة وطريقة إصلاحها"
+    },
+    {
+      "t": "p",
+      "text": "مثال متخيَّل: عيادة أسنان صغيرة تستخدم رسائل تذكير بالمواعيد."
+    },
+    {
+      "t": "table",
+      "head": [
+        "الجملة الضعيفة",
+        "ما الذي ينقصها؟",
+        "بعد الإصلاح"
+      ],
+      "rows": [
+        [
+          "التذكير بالموعد ميزة رائعة.",
+          "ما هو؟ وكيف يعمل؟",
+          "رسالة قصيرة يرسلها نظام الحجز تلقائيًا إلى المريض قبل موعده بيوم."
+        ],
+        [
+          "تُرسل الرسالة إلى المرضى.",
+          "أين يظهر في السيناريو؟",
+          "في هذه العيادة تصل الرسالة إلى هاتف المريض الذي حجز موعدًا مع الطبيب."
+        ],
+        [
+          "وهي مهمة جدًا.",
+          "لماذا هي مهمة هنا تحديدًا؟",
+          "وهي مهمة لأن وقت الطبيب في عيادة صغيرة محدود، وكل موعد ضائع يتركه بلا عمل."
+        ]
+      ]
+    },
+    {
+      "t": "h2",
+      "text": "أخطاء شائعة وأسئلة مراجعة في الشرح"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "تعريف عام يصلح لأي مؤسسة بدل ربط الفكرة بحالتك.",
+        "ذكر أهمية الفكرة دون بيان لماذا تهم هذا السيناريو تحديدًا.",
+        "الانشغال بالأسباب والنتائج البعيدة قبل إكمال الخطوات الخمس."
+      ]
+    },
+    {
+      "t": "h3",
+      "text": "أسئلة مراجعة"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "هل عرّفت الفكرة تعريفًا واضحًا؟",
+        "هل شرحت كيف تعمل أو كيف تحدث؟",
+        "هل ربطتها مباشرة بالمؤسسة أو الحالة؟",
+        "هل بيّنت لماذا هي مهمة في هذا السيناريو تحديدًا؟",
+        "هل اكتفيت بأثر مباشر دون سلسلة تحليل طويلة؟"
+      ]
+    },
+    {
+      "t": "p",
+      "text": "فإذا أجبت بنعم عن الأسئلة الخمسة فقد اكتمل الشرح، ويمكنك أن تبدأ التحليل من أثره المباشر."
     },
     {
       "t": "p",

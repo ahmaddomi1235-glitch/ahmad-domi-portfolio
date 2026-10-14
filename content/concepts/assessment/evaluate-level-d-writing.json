@@ -29,7 +29,7 @@
   ],
   "officialSource": null,
   "status": "published",
-  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts) ; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; sentences that would need the author's confirmation were left out",
   "sourceIds": [
     "src-004"
   ],
@@ -97,6 +97,65 @@
       "kind": "tip",
       "text": "لا تكتب معلومات مختلفة عن كل خيار. اختر معيارًا واحدًا (السرعة مثلًا) ثم قارن كل البدائل وفقه، ثم انتقل إلى معيار آخر.",
       "title": "المقارنة الصحيحة"
+    },
+    {
+      "t": "h2",
+      "text": "من الحكم الضعيف إلى الحكم المبني على معيار"
+    },
+    {
+      "t": "h3",
+      "text": "حكم ضعيف وحكم مبني على معيار"
+    },
+    {
+      "t": "p",
+      "text": "مثال متخيَّل: عيادة أسنان صغيرة تقارن بين رسائل التذكير والاتصال الهاتفي لتقليل غياب المرضى."
+    },
+    {
+      "t": "table",
+      "head": [
+        "حكم ضعيف",
+        "حكم قارن بمعيار ونقد نفسه وختم بتوصية"
+      ],
+      "rows": [
+        [
+          "رسائل التذكير أفضل من الاتصال الهاتفي.",
+          "من حيث التكلفة، الرسالة أرخص من الاتصال بكل مريض. ومن حيث الموثوقية، قد يهمل بعض المرضى الرسالة بينما يصعب تجاهل المكالمة. لذلك تبدو الرسائل أنسب لعيادة مواعيدها كثيرة، مع الاعتراف بأن بعضهم لن يقرأها. ويُوصى بتجربتها شهرًا وتسجيل نسبة الغياب ومقارنتها بالشهر السابق."
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "لاحظ أن المقارنة جرت معيارًا بعد معيار، وأن الحكم اعترف بقيده، وأن التوصية خطوة محددة يمكن تنفيذها."
+    },
+    {
+      "t": "h2",
+      "text": "أخطاء شائعة وأسئلة مراجعة في التقييم"
+    },
+    {
+      "t": "ul",
+      "items": [
+        "التمسك بخيارك دون النظر في عيوبه ومتى يكون غيره أفضل.",
+        "وصف كل خيار على حدة بدل مقارنة الخيارات وفق معيار واحد في كل مرة.",
+        "توصية عامة لا تقول للمؤسسة ماذا تفعل فعليًا."
+      ]
+    },
+    {
+      "t": "h3",
+      "text": "أسئلة مراجعة"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "هل حدّدت القرار والبدائل ومعايير المقارنة قبل أن أقارن؟",
+        "هل قارنت كل البدائل وفق معيار واحد في كل مرة؟",
+        "هل ذكرت عيب خياري ومتى يكون البديل أفضل؟",
+        "هل عدت إلى الأدلة قبل أن أحسم؟",
+        "هل توصيتي واضحة ومحددة وقابلة للتطبيق ومرتبطة بالحكم ومبررة؟"
+      ]
+    },
+    {
+      "t": "p",
+      "text": "وإن لم تستطع الإجابة بنعم عن أحد الأسئلة فارجع إلى الفقرة المقابلة له وأكملها."
     },
     {
       "t": "p",

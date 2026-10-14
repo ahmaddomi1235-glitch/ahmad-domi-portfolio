@@ -1,0 +1,704 @@
+{
+  "assessment": {
+    "file": "content/units/assessment.json",
+    "field": "intro",
+    "append_after_block_index": 1,
+    "blocks": [
+      {
+        "t": "h2",
+        "text": "من المبدأ إلى التطبيق: سبعة أسئلة بالترتيب"
+      },
+      {
+        "t": "p",
+        "text": "للانتقال من فهم المبادئ إلى كتابة جزء من مهمتك، اسأل نفسك الأسئلة السبعة الآتية بالترتيب، وافتح الصفحة التي تجيب عن كل سؤال."
+      },
+      {
+        "t": "table",
+        "head": [
+          "السؤال",
+          "أين تجد الجواب؟"
+        ],
+        "rows": [
+          [
+            "ما المؤسسة؟ وما مشكلتها؟ وما المطلوب مني؟",
+            "[[report-writing-principles|مبادئ كتابة التقرير]]"
+          ],
+          [
+            "ما نوع التفكير الذي يطلبه الفعل في كل جزء من مهمتي؟",
+            "[[command-verbs-explain-analyse-evaluate|أفعال الأمر]] و[[pass-merit-distinction|المستويات الثلاثة]]"
+          ],
+          [
+            "هل شرحت الفكرة داخل السيناريو؟",
+            "[[explain-level-p-writing|كتابة الشرح]]"
+          ],
+          [
+            "هل انتقلت من الوصف إلى السبب والنتيجة؟",
+            "[[analyse-level-m-writing|كتابة التحليل]]"
+          ],
+          [
+            "هل قارنت وحكمت وأوصيت؟",
+            "[[evaluate-level-d-writing|كتابة التقييم]]"
+          ],
+          [
+            "هل بقي التقرير مترابطًا ومتسقًا وسهل القراءة؟",
+            "[[linking-paragraphs|الربط]] و[[report-consistency-and-repetition|الاتساق]] و[[report-formatting-and-emphasis|التنسيق]]"
+          ],
+          [
+            "هل راجعت نصي قبل التسليم؟",
+            "أسئلة المراجعة في [[report-writing-principles|مبادئ كتابة التقرير]]"
+          ]
+        ]
+      },
+      {
+        "t": "callout",
+        "kind": "note",
+        "text": "تشرح هذه الصفحات طريقة الكتابة فقط، ولا تفسّر نصوص معايير أي وحدة ولا تعد بدرجة معينة؛ المرجع هو تعليمات مهمتك ومعلّمك.",
+        "title": "حدود هذه الصفحات"
+      }
+    ],
+    "reviewState_append": "; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; OWNER-TO-CONFIRM items need the author's decision before publishing",
+    "owner_to_confirm": [
+      "Row 7 points to the principles page's self-review list; that list is site-synthesised from p.39 (E2 experiment, protected)."
+    ]
+  },
+  "pass-merit-distinction": {
+    "file": "content/concepts/assessment/pass-merit-distinction.json",
+    "field": "body",
+    "append_after_block_index": 6,
+    "blocks": [
+      {
+        "t": "h2",
+        "text": "كيف تقرأ المستوى المطلوب قبل أن تكتب؟"
+      },
+      {
+        "t": "p",
+        "text": "قبل أن تكتب أي فقرة، حدّد هل المطلوب شرحًا أم تحليلًا أم تقييمًا، فلكل مستوى سؤال مختلف يجيب عنه. وإذا طُلب منك أكثر من مستوى فابقَ على الموضوع نفسه وغيّر السؤال الذي تسأله عنه، لأن المستويات درجات من التفكير لا تقارير منفصلة."
+      },
+      {
+        "t": "ol",
+        "items": [
+          "ما الفعل في هذا الجزء من المهمة، وأي مستوى يقابله؟",
+          "هل أتحدث عن الفكرة نفسها التي تناولتها في المستويات الأخرى؟",
+          "ما الذي يجب أن يعرفه القارئ بعد هذه الفقرة ولم يكن يعرفه قبلها؟"
+        ]
+      },
+      {
+        "t": "h3",
+        "text": "أخطاء شائعة"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "معاملة الشرح والتحليل والتقييم كأنها تقارير عن مواضيع مختلفة.",
+          "الاكتفاء بالشرح حيث يُطلب التحليل، أو الاكتفاء بالتحليل حيث يُطلب الحكم.",
+          "البدء بالكتابة قبل أن تعرف المؤسسة والمشكلة والمطلوب."
+        ]
+      },
+      {
+        "t": "h2",
+        "text": "قراءة مهمة متخيّلة في ثلاث خطوات"
+      },
+      {
+        "t": "callout",
+        "kind": "example",
+        "text": "مخبز حيّ صغير يرمي كمية من الخبز غير المباع آخر كل يوم. المطلوب: اشرح فكرة الطلب المسبق، ثم حلّل أثرها، ثم قيّم بديلًا آخر.",
+        "title": "مهمة متخيَّلة وضعها الموقع"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "حدّد المؤسسة والمشكلة: مخبز حيّ، والمشكلة هدر الخبز في آخر اليوم.",
+          "حدّد المطلوب: شرح ثم تحليل ثم تقييم، والموضوع في الثلاثة هو الطلب المسبق.",
+          "اختر ما يخدم المشكلة فقط: كيف يعرف المخبز الكمية قبل الخَبز، لا تاريخ صناعة الخبز."
+        ]
+      },
+      {
+        "t": "p",
+        "text": "لاحظ أنك لم تكتب شيئًا بعد؛ فالقراءة الصحيحة تسبق الكتابة وتحدد ما تكتبه وما تتركه."
+      },
+      {
+        "t": "h2",
+        "text": "فحص تغطية المطلوب (نصيحة دراسية عامة)"
+      },
+      {
+        "t": "p",
+        "text": "بعد أن تنتهي من الكتابة، ضع نص مهمتك بجانب تقريرك وافحصه جزءًا جزءًا."
+      },
+      {
+        "t": "ol",
+        "items": [
+          "ضع علامة على كل جزء طُلب منك وعلى الفعل الذي يرافقه.",
+          "ابحث في تقريرك عن العنوان أو الفقرة التي تجيب عن هذا الجزء.",
+          "تأكد أن الفقرة من المستوى الذي يطلبه الفعل، لا أقل منه.",
+          "إن لم تجد جزءًا فاكتبه، وإن وجدت فقرة لا تخدم أي جزء فاسأل نفسك لماذا كتبتها."
+        ]
+      },
+      {
+        "t": "callout",
+        "kind": "tip",
+        "text": "أن تتأكد أن ما كتبته يجيب عمّا طُلب منك، لا أن تزيد عدد الصفحات.",
+        "title": "الغاية"
+      }
+    ],
+    "reviewState_append": "; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; OWNER-TO-CONFIRM items need the author's decision before publishing",
+    "owner_to_confirm": [
+      "Section 'فحص تغطية المطلوب' is generic study advice (not in src-004); adopt as your own method or drop.",
+      "Reading the level from the verb of a criterion has no source in src-004 (only the P/M/D = explain/analyse/evaluate mapping)."
+    ]
+  },
+  "command-verbs-explain-analyse-evaluate": {
+    "file": "content/concepts/assessment/command-verbs-explain-analyse-evaluate.json",
+    "field": "body",
+    "append_after_block_index": 4,
+    "blocks": [
+      {
+        "t": "h2",
+        "text": "اقرأ السيناريو قبل أن تقرأ الفعل"
+      },
+      {
+        "t": "p",
+        "text": "ابدأ بثلاثة أسئلة عن الحالة: ما المؤسسة؟ وما مشكلتها أو حاجتها؟ وما المطلوب مني في المهمة؟ ثم اختر المعلومات التي تخدم هذه المشكلة وحدها؛ فجمع كل ما تعرفه عن الموضوع يعطي تقريرًا طويلًا فيه معلومات صحيحة لا تخدم المطلوب."
+      },
+      {
+        "t": "p",
+        "text": "بعد ذلك انظر إلى الفعل لتعرف نوع التفكير الذي تطلبه منك المهمة في هذه الحالة. فالمهمة الواحدة قد تحمل أكثر من فعل، ولكل فعل جزء من التقرير."
+      },
+      {
+        "t": "callout",
+        "kind": "tip",
+        "text": "الفعل لا يغيّر موضوعك، بل يغيّر السؤال الذي تجيب عنه عن الموضوع نفسه.",
+        "title": "للتذكّر"
+      },
+      {
+        "t": "h2",
+        "text": "جملة ضعيفة وجملة محسّنة لكل فعل"
+      },
+      {
+        "t": "p",
+        "text": "مثال متخيَّل: مخبز حيّ يريد تقليل الخبز المرمي آخر اليوم باعتماد الطلب المسبق."
+      },
+      {
+        "t": "table",
+        "head": [
+          "الفعل",
+          "جملة ضعيفة",
+          "جملة محسّنة"
+        ],
+        "rows": [
+          [
+            "اشرح",
+            "الطلب المسبق نظام حديث ومفيد.",
+            "الطلب المسبق يتيح للزبون أن يحجز خبزه قبل الحضور، فيعرف المخبز عدد الأرغفة التي سيخبزها مساءً."
+          ],
+          [
+            "حلّل",
+            "الطلب المسبق يوفّر الخبز.",
+            "لأن المخبز يعرف الطلبات قبل الخَبز، تقل الكمية الزائدة فيقل المرمي، ويتأثر صاحب المخبز بخسارة أقل، وهذا مهم لأن الهدر اليومي الصغير يتراكم."
+          ],
+          [
+            "قيّم",
+            "الطلب المسبق أفضل من غيره.",
+            "من حيث تقليل الهدر، يبدو الطلب المسبق أنسب من تقدير الكمية بالخبرة وحدها، لكنه يعتمد على التزام الزبائن بالحضور؛ لذلك يُوصى بتجربته على صنفين أولًا."
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "text": "الموضوع في الصفوف الثلاثة واحد، والذي تغيّر هو السؤال الذي تجيب عنه الجملة."
+      },
+      {
+        "t": "h2",
+        "text": "أخطاء شائعة مع أفعال الأمر"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "الإجابة عن «اشرح» بسلسلة تحليل طويلة قبل أن يعرف القارئ الفكرة.",
+          "الإجابة عن «حلّل» بمعلومات إضافية دون ربط السبب بالنتيجة.",
+          "الإجابة عن «قيّم» بوصف كل خيار على حدة دون مقارنة بينها بمعيار واحد.",
+          "إغفال جزء من المهمة لأن فعلًا آخر بدا أهم منه."
+        ]
+      },
+      {
+        "t": "p",
+        "text": "وقبل أن تنتقل إلى الفقرة التالية اسأل نفسك الأسئلة الآتية."
+      },
+      {
+        "t": "ol",
+        "items": [
+          "هل ذكرت المؤسسة والمشكلة قبل أن أدخل في التفاصيل؟",
+          "هل أعرف الفعل المطلوب في هذا الجزء؟",
+          "هل تخدم كل معلومة كتبتها مشكلة المؤسسة؟",
+          "هل بقي الموضوع نفسه وتغيّر السؤال فقط عند تغيّر الفعل؟"
+        ]
+      }
+    ],
+    "reviewState_append": "; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; OWNER-TO-CONFIRM items need the author's decision before publishing",
+    "owner_to_confirm": [
+      "Sentence 'انظر إلى الفعل لتعرف نوع التفكير' is general advice built on the p.32 mapping; src-004 never discusses command verbs as such."
+    ]
+  },
+  "explain-level-p-writing": {
+    "file": "content/concepts/assessment/explain-level-p-writing.json",
+    "field": "body",
+    "append_after_block_index": 4,
+    "blocks": [
+      {
+        "t": "h2",
+        "text": "كيف تعرف أن فقرتك ما زالت شرحًا؟"
+      },
+      {
+        "t": "p",
+        "text": "ينتهي الشرح حين يصبح القارئ يعرف الفكرة، وكيف تعمل، وأين تُستخدم، ولماذا هي مهمة، وما أثرها المباشر؛ وعندها فقط يبدأ التحليل. فإذا وجدت نفسك تكتب سلسلة من الأسباب والنتائج المتتابعة فقد دخلت التحليل قبل أن تكمل الشرح."
+      },
+      {
+        "t": "h3",
+        "text": "ثلاث جمل ضعيفة وطريقة إصلاحها"
+      },
+      {
+        "t": "p",
+        "text": "مثال متخيَّل: عيادة أسنان صغيرة تستخدم رسائل تذكير بالمواعيد."
+      },
+      {
+        "t": "table",
+        "head": [
+          "الجملة الضعيفة",
+          "ما الذي ينقصها؟",
+          "بعد الإصلاح"
+        ],
+        "rows": [
+          [
+            "التذكير بالموعد ميزة رائعة.",
+            "ما هو؟ وكيف يعمل؟",
+            "رسالة قصيرة يرسلها نظام الحجز تلقائيًا إلى المريض قبل موعده بيوم."
+          ],
+          [
+            "تُرسل الرسالة إلى المرضى.",
+            "أين يظهر في السيناريو؟",
+            "في هذه العيادة تصل الرسالة إلى هاتف المريض الذي حجز موعدًا مع الطبيب."
+          ],
+          [
+            "وهي مهمة جدًا.",
+            "لماذا هي مهمة هنا تحديدًا؟",
+            "وهي مهمة لأن وقت الطبيب في عيادة صغيرة محدود، وكل موعد ضائع يتركه بلا عمل."
+          ]
+        ]
+      },
+      {
+        "t": "h2",
+        "text": "أخطاء شائعة وأسئلة مراجعة في الشرح"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "تعريف عام يصلح لأي مؤسسة بدل ربط الفكرة بحالتك.",
+          "ذكر أهمية الفكرة دون بيان لماذا تهم هذا السيناريو تحديدًا.",
+          "الانشغال بالأسباب والنتائج البعيدة قبل إكمال الخطوات الخمس."
+        ]
+      },
+      {
+        "t": "h3",
+        "text": "أسئلة مراجعة"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "هل عرّفت الفكرة تعريفًا واضحًا؟",
+          "هل شرحت كيف تعمل أو كيف تحدث؟",
+          "هل ربطتها مباشرة بالمؤسسة أو الحالة؟",
+          "هل بيّنت لماذا هي مهمة في هذا السيناريو تحديدًا؟",
+          "هل اكتفيت بأثر مباشر دون سلسلة تحليل طويلة؟"
+        ]
+      },
+      {
+        "t": "p",
+        "text": "فإذا أجبت بنعم عن الأسئلة الخمسة فقد اكتمل الشرح، ويمكنك أن تبدأ التحليل من أثره المباشر."
+      }
+    ],
+    "reviewState_append": "; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; OWNER-TO-CONFIRM items need the author's decision before publishing",
+    "owner_to_confirm": []
+  },
+  "analyse-level-m-writing": {
+    "file": "content/concepts/assessment/analyse-level-m-writing.json",
+    "field": "body",
+    "append_after_block_index": 2,
+    "blocks": [
+      {
+        "t": "h2",
+        "text": "كيف تنتقل من الشرح إلى التحليل؟"
+      },
+      {
+        "t": "p",
+        "text": "ابدأ التحليل من الأثر الذي ختمتَ به الشرح، ولا تُعِد تعريف الفكرة من جديد. ثم اسأل: لماذا حدث هذا الأثر؟ وما الذي سيحدث بعده؟"
+      },
+      {
+        "t": "h3",
+        "text": "وصف يبقى شرحًا وتحليل يربط السبب بالنتيجة"
+      },
+      {
+        "t": "p",
+        "text": "مثال متخيَّل: عيادة أسنان صغيرة تستخدم رسائل تذكير بالمواعيد."
+      },
+      {
+        "t": "table",
+        "head": [
+          "وصف (ما زال شرحًا)",
+          "تحليل (سبب ← نتيجة ← متأثر ← أهمية الأثر)"
+        ],
+        "rows": [
+          [
+            "تُرسل رسالة التذكير قبل الموعد بيوم وتصل إلى هاتف المريض.",
+            "لأن المريض يتذكر موعده أو يلغيه مبكرًا، يقل الغياب المفاجئ، فيُعاد استخدام الوقت الفارغ لمريض ينتظر؛ فيستفيد الطبيب والمرضى معًا، وهذا مهم لأن وقت الطبيب أغلى مورد في عيادة صغيرة."
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "text": "في الخلية الثانية ظهر السبب والنتيجة ومن تأثر وأهمية الأثر، أما الأولى فتصف ما يحدث فقط."
+      },
+      {
+        "t": "h2",
+        "text": "أخطاء شائعة وأسئلة مراجعة في التحليل"
+      },
+      {
+        "t": "p",
+        "text": "اقرأ فقرة التحليل وابحث فيها عن الأخطاء الآتية قبل أن تنتقل إلى غيرها."
+      },
+      {
+        "t": "ul",
+        "items": [
+          "إعادة تعريف الفكرة في أول فقرة التحليل.",
+          "إضافة معلومات جديدة دون ربطها بما قبلها بسبب ونتيجة.",
+          "ذكر الأثر دون بيان لماذا هو مهم للمؤسسة.",
+          "تكرار النتيجة نفسها بصياغات مختلفة لكل فكرة."
+        ]
+      },
+      {
+        "t": "h3",
+        "text": "أسئلة مراجعة"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "هل بدأت من أثر ذكرته في الشرح؟",
+          "هل ذكرت السبب والنتيجة معًا؟",
+          "هل حدّدت من تأثر ولماذا يهمه الأمر؟",
+          "هل قلت ماذا يعني ذلك للمؤسسة؟"
+        ]
+      },
+      {
+        "t": "p",
+        "text": "فإذا أجبت بنعم عن الأسئلة الأربعة فقد انتقلت من الوصف إلى التحليل."
+      }
+    ],
+    "reviewState_append": "; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; OWNER-TO-CONFIRM items need the author's decision before publishing",
+    "owner_to_confirm": []
+  },
+  "evaluate-level-d-writing": {
+    "file": "content/concepts/assessment/evaluate-level-d-writing.json",
+    "field": "body",
+    "append_after_block_index": 3,
+    "blocks": [
+      {
+        "t": "h2",
+        "text": "ما معنى تقييم مبني على أدلة؟"
+      },
+      {
+        "t": "p",
+        "text": "المقصود بالأدلة وقائع السيناريو وما أوضحته في فقرات الشرح والتحليل قبل الحكم، لا رأي جديد يظهر فجأة عند الحكم. بعد المقارنة اذكر ما ترجّحه الأدلة حتى هذه اللحظة، ثم انقد حكمك، ثم راجع الأدلة من جديد: هل يبقى الخيار مناسبًا مع وجود قيوده؟"
+      },
+      {
+        "t": "h3",
+        "text": "حكم ضعيف وحكم مبني على معيار"
+      },
+      {
+        "t": "p",
+        "text": "مثال متخيَّل: عيادة أسنان صغيرة تقارن بين رسائل التذكير والاتصال الهاتفي لتقليل غياب المرضى."
+      },
+      {
+        "t": "table",
+        "head": [
+          "حكم ضعيف",
+          "حكم قارن بمعيار ونقد نفسه وختم بتوصية"
+        ],
+        "rows": [
+          [
+            "رسائل التذكير أفضل من الاتصال الهاتفي.",
+            "من حيث التكلفة، الرسالة أرخص من الاتصال بكل مريض. ومن حيث الموثوقية، قد يهمل بعض المرضى الرسالة بينما يصعب تجاهل المكالمة. لذلك تبدو الرسائل أنسب لعيادة مواعيدها كثيرة، مع الاعتراف بأن بعضهم لن يقرأها. ويُوصى بتجربتها شهرًا وتسجيل نسبة الغياب ومقارنتها بالشهر السابق."
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "text": "لاحظ أن المقارنة جرت معيارًا بعد معيار، وأن الحكم اعترف بقيده، وأن التوصية خطوة محددة يمكن تنفيذها."
+      },
+      {
+        "t": "h2",
+        "text": "أخطاء شائعة وأسئلة مراجعة في التقييم"
+      },
+      {
+        "t": "ul",
+        "items": [
+          "التمسك بخيارك دون النظر في عيوبه ومتى يكون غيره أفضل.",
+          "وصف كل خيار على حدة بدل مقارنة الخيارات وفق معيار واحد في كل مرة.",
+          "توصية عامة لا تقول للمؤسسة ماذا تفعل فعليًا."
+        ]
+      },
+      {
+        "t": "h3",
+        "text": "أسئلة مراجعة"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "هل حدّدت القرار والبدائل ومعايير المقارنة قبل أن أقارن؟",
+          "هل قارنت كل البدائل وفق معيار واحد في كل مرة؟",
+          "هل ذكرت عيب خياري ومتى يكون البديل أفضل؟",
+          "هل عدت إلى الأدلة قبل أن أحسم؟",
+          "هل توصيتي واضحة ومحددة وقابلة للتطبيق ومرتبطة بالحكم ومبررة؟"
+        ]
+      },
+      {
+        "t": "p",
+        "text": "وإن لم تستطع الإجابة بنعم عن أحد الأسئلة فارجع إلى الفقرة المقابلة له وأكملها."
+      }
+    ],
+    "reviewState_append": "; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; OWNER-TO-CONFIRM items need the author's decision before publishing",
+    "owner_to_confirm": [
+      "Definition of 'الأدلة' (what counts as evidence) is not in src-004 (p.19/21 use the word undefined). Confirm or replace with your own definition."
+    ]
+  },
+  "threat-analysis-method": {
+    "file": "content/concepts/assessment/threat-analysis-method.json",
+    "field": "body",
+    "append_after_block_index": 2,
+    "blocks": [
+      {
+        "t": "h2",
+        "text": "قبل الخطوات الست: ميّز بين التهديد والثغرة والمخاطرة"
+      },
+      {
+        "t": "p",
+        "text": "من الأخطاء الشائعة في الواجبات الخلط بين ثلاثة أشياء: التهديد، والثغرة، والمخاطرة. التهديد هو من أو ما قد يُلحق الضرر، والثغرة نقطة الضعف التي قد يستغلها، والمخاطرة احتمال أن ينجح التهديد في استغلالها مع حجم الأثر الناتج. وللتفصيل انظر [[threat-vulnerability-risk|التهديد والثغرة والمخاطرة]]."
+      },
+      {
+        "t": "h3",
+        "text": "مثال متخيَّل: الأشياء الثلاثة في موقف واحد"
+      },
+      {
+        "t": "callout",
+        "kind": "example",
+        "text": "يستعمل موظف الاستقبال حاسوبًا يقبل أي ذاكرة USB. **التهديد:** ذاكرة قد تحمل برمجية خبيثة. **الثغرة:** لا توجد قاعدة تمنع توصيلها بهذا الحاسوب. **المخاطرة:** قد تنتشر البرمجية فتتعطل المواعيد، وتزيد خطورتها لأن الحاسوب يضم بيانات المرضى.",
+        "title": "عيادة صغيرة"
+      },
+      {
+        "t": "p",
+        "text": "لاحظ أن كل جملة تجيب عن سؤال مختلف، وأن المؤسسة حاضرة في الثلاث."
+      },
+      {
+        "t": "h2",
+        "text": "أسئلة مراجعة لتحليل التهديد"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "هل بدأت مما تحاول المؤسسة حمايته؟",
+          "هل قلت من قد يهاجمه وكيف قد يصل إليه؟",
+          "هل ربطت التهديد بثغرة موجودة في هذه المؤسسة لا بثغرة عامة؟",
+          "هل ذكرت ما قد يحدث لو نجح التهديد وحجم أثره على هذه المؤسسة؟",
+          "هل اخترت الإجراء الأمني بعد التحليل لا قبله؟"
+        ]
+      },
+      {
+        "t": "callout",
+        "kind": "warning",
+        "text": "كتابة اسم برنامج حماية أو جدار ناري قبل أن تحدد ما الذي تحميه ومن يهدده.",
+        "title": "خطأ شائع"
+      },
+      {
+        "t": "p",
+        "text": "هذه أسئلة لقراءة نصك أنت، ولا تغني عن الخطوات الست ولا عن تعليمات مهمتك."
+      }
+    ],
+    "reviewState_append": "; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; OWNER-TO-CONFIRM items need the author's decision before publishing",
+    "owner_to_confirm": [
+      "The six-step method on this page is sourced to src-015 (outside the permitted read set); questions 3 and 4 restate steps 3 to 5 and were not verified.",
+      "Page metadata is inconsistent: sourceIds says src-015 but sourceReferences cites src-004. Decide the true source."
+    ]
+  },
+  "linking-paragraphs": {
+    "file": "content/concepts/assessment/linking-paragraphs.json",
+    "field": "body",
+    "append_after_block_index": 4,
+    "blocks": [
+      {
+        "t": "h2",
+        "text": "ربط الشرح بالتحليل"
+      },
+      {
+        "t": "p",
+        "text": "من أهم مواضع الربط الانتقال من آخر فقرة شرح إلى أول فقرة تحليل. لا تبدأ التحليل من الصفر ولا تُعِد التعريف، بل ابدأ من الأثر الذي انتهى عنده الشرح."
+      },
+      {
+        "t": "table",
+        "head": [
+          "نهاية فقرة الشرح",
+          "بداية فقرة التحليل"
+        ],
+        "rows": [
+          [
+            "تقلل رسالة التذكير الغياب المفاجئ في العيادة.",
+            "وعندما يُلغى الموعد مبكرًا يمكن إعطاؤه لمريض ينتظر، فيقل الوقت الفارغ في جدول الطبيب."
+          ]
+        ],
+        "caption": "مثال متخيَّل: عيادة أسنان صغيرة"
+      },
+      {
+        "t": "p",
+        "text": "الفقرة الثانية أخذت خيط الأثر من الأولى وأضافت فكرة جديدة هي إعادة استخدام الوقت. بهذا يصبح التحليل استمرارًا للشرح لا بداية تقرير جديد."
+      },
+      {
+        "t": "h2",
+        "text": "أخطاء شائعة وأسئلة مراجعة في الربط"
+      },
+      {
+        "t": "p",
+        "text": "اقرأ الفقرتين المتجاورتين معًا لا كل فقرة وحدها، وانتبه إلى الخطأين الآتيين."
+      },
+      {
+        "t": "ul",
+        "items": [
+          "بدء كل فقرة بتعريف جديد كأنها بداية التقرير.",
+          "فقرة تنتهي دون نتيجة أو فكرة تُبنى عليها الفقرة التي بعدها."
+        ]
+      },
+      {
+        "t": "h3",
+        "text": "أسئلة مراجعة"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "هل تنتهي كل فقرة بنتيجة أو فكرة يمكن البدء منها؟",
+          "هل تبدأ الفقرة التالية من تلك النتيجة لا من الصفر؟",
+          "هل أضافت كل فقرة شيئًا جديدًا؟",
+          "هل أعدت تعريف الفكرة عند انتقالي إلى التحليل؟ إن فعلت فاحذف التعريف.",
+          "إذا قرأت آخر جملة في فقرة وأول جملة في التي بعدها معًا، هل تبدو الثانية نتيجة للأولى؟"
+        ]
+      }
+    ],
+    "reviewState_append": "; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; OWNER-TO-CONFIRM items need the author's decision before publishing",
+    "owner_to_confirm": [
+      "The existing connector list and 'deleting the link sentence' rule are site-originated (B7); not extended here."
+    ]
+  },
+  "report-consistency-and-repetition": {
+    "file": "content/concepts/assessment/report-consistency-and-repetition.json",
+    "field": "body",
+    "append_after_block_index": 4,
+    "blocks": [
+      {
+        "t": "h2",
+        "text": "ثلاث قراءات قبل التسليم"
+      },
+      {
+        "t": "p",
+        "text": "بدل قراءة واحدة تبحث فيها عن كل شيء، اقرأ تقريرك ثلاث مرات، واطرح في كل مرة سؤالًا واحدًا."
+      },
+      {
+        "t": "ol",
+        "items": [
+          "قراءة التناقض: هل يوجد حكمان لا يجتمعان؟ وإن تغيّر حكمي فهل وضّحت السبب؟",
+          "قراءة التكرار: هل تكررت نتيجة؟ وهل غيّرت سببها وزاوية تحليلها؟",
+          "قراءة الموضوع: هل بقيت الفقرات كلها مرتبطة بالفكرة الأساسية مع تغيّر السؤال فقط؟"
+        ]
+      },
+      {
+        "t": "h3",
+        "text": "مثال متخيَّل على تغيير الموضوع"
+      },
+      {
+        "t": "p",
+        "text": "مخبز حيّ يدرس الطلب المسبق لتقليل الخبز المرمي."
+      },
+      {
+        "t": "table",
+        "head": [
+          "الموضوع تغيّر",
+          "الموضوع ثابت والسؤال هو المتغيّر"
+        ],
+        "rows": [
+          [
+            "في التقييم: يُفضَّل نقل المخبز إلى شارع أكبر.",
+            "في التقييم: يُقارَن الطلب المسبق بتقدير الكمية بالخبرة وفق معيار تقليل الهدر."
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "text": "الجملة الأولى فتحت موضوعًا جديدًا لم يُشرح ولم يُحلَّل، أما الثانية فبقيت على الفكرة نفسها وسألت عنها سؤال المقارنة."
+      }
+    ],
+    "reviewState_append": "; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; OWNER-TO-CONFIRM items need the author's decision before publishing",
+    "owner_to_confirm": [
+      "The 'three reads' format is a site suggestion (the existing underline/circle test is also site-originated, B7)."
+    ]
+  },
+  "report-formatting-and-emphasis": {
+    "file": "content/concepts/assessment/report-formatting-and-emphasis.json",
+    "field": "body",
+    "append_after_block_index": 6,
+    "blocks": [
+      {
+        "t": "h2",
+        "text": "اجعل مكان كل جزء واضحًا للقارئ"
+      },
+      {
+        "t": "p",
+        "text": "يفيد التنسيق حين يعرف القارئ أين يجد كل جزء مما طُلب منك. ولهذا يُستحسن أن يسمّي العنوان الفرعي الفكرة التي تعالجها الفقرات تحته، لا كلمة عامة مثل «معلومات»."
+      },
+      {
+        "t": "table",
+        "head": [
+          "عنوان غامض",
+          "عنوان واضح"
+        ],
+        "rows": [
+          [
+            "معلومات",
+            "الطلب المسبق: كيف يعمل داخل المخبز"
+          ],
+          [
+            "مناقشة",
+            "مقارنة الطلب المسبق بتقدير الكمية بالخبرة"
+          ],
+          [
+            "رأيي",
+            "التوصية: تجربة الطلب المسبق على صنفين"
+          ]
+        ]
+      },
+      {
+        "t": "p",
+        "text": "وإن كانت مهمتك مقسّمة إلى أجزاء فاجعل ترتيب أقسام التقرير يتبع ترتيبها."
+      },
+      {
+        "t": "h3",
+        "text": "أسئلة مراجعة للتنسيق"
+      },
+      {
+        "t": "ol",
+        "items": [
+          "هل يعرف القارئ من العناوين أين يبدأ كل جزء مما طُلب؟",
+          "هل الفقرات مرتبة ومفصولة بمسافات مناسبة؟",
+          "هل ميّزت المصطلح أو النتيجة أو السبب أو الحكم أو التوصية فقط؟",
+          "هل بقي في الصفحة شيء مميز حقًا، أم ميّزت كل شيء؟"
+        ]
+      }
+    ],
+    "reviewState_append": "; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; OWNER-TO-CONFIRM items need the author's decision before publishing",
+    "owner_to_confirm": [
+      "'Section order follows the task order' is general advice, not in src-004."
+    ]
+  }
+}

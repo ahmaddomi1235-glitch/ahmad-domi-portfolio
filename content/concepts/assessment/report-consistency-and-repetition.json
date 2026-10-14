@@ -29,7 +29,7 @@
   ],
   "officialSource": null,
   "status": "published",
-  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts)",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY teaching method only; the source's scenario-specific model paragraphs are not reproduced (illustrations here are new, in neutral contexts) ; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; sentences that would need the author's confirmation were left out",
   "sourceIds": [
     "src-004"
   ],
@@ -97,6 +97,31 @@
     {
       "t": "p",
       "text": "وهذه القواعد تعمل طوال التقرير: [[linking-paragraphs|ربط الفقرات]] و[[report-formatting-and-emphasis|التنسيق والتمييز]] و[[evaluate-level-d-writing|التقييم]]."
+    },
+    {
+      "t": "h3",
+      "text": "مثال متخيَّل على تغيير الموضوع"
+    },
+    {
+      "t": "p",
+      "text": "مخبز حيّ يدرس الطلب المسبق لتقليل الخبز المرمي."
+    },
+    {
+      "t": "table",
+      "head": [
+        "الموضوع تغيّر",
+        "الموضوع ثابت والسؤال هو المتغيّر"
+      ],
+      "rows": [
+        [
+          "في التقييم: يُفضَّل نقل المخبز إلى شارع أكبر.",
+          "في التقييم: يُقارَن الطلب المسبق بتقدير الكمية بالخبرة وفق معيار تقليل الهدر."
+        ]
+      ]
+    },
+    {
+      "t": "p",
+      "text": "الجملة الأولى فتحت موضوعًا جديدًا لم يُشرح ولم يُحلَّل، أما الثانية فبقيت على الفكرة نفسها وسألت عنها سؤال المقارنة."
     },
     {
       "t": "p",

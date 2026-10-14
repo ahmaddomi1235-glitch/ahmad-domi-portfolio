@@ -32,7 +32,7 @@
   ],
   "officialSource": null,
   "status": "published",
-  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY: the method only; the source's worked example for a named assignment scenario is withheld",
+  "reviewState": "assistant-drafted in original wording from the author's own material (authorship confirmed by the owner 2026-10-04); pending author review; PUBLIC_SUMMARY: the method only; the source's worked example for a named assignment scenario is withheld ; Phase 9 additions (draft 2026-10-14, Agent B): sentences tagged SUPPORTED are reworded from src-004 (pages cited in the agentB report); GENERAL-PEDAGOGY sentences and all invented illustrations (bakery, clinic) are generic study advice or teaching illustrations written by the site, not claimed as the author's own method; sentences that would need the author's confirmation were left out",
   "sourceIds": [
     "src-015"
   ],
@@ -101,6 +101,50 @@
           "[[evaluate-level-d-writing|كتابة التقييم]]"
         ]
       ]
+    },
+    {
+      "t": "h2",
+      "text": "قبل الخطوات الست: ميّز بين التهديد والثغرة والمخاطرة"
+    },
+    {
+      "t": "p",
+      "text": "من الأخطاء الشائعة في الواجبات الخلط بين ثلاثة أشياء: التهديد، والثغرة، والمخاطرة. التهديد هو من أو ما قد يُلحق الضرر، والثغرة نقطة الضعف التي قد يستغلها، والمخاطرة احتمال أن ينجح التهديد في استغلالها مع حجم الأثر الناتج. وللتفصيل انظر [[threat-vulnerability-risk|التهديد والثغرة والمخاطرة]]."
+    },
+    {
+      "t": "h3",
+      "text": "مثال متخيَّل: الأشياء الثلاثة في موقف واحد"
+    },
+    {
+      "t": "callout",
+      "kind": "example",
+      "text": "يستعمل موظف الاستقبال حاسوبًا يقبل أي ذاكرة USB. **التهديد:** ذاكرة قد تحمل برمجية خبيثة. **الثغرة:** لا توجد قاعدة تمنع توصيلها بهذا الحاسوب. **المخاطرة:** قد تنتشر البرمجية فتتعطل المواعيد، وتزيد خطورتها لأن الحاسوب يضم بيانات المرضى.",
+      "title": "عيادة صغيرة"
+    },
+    {
+      "t": "p",
+      "text": "لاحظ أن كل جملة تجيب عن سؤال مختلف، وأن المؤسسة حاضرة في الثلاث."
+    },
+    {
+      "t": "h2",
+      "text": "أسئلة مراجعة لتحليل التهديد"
+    },
+    {
+      "t": "ol",
+      "items": [
+        "هل بدأت مما تحاول المؤسسة حمايته؟",
+        "هل قلت من قد يهاجمه وكيف قد يصل إليه؟",
+        "هل اخترت الإجراء الأمني بعد التحليل لا قبله؟"
+      ]
+    },
+    {
+      "t": "callout",
+      "kind": "warning",
+      "text": "كتابة اسم برنامج حماية أو جدار ناري قبل أن تحدد ما الذي تحميه ومن يهدده.",
+      "title": "خطأ شائع"
+    },
+    {
+      "t": "p",
+      "text": "هذه أسئلة لقراءة نصك أنت، ولا تغني عن الخطوات الست ولا عن تعليمات مهمتك."
     },
     {
       "t": "h2",

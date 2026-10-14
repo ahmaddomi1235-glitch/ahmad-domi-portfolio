@@ -50,3 +50,6 @@ Wrong images still attached: 'AF BTEC' on P012, P091 and the AI-teacher prompt, 
 - E1: crawl condition met on Bing. No named recommendation on any assignment-help prompt (ChatGPT, Gemini, Perplexity): KPI not met; teacher/resource prompts unchanged except one flip (P049). Verdict: no effect shown; keep open for one more run in 3-4 days, include Google status.
 - E2: PREMATURE (page not recrawled). Treatment 0 named on all engines; the only secondary signal is Perplexity citing his site on the control prompts.
 - Brand-level: Gemini now names him on P001 (Gemini baseline Oct 10 was 7/30 first pass).
+
+## 2026-10-14 post-Phase-9 check
+See operations/domi-phase9/PROGRESS_CHECK_2026-10-14.md: assignment-help 0/30 ChatGPT, 0/28 Gemini, Perplexity rate-limited after 1 run; teacher controls 5/5; portraits 0/7; no verified post-deploy crawl of the Phase 9 pages or the E2 page.

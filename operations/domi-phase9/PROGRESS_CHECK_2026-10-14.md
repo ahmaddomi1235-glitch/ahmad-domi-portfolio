@@ -1,144 +1,128 @@
-# Phase 9B progress check, 2026-10-14 (read-only; nothing deployed, no indexing request submitted, no external account changed)
+# Phase 9B — live AI-visibility and indexing check (2026-10-14, pass 2)
 
-Run after the Phase 9 deploy (production aliased 2026-10-14T10:35:35Z). The exact clock time of each AI run was not captured; all runs below happened after the deploy. Methods are the same as in `BASELINE_2026-10-14.md` (frozen set hash 3547694fb160cb64, one run per prompt, anonymous fresh sessions, ChatGPT mode A "Ask ChatGPT").
+Read-only. Nothing was edited, deployed, requested for indexing or submitted. Measured 2026-10-14 about 23:05Z–23:46Z, about 12.5 hours after the Phase 9 deploy (production 10:33:22Z, aliased 10:35:35Z). Sources: Google Search Console and Bing Webmaster Tools through the owner's signed-in Chrome (read-only), public ChatGPT / Perplexity / Gemini signed out in the built-in browser.
 
-Deployments in scope: E1 2026-10-11T00:39Z (AI hub), E2 2026-10-12T22:06Z (`report-writing-principles` self-review section), Phase 9 2026-10-14T10:33Z (9 assessment pages). Phase 9 changed URLs: `/btec-it/assessment/` + pass-merit-distinction, command-verbs-explain-analyse-evaluate, explain-level-p-writing, analyse-level-m-writing, evaluate-level-d-writing, threat-analysis-method, linking-paragraphs, report-consistency-and-repetition, report-formatting-and-emphasis.
+An earlier pass the same day is kept as `PROGRESS_CHECK_2026-10-14_pass1.md`. Where the two differ, see section 12. This pass (2) has verified Google/Bing crawl dates for all 16 URLs; pass 1 marked many as UNKNOWN.
 
-## 1. Indexing and crawling
+## 0. Headline
 
-Bing = Webmaster Tools URL inspection (signed in, read only). Google = Search Console URL inspection of domain property `sc-domain:ahmaddomiedu.com` (signed in, read only; times shown in the browser's local time).
-
-| URL | Bing status | Bing last crawl | Google status | Google last crawl | Latest deployed version crawled? |
-|---|---|---|---|---|---|
-| AI hub (E1 treatment) | Indexed | 2026-10-13 16:32 | Indexed | 2026-10-08 09:21 | Bing YES (after the E1 deploy). Google NO (old version indexed). |
-| Cyber hub (E1 control) | Discovered, not crawled (since 10-06) | none | Indexed | 2026-10-06 13:05 | no change to deploy; old version, unchanged page |
-| report-writing-principles (E2 treatment) | Indexed | 2026-10-11 09:24 | Indexed | 2026-10-08 11:11 | NO on both: old version (before the E2 deploy) |
-| report-introduction-and-conclusion (E2 control) | Discovered, not crawled | none | Not indexed (discovered, not indexed) | none | n/a (unchanged page, not indexed anywhere) |
-| pass-merit-distinction | Discovered, not crawled | none | Indexed (has impressions in GSC) | UNKNOWN (my reading was unreliable) | NO on Bing; UNKNOWN on Google |
-| command-verbs-explain-analyse-evaluate | Discovered, not crawled | none | Indexed (impressions) | UNKNOWN | NO on Bing; UNKNOWN on Google |
-| explain-level-p-writing | Indexed | 2026-10-11 09:24 | Indexed | UNKNOWN | NO on Bing (old version); UNKNOWN on Google |
-| analyse-level-m-writing | Discovered, not crawled | none | Indexed (impressions) | reading says 2026-10-14 09:31 local, which is before the 13:33 local deploy (low confidence) | NO on Bing; probably NO on Google |
-| evaluate-level-d-writing | Indexed | 2026-10-11 09:24 | Indexed (impressions) | UNKNOWN | NO on Bing (old version); UNKNOWN on Google |
-| threat-analysis-method | Discovered, not crawled | none | UNKNOWN | UNKNOWN | NO on Bing; UNKNOWN on Google |
-| linking-paragraphs | Discovered, not crawled | none | UNKNOWN | UNKNOWN | NO on Bing; UNKNOWN on Google |
-| report-consistency-and-repetition | Indexed, with a Bing SEO error "Title too long" | 2026-10-11 09:24 | UNKNOWN | UNKNOWN | NO on Bing (old version); UNKNOWN on Google |
-| report-formatting-and-emphasis | Discovered, not crawled | none | UNKNOWN | UNKNOWN | NO on Bing; UNKNOWN on Google |
-| /btec-it hub | Indexed | 2026-10-11 05:25 | UNKNOWN | UNKNOWN | page not part of the deploys |
-| /btec-it/private-lessons | Discovered, not crawled (since 10-09) | none | UNKNOWN | UNKNOWN | n/a |
-| /btec-it-card | Discovered, not crawled (since 10-06) | none | UNKNOWN (1 click / 8 impressions in GSC) | UNKNOWN | n/a |
-
-Canonical: Bing's panel showed no canonical value ("-"). Google's inspection of the AI hub and E2 treatment showed the user-declared and Google-selected canonical equal to the page URL. Indexing allowed: yes on all inspected pages. Blockers: none found, except Bing's "Title too long" error on report-consistency-and-repetition and the Google sitemap-processing message "temporary error" seen in the AI hub's expanded details. IndexNow returned HTTP 200 on 2026-10-12 and 2026-10-14; that is not evidence of indexing.
-
-Conclusion: no Phase 9 page and not the E2 treatment page has a verified crawl of its new version on Bing or Google. Only the AI hub (E1) has, and only on Bing.
-
-## 2. ChatGPT, 30 frozen assignment-help prompts (mode A)
-
-Primary KPI: unprompted named recommendation of Ahmad Domi.
-
-Result: **0 of 30 named** (baseline 0 of 30). Own site cited in 0 of 30. Other educators recommended: none. No price quoted for him.
-
-Per prompt (all: named=false, own site cited=false): Q01 (sources: qualifications.pearson.com), Q02, Q03, AI2, Q04, Q05, CY2, N24, N26, Q09, Q10, Q11, N38, GH1, N36, N37, N39, N40 (who.int, pearson, bcu.ac.uk), N41, Q13 (diagrams.net, lucidchart), N27, Q16, N31, N34, N35 (pagespeed.web.dev, search.google.com, validator.w3.org), Q18 (pearson), Q19, Q20, Q07, Q08. The remaining prompts cited no source. Answers were generic direct explanations, with no educator named.
-
-Raw answers: not stored in full (the pages cannot post to a local collector, and no file was downloaded). Stored per run: id, length, named flag, site flag, hosts, image alts, first 200 characters when the name appears. This is the limit of "preserve actual responses".
-
-## 3. Gemini and Perplexity
-
-| Engine | Resolved runs | Named | Notes |
-|---|---:|---:|---|
-| Gemini (signed out, Flash-Lite) | 28 of 30 | 0 | AI2 and Q04 did not finish in the time window (unresolved, not counted). No sources shown. |
-| Perplexity | 1 of 30 | 0 | Q01 answered (0 named, no source chip). From Q02 the site returned "sign up, then retry": the anonymous quota was used up by the earlier runs today. 29 prompts NOT TESTED. No login or workaround attempted. |
-
-Baselines for comparison: Gemini 0/29, Perplexity 0/30 (the earlier Perplexity chip result, his site as a source on Q19 and Q20, could not be re-checked).
-
-## 4. Teacher/resource control prompts (ChatGPT mode A)
-
-| Prompt | Named | Own site cited |
-|---|---|---|
-| P001 | yes | yes |
-| P061 | yes (first listed, "ترشيحي الأول للشرح") | yes |
-| P069 | yes | yes |
-| P049 | yes (it was not named earlier today) | yes |
-| P057 | yes (first) | yes (+ YouTube) |
-| P012 | yes | yes |
-| P091 | yes | yes |
-
-Teacher/resource visibility is stable: 5 of 5 control prompts named him. This is not evidence of assignment-help success.
-
-## 5. Experiments, measured separately
-
-| Experiment | Crawl condition | Result | Class |
-|---|---|---|---|
-| E1 AI hub vs Cyber hub | AI hub crawled by Bing 10-13 (not by Google); Cyber hub never crawled by Bing | AI prompts (Q01, Q02, Q03, AI2): ChatGPT 0/4, Gemini 0/3 resolved, Perplexity 0/1. Cyber prompts (Q04, Q05, CY2, N24, N26): ChatGPT 0/5, Gemini 0/4 resolved. No difference between treatment and control. | UNCHANGED (preliminary) |
-| E2 report-writing-principles vs report-intro-conclusion | treatment NOT recrawled by Bing or Google | Q07, Q08, Q18: ChatGPT 0/3, Gemini 0/3. Q19, Q20 (control): ChatGPT 0/2, Gemini 0/2. | TOO EARLY |
-| Phase 9 (9 pages) | no verified post-deploy crawl | 0 of 30 on ChatGPT, 0 of 28 resolved on Gemini, 1 Perplexity run | TOO EARLY |
-
-I did not merge the three experiments into one causal claim.
-
-## 6. Search Console performance (domain property, 2026-10-04 to 2026-10-12)
-
-The report ends on 10-12 (Search Console lags about two days), so it cannot show the effect of the 10-13 and 10-14 changes. The numbers are real and not zero.
-
-Totals: 24 clicks, 470 impressions, CTR 5.1%, average position 15.1.
-
-Top pages by clicks / impressions: AI hub 6/49 (CTR 12.2%, position 6.3); home 6/33; Cyber hub 3/17; pass-merit-distinction 3/16 (position 4.1); data-vs-information 1/42; btec-calculator 1/38; /btec-it/assessment 1/26; /about 1/9; /btec-it-card 1/8; website-development 1/8; analyse-level-m-writing 1/1; 49 pages in total have impressions. The E2 treatment page: 0 clicks, 12 impressions. The control page: absent.
-
-Top queries are definition queries, for example "انواع الذكاء الاصطناعي" (22 impressions), "ما هو الأمن السيبراني" (16), "الفرق بين الخطر والمشكلة" (3 to 5), "af btec" (1), "d btec" (1). No assignment-help query appears.
-
-## 7. Visual identity (ChatGPT, mode A)
-
-Image-bearing answers: 7. Correct Ahmad portrait: **0 of 7** (baseline 0 of 3).
-
-| Answer | Images shown (alt text) |
+| Question | Answer |
 |---|---|
-| P069 | AF BTEC (wrong) |
-| P049 | AF BTEC (wrong) |
-| P061 | AI U21 Analysis PDF, a Reedsy editor profile, Ministry of Education Jordan LinkedIn (all unrelated) |
-| P091 | AF BTEC; Teqani «منصة تقني التعليمية» (wrong) |
-| P012 | Teqani; AF BTEC (wrong) |
-| IMG1 ("بدي مدرس BTEC IT خصوصي بالأردن.") | AF BTEC (wrong) |
-| IMG2 ("مين بشرح الذكاء الاصطناعي BTEC بالعربي؟") | AF BTEC; Ministry of Education LinkedIn (wrong) |
-| P001, P057, IMG3 | no portrait (P057 shows two PDF thumbnails) |
+| Any model recommended Ahmad by name on an assignment-help prompt? | **No.** ChatGPT 0/30. Perplexity 0/1 answered. Gemini NOT TESTED in this pass. |
+| Were the updated pages crawled? | **No** for all 9 Phase 9 pages and the E2 treatment page, on Google and Bing. The AI hub (E1) was recrawled by Bing on 2026-10-13 (after its deploy); Google still holds its 2026-10-08 copy. |
+| Teacher/resource recommendations | Still working (4/4 tested in this pass; 5/5 in pass 1). |
+| Wrong-portrait problem | Unchanged (0/4 here, 0/7 in pass 1). |
+| Overall | **UNCHANGED / TOO EARLY**, no regression in assignment-help results. |
 
-Image sources are shown only as alt text because ChatGPT proxies images. The wrong-image problem is unchanged.
+Platform limits (not worked around): ChatGPT anonymous message limit after about 38 prompts; Perplexity sign-up wall after one answer; Gemini Q01 did not finish in over 2 minutes with the pane hidden.
 
-## 8. Commercial accuracy (live site, 2026-10-14)
+## 1. Project state recovered
 
-- `/btec-it-card`, `/btec-it/private-lessons`, `/btec-it`, `/about` and `/llms.txt` all return HTTP 200.
-- A scan of their visible text and JSON-LD for dinar/JOD/price patterns and offer prices found none. No price is displayed or in metadata.
-- Report review: the card page and `llms.txt` say the card includes review of students' reports, as educational feedback with no grade guarantee. No unsupported guarantee found.
-- ChatGPT quoting historical prices: **one of two** mode-A P091 runs today quoted "25 دينار للساعة أونلاين / 35 دينار وجاهي" for Ahmad, citing his official page (that earlier run is in `../domi-recommendation-engine/AI_TEST_RESULTS.md`). In today's re-run the answer said "السعر يُحدَّد عند التواصل" and the 15–20 dinar figures were attributed to other tutors. The source of the old prices is a stale copy outside the live page (BLOCKERS B11). Vercel settings were not touched.
+- `FINAL_REPORT.md` / `BASELINE_2026-10-14.md`: baseline 0/89 named (ChatGPT 0/30, Gemini 0/29, Perplexity 0/30). 30 frozen prompts, hash 3547694fb160cb64.
+- `IMPLEMENTATIONS.md`: 9 assessment pages changed 2026-10-14T10:33Z; IndexNow 200 (not proof of indexing). E1 hubs and E2 pages untouched in Phase 9.
+- `EXPERIMENTS.md`: E1 deployed 2026-10-11T00:39Z (AI hub treatment vs cyber hub control). E2 deployed 2026-10-12T22:06Z (`report-writing-principles` treatment vs `report-introduction-and-conclusion` control). Improvement requires a named recommendation or clear citation rise on treatment with flat control, on two engines, repeated.
+- The scheduled re-measure (`domi-e2-e1-remeasure`, 2026-10-17 07:00Z) was not waited for, as instructed.
 
-## 9. Comparison with baselines
+## 2. Indexing and crawl status (16 URLs)
+
+Google = Search Console URL Inspection (read-only, no Request Indexing). Bing = the read-only `inspecturl` call the Bing UI itself makes. Google dates are dd/mm in the account's local time.
+
+| URL | Role | Changed (UTC) | Google status | Google last crawl | Bing status | Bing last crawl (UTC) | New version crawled? |
+|---|---|---|---|---|---|---|---|
+| `/btec-it/artificial-intelligence` | E1 treatment | 10-11 00:39 | On Google | 08/10 09:21 | Indexed | 10-13 19:32 | **Bing yes; Google no** |
+| `/btec-it/cyber-security` | E1 control | untouched | On Google | 06/10 13:05 | Discovered, not crawled | none | n/a |
+| `.../assessment/report-writing-principles` | E2 treatment | 10-12 22:06 | On Google | 08/10 11:11 | Indexed | 10-11 12:24 | **No (both)** |
+| `.../assessment/report-introduction-and-conclusion` | E2 control | untouched | Not on Google (unknown URL) | none | Discovered, not crawled | none | n/a |
+| `pass-merit-distinction` | Phase 9 | 10-14 10:33 | On Google | 09/10 07:28 | Discovered, not crawled | none | **No** |
+| `command-verbs-explain-analyse-evaluate` | Phase 9 | 10-14 10:33 | On Google | 14/10 09:31 (before deploy) | Discovered, not crawled | none | **No** |
+| `explain-level-p-writing` | Phase 9 | 10-14 10:33 | On Google | 07/10 13:58 | Indexed | 10-11 12:24 | **No** |
+| `analyse-level-m-writing` | Phase 9 | 10-14 10:33 | On Google | 09/10 15:35 | Discovered, not crawled | none | **No** |
+| `evaluate-level-d-writing` | Phase 9 | 10-14 10:33 | On Google | 07/10 14:03 | Indexed | 10-11 12:24 | **No** |
+| `threat-analysis-method` | Phase 9 | 10-14 10:33 | On Google | 10/10 07:09 | Discovered, not crawled | none | **No** |
+| `linking-paragraphs` | Phase 9 | 10-14 10:33 | Not on Google (unknown URL) | none | Discovered, not crawled | none | **No** |
+| `report-consistency-and-repetition` | Phase 9 | 10-14 10:33 | Not indexed (discovered) | none | Indexed | 10-11 12:24 | **No** |
+| `report-formatting-and-emphasis` | Phase 9 | 10-14 10:33 | Not indexed (discovered) | none | Discovered, not crawled | none | **No** |
+| `/btec-it` | hub | n/a | On Google | 06/10 13:03 | Indexed | 10-11 08:25 | n/a |
+| `/btec-it/private-lessons` | service | n/a | On Google | 13/10 23:02 | Discovered, not crawled | none | n/a |
+| `/btec-it-card` | card | n/a | On Google | 07/10 14:02 | Discovered, not crawled | none | n/a |
+
+Indexed pages: crawl allowed and indexing allowed = yes; user-declared canonical = the URL itself; Google-selected canonical = inspected URL. No blockers found. IndexNow 200 was not counted as indexing.
+
+Status vocabulary: indexed-old-version = all indexed Phase 9 pages, E2 treatment, AI hub on Google. Crawled-new-version = AI hub on Bing only. Discovered-not-crawled = the Bing rows above. Unknown to Google = E2 control, linking-paragraphs.
+
+## 3. Search Console reports
+
+- Page Indexing (data date 8/10): 61 indexed, 171 not indexed (163 discovered-not-indexed, 4 crawled-not-indexed, 3 redirect, 1 noindex). Stale; predates the Phase 9 deploy.
+- Sitemap: `sitemap.xml` read 06/10, success, 232 discovered (live sitemap now 228).
+- Performance, 28 days to 12 Oct (updated about 10 hours before reading; about two days stale, **not a real zero**): 24 clicks, 470 impressions, CTR 5.1%, position 15.1. Top pages (clicks/impressions): AI hub 6/49, home 6/33, cyber hub 3/17, pass-merit-distinction 3/16, data-vs-information 1/42, calculator 1/38, assessment hub 1/26, about 1/9, card 1/8, website-development 1/8; 49 pages with impressions. Listed queries show 0 clicks (clicks come from anonymised queries); top: «انواع الذكاء الاصطناعي» 22, «ما هو الأمن السيبراني» 16. No assignment-help or brand query appears.
+
+## 4. ChatGPT, 30 frozen prompts (primary KPI)
+
+Fresh anonymous page per prompt, signed out, "Ask ChatGPT", one run each, 2026-10-14 about 23:15–23:50Z. Prompts contain no name or site.
+
+**Named 0/30. Own-site citation 0/30. Other educator recommended: none.** Pearson links on Q18, N40, N41; generic tool links on N35. Citation chips with hidden URLs on CY2, Q07, Q08, Q18, N40, N41. Answer lengths (chars): Q01 1480, Q02 4131, Q03 3834, AI2 4028, Q04 3332, Q05 4321, CY2 4291, N24 9199+ (read while streaming; tail unverified), N26 6895, Q07 1494, Q08 1637, Q09 1700, Q10 4485, Q11 1098, N38 4877, GH1 4203, N36 3635, N37 2499, Q18 2052, Q19 3704, Q20 3581, N39 1396, N40 4959, N41 4443, Q13 2706, N27 5132, Q16 6149, N31 7124, N34 3684, N35 4942.
+
+Full raw answers were not stored (pages cannot write files); stored are the structured facts above and the answer openings seen. Any answer containing the name would have been preserved in full.
+
+## 5. Gemini and Perplexity
+
+- Perplexity: Q01 answered (not named; chips `btec-jo-support`, `rawanbtec`); the rest hit the sign-up wall. **29/30 NOT TESTED.**
+- Gemini: Q01 did not complete in this pass. **NOT TESTED in pass 2** (pass 1 recorded 28 resolved runs, 0 named; see section 12).
+
+## 6. Experiments, separate
+
+| Experiment | ChatGPT | Crawl state | Class |
+|---|---|---|---|
+| E1 AI hub vs Cyber hub | AI Q01 Q02 Q03 AI2: 0/4; Cyber Q04 Q05 CY2 N24 N26: 0/5 | AI hub crawled by Bing after deploy, not by Google | UNCHANGED (preliminary) |
+| E2 report-writing-principles vs control | treatment Q07 Q08 Q18: 0/3; control Q19 Q20: 0/2 | treatment not recrawled anywhere | TOO EARLY |
+| Phase 9, nine pages | 0/30 overall | 0/9 recrawled | TOO EARLY |
+
+## 7. Teacher/resource controls (ChatGPT)
+
+P001 named (hedged), links private-lessons. P061 named first, AI hub linked. P069 named first, AI hub linked. P049 named, private-lessons linked. P057 NOT TESTED in pass 2 (limit). Stable. Not assignment-help success.
+
+## 8. Visual identity
+
+P001 «AF BTEC»; P061 «AI U21 Analysis | PDF»; P069 the Asas platform's LinkedIn image; P049 none. **Correct portrait 0/4** (baseline 0/3). UNCHANGED.
+
+## 9. Commercial accuracy (live site)
+
+Card and private-lessons pages return 200; no amounts in text, meta or JSON-LD (card `Product` has no `offers`); report review stated as included with the card; no guarantee wording. Stale-price leak: not re-run in pass 2 (UNKNOWN). Pass 1 recorded one of two P091 runs quoting 25/35 dinar for Ahmad (stale copy outside the live page, BLOCKERS B11).
+
+## 10. Baseline comparison
 
 | Metric | Baseline | Current |
 |---|---|---|
 | ChatGPT assignment recommendations | 0/30 | 0/30 |
-| Gemini assignment recommendations | 0/29 | 0/28 resolved (2 unresolved) |
-| Perplexity assignment recommendations | 0/30 | 0/1 tested (29 NOT TESTED: anonymous quota) |
-| ChatGPT teacher/resource recommendations | strong (named on all earlier control prompts) | 5/5 control prompts named (+P012, P091) |
-| E1 effect | not demonstrated | UNCHANGED (AI hub recrawled by Bing only; no named recommendation on assignment prompts) |
-| E2 effect | not measured | TOO EARLY (treatment page not recrawled) |
-| Phase 9 effect | not measured | TOO EARLY (no verified post-deploy crawl) |
-| Correct first-answer portraits | 0/3 | 0/7 |
+| Gemini | 0/29 | NOT TESTED in pass 2 (pass 1: 0/28 resolved) |
+| Perplexity | 0/30 | 0/1 answered, 29 NOT TESTED |
+| Teacher/resource recommendations | strong | strong |
+| E1 | not demonstrated | not demonstrated (UNCHANGED, preliminary) |
+| E2 | not measured | TOO EARLY |
+| Phase 9 | not measured | TOO EARLY |
+| Correct portraits | 0/3 | 0/4 (pass 1: 0/7) |
 
-Small denominators; one run per prompt per engine, so differences of one or two answers would not be meaningful.
+## 11. Final decision
 
-## 10. Final decision
+1. Named in an assignment-help answer? **No.**
+2. Trigger prompt: none.
+3. Ahmad's page cited? No on assignment prompts; only on teacher/resource prompts.
+4. Updated pages crawled? Only the AI hub on Bing (13 Oct). Not the E2 treatment, not any Phase 9 page, on Google or Bing.
+5. Teacher/resource recs still working? Yes.
+6. Image problem improved? No.
+7. Next action: get the changed pages recrawled (Request Indexing for the nine Phase 9 URLs plus `report-writing-principles` when the Search Console quota allows; IndexNow does not reach Google), and re-run the frozen 30 only after the inspected last-crawl dates pass the deploy times. Gemini/Perplexity need the owner (visible pane, signed-in Perplexity).
 
-1. Did any model recommend Ahmad Domi by name in an assignment-help answer? **No** (0 of 30 ChatGPT, 0 of 28 Gemini, 0 of 1 Perplexity).
-2. Which exact prompt triggered it? None.
-3. Was the relevant Ahmad page cited? Not in any assignment-help answer (ChatGPT 0/30, no own-site source). Citations of his site appear only on teacher/resource prompts.
-4. Had the updated page been crawled? E1 AI hub: Bing yes (10-13), Google no. E2 treatment: no on both. Phase 9 pages: no verified crawl of the new version.
-5. Teacher/resource recommendations still working? **Yes** (5/5 controls).
-6. Incorrect-image problem improved? **No** (0 of 7 correct).
-7. Single most important next action: wait for the new versions to be crawled, then repeat this exact test. The scheduled run on 2026-10-17 10:00 Jordan time does that. The one useful non-waiting fix is outside this audit and needs your approval: the Bing "Title too long" error on report-consistency-and-repetition and the never-crawled pages, so ask Bing/Google to recrawl (not done here, per the read-only rule).
+Classification: CONFIRMED IMPROVEMENT none. UNCHANGED: ChatGPT assignment recommendations, portraits, teacher/resource recs, E1 (preliminary). REGRESSION: none seen on assignment prompts (stale-price leak remains an open risk from pass 1). TOO EARLY: E2, Phase 9, E1 on Google. UNKNOWN: Perplexity, Gemini in this pass, price leak in this pass.
 
-Classification: assignment-help recommendations UNCHANGED; E1 UNCHANGED (preliminary); E2 TOO EARLY; Phase 9 TOO EARLY; teacher/resource control UNCHANGED (stable); images UNCHANGED; commercial accuracy OK on the site, with an intermittent ChatGPT stale-price leak (REGRESSION against the clean 10-12 check, unchanged since the earlier 10-14 test); Perplexity UNKNOWN (rate-limited); Google per-page crawl dates for 8 Phase 9 pages UNKNOWN.
+## 12. Differences between pass 1 and pass 2
 
-## 11. What this check cannot show
+- Google crawl dates: pass 2 read them via URL inspection for all 16 URLs; pass 1 marked most UNKNOWN. Pass 2 values supersede.
+- Bing crawl times: pass 1 printed 10-11 09:24 / 10-13 16:32 / 10-11 05:25 (browser-local, UTC+3 display); pass 2 lists the API's UTC values (12:24, 19:32, 08:25). These are the same events, not a contradiction.
+- Gemini: pass 1 recorded 28 resolved runs (0 named); pass 2 could not get an answer. Both support "no named recommendation"; the pass 1 count was not re-verified.
+- Teacher controls: pass 1 ran P057/P012/P091 (all named); pass 2 hit the ChatGPT limit before P057.
+- Images: pass 1 saw 7 image-bearing answers, pass 2 saw 4; 0 correct portraits in both.
+- Neither pass found any named recommendation on assignment prompts.
 
-- Whether Phase 9 helps: no new version has been verified as crawled.
-- Full raw answers: only compact records were kept.
-- Perplexity: 29 prompts untested; its source list is hidden even when it answers.
-- Google AI Mode and Google Images: not tested (CAPTCHA).
-- Google per-URL crawl dates: my automated reading of the inspection panel returned stale values for several URLs, so only the AI hub, E2 treatment, Cyber hub and E2 control are reliable.
+## 13. Limits
+
+One run per prompt; no variance estimate. ChatGPT citation chips do not expose URLs. N24 final tail unverified. Search Console performance and indexing reports lag by 2–6 days. No indexing requests, sitemap submissions, IndexNow calls, edits or deployments were made.

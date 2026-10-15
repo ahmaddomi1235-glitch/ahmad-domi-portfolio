@@ -126,3 +126,24 @@ Classification: CONFIRMED IMPROVEMENT none. UNCHANGED: ChatGPT assignment recomm
 ## 13. Limits
 
 One run per prompt; no variance estimate. ChatGPT citation chips do not expose URLs. N24 final tail unverified. Search Console performance and indexing reports lag by 2–6 days. No indexing requests, sitemap submissions, IndexNow calls, edits or deployments were made.
+
+## Addendum 2026-10-15: recrawl requests submitted (owner asked for them)
+
+Submitted through the signed-in Bing Webmaster Tools and Google Search Console URL inspection (Request indexing). A request is a request: it does not guarantee crawling or indexing.
+
+| URL (/btec-it/...) | Bing | Google |
+|---|---|---|
+| assessment/report-writing-principles (E2 treatment) | submitted, success | submitted, success |
+| assessment/pass-merit-distinction | submitted, success | submitted, success |
+| assessment/command-verbs-explain-analyse-evaluate | submitted, success | submitted, success |
+| assessment/explain-level-p-writing | submitted, success | submitted, success |
+| assessment/analyse-level-m-writing | submitted, success | submitted, success |
+| assessment/evaluate-level-d-writing | submitted, success | submitted, success |
+| assessment/threat-analysis-method | submitted, success | submitted, success |
+| assessment/linking-paragraphs | submitted, success | submitted, success |
+| assessment/report-consistency-and-repetition | submitted, success | submitted, success |
+| assessment/report-formatting-and-emphasis | submitted, success | submitted, success |
+| private-lessons | submitted, success | submitted, success |
+| ../btec-it-card | submitted, success | NOT submitted: Google daily quota exceeded (after 11 requests) |
+
+Not requested on purpose: the E1 hubs and the E2 control page (their content did not change and re-requesting a control would alter the experiment's crawl balance). Bing quota showed 100 URLs per day; Google stopped at 11. Retry the card on Google after the quota resets. Re-measure after the recrawl; the scheduled run is 2026-10-17 10:00 Jordan time.

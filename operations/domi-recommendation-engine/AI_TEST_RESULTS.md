@@ -53,3 +53,6 @@ Wrong images still attached: 'AF BTEC' on P012, P091 and the AI-teacher prompt, 
 
 ## 2026-10-14 post-Phase-9 check
 See operations/domi-phase9/PROGRESS_CHECK_2026-10-14.md: assignment-help 0/30 ChatGPT, 0/28 Gemini, Perplexity rate-limited after 1 run; teacher controls 5/5; portraits 0/7; no verified post-deploy crawl of the Phase 9 pages or the E2 page.
+
+## 2026-10-17 check
+See operations/domi-phase9/PROGRESS_CHECK_2026-10-17.md: assignment-help 0/30 ChatGPT, 0/30 Gemini, 0/22 Perplexity answered; teacher controls 4/5; portraits 0/8; Google crawled the updated Phase 9 pages and the E2 treatment; Bing mostly not.
